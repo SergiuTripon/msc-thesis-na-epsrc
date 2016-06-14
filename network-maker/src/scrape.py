@@ -105,12 +105,21 @@ def extract_grants(areas):
         refs = tree.xpath(ref_xpath)
         # variable to hold total values
         total_vals = tree.xpath(total_val_xpath)
+        # variable to hold unique references list
+        unique_refs = []
+
+        # for reference in references
+        for ref in refs:
+            # if reference is not in unique references
+            if ref not in unique_refs:
+                # add reference to unique references list
+                unique_refs += [ref]
 
         # merge references and total values, converted to raw numbers
-        refs_total_vals_raw = [[ref, locale.atoi(total_val)] for ref, total_val in zip(refs, total_vals)]
+        refs_total_vals_raw = [[ref, locale.atoi(total_val)] for ref, total_val in zip(unique_refs, total_vals)]
         # merge references and total values, converted to currency
         refs_total_vals_currency = [[ref, locale.currency(locale.atoi(total_val), grouping=True)]
-                                    for ref, total_val in zip(refs, total_vals)]
+                                    for ref, total_val in zip(unique_refs, total_vals)]
 
         # add grant to grants dictionary
         grants[area_name] = refs_total_vals_raw

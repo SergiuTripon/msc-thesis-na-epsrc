@@ -58,8 +58,8 @@ def create_network(areas, area_links, tool):
                 # variable to hold second area id
                 area_id_2nd = area_ids.get(area_name_2nd)
                 # write area link to file
-                output_file.write('{}\t{}\t{}\t{}\t{}\n'.format(area_id_1st, area_id_2nd, 'Undirected', area_link[2],
-                                                                area_link[3]))
+                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(area_id_1st, area_id_2nd, 'Undirected',
+                                                                    area_link[2], area_link[3]))
 
     # if tool is graphistry
     elif tool == 'graphistry':
@@ -93,6 +93,13 @@ def main():
     area_links = load(area_links_file)
     # close area links input file
     area_links_file.close()
+
+    # for area link in area links list
+    for area_link in area_links:
+        # variable to hold area link swap
+        area_link_swap = (area_link[1], area_link[0], area_link[2], area_link[3])
+        # remove area link swap from area links list
+        area_links.remove(area_link_swap)
 
     tool = 'gephi'
     # tool = 'graphistry'
