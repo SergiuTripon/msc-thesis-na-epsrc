@@ -79,7 +79,7 @@ def main():
     output_file.close()
 
     # print progress
-    print('> Linking of areas completed ({} links identified)'.format(len(area_links)))
+    print('> Linking of areas completed ({} links identified - may include duplicate links)'.format(len(area_links)))
 
 
 ########################################################################################################################
