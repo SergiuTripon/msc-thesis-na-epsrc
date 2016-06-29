@@ -72,15 +72,17 @@ def extract_areas():
                                                               locale.currency(prop_val, grouping=True),
                                                               locale.currency(grant_val, grouping=True)))
 
-    # return areas dictionary
-    return areas
+    # variable to hold output file
+    output_file = open(r'../output/areas/areas.pkl', 'wb')
+    # write data structure to file
+    dump(areas, output_file)
+    # close output file
+    output_file.close()
 
+    # print progress
+    print('> Extraction of areas completed ({} areas extracted)'.format(len(areas)))
 
-########################################################################################################################
-
-
-# extracts grants
-def extract_grants(areas):
+    ####################################################################################################################
 
     # variable to hold output file
     output_file = open('../output/areas/grants.csv', mode='a')
@@ -127,32 +129,6 @@ def extract_grants(areas):
         # write grant to file
         output_file.write('"{}","{}"\n'.format(area_name, refs_total_vals_currency))
 
-    # return grants dictionary
-    return grants
-
-
-########################################################################################################################
-
-
-# main function
-def main():
-
-    # extract areas
-    areas = extract_areas()
-
-    # variable to hold output file
-    output_file = open(r'../output/areas/areas.pkl', 'wb')
-    # write data structure to file
-    dump(areas, output_file)
-    # close output file
-    output_file.close()
-
-    # print progress
-    print('> Extraction of areas completed ({} areas extracted)'.format(len(areas)))
-
-    # extract grants
-    grants = extract_grants(areas)
-
     # variable to hold output file
     output_file = open(r'../output/areas/grants.pkl', 'wb')
     # write data structure to file
@@ -169,6 +145,16 @@ def main():
 
     # print progress
     print('> Extraction of grants completed ({} grants extracted)'.format(grants_num_total))
+
+
+########################################################################################################################
+
+
+# main function
+def main():
+
+    # extract areas
+    extract_areas()
 
 
 ########################################################################################################################

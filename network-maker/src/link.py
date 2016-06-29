@@ -10,8 +10,45 @@ from pickle import dump, load
 ########################################################################################################################
 
 
+# links areas
+def link_areas():
+
+    # variable to hold input file
+    input_file = open(r'../output/areas/grants.pkl', 'rb')
+    # load data structure from file
+    grants = load(input_file)
+    # close input file
+    input_file.close()
+
+    # variable to hold area links list
+    area_links = []
+
+    # for area name and grant references in grants dictionary
+    for area_name, grant_refs in grants.items():
+        # link areas and return the output in area links list
+        area_links += compare_areas(area_name, grant_refs, grants)
+
+    # for area name and grant references in grants dictionary
+    for area_name, grant_refs in grants.items():
+        # link areas and return the output in area links list
+        area_links += compare_areas(area_name, grant_refs, grants)
+
+    # variable to hold output file
+    output_file = open(r'../output/areas/area_links.pkl', 'wb')
+    # write data structure to file
+    dump(area_links, output_file)
+    # close output file
+    output_file.close()
+
+    # print progress
+    print('> Linking of areas completed ({} links identified - may include duplicate links)'.format(len(area_links)))
+
+
+########################################################################################################################
+
+
 # compares areas
-def compare_ra(default_area_name, default_grant_ref, grants):
+def compare_areas(default_area_name, default_grant_ref, grants):
 
     # variable to hold copy of grants dictionary
     grants_copy = deepcopy(grants)
@@ -56,30 +93,8 @@ def compare_ra(default_area_name, default_grant_ref, grants):
 # main function
 def main():
 
-    # variable to hold input file
-    input_file = open(r'../output/areas/grants.pkl', 'rb')
-    # load data structure from file
-    grants = load(input_file)
-    # close input file
-    input_file.close()
-
-    # variable to hold area links list
-    area_links = []
-
-    # for area name and grant references in grants dictionary
-    for area_name, grant_refs in grants.items():
-        # link areas and return the output in area links list
-        area_links += compare_ra(area_name, grant_refs, grants)
-
-    # variable to hold output file
-    output_file = open(r'../output/areas/area_links.pkl', 'wb')
-    # write data structure to file
-    dump(area_links, output_file)
-    # close output file
-    output_file.close()
-
-    # print progress
-    print('> Linking of areas completed ({} links identified - may include duplicate links)'.format(len(area_links)))
+    # link areas
+    link_areas()
 
 
 ########################################################################################################################
