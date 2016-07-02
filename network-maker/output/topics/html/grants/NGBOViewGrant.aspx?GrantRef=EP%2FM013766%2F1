@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Matheuristics for multi-criterion data clustering: towards multi-criterion big data analytics
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM013766%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAxMzc2Ni8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVuPHN0cm9uZz5NYXRoZXVyaXN0aWNzIGZvciBtdWx0aS1jcml0ZXJpb24gZGF0YSBjbHVzdGVyaW5nOiB0b3dhcmRzIG11bHRpLWNyaXRlcmlvbiBiaWcgZGF0YSBhbmFseXRpY3M8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT88YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xMDIyNzInPkhhbmRsLCBEciBKSzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRpNYW5jaGVzdGVyIEJ1c2luZXNzIFNjaG9vbGRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFHVVuaXZlcnNpdHkgb2YgTWFuY2hlc3RlciwgVGhlZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUaRmlyc3QgR3JhbnQgLSBSZXZpc2VkIDIwMDlkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQwwMSBKdWx5IDIwMTVkZAIDD2QWAgIBDw8WAh8EBQwzMCBKdW5lIDIwMTdkZAIFD2QWAgIBDw8WBB8EBQcxMDAsMzE3HgdUb29sVGlwBQoxMDAsMzE3LjI4ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhdBcnRpZmljaWFsIEludGVsbGlnZW5jZSBJbmZvcm1hdGlvbiAmYW1wOyBLbm93bGVkZ2UgTWdtdGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzAyIERlYyAyMDE0ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBSlFUFNSQyBJQ1QgUHJpb3JpdGlzYXRpb24gUGFuZWwgLSBEZWMgMjAxNB8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTFQU0o2TWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBcwWV2l0aCByYXBpZCBpbmNyZWFzZXMgaW4gZGF0YSB2b2x1bWUgaW4gYWxsIGFyZWFzIG9mIGxpZmUsIHRoZSBtZWFuaW5nZnVsIGFuYWx5c2lzIG9mIHRoZXNlIGRhdGEgaXMgYmVjb21pbmcgYSBjcnVjaWFsIGJvdHRsZW5lY2suIFdoZXRoZXIgZGF0YSBhcmUgZ2VuZXJhdGVkIGJ5IGN1c3RvbWVyIHRyYW5zYWN0aW9ucywgdGhyb3VnaCBjb21tdW5pY2F0aW9ucyBvbiBzb2NpYWwgbWVkaWEsIG9yIGFzIGEgYnktcHJvZHVjdCBvZiBtYW51ZmFjdHVyaW5nIHByb2Nlc3NlcywgZGF0YSBhcmUgbWVhbmluZ2xlc3MgdW5sZXNzIHN1aXRhYmxlIHRlY2huaXF1ZXMgYXJlIGF2YWlsYWJsZSB0byBzZWxlY3QgdGhlIG1vc3QgcmVsZXZhbnQgZGF0YSwgYW5hbHl6ZSB0aGVzZSBkYXRhIGFuZCB0dXJuIHJhdyBkYXRhIGludG8gdGFuZ2libGUgaW5mb3JtYXRpb24gYW5kIGluc2lnaHQuIFRvIHNvbWUgZXh0ZW50LCAiYmlnIGRhdGEiIHJldmVyc2VzIHRyYWRpdGlvbmFsIGFwcHJvYWNoZXMgaW4gZGF0YS1taW5pbmcsIGFzIGRhdGEgY29sbGVjdGlvbiBub3cgZnJlcXVlbnRseSBwcmVjZWRlcyB0aGUgZGVmaW5pdGlvbiBvZiBhbiBhY3R1YWwgcXVlc3Rpb24gb3IgaHlwb3RoZXNpcy4gVGhlIHB1cnBvcnRlZCBhZHZhbnRhZ2Ugb2YgdGhpcyBhcHByb2FjaCBpcyB0aGF0IG5vdmVsLCB1bmV4cGVjdGVkIGZpbmRpbmdzIG1heSBtYXRlcmlhbGl6ZSAtIGEgcHJlbWlzZSB0aGF0IHJlbGllcywgaG93ZXZlciwgb24gdGhlIGV4cGVydCB1c2Ugb2Ygc3VpdGFibGUgYXBwcm9hY2hlcyBmb3IgZXhwbG9yYXRvcnkgZGF0YSBhbmFseXNpcy4gVGhlIHByb21pbmVuY2Ugb2YgImJpZyBkYXRhIiB0aGVyZWZvcmUgZnVlbHMgdGhlIG5lZWQgYW5kIHVzZSBvZiBzY2FsYWJsZSBhbmQgcG93ZXJmdWwgYXBwcm9hY2hlcyB0byBleHBsb3JhdG9yeSBkYXRhIGFuYWx5c2lzLiBEYXRhIGNsdXN0ZXJpbmcgdGVjaG5pcXVlcyBwcmVzZW50IG9uZSBvZiB0aGUgbW9zdCBmdW5kYW1lbnRhbCB0b29scyBpbiBleHBsb3JhdG9yeSBkYXRhIGFuYWx5c2lzLCBhbmQgdGhpcyBwcm9qZWN0IGFpbXMgdG8gZGVsaXZlciBub3ZlbCB0ZWNobmlxdWVzIHRoYXQgYXJlIGFjY3VyYXRlLCBmbGV4aWJsZSBhbmQgc2NhbGFibGUgdG8gbGFyZ2UgZGF0YSBzZXRzLjxiciAvPjxiciAvPiA8YnIgLz48YnIgLz5EYXRhIGNsdXN0ZXJpbmcgdGVjaG5pcXVlcyBwcmVzZW50IG9uZSBvZiB0aGUgbW9zdCBmdW5kYW1lbnRhbCB0b29scyBpbiBleHBsb3JhdG9yeSBkYXRhIGFuYWx5c2lzLiBDb25jZXB0dWFsbHksIGRhdGEgY2x1c3RlcmluZyByZWZlcnMgdG8gdGhlIGlkZW50aWZpY2F0aW9uIG9mIHN1Yi1ncm91cHMgd2l0aGluIGEgZGF0YSBzZXQgc28gdGhhdCBpdGVtcyB3aXRoaW4gdGhlIHNhbWUgZ3JvdXAgYXJlIHNpbWlsYXIgYW5kIHRob3NlIGluIGRpZmZlcmVudCBncm91cHMgYXJlIGRpc3NpbWlsYXI7IGUuZy4sIGluIHRoZSBjb250ZXh0IG9mIGluc3VyYW5jZSBkYXRhLCBhICJjbHVzdGVyIiBvZiBwZW9wbGUgbWF5IHJlbGF0ZSB0byBjdXN0b21lcnMgd2hvIHNob3cgc2ltaWxhciBiZWhhdmlvdXIgaW4gdGhlaXIgY2xhaW0gcGF0dGVybnMgb3ZlciB0aW1lLCB3aGlsZSB0aG9zZSBpbiBkaWZmZXJlbnQgY2x1c3RlcnMgYmVoYXZlIGRpZmZlcmVudGx5LiBNYXRoZW1hdGljYWxseSwgZGF0YSBjbHVzdGVyaW5nIGNhbiBiZSBzZWVuIGFzIGFuIGV4YW1wbGUgb2YgYSBwcm9ibGVtIHdoZXJlIGdvb2Qgc29sdXRpb25zIGFyZSBiZXN0IGRlc2NyaWJlZCB1c2luZyBhIHNldCBvZiBkaWZmZXJlbnQgY3JpdGVyaWEgdGhhdCBhY2NvdW50IGZvciBjb25mbGljdGluZyBwcm9wZXJ0aWVzIHN1Y2ggYXMgdGhlIGNvbXBhY3RuZXNzIG9mIGNsdXN0ZXJzIGFuZCB0aGUgc2VwYXJhdGlvbiBiZXR3ZWVuIGNsdXN0ZXJzLjxiciAvPjxiciAvPlRoZSBhYm92ZSBvYnNlcnZhdGlvbiBoYXMgcmVjZW50bHkgbGVkIHRvIHRoZSBkZXZlbG9wbWVudCBvZiBtdWx0aS1jcml0ZXJpb24gYXBwcm9hY2hlcyB0byBkYXRhIGNsdXN0ZXJpbmcsIHdoaWNoIGV4cGxpY2l0bHkgY29uc2lkZXIgYSBudW1iZXIgb2YgY2x1c3RlcmluZyBjcml0ZXJpYS4gVGhpcyBhcHByb2FjaCBoYXMgc2hvd24gYSBsb3Qgb2YgcHJvbWlzZSwgaW4gdGVybXMgb2YgdGhlIGFjY3VyYWN5IGFuZCB0aGUgcm9idXN0bmVzcyBvZiB0aGUgc29sdXRpb25zIG9idGFpbmVkLiBIb3dldmVyLCBjdXJyZW50IHRlY2huaXF1ZXMgZm9yIG11bHRpLWNyaXRlcmlvbiBjbHVzdGVyaW5nIGFyZSBsaW1pdGVkIHJlZ2FyZGluZyB0aGVpciBzY2FsYWJpbGl0eSB0byB2ZXJ5IGxhcmdlIGRhdGEgc2V0cyBhbmQgYWxzbyB0aGVpciBmbGV4aWJpbGl0eSB3aXRoIHJlc3BlY3QgdG8gdGhlaXIgY29uc2lkZXJhdGlvbiBvZiBkaWZmZXJlbnQgc291cmNlcyBvZiBkaXNzaW1pbGFyaXR5IGRhdGEuIFRoaXMgcHJvamVjdCBwcm9wb3NlcyBhIG5vdmVsIHRlY2huaXF1ZSBmb3IgbXVsdGktY3JpdGVyaW9uIGNsdXN0ZXJpbmc6IHRoZSBhbGdvcml0aG0gd2lsbCBjb21iaW5lIGNvbXBsZW1lbnRhcnkgaWRlYXMgZnJvbSB0d28gc3ViLWZpZWxkcyBvZiBjb21wdXRlciBzY2llbmNlLCBsZWFkaW5nIHRvIGltcHJvdmVkIHNjYWxhYmlsaXR5IGFuZCBmbGV4aWJpbGl0eSBvZiB0aGUgdGVjaG5pcXVlIGRldmVsb3BlZC4gVGhlIHdvcmsgd2lsbCBpbmNsdWRlIHRoZSBkZXZlbG9wbWVudCBvZiBhbiBpbnRlcmFjdGl2ZSB1c2VyLWludGVyZmFjZSBhbmQgdGhlIGFwcGxpY2F0aW9uIG9mIG11bHRpLWNyaXRlcmlvbiBjbHVzdGVyaW5nIHRvIHByb2JsZW1zIGluIGZpbmFuY2UgYW5kIG1hcmtldGluZy4gQWxsIHNvZnR3YXJlIHByb2R1Y2VkIHdpbGwgYmUgcmVsZWFzZWQgcHVibGljbHkuPGJyIC8+PGJyIC8+ZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMTM3NjYvMQxFUC9NMDEzNzY2LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZN8bKYcg5QEYxNXDKEGFKVoOVAXY" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLGjsjOCwLQvN++DAKT/OCVA2GjcuMibndrhLOo/y2499ZmwTZx" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M013766/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Matheuristics for multi-criterion data clustering: towards multi-criterion big data analytics</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-102272'>Handl, Dr JK</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Manchester Business School</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Manchester, The</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 July 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 June 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="100,317.28" class="DetailValue">100,317</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Information &amp; Knowledge Mgmt</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>02 Dec 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1PSJ6M">EPSRC ICT Prioritisation Panel - Dec 2014</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">With rapid increases in data volume in all areas of life, the meaningful analysis of these data is becoming a crucial bottleneck. Whether data are generated by customer transactions, through communications on social media, or as a by-product of manufacturing processes, data are meaningless unless suitable techniques are available to select the most relevant data, analyze these data and turn raw data into tangible information and insight. To some extent, "big data" reverses traditional approaches in data-mining, as data collection now frequently precedes the definition of an actual question or hypothesis. The purported advantage of this approach is that novel, unexpected findings may materialize - a premise that relies, however, on the expert use of suitable approaches for exploratory data analysis. The prominence of "big data" therefore fuels the need and use of scalable and powerful approaches to exploratory data analysis. Data clustering techniques present one of the most fundamental tools in exploratory data analysis, and this project aims to deliver novel techniques that are accurate, flexible and scalable to large data sets.<br /><br /> <br /><br />Data clustering techniques present one of the most fundamental tools in exploratory data analysis. Conceptually, data clustering refers to the identification of sub-groups within a data set so that items within the same group are similar and those in different groups are dissimilar; e.g., in the context of insurance data, a "cluster" of people may relate to customers who show similar behaviour in their claim patterns over time, while those in different clusters behave differently. Mathematically, data clustering can be seen as an example of a problem where good solutions are best described using a set of different criteria that account for conflicting properties such as the compactness of clusters and the separation between clusters.<br /><br />The above observation has recently led to the development of multi-criterion approaches to data clustering, which explicitly consider a number of clustering criteria. This approach has shown a lot of promise, in terms of the accuracy and the robustness of the solutions obtained. However, current techniques for multi-criterion clustering are limited regarding their scalability to very large data sets and also their flexibility with respect to their consideration of different sources of dissimilarity data. This project proposes a novel technique for multi-criterion clustering: the algorithm will combine complementary ideas from two sub-fields of computer science, leading to improved scalability and flexibility of the technique developed. The work will include the development of an interactive user-interface and the application of multi-criterion clustering to problems in finance and marketing. All software produced will be released publicly.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

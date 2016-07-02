@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	CFD Modelling of the acoustic response of sprays
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM023893%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAyMzg5My8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVBPHN0cm9uZz5DRkQgTW9kZWxsaW5nIG9mIHRoZSBhY291c3RpYyByZXNwb25zZSBvZiBzcHJheXM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUA8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS00MTgwMDgnPkdhcm1vcnksIERyIEE8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA0k8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAxMjk0Jz5Sb2xscy1Sb3ljZSBQbGM8L2E+AABkAgYPZBYCAgEPZBYCAgEPDxYCHwQFJ0Flcm9uYXV0aWNhbCBhbmQgQXV0b21vdGl2ZSBFbmdpbmVlcmluZ2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF0xvdWdoYm9yb3VnaCBVbml2ZXJzaXR5ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUaRmlyc3QgR3JhbnQgLSBSZXZpc2VkIDIwMDlkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8xNSBKYW51YXJ5IDIwMTZkZAIDD2QWAgIBDw8WAh8EBQwxNCBKdWx5IDIwMTdkZAIFD2QWAgIBDw8WBB8EBQY5NywxMjkeB1Rvb2xUaXAFCTk3LDEyOS4wMmRkAgoPZBYCAgEPZBYCAgEPFgIfBwICFgQCAQ9kFgJmDxUCDEFlcm9keW5hbWljcwpDb21idXN0aW9uZAICD2QWAmYPFQIYSGVhdCAmYW1wOyBNYXNzIFRyYW5zZmVyAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIdQWVyb3NwYWNlLCBEZWZlbmNlIGFuZCBNYXJpbmUAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMjUgRmViIDIwMTVkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFOUVuZ2luZWVyaW5nIFByaW9yaXRpc2F0aW9uIFBhbmVsIE1lZXRpbmcgMjUgRmVicnVhcnkgMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTFPTTYyOWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBcEfRm9yIHRoZSBmb3Jlc2VlYWJsZSBmdXR1cmUgYnVybmluZyBmb3NzaWwgZnVlbHMgd2lsbCBiZSBlc3NlbnRpYWwgaW4gdGhlIGVuZXJneSBnZW5lcmF0aW9uIGFuZCB0cmFuc3BvcnQgc2VjdG9ycywgcGFydGljdWxhcmx5IGluIGF2aWF0aW9uLiBNaXRpZ2F0aW5nIHRoZSBlbnZpcm9ubWVudGFsIGltcGFjdHMgb2YgdGhpcyBpcyBhIGtleSBwcmlvcml0eS4gSW4gb3JkZXIgdG8gbWVldCBpbXBvcnRhbnQsIGFuZCBpbmNyZWFzaW5nbHkgc3RyaW5nZW50LCByZWd1bGF0b3J5IGxpbWl0cyBvbiBOT3ggZW1pc3Npb25zICJsZWFuIGJ1cm4iIGNvbWJ1c3RvcnMgYXJlIHNlZW4gYXMgYSB2aXRhbCBzdGVwLiBMZWFuIGJ1cm4gY29tYnVzdG9ycyB1c2UgbW9yZSBhaXIgaW4gdGhlIGNvbWJ1c3Rpb24gem9uZSB0byByZWR1Y2UgdGhlIGZsYW1lIHRlbXBlcmF0dXJlIGFuZCB0aGUgZm9ybWF0aW9uIG9mIHBvbGx1dGFudHMuIFRoZSBkb3duc2lkZSB0byB0aGlzIGlzIHRoYXQgdGhlICJ0aGVybW9hY291c3RpYyIgc3RhYmlsaXR5IG9mIHRoZSBmbGFtZSBpcyByZWR1Y2VkLiBGbHVjdHVhdGlvbnMgaW4gaGVhdCByZWxlYXNlIGxlYWQgdG8gcHJlc3N1cmUgd2F2ZXMgd2hpY2ggYWZmZWN0IHRoZSBmbG93IG9mIGZ1ZWwgYW5kIGFpciBpbnRvIHRoZSBjb21idXN0b3Igd2hpY2ggaW4gdHVybiBjYW4gYWZmZWN0IHRoZSBoZWF0IHJlbGVhc2UuIFRoaXMgdHdvLXdheSBjb3VwbGluZyBjYW4gbGVhZCB0byBhIGZlZWRiYWNrIGxvb3AgY2F1c2luZyBsYXJnZSwgYW5kIGRhbWFnaW5nLCBwcmVzc3VyZSBvc2NpbGxhdGlvbnMuIEZvciBsZWFuIGJ1cm4gdGVjaG5vbG9neSB0byBiZSBzdWNjZXNzZnVsbHkgZGV2ZWxvcGVkIHRoaXMgdGhlcm1vYWNvdXN0aWMgaW5zdGFiaWxpdHkgbXVzdCBiZSBjb250cm9sbGVkLiBOdW1lcmljYWwgc2ltdWxhdGlvbiB0b29scyBoYXZlIGEgdml0YWwgcGFydCB0byBwbGF5IGluIHRoaXMuIElmIHRoZSBzdGFiaWxpdHkgb3Igb3RoZXJ3aXNlIG9mIGEgZGVzaWduIGNhbiBiZSBwcmVkaWN0ZWQgaW4gYSBjb21wdXRhdGlvbmFsIHNpbXVsYXRpb24sIHdpdGhvdXQgdGhlIG5lZWQgZm9yIHRlc3RpbmcgYSBwaHlzaWNhbCBwcm90b3R5cGUgdGhlbiBhIGdyZWF0IGRlYWwgb2YgcmVzb3VyY2VzIGNhbiBiZSBzYXZlZC4gQWNjdXJhdGUgbnVtZXJpY2FsIHNpbXVsYXRpb24gY2FuIGFsc28gZ2l2ZSBhIGRlZXBlciB1bmRlcnN0YW5kaW5nIG9mIHRoZSBwaHlzaWNhbCBwcm9jZXNzZXMgaW52b2x2ZWQgdGhhbiBleHBlcmltZW50cyBhbG9uZS4gPGJyIC8+PGJyIC8+TW9zdCBnYXMgdHVyYmluZXMgYW5kIGFsbCBhZXJvIGVuZ2luZXMgdXNlIGxpcXVpZCBmdWVsLiBUaGUgZnVlbCBpcyBicm9rZW4gdXAgaW50byBhIHNwcmF5IHdoaWNoIG1peGVzIHdpdGggYW5kIGV2YXBvcmF0ZXMgaW50byBhIHN3aXJsaW5nIGFpciBmbG93LiBPbmUgb2YgdGhlIG1ham9yIGh1cmRsZXMgc3RhbmRpbmcgaW4gdGhlIHdheSBvZiBhY2N1cmF0ZSBzaW11bGF0aW9uIG9mIHRoZXJtb2Fjb3VzdGljIGJlaGF2aW91ciBpbiBidXJuZXJzIG9mIHRoaXMgdHlwZSBpcyBob3cgdG8gbW9kZWwgdGhlIGVmZmVjdCBvZiBhY291c3RpYyBwcmVzc3VyZSB3YXZlcyBvbiB0aGUgZm9ybWF0aW9uIGFuZCB0cmFuc3BvcnQgb2YgdGhlIHNwcmF5LiBDdXJyZW50bHkgYXNzdW1wdGlvbnMgYW5kIGVtcGlyaWNhbCByZWxhdGlvbnMgaGF2ZSB0byBiZSB1c2VkIHRvIGRlZmluZSB0aGUgdGltZSB2YXJ5aW5nIGFpciBhbmQgZnVlbCBpbmxldCBjb25kaXRpb25zIGFuZCB0aGVzZSBhcmUgb2YgcXVlc3Rpb25hYmxlIGFwcGxpY2FiaWxpdHkuIEluIHBhcnRpY3VsYXIgdGhleSB0YWtlIG5vIGFjY291bnQgb2YgdGhlIGRlbGF5IG9yICJwaGFzZSBzaGlmdCIgaW4gdGhlIGFlcm9keW5hbWljIHJlc3BvbnNlIG9mIHRoZSBhaXJmbG93IHRvIGEgcHJlc3N1cmUgd2F2ZSwgd2hpY2ggaXMgdml0YWwgZm9yIGNhcHR1cmluZyB0aGUgdHJ1ZSB1bnN0ZWFkeSBiZWhhdmlvdXIgb2YgYSBjb21idXN0aW9uIHN5c3RlbS4gVGhpcyBwcm9wb3NhbCBhaW1zIHRvIG92ZXJjb21lIHRoaXMgaHVyZGxlIGJ5IGRldmVsb3BpbmcgcHJvcGVybHkgdmFsaWRhdGVkIGNvbXB1dGF0aW9uYWwgbWV0aG9kcyBmb3Igc2ltdWxhdGluZyBzcHJheXMgaW4gY29tcGxleCBzd2lybGluZyBmbG93cyB1bmRlciB0aGUgaW5mbHVlbmNlIG9mIGFjb3VzdGljIHdhdmVzLjxiciAvPjxiciAvPlZhbGlkYXRpb24gb2YgdGhpcyBtZXRob2QgcmVxdWlyZXMgYWNjZXNzIHRvIGFwcHJvcHJpYXRlIGV4cGVyaW1lbnRhbCBkYXRhLiBTdWNoIGRhdGEgaGFzIHJlY2VudGx5IGJlZW4gcHJvZHVjZWQgYXQgTG91Z2hib3JvdWdoIFVuaXZlcnNpdHkgKExVKS4gQSB0eXBpY2FsIGxlYW4gYnVybiBmdWVsIGF0b21pemVyLCBpbiB3aGljaCBmdWVsIGlzIGluamVjdGVkIGJldHdlZW4gdHdvIGNvLWFubnVsYXIgc3dpcmxpbmcgYWlyIHN0cmVhbXMsIGhhcyBiZWVuIHRlc3RlZCB3aXRoIGFjb3VzdGljIGZvcmNpbmcuIERhdGEgaXMgYXZhaWxhYmxlIGZvciB0aGUgdGltZSB2YXJ5aW5nIGZ1ZWwgZHJvcGxldCBzaXplLCBudW1iZXIgYW5kIHZlbG9jaXR5IGF0IHNldmVyYWwgbG9jYXRpb25zIGluIHRoZSBmbG93LiBUaGlzIGRhdGEgd2lsbCBiZSB1c2VkIGluIHRoZSBmb2xsb3dpbmcgd2F5czo8YnIgLz48YnIgLz4xLiBNZXRob2RzIG9mIGRlcml2aW5nIGFjY3VyYXRlIHNwcmF5IGFuZCBhaXIgaW5sZXQgY29uZGl0aW9ucyBmb3IgYSByYW5nZSBvZiBhY291c3RpYyBleGNpdGF0aW9uIGZyZXF1ZW5jaWVzIHdpbGwgYmUgZGV2ZWxvcGVkLiBUaGVzZSB3aWxsIGJlIHRlc3RlZCBieSBjb21wYXJpc29uIHdpdGggdGhlIGV4cGVyaW1lbnRhbCBkYXRhIGZyb20gY2xvc2UgdG8gdGhlIGluamVjdG9yIGFuZCBhbHNvIGNvbXBhcmVkIHRvIHRoZSBjdXJyZW50IHNpbXBsaWZpZWQgbWV0aG9kIG9mIGRlcml2aW5nIHRoZSBzcHJheSBpbmxldCBjb25kaXRpb25zLiBUaGUgZXJyb3JzIGFzc29jaWF0ZWQgd2l0aCB0aGUgYXNzdW1wdGlvbnMgaW4gYWxsIG1ldGhvZHMgd2lsbCBiZSBzdHVkaWVkIHN5c3RlbWF0aWNhbGx5LiBUaGUgcHJlZGljdGlvbiBvZiBhaXIgZmxvdyByZXNwb25zZSB0byBhIHByZXNzdXJlIHdhdmUgaW4gdGhlIHNlcGFyYXRlIGFpcmZsb3cgcGFzc2FnZXMgb2YgdGhlIGZ1ZWwgaW5qZWN0b3Igd2lsbCBiZSBpbXByb3ZlZCBieSB0aGUgdXNlIG9mIGEgY29tcHJlc3NpYmxlIENGRCBtZXRob2QgZGV2ZWxvcGVkIGF0IExVLiA8YnIgLz48YnIgLz4yLiBTaW11bGF0aW9ucyBvZiB0aGUgc3ByYXkgdHJhbnNwb3J0IHByb2Nlc3MgaW4gdGhlIHByZXNlbmNlIG9mIGFjb3VzdGljIGZvcmNpbmcgd2lsbCBiZSBjYXJyaWVkIG91dCB1c2luZyB0aGUgaW5sZXQgY29uZGl0aW9ucyBkZXZlbG9wZWQgaW4gdGhlIGZpcnN0IHBhcnQgb2YgdGhlIHByb3Bvc2FsLiBUaGVzZSBzaW11bGF0aW9ucywgdmFsaWRhdGVkIGFnYWluc3QgZXhwZXJpbWVudGFsIGRhdGEgdGFrZW4gZnVydGhlciBkb3duc3RyZWFtLCB3aWxsIGJlIGEgdGhvcm91Z2ggdGVzdCBvZiB0aGUgaW5sZXQgY29uZGl0aW9ucyBhbmQgb2YgdGhlIG1vZGVsbGluZyBtZXRob2RzIGVtcGxveWVkLiBUaGV5IHdpbGwgYWxzbyBwcm92aWRlIGEgZGVlcGVyIHVuZGVyc3RhbmRpbmcgb2YgdGhlIGZsb3cgcGh5c2ljcyBpbnZvbHZlZC4gVGhpcyB3aWxsIGluY2x1ZGUgdGhlIGVmZmVjdHMgb2YgdHVyYnVsZW50IG1peGluZyBhbmQgYWNvdXN0aWMgZm9yY2luZyBvbiBkcm9wbGV0cyBvZiBkaWZmZXJlbnQgc2l6ZXMgYW5kIHRoZSByZWxhdGl2ZSBpbXBvcnRhbmNlIG9mIHRoZSBkaWZmZXJlbnQgYWlyZmxvdyBzdHJlYW1zIGluIHRoZSBpbmplY3Rvci4gVGhpcyB1bmRlcnN0YW5kaW5nLCBjb3VwbGVkIHdpdGggaW1wcm92ZWQgYm91bmRhcnkgY29uZGl0aW9ucyB3aWxsIGJlIG9mIGdyZWF0IHZhbHVlIGluIGRlc2lnbmluZyBsb3cgZW1pc3Npb24gY29tYnVzdG9ycyBvZiB0aGUgZnV0dXJlLjxiciAvPjxiciAvPmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cubGJvcm8uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cubGJvcm8uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9NMDIzODkzLzEMRVAvTTAyMzg5My8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQTFJi3h0LSDWYWSMNebd8tqKLI5A==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKmtdXZDQLQvN++DAKT/OCVA9pwamfh5ll22J5XsSugYqCe0hiQ" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M023893/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>CFD Modelling of the acoustic response of sprays</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-418008'>Garmory, Dr A</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001294'>Rolls-Royce Plc</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Aeronautical and Automotive Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Loughborough University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">15 January 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">14 July 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="97,129.02" class="DetailValue">97,129</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Aerodynamics</td>
+                                    <td class="DetailValue"> Combustion</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Heat &amp; Mass Transfer</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>25 Feb 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1OM629">Engineering Prioritisation Panel Meeting 25 February 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">For the foreseeable future burning fossil fuels will be essential in the energy generation and transport sectors, particularly in aviation. Mitigating the environmental impacts of this is a key priority. In order to meet important, and increasingly stringent, regulatory limits on NOx emissions "lean burn" combustors are seen as a vital step. Lean burn combustors use more air in the combustion zone to reduce the flame temperature and the formation of pollutants. The downside to this is that the "thermoacoustic" stability of the flame is reduced. Fluctuations in heat release lead to pressure waves which affect the flow of fuel and air into the combustor which in turn can affect the heat release. This two-way coupling can lead to a feedback loop causing large, and damaging, pressure oscillations. For lean burn technology to be successfully developed this thermoacoustic instability must be controlled. Numerical simulation tools have a vital part to play in this. If the stability or otherwise of a design can be predicted in a computational simulation, without the need for testing a physical prototype then a great deal of resources can be saved. Accurate numerical simulation can also give a deeper understanding of the physical processes involved than experiments alone. <br /><br />Most gas turbines and all aero engines use liquid fuel. The fuel is broken up into a spray which mixes with and evaporates into a swirling air flow. One of the major hurdles standing in the way of accurate simulation of thermoacoustic behaviour in burners of this type is how to model the effect of acoustic pressure waves on the formation and transport of the spray. Currently assumptions and empirical relations have to be used to define the time varying air and fuel inlet conditions and these are of questionable applicability. In particular they take no account of the delay or "phase shift" in the aerodynamic response of the airflow to a pressure wave, which is vital for capturing the true unsteady behaviour of a combustion system. This proposal aims to overcome this hurdle by developing properly validated computational methods for simulating sprays in complex swirling flows under the influence of acoustic waves.<br /><br />Validation of this method requires access to appropriate experimental data. Such data has recently been produced at Loughborough University (LU). A typical lean burn fuel atomizer, in which fuel is injected between two co-annular swirling air streams, has been tested with acoustic forcing. Data is available for the time varying fuel droplet size, number and velocity at several locations in the flow. This data will be used in the following ways:<br /><br />1. Methods of deriving accurate spray and air inlet conditions for a range of acoustic excitation frequencies will be developed. These will be tested by comparison with the experimental data from close to the injector and also compared to the current simplified method of deriving the spray inlet conditions. The errors associated with the assumptions in all methods will be studied systematically. The prediction of air flow response to a pressure wave in the separate airflow passages of the fuel injector will be improved by the use of a compressible CFD method developed at LU. <br /><br />2. Simulations of the spray transport process in the presence of acoustic forcing will be carried out using the inlet conditions developed in the first part of the proposal. These simulations, validated against experimental data taken further downstream, will be a thorough test of the inlet conditions and of the modelling methods employed. They will also provide a deeper understanding of the flow physics involved. This will include the effects of turbulent mixing and acoustic forcing on droplets of different sizes and the relative importance of the different airflow streams in the injector. This understanding, coupled with improved boundary conditions will be of great value in designing low emission combustors of the future.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.lboro.ac.uk                                                                              '>http://www.lboro.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Dynamic Stiffness Formulation for Plates with Arbitray Boundary Conditions through the Solution of the Biharmonic Equation
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fJ007706%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSjAwNzcwNi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWLATxzdHJvbmc+RHluYW1pYyBTdGlmZm5lc3MgRm9ybXVsYXRpb24gZm9yIFBsYXRlcyB3aXRoIEFyYml0cmF5IEJvdW5kYXJ5IENvbmRpdGlvbnMgdGhyb3VnaCB0aGUgU29sdXRpb24gb2YgdGhlIEJpaGFybW9uaWMgRXF1YXRpb248L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUU8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTgyMyc+QmFuZXJqZWUsIFByb2Zlc3NvciBKUjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSdTY2ggb2YgRW5naW5lZXJpbmcgYW5kIE1hdGhlbWF0aWNhbCBTY2lkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRZDaXR5IFVuaXZlcnNpdHkgTG9uZG9uZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAwNiBGZWJydWFyeSAyMDEzZGQCAw9kFgICAQ8PFgIfBAUOMDUgQXVndXN0IDIwMTZkZAIFD2QWAgIBDw8WBB8EBQczMzIsNzc1HgdUb29sVGlwBQozMzIsNzc0Ljg5ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAgxBZXJvZHluYW1pY3MAZAILD2QWAgIBD2QWAgIBDxYCHwJoZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTMgRGVjIDIwMTFkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFLU1hdGVyaWFscywgTWVjaGFuaWNhbCBhbmQgTWVkaWNhbCBFbmdpbmVlcmluZx8DBSJOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLUM5UzFVZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFrh9BaXJjcmFmdCBzdHJ1Y3R1cmVzIGFyZSBnZW5lcmFsbHkgbW9kZWxsZWQgYXMgYW4gYXNzZW1ibHkgb2YgdGhpbi13YWxsZWQgc3RydWN0dXJhbCBlbGVtZW50cy4gSW4gcGFydGljdWxhciwgdGhlIHRvcCBhbmQgYm90dG9tIHNraW5zLCB0b3JzaW9uIGJveCwgcmlicyBhbmQgd2VicyBvZiB0aGUgd2luZyBhcmUgaWRlYWxpc2VkIGFzIHBsYXRlcyBvciBwbGF0ZSBhc3NlbWJsaWVzLiBUaGUgbW9kYWwgYW5hbHlzaXMgb2Ygc3VjaCBzdHJ1Y3R1cmVzIHBsYXlzIGFuIGltcG9ydGFudCByb2xlIGluIGFlcm9uYXV0aWNhbCBkZXNpZ24uIFRoZSBhbmFseXNpcyBhbHNvIGZhY2lsaXRhdGVzIGFlcm9lbGFzdGljIGFuZCByZXNwb25zZSBjYWxjdWxhdGlvbnMuIFRoZSB1c3VhbGx5IGFkb3B0ZWQgZmluaXRlIGVsZW1lbnQgbWV0aG9kIChGRU0pIGlzIGdlbmVyYWxseSB1c2VkIHRvIGNhcnJ5IG91dCBzdWNoIGFuYWx5c2lzLiBIb3dldmVyLCB0aGUgRkVNIGlzIGFuIGFwcHJveGltYXRlIG1ldGhvZCB3aGljaCBpcyBudW1lcmljYWxseSBpbnRlbnNpdmUsIHJlcXVpcmluZyBjb25zaWRlcmFibGUgY29tcHV0YXRpb25hbCByZXNvdXJjZXMgYW5kIG1vZGVsbGluZyBlZmZvcnRzLiBUaGUgcmVzdWx0cyBmcm9tIHRoZSBGRU0gZ2VuZXJhbGx5IGNvbnZlcmdlIHRvIGV4YWN0IHJlc3VsdHMgd2l0aCBpbmNyZWFzaW5nIG51bWJlciBvZiBlbGVtZW50cywgYnV0IHRoZSBhY2N1cmFjeSBvZiByZXN1bHRzIGNhbm5vdCBiZSBhbHdheXMgZ3VhcmFudGVlZC4gVGhpcyBpcyBwYXJ0aWN1bGFybHkgdHJ1ZSBpbiBtb2RhbCBhbmFseXNpcyBhdCBoaWdoIGZyZXF1ZW5jaWVzIHdoZW4gdGhlIEZFTSBjYW4gYmVjb21lIHVucmVsaWFibGUuIFRoZXJlIGlzIGEgcG93ZXJmdWwgYWx0ZXJuYXRpdmUgdG8gdGhlIEZFTSBpbiBtb2RhbCBhbmFseXNpcyB3aGljaCBpcyB0aGF0IG9mIHRoZSBkeW5hbWljIHN0aWZmbmVzcyBtZXRob2QgKERTTSkuIFRoZSBEU00gaGFzIGZhciBzdXBlcmlvciBtb2RlbGxpbmcgY2FwYWJpbGl0eSB0aGFuIHRoZSBGRU0gYW5kIGl0IHJlcXVpcmVzIG11Y2ggbGVzcyBjb21wdXRhdGlvbmFsIHJlc291cmNlcywgYnV0IGltcG9ydGFudGx5LCB0aGUgYWNjdXJhY3kgb2YgcmVzdWx0cyBpbiB0aGUgRFNNIGlzIGFsd2F5cyBndWFyYW50ZWVkLiBUaGUgbWV0aG9kIHByb3ZpZGVzIGV4YWN0IHJlc3VsdHMgYmVjYXVzZSB0aGUgZWxlbWVudCBwcm9wZXJ0aWVzIGFyZSBkZXJpdmVkIGZyb20gdGhlIGV4YWN0IHNvbHV0aW9uIG9mIHRoZSBnb3Zlcm5pbmcgZGlmZmVyZW50aWFsIGVxdWF0aW9uIG9mIG1vdGlvbiBvZiB0aGUgZWxlbWVudC4gVGhpcyBpcyBpbiBzaGFycCBjb250cmFzdCB3aXRoIGFzc3VtZWQgc2hhcGUgZnVuY3Rpb25zIHVzZWQgaW4gdGhlIEZFTSB0byBkZXJpdmUgdGhlIGVsZW1lbnQgcHJvcGVydGllcy4gVGh1cywgdGhlIGRpc2NyZXRpc2F0aW9uIGVycm9yIGluIHRoZSBGRU0gaXMgbm9uLWV4aXN0ZW50IGluIHRoZSBEU00uIFRoZSBEU00gaXMgd2VsbCBkZXZlbG9wZWQgZm9yIGJlYW0gZWxlbWVudHMsIGJ1dCBmb3IgcGxhdGUgZWxlbWVudHMsIHRoZSBtZXRob2QgaXMgc3RpbGwgc29tZWhvdyBkZWZpY2llbnQgYXQgcHJlc2VudCBiZWNhdXNlIG9ubHkgdGhlIHJlc3RyaWN0ZWQgY2FzZSB3aGVuIHRoZSBwbGF0ZSBpcyBzaW1wbHkgc3VwcG9ydGVkIGhhcyBiZWVuIGludmVzdGlnYXRlZCB0byBkYXRlLiBUaGlzIHJlc3RyaWN0aW9uIGhhcyBwcmV2ZW50ZWQgYSBnZW5lcmFsIHB1cnBvc2UgdXNlIG9mIHRoZSBEU00gaW4gYSB3aWRlciBjb250ZXh0LiBUaGUgcHVycG9zZSBvZiB0aGlzIHByb2plY3QgaXMgdG8gcmVtb3ZlIHRoaXMgcmVzdHJpY3Rpb24gYW5kIGRldmVsb3AgdGhlIERTTSBmb3IgcGxhdGVzIHdpdGggYXJiaXRyYXJ5IGJvdW5kYXJ5IGNvbmRpdGlvbnMgc28gdGhhdCBtb2RhbCBhbmFseXNpcyBvZiBjb21wbGV4IGFpcmNyYWZ0IHN0cnVjdHVyZXMgaW4gYW4gZXhhY3Qgc2Vuc2UgYmVjb21lcyBwb3NzaWJsZS4gVGhlIHJlc2VhcmNoIHdpbGwgbWFrZSB0aGUgRFNNIGEgdmVyc2F0aWxlIHRvb2wuIEl0IHdpbGwgYmUgYSBtYWpvciBicmVhay10aHJvdWdoIGluIHN0cnVjdHVyYWwgbWVjaGFuaWNzLjxiciAvPjxiciAvPlRoZSBkaWZmaWN1bHR5IHRvIGRlcml2ZSB0aGUgZHluYW1pYyBzdGlmZm5lc3MgKERTKSBtYXRyaXggb2YgYSBwbGF0ZSBlbGVtZW50IGZvciB0aGUgZ2VuZXJhbCBjYXNlIGFyaXNlcyBmcm9tIHRoZSBmYWN0IHRoYXQgdGhlIGJpLWhhcm1vbmljIGVxdWF0aW9uIHdoaWNoIGdvdmVybnMgdGhlIGR5bmFtaWMgYmVoYXZpb3VyIG9mIHBsYXRlcyBpcyBub3QgZWFzaWx5IGFtZW5hYmxlIHRvIGNsb3NlZCBmb3JtIGFuYWx5dGljYWwgc29sdXRpb24uIFRoZSBEUyBkZXZlbG9wbWVudCBvZiBhIHBsYXRlIHdpdGggZ2VuZXJhbCBib3VuZGFyeSBjb25kaXRpb25zIHRodXMgcmVsaWVzIG9uIHRoZSBzdWNjZXNzZnVsIHNvbHV0aW9uIG9mIHRoZSBiaWhhcm1vbmljIGVxdWF0aW9uIHdoaWNoIGlzIGEgaGlnaGx5IGNvbXBsZXggbWF0aGVtYXRpY2FsIHByb2JsZW0uIFJlY2VudCBwcm9ncmVzc2VzIG1hZGUgYnkgdHdvIGVtaW5lbnQgbWF0aGVtYXRpY2lhbnMgaW4gcGFydGljdWxhciAod2hvIHdpbGwgdGFrZSBwYXJ0IGluIHRoZSBwcm9qZWN0KSBvZmZlciBncmVhdCBwcm9zcGVjdHMgZm9yIHRoZSBwcm9wb3NlZCBEU00gZGV2ZWxvcG1lbnQuIEFzIHRoZSBEUyBtYXRyaXggd2lsbCBiZSBkZXZlbG9wZWQgdGhyb3VnaCB0aGUgc29sdXRpb24gb2YgdGhlIGJpaGFybW9uaWMgZXF1YXRpb24sIHRoZSBpbnRlcmFjdGlvbiBvZiB0aGUgUEkgYW5kIGhpcyByZXNlYXJjaCB0ZWFtIHdpdGggdGhlIGFib3ZlIHR3byBtYXRoZW1hdGljaWFucyB3aWxsIHBsYXkgYW4gaW1wb3J0YW50IHJvbGUgaW4gdGhpcyBwcm9qZWN0LiBJbml0aWFsbHksIGF0dGVudGlvbiB3aWxsIGJlIGZvY3VzZWQgb24gaXNvdHJvcGljIHBsYXRlIG1hdGVyaWFscywgYnV0IGxhdGVyLCBhbmlzb3Ryb3BpYyBwbGF0ZSBtYXRlcmlhbHMgd2lsbCBhbHNvIGJlIGNvbnNpZGVyZWQuIE9uY2UgdGhlIERTIG1hdHJpeCBpcyBkZXZlbG9wZWQsIHRoZSBXaXR0cmljay1XaWxsaWFtcyBhbGdvcml0aG0gd2lsbCBiZSB1c2VkIGFzIHNvbHV0aW9uIHRlY2huaXF1ZSB0byBjb21wdXRlIHRoZSBuYXR1cmFsIGZyZXF1ZW5jaWVzIGFuZCBtb2RlIHNoYXBlcyBvZiBjb21wbGV4IGFlcm9uYXV0aWNhbCBzdHJ1Y3R1cmVzLiBUaGUgcmVzdWx0cyB3aWxsIGJlIGV4dGVuc2l2ZWx5IHZhbGlkYXRlZCBieSBhIG51bWJlciBvZiBjYXNlIHN0dWRpZXMgaW5jbHVkaW5nIGEgd2luZy1ib3ggd2l0aCBzdHJpbmdlcnMgYW5kIGJ5IHVzaW5nIHRoZSBGRU0gYW5kIG90aGVyIHJlc3VsdHMgaW4gdGhlIGxpdGVyYXR1cmUuIENvbXB1dGVyIHByb2dyYW1zIHVzaW5nIEZvcnRyYW4gYW5kIE1hdGxhYiB3aWxsIGJlIGRldmVsb3BlZCBhbmQgZG9jdW1lbnRlZCB3aXRoIHRoZSBwcm92aXNpb24gb2YgYSB1c2VyIG1hbnVhbC4gVGhlIG5ldyBrbm93bGVkZ2UgdGhhdCB3aWxsIGFjY3J1ZSBmcm9tIHRoZSBwcm9qZWN0IHdpbGwgaGF2ZSBjb25zaWRlcmFibGUgaW1wYWN0IHVwb24gdGhlIG5hdGlvbmFsIGVjb25vbXkgYnkgY3JlYXRpbmcgZnV0dXJlIGludmVzdG1lbnRzIGluIG5ldyBkZXNpZ24gbWV0aG9kb2xvZ2llcyBpbiBjb21wdXRlciBhaWRlZCBzdHJ1Y3R1cmFsIGFuYWx5c2lzIGFuZCBkZXNpZ24gdGhyb3VnaCB0aGUgYXBwbGljYXRpb24gb2YgdGhlIERTTS4gSW4gdGhlIGxvbmcgcnVuLCB0aGUgaW1wYWN0IG9uIHRoZSBzb2NpZXR5IHdpbGwgYmUgZmVsdCBpbiB0ZXJtcyBvZiBsb3dlciBmdWVsIGNvbnN1bXB0aW9uIGluIGF2aWF0aW9uIGFuZCBvdGhlciBpbmR1c3RyeSBhbmQgcmVkdWNlZCBjYXJib24gZm9vdHByaW50IGFzIGEgcmVzdWx0IG9mIG1vcmUgZWZmaWNpZW50IGRlc2lnbiBvZiBsaWdodCB3ZWlnaHQgc3RydWN0dXJlcy48YnIgLz48YnIgLz5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSjAwNzcwNi8xDEVQL0owMDc3MDYvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkEudJhRO364h19r6lyb3ZqUTDe0g=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKBlduHBALQvN++DAKT/OCVA3QmBKph/L9Ruekv7vp7/CQ6aWEL" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/J007706/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Dynamic Stiffness Formulation for Plates with Arbitray Boundary Conditions through the Solution of the Biharmonic Equation</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=823'>Banerjee, Professor JR</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering and Mathematical Sci</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">City University London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">06 February 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">05 August 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="332,774.89" class="DetailValue">332,775</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Aerodynamics</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>13 Dec 2011</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-C9S1U">Materials, Mechanical and Medical Engineering</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Aircraft structures are generally modelled as an assembly of thin-walled structural elements. In particular, the top and bottom skins, torsion box, ribs and webs of the wing are idealised as plates or plate assemblies. The modal analysis of such structures plays an important role in aeronautical design. The analysis also facilitates aeroelastic and response calculations. The usually adopted finite element method (FEM) is generally used to carry out such analysis. However, the FEM is an approximate method which is numerically intensive, requiring considerable computational resources and modelling efforts. The results from the FEM generally converge to exact results with increasing number of elements, but the accuracy of results cannot be always guaranteed. This is particularly true in modal analysis at high frequencies when the FEM can become unreliable. There is a powerful alternative to the FEM in modal analysis which is that of the dynamic stiffness method (DSM). The DSM has far superior modelling capability than the FEM and it requires much less computational resources, but importantly, the accuracy of results in the DSM is always guaranteed. The method provides exact results because the element properties are derived from the exact solution of the governing differential equation of motion of the element. This is in sharp contrast with assumed shape functions used in the FEM to derive the element properties. Thus, the discretisation error in the FEM is non-existent in the DSM. The DSM is well developed for beam elements, but for plate elements, the method is still somehow deficient at present because only the restricted case when the plate is simply supported has been investigated to date. This restriction has prevented a general purpose use of the DSM in a wider context. The purpose of this project is to remove this restriction and develop the DSM for plates with arbitrary boundary conditions so that modal analysis of complex aircraft structures in an exact sense becomes possible. The research will make the DSM a versatile tool. It will be a major break-through in structural mechanics.<br /><br />The difficulty to derive the dynamic stiffness (DS) matrix of a plate element for the general case arises from the fact that the bi-harmonic equation which governs the dynamic behaviour of plates is not easily amenable to closed form analytical solution. The DS development of a plate with general boundary conditions thus relies on the successful solution of the biharmonic equation which is a highly complex mathematical problem. Recent progresses made by two eminent mathematicians in particular (who will take part in the project) offer great prospects for the proposed DSM development. As the DS matrix will be developed through the solution of the biharmonic equation, the interaction of the PI and his research team with the above two mathematicians will play an important role in this project. Initially, attention will be focused on isotropic plate materials, but later, anisotropic plate materials will also be considered. Once the DS matrix is developed, the Wittrick-Williams algorithm will be used as solution technique to compute the natural frequencies and mode shapes of complex aeronautical structures. The results will be extensively validated by a number of case studies including a wing-box with stringers and by using the FEM and other results in the literature. Computer programs using Fortran and Matlab will be developed and documented with the provision of a user manual. The new knowledge that will accrue from the project will have considerable impact upon the national economy by creating future investments in new design methodologies in computer aided structural analysis and design through the application of the DSM. In the long run, the impact on the society will be felt in terms of lower fuel consumption in aviation and other industry and reduced carbon footprint as a result of more efficient design of light weight structures.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

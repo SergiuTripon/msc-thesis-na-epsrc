@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	System Architecture Challenges: Supergen+ for HubNet
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM015025%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAxNTAyNS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVFPHN0cm9uZz5TeXN0ZW0gQXJjaGl0ZWN0dXJlIENoYWxsZW5nZXM6IFN1cGVyZ2VuKyBmb3IgSHViTmV0PC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zNjUzOSc+R3JlZW4sIFByb2Zlc3NvciBUPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgQWCAIBD2QWAmYPFQNCPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMjEwNDU2Jz5XdSwgUHJvZmVzc29yIEo8L2E+PzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTE5NTMwMyc+S29ja2FyLCBEciBJPC9hPj08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0yODgyNyc+R3Jvc3MsIERyIFI8L2E+ZAICD2QWAmYPFQNEPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00MDYxMic+U3RyYmFjLCBQcm9mZXNzb3IgRzwvYT5GPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01MTAxMic+TWNBcnRodXIsIFByb2Zlc3NvciBTPC9hPkM8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTc0MTkxJz5CdXJ0LCBQcm9mZXNzb3IgR008L2E+ZAIDD2QWAmYPFQNIPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01OTA1Nic+TWlsYW5vdmljLCBQcm9mZXNzb3IgSlY8L2E+QDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTIxMzg4Jz5HYWxsb3dheSwgRHIgUzwvYT5FPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNDY2MTk3Jz5VZ2FsZGUgTG9vLCBEciBDIEU8L2E+ZAIED2QWAmYPFQNHPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xMTQ0MjQnPlJvd2xhbmQsIFByb2Zlc3NvciBTTTwvYT49PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD02OTM2OSc+QmFycmlhLCBEciBKPC9hPj88YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS00OTkwMzAnPlByZWVjZSwgRHIgUjwvYT5kAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFJUVsZWN0cmljYWwgYW5kIEVsZWN0cm9uaWMgRW5naW5lZXJpbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdJbXBlcmlhbCBDb2xsZWdlIExvbmRvbmRkAggPZBYCAgEPZBYCAgEPDxYCHwQFF1N0YW5kYXJkIFJlc2VhcmNoIC0gTlIxZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgSmFudWFyeSAyMDE1ZGQCAw9kFgICAQ8PFgIfBAUQMzEgRGVjZW1iZXIgMjAxNmRkAgUPZBYCAgEPDxYEHwQFBzc2Myw5ODAeB1Rvb2xUaXAFCjc2Myw5NzkuNThkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhtTdXN0YWluYWJsZSBFbmVyZ3kgTmV0d29ya3MAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgZFbmVyZ3kAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMjggQXVnIDIwMTRkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFDVNVUEVSR0VOIFBMVVMfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0yMkY1NEtkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXRGUh1Yk5ldCBpcyBhIG11bHRpLXVuaXZlcnNpdHkgY29sbGFib3JhdGl2ZSBwcm9qZWN0IHdoaWNoIGlzIHRocmVlIHllYXJzIGludG8gYSBmaXZlLXllYXIgcHJvZ3JhbW1lIG9mIGV4cGxvcmluZyB0aGUgZnV0dXJlIGZvcm0gb2YgZW5lcmd5IG5ldHdvcmtzLiAgSW4gcGFydGljdWxhciB3ZSBhcmUgZXhwbG9yaW5nIHRoZSB1c2Ugb2Ygc21hcnQgZ3JpZCB0ZWNobm9sb2dpZXMgYW5kIEhWREMgdG8gaW50ZWdyYXRlIGhpZ2ggcGVuZXRyYXRpb25zIG9mIHJlbmV3YWJsZSBlbmVyZ3kgaW50byB0aGUgZWxlY3RyaWNpdHkgc3lzdGVtIGFuZCBpbnZlc3RpZ2F0aW5nIGhvdyB0byBtYW5hZ2UgY2hhbmdlcyBpbiAgZW5lcmd5IHN1cHBseSB0byBwcml2YXRlIHZlaGljbGVzIGFuZCBidWlsZGluZyBoZWF0aW5nLiAgSXQgZG9lcyB0aGlzIHRocm91Z2ggaXRzIG93biBwcm9ncmFtbWUgb2YgY29yZSByZXNlYXJjaCBhbmQgdGhyb3VnaCBkcmF3aW5nIHRvZ2V0aGVyIHRoZSByZXNlYXJjaCBvZiB0aGUgR3JhbmQgQ2hhbGxlbmdlcyBwcm9qZWN0cyBpbiB0aGlzIGFyZWEgYW5kIG90aGVyIFJlc2VhcmNoIENvdW5jaWwgYWN0aXZpdGllcy4gVGhpcyBwcm9wb3NhbCBpcyBmb3IgYW4gZXh0ZW5zaW9uIHRvIHRoZSBIdWJOZXQncyBjb3JlIHJlc2VhcmNoIGluIG9yZGVyIHRvIGFkZHJlc3MgY2hhbGxlbmdlcyBub3QgaWRlbnRpZmllZCBpbiB0aGUgb3JpZ2luYWwgcHJvcG9zYWwuIDxiciAvPjxiciAvPlR3byB0aGVtZXMgYXBwZWFyIGluIGFueSBkaXNjdXNzaW9uIG9mIHRoZSBzbWFydCBncmlkOiAoMSkgdGhlIG9wcG9ydHVuaXRpZXMgZm9yIGNvbnN1bWVycyB0byBiZSBiZWNvbWUgbW9yZSBhY3RpdmUgc28gdGhhdCB0aGV5IGJlbmVmaXQgZnJvbSB0cmFkaW5nIHRoZWlyIGVuZXJneSBuZWVkcyBhbmQgcHJvZHVjdGlvbiwgYW5kICgyKSB0aGUgY3JlYXRpb24gb2YgYW4gSUNUIHN5c3RlbSB0aGF0IGdlbmVyYXRlcyB2ZXJ5IGxhcmdlIHZvbHVtZSBvZiBwb3dlciBmbG93IGFuZCB2b2x0YWdlIGRhdGEgdGhhdCBjYW4gYmUgaGFybmVzc2VkIHRvIHJ1biB0aGUgc3lzdGVtIG1vcmUgZWZmaWNpZW50bHkuIERlc3BpdGUgYmVpbmcgYSB3ZWxsIGtub3duIHRvcGljIGFuZCB0aGUgc3ViamVjdCBvZiByZXNlYXJjaCBwcm9qZWN0cyBvbiBzcGVjaWZpYyBhc3BlY3RzLCB0aGVyZSBpcyBzdGlsbCBhIGxhY2sgb2YgY29uc2Vuc3VzIG92ZXIgcHJlY2lzZWx5IGhvdyBjdXN0b21lcnMgY2FuIHBsYXkgdGhlaXIgcm9sZSAoaW4gdGVybXMgb2YgY2hvaWNlcyB0aGV5IGNhbiBtYWtlLCB0ZWNobm9sb2d5IHRvIGFzc2lzdCBhbmQgbWFya2V0cyB0aGF0IGRlbGl2ZXIgdmFsdWUgdG8gYWxsIHBhcnRpY2lwYW50cykuIFRoZXJlIGFsc28gcmVtYWlucyBhIGxhY2sgb2YgY2xhcml0eSBvdmVyIHdoYXQgZXhhY3RseSBpcyB0aGUgY2hhbGxlbmdlIGluIHBvd2VyIHN5c3RlbSBvcGVyYXRpb24gdG8gd2hpY2ggImJpZyBkYXRhIiB0ZWNobm9sb2d5IGlzIHRoZSBhbnN3ZXIuIFdlIHNlZWsgdG8gZ2FpbiBmdXJ0aGVyIHVuZGVyc3RhbmRpbmcgaW4gdGhlc2UgYXJlYXMgdGhyb3VnaCBzdGFrZWhvbGRlciBlbmdhZ2VtZW50IGFjdGl2aXRpZXMuPGJyIC8+PGJyIC8+V2UgcHJvcG9zZSB0byBleHBsb3JlIGZ1cnRoZXIgdGhlIG9wcG9ydHVuaXRpZXMgb2YgImJpZyBkYXRhIiB0aHJvdWdoIGEgY2FzZSBzdHVkeSBvZiBkYXRhIHVzZWQgaW4gY29uZGl0aW9uIG1vbml0b3Jpbmcgb2YgdHJhbnNmb3JtZXJzIGFuZCBjYWJsZXMgdG8gcHJlZGljdCBhY2N1cmF0ZWx5IGxpZmV0aW1lIGFuZCBpbmNpcGllbnQgZmFpbHVyZS4gPGJyIC8+PGJyIC8+QSBrZXkgZmVhdHVyZSBvZiB0aGUgZWxlY3RyaWNpdHkgc3lzdGVtIGlzIHRoZSBsb3cgcmF0ZSBwb3dlciBjdXRzIGFuZCB0aGUgaGlnaCBkZXBlbmRlbmNlIHBsYWNlZCBvbiBlbGVjdHJpY2l0eSBieSBtb2Rlcm4gc29jaWV0eS4gTW92aW5nIGZyb20gYSBzeXN0ZW0gd2hlcmUgY29udHJvbCBpcyBleGVyY2lzZWQgcHJpbWFyaWx5IGJ5IGFjdGlvbnMgaW4gcG93ZXIgc3RhdGlvbnMgdG8gYSBzeXN0ZW0gd2hlcmUgY29uc3VtZXJzIGFyZSBlbmNvdXJhZ2VkIHRvIG1vZGlmeSB0aGVpciBiZWhhdmlvdXIgYW5kIGJlY29tZSBwYXJ0IG9mIHRoZSBjb250cm9sIGFuZCB3aGVyZSBzb21lIHBvd2VyIHNvdXJjZXMgKHdpbmQgYW5kIFBWIGZvciBleGFtcGxlKSBhcmUgbm90IHJlYWRpbHkgY29udHJvbGxlZCByYWRpY2FsbHkgY2hhbmdlcyB0aGUgcmlzayBwcm9maWxlIG9mIHRoZSBzeXN0ZW0uIFdlIHByb3Bvc2UgdG8gZGV2ZWxvcCBuZXcgYW5hbHl0aWNhbCB0ZWNobmlxdWVzIHRvIG1vZGVsIHRoaXMgYW5kIHBsYW4gZnV0dXJlIHN5c3RlbXMuIEEgc3BlY2lmaWMgY29udHJvbCBwcm9ibGVtIHRoYXQgd2lsbCBiZSBhbmFseXNlZCBpbiBkZXB0aCBpcyB0aGUgZ3JhZHVhbCByZW1vdmFsIGZyb20gdGhlIHN5c3RlbSBvZiB0aGUgaW5lcnRpYSBwcm92aWRlZCBieSB0aGUgc3Bpbm5pbmcgbWFzc2VzIG9mIGNvbnZlbnRpb25hbCBwb3dlciBzdGF0aW9uIGdlbmVyYXRvcnMuIFRoaXMgaW5lcnRpYSBoZWxwcyBrZWVwIHRoZSBzeXN0ZW0gZnJlcXVlbmN5IGF0IDUwIEh6LiBBbHJlYWR5IElyZWxhbmQgbGltaXRzIHRoZSBwcm9kdWN0aW9uIGJ5IHdpbmQgdHVyYmluZXMgc28gdGhhdCBzdWZmaWNpZW50IGluZXJ0aWEgaXMgcmV0YWluZWQuIFdlIHdpbGwgZXhwbG9yZSB3aGVyZSB0aGUgbGltaXQgbGllcyBmb3IgR3JlYXQgQnJpdGFpbiBhbmQgd2hhdCBpbm5vdmF0aW9ucyBtaWdodCBhZHZhbmNlIHRoYXQgbGltaXQuIDxiciAvPjxiciAvPkZpbmFsbHkgdG8gYWRkcmVzcyB0aGUgaXNzdWVzIGFzc29jaWF0ZWQgd2l0aCBpbmNyZWFzZWQgdW5jZXJ0YWludGllcyBpbiBzeXN0ZW0gb3BlcmF0aW9uIGFuZCBtYW5nZSB0aGUgcmlzayBvZiBzeXN0ZW0gYmVjb21pbmcgbGVzcyBjb250cm9sbGFibGUgYW5kIHZ1bG5lcmFibGUgdG8gZXh0ZXJuYWwgZGlzdHVyYmFuY2VzLCBuZXcgbWV0aG9kb2xvZ2llcyB3aWxsIG5lZWQgdG8gYmUgZGV2ZWxvcGVkIHRvIHF1YW50aWZ5IHRoZSByaXNrIHByb2ZpbGUgb2YgYSBmdXR1cmUgcG93ZXIgc3lzdGVtIGFuZCBob3cgdGhpcyBwcm9maWxlIGlzIGFmZmVjdGVkIGJ5IHZhcmlvdXMgZXBpc3RlbWljIChkYXRhIHNob3J0YWdlIG9yIG1vZGVsIHNpbXBsaWZpY2F0aW9uKSBhbmQgYWxlYXRvcnkgKGluaGVyZW50IHJhbmRvbSBiZWhhdmlvdXIpIHVuY2VydGFpbnRpZXMgaW4gc3lzdGVtIG1vZGVsIGFuZCBvcGVyYXRpb24uZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5pbXBlcmlhbC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5pbXBlcmlhbC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMTUwMjUvMQxFUC9NMDE1MDI1LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZBZWc/XU1W4Msa+5AOdAU7OGXdmc" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLQpb6BCwLQvN++DAKT/OCVA1jsWOzgBI6MPzwG7U/F5y+0RxDI" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M015025/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>System Architecture Challenges: Supergen+ for HubNet</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=36539'>Green, Professor T</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-210456'>Wu, Professor J</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-195303'>Kockar, Dr I</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-28827'>Gross, Dr R</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=40612'>Strbac, Professor G</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=51012'>McArthur, Professor S</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=74191'>Burt, Professor GM</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=59056'>Milanovic, Professor JV</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=121388'>Galloway, Dr S</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-466197'>Ugalde Loo, Dr C E</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=114424'>Rowland, Professor SM</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=69369'>Barria, Dr J</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-499030'>Preece, Dr R</a></td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Electrical and Electronic Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Imperial College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research - NR1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 December 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="763,979.58" class="DetailValue">763,980</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Sustainable Energy Networks</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Energy</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>28 Aug 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-22F54K">SUPERGEN PLUS</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">HubNet is a multi-university collaborative project which is three years into a five-year programme of exploring the future form of energy networks.  In particular we are exploring the use of smart grid technologies and HVDC to integrate high penetrations of renewable energy into the electricity system and investigating how to manage changes in  energy supply to private vehicles and building heating.  It does this through its own programme of core research and through drawing together the research of the Grand Challenges projects in this area and other Research Council activities. This proposal is for an extension to the HubNet's core research in order to address challenges not identified in the original proposal. <br /><br />Two themes appear in any discussion of the smart grid: (1) the opportunities for consumers to be become more active so that they benefit from trading their energy needs and production, and (2) the creation of an ICT system that generates very large volume of power flow and voltage data that can be harnessed to run the system more efficiently. Despite being a well known topic and the subject of research projects on specific aspects, there is still a lack of consensus over precisely how customers can play their role (in terms of choices they can make, technology to assist and markets that deliver value to all participants). There also remains a lack of clarity over what exactly is the challenge in power system operation to which "big data" technology is the answer. We seek to gain further understanding in these areas through stakeholder engagement activities.<br /><br />We propose to explore further the opportunities of "big data" through a case study of data used in condition monitoring of transformers and cables to predict accurately lifetime and incipient failure. <br /><br />A key feature of the electricity system is the low rate power cuts and the high dependence placed on electricity by modern society. Moving from a system where control is exercised primarily by actions in power stations to a system where consumers are encouraged to modify their behaviour and become part of the control and where some power sources (wind and PV for example) are not readily controlled radically changes the risk profile of the system. We propose to develop new analytical techniques to model this and plan future systems. A specific control problem that will be analysed in depth is the gradual removal from the system of the inertia provided by the spinning masses of conventional power station generators. This inertia helps keep the system frequency at 50 Hz. Already Ireland limits the production by wind turbines so that sufficient inertia is retained. We will explore where the limit lies for Great Britain and what innovations might advance that limit. <br /><br />Finally to address the issues associated with increased uncertainties in system operation and mange the risk of system becoming less controllable and vulnerable to external disturbances, new methodologies will need to be developed to quantify the risk profile of a future power system and how this profile is affected by various epistemic (data shortage or model simplification) and aleatory (inherent random behaviour) uncertainties in system model and operation.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.imperial.ac.uk                                                                           '>http://www.imperial.ac.uk                                                                           </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

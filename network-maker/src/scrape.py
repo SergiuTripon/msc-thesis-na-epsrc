@@ -33,7 +33,7 @@ class ExtractAreas:
     def extract_area_info():
 
         # if areas file does not exist
-        if not os.path.isfile('../output/areas/areas.csv'):
+        if not os.path.isfile('../output/areas/info/area_info.csv'):
 
             # variable to hold page
             page = requests.get('http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx')
@@ -63,7 +63,7 @@ class ExtractAreas:
             grant_vals = tree.xpath(grant_val_xpath)
 
             # variable to hold output file
-            output_file = open('../output/areas/areas.csv', mode='a')
+            output_file = open('../output/areas/info/area_info.csv', mode='a')
 
             # variable to hold zipped attributes
             attr_zip = zip(names, urls, grant_nums, prop_vals, grant_vals)
@@ -91,7 +91,7 @@ class ExtractAreas:
                                                                       currency(grant_val, grouping=True)))
 
             # variable to hold output file
-            output_file = open(r'../output/areas/areas.pkl', 'wb')
+            output_file = open(r'../output/areas/info/area_info.pkl', 'wb')
             # write data structure to file
             dump(areas, output_file)
             # close output file
@@ -107,17 +107,17 @@ class ExtractAreas:
     def extract_grant_info():
 
         # if grants file does not exist
-        if not os.path.isfile('../output/areas/grants.csv'):
+        if not os.path.isfile('../output/areas/info/grant_info.csv'):
 
             # variable to hold input file
-            input_file = open(r'../output/areas/areas.pkl', 'rb')
+            input_file = open(r'../output/areas/info/area_info.pkl', 'rb')
             # load data structure from file
             areas = load(input_file)
             # close input file
             input_file.close()
 
             # variable to hold output file
-            output_file = open('../output/areas/grants.csv', mode='a')
+            output_file = open('../output/areas/info/grant_info.csv', mode='a')
 
             # variable to hold grants dictionary
             grants = OrderedDict()
@@ -165,7 +165,7 @@ class ExtractAreas:
                 output_file.write('"{}","{}"\n'.format(area_name, refs_total_vals_currency))
 
             # variable to hold output file
-            output_file = open(r'../output/areas/grants.pkl', 'wb')
+            output_file = open(r'../output/areas/info/grant_info.pkl', 'wb')
             # write data structure to file
             dump(grants, output_file)
             # close output file
@@ -192,6 +192,10 @@ class ExtractTopics:
     # runs other functions
     def run():
 
+        # extract topic urls
+        ExtractTopics.extract_topic_urls()
+        # extract grant urls
+        ExtractTopics.extract_grant_urls()
         # extract topic information
         ExtractTopics.extract_topic_info()
         # extract grant information
@@ -202,16 +206,122 @@ class ExtractTopics:
     ####################################################################################################################
 
     @staticmethod
-    # extracts topic information
-    def extract_topic_info():
+    # extracts topic urls
+    def extract_topic_urls():
 
-        # if topics file does not exist
-        if not os.path.isfile('../output/topics/topics.csv'):
+        # if topic urls file does not exist
+        if not os.path.isfile('../output/topics/urls/topics.txt'):
 
             # variable to hold page
             page = requests.get('http://gow.epsrc.ac.uk/NGBOListTopics.aspx')
             # variable to hold tree
             tree = html.fromstring(page.content)
+
+            # variable to hold url xpath
+            url_xpath = "//table[@id='dgDetails']/tr[position()>1]/td[position()=1]/a/@href"
+
+            # variable to hold urls
+            urls = tree.xpath(url_xpath)
+
+            # variable to hold output file
+            output_file = open('../output/topics/urls/topics.txt', mode='w')
+
+            # write topics page url to file
+            output_file.write('http://gow.epsrc.ac.uk/NGBOListTopics.aspx\n')
+
+            # variable to hold full urls
+            full_urls = []
+
+            # for url in urls
+            for url in urls:
+                # if url is not in full urls
+                if url not in full_urls:
+                    # add url to full urls
+                    full_urls += [url]
+                    # write url to file
+                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
+
+            # variable to hold output file
+            output_file = open(r'../output/topics/urls/topics.pkl', 'wb')
+            # write data structure to file
+            dump(full_urls, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of topic urls completed ({} topic urls extracted)'.format(len(full_urls)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts grant urls
+    def extract_grant_urls():
+
+        # if grant urls file does not exist
+        if not os.path.isfile('../output/topics/urls/grants.txt'):
+
+            # variable to hold input file
+            input_file = open(r'../output/topics/urls/topics.pkl', 'rb')
+            # load data structure from file
+            topic_urls = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold urls
+            urls = []
+
+            # for topic url in topic urls
+            for topic_url in topic_urls:
+
+                # variable to hold page
+                page = requests.get('http://gow.epsrc.ac.uk/' + topic_url)
+                # variable to hold tree
+                tree = html.fromstring(page.content)
+
+                # variable to hold url xpath
+                url_xpath = "//table[@id='dgDetails']/tr[position()>1]/td[position()=1]/a/@href"
+
+                # add urls to urls
+                urls += tree.xpath(url_xpath)
+
+            # variable to hold full urls
+            full_urls = []
+
+            # variable to hold output file
+            output_file = open('../output/topics/urls/grants.txt', mode='w')
+
+            # for url in urls
+            for url in urls:
+                # if url is not in full urls
+                if url not in full_urls:
+                    # add url to full urls
+                    full_urls += [url]
+                    # write url to file
+                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
+
+            # variable to hold output file
+            output_file = open(r'../output/topics/urls/grants.pkl', 'wb')
+            # write data structure to file
+            dump(full_urls, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of grant urls completed ({} grant urls extracted)'.format(len(full_urls)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts topic information
+    def extract_topic_info():
+
+        # if topics file does not exist
+        if not os.path.isfile('../output/topics/info/topic_info.csv'):
+
+            # variable to hold page
+            page = open(r'../output/topics/html/topics/NGBOListTopics.aspx', "r").read()
+            # variable to hold tree
+            tree = html.fromstring(page)
 
             # variable to hold name xpath
             name_xpath = "//table[@id='dgDetails']/tr[position()>1]/td[position()=1]/a/text()"
@@ -241,7 +351,7 @@ class ExtractTopics:
             topics = OrderedDict((name, [url, int(grant_num), atoi(val)]) for name, url, grant_num, val in attr_zip)
 
             # variable to hold output file
-            output_file = open('../output/topics/topics.csv', mode='w')
+            output_file = open('../output/topics/info/topic_info.csv', mode='w')
 
             # for name and attributes in topics dictionary
             for name, attr in topics.items():
@@ -250,7 +360,7 @@ class ExtractTopics:
                                                                  currency(attr[2], grouping=True)))
 
             # variable to hold output file
-            output_file = open(r'../output/topics/topics.pkl', 'wb')
+            output_file = open(r'../output/topics/info/topic_info.pkl', 'wb')
             # write data structure to file
             dump(topics, output_file)
             # close output file
@@ -266,25 +376,25 @@ class ExtractTopics:
     def extract_grant_info():
 
         # if grants file does not exist
-        if not os.path.isfile('../output/topics/grants.csv'):
+        if not os.path.isfile('../output/topics/info/grant_info.csv'):
 
             # variable to hold input file
-            input_file = open(r'../output/topics/topics.pkl', 'rb')
+            input_file = open(r'../output/topics/urls/topics.pkl', 'rb')
             # load data structure from file
-            topics = load(input_file)
+            topic_urls = load(input_file)
             # close input file
             input_file.close()
 
             # variable to hold grants list
             grants = []
 
-            # for attributes in topics dictionary
-            for attr in topics.values():
+            # for topic url in topics urls
+            for topic_url in topic_urls:
 
                 # variable to hold page
-                page = requests.get('http://gow.epsrc.ac.uk/' + attr[0])
+                page = open(r'../output/topics/html/topics/{}'.format(topic_url), "r").read()
                 # variable to hold tree
-                tree = html.fromstring(page.content)
+                tree = html.fromstring(page)
 
                 # variable to hold reference xpath
                 ref_xpath = "//table[@id='dgDetails']/tr[position()>1]/td[position()=1]/a/@title"
@@ -323,7 +433,7 @@ class ExtractTopics:
             grants = OrderedDict((grant[0], [grant[1], grant[2]]) for grant in grants)
 
             # variable to hold output file
-            output_file = open('../output/topics/grants.csv', mode='w')
+            output_file = open('../output/topics/info/grant_info.csv', mode='w')
 
             # for name and attributes in grants dictionary
             for ref, attr in grants.items():
@@ -331,7 +441,7 @@ class ExtractTopics:
                 output_file.write('"{}","{}","{}"\n'.format(ref, attr[0], currency(attr[1], grouping=True)))
 
             # variable to hold output file
-            output_file = open(r'../output/topics/grants.pkl', 'wb')
+            output_file = open(r'../output/topics/info/grant_info.pkl', 'wb')
             # write data structure to file
             dump(grants, output_file)
             # close output file
@@ -347,15 +457,15 @@ class ExtractTopics:
     def extract_detailed_grant_info():
 
         # if detailed grants file does not exist
-        if not os.path.isfile('../output/topics/detailed_grants.csv'):
+        if not os.path.isfile('../output/topics/info/detailed_grant_info.csv'):
 
             # print progress
             print('> Extraction of detailed grants started')
 
             # variable to hold input file
-            input_file = open(r'../output/topics/grants.pkl', 'rb')
+            input_file = open(r'../output/topics/urls/grants.pkl', 'rb')
             # load data structure from file
-            grants = load(input_file)
+            grant_urls = load(input_file)
             # close input file
             input_file.close()
 
@@ -365,13 +475,13 @@ class ExtractTopics:
             # variable to hold extraction count set to 1
             extraction_count = 1
 
-            # for reference and attributes in grants dictionary
-            for ref, attr in grants.items():
+            # for grant url in grant urls
+            for grant_url in grant_urls:
 
                 # variable to hold page
-                page = requests.get('http://gow.epsrc.ac.uk/' + attr[0])
+                page = open(r'../output/topics/html/grants/{}'.format(grant_url.replace('/', '%2F')), "r").read()
                 # variable to hold tree
-                tree = html.fromstring(page.content)
+                tree = html.fromstring(page)
 
                 # variable to hold topics xpath
                 topics_xpath = "//table[@id='tblFound']/tr[position()=11]/td[position()=2]/table/tr/td/text()"
@@ -383,24 +493,24 @@ class ExtractTopics:
                 clean_topics = [topic.strip() for topic in topics if topic.strip()]
 
                 # add detailed grant to detailed grants dictionary
-                detailed_grants[ref] = clean_topics
+                detailed_grants[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = clean_topics
 
                 # print progress
                 print('> Extraction of detailed grants in progress'
-                      '({} detailed grant(s) extracted)'.format(extraction_count))
+                      ' ({} detailed grant(s) extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
 
             # variable to hold output file
-            output_file = open('../output/topics/detailed_grants.csv', mode='w')
+            output_file = open('../output/topics/info/detailed_grant_info.csv', mode='w')
 
             for ref, clean_topics in detailed_grants.items():
                 # write name and attributes to file
                 output_file.write('"{}","{}"\n'.format(ref, clean_topics))
 
             # variable to hold output file
-            output_file = open(r'../output/topics/detailed_grants.pkl', 'wb')
+            output_file = open(r'../output/topics/info/detailed_grant_info.pkl', 'wb')
             # write data structure to file
             dump(detailed_grants, output_file)
             # close output file
@@ -408,7 +518,7 @@ class ExtractTopics:
 
             # print progress
             print('> Extraction of detailed grants completed'
-                  '({} detailed grants extracted)'.format(len(detailed_grants)))
+                  ' ({} detailed grants extracted)'.format(len(detailed_grants)))
 
 
 ########################################################################################################################
@@ -418,7 +528,7 @@ class ExtractTopics:
 def main():
 
     # extract areas
-    # ExtractAreas.run()
+    ExtractAreas.run()
 
     # extract topics
     ExtractTopics.run()

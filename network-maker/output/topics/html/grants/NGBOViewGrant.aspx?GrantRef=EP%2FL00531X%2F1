@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Patient-specific MRI sequence design using Direct Signal Control
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fL00531X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTDAwNTMxWC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVRPHN0cm9uZz5QYXRpZW50LXNwZWNpZmljIE1SSSBzZXF1ZW5jZSBkZXNpZ24gdXNpbmcgRGlyZWN0IFNpZ25hbCBDb250cm9sPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAU/PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMjU5ODI5Jz5NYWxpaywgRHIgU0o8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUkSW1hZ2luZyAmYW1wOyBCaW9tZWRpY2FsIEVuZ2luZWVyaW5nZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUS2luZ3MgQ29sbGVnZSBMb25kb25kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRBFUFNSQyBGZWxsb3dzaGlwZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUNMzEgTWFyY2ggMjAxNGRkAgMPZBYCAgEPDxYCHwQFEDMwIE5vdmVtYmVyIDIwMTdkZAIFD2QWAgIBDw8WBB8EBQc1NjUsOTg3HgdUb29sVGlwBQo1NjUsOTg2Ljg4ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAiFNZWQuSW5zdHJ1bWVudC5EZXZpY2UmYW1wOyBFcXVpcC4AZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAgpIZWFsdGhjYXJlAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAICHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgJkFgJmD2QWBAIBD2QWBmYPZBYCAgEPDxYCHwQFCzEwIFNlcCAyMDEzZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTtFbmdpbmVlcmluZyBGZWxsb3dzaGlwcyBJbnRlcnZpZXcgTWVldGluZyAtIDEwLzExIFNlcHQgMjAxMx8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTFHT1ZJNWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCAg9kFgZmD2QWAgIBDw8WAh8EBQsyNSBKdW4gMjAxM2RkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUvRW5naW5lZXJpbmcgUHJpb3JpdGlzYXRpb24gTWVldGluZyAyNSBKdW5lIDIwMTMfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0xOTVDOVBkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWaH01hZ25ldGljIFJlc29uYW5jZSBJbWFnaW5nIGlzIGEgcG93ZXJmdWwgYW5kIHZlcnNhdGlsZSBtZWFucyBmb3IgdmlzdWFsaXppbmcgdGhlIGlubmVyIHdvcmtpbmdzIG9mIHRoZSBodW1hbiBib2R5LCBmb3IgY2xpbmljYWwgZGlhZ25vc2lzIG9yIGZvciBtZWRpY2FsIHJlc2VhcmNoLiBJbWFnZSBxdWFsaXR5IGZyb20gTVJJIGhhcyBkcmFtYXRpY2FsbHkgaW1wcm92ZWQgdGhyb3VnaCB0aGUgeWVhcnMgYW5kIGNvbnRpbnVlcyB0byBkbyBzbyBhcyB0ZWNobm9sb2d5IGFuZCB0aGUgbWV0aG9kcyB3ZSB1c2UgYXJlIHJlZmluZWQuIE9uZSBhdmVudWUgZm9yIHRoaXMgaW1wcm92ZW1lbnQgaGFzIGJlZW4gdG8gZGV2ZWxvcCBzY2FubmVycyB0aGF0IGFyZSBiYXNlZCBvbiBzdHJvbmdlciBtYWduZXRzIC0gdGhlIHNpZ25hbCBzdHJlbmd0aCBpbiBvdXIgaW1hZ2VzIGluY3JlYXNlcyB3aXRoIHRoZSBtYWduZXRpYyBmaWVsZCB1c2VkIGFuZCB0aGlzIGhhcyBsZWFkIHRvIGEgbW92ZSBmcm9tIHNjYW5uZXJzIHdpdGggMS41VCBtYWduZXRzIHRvIDNUIHdpdGggc29tZSByZXNlYXJjaCBzeXN0ZW1zIHVzaW5nIDdUIG1hZ25ldHMgYW5kIGJleW9uZC4gVGhlIHVzZSBvZiBzdWNoIHN0cm9uZyBtYWduZXRpYyBmaWVsZHMgYWxsb3dzIHVzIHRvIG1ha2UgaW1hZ2VzIHdpdGggdmVyeSBoaWdoIHJlc29sdXRpb24gYW5kIHRvIGdhaW4gZnVuY3Rpb25hbCBpbmZvcm1hdGlvbiwgc3VjaCBhcyBicmFpbiBhY3RpdmF0aW9uIG11Y2ggbW9yZSBhY2N1cmF0ZWx5LiBVbmZvcnR1bmF0ZWx5IGhpZ2ggZmllbGQgc3RyZW5ndGggbWFnbmV0cyBkbyBoYXZlIGEgZGlzYWR2YW50YWdlOiBNUkkgdXNlcyByYXBpZGx5IG9zY2lsbGF0aW5nIG1hZ25ldGljIGZpZWxkcyB0byBwcm9kdWNlIHNpZ25hbHMgZnJvbSB3aXRoaW4gdGhlIHBhdGllbnQsIHdoaWNoIGFyZSB0aGVuIHR1cm5lZCBpbnRvIGltYWdlcy4gVGhlIGZyZXF1ZW5jeSBvZiBvc2NpbGxhdGlvbiByZXF1aXJlZCBpcyBwcm9wb3J0aW9uYWwgdG8gdGhlIG1hZ25ldGljIGZpZWxkIHN0cmVuZ3RoIHVzZWQsIGFuZCBzbyBzdHJvbmcgbWFnbmV0cyByZXF1aXJlIGhpZ2ggZnJlcXVlbmN5IGZpZWxkcy4gQmVjYXVzZSB0aGUgb3NjaWxsYXRpb24gZnJlcXVlbmN5IGlzIHVwIGluIHRoZSByYWRpbyBmcmVxdWVuY3kgcmFuZ2UsIHRoZXNlIGFyZSBrbm93biBhcyByYWRpbyBmcmVxdWVuY3kgb3IgUkYgZmllbGRzLiBUaGUgcHJvYmxlbSBpcyB0aGF0IGhpZ2ggZnJlcXVlbmN5IFJGIGZpZWxkcyBkbyBub3QgcGVuZXRyYXRlIHRoZSBodW1hbiBib2R5IGluIGEgdW5pZm9ybSBtYW5uZXIgLSB0aGV5IGNyZWF0ZSBzdHJvbmcgYW5kIHdlYWsgc3BvdHMgY2F1c2luZyBicmlnaHQgYW5kIGRhcmsgcmVnaW9ucyBpbiB0aGUgaW1hZ2VzIHByb2R1Y2VkLCBtYWtpbmcgdGhlbSBoYXJkIHRvIGludGVycHJldC4gVGhpcyBlZmZlY3QgaXMgZGlmZmljdWx0IHRvIG92ZXJjb21lIGJlY2F1c2UgdGhlIGxvY2F0aW9uIGFuZCBzdHJlbmd0aCBvZiB0aGUgYnJpZ2h0IGFuZCBkYXJrIHBhdGNoZXMgdmFyaWVzIGEgbG90IGRlcGVuZGluZyBvbiB0aGUgc2l6ZSBhbmQgY29tcG9zaXRpb24gKGZhdC1tdXNjbGUtb3JnYW4gYmFsYW5jZSkgb2YgdGhlIHBlcnNvbiBwbGFjZWQgd2l0aGluIHRoZSBzY2FubmVyLiA8YnIgLz48YnIgLz5QYXJhbGxlbCB0cmFuc21pc3Npb24gdGVjaG5vbG9neSBoYXMgYmVlbiBkZXZlbG9wZWQgYXMgYSB3YXkgb2Ygb3ZlcmNvbWluZyB0aGVzZSBwcm9ibGVtcy4gVGhpcyBpbnZvbHZlcyBtb2RpZnlpbmcgdGhlIHdheSBpbiB3aGljaCB0aGUgc2Nhbm5lciBwcm9kdWNlcyBSRiBmaWVsZHMgc28gdGhhdCByYXRoZXIgdGhhbiBoYXZpbmcgYSBzaW5nbGUgc291cmNlLCBpdCB1c2VzIG11bHRpcGxlIHNvdXJjZXMgaW4gcGFyYWxsZWwgKGhlbmNlICdwYXJhbGxlbCB0cmFuc21pc3Npb24nKSBhbmQgdGhlIGFpbSBpcyB0byBwcm9kdWNlIGludGVyZmVyZW5jZSB0aGF0IGxlYWRzIHRvIGltYWdlcyB3aXRoIHVuaWZvcm0gcHJvcGVydGllcy4gVGhlIHBhcmFsbGVsIHNvdXJjZXMgZ2l2ZSB0aGUgc2Nhbm5lciB0aGUgYWJpbGl0eSB0byBhZGFwdCBpdHNlbGYgdG8gdGhlIHNwZWNpZmljIHBlcnNvbiBwbGFjZWQgd2l0aGluIGl0LiBQYXJhbGxlbCB0cmFuc21pc3Npb24gaXMgYSBuZXcgY29uY2VwdCBhbmQgb25seSBhIGZldyByZXNlYXJjaCBNUkkgc3lzdGVtcyBhcm91bmQgdGhlIHdvcmxkIGhhdmUgdGhlIGNhcGFjaXR5IHRvIGRvIHRoaXMgd2l0aCBhIGxhcmdlIG51bWJlciBvZiBwYXJhbGxlbCBzb3VyY2VzLiBUaGVzZSBzeXN0ZW1zIG9mZmVyIGh1Z2UgZmxleGliaWxpdHkgYW5kIGNhbiBjcmVhdGUgaGlnaGx5IGNvbnRyb2xsYWJsZSBSRiBmaWVsZCBwYXR0ZXJucyB0aGF0IHZhcnkgaW4gY29tcGxleCB3YXlzLiBTbyBmYXIgdGhpcyBmbGV4aWJpbGl0eSBoYXMgYmVlbiBtb3N0bHkgdXNlZCB0byB0cnkgdG8gdGFpbG9yIHRoZSBmaWVsZCBwYXR0ZXJucyB0byBtYWtlIHRoZW0gYXMgdW5pZm9ybSBhcyBwb3NzaWJsZSB3aXRoaW4gdGhlIGJvZHksIHdpdGggbGltaXRlZCBzdWNjZXNzLjxiciAvPjxiciAvPkluIHRoaXMgcHJvamVjdCB3ZSB3aWxsIHRha2UgYW4gYWx0ZXJuYXRpdmUgcm91dGUgYW5kIGludmVzdGlnYXRlIG1ldGhvZHMgZm9yIHByb2R1Y2luZyBpbWFnZXMgd2l0aCBkZXNpcmVkIHByb3BlcnRpZXMgYnkgZm9jdXNpbmcgb24gaG93IGFwcGxpZWQgZmllbGRzIGludGVyYWN0IHdpdGggdGhlIHN1YmplY3QgZHVyaW5nIHRoZSBlbnRpcmUgaW1hZ2UgZm9ybWF0aW9uIHByb2Nlc3MuICBNUkkgaXMgc3VjaCBhIHN1Y2Nlc3NmdWwgdGVjaG5pcXVlIGJlY2F1c2UgaXQgaXMgcG9zc2libGUgdG8gZ2VuZXJhdGUgaW1hZ2VzIHdpdGggYSBodWdlIHZhcmlldHkgb2YgZGlmZmVyZW50IGNvbnRyYXN0IHByb3BlcnRpZXMgYnkgdXNpbmcgZGlmZmVyZW50IHNlcXVlbmNlcyBvZiBSRiBwdWxzZXMgYW5kIG1hZ25ldGljIGZpZWxkIGdyYWRpZW50czsgdGhlc2UgYXJlIGtub3duIGFzICdwdWxzZSBzZXF1ZW5jZXMnLiBUaGUgc3ViamVjdCBvZiB0aGUgcHJvcG9zZWQgcmVzZWFyY2ggaXMgdGhlIGlkZWEgdGhhdCBlbnRpcmUgcHVsc2Ugc2VxdWVuY2VzIHNob3VsZCBiZSBhZGFwdGVkIG9uIGEgcGF0aWVudCBzcGVjaWZpYyBiYXNpcyB0byBhY2hpZXZlIG9wdGltYWwgaW1hZ2UgcXVhbGl0eSBmb3IgZWFjaCBzcGVjaWZpYyBzdWJqZWN0LiBUaGlzIGlzIGZ1bmRhbWVudGFsIGNoYW5nZSBpbiB0aGUgd2F5IGluIHdoaWNoIE1SSSBleGFtaW5hdGlvbnMgYXJlIHVzdWFsbHkgY2FycmllZCBvdXQsIGFuZCB3aWxsIHJlcXVpcmUgY29uc2lkZXJhYmxlIG1hdGhlbWF0aWNhbCBhbmQgY29tcHV0YXRpb25hbCBtZXRob2RzIHRvIGFsbG93IGl0IHRvIGJlIGZlYXNpYmxlIGluIHByYWN0aWNlLiBUaGUgcmVzZWFyY2ggd2lsbCBiZSB1bmRlcnRha2VuIHByaW1hcmlseSBhdCBTdC4gVGhvbWFzJyBIb3NwaXRhbCB3aGVyZSBhIHByb3RvdHlwZSBwYXJhbGxlbCB0cmFuc21pc3Npb24gTVJJIHNjYW5uZXIgaGFzIHJlY2VudGx5IGJlZW4gaW5zdGFsbGVkLiBTb21lIGFzcGVjdHMgd2lsbCBhbHNvIGJlIGNhcnJpZWQgb3V0IGluIGNvbmp1bmN0aW9uIHdpdGggcmVzZWFyY2hlcnMgYXQgVXRyZWNodCBVbml2ZXJzaXR5IGF0IHRoZWlyIDdUIE1SSSBmYWNpbGl0eS4gIEVhcmx5IHBpbG90IHdvcmsgaGFzIHByb3ZlbiB0byBiZSBzdWNjZXNzZnVsIGxlYWRpbmcgdG8gbmV3IGlkZWFzIGFib3V0IGhvdyB0byB3b3JrIHdpdGggcGFyYWxsZWwgdHJhbnNtaXNzaW9uIHN5c3RlbXMuIEluIHRoaXMgcHJvamVjdCB3ZSBhaW0gdG8gZGV2ZWxvcCB0aGVzZSBpZGVhcyB0byBjcmVhdGUgY29tcHJlaGVuc2l2ZSBtZXRob2RzIGFuZCB0byBkZW1vbnN0cmF0ZSB0aGUgcmVzdWx0aW5nIGltcHJvdmVtZW50cyBhY3Jvc3MgYSByYW5nZSBvZiBpbWFnaW5nIGFwcGxpY2F0aW9ucy48YnIgLz48YnIgLz5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTDAwNTMxWC8xDEVQL0wwMDUzMVgvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkrYVKO85QTsq9/adBNyMRK7pfNmo=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKPisjDCALQvN++DAKT/OCVA2o8uYOl59hHpiGWiSlPGetdZcN+" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/L00531X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Patient-specific MRI sequence design using Direct Signal Control</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-259829'>Malik, Dr SJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Imaging &amp; Biomedical Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Kings College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">EPSRC Fellowship</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">31 March 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 November 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="565,986.88" class="DetailValue">565,987</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Med.Instrument.Device&amp; Equip.</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>10 Sep 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1GOVI5">Engineering Fellowships Interview Meeting - 10/11 Sept 2013</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr><tr class="DetailValueAlt">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl03_Label1"><b>25 Jun 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl03_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-195C9P">Engineering Prioritisation Meeting 25 June 2013</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl03_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Magnetic Resonance Imaging is a powerful and versatile means for visualizing the inner workings of the human body, for clinical diagnosis or for medical research. Image quality from MRI has dramatically improved through the years and continues to do so as technology and the methods we use are refined. One avenue for this improvement has been to develop scanners that are based on stronger magnets - the signal strength in our images increases with the magnetic field used and this has lead to a move from scanners with 1.5T magnets to 3T with some research systems using 7T magnets and beyond. The use of such strong magnetic fields allows us to make images with very high resolution and to gain functional information, such as brain activation much more accurately. Unfortunately high field strength magnets do have a disadvantage: MRI uses rapidly oscillating magnetic fields to produce signals from within the patient, which are then turned into images. The frequency of oscillation required is proportional to the magnetic field strength used, and so strong magnets require high frequency fields. Because the oscillation frequency is up in the radio frequency range, these are known as radio frequency or RF fields. The problem is that high frequency RF fields do not penetrate the human body in a uniform manner - they create strong and weak spots causing bright and dark regions in the images produced, making them hard to interpret. This effect is difficult to overcome because the location and strength of the bright and dark patches varies a lot depending on the size and composition (fat-muscle-organ balance) of the person placed within the scanner. <br /><br />Parallel transmission technology has been developed as a way of overcoming these problems. This involves modifying the way in which the scanner produces RF fields so that rather than having a single source, it uses multiple sources in parallel (hence 'parallel transmission') and the aim is to produce interference that leads to images with uniform properties. The parallel sources give the scanner the ability to adapt itself to the specific person placed within it. Parallel transmission is a new concept and only a few research MRI systems around the world have the capacity to do this with a large number of parallel sources. These systems offer huge flexibility and can create highly controllable RF field patterns that vary in complex ways. So far this flexibility has been mostly used to try to tailor the field patterns to make them as uniform as possible within the body, with limited success.<br /><br />In this project we will take an alternative route and investigate methods for producing images with desired properties by focusing on how applied fields interact with the subject during the entire image formation process.  MRI is such a successful technique because it is possible to generate images with a huge variety of different contrast properties by using different sequences of RF pulses and magnetic field gradients; these are known as 'pulse sequences'. The subject of the proposed research is the idea that entire pulse sequences should be adapted on a patient specific basis to achieve optimal image quality for each specific subject. This is fundamental change in the way in which MRI examinations are usually carried out, and will require considerable mathematical and computational methods to allow it to be feasible in practice. The research will be undertaken primarily at St. Thomas' Hospital where a prototype parallel transmission MRI scanner has recently been installed. Some aspects will also be carried out in conjunction with researchers at Utrecht University at their 7T MRI facility.  Early pilot work has proven to be successful leading to new ideas about how to work with parallel transmission systems. In this project we aim to develop these ideas to create comprehensive methods and to demonstrate the resulting improvements across a range of imaging applications.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

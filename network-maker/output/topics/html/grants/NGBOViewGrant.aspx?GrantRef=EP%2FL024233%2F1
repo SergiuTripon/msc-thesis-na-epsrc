@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Parameterized Proof Complexity
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fL024233%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTDAyNDIzMy8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAUvPHN0cm9uZz5QYXJhbWV0ZXJpemVkIFByb29mIENvbXBsZXhpdHk8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUQ8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS00MTc3OTAnPkJleWVyc2RvcmZmLCBEciBPPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFEFNjaCBvZiBDb21wdXRpbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRNVbml2ZXJzaXR5IG9mIExlZWRzZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUaRmlyc3QgR3JhbnQgLSBSZXZpc2VkIDIwMDlkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAxNyBOb3ZlbWJlciAyMDE0ZGQCAw9kFgICAQ8PFgIfBAUQMTYgTm92ZW1iZXIgMjAxNmRkAgUPZBYCAgEPDxYEHwQFBzEwMCwwMTMeB1Rvb2xUaXAFCjEwMCwwMTIuNTVkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCGUZ1bmRhbWVudGFscyBvZiBDb21wdXRpbmcAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDkgQXByIDIwMTRkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFJEVQU1JDIElDVCBSZXNwb25zaXZlIE1vZGUgLSBBcHIgMjAxNB8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTFQU0laRGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBbsfQ29tcHV0YXRpb25hbCBjb21wbGV4aXR5IHN0dWRpZXMgdGhlIHBvc3NpYmlsaXRpZXMgYW5kIGxpbWl0YXRpb25zIG9mIGVmZmljaWVudCBjb21wdXRhdGlvbi4gVHJhZGl0aW9uYWxseSwgYSBwcm9ibGVtIGhhcyBiZWVuIHBlcmNlaXZlZCBhcyB0cmFjdGFibGUgaWYgaXQgYWRtaXRzIGEgcG9seW5vbWlhbC10aW1lIGFsZ29yaXRobTsgYW5kIHRoZSBjbGFzcyBvZiBhbGwgc3VjaCBwcm9ibGVtcyBmb3JtcyB0aGUgY29tcGxleGl0eSBjbGFzcyBQLiBDb252ZXJzZWx5LCBhIHByb2JsZW0gaXMgaGFyZCBpZiBpdCBpcyBhc3NvY2lhdGVkIHdpdGggYSBjb21wbGV4aXR5IGNsYXNzIGJlbGlldmVkIHRvIGJlIGJleW9uZCB0aGUgcmVhbG0gb2YgdHJhY3RhYmlsaXR5IGxpa2UgTlAuIFdoaWxlIHRoZSBQIHZzIE5QIHF1ZXN0aW9uIGlzIG9uZSBvZiB0aGUgY2VudHJhbCBxdWVzdGlvbnMgb2YgbW9kZXJuIGNvbXB1dGVyIHNjaWVuY2UgYW5kIG1hdGhlbWF0aWNzIChhcyB3aXRuZXNzZWQgYnkgaXRzIGluY2x1c2lvbiBhcyBvbmUgb2YgdGhlIHNldmVuIE1pbGxlbm5pdW0gUHJpemUgUHJvYmxlbXMgcG9zZWQgYnkgdGhlIENsYXkgTWF0aGVtYXRpY3MgSW5zdGl0dXRlIGluIDIwMDApLCB3ZSBzZWVtIHRvIGJlIGZhciBmcm9tIGEgc29sdXRpb24uIEhvd2V2ZXIsIGxpdGVyYWxseSB0aG91c2FuZHMgb2YgcHJvYmxlbXMgb2YgZ3JlYXQgcHJhY3RpY2FsIHNpZ25pZmljYW5jZSBmcm9tIG9wdGltaXNhdGlvbiwgYXJ0aWZpY2lhbCBpbnRlbGxpZ2VuY2UsIGNvbXB1dGF0aW9uYWwgYmlvbG9neSwgYW5kIG1hbnkgZnVydGhlciBmaWVsZHMgYXJlIGtub3duIHRvIGJlIE5QLWNvbXBsZXRlLiBBbmQgdGhleSBkZXNwZXJhdGVseSBuZWVkIHRvIGJlIHNvbHZlZCBmb3IgcHJhY3RpY2FsIGluc3RhbmNlcy48YnIgLz48YnIgLz5QYXJhbWV0ZXJpemVkIGNvbXBsZXhpdHkgaXMgb25lIG9mIHRoZSBtYWluIG1vZGVybiBhcHByb2FjaGVzIHRoYXQgaGVscCB0byB1bmRlcnN0YW5kIHRoZSBwcmVjaXNlIGJvcmRlciBiZXR3ZWVuIHRyYWN0YWJpbGl0eSBhbmQgaW50cmFjdGFiaWxpdHkuIFdoaWxlIFAgdnMgTlAgY29sb3VycyB0aGUgd29ybGQgb2YgY29tcHV0YXRpb25hbCBwcm9ibGVtcyBpbnRvIGJsYWNrIGFuZCB3aGl0ZSwgcGFyYW1ldGVyaXplZCBjb21wbGV4aXR5IGV4cGxvaXRzIGFkZGl0aW9uYWwgc3RydWN0dXJlIG9mIHRoZSBwcm9ibGVtcyBhbmQgcmV2ZWFscyBhIG11Y2ggbW9yZSBkZXRhaWxlZCBwaWN0dXJlLiBJdCByZXN1bHRzIGluIGFsZ29yaXRobWljIHNvbHV0aW9ucyBmb3IgbWFueSBOUC1oYXJkIHByb2JsZW1zIHVzaW5nIHRoZSBuZXcgY29uY2VwdCBvZiBmaXhlZCBwYXJhbWV0ZXIgdHJhY3RhYmlsaXR5IChGUFQpLiBUaGlzIGFwcHJvYWNoIGhhcyByZXZvbHV0aW9uaXNlZCB0aGUgd2F5IHdlIGFwcHJvYWNoIGludHJhY3RhYmxlIHByb2JsZW1zIHRvZGF5OyBhbmQgbWFueSBjbGFzc2ljYWxseSBoYXJkIHByb2JsZW1zIGJlY29tZSBzb2x2YWJsZSBmb3IgbGFyZ2UgY2xhc3NlcyBvZiByZWxldmFudCBpbnN0YW5jZXMuPGJyIC8+PGJyIC8+V2hpbGUgcGFyYW1ldGVyaXplZCBjb21wbGV4aXR5IGhhcyBiZWVuIGludGVuc2l2ZWx5IHN0dWRpZWQgZHVyaW5nIHRoZSBsYXN0IHR3byBkZWNhZGVzLCB0aGUgY29uY2VwdCBvZiBwYXJhbWV0ZXJpemF0aW9uIGhhcyBiZWVuIG9ubHkgcmVjZW50bHkgdHJhbnNmZXJyZWQgdG8gcHJvb2YgY29tcGxleGl0eSBieSBEYW50Y2hldiwgTWFydGluLCBhbmQgU3plaWRlciAoRk9DUyAyMDA3KS4gUHJvb2YgY29tcGxleGl0eSBzdHVkaWVzIHRoZSBjb21wbGV4aXR5IG9mIHRoZW9yZW0gcHJvdmluZzogaG93IGRpZmZpY3VsdCBpcyBpdCB0byBjb25zdHJ1Y3QgYSBwcm9vZiBvZiBhIGZvcm1hbCBzdGF0ZW1lbnQgaW4gYSBnaXZlbiBwcm9vZiBzeXN0ZW0/IFdoYXQgaXMgdGhlIGxlbmd0aCBvZiB0aGUgc2hvcnRlc3QgcHJvb2Y/IFRoZXNlIHF1ZXN0aW9ucyBoYXZlIHRpZ2h0IHJlbGF0aW9ucyB0byBjZW50cmFsIHByb2JsZW1zIGluIGNvbXB1dGF0aW9uYWwgY29tcGxleGl0eSBhbmQgbG9naWMuIEluZGVlZCwgcHJvb2YgY29tcGxleGl0eSBvZmZlcnMgb25lIG9mIHRoZSBtYWluIGFwcHJvYWNoZXMgdG93YXJkcyB0aGUgUCB2cyBOUCBxdWVzdGlvbiB2aWEgQ29vaydzIHByb2dyYW1tZS48YnIgLz48YnIgLz5UaGlzIHByb2plY3Qgd2lsbCBiZSBhIHN1YnN0YW50aWFsIGNvbnRyaWJ1dGlvbiB0b3dhcmRzIHRoZSBkZXZlbG9wbWVudCBvZiB0aGUgZmllbGQgb2YgcGFyYW1ldGVyaXplZCBwcm9vZiBjb21wbGV4aXR5LiBXaGlsZSByZWNlbnQgZmluZGluZ3MgaGF2ZSBhbHJlYWR5IHByb3ZlZCB0aGUgZWZmZWN0aXZlbmVzcyBvZiB0aGUgYXBwcm9hY2gsIG11Y2ggZm91bmRhdGlvbmFsIHdvcmsgbGllcyBhaGVhZC4gU2ltaWxhcmx5IGFzIHBhcmFtZXRlcml6ZWQgY29tcGxleGl0eSBwcm92aWRlcyBhIGZpbmUgY2xhc3NpZmljYXRpb24gb2YgcnVubmluZyB0aW1lcywgcGFyYW1ldGVyaXplZCBwcm9vZiBjb21wbGV4aXR5IG9mZmVycyBhIG1vcmUgZmluZS1ncmFpbmVkIGFuYWx5c2lzIG9mIGxlbmd0aHMgb2YgcHJvb2ZzLiBJbiBwYXJ0aWN1bGFyLCB0aGlzIHJlc3VsdHMgaW4gRlBULXNpemUgcHJvb2ZzIGZvciBtYW55IGZvcm11bGFzIHRoYXQgcmVxdWlyZSBleHBvbmVudGlhbC1zaXplIHByb29mcyBpbiB0aGUgY2xhc3NpY2FsIHNldHRpbmcuIEF0IHRoZSBzYW1lIHRpbWUsIHNob3dpbmcgbG93ZXIgYm91bmRzIHRvIHRoZSBzaXplIG9mIHByb29mcyBiZWNvbWVzIG11Y2ggaGFyZGVyOiBmaXJzdGx5LCBiZWNhdXNlIHRoZXJlIGFyZSBsZXNzIGNhbmRpZGF0ZSBmb3JtdWxhcyBmb3IgaGFyZG5lc3M7IGFuZCBzZWNvbmRseSwgYmVjYXVzZSBtYW55IGNsYXNzaWNhbCB0ZWNobmlxdWVzIHR1cm4gb3V0IHRvIGJlIGluZWZmZWN0aXZlLjxiciAvPjxiciAvPlRoaXMgcHJvamVjdCB3aWxsIGRldmVsb3AgbmV3IHRlY2huaXF1ZXMgYW5kIHJlYXNzZXNzIGN1cnJlbnQgdGVjaG5pcXVlcyBpbiBwcm9vZiBjb21wbGV4aXR5IGFuZCBjb21wdXRhdGlvbmFsIGNvbXBsZXhpdHkgZm9yIHRoZWlyIGFwcGxpY2FiaWxpdHkgaW4gcGFyYW1ldGVyaXplZCBwcm9vZiBjb21wbGV4aXR5LiBUaGVzZSB0ZWNobmljYWwgYWR2YW5jZXMgd2lsbCBiZSB1c2VkIHRvIHNob3cgc3Ryb25nIGxvd2VyIGJvdW5kcyBmb3IgcGFyYW1ldGVyaXplZCBwcm9vZiBzeXN0ZW1zIHdoZXJlIGN1cnJlbnRseSBubyBub24tdHJpdmlhbCBsb3dlciBib3VuZHMgYXJlIGtub3duLiBBIHBhcnRpY3VsYXIgc3lzdGVtIG9mIGludGVyZXN0IGlzIHBhcmFtZXRlcml6ZWQgcmVzb2x1dGlvbiB3aXRoIGFuIGVmZmljaWVudCBlbmNvZGluZyBvZiBwYXJhbWV0ZXJpemVkIGF4aW9tcy48YnIgLz48YnIgLz5JbiBhZGRpdGlvbiB0byBpdHMgbGlua3MgdG8gY29tcGxleGl0eSBhbmQgbG9naWMsIHByb29mIGNvbXBsZXhpdHkgaXMgdGhlIG1haW4gdGhlb3JldGljYWwgdG9vbCB0byBhbmFseXNlIHRoZSBwZXJmb3JtYW5jZSBvZiBtb2Rlcm4gU0FUIHNvbHZlcnMuIFRoZXNlIGFyZSBhbGdvcml0aG1zIHdpdGggdmVyeSBmaW5lLXR1bmVkIGltcGxlbWVudGF0aW9ucyB0aGF0IHN1Y2Nlc3NmdWxseSBzb2x2ZSB0aGUgTlAtY29tcGxldGUgcHJvYmxlbSBvZiBib29sZWFuIHNhdGlzZmlhYmlsaXR5IChTQVQpIGZvciBsYXJnZSBmcmFjdGlvbnMgb2YgaW5kdXN0cmlhbCBpbnN0YW5jZXMgc3RlbW1pbmcgZnJvbSBhcHBsaWNhdGlvbnMgYXMgc29mdHdhcmUgdmVyaWZpY2F0aW9uIG9yIG1vZGVsIGNoZWNraW5nLiBUaGlzIHByb2plY3Qgd2lsbCBkZXZlbG9wIG5ldyBhbGdvcml0aG1pYyBhcHByb2FjaGVzIHRvIFNBVCBzb2x2aW5nIGluc3BpcmVkIGJ5IGluc2lnaHRzIGZyb20gcGFyYW1ldGVyaXplZCBwcm9vZiBjb21wbGV4aXR5LiBPbmUgcGFydGljdWxhciBnb2FsIGFyZSBwYXJhbWV0ZXJpemVkIGFsZ29yaXRobXMgdGhhdCByZWZpbmUgRFBMTC1iYXNlZCBzb2x2ZXJzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cubGVlZHMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cubGVlZHMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9MMDI0MjMzLzEMRVAvTDAyNDIzMy8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSYvd2091ehuuBLPadtKJvq92n87w==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKTyPbNDwLQvN++DAKT/OCVA3OgkHhkHE5gWAYSMeSKYnlhjl7D" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/L024233/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Parameterized Proof Complexity</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-417790'>Beyersdorff, Dr O</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Computing</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Leeds</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">17 November 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">16 November 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="100,012.55" class="DetailValue">100,013</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>09 Apr 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1PSIZD">EPSRC ICT Responsive Mode - Apr 2014</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Computational complexity studies the possibilities and limitations of efficient computation. Traditionally, a problem has been perceived as tractable if it admits a polynomial-time algorithm; and the class of all such problems forms the complexity class P. Conversely, a problem is hard if it is associated with a complexity class believed to be beyond the realm of tractability like NP. While the P vs NP question is one of the central questions of modern computer science and mathematics (as witnessed by its inclusion as one of the seven Millennium Prize Problems posed by the Clay Mathematics Institute in 2000), we seem to be far from a solution. However, literally thousands of problems of great practical significance from optimisation, artificial intelligence, computational biology, and many further fields are known to be NP-complete. And they desperately need to be solved for practical instances.<br /><br />Parameterized complexity is one of the main modern approaches that help to understand the precise border between tractability and intractability. While P vs NP colours the world of computational problems into black and white, parameterized complexity exploits additional structure of the problems and reveals a much more detailed picture. It results in algorithmic solutions for many NP-hard problems using the new concept of fixed parameter tractability (FPT). This approach has revolutionised the way we approach intractable problems today; and many classically hard problems become solvable for large classes of relevant instances.<br /><br />While parameterized complexity has been intensively studied during the last two decades, the concept of parameterization has been only recently transferred to proof complexity by Dantchev, Martin, and Szeider (FOCS 2007). Proof complexity studies the complexity of theorem proving: how difficult is it to construct a proof of a formal statement in a given proof system? What is the length of the shortest proof? These questions have tight relations to central problems in computational complexity and logic. Indeed, proof complexity offers one of the main approaches towards the P vs NP question via Cook's programme.<br /><br />This project will be a substantial contribution towards the development of the field of parameterized proof complexity. While recent findings have already proved the effectiveness of the approach, much foundational work lies ahead. Similarly as parameterized complexity provides a fine classification of running times, parameterized proof complexity offers a more fine-grained analysis of lengths of proofs. In particular, this results in FPT-size proofs for many formulas that require exponential-size proofs in the classical setting. At the same time, showing lower bounds to the size of proofs becomes much harder: firstly, because there are less candidate formulas for hardness; and secondly, because many classical techniques turn out to be ineffective.<br /><br />This project will develop new techniques and reassess current techniques in proof complexity and computational complexity for their applicability in parameterized proof complexity. These technical advances will be used to show strong lower bounds for parameterized proof systems where currently no non-trivial lower bounds are known. A particular system of interest is parameterized resolution with an efficient encoding of parameterized axioms.<br /><br />In addition to its links to complexity and logic, proof complexity is the main theoretical tool to analyse the performance of modern SAT solvers. These are algorithms with very fine-tuned implementations that successfully solve the NP-complete problem of boolean satisfiability (SAT) for large fractions of industrial instances stemming from applications as software verification or model checking. This project will develop new algorithmic approaches to SAT solving inspired by insights from parameterized proof complexity. One particular goal are parameterized algorithms that refine DPLL-based solvers.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.leeds.ac.uk                                                                              '>http://www.leeds.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

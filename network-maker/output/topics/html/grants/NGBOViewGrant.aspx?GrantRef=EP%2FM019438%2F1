@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Analysis of the Navier-Stokes regularity problem
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM019438%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAxOTQzOC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVBPHN0cm9uZz5BbmFseXNpcyBvZiB0aGUgTmF2aWVyLVN0b2tlcyByZWd1bGFyaXR5IHByb2JsZW08L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT88YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0zMDQ3OTUnPktvY2gsIERyIEcgUzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBStTY2ggb2YgTWF0aGVtYXRpY2FsICZhbXA7IFBoeXNpY2FsIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUVW5pdmVyc2l0eSBvZiBTdXNzZXhkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRpGaXJzdCBHcmFudCAtIFJldmlzZWQgMjAwOWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzE1IE9jdG9iZXIgMjAxNWRkAgMPZBYCAgEPDxYCHwQFDzE0IE9jdG9iZXIgMjAxN2RkAgUPZBYCAgEPDxYEHwQFBjk4LDEzMB4HVG9vbFRpcAUJOTgsMTI5LjgyZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCAhYEAgEPZBYCZg8VAhNDb250aW51dW0gTWVjaGFuaWNzFU1hdGhlbWF0aWNhbCBBbmFseXNpc2QCAg9kFgJmDxUCHk5vbi1saW5lYXIgU3lzdGVtcyBNYXRoZW1hdGljcwBkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwgCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQswMyBNYXIgMjAxNWRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUxRVBTUkMgTWF0aGVtYXRpY3MgUHJpb3JpdGlzYXRpb24gUGFuZWwgTWFyY2ggMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTJGNEZOVWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBZcbVGhlIHF1ZXN0aW9uIG9mICJyZWd1bGFyaXR5IiBmb3IgdGhlIE5hdmllci1TdG9rZXMgZXF1YXRpb25zIGlzIHdlbGwta25vd24gdG8gYmUgb25lIG9mIHRoZSBtb3N0IGRpZmZpY3VsdCwgaW50ZXJlc3RpbmcgYW5kIGltcG9ydGFudCBtYXRoZW1hdGljYWwgcXVlc3Rpb25zIG9mIG91ciB0aW1lLiAgSXQgaXMgdGhlIHN1YmplY3Qgb2Ygb25lIG9mIHRoZSBzZXZlbiBmYW1vdXMgTWlsbGVubml1bSBQcml6ZSBQcm9ibGVtcyBwb3NlZCBieSB0aGUgQ2xheSBNYXRoZW1hdGljcyBJbnN0aXR1dGUgaW4gMjAwMCwgb2Ygd2hpY2ggb25seSBvbmUgKHRoZSBQb2luY2FyZSBDb25qZWN0dXJlKSBoYXMgc2luY2UgYmVlbiByZXNvbHZlZCwgYW5kIGhhcyBiZWVuIGFzIHdlbGwgdGhlIGZvY3VzIG9mIG51bWVyb3VzIGludGVybmF0aW9uYWwgY29uZmVyZW5jZXMgYW5kIGdyYW50cyBhd2FyZGVkIGluIHRoZSBVSyBhbmQgYWJyb2FkIGJ5IHNjaWVudGlmaWMgYWdlbmNpZXMgc3VjaCBhcyB0aGUgRVJDIChFVSkgYW5kIE5TRiAoVVNBKS4gIEhvd2V2ZXIgdGhlIHJlbGV2YW50IHF1ZXN0aW9ucyBmb3IgdGhlIE5hdmllci1TdG9rZXMgZXF1YXRpb25zIGhhdmUgYWJzb3JiZWQgdGhlIGF0dGVudGlvbiBvZiBtYXRoZW1hdGljaWFucyBzaW5jZSAxOTM0IHdoZW4gdGhlIGtleSBzaWduaWZpY2FudCBhZHZhbmNlIHRvIGRhdGUgd2FzIG1hZGUgYnkgRnJlbmNoIG1hdGhlbWF0aWNpYW4gSmVhbiBMZXJheS4gIDxiciAvPjxiciAvPlRoZSBOYXZpZXItU3Rva2VzIHN5c3RlbSBvZiBub25saW5lYXIgcGFydGlhbCBkaWZmZXJlbnRpYWwgZXF1YXRpb25zIChQREVzKSwgZGVyaXZlZCBhcyBlYXJseSBhcyAxODIyLCBpcyB0aG91Z2h0IHRvIGdpdmUgcnVsZXMgdGhhdCBhcHByb3hpbWF0ZWx5IGRldGVybWluZSB0aGUgbW90aW9uIG9mIGZsdWlkcyBzdWNoIGFzIGFpciBhbmQgd2F0ZXIuICBUaGVyZSBhcmUgbWFueSBpc3N1ZXMgd2l0aCB0aGlzLCBub3Qgb25seSBhcyB0byB3aGV0aGVyIHRoZSBlcXVhdGlvbnMgYWNjdXJhdGVseSBkZXNjcmliZSB0aGUgdW5kZXJseWluZyBwaHlzaWNzIGJ1dCBwZXJoYXBzIG1vcmUgZnVuZGFtZW50YWxseSB3aGV0aGVyIHRoZSBlcXVhdGlvbnMgdGhlbXNlbHZlcyBjb3VsZCBnaXZlIHBoeXNpY2FsbHkgcmVsZXZhbnQgcHJlZGljdGlvbnMuICBUaGV5IG1heSByYXRoZXIgcHJlZGljdCBwb3RlbnRpYWxseSBlY2NlbnRyaWMgYW5kIHB1cmVseSBtYXRoZW1hdGljYWwgbW90aW9ucyBjb250YWluaW5nIGVycmF0aWMgYmVoYXZpb3JzIGtub3duIGFzIG1hdGhlbWF0aWNhbCAic2luZ3VsYXJpdGllcyIuICBPZiBjb3Vyc2UsIGZyb20gb3VyIGV4cGVyaWVuY2Ugd2l0aCBuYXR1cmUgd2UgZXhwZWN0IHRoYXQgd2l0aG91dCBzaWduaWZpY2FudCBleHRlcm5hbCBmb3JjaW5nIHRoaXMgd291bGQgbmV2ZXIgaGFwcGVuIGluIHJlYWxpdHksIGFuZCBzbyBrbm93aW5nIHdoZXRoZXIgb3Igbm90IHNpbmd1bGFyaXRpZXMgY291bGQgZm9ybSBtYXRoZW1hdGljYWxseSB3b3VsZCBoYXZlIGZ1bmRhbWVudGFsIGltcGxpY2F0aW9ucyBmb3IgdGhlIGVmZmljYWN5IG9mIHRoZSBtb2RlbC4gIExlcmF5IHByb3ZlZCB0aGF0IHRoZSBlcXVhdGlvbnMgYWx3YXlzIHByb3ZpZGUgYXQgbGVhc3Qgb25lIHByZWRpY3RlZCBtb3Rpb24sIGFuZCBtYXRoZW1hdGljaWFucyBoYXZlIGJlZW4gdHJ5aW5nIHRvIGRldGVybWluZSB3aGV0aGVyIHRoZXNlIGNvdWxkIGluIGZhY3QgY29udGFpbiBtYXRoZW1hdGljYWwgc2luZ3VsYXJpdGllcyBldmVyIHNpbmNlLiAgPGJyIC8+PGJyIC8+VGhlc2UgYXJlIG1vcmVvdmVyIHF1aXRlIHR5cGljYWwgcXVlc3Rpb25zIGluIHRoZSBhbmFseXNpcyBvZiBub25saW5lYXIgUERFcyAod2hpY2ggdGVuZCB0byBiZSBiYXNlZCBvbiBwaGVub21lbmEgb2NjdXJyaW5nIGluIGFyZWFzIHN1Y2ggYXMgcGh5c2ljcywgYmlvbG9neSwgZmluYW5jZSBhbmQgc29jaW9sb2d5KSBhbmQgYSByZXNvbHV0aW9uIHRvIHRoaXMgcXVlc3Rpb24gd291bGQgYWxzbyBoYXZlIGEgc2lnbmlmaWNhbnQgbWF0aGVtYXRpY2FsIGltcGFjdCB3aXRoIHJlZ2FyZCB0byBkZXZlbG9wbWVudCBvZiByb2J1c3QgYW5hbHl0aWNhbCB0b29scy4gIFRoZSBFUFNSQyBoYXMgaW4gZmFjdCByZWNlbnRseSBkZXZlbG9wZWQgdHdvIGxhcmdlIGZ1bmRlZCByZXNlYXJjaCBjZW50ZXJzIGZvciBhbmFseXNpcyBhbmQgUERFcyBpbiB0aGUgVUssIGluIE94Zm9yZCBhbmQgRWRpbmJ1cmdoLCBhcyB3ZWxsIGFzIHR3byBkb2N0b3JhbCB0cmFpbmluZyBjZW50ZXJzLCB0byB0cnkgdG8gYm9vc3QgdGhlIFVLJ3MgY29tcGV0aXRpdmVuZXNzIGluIHRoZXNlIG1hdGhlbWF0aWNhbCBhcmVhcy4gIE1vcmVvdmVyLCBtdWNoIHdvcmsgaGFzIGJlZW4gZG9uZSBpbiB0aGUgVUssIG1vc3Qgbm90YWJseSBpbiBPeGZvcmQsIFdhcndpY2ssIExvbmRvbiBhbmQgU3Vzc2V4LCB0byBhZGRyZXNzIGFuZCBib29zdCBpbnRlcmVzdCBpbiB0aGUgTmF2aWVyLVN0b2tlcyBhbmQgb3RoZXIgYW5hbHl0aWNhbCBub25saW5lYXIgUERFIHByb2JsZW1zLjxiciAvPjxiciAvPlRoaXMgcHJvamVjdCBhaW1zIHNwZWNpZmljYWxseSB0byBzdHJlYW1saW5lIHRoZSBjb3Bpb3VzIHJlY2VudCBlZmZvcnRzIHRvIHJlc29sdmUgdGhlIE5hdmllci1TdG9rZXMgcmVndWxhcml0eSBwcm9ibGVtIGFuZCBkZXRlcm1pbmUgZWZmZWN0aXZlIGZ1dHVyZSBkaXJlY3Rpb25zLCBhcyB3ZWxsIGFzIHRvIHB1dCB0aGUgcXVlc3Rpb24gaXRzZWxmLCBhbmQgdGhlIGlkZWEgb2YgbWF0aGVtYXRpY2FsIHNpbmd1bGFyaXRpZXMsIGludG8gYSBtb3JlIHNhdGlzZnlpbmcgY29udGV4dC4gIFRoZXNlIGdvYWxzIGNhbiBiZSBncm91cGVkIHJvdWdobHkgaW50byB0aHJlZSBwYXJ0czogKDEpIGNoYXJhY3Rlcml6aW5nIHBvdGVudGlhbCBzaW5ndWxhcml0aWVzLCAoMikgdW5kZXJzdGFuZGluZyBvYnN0YWNsZXMgdG8gY3VycmVudCB0ZWNobmlxdWVzIGFuZCAoMykgZXhwbG9yaW5nICJzaW5ndWxhcml0eSIgaW4gdGhlIGNvbnRleHQgb2YgdGhlIG1vZGVsaW5nIGFzc3VtcHRpb25zIHVzZWQgaW4gZGVyaXZpbmcgdGhlIGVxdWF0aW9ucy4gIFRoZXNlIGVmZm9ydHMgd2lsbCBnaXZlIGEgbW9yZSBjb21wcmVoZW5zaXZlIGFuZCBxdWFsaXRhdGl2ZSBkZXNjcmlwdGlvbiBvZiB0aGUgbmF0dXJlIG9mIHBvdGVudGlhbCBzaW5ndWxhcml0aWVzLiAgT25lIGNhbiB0aGVuIHVzZSB0aGlzIHVuZGVyc3RhbmRpbmcgdG8gZm9jdXMgZWZmb3J0cyB0byBlaXRoZXIgY29uc3RydWN0IGV4cGxpY2l0IGV4YW1wbGVzIG9mIHNpbmd1bGFyaXRpZXMgb3IgcnVsZSBvdXQgdGhlIHBvc3NpYmlsaXR5IG9mIHRoZWlyIGZvcm1hdGlvbiwgYXMgd2VsbCBhcyB0byBwdXQgdGhlIG1hdGhlbWF0aWNhbCBxdWVzdGlvbiBpdHNlbGYgaW50byBhIHNhdGlzZnlpbmcgbW9kZWxpbmcgY29udGV4dC48YnIgLz48YnIgLz5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnN1c3NleC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnN1c3NleC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTAxOTQzOC8xDEVQL00wMTk0MzgvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkewL9oq3eMETwLqoLe0wAI6c+oDA=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLxo4SrCwLQvN++DAKT/OCVAzb7WJYAfMONwh4xgPchR8mNKeh/" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M019438/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Analysis of the Navier-Stokes regularity problem</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-304795'>Koch, Dr G S</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Mathematical &amp; Physical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Sussex</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">15 October 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">14 October 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="98,129.82" class="DetailValue">98,130</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Continuum Mechanics</td>
+                                    <td class="DetailValue"> Mathematical Analysis</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Non-linear Systems Mathematics</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>03 Mar 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2F4FNU">EPSRC Mathematics Prioritisation Panel March 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The question of "regularity" for the Navier-Stokes equations is well-known to be one of the most difficult, interesting and important mathematical questions of our time.  It is the subject of one of the seven famous Millennium Prize Problems posed by the Clay Mathematics Institute in 2000, of which only one (the Poincare Conjecture) has since been resolved, and has been as well the focus of numerous international conferences and grants awarded in the UK and abroad by scientific agencies such as the ERC (EU) and NSF (USA).  However the relevant questions for the Navier-Stokes equations have absorbed the attention of mathematicians since 1934 when the key significant advance to date was made by French mathematician Jean Leray.  <br /><br />The Navier-Stokes system of nonlinear partial differential equations (PDEs), derived as early as 1822, is thought to give rules that approximately determine the motion of fluids such as air and water.  There are many issues with this, not only as to whether the equations accurately describe the underlying physics but perhaps more fundamentally whether the equations themselves could give physically relevant predictions.  They may rather predict potentially eccentric and purely mathematical motions containing erratic behaviors known as mathematical "singularities".  Of course, from our experience with nature we expect that without significant external forcing this would never happen in reality, and so knowing whether or not singularities could form mathematically would have fundamental implications for the efficacy of the model.  Leray proved that the equations always provide at least one predicted motion, and mathematicians have been trying to determine whether these could in fact contain mathematical singularities ever since.  <br /><br />These are moreover quite typical questions in the analysis of nonlinear PDEs (which tend to be based on phenomena occurring in areas such as physics, biology, finance and sociology) and a resolution to this question would also have a significant mathematical impact with regard to development of robust analytical tools.  The EPSRC has in fact recently developed two large funded research centers for analysis and PDEs in the UK, in Oxford and Edinburgh, as well as two doctoral training centers, to try to boost the UK's competitiveness in these mathematical areas.  Moreover, much work has been done in the UK, most notably in Oxford, Warwick, London and Sussex, to address and boost interest in the Navier-Stokes and other analytical nonlinear PDE problems.<br /><br />This project aims specifically to streamline the copious recent efforts to resolve the Navier-Stokes regularity problem and determine effective future directions, as well as to put the question itself, and the idea of mathematical singularities, into a more satisfying context.  These goals can be grouped roughly into three parts: (1) characterizing potential singularities, (2) understanding obstacles to current techniques and (3) exploring "singularity" in the context of the modeling assumptions used in deriving the equations.  These efforts will give a more comprehensive and qualitative description of the nature of potential singularities.  One can then use this understanding to focus efforts to either construct explicit examples of singularities or rule out the possibility of their formation, as well as to put the mathematical question itself into a satisfying modeling context.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.sussex.ac.uk                                                                             '>http://www.sussex.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Algorithms for Finding Approximate Nash Equilibria
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fL011018%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTDAxMTAxOC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVDPHN0cm9uZz5BbGdvcml0aG1zIGZvciBGaW5kaW5nIEFwcHJveGltYXRlIE5hc2ggRXF1aWxpYnJpYTwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTk1MjI0Jz5TYXZhbmksIERyIFI8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA0A8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0yOTgxMjEnPkdhaXJpbmcsIERyIE08L2E+AABkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDUzxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDE1OTInPlVuaXZlcnNpdHkgb2YgRWFzdCBBbmdsaWE8L2E+TDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0zMjYyOCc+VmFsdWUgUGVyIENsaWNrIEx0ZDwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRBDb21wdXRlciBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUXVW5pdmVyc2l0eSBvZiBMaXZlcnBvb2xkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDAxIERlY2VtYmVyIDIwMTNkZAIDD2QWAgIBDw8WAh8EBRAzMCBOb3ZlbWJlciAyMDE2ZGQCBQ9kFgICAQ8PFgQfBAUHMjc2LDgyOB4HVG9vbFRpcAUKMjc2LDgyNy44MWRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCGUZ1bmRhbWVudGFscyBvZiBDb21wdXRpbmcAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhhJbmZvcm1hdGlvbiBUZWNobm9sb2dpZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTcgSnVsIDIwMTNkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFJUVQU1JDIElDVCBSZXNwb25zaXZlIE1vZGUgLSBKdWx5IDIwMTMfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0xNEhPWTNkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAX8F0dhbWUgdGhlb3J5IGlzIHRoZSBhbmFseXNpcyBvZiBob3cgcGVvcGxlIGJlaGF2ZSBpbiBzdHJhdGVnaWMgc2V0dGluZ3MuIEl0IGhhcyByaXNlbiB0byBwcm9taW5lbmNlIGJlY2F1c2UgaXQgY2FuIGJlIGFwcGxpZWQgaW4gYSB3aWRlIHZhcmlldHkgb2YgcHJhY3RpY2FsIHNldHRpbmdzLiBGb3IgZXhhbXBsZSwgZ2FtZSB0aGVvcnkgd2FzIHVzZWQgaW4gdGhlIGxhdGUgMTk5MHMgdG8gZGVzaWduIGF1Y3Rpb25zIGZvciAzRyB0ZWxlY29tbXVuaWNhdGlvbnMsIHdoaWNoIHJhaXNlZCBiaWxsaW9ucyBvZiBwb3VuZHMgZm9yIHRoZSBVSyB0YXhwYXllci4gR2FtZSB0aGVvcnkgaGFzIGFsc28gYmVlbiB1c2VkIHRvIGRlc2lnbiBwYXRyb2wgcm91dGVzIGZvciBhaXJwb3J0IHNlY3VyaXR5LCB0byBkZXNpZ24gc3RyYXRlZ2llcyBmb3IgbnVjbGVhciB3ZWFwb24gaW5zcGVjdG9ycywgdG8gbWF0Y2gganVuaW9yIGRvY3RvcnMgdG8gdGhlaXIgaG9zcGl0YWwgcmVzaWRlbmNpZXMsIGFuZCB0byBtb2RlbCByb2FkIGNvbmdlc3Rpb24uIEluIHRoZSBjb21tZXJjaWFsIHdvcmxkLCBnYW1lIHRoZW9yeSBoYXMgZm91bmQgYXBwbGljYXRpb25zIHJhbmdpbmcgZnJvbSBhdWN0aW9ucyBmb3Igc2VsbGluZyBhZHZlcnRpc2luZyBpbiBzZWFyY2ggZW5naW5lIHJlc3VsdHMgdG8gZGVzaWduaW5nIHRoZSBsYXlvdXQgb2YgY2lyY3VpdHMgb24gbWljcm9jaGlwcy4gPGJyIC8+PGJyIC8+VGhlIE5hc2ggZXF1aWxpYnJpdW0gaXMgdGhlIG1vc3QgZnVuZGFtZW50YWwgY29uY2VwdCBpbiBnYW1lIHRoZW9yeS4gQW4gZXhhY3QgTmFzaCBlcXVpbGlicml1bSBvZiBhIGdhbWUgcHJlZGljdHMgaG93IHRoZSBwbGF5ZXJzIG9mIGEgZ2FtZSBzaG91bGQgcGxheTogaW4gYW4gZXhhY3QgTmFzaCBlcXVpbGlicml1bSwgbm8gcGxheWVyIHNob3VsZCBoYXZlIGFuIGluY2VudGl2ZSB0byBkZXZpYXRlIGZyb20gdGhlaXIgY3VycmVudCBzdHJhdGVneS4gVGhpcyByZXNlYXJjaCBjb25zaWRlcnMgYWxnb3JpdGhtcyBmb3IgZmluZGluZyBOYXNoIGVxdWlsaWJyaWEuIEluIENvbXB1dGVyIFNjaWVuY2UsIHdlIHVzdWFsbHkgbG9vayBmb3IgYWxnb3JpdGhtcyB0aGF0IGFyZSBndWFyYW50ZWVkIHRvIHJ1biBxdWlja2x5LiBVbmZvcnR1bmF0ZWx5LCBpdCBoYXMgYmVlbiBzaG93biB0aGF0IGZhc3QgYWxnb3JpdGhtcyBmb3IgZmluZGluZyBleGFjdCBOYXNoIGVxdWlsaWJyaWEgYXJlIHVubGlrZWx5IHRvIGV4aXN0LiA8YnIgLz48YnIgLz5UaGUgZmFjdCB0aGF0IGV4YWN0IE5hc2ggZXF1aWxpYnJpYSBhcmUgaGFyZCB0byBjb21wdXRlIHBvc2VzIGEgc2lnbmlmaWNhbnQgcHJvYmxlbS4gRm9yIHByYWN0aWNhbCBhcHBsaWNhdGlvbnMsIHBlb3BsZSBvZnRlbiB3YW50IHRvIGZpbmQgTmFzaCBlcXVpbGlicmlhIGluIHZlcnkgbGFyZ2UgZ2FtZXMsIGJ1dCB0aGUgZXhpc3RpbmcgYWxnb3JpdGhtcyBmb3IgZmluZGluZyBleGFjdCBOYXNoIGVxdWlsaWJyaWEgd2lsbCB0YWtlIGEgcHJvaGliaXRpdmVseSBsYXJnZSBhbW91bnQgb2YgdGltZSB0byBzb2x2ZSB0aGVzZSBnYW1lcy4gVGhlIHVzZSBvZiBhcHByb3hpbWF0ZSBOYXNoIGVxdWlsaWJyaWEgaXMgb25lIHdheSB0byBhZGRyZXNzIHRoaXMgaXNzdWU6IHdoZXJlYXMgZXhhY3QgTmFzaCBlcXVpbGlicmlhIHJlcXVpcmUgdGhhdCBhbGwgcGxheWVycyBoYXZlIG5vIGluY2VudGl2ZSB0byBkZXZpYXRlIGZyb20gdGhlaXIgY3VycmVudCBzdHJhdGVnaWVzLCBhcHByb3hpbWF0ZSBOYXNoIGVxdWlsaWJyaWEgYWxsb3cgdGhlIHBsYXllcnMgdG8gaGF2ZSBhIHNtYWxsIGluY2VudGl2ZSB0byBkZXZpYXRlLiBTaW5jZSBpdCBjYW4gYmUgY29zdGx5IHRvIGNoYW5nZSBzdHJhdGVnaWVzLCBhcHByb3hpbWF0ZSBOYXNoIGVxdWlsaWJyaWEgYXJlIG9mdGVuIGdvb2QgZW5vdWdoIGZvciBwcmFjdGljYWwgYXBwbGljYXRpb25zLCBhbmQgdGhleSBjYW4gYmUgc2lnbmlmaWNhbnRseSBlYXNpZXIgdG8gY29tcHV0ZS48YnIgLz48YnIgLz5JbiB0aGlzIHJlc2VhcmNoIHByb2plY3QsIHdlIHdpbGwgc3R1ZHkgYWxnb3JpdGhtcyBmb3IgZmluZGluZyBhcHByb3hpbWF0ZSBOYXNoIGVxdWlsaWJyaWEuIE91ciBnb2FsIGlzIHRvIHN0dWR5IGFwcHJveGltYXRpb24gYWxnb3JpdGhtcyBmb3IgYmltYXRyaXggZ2FtZXMsIHdoaWNoIGFyZSBhIGZ1bmRhbWVudGFsIGdhbWUgbW9kZWwsIGFuZCBwb3RlbnRpYWwgZ2FtZXMsIHdoaWNoIGVuY29tcGFzcyBhIHdpZGUgdmFyaWV0eSBvZiB1c2VmdWwgc3BlY2lhbCBjYXNlcy4gV2Ugd2lsbCBlaXRoZXIgZmluZCBlZmZpY2llbnQgYXBwcm94aW1hdGlvbiBhbGdvcml0aG1zLCBvciBmb3JtYWxseSBwcm92ZSB0aGF0IGVmZmljaWVudCBhcHByb3hpbWF0aW9uIGFsZ29yaXRobXMgYXJlIHVubGlrZWx5IHRvIGV4aXN0LiA8YnIgLz48YnIgLz5XZSB3aWxsIGFsc28gc3R1ZHkgYWxnb3JpdGhtcyBmcm9tIHRoZSBwYXlvZmYtcXVlcnkgcG9pbnQgb2Ygdmlldy4gSW4gcmVhbC13b3JsZCBhcHBsaWNhdGlvbnMsIGl0IGlzIHVudXN1YWwgdG8gYmUgZ2l2ZW4gYSBjb21wbGV0ZSBkZXNjcmlwdGlvbiBvZiB0aGUgZ2FtZS4gSW5zdGVhZCwgd2UgbXVzdCBmaW5kIG91dCB0aGUgcHJvcGVydGllcyBvZiB0aGUgZ2FtZSB0aHJvdWdoIGV4cGVyaW1lbnRhdGlvbiwgYW5kIHBlcmZvcm1pbmcgdGhlc2UgZXhwZXJpbWVudHMgbWF5IGJlIHZlcnkgY29zdGx5LiBQYXlvZmYgcXVlcnkgY29tcGxleGl0eSBjYXB0dXJlcyB0aGlzLCBhbmQgYWxnb3JpdGhtcyB3aXRoIGxvdyBwYXlvZmYgcXVlcnkgY29tcGxleGl0eSByZXF1aXJlIGZldyBleHBlcmltZW50cyBiZWZvcmUgdGhleSBnaXZlIHRoZWlyIGFuc3dlci4gV2Ugd2lsbCBzdHVkeSB0aGUgcGF5b2ZmIHF1ZXJ5IGNvbXBsZXhpdHkgb2YgZmluZGluZyBhcHByb3hpbWF0ZSBOYXNoIGVxdWlsaWJyaWEgaW4gYmltYXRyaXggZ2FtZXMgYW5kIHBvdGVudGlhbCBnYW1lcywgaW4gb3JkZXIgdG8gZmluZCB1c2VmdWwgYWxnb3JpdGhtcyB0aGF0IGNhbiBiZSBhcHBsaWVkIGluIHJlYWwtd29ybGQgc2V0dGluZ3MuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5saXYuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5saXYuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0wwMTEwMTgvMQxFUC9MMDExMDE4LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZMYaEPMYg+LJgLROPPwjN1xfswZC" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKu4c2XAwLQvN++DAKT/OCVA2qUdG3BjyMIPIneWo8D0aFGSjyP" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/L011018/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Algorithms for Finding Approximate Nash Equilibria</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-95224'>Savani, Dr R</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-298121'>Gairing, Dr M</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001592'>University of East Anglia</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-32628'>Value Per Click Ltd</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Liverpool</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 December 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 November 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="276,827.81" class="DetailValue">276,828</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>17 Jul 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-14HOY3">EPSRC ICT Responsive Mode - July 2013</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Game theory is the analysis of how people behave in strategic settings. It has risen to prominence because it can be applied in a wide variety of practical settings. For example, game theory was used in the late 1990s to design auctions for 3G telecommunications, which raised billions of pounds for the UK taxpayer. Game theory has also been used to design patrol routes for airport security, to design strategies for nuclear weapon inspectors, to match junior doctors to their hospital residencies, and to model road congestion. In the commercial world, game theory has found applications ranging from auctions for selling advertising in search engine results to designing the layout of circuits on microchips. <br /><br />The Nash equilibrium is the most fundamental concept in game theory. An exact Nash equilibrium of a game predicts how the players of a game should play: in an exact Nash equilibrium, no player should have an incentive to deviate from their current strategy. This research considers algorithms for finding Nash equilibria. In Computer Science, we usually look for algorithms that are guaranteed to run quickly. Unfortunately, it has been shown that fast algorithms for finding exact Nash equilibria are unlikely to exist. <br /><br />The fact that exact Nash equilibria are hard to compute poses a significant problem. For practical applications, people often want to find Nash equilibria in very large games, but the existing algorithms for finding exact Nash equilibria will take a prohibitively large amount of time to solve these games. The use of approximate Nash equilibria is one way to address this issue: whereas exact Nash equilibria require that all players have no incentive to deviate from their current strategies, approximate Nash equilibria allow the players to have a small incentive to deviate. Since it can be costly to change strategies, approximate Nash equilibria are often good enough for practical applications, and they can be significantly easier to compute.<br /><br />In this research project, we will study algorithms for finding approximate Nash equilibria. Our goal is to study approximation algorithms for bimatrix games, which are a fundamental game model, and potential games, which encompass a wide variety of useful special cases. We will either find efficient approximation algorithms, or formally prove that efficient approximation algorithms are unlikely to exist. <br /><br />We will also study algorithms from the payoff-query point of view. In real-world applications, it is unusual to be given a complete description of the game. Instead, we must find out the properties of the game through experimentation, and performing these experiments may be very costly. Payoff query complexity captures this, and algorithms with low payoff query complexity require few experiments before they give their answer. We will study the payoff query complexity of finding approximate Nash equilibria in bimatrix games and potential games, in order to find useful algorithms that can be applied in real-world settings.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.liv.ac.uk                                                                                '>http://www.liv.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

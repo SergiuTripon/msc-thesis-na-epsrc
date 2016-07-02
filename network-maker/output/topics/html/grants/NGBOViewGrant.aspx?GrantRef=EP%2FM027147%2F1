@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	The Möbius function of the poset of permutations
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM027147%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAyNzE0Ny8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVCPHN0cm9uZz5UaGUgTcO2Yml1cyBmdW5jdGlvbiBvZiB0aGUgcG9zZXQgb2YgcGVybXV0YXRpb25zPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVNPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMzc3ODQzJz5TdGVpbmdyaW1zc29uLCBQcm9mZXNzb3IgRTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSFDb21wdXRlciBhbmQgSW5mb3JtYXRpb24gU2NpZW5jZXNkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRlVbml2ZXJzaXR5IG9mIFN0cmF0aGNseWRlZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBREyOSBTZXB0ZW1iZXIgMjAxNWRkAgMPZBYCAgEPDxYCHwQFETI4IFNlcHRlbWJlciAyMDE4ZGQCBQ9kFgICAQ8PFgQfBAUHMjg0LDk2MR4HVG9vbFRpcAUKMjg0LDk2MC43NWRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIWQWxnZWJyYSAmYW1wOyBHZW9tZXRyeRlMb2dpYyAmYW1wOyBDb21iaW5hdG9yaWNzZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgIeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAmQWAmYPZBYEAgEPZBYGZg9kFgICAQ8PFgIfBAULMTYgSnVuIDIwMTVkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFMEVQU1JDIE1hdGhlbWF0aWNzIFByaW9yaXRpc2F0aW9uIFBhbmVsIEp1bmUgMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTJRMURPQ2RkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCAg9kFgZmD2QWAgIBDw8WAh8EBQswMyBNYXIgMjAxNWRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUxRVBTUkMgTWF0aGVtYXRpY3MgUHJpb3JpdGlzYXRpb24gUGFuZWwgTWFyY2ggMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTJGNEZOVWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUIRGVmZXJyZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFih5QZXJtdXRhdGlvbnMgYXJlIGxpc3RzIG9mIG9iamVjdHMgdGhhdCBjYW4gYmUgY29tcGFyZWQgcGFpcndpc2Ugd2l0aCByZXNwZWN0IHRvIGEgZ2l2ZW4gdG90YWwgb3JkZXIsIGFuZCB0aGV5IGNhbiB0aHVzIGFsd2F5cyBiZSByZXByZXNlbnRlZCBieSBpbnRlZ2Vycywgd2hlcmUgdGhlIG9yZGVyIGlzIHRoZSB1c3VhbCBvcmRlciBvZiBzaXplLiAgQSBwYXR0ZXJuIFAgaW4gYSBwZXJtdXRhdGlvbiBpcyBhIHN1YnNlcXVlbmNlIGluIHRoZSBwZXJtdXRhdGlvbiB3aG9zZSBlbGVtZW50cyBhcHBlYXIgaW4gdGhlIHNhbWUgb3JkZXIgb2Ygc2l6ZSBhcyB0aG9zZSBpbiBQLiAgRm9yIGV4YW1wbGUsIHRoZSBsZXR0ZXJzIDQ1MiBpbiA2NDE1MjMgZm9ybSBhbiBvY2N1cnJlbmNlIG9mIHRoZSBwYXR0ZXJuIDIzMS4gPGJyIC8+PGJyIC8+SW4gcmVjZW50IGRlY2FkZXMgcmVzZWFyY2ggb24gdmFyaW91cyBwcm9wZXJ0aWVzIG9mIHBlcm11dGF0aW9ucyB3aXRoIHJlc3BlY3QgdG8gcGF0dGVybiBjb250YWlubWVudCBoYXMgc2VlbiBlbm9ybW91cyBncm93dGgsIGFuZCBlc3RhYmxpc2hlZCBhIG15cmlhZCBjb25uZWN0aW9ucyB0byBvdGhlciBicmFuY2hlcyBvZiBkaXNjcmV0ZSBtYXRoZW1hdGljcyBhbmQgZXZlbiB0byBwaHlzaWNzLCBiaW9sb2d5IGFuZCB0aGVvcmV0aWNhbCBjb21wdXRlciBzY2llbmNlLCB0aGUgbGFzdCBvZiB3aGljaCBoYXMgYmVlbiBzdHJvbmdseSBjb25uZWN0ZWQgdG8gdGhlIGZpZWxkIGluIGl0cyBtb2Rlcm4gaW5jYXJuYXRpb24uIDxiciAvPjxiciAvPlRoZSBmb2N1cyBpbiB0aGlzIGZpZWxkIHdhcyBmb3IgYSBsb25nIHRpbWUgbWFpbmx5IG9uIGVudW1lcmF0aXZlIHJlc3VsdHMsIGJ1dCBzdHVkaWVzIG9mIHN0cnVjdHVyYWwgcHJvcGVydGllcyBvZiB0aGUgcG9zZXQgKHBhcnRpYWxseSBvcmRlcmVkIHNldCkgb2YgYWxsIGZpbml0ZSBwZXJtdXRhdGlvbnMsIG9yZGVyZWQgYnkgcGF0dGVybiBjb250YWlubWVudCwgaGF2ZSBiZWVuIGdyb3dpbmcgc3Ryb25nIGluIHRoZSBsYXN0IGRlY2FkZSBvciBzby4gIFRoZXNlIGhhdmUgc28gZmFyIG1vc3RseSBjb25jZXJuZWQgb3JkZXIgaWRlYWxzIGluIHRoaXMgcG9zZXQsIHRoYXQgaXMsIGRvd253YXJkIGNsb3NlZCBjbGFzc2VzIG9mIGVsZW1lbnRzLCBhbmFsb2dvdXMgdG8gbWlub3IgY2xvc2VkIGNsYXNzZXMgb2YgZ3JhcGhzLiAgVGhpcyBwb3NldCBpcyB0aGUgZnVuZGFtZW50YWwgb2JqZWN0IGluIGFsbCBzdHVkaWVzIG9mIHBlcm11dGF0aW9uIHBhdHRlcm5zLCBzaW5jZSBpdCBlbmNvbXBhc3NlcyBhbGwgaW5mb3JtYXRpb24gYWJvdXQgY29udGFpbm1lbnQgYW5kIGF2b2lkYW5jZSBvZiBwYXR0ZXJucyBpbiBwZXJtdXRhdGlvbnMuPGJyIC8+PGJyIC8+QW4gaW5ldml0YWJsZSBxdWVzdGlvbiBhYm91dCBhbnkgY29tYmluYXRvcmlhbGx5IGRlZmluZWQgcG9zZXQgcmVnYXJkcyB0aGUgTcO2Yml1cyBmdW5jdGlvbiBvZiBpdHMgaW50ZXJ2YWxzLCB0aGF0IGlzLCBzZXRzIG9mIHBlcm11dGF0aW9ucyBjb250YWluaW5nIGEgZ2l2ZW4gcGVybXV0YXRpb24gQSBhbmQgY29udGFpbmVkIGluIGFub3RoZXIgZ2l2ZW4gcGVybXV0YXRpb24gQi4gIFRoZSBNw7ZiaXVzIGZ1bmN0aW9uIGlzIHByb2JhYmx5IHRoZSBzaW5nbGUgbW9zdCBpbXBvcnRhbnQgaW52YXJpYW50IG9mIGEgY29tYmluYXRvcmlhbGx5IGRlZmluZWQgcG9zZXQuICBJbiBhZGRpdGlvbiB0byB0aGUgaW50cmluc2ljIGludGVyZXN0IG9mIGRldGVybWluaW5nIHRoZSBNw7ZiaXVzIGZ1bmN0aW9uIGZvciB0aGlzIHBvc2V0LCBhbmQgdGhlIGxpa2VseSBlZmZlY3QgaXQgd2lsbCBoYXZlIG9uIHN0dWRpZXMgb2YgaXRzIHRvcG9sb2d5LCB0aGVyZSBhcmUgYWxyZWFkeSByZXN1bHRzIHNob3dpbmcgdGhhdCB0aGUgTcO2Yml1cyBmdW5jdGlvbiBpcyBpbiBzb21lIGNhc2VzIGNsb3NlbHkgY29ubmVjdGVkIHRvIHRoZSBudW1iZXIgb2Ygb2NjdXJyZW5jZXMgb2Ygb25lIHBlcm11dGF0aW9uIGFzIGEgcGF0dGVybiBpbiBhbm90aG9uZSBvZiB0aGUgY2VudHJhbCBwcm9ibGVtcyBpbiB0aGUgYXJlYSBvZiBwZXJtdXRhdGlvbiBwYXR0ZXJucy4gIE1vcmVvdmVyLCBzdWNoIGEgY29ubmVjdGlvbiBpcyBhdCB0aGUgY29yZSBvZiB0aGlzIHByb3Bvc2FsLCBzbyB3ZSBleHBlY3Qgc3VjY2VzcyBoZXJlIHRvIGhhdmUgYW4gaW1wYWN0IG9uIHRoZSBlbnVtZXJhdGl2ZSBzdHVkaWVzIG9mIHBlcm11dGF0aW9uIHBhdHRlcm5zLjxiciAvPjxiciAvPlRoZSBzdHVkeSBvZiB0aGUgTcO2Yml1cyBmdW5jdGlvbiBvZiB0aGUgcGVybXV0YXRpb24gcG9zZXQgaGFzIG9ubHkgYmVlbiBnb2luZyBvbiBmb3IgYSBmZXcgeWVhcnMsIGJ1dCBpdCBpcyBhbHJlYWR5IGNsZWFyIHRoYXQgdGhpcyBwb3NldCBoYXMgYSB2ZXJ5IHJpY2ggYW5kIGNvbXBsaWNhdGVkIHN0cnVjdHVyZSwgd2hpY2ggcmVmbGVjdHMgdGhlIHNpdHVhdGlvbiB3aXRoIHRoZSBlbnVtZXJhdGl2ZSBwcm9ibGVtcyBpbiB0aGUgYXJlYS4gIEJlY2F1c2Ugb2YgdGhpcyBjb21wbGV4aXR5IGl0IHNlZW1zIHVubGlrZWx5IHRoZXJlIHdpbGwgZXZlciBiZSBhbiBlZmZlY3RpdmUgYW5kIGNvbXBsZXRlbHkgZ2VuZXJhbCBmb3JtdWxhIGZvciB0aGUgTcO2Yml1cyBmdW5jdGlvbiwgYnV0IHRoYXQgaXMgb2YgY291cnNlIG9mdGVuIHRoZSBjYXNlIHdpdGggaW50ZXJlc3RpbmcgbWF0aGVtYXRpY2FsIHN0cnVjdHVyZXMuICBJbiBsaWdodCBvZiB0aGUgcHJvZ3Jlc3MgbmV2ZXJ0aGVsZXNzIG1hZGUgYWxyZWFkeSwgdGhpcyBzaG91bGQgbm90IGJlIHNlZW4gYXMgZGlzY291cmFnaW5nLCBidXQgYXMgYSBjaGFsbGVuZ2luZyBpbnZpdGF0aW9uLiAgPGJyIC8+PGJyIC8+SW4gYWxsIGNhc2VzIHdoZXJlIHRoZSBNw7ZiaXVzIGZ1bmN0aW9uIGhhcyBiZWVuIGRldGVybWluZWQgZm9yIGEgY2xhc3Mgb2YgaW50ZXJ2YWxzIHRoZXJlIGlzIGEgY29tbW9uIHRocmVhZCB0byB0aGUgc29sdXRpb25zLiBUaGVzZSBhcmUgdGhlIHNvIGNhbGxlZCBub3JtYWwgZW1iZWRkaW5ncywgc3BlY2lhbCBvY2N1cnJlbmNlcyBvZiBhIHBlcm11dGF0aW9uIGluIGFub3RoZXIsIHdoaWNoIGFyZSB2ZXJ5IHNpbWlsYXIsIGJ1dCBzdGlsbCBkaWZmZXJlbnQgYmV0d2VlbiB0aGUgY2FzZXMsIGFuZCAgd2hvc2UgbnVtYmVyIGluIGVhY2ggb2YgdGhlc2UgY2FzZXMgaXMgZXNzZW50aWFsbHkgZXF1YWwgdG8gdGhlIE3DtmJpdXMgZnVuY3Rpb24gb2YgdGhlIGNvcnJlc3BvbmRpbmcgaW50ZXJ2YWxzLiAgPGJyIC8+PGJyIC8+SW50cmlndWluZ2x5LCBlbXBpcmljYWwgdGVzdHMgc2hvdyB0aGF0IHlldCBhbm90aGVyIHZhcmlhdGlvbiBvbiB0aGUgZGVmaW5pdGlvbiBvZiB0aGVzZSBub3JtYWwgZW1iZWRkaW5ncyBnaXZlcyBhbmFsb2dvdXMgcmVzdWx0cywgdGhhdCBpcywgdGhhdCB0aGUgbnVtYmVyIG9mIHRoZXNlIGVtYmVkZGluZ3MgZXF1YWxzIHRoZSBNw7ZiaXVzIGZ1bmN0aW9uLCBpbiBhbiBgYHVucmVhc29uYWJseScnIGxhcmdlIHByb3BvcnRpb24gb2YgY2FzZXMsIGZhciBiZXlvbmQgdGhlIHJlYWxtIG9mIHdoZXJlIHdlIG5vdyB1bmRlcnN0YW5kIHRoaXMgcGhlbm9tZW5vbi4gICBUaGlzIGlzIHdoYXQgd2Ugd2FudCB0byB1bmRlcnN0YW5kLCBzaW5jZSBpdCB3aWxsIGFsbW9zdCBkZWZpbml0ZWx5IGxlYWQgdG8gc3Vic3RhbnRpYWwgcHJvZ3Jlc3MgaW4gdGhlICByZXNlYXJjaCBvbiB0aGUgIE3DtmJpdXMgZnVuY3Rpb24gb2YgdGhpcyBwb3NldCwgdG8gbW9yZSBzeXN0ZW1hdGljIHJlc3VsdHMgb24gaXRzIGdlbmVyYWwgc3RydWN0dXJlLCBhbmQgdG8gdG9vbHMgZm9yIGZ1cnRoZXIgcHJvZ3Jlc3MuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5zdHJhdGguYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5zdHJhdGguYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMjcxNDcvMQxFUC9NMDI3MTQ3LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZKh/iZxm0jXKwmDGy2h53GEydmlD" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLCz9qvDQLQvN++DAKT/OCVA5gcsqPzivOWzKFXmTy9w/dQRzsw" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M027147/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>The Möbius function of the poset of permutations</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-377843'>Steingrimsson, Professor E</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer and Information Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Strathclyde</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">29 September 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">28 September 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="284,960.75" class="DetailValue">284,961</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Logic &amp; Combinatorics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>16 Jun 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2Q1DOC">EPSRC Mathematics Prioritisation Panel June 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr><tr class="DetailValueAlt">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl03_Label1"><b>03 Mar 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl03_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2F4FNU">EPSRC Mathematics Prioritisation Panel March 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl03_Label3"><b>Deferred</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Permutations are lists of objects that can be compared pairwise with respect to a given total order, and they can thus always be represented by integers, where the order is the usual order of size.  A pattern P in a permutation is a subsequence in the permutation whose elements appear in the same order of size as those in P.  For example, the letters 452 in 641523 form an occurrence of the pattern 231. <br /><br />In recent decades research on various properties of permutations with respect to pattern containment has seen enormous growth, and established a myriad connections to other branches of discrete mathematics and even to physics, biology and theoretical computer science, the last of which has been strongly connected to the field in its modern incarnation. <br /><br />The focus in this field was for a long time mainly on enumerative results, but studies of structural properties of the poset (partially ordered set) of all finite permutations, ordered by pattern containment, have been growing strong in the last decade or so.  These have so far mostly concerned order ideals in this poset, that is, downward closed classes of elements, analogous to minor closed classes of graphs.  This poset is the fundamental object in all studies of permutation patterns, since it encompasses all information about containment and avoidance of patterns in permutations.<br /><br />An inevitable question about any combinatorially defined poset regards the Möbius function of its intervals, that is, sets of permutations containing a given permutation A and contained in another given permutation B.  The Möbius function is probably the single most important invariant of a combinatorially defined poset.  In addition to the intrinsic interest of determining the Möbius function for this poset, and the likely effect it will have on studies of its topology, there are already results showing that the Möbius function is in some cases closely connected to the number of occurrences of one permutation as a pattern in anothone of the central problems in the area of permutation patterns.  Moreover, such a connection is at the core of this proposal, so we expect success here to have an impact on the enumerative studies of permutation patterns.<br /><br />The study of the Möbius function of the permutation poset has only been going on for a few years, but it is already clear that this poset has a very rich and complicated structure, which reflects the situation with the enumerative problems in the area.  Because of this complexity it seems unlikely there will ever be an effective and completely general formula for the Möbius function, but that is of course often the case with interesting mathematical structures.  In light of the progress nevertheless made already, this should not be seen as discouraging, but as a challenging invitation.  <br /><br />In all cases where the Möbius function has been determined for a class of intervals there is a common thread to the solutions. These are the so called normal embeddings, special occurrences of a permutation in another, which are very similar, but still different between the cases, and  whose number in each of these cases is essentially equal to the Möbius function of the corresponding intervals.  <br /><br />Intriguingly, empirical tests show that yet another variation on the definition of these normal embeddings gives analogous results, that is, that the number of these embeddings equals the Möbius function, in an ``unreasonably'' large proportion of cases, far beyond the realm of where we now understand this phenomenon.   This is what we want to understand, since it will almost definitely lead to substantial progress in the  research on the  Möbius function of this poset, to more systematic results on its general structure, and to tools for further progress.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.strath.ac.uk                                                                             '>http://www.strath.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	On the product decomposition conjecture for finite simple groups
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN010957%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAxMDk1Ny8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVRPHN0cm9uZz5PbiB0aGUgcHJvZHVjdCBkZWNvbXBvc2l0aW9uIGNvbmplY3R1cmUgZm9yIGZpbml0ZSBzaW1wbGUgZ3JvdXBzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAU9PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNTI0MDgyJz5HaWxsLCBEciBOPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFJkZhY3VsdHkgb2YgQ29tcHV0aW5nLCBFbmcuIGFuZCBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUZVW5pdmVyc2l0eSBvZiBTb3V0aCBXYWxlc2RkAggPZBYCAgEPZBYCAgEPDxYCHwQFGkZpcnN0IEdyYW50IC0gUmV2aXNlZCAyMDA5ZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgSmFudWFyeSAyMDE2ZGQCAw9kFgICAQ8PFgIfBAUQMzEgRGVjZW1iZXIgMjAxN2RkAgUPZBYCAgEPDxYEHwQFBjc5LDAxOB4HVG9vbFRpcAUJNzksMDE3LjY2ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5AGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA3IFNlcCAyMDE1ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTBFUFNSQyBNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCBTZXB0IDIwMTUfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0yVkc5QkFkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXJGldpdGhpbiBtYXRoZW1hdGljcyB0aGUgc3R1ZHkgb2Ygc3ltbWV0cnkgaXMgY2FsbGVkICJncm91cCB0aGVvcnkiLiBHaXZlbiBzb21lIGtpbmQgb2Ygb2JqZWN0IChwaHlzaWNhbCBvciBtYXRoZW1hdGljYWwpLCBpdHMgInN5bW1ldHJ5IGdyb3VwIiBpcyB0aGUgc2V0IG9mIHRyYW5zZm9ybWF0aW9ucyBvZiB0aGUgb2JqZWN0IHRoYXQgcHJlc2VydmUgaXRzIHN0cnVjdHVyZS4gQSB2ZXJ5IHN5bW1ldHJpY2FsIG9iamVjdCB3aWxsIGhhdmUgYSBsYXJnZSBzeW1tZXRyeSBncm91cCwgYW4gYXN5bW1ldHJpY2FsIG9iamVjdCB3aWxsIGhhdmUgYSB0aW55IHN5bW1ldHJ5IGdyb3VwLiA8YnIgLz48YnIgLz5UaGUgY3ViZSwgZm9yIGluc3RhbmNlLCBoYXMgYSBzeW1tZXRyeSBncm91cCBvZiBzaXplIDQ4IC0gdGhlc2UgYXJlIGFsbCB0aGUgcmVmbGVjdGlvbnMgYW5kIHJvdGF0aW9ucyBvZiAzLWRpbWVuc2lvbmFsIHNwYWNlIHRoYXQgbGVhdmUgdGhlIHZlcnRpY2VzIG9mIHRoZSBjdWJlIHVuY2hhbmdlZCBzZXQtd2lzZS4gPGJyIC8+PGJyIC8+R2l2ZW4gc3VjaCBhIGdyb3VwIG9mIHN5bW1ldHJpZXMgd2UgY2FuIGNvbnNpZGVyIHRoZSAiY29tcG9zaXRpb24iIG9mIHR3byBncm91cCBlbGVtZW50cyBhbmQgaXQgaXMgY2xlYXIgdGhhdCBzdWNoIGEgY29tcG9zaXRpb24gd2lsbCBpdHNlbGYgYmUgYSBncm91cCBlbGVtZW50LiBGb3IgaW5zdGFuY2UgaWYgSSByb3RhdGUgdGhlIGN1YmUgYXJvdW5kIG9uZSBheGlzLCBhbmQgdGhlbiBhZ2FpbiBhcm91bmQgYW5vdGhlciwgdGhlIGVuZCByZXN1bHQgd2lsbCBiZSB0aGUgc2FtZSBhcyBpZiBJIGhhZCByb3RhdGVkIHRoZSBjdWJlIGFyb3VuZCBhIHRoaXJkIGF4aXMuPGJyIC8+PGJyIC8+VGhpcyBwcm9qZWN0IHN0dWRpZXMgZ3JvdXBzIG9mIGEgcGFydGljdWxhciB0eXBlLiBGaXJzdGx5LCB0aGV5IGFyZSBGSU5JVEU7IHNlY29uZGx5LCB0aGV5IGFyZSBTSU1QTEUuIEluIHRoaXMgY29udGV4dCwgc2ltcGxlIG1lYW5zIHRoYXQgdGhlIGdyb3VwIGNhbm5vdCBiZSAiYnJva2VuIHVwIiBpbnRvIHNtYWxsZXIgcGllY2VzLiBJdCBpcyBpbXBvcnRhbnQgdG8gbm90ZSB0aGF0IHNpbXBsZSBkb2VzIG5vdCBtZWFuIGVhc3khIFRoZSBzdHVkeSBvZiB0aGUgZmluaXRlIHNpbXBsZSBncm91cHMgaXMgYW4gZXh0cmFvcmRpbmFyaWx5IHJpY2ggYXJlYSBvZiBtYXRoZW1hdGljcyBjb250YWluaW5nIG1hbnkgdmVyeSBkaWZmaWN1bHQgb3BlbiBxdWVzdGlvbnMuPGJyIC8+PGJyIC8+VGhpcyByZXNlYXJjaCBzdGFydHMgd2l0aCB0aGUgZm9sbG93aW5nIHNldC11cDogU3VwcG9zZSB0aGF0IHdlIGhhdmUgYSBmaW5pdGUgc2ltcGxlIGdyb3VwIEcgYW5kIGEgc3Vic2V0IEEgaW5zaWRlIEcgd2l0aCBBIG9mIHNpemUgYXQgbGVhc3QgMi4gPGJyIC8+PGJyIC8+SXQgaXMgd2VsbC1rbm93biB0aGF0IGFueSBlbGVtZW50IG9mIEcgY2FuIGJlIHdyaXR0ZW4gYXMgYSBjb21wb3NpdGlvbiBvZiBzb21lIG51bWJlciBOIG9mIGVsZW1lbnRzICJvZiB0aGUgc2FtZSB0eXBlIiBhcyBBLiAoSGVyZSAib2YgdGhlIHNhbWUgdHlwZSIgaGFzIGEgdGVjaG5pY2FsIG1lYW5pbmcgdGhhdCB3ZSB3b24ndCBkaXNjdXNzLiBSb3VnaGx5IHNwZWFraW5nIHRob3VnaCwgaWYgb25lIGxvb2tzIGF0IHRoZSBjdWJlIGV4YW1wbGUsIG9uZSBjYW4gc2VlIHRoYXQgYSBST1RBVElPTiBoYXMgZGlmZmVyZW50IHF1YWxpdGllcyB0byBhIFJFRkxFQ1RJT04uIFRoZSBpZGVhIG9mICJ0eXBlIiBpcyBhIHJlZmluZW1lbnQgb2YgdGhpcyBxdWFsaXRhdGl2ZSBkaXN0aW5jdGlvbi4pPGJyIC8+PGJyIC8+V2Ugd291bGQgbGlrZSB0byB3cml0ZSBhbGwgb2YgdGhlIGVsZW1lbnRzIG9mIEcgaW4gdGhlIG1vc3QgZWZmaWNpZW50IHdheSBwb3NzaWJsZSB1c2luZyBlbGVtZW50cyBvZiB0aGUgc2FtZSB0eXBlIGFzIEEuIEJ5IGVmZmljaWVudCB3ZSBtZWFuIHVzaW5nIGFzIGZldyBjb21wb3NpdGlvbnMgYXMgcG9zc2libGUuIFRoZSBQcm9kdWN0IERlY29tcG9zaXRpb24gQ29uamVjdHVyZSAoUERDKSBhc3NlcnRzIHRoYXQgZWxlbWVudHMgb2YgZmluaXRlIHNpbXBsZSBncm91cHMgY2FuIGJlIHdyaXR0ZW4gdmVyeSBlZmZpY2llbnRseSBpbmRlZWQuIDxiciAvPjxiciAvPkFQUExJQ0FUSU9OUzogQWx0aG91Z2ggdGhlIHNldHRpbmcgZm9yIHRoaXMgcmVzZWFyY2ggaXMgdmVyeSBhYnN0cmFjdCwgdGhlcmUgYXJlIGEgc3VycHJpc2luZyBudW1iZXIgb2YgcmF0aGVyIGNvbmNyZXRlIGFwcGxpY2F0aW9ucy4gT25lIG9mIHRoZSBvcmlnaW5hbCBtb3RpdmF0aW9ucyBmb3IgdGhlIFBEQywgZm9yIGluc3RhbmNlLCB3YXMgaW4gdGhlIGV4cGxpY2l0IGNvbnN0cnVjdGlvbiBvZiBFWFBBTkRFUiBGQU1JTElFUy4gVGhlc2UgYXJlIG1hdGhlbWF0aWNhbCBtb2RlbHMgb2YgZWZmaWNpZW50IG5ldHdvcmtzIHdoaWNoIGhhdmUgYSBteXJpYWQgb2YgYXBwbGljYXRpb25zIGluIG1hdGhlbWF0aWNzLCBjb21wdXRlciBzY2llbmNlIGFuZCBlbHNld2hlcmUuIEl0IHR1cm5zIG91dCB0aGF0IG9uZSBjYW4gdXNlIG5vdGlvbnMgb2YgImVmZmljaWVuY3kiIGluIGZpbml0ZSBzaW1wbGUgZ3JvdXBzIHRvIGNvbnN0cnVjdCBleHBhbmRlciBmYW1pbGllcy48YnIgLz48YnIgLz5NRVRIT0RTOiBUaGUgcHJpbWFyeSB0b29sIGF0IG91ciBkaXNwb3NhbCB0byBwcm92ZSBQREMgaXMgdGhlIENsYXNzaWZpY2F0aW9uIG9mIEZpbml0ZSBTaW1wbGUgR3JvdXBzIChDRlNHKS4gVGhpcyBtb251bWVudGFsIHRoZW9yZW0gd2FzIHByb3ZlZCBieSBodW5kcmVkcyBvZiBtYXRoZW1hdGljaWFucyBvdmVyIGEgcGVyaW9kIG9mIGFib3V0IDQwIHllYXJzLCBjdWxtaW5hdGluZyBpbiAyMDAxLiBDRlNHIGFzc2VydHMgdGhhdCBhbGwgZmluaXRlIHNpbXBsZSBncm91cHMgYXJlIG9uIGFuIGV4cGxpY2l0IChpbmZpbml0ZWx5IGxvbmcpIGxpc3QuIFRodXMgdG8gcHJvdmUgUERDIGl0IGlzIGVub3VnaCB0byBwcm92ZSB0aGUgcmVzdWx0IGZvciBhbGwgb2YgdGhlIGdyb3VwcyBvbiB0aGUgbGlzdC4gSW4gZmFjdCBzb21lIG9mIHRoZSBncm91cHMgb24gdGhlIGxpc3QgaGF2ZSBhbHJlYWR5IGJlZW4gYXR0ZW5kZWQgdG8gaW4gZWFybGllciBjb2xsYWJvcmF0aXZlIHdvcmsgb2YgdGhlIFByaW5jaXBhbCBJbnZlc3RpZ2F0b3IgYW5kIG90aGVycy48YnIgLz48YnIgLz5JdCBpcyBleHBlY3RlZCB0aGF0IHJlc2VhcmNoIGludG8gdGhlIFBEQyBvbiB0aGUgZ3JvdXBzIHRoYXQgcmVtYWluIHdpbGwsIGluIGFkZGl0aW9uIHRvIHlpZWxkaW5nIGEgcHJvb2Ygb2YgUERDLCBzaGVkIGxpZ2h0IG9uIHNvbWUgb2YgdGhlIGRlZXAgYW5kIG15c3RlcmlvdXMgcHJvcGVydGllcyBvZiB0aGUgZmluaXRlIHNpbXBsZSBncm91cHMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMTA5NTcvMQxFUC9OMDEwOTU3LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZOhwJ3ZPqBPxyOyIpgyoxD/H9JH9" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKY4JCoDgLQvN++DAKT/OCVA01J78IF9TCy7RCa3EQKb4i3G57s" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N010957/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>On the product decomposition conjecture for finite simple groups</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-524082'>Gill, Dr N</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Faculty of Computing, Eng. and Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of South Wales</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 December 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="79,017.66" class="DetailValue">79,018</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>07 Sep 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2VG9BA">EPSRC Mathematics Prioritisation Panel Sept 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Within mathematics the study of symmetry is called "group theory". Given some kind of object (physical or mathematical), its "symmetry group" is the set of transformations of the object that preserve its structure. A very symmetrical object will have a large symmetry group, an asymmetrical object will have a tiny symmetry group. <br /><br />The cube, for instance, has a symmetry group of size 48 - these are all the reflections and rotations of 3-dimensional space that leave the vertices of the cube unchanged set-wise. <br /><br />Given such a group of symmetries we can consider the "composition" of two group elements and it is clear that such a composition will itself be a group element. For instance if I rotate the cube around one axis, and then again around another, the end result will be the same as if I had rotated the cube around a third axis.<br /><br />This project studies groups of a particular type. Firstly, they are FINITE; secondly, they are SIMPLE. In this context, simple means that the group cannot be "broken up" into smaller pieces. It is important to note that simple does not mean easy! The study of the finite simple groups is an extraordinarily rich area of mathematics containing many very difficult open questions.<br /><br />This research starts with the following set-up: Suppose that we have a finite simple group G and a subset A inside G with A of size at least 2. <br /><br />It is well-known that any element of G can be written as a composition of some number N of elements "of the same type" as A. (Here "of the same type" has a technical meaning that we won't discuss. Roughly speaking though, if one looks at the cube example, one can see that a ROTATION has different qualities to a REFLECTION. The idea of "type" is a refinement of this qualitative distinction.)<br /><br />We would like to write all of the elements of G in the most efficient way possible using elements of the same type as A. By efficient we mean using as few compositions as possible. The Product Decomposition Conjecture (PDC) asserts that elements of finite simple groups can be written very efficiently indeed. <br /><br />APPLICATIONS: Although the setting for this research is very abstract, there are a surprising number of rather concrete applications. One of the original motivations for the PDC, for instance, was in the explicit construction of EXPANDER FAMILIES. These are mathematical models of efficient networks which have a myriad of applications in mathematics, computer science and elsewhere. It turns out that one can use notions of "efficiency" in finite simple groups to construct expander families.<br /><br />METHODS: The primary tool at our disposal to prove PDC is the Classification of Finite Simple Groups (CFSG). This monumental theorem was proved by hundreds of mathematicians over a period of about 40 years, culminating in 2001. CFSG asserts that all finite simple groups are on an explicit (infinitely long) list. Thus to prove PDC it is enough to prove the result for all of the groups on the list. In fact some of the groups on the list have already been attended to in earlier collaborative work of the Principal Investigator and others.<br /><br />It is expected that research into the PDC on the groups that remain will, in addition to yielding a proof of PDC, shed light on some of the deep and mysterious properties of the finite simple groups.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

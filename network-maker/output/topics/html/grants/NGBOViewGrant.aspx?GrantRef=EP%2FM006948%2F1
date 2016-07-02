@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Stress jump boundary condition capturing for the lattice Boltzmann simulation methods
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM006948%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAwNjk0OC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVmPHN0cm9uZz5TdHJlc3MganVtcCBib3VuZGFyeSBjb25kaXRpb24gY2FwdHVyaW5nIGZvciB0aGUgbGF0dGljZSBCb2x0em1hbm4gc2ltdWxhdGlvbiBtZXRob2RzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVAPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tOTM1ODcnPlNwZW5jZXIsIERyIFRKPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFJUZhY3VsdHkgb2YgQXJ0cyBDb21wdXRpbmcgRW5nIGFuZCBTY2lkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRtTaGVmZmllbGQgSGFsbGFtIFVuaXZlcnNpdHlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRpGaXJzdCBHcmFudCAtIFJldmlzZWQgMjAwOWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDAzIE5vdmVtYmVyIDIwMTRkZAIDD2QWAgIBDw8WAh8EBQswMiBNYXkgMjAxN2RkAgUPZBYCAgEPDxYEHwQFBjgyLDA2OR4HVG9vbFRpcAUJODIsMDY5LjI0ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCAhYEAgEPZBYCZg8VAiBDb21wbGV4IGZsdWlkcyAmYW1wOyBzb2Z0IHNvbGlkcxNDb250aW51dW0gTWVjaGFuaWNzZAICD2QWAmYPFQIIUmhlb2xvZ3kAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMjMgSnVsIDIwMTRkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFK0VQU1JDIFBoeXNpY2FsIFNjaWVuY2VzIFBoeXNpY3MgLSBKdWx5IDIwMTQfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0xUkREOVhkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAX0Gk11bHRpLXBoYXNlIGZsb3dzIG9jY3VyIHdoZW4gdHdvIG9yIG1vcmUgZGlmZmVyZW50IHBoYXNlcyBvciB0eXBlcyBvZiBmbHVpZCBhcmUgYnJvdWdodCB0b2dldGhlci4gVGhleSBhcmUgc2VlbiB0byBvY2N1ciBpbiBhIHZhc3QgcmFuZ2Ugb2YgYm90aCBwaHlzaWNhbCBhbmQgaW5kdXN0cmlhbCB0eXBlIHN5c3RlbXMuIFN1Y2ggc3lzdGVtcyBhcmUsIHRvIG5hbWUgYnV0IG9ubHkgYSBmZXcsIGluIHByb2Nlc3NpbmcsIHByb2R1Y3Rpb24gYW5kIHRyYW5zcG9ydGF0aW9uIG9mIGZvb2RzLCBvaWwsIGdhcywgd2FzdGUgYW5kIHNsdXJyaWVzOyBpbiBlbmVyZ3kgcHJvZHVjdGlvbiBmcm9tIGV2YXBvcmF0b3JzLCBjb25kZW5zZXJzLCBwdW1wcyBhbmQgdHVyYmluZXM7IGluIG5hdHVyYWwgc3lzdGVtcyBzdWNoIGFzIGdlb3BoeXNpY2FsIGFuZCBnZW9jaGVtaWNhbCBmbG93cywgcmVzZXJ2b2lyIGV4dHJhY3Rpb24gLyBmaWx0cmF0aW9uLCBiaW9sb2dpY2FsIGFuZCBiaW9jaGVtaWNhbCBmbG93cy4gSW4gc3VjaCBzeXN0ZW1zIHRoZSBwb2ludCBhdCB3aGljaCBkaWZmZXJlbnQgcGhhc2VzIG1lZXQgaXMgdGVybWVkIGFuIGludGVyZmFjZSBhbmQgdGhpcyBpbnRlcmZhY2lhbCBhcmVhIGdpdmVzIHJpc2UgdG8gYSBob3N0IG9mIGNvbXBsZXggcmhlb2xvZ2ljYWwgcGhlbm9tZW5hIGR1ZSB0byBzdHJlc3NlcyB0aGF0IG9jY3VyLiBQaGVub21lbmEgc3VjaCBhcyBzdXNwZW5zaW9uIGR5bmFtaWNzLCB3ZXR0aW5nLCBqYW1taW5nLCBjb2FsZXNjZW5jZSwgYnJlYWstdXAsIGNvbGxpc2lvbiBhbmQgY2FwaWxsYXJpdHkgYXJlIGFsbCBoZWF2aWx5IGludGVyZmFjZSBkb21pbmF0ZWQgZmxvd3MgYW5kIGFyZSBub3QgcmVhZGlseSBtYXRoZW1hdGljYWxseSBlYXN5IHRvIHByZWRpY3QgaW4gdHlwaWNhbCBlbmdpbmVlcmluZyBzY2VuYXJpb3MuPGJyIC8+PGJyIC8+SW4gdGhlc2UgY2FzZXMgbnVtZXJpY2FsIGNvbXB1dGVyIHNpbXVsYXRpb25zIGhhdmUgcHJvdmVkIGFuIGludmFsdWFibGUgdG9vbCBpbiBzdWNjZXNzZnVsbHkgdW5kZXJzdGFuZGluZywgZGlhZ25vc2luZywgcHJlZGljdGluZyBhbmQgb3B0aW1pc2luZyBzeXN0ZW1zLiBBIGdyb3dpbmcgY3VycmVudCBzdGF0ZSBvZiB0aGUgYXJ0IGNsYXNzIG9mIG51bWVyaWNhbCBjb21wdXRlciBzaW11bGF0aW9uIG1ldGhvZHMgdXNlZCBmb3IgZW5naW5lZXJpbmcgbXVsdGktcGhhc2UgZmxvdyBpcyBjYWxsZWQgdGhlIGxhdHRpY2UgQm9sdHptYW5uIG1ldGhvZC4gSG93ZXZlciwgaW4gdGhpcyBwcm9taXNpbmcgbWV0aG9kLCBhIGRyYXdiYWNrIGlzIHRoZSBsYXJnZSBhbW91bnRzIG9mIHJlc291cmNlcyB0aGF0IGFyZSBzcGVudCBzbW9vdGhpbmcgYW5kIGJyb2FkZW5pbmcgaW50ZXJmYWNlcyBpbiBvcmRlciB0byByZXNvbHZlIGFuZCBjYWxjdWxhdGUgdGhlIG5lY2Vzc2FyeSBmbG93IGRldGFpbHMuIFRoaXMgc2V2ZXJlbHkgcmVzdHJpY3RzIHRoZSBwaHlzaWNhbCByZXByZXNlbnRhdGl2ZSBzaXplIG9mIGEgc2ltdWxhdGlvbiBhbmQgdGhlIHJhbmdlIG9mIGluZHVzdHJpYWxseSB1c2VmdWwgYXBwbGljYXRpb25zIHRoYXQgY2FuIGJlbmVmaXQgZnJvbSB0aGlzIHR5cGUgb2YgcHJlZGljdGl2ZSBtb2RlbGxpbmcgd2hpY2ggaXMgb2Z0ZW4gbmVlZGVkIHRvIGF2b2lkIGxvbmcgZGV2ZWxvcG1lbnQgZGVsYXlzLjxiciAvPjxiciAvPlRoaXMgcHJvZ3JhbW1lIG9mIHJlc2VhcmNoIHdpbGwgZGV2ZWxvcCBicmFuZCBuZXcgdGVjaG5pcXVlcyBmb3IgdGhlIG51bWVyaWNhbCBsYXR0aWNlIEJvbHR6bWFubiBtZXRob2RzIGluIG9yZGVyIHRvIGFwcGx5IHRoZSBtYXRoZW1hdGljYWxseSBjb3JyZWN0IHN0cmVzcyBqdW1wIGJvdW5kYXJ5IGNvbmRpdGlvbnMgaW4gYSBzaGFycCBleGFjdGluZyBtYW5uZXIuIFRoaXMgd2lsbCBmcmVlIHVwIGV4cGVuc2l2ZSBjb21wdXRhdGlvbmFsIHJlc291cmNlcyB3aGljaCBtZWFucyAoaSkgdGhhdCBleGlzdGluZyBzaW11bGF0aW9ucyBjYW4gYmUgbW9kaWZpZWQgdG8gdGFrZSBhIGZyYWN0aW9uIChlc3RpbWF0ZWQgYXQgdXAgdG8gNCB0aW1lcyBsZXNzKSBvZiB0aGUgdGltZSBhbmQgbWVtb3J5LCAoaWkpIHRoYXQgYSBuZXcgcmFuZ2Ugb2YgbGFyZ2VyIG1vcmUgcGh5c2ljYWxseSByZXByZXNlbnRhdGl2ZSwgYWNjdXJhdGUgYW5kIGluZHVzdHJpYWxseSByZWxldmFudCBtdWx0aS1waGFzZSBmbG93cyBjYW4gYmUgbW9kZWxsZWQuIFRvIGVuc3VyZSB0aGUgY29ycmVjdG5lc3Mgb2YgdGhlIG5ld2x5IGRldmVsb3BlZCB0ZWNobmlxdWVzIHRoZXkgd2lsbCBiZSB0ZXN0ZWQgYWdhaW5zdCBrbm93biBkYXRhIGFuZCBjb21wYXJlZCBhZ2FpbnN0IHRoZSBwcmVzZW50IGRheSB0ZWNobmlxdWVzIGluIG9yZGVyIHRvIGRlbW9uc3RyYXRlIHRoZSBzaWduaWZpY2FudCBlbmhhbmNlbWVudHMgZXhwZWN0ZWQgdG8gYmUgYWNoaWV2ZWQgdGhyb3VnaCB0aGlzIHJlc2VhcmNoLjxiciAvPjxiciAvPiA8YnIgLz48YnIgLz5UaGUgdHlwZXMgb2YgcmVzZWFyY2ggdGhhdCB3aWxsIHVzZSB0aGUgdGVjaG5pcXVlcyBkZXZlbG9wZWQgaW4gdGhpcyByZXNlYXJjaCB3b3JrIHdpbGwgcHJlZG9taW5hbnRseSBiZSBtdWx0aS1waGFzZSByZWxhdGVkIGJ1dCBpdCBpcyBub3RlZCB0aGF0IHRoZSB0ZWNobmlxdWVzIGRldmVsb3BlZCB3aWxsIGFwcGx5IHRvIGFueSB0cmFuc3BvcnQgcGhlbm9tZW5hIHRoYXQgaW52b2x2ZXMgc3RyZXNzIGJvdW5kYXJpZXMgd2l0aGluIHRoZSBsYXR0aWNlIEJvbHR6bWFubiBtZXRob2RzLiBGb3IgZXhhbXBsZSB0aGUganVuY3Rpb24gb2YgYW4gb3BlbiBmbHVpZCBmbG93aW5nIGludG8gYSBwb3JvdXMgbWVkaWEgbW9kZWwgY29udGFpbnMgYSBzdHJlc3MganVtcC4gTW9yZSBzcGVjaWZpY2FsbHkgdGhpcyByZXNlYXJjaCB3aWxsIGdvIG9uIHRvIGJlIGFwcGxpZWQgdG8gdGhlIGV4cGxpY2l0IG1vZGVsbGluZyBvZiBlbXVsc2lvbnMgYW5kIHN1c3BlbnNpb24uIFRoZXNlIGFyZSBmbG93cyB0aGF0IGNvbnRhaW4gYSBsYXJnZSBudW1iZXIgb2YgcGFydGljbGVzIHdpdGggbXVsdGlwbHkgaW50ZXJhY3RpbmcgaW50ZXJmYWNlcyBkb21pbmF0aW5nIHRoZSBlbWVyZ2VudCBjb21wbGV4IHJoZW9sb2dpY2FsIGJlaGF2aW91ci4gU3VjaCBmbG93cyBhcmUgcHJldmFsZW50IGluIHRoZSBmb29kcywgZHJpbmtzLCBjcmVhbXMsIHBhc3RlcywgYmlvLWZsdWlkcyAoYmxvb2QpIGFuZCBvdGhlciBwcm9jZXNzaW5nIGluZHVzdHJpZXMgYW5kIHRoZSBtb2RlbGxpbmcgdG9vbHMgZGV2ZWxvcGVkIGhlcmUgd2lsbCBsZWFkIHRvIGltcHJvdmVkIGNvbnN0aXR1dGlvbmFsIHRoZW9yaWVzIG9mIG5vbi1OZXd0b25pYW4gZmx1aWRzLCBrbm93bGVkZ2UgdHJhbnNmZXIgYW5kIHByb2Nlc3Mgb3B0aW1pc2F0aW9uIGZvciBtYW55IHllYXJzIHRvIGNvbWUuIDxiciAvPjxiciAvPmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc2h1LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc2h1LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9NMDA2OTQ4LzEMRVAvTTAwNjk0OC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSZZL6oCkcueyz7HALStJADpc63zQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK4mZLoDQLQvN++DAKT/OCVA8iYJP2fwXpvi7tk/X0tAyspp8+q" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M006948/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Stress jump boundary condition capturing for the lattice Boltzmann simulation methods</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-93587'>Spencer, Dr TJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Faculty of Arts Computing Eng and Sci</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Sheffield Hallam University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">03 November 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">02 May 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="82,069.24" class="DetailValue">82,069</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Complex fluids &amp; soft solids</td>
+                                    <td class="DetailValue"> Continuum Mechanics</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Rheology</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>23 Jul 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1RDD9X">EPSRC Physical Sciences Physics - July 2014</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Multi-phase flows occur when two or more different phases or types of fluid are brought together. They are seen to occur in a vast range of both physical and industrial type systems. Such systems are, to name but only a few, in processing, production and transportation of foods, oil, gas, waste and slurries; in energy production from evaporators, condensers, pumps and turbines; in natural systems such as geophysical and geochemical flows, reservoir extraction / filtration, biological and biochemical flows. In such systems the point at which different phases meet is termed an interface and this interfacial area gives rise to a host of complex rheological phenomena due to stresses that occur. Phenomena such as suspension dynamics, wetting, jamming, coalescence, break-up, collision and capillarity are all heavily interface dominated flows and are not readily mathematically easy to predict in typical engineering scenarios.<br /><br />In these cases numerical computer simulations have proved an invaluable tool in successfully understanding, diagnosing, predicting and optimising systems. A growing current state of the art class of numerical computer simulation methods used for engineering multi-phase flow is called the lattice Boltzmann method. However, in this promising method, a drawback is the large amounts of resources that are spent smoothing and broadening interfaces in order to resolve and calculate the necessary flow details. This severely restricts the physical representative size of a simulation and the range of industrially useful applications that can benefit from this type of predictive modelling which is often needed to avoid long development delays.<br /><br />This programme of research will develop brand new techniques for the numerical lattice Boltzmann methods in order to apply the mathematically correct stress jump boundary conditions in a sharp exacting manner. This will free up expensive computational resources which means (i) that existing simulations can be modified to take a fraction (estimated at up to 4 times less) of the time and memory, (ii) that a new range of larger more physically representative, accurate and industrially relevant multi-phase flows can be modelled. To ensure the correctness of the newly developed techniques they will be tested against known data and compared against the present day techniques in order to demonstrate the significant enhancements expected to be achieved through this research.<br /><br /> <br /><br />The types of research that will use the techniques developed in this research work will predominantly be multi-phase related but it is noted that the techniques developed will apply to any transport phenomena that involves stress boundaries within the lattice Boltzmann methods. For example the junction of an open fluid flowing into a porous media model contains a stress jump. More specifically this research will go on to be applied to the explicit modelling of emulsions and suspension. These are flows that contain a large number of particles with multiply interacting interfaces dominating the emergent complex rheological behaviour. Such flows are prevalent in the foods, drinks, creams, pastes, bio-fluids (blood) and other processing industries and the modelling tools developed here will lead to improved constitutional theories of non-Newtonian fluids, knowledge transfer and process optimisation for many years to come. <br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.shu.ac.uk                                                                                '>http://www.shu.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

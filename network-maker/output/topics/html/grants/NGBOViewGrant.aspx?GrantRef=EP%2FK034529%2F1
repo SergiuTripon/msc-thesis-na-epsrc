@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Mathematical underpinnings of stratified turbulence
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fK034529%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSzAzNDUyOS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVEPHN0cm9uZz5NYXRoZW1hdGljYWwgdW5kZXJwaW5uaW5ncyBvZiBzdHJhdGlmaWVkIHR1cmJ1bGVuY2U8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUQ8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTk1MjEnPkxpbmRlbiwgUHJvZmVzc29yIFBGPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgIWBAIBD2QWAmYPFQNBPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMzg1NzUxJz5UYXlsb3IsIERyIEogUjwvYT4/PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD02MTU0NCc+RGFsemllbCwgRHIgU0I8L2E+SjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTExODY2MSc+Q2F1bGZpZWxkLCBQcm9mZXNzb3IgQ1A8L2E+ZAICD2QWAmYPFQNGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00NTc1Mic+S2Vyc3dlbGwsIFByb2Zlc3NvciBSPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSVBcHBsaWVkIE1hdGhzIGFuZCBUaGVvcmV0aWNhbCBQaHlzaWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUXVW5pdmVyc2l0eSBvZiBDYW1icmlkZ2VkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRBQcm9ncmFtbWUgR3JhbnRzZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUMMDEgSnVuZSAyMDEzZGQCAw9kFgICAQ8PFgIfBAULMzEgTWF5IDIwMThkZAIFD2QWAgIBDw8WBB8EBQkyLDMyMSw2NDkeB1Rvb2xUaXAFDDIsMzIxLDY0OC45M2RkAgoPZBYCAgEPZBYCAgEPFgIfBwICFgQCAQ9kFgJmDxUCE0NvbnRpbnV1bSBNZWNoYW5pY3MORmx1aWQgRHluYW1pY3NkAgIPZBYCZg8VAh5Ob24tbGluZWFyIFN5c3RlbXMgTWF0aGVtYXRpY3MAZAILD2QWAgIBD2QWAgIBDxYCHwJoZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDYgTWFyIDIwMTNkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFN1Byb2dyYW1tZSBHcmFudCBJbnRlcnZpZXdzIC0gNiBhbmQgNyBNYXJjaCAyMDEzIChNYXRocykfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0xMk81OFZkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWFG1R1cmJ1bGVuY2UgaXMgYW4gZXZlcnlkYXkgZXhwZXJpZW5jZSwgZnJvbSB0aGUgd2F0ZXIgZW1lcmdpbmcgZnJvbSBhIHRhcCB0byB0aGUgd2luZCBvbiBvbmUncyBmYWNlLiBEZXNwaXRlIGl0cyB3aWRlc3ByZWFkIGltcG9ydGFuY2UsIGEgbWF0aGVtYXRpY2FsIGRlc2NyaXB0aW9uIG9mIHR1cmJ1bGVudCBmbG93IHJlbWFpbnMgZWx1c2l2ZS4gSW4gbW9zdCB0dXJidWxlbnQgZmxvd3Mgb2YgcHJhY3RpY2FsIGludGVyZXN0LCB0aGUgdmFzdCBudW1iZXIgb2YgZGVncmVlcyBvZiBmcmVlZG9tIG1ha2VzIGl0IGltcG9zc2libGUgdG8gc29sdmUgdGhlIGVxdWF0aW9ucyBvZiBtb3Rpb24gZGlyZWN0bHkuIFJlY2VudGx5LCBob3dldmVyLCBzaWduaWZpY2FudCBwcm9ncmVzcyBoYXMgYmVlbiBtYWRlIGJ5IHRha2luZyB0aGUgdmlldyBwb2ludCB0aGF0IHR1cmJ1bGVuY2UgY2FuIGJlIHRyZWF0ZWQgYXMgYSBsYXJnZSBkeW5hbWljYWwgc3lzdGVtIGluIHdoaWNoIHRoZSB0dXJidWxlbmNlIGlzIHJlcHJlc2VudGVkIGJ5IGRpZmZlcmVudGlhbCBlcXVhdGlvbnMgdGhhdCwgaW4gcHJpbmNpcGxlLCBjYW4gYmUgaW50ZWdyYXRlZCBmb3J3YXJkIGluIHRpbWUgdG8gZXZvbHZlIGZyb20gb25lIHN0YXRlIHRvIHRoZSBuZXh0LiBXaGlsZSBwcmV2aW91cyB3b3JrIGluIHRoaXMgYXJlYSBoYXMgZm9jdXNlZCBvbiB1bmlmb3JtIGRlbnNpdHkgZmx1aWRzLCB0aGUgYnVveWFuY3kgZm9yY2VzIGFzc29jaWF0ZWQgd2l0aCBkZW5zaXR5IHZhcmlhdGlvbnMgcGxheSBhbiBpbXBvcnRhbnQgZHluYW1pY2FsIHJvbGUgaW4gbWFueSBhcHBsaWNhdGlvbnMgKGUuZy4gd2FybSBhaXIgaXMgbGVzcyBkZW5zZSB0aGFuIGNvbGQgYWlyLCB3aGljaCBpcyBjcml0aWNhbCBmb3IgZWZmaWNpZW50IGJ1aWxkaW5nIGhlYXRpbmcgYW5kIGNvb2xpbmcgc3RyYXRlZ2llcykuPGJyIC8+PGJyIC8+VGhpcyBwcm9qZWN0IHdpbGwgZGV2ZWxvcCB0aGUgbWF0aGVtYXRpY2FsIHVuZGVycGlubmluZ3Mgb2Ygc3RyYXRpZmllZCB0dXJidWxlbmNlLiBUaGUgcHJvamVjdCBidWlsZHMgb24gdGhlIGR5bmFtaWNhbCBzeXN0ZW1zIHZpZXdwb2ludCwgZGV2ZWxvcGVkIGZvciBhIGZsdWlkIHdoaWNoIGhhcyBhIGNvbnN0YW50IGRlbnNpdHkgYW5kIGV4dGVuZHMgaXQgdG8gb25lIGluIHdoaWNoIHRoZSBmbHVpZCBkZW5zaXR5IHZhcmllcyBpbiBzcGFjZSBhbmQgdGltZS4gSW4gYWRkaXRpb24gdG8gZXh0ZW5kaW5nIHRoZSBhbmFseXNpcyB0byBuZXcgcHJhY3RpY2FsIGFwcGxpY2F0aW9ucywgaW5jbHVkaW5nIGJ1b3lhbmN5IGVmZmVjdHMgYXNzb2NpYXRlZCB3aXRoIGRlbnNpdHkgdmFyaWF0aW9ucyB3aWxsIGFsbG93IHVzIHRvIHByb2JlIHVuaXZlcnNhbCBhc3BlY3RzIG9mIHR1cmJ1bGVuY2UgaW4gYSB3YXkgdGhhdCB3b3VsZCBub3QgYmUgcG9zc2libGUgaW4gYSBob21vZ2VuZW91cyBmbHVpZC4gTXVjaCBvZiB0aGUgcHJvZ3Jlc3MgaW4gdHVyYnVsZW5jZSB0aGVvcnkgdG8gZGF0ZSBoYXMgYmVlbiBpbiBmbG93cyB3aGljaCBhcmUgdHJhbnNpdGlvbmFsIHNvIHRoZSBmbG93IGlzIGluIGFuIGludGVybWVkaWF0ZSBzdGF0ZSBiZXR3ZWVuIGJlaW5nIGNvbXBsZXRlbHkgbGFtaW5hciBhbmQgY29tcGxldGVseSB0dXJidWxlbnQuIEluIGEgc3RyYXRpZmllZCBmbHVpZCwgdGhlIGJ1b3lhbmN5IGZvcmNlIGluaGliaXRzIHZlcnRpY2FsIG1vdGlvbnMgKGUuZy4gd2FybSBhaXIgdGVuZHMgdG8gc3RheSBuZWFyIHRoZSBjZWlsaW5nKSBhbmQgbWFrZXMgbGFtaW5hci90dXJidWxlbnQgdHJhbnNpdGlvbnMgbW9yZSBwcmV2YWxlbnQsIHRoZWlyIHN0cnVjdHVyZXMgbW9yZSBpZGVudGlmaWFibGUsIGFuZCB0aGUgZHluYW1pY3MgcmljaGVyIHNvIHRoZXJlIGFyZSBtb3JlIHBoZW5vbWVuYSB0byBleHBsb3JlLjxiciAvPjxiciAvPk91ciBhcHByb2FjaCBpcyBiYXNlZCBvbiB0aWdodCBjb3VwbGluZyBiZXR3ZWVuIG1hdGhlbWF0aWNzLCBzaW11bGF0aW9uIGFuZCBleHBlcmltZW50YXRpb24uIEFsdGhvdWdoIHN0cmF0aWZpZWQgdHVyYnVsZW5jZSBoYXMgYmVlbiBzdHVkaWVkIGV4cGVyaW1lbnRhbGx5IGZvciBtYW55IHllYXJzLCBub25lIG9mIHRoZSBleGlzdGluZyBmbG93IGdlb21ldHJpZXMgY2FuIGFkZHJlc3MgYWxsIHRocmVlIG9mIG91ciBwcmltYXJ5IG9iamVjdGl2ZXMuIENvbnNlcXVlbnRseSwgd2Ugd2lsbCBidWlsZCBhIG5ldyBleHBlcmltZW50IHRvIHN0dWR5IHN0cmF0aWZpZWQgdHVyYnVsZW5jZSBpbiBhIGNhbm9uaWNhbCBnZW9tZXRyeSBpbiB3aGljaCB0aGUgdHVyYnVsZW5jZSBpcyBnZW5lcmF0ZWQgYnkgc2hlYXIgYW5kIG9wcG9zZWQgYnkgdGhlIHN0cmF0aWZpY2F0aW9uLiBUaGlzIG5ldyBnZW9tZXRyeSB3aWxsIGFsbG93IHVzIHRvIG9ic2VydmUgYW5kIG1lYXN1cmUgbGFtaW5hci90dXJidWxlbnQgdHJhbnNpdGlvbnMsIHRoZSBmbG93IHN0cnVjdHVyZXMgdGhhdCBhcmUgaW52b2x2ZWQgYW5kIHRoZWlyIGRpc3RyaWJ1dGlvbnMgaW4gdGltZSBhbmQgc3BhY2UuIFdlIHdpbGwgYWxzbyBjYXJyeSBvdXQgbmV3IGV4cGVyaW1lbnRzIGluIHR3byBvdGhlciBnZW9tZXRyaWVzIHRvIGV4YW1pbmUgaG93IHRoZSBmbG93IGZlYXR1cmVzIGNoYW5nZSBpbiBkaWZmZXJlbnQgY29uZmlndXJhdGlvbnMuIFdlIHdpbGwgdXNlIG51bWVyaWNhbCBzaW11bGF0aW9ucyBvZiBlYWNoIGV4cGVyaW1lbnRhbCBjb25maWd1cmF0aW9uIHRvIGNvbXBsZW1lbnQgdGhlIGxhYm9yYXRvcnkgZXhwZXJpbWVudHMgYnkgYWxsb3dpbmcgYWRkaXRpb25hbCBkaWFnbm9zdGljcywgYW5kIHByb3ZpZGluZyBhIGRpcmVjdCBsaW5rIGJldHdlZW4gdGhlIG1hdGhlbWF0aWNhbCB0b29scyBhbmQgdGhlIGZsb3cgZ2VvbWV0cmllcy48YnIgLz48YnIgLz5PbmUgb2YgdGhlIGltcG9ydGFudCBvdXRjb21lcyBvZiBjb21iaW5pbmcgbWF0aGVtYXRpY2FsIGFuYWx5c2lzLCBsYWJvcmF0b3J5IGV4cGVyaW1lbnRzIGFuZCBudW1lcmljYWwgc2ltdWxhdGlvbnMgd2lsbCBiZSB0byBkZXZlbG9wIGEgc2ltcGxpZmllZCBkeW5hbWljYWwgZGVzY3JpcHRpb24gb2YgdGhlIHN5c3RlbS4gVGhpcyByZWR1Y2VkIGR5bmFtaWNhbCBzeXN0ZW0gd2lsbCBjYXB0dXJlIHRoZSBrZXkgcGh5c2ljcyBvZiBzdHJhdGlmaWVkIHR1cmJ1bGVuY2UsIGFuZCBwcm92aWRlIGEgZ2VuZXJpYyB0b29sIGZvciB1bmRlcnN0YW5kaW5nIGFuZCBtb2RlbGxpbmcgdHVyYnVsZW5jZSBhbmQgbWl4aW5nIHByb2Nlc3NlcyBpbiBkaXZlcnNlIGNvbnRleHRzIG9mIGVjb25vbWljLCBlbnZpcm9ubWVudGFsIGFuZCBzb2NpZXRhbCBpbXBvcnRhbmNlLiBFdmVudHVhbGx5IHdlIGhvcGUgdG8gcHJvdmlkZSBwcmFjdGljYWwgZXN0aW1hdGVzIG9mIG1peGluZyBhbmQgdHJhbnNwb3J0IGluIGEgdHVyYnVsZW50IHN0cmF0aWZpZWQgZmx1aWQuPGJyIC8+PGJyIC8+ZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMzQ1MjkvMQxFUC9LMDM0NTI5LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZMfuOTnTtJIlOvFPtKzed8f3BM7G" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKqjpq8BQLQvN++DAKT/OCVAxEL8hesbt9OEI97JL+3vfppOpt4" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/K034529/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Mathematical underpinnings of stratified turbulence</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=9521'>Linden, Professor PF</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-385751'>Taylor, Dr J R</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=61544'>Dalziel, Dr SB</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-118661'>Caulfield, Professor CP</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=45752'>Kerswell, Professor R</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Applied Maths and Theoretical Physics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Cambridge</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Programme Grants</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 June 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="2,321,648.93" class="DetailValue">2,321,649</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Continuum Mechanics</td>
+                                    <td class="DetailValue"> Fluid Dynamics</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Non-linear Systems Mathematics</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>06 Mar 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-12O58V">Programme Grant Interviews - 6 and 7 March 2013 (Maths)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Turbulence is an everyday experience, from the water emerging from a tap to the wind on one's face. Despite its widespread importance, a mathematical description of turbulent flow remains elusive. In most turbulent flows of practical interest, the vast number of degrees of freedom makes it impossible to solve the equations of motion directly. Recently, however, significant progress has been made by taking the view point that turbulence can be treated as a large dynamical system in which the turbulence is represented by differential equations that, in principle, can be integrated forward in time to evolve from one state to the next. While previous work in this area has focused on uniform density fluids, the buoyancy forces associated with density variations play an important dynamical role in many applications (e.g. warm air is less dense than cold air, which is critical for efficient building heating and cooling strategies).<br /><br />This project will develop the mathematical underpinnings of stratified turbulence. The project builds on the dynamical systems viewpoint, developed for a fluid which has a constant density and extends it to one in which the fluid density varies in space and time. In addition to extending the analysis to new practical applications, including buoyancy effects associated with density variations will allow us to probe universal aspects of turbulence in a way that would not be possible in a homogeneous fluid. Much of the progress in turbulence theory to date has been in flows which are transitional so the flow is in an intermediate state between being completely laminar and completely turbulent. In a stratified fluid, the buoyancy force inhibits vertical motions (e.g. warm air tends to stay near the ceiling) and makes laminar/turbulent transitions more prevalent, their structures more identifiable, and the dynamics richer so there are more phenomena to explore.<br /><br />Our approach is based on tight coupling between mathematics, simulation and experimentation. Although stratified turbulence has been studied experimentally for many years, none of the existing flow geometries can address all three of our primary objectives. Consequently, we will build a new experiment to study stratified turbulence in a canonical geometry in which the turbulence is generated by shear and opposed by the stratification. This new geometry will allow us to observe and measure laminar/turbulent transitions, the flow structures that are involved and their distributions in time and space. We will also carry out new experiments in two other geometries to examine how the flow features change in different configurations. We will use numerical simulations of each experimental configuration to complement the laboratory experiments by allowing additional diagnostics, and providing a direct link between the mathematical tools and the flow geometries.<br /><br />One of the important outcomes of combining mathematical analysis, laboratory experiments and numerical simulations will be to develop a simplified dynamical description of the system. This reduced dynamical system will capture the key physics of stratified turbulence, and provide a generic tool for understanding and modelling turbulence and mixing processes in diverse contexts of economic, environmental and societal importance. Eventually we hope to provide practical estimates of mixing and transport in a turbulent stratified fluid.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cam.ac.uk                                                                                '>http://www.cam.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

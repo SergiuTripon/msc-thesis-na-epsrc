@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Exploiting invisible cues for robot navigation in complex natural environments
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM008479%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAwODQ3OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVfPHN0cm9uZz5FeHBsb2l0aW5nIGludmlzaWJsZSBjdWVzIGZvciByb2JvdCBuYXZpZ2F0aW9uIGluIGNvbXBsZXggbmF0dXJhbCBlbnZpcm9ubWVudHM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUI8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTQyNzA2Jz5XZWJiLCBQcm9mZXNzb3IgQjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDPjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTE1MzIyOSc+RHIgTSBNYW5nYW48L2E+AABkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFElNjaCBvZiBJbmZvcm1hdGljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF1VuaXZlcnNpdHkgb2YgRWRpbmJ1cmdoZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAyOCBGZWJydWFyeSAyMDE1ZGQCAw9kFgICAQ8PFgIfBAUQMjcgRmVicnVhcnkgMjAxOGRkAgUPZBYCAgEPDxYEHwQFBzU1OCw0MTceB1Rvb2xUaXAFCjU1OCw0MTYuNzNkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhxJbWFnZSAmYW1wOyBWaXNpb24gQ29tcHV0aW5nF1JvYm90aWNzICZhbXA7IEF1dG9ub215ZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAh5UcmFuc3BvcnQgU3lzdGVtcyBhbmQgVmVoaWNsZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDkgU2VwIDIwMTRkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFKkVQU1JDIElDVCBQcmlvcml0aXNhdGlvbiBQYW5lbCAtIFNlcHQgMjAxNB8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTFQU0o1QWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBfIbT3V0ZG9vciBuYXZpZ2F0aW9uIGluIG5hdHVyYWwgZW52aXJvbm1lbnRzIHJlbWFpbnMgYSBjaGFsbGVuZ2UgZm9yIHJvYm90aWNzLiBSZWNlbnQgYnJlYWt0aHJvdWdocyBpbiByb2JvdCBuYXZpZ2F0aW9uIGhhdmUgYmVlbiBkZXBlbmRlbnQgb24gc3BlY2lmaWMgc2Vuc29yIHRlY2hub2xvZ2llcywgc3VjaCBhcyBsYXNlciBkZXB0aCBzZW5zb3JzIGFuZCBHUFMsIGFuZCBhZHZhbmNlZCBpbWFnZSBwcm9jZXNzaW5nLiBUaGUgYWJpbGl0eSBvZiBhbmltYWxzIHN1Y2ggYXMgYW50cyB0byBuYXZpZ2F0ZSBlZmZlY3RpdmVseSB3aXRob3V0IHN1Y2ggcG93ZXItIGFuZCBjb21wdXRhdGlvbi0gaHVuZ3J5IHN5c3RlbXMgYXJlIGEgcHJvb2Ygb2YgcHJpbmNpcGxlIHRoYXQgYWx0ZXJuYXRpdmUgY2hlYXBlciBhcHByb2FjaGVzIGFyZSB2aWFibGUuIEFudHMgYWxzbyBoYXZlIHNwZWNpYWxpc2VkIHNlbnNpbmcsIHdpdGggYSBwZXJpcGhlcmFsIHZpc3VhbCBzeXN0ZW0gdGhhdCBoYXMgZXZvbHZlZCB0byBiZSBzZW5zaXRpdmUgdG8gY3J1Y2lhbCBjdWVzIGZvciBuYXZpZ2F0aW9uLiBTcGVjaWZpY2FsbHksIHRoZXkgbWFrZSB1c2Ugb2Ygbm9uLXZpc2libGUgKHRvIGh1bWFucykgbGlnaHQgY3VlcyBpbiB0aGUgZm9ybSBvZiB1bHRyYXZpb2xldCAoVVYpIGFuZCBwb2xhcmlzZWQgbGlnaHQgZGV0ZWN0aW9uLiBVViBkZXRlY3Rpb24gYWxsb3dzIHRoZSBpbXBvcnRhbnQgc2lnbmFsIG9mIHRoZSBob3Jpem9uIHNoYXBlIGFnYWluc3QgdGhlIHNreSB0byBiZSBlYXNpbHkgZGlzdGluZ3Vpc2hlZC4gUG9sYXJpc2VkIGxpZ2h0IGRldGVjdGlvbiBwcm92aWRlcyBhbiBleHRlcm5hbCBjb21wYXNzIGN1ZSBvZiBoZWFkaW5nIHJlbGF0aXZlIHRvIHRoZSBzdW4gZGlyZWN0aW9uLCBldmVuIHdoZW4gb25seSBhIHNtYWxsIHBvcnRpb24gb2YgdGhlIHNreSBpcyB2aXNpYmxlLiA8YnIgLz48YnIgLz5XZSBwcm9wb3NlIHRvIGJ1aWxkIGEgc2Vuc29yeSBzeXN0ZW0gdGhhdCBnYXRoZXJzIHRoZSBmdWxsIHJhbmdlIG9mIGxpZ2h0IGN1ZXMgYXZhaWxhYmxlIHRvIHRoZSBhbnQsIGluIGl0cyBuYXR1cmFsIGVjb2xvZ2ljYWwgc2l0dWF0aW9uLCBhbmQgdG8gYW5hbHlzZSB0aGUgaW5mb3JtYXRpb24gY29udGFpbmVkIGluIHRoaXMgc2lnbmFsLiBXZSB3aWxsIGFsc28gYW5hbHlzZSBob3cgdGhlIHNwZWNpZmljIHNlbnNvciBsYXlvdXQgKG9tbWF0aWRpYSBhcnJheSksIHBlcmlwaGVyYWwgcmVjZXB0b3IgY2hhcmFjdGVyaXN0aWNzLCBhbmQgdGhlIG1vdG9yIGJlaGF2aW91ciBvZiB0aGUgYW50IG1heSBjb250cmlidXRlIHRvIGV4dHJhY3Rpbmcgc2FsaWVudCBpbmZvcm1hdGlvbi4gVGhlIGRhdGEgd2lsbCBmb3JtIGEgdGVzdC1iZWQgZm9yIGNvbXBhcmlzb24gb2YgYWxnb3JpdGhtaWMgYW5kIG5ldXJhbCBtb2RlbHMgb2YgdGhlIHByb2Nlc3NpbmcgdGhhdCB1bmRlcmxpZXMgdGhlIG5hdmlnYXRpb24gY2FwYWJpbGl0aWVzIG9mIHRoZSBhbnQuIFRvIGRhdGUsIHRoZXNlIGN1ZXMgaGF2ZSBiZWVuIGNvbnNpZGVyZWQgc2VwYXJhdGVseSBidXQgd2UgYmVsaWV2ZSB0aGUgbmF2aWdhdGlvbmFsIHN1Y2Nlc3Mgb2YgdGhpcyBzeXN0ZW0gZGVwZW5kcyBvbiB0aGUgc3BlY2lmaWMgY29tYmluYXRpb24uIEZvciBleGFtcGxlLCB0aGUgZGlyZWN0aW9uYWwgaW5mb3JtYXRpb24gaW4gdGhlIHBvbGFyaXNlZCBza3kgbWF5IGZvcm0gYW4gaW1wb3J0YW50IHBhcnQgb2YgdmlzdWFsIG1lbW9yaWVzOyBhbmQgVVYgaW5mb3JtYXRpb24gbWF5IGNvbnRyaWJ1dGUgdG8gZGlzYW1iaWd1YXRpb24gb2YgdGhlIHBvbGFyaXNhdGlvbiBwYXR0ZXJuIGFuZCB0aGUgcm9idXN0bmVzcyBvZiB0aGlzIGluZm9ybWF0aW9uIHVuZGVyIGRpZmZlcmVudCBjbG91ZCBjb25kaXRpb25zLiA8YnIgLz48YnIgLz5UaGVyZSBoYXMgYmVlbiBhIHN1YnN0YW50aWFsIGluY3JlYXNlIGluIHRoZSBsYXN0IGZldyB5ZWFycyBpbiByZXNlYXJjaCBpbnRvIGluc2VjdCBuZXVyYWwgcGF0aHdheXMgaW52b2x2ZWQgaW4gcHJvY2Vzc2luZyB0aGVzZSBjdWVzIHdoaWNoIGhhcyB5ZXQgdG8gYmUgZXhwbG9pdGVkIGluIHJvYm90IG1vZGVscy4gSW4gcGFydGljdWxhciB0aGVyZSBoYXMgYmVlbiBicmVha3Rocm91Z2ggd29yayBvbiB0aGUgY2VudHJhbCBicmFpbiBtZWNoYW5pc21zIGludm9sdmVkIGluIGRlY29kaW5nIHBvbGFyaXNlZCBsaWdodCB0byBvYnRhaW4gaGVhZGluZyBkaXJlY3Rpb24uIFRoZXJlIGlzIGFsc28gYSByYXBpZGx5IGluY3JlYXNpbmcgdW5kZXJzdGFuZGluZyBvZiB0aGUgY2lyY3VpdHMgaW52b2x2ZWQgaW4gbGVhcm5pbmcsIGEga2V5IGNvbXBvbmVudCBvZiBuYXZpZ2F0aW9uIGNhcGFiaWxpdGllcy4gPGJyIC8+PGJyIC8+QSBrZXkgYXNwZWN0IG9mIG91ciBtZXRob2QsIGluIGNvbXBhcmlzb24gdG8gbWFueSBiaW8taW5zcGlyZWQgcHJvamVjdHMsIGlzIHRoYXQgd2UgZG8gbm90IHByb3Bvc2UgdG8gc3RhcnQgYnkgZGVzaWduaW5nIGFuZCBtYW51ZmFjdHVyaW5nIGEgc2Vuc29yIGFzIHNpbWlsYXIgYXMgcG9zc2libGUgdG8gdGhlIGFudCBleWUuIFJhdGhlciwgd2UgY29uc2lkZXIgaXQgZXNzZW50aWFsIHRvIGZpcnN0IHVuZGVyc3RhbmQgd2hhdCBhc3BlY3RzIG9mIHRoZSBleWUgYXJlIGFjdHVhbGx5IGtleSB0byBzdXBwb3J0IG5hdmlnYXRpb24sIGFuZCB3aGF0IHZhcmlhdGlvbiBmcm9tIHRoZSBleGFjdCBiaW9sb2dpY2FsIGRlc2lnbiB3aWxsIGNvbnNlcnZlIHRoZSBkZXNpcmFibGUgcHJvcGVydGllcyB3aGlsZSBzaW1wbGlmeWluZyB0aGUgbWFudWZhY3R1cmUuIFRoZSBmaW5hbCBvdXRjb21lIG9mIHRoaXMgcmVzZWFyY2ggd2lsbCBiZSBhIGRldGFpbGVkIGRlc2lnbiBmb3IgYSBzbWFsbCBzY2FsZSBhbmQgbG93IHBvd2VyIHZpc2lvbiBzeXN0ZW0gZm9yIG91dGRvb3IgbmF2aWdhdGlvbi4gV2UgaHlwb3RoZXNpcyB0aGF0IHdlIGNhbiBsZXZlcmFnZSB0aGUgbWluaWF0dXJpc2F0aW9uIG9mIENDRCBjYW1lcmFzICh3aGljaCBhcmUgbm9ybWFsbHkgc2Vuc2l0aXZlIHRvIHRoZSB1cHBlciByYW5nZSBvZiBVViwgYnV0IGhhdmUgZmlsdGVycyBhcHBsaWVkIHRvIHJlbW92ZSBpdCkgdG8gY29tcG9zZSBhbiBvbW5pZGlyZWN0aW9uYWwgY29tcG91bmQgZXllIHdoZXJlIHRoZSBmaWx0ZXIgY2hhcmFjdGVyaXN0aWNzIG9mIGVhY2ggb21tYXRpZGlhIGFyZSBhcHByb3ByaWF0ZWx5IHR1bmVkIGZvciB3YXZlbGVuZ3RoIG9yIHBvbGFyaXNhdGlvbiBwbGFuZSwgaW4gaW1pdGF0aW9uIG9mIHRoZSBhbnQgZXllLiBCZXlvbmQgdGhlIGRpcmVjdCBhcHBsaWNhdGlvbiB0byByb2JvdCBuYXZpZ2F0aW9uIGluIG5hdHVyYWwgZW52aXJvbm1lbnRzLCBpbiB0YXNrcyBzdWNoIGFzIGFncmljdWx0dXJlLCBzZWFyY2ggYW5kIHJlc2N1ZSwgYW5kIGVudmlyb25tZW50YWwgY2xlYW4tdXAsIHN1Y2ggYSBkZXNpZ24gaGFzIHBvdGVudGlhbCB0byBiZSBkZXZlbG9wZWQgZm9yIG90aGVyIGFwcGxpY2F0aW9ucywgaW5jbHVkaW5nIG1vYmlsZSBkZXZpY2VzLCBpbnNwZWN0aW9uIGFuZCBzdXJ2ZWlsbGFuY2UuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5lZC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5lZC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMDg0NzkvMQxFUC9NMDA4NDc5LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZDIQj0POB8XEQKPDaRXOiZc+HTEg" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLdrO3eAgLQvN++DAKT/OCVA/KJP4UjbqeyWCLMUjabEapdz9ae" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M008479/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Exploiting invisible cues for robot navigation in complex natural environments</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=42706'>Webb, Professor B</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-153229'>Dr M Mangan</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Informatics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Edinburgh</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">28 February 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">27 February 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="558,416.73" class="DetailValue">558,417</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Image &amp; Vision Computing</td>
+                                    <td class="DetailValue"> Robotics &amp; Autonomy</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Transport Systems and Vehicles</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>09 Sep 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1PSJ5A">EPSRC ICT Prioritisation Panel - Sept 2014</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Outdoor navigation in natural environments remains a challenge for robotics. Recent breakthroughs in robot navigation have been dependent on specific sensor technologies, such as laser depth sensors and GPS, and advanced image processing. The ability of animals such as ants to navigate effectively without such power- and computation- hungry systems are a proof of principle that alternative cheaper approaches are viable. Ants also have specialised sensing, with a peripheral visual system that has evolved to be sensitive to crucial cues for navigation. Specifically, they make use of non-visible (to humans) light cues in the form of ultraviolet (UV) and polarised light detection. UV detection allows the important signal of the horizon shape against the sky to be easily distinguished. Polarised light detection provides an external compass cue of heading relative to the sun direction, even when only a small portion of the sky is visible. <br /><br />We propose to build a sensory system that gathers the full range of light cues available to the ant, in its natural ecological situation, and to analyse the information contained in this signal. We will also analyse how the specific sensor layout (ommatidia array), peripheral receptor characteristics, and the motor behaviour of the ant may contribute to extracting salient information. The data will form a test-bed for comparison of algorithmic and neural models of the processing that underlies the navigation capabilities of the ant. To date, these cues have been considered separately but we believe the navigational success of this system depends on the specific combination. For example, the directional information in the polarised sky may form an important part of visual memories; and UV information may contribute to disambiguation of the polarisation pattern and the robustness of this information under different cloud conditions. <br /><br />There has been a substantial increase in the last few years in research into insect neural pathways involved in processing these cues which has yet to be exploited in robot models. In particular there has been breakthrough work on the central brain mechanisms involved in decoding polarised light to obtain heading direction. There is also a rapidly increasing understanding of the circuits involved in learning, a key component of navigation capabilities. <br /><br />A key aspect of our method, in comparison to many bio-inspired projects, is that we do not propose to start by designing and manufacturing a sensor as similar as possible to the ant eye. Rather, we consider it essential to first understand what aspects of the eye are actually key to support navigation, and what variation from the exact biological design will conserve the desirable properties while simplifying the manufacture. The final outcome of this research will be a detailed design for a small scale and low power vision system for outdoor navigation. We hypothesis that we can leverage the miniaturisation of CCD cameras (which are normally sensitive to the upper range of UV, but have filters applied to remove it) to compose an omnidirectional compound eye where the filter characteristics of each ommatidia are appropriately tuned for wavelength or polarisation plane, in imitation of the ant eye. Beyond the direct application to robot navigation in natural environments, in tasks such as agriculture, search and rescue, and environmental clean-up, such a design has potential to be developed for other applications, including mobile devices, inspection and surveillance.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.ed.ac.uk                                                                                 '>http://www.ed.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

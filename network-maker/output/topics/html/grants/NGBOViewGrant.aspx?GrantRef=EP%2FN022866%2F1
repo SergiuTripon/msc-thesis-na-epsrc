@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Analysing and Detecting Advanced Multi-stage Attacks against ICS (ADAMA)
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN022866%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAyMjg2Ni8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVZPHN0cm9uZz5BbmFseXNpbmcgYW5kIERldGVjdGluZyBBZHZhbmNlZCBNdWx0aS1zdGFnZSBBdHRhY2tzIGFnYWluc3QgSUNTIChBREFNQSk8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUM8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS00MDM4MzknPk1jTGF1Z2hsaW4sIERyIEs8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA048YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwMDUxJz5BaXJidXMgR3JvdXAgTGltaXRlZDwvYT4AAGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUnRWxlY3Ryb25pY3MgRWxlY3RyaWNhbCBFbmcgYW5kIENvbXAgU2NpZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUdUXVlZW4ncyBVbml2ZXJzaXR5IG9mIEJlbGZhc3RkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRpGaXJzdCBHcmFudCAtIFJldmlzZWQgMjAwOWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDDAxIEp1bmUgMjAxNmRkAgMPZBYCAgEPDxYCHwQFCzMxIE1heSAyMDE4ZGQCBQ9kFgICAQ8PFgQfBAUGOTksNTUyHgdUb29sVGlwBQk5OSw1NTEuNzlkZAIKD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VAhlGdW5kYW1lbnRhbHMgb2YgQ29tcHV0aW5nIEluZm9ybWF0aW9uICZhbXA7IEtub3dsZWRnZSBNZ210ZAICD2QWAmYPFQIhTW9kZWxsaW5nICZhbXA7IHNpbXVsLiBvZiBJVCBzeXMuAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIdQWVyb3NwYWNlLCBEZWZlbmNlIGFuZCBNYXJpbmUeVHJhbnNwb3J0IFN5c3RlbXMgYW5kIFZlaGljbGVzZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDIgRGVjIDIwMTVkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFKUVQU1JDIElDVCBQcmlvcml0aXNhdGlvbiBQYW5lbCAtIERlYyAyMDE1HwMFI05HQk9WaWV3UGFuZWwuYXNweD9QYW5lbElkPTEtMkw0TUpYZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFuxxJbmR1c3RyaWFsIENvbnRyb2wgU3lzdGVtcyAoSUNTKSBhcmUgdXNlZCBpbiBzZWN0b3JzIHN1Y2ggYXMgZW5lcmd5LCBtYW51ZmFjdHVyaW5nLCB0cmFuc3BvcnQsIGV0Yy4sIGFuZCBjb25zZXF1ZW50bHkgcGxheSBhIGZ1bmRhbWVudGFsIHJvbGUgaW4gdGhlIG9wZXJhdGlvbiBvZiBtYW55IGNyaXRpY2FsIG5hdGlvbmFsIGluZnJhc3RydWN0dXJlcy4gSW4gdGhlIGxhc3QgZmV3IGRlY2FkZXMgSUNTIGhhdmUgZXZvbHZlZCB0byBpbmNvcnBvcmF0ZSBuZXcgY2FwYWJpbGl0aWVzIGFuZCBjb25uZWN0aXZpdHksIHByb3ZpZGVkIGJ5IGludGVncmF0aW5nIG1vZGVybiBpbmZvcm1hdGlvbiBhbmQgY29tbXVuaWNhdGlvbnMgdGVjaG5vbG9neSAoSUNUKS4gSG93ZXZlciwgYSBzaWduaWZpY2FudCBwcm9ibGVtIHRoYXQgaGFzIGVtZXJnZWQgZHVlIHRvIHRoaXMgbmV3IHNldCBvZiB0ZWNobm9sb2dpZXMgYW5kIGhpZ2ggZGVncmVlIG9mIGludGVyY29ubmVjdGl2aXR5IGlzIHRoYXQgSUNTIGhhdmUgYmVjb21lIGV4cG9zZWQgdG8gdGhlIG15cmlhZCBzZWN1cml0eSBwcm9ibGVtcyB0aGF0IGJlc2V0IHRyYWRpdGlvbmFsIElDVCBzeXN0ZW1zLjxiciAvPjxiciAvPk9mIGdyZWF0IGNvbmNlcm4gaXMgdGhlIHRyZW5kIHRvd2FyZHMgYWR2YW5jZWQgbXVsdGktc3RhZ2UgYXR0YWNrcyBhZ2FpbnN0IElDUywgd2hpY2ggY29udGludWUgdG8gZW1lcmdlLiBUaGVzZSBjYW4gaW52b2x2ZSByZW1vdGUgZXhwbG9pdGF0aW9uIGFuZCBsYXRlcmFsIG1vdmVtZW50cyAocGl2b3RzKSBhY3Jvc3MgbXVsdGlwbGUgc3lzdGVtcy4gUmVjZW50IGF0dGFja3Mgc3VnZ2VzdCB0aGF0IHRyYWRpdGlvbmFsIGNyaW1ld2FyZSB0eXBlIG1hbHdhcmUgaXMgYmVpbmcgYWRhcHRlZCBleHBsaWNpdGx5IGZvciBJQ1M7IGUuZy4gQmxhY2tFbmVyZ3kgYW5kIEhhdmV4IGV4aGliaXQgbWFsd2FyZSBtb2R1bGVzIHRoYXQgYXBwZWFyIHRvIGhhdmUgYmVlbiBkZXZlbG9wZWQgdG8gdGFyZ2V0IElDUyBmZWF0dXJlcyBhbmQgdnVsbmVyYWJpbGl0aWVzLiAgTmV3IHRocmVhdHMgYWdhaW5zdCBJQ1Mgc3VwcG9ydGluZyBuYXRpb25hbCBpbmZyYXN0cnVjdHVyZXMgY29udGludWUgdG8gZW1lcmdlLCBhbmQgY3JpbWluYWwgYW5kIHN0YXRlIGVudGl0aWVzIGFyZSBrbm93biB0byBiZSB0YXJnZXRpbmcgc3VjaCBzeXN0ZW1zLiBDb25zZXF1ZW50bHkgaXQgaXMgb2YgZ3JlYXQgaW1wb3J0YW5jZSB0aGF0IHdlIGFuYWx5c2UgYW5kIHVuZGVyc3RhbmQgaG93IGFkdmFuY2VkIGF0dGFja3MgYWdhaW5zdCBJQ1MgYmVoYXZlIGFuZCBjYW4gYmUgYmV0dGVyIGRldGVjdGVkLjxiciAvPjxiciAvPkNvbW1vbiBpbml0aWFsIGF0dGFjayB2ZWN0b3JzIGluY2x1ZGUgaGlnaGx5IHRhcmdldGVkIHNwZWFyLXBoaXNoaW5nIGFnYWluc3QgZXhlY3V0aXZlcyBvciBlbmdpbmVlcnMgd2l0aCB2YWx1YWJsZSBjcmVkZW50aWFscywgb3Igb3Bwb3J0dW5pc3RpYyB3YXRlcmluZyBob2xlIGF0dGFja3MgYWdhaW5zdCB3ZWJzaXRlcyBvZiBzcGVjaWZpYyBpbnRlcmVzdCB0byBJQ1MgcGVyc29ubmVsLiBGb2xsb3dpbmcgdGhlIGluaXRpYWwgaW5maWx0cmF0aW9uIG9mIGFuIElDUyBuZXR3b3JrLCB0aGUgbWFsd2FyZSB3aWxsIGxpa2VseSB0cnkgdG8gZXhlY3V0ZSBhY3Rpb25zIGluY2x1ZGluZyBlc2NhbGF0aW5nIGl0cyBwcml2aWxlZ2VzIG9uIHRoZSBob3N0IHN5c3RlbSwgYXR0ZW1wdGluZyB0byBjb25uZWN0IHRvIGEgY29tbWFuZCBhbmQgY29udHJvbCBzZXJ2ZXIsIGRvd25sb2FkaW5nIGZ1cnRoZXIgcGF5bG9hZCBwYWNrYWdlcywgZW51bWVyYXRpbmcgdGhlIG5ldHdvcmssIHBpdm90aW5nIGFuZCBwcm9wYWdhdGUgZnVydGhlciwgZXhmaWx0cmF0aW5nIGRhdGEsIGFuZCBzbyBvbi4gQSBoaWdobHkgdGFyZ2V0ZWQsIG9yICJ3ZWFwb25pc2VkIiwgcGF5bG9hZCBpcyBsaWtlbHkgdG8gZW51bWVyYXRlIElDUyBkZXZpY2VzIG9uIHRoZSBuZXR3b3JrIG9yIGF0dGVtcHQgdG8gc25pZmYgYW5kIGlkZW50aWZ5IHBhcnRpY3VsYXIgSUNTIHJlbGF0ZWQgbmV0d29yayB0cmFmZmljLjxiciAvPjxiciAvPkRldGVjdGluZyBhZHZhbmNlZCBtdWx0aS1zdGFnZSBhdHRhY2tzIGlzIGRpZmZpY3VsdCBpbiBJVCBzeXN0ZW1zLCBidXQgYXBwcm9hY2hlcyB0b3dhcmRzIGRldGVjdGlvbiBhbmQgcmVzcG9uc2UgZm9yIElDUyBhcmUgY29tcGFyYXRpdmVseSBsZXNzIG1hdHVyZS4gTW9yZW92ZXIsIGF0dGFja3MgZGlzY292ZXJlZCBpbiB0aGUgd2lsZCBjb250aW51ZSB0byBldm9sdmUgaW4gc29waGlzdGljYXRpb24uIFN0b3BwaW5nIHN1Y2ggYXR0YWNrcyBkZW1hbmRzIGNvbnRpbnVhbCBtb25pdG9yaW5nIG9mIHRoZSBpbmZyYXN0cnVjdHVyZSBhbmQgaXQgaXMgZGlmZmljdWx0IHRvIHByb3ZpZGUgb3BlcmF0b3JzIHdpdGggdGFyZ2V0ZWQgc2VjdXJpdHkgc3RhdHVzIGluZm9ybWF0aW9uIGluIHRoZSBmYWNlIG9mIGFkdmFuY2VkIG11bHRpLXN0YWdlIElDUyB0aHJlYXRzLjxiciAvPjxiciAvPlRoaXMgcmVzZWFyY2ggYWltcyB0byBkZXZlbG9wIGFuZCB0ZXN0IGFuIGFwcHJvYWNoIHRoYXQgZW5oYW5jZXMgcmVhbC10aW1lIGN5YmVyLXNlY3VyaXR5IG1vbml0b3JpbmcgY2FwYWJpbGl0aWVzIGZvciBuZXR3b3JrZWQgSUNTIGVudmlyb25tZW50cy4gVGhlIG9iamVjdGl2ZSBpcyB0byBwcmVzZW50IGluZm9ybWF0aW9uIHRvIGFuIG9wZXJhdG9yIHRoYXQgaXMgbW9yZSBjbG9zZWx5IGNvcnJlbGF0ZWQgdG8gYWR2YW5jZWQgbXVsdGktc3RhZ2UgdGhyZWF0cywgcmF0aGVyIHRoYW4gaW5kaXZpZHVhbCBhbGVydHMsIHRoZXJlYnkgaW1wcm92aW5nIHRoZSBhYmlsaXR5IG9mIHRoZSBvcGVyYXRvciB0byBnYXVnZSB0aGUgY3VycmVudCBzZWN1cml0eSBzdGF0dXMgb2YgdGhlIHN5c3RlbS4gPGJyIC8+PGJyIC8+QSB0aHJlYXQgbWVhc3VyZW1lbnQgYmFzZWQgYXBwcm9hY2ggd2lsbCBiZSB1c2VkIHRvIGludmVzdGlnYXRlIGhvdyB0aGUgcmVhbC10aW1lIGN5YmVyLXNlY3VyaXR5IHN0YXR1cyBvZiBhbiBJQ1MgbmV0d29yayBlbnZpcm9ubWVudCBjYW4gYmUgbWVhc3VyZWQgaW4gdGVybXMgb2YgYW4gb2JzZXJ2YWJsZSB0aHJlYXQgcHJlc2VuY2UuIEl0IGlzIGh5cG90aGVzaXNlZCB0aGF0IHN1Y2ggYSBzdGF0dXMgY2FuIGJlIGFwcHJhaXNlZCBieSB1c2luZyBzdWl0YWJsZSBtZXRyaWNzLCB3aGljaCBtYXkgYmUgZGVyaXZlZCBieSBhbmFseXNpbmcsIGRlY29tcG9zaW5nIGFuZCBtb2RlbGxpbmcga25vd24gYWR2YW5jZWQgbXVsdGlzdGFnZSB0aHJlYXRzLiBUaGUgYW5hbHlzaXMgd2lsbCB0YXJnZXQgdGhlIGRldmVsb3BtZW50IG9mIHRocmVhdCBtb2RlbHMgYmFzZWQgb24gYSBjb21iaW5hdGlvbiBvZiByZXBvcnRlZCBJQ1MgYXR0YWNrcyBhbmQgYW4gaW52ZXN0aWdhdGlvbiBvZiBmdXR1cmUgcG90ZW50aWFsIGFkdmFuY2VkIHRocmVhdHMgYmFzZWQgb24gZW1lcmdpbmcgdHJlbmRzIGluIGNyaW1ld2FyZS4gQSBwcm9wb3NlZCBzb2x1dGlvbiB3aWxsIGJlIGltcGxlbWVudGVkIGFuZCB0ZXN0ZWQgaW4gYSB0ZXN0LWJlZCBlbnZpcm9ubWVudCBiYXNlZCBvbiBhIHJlYWxpc3RpYyBmYWN0b3J5IGF1dG9tYXRpb24gZW52aXJvbm1lbnQuPGJyIC8+PGJyIC8+ZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5xdWIuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5xdWIuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMjI4NjYvMQxFUC9OMDIyODY2LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZNhjdY4D99wvT1n/9ezB6f5246iz" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLI/uq+AQLQvN++DAKT/OCVA70QlZ5BOZHU9EOkmTHRhBk+hObL" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N022866/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Analysing and Detecting Advanced Multi-stage Attacks against ICS (ADAMA)</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-403839'>McLaughlin, Dr K</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000051'>Airbus Group Limited</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Electronics Electrical Eng and Comp Sci</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Queen's University of Belfast</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 June 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="99,551.79" class="DetailValue">99,552</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> Information &amp; Knowledge Mgmt</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Modelling &amp; simul. of IT sys.</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                    <td class="DetailValueAlt"> Transport Systems and Vehicles</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>02 Dec 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2L4MJX">EPSRC ICT Prioritisation Panel - Dec 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Industrial Control Systems (ICS) are used in sectors such as energy, manufacturing, transport, etc., and consequently play a fundamental role in the operation of many critical national infrastructures. In the last few decades ICS have evolved to incorporate new capabilities and connectivity, provided by integrating modern information and communications technology (ICT). However, a significant problem that has emerged due to this new set of technologies and high degree of interconnectivity is that ICS have become exposed to the myriad security problems that beset traditional ICT systems.<br /><br />Of great concern is the trend towards advanced multi-stage attacks against ICS, which continue to emerge. These can involve remote exploitation and lateral movements (pivots) across multiple systems. Recent attacks suggest that traditional crimeware type malware is being adapted explicitly for ICS; e.g. BlackEnergy and Havex exhibit malware modules that appear to have been developed to target ICS features and vulnerabilities.  New threats against ICS supporting national infrastructures continue to emerge, and criminal and state entities are known to be targeting such systems. Consequently it is of great importance that we analyse and understand how advanced attacks against ICS behave and can be better detected.<br /><br />Common initial attack vectors include highly targeted spear-phishing against executives or engineers with valuable credentials, or opportunistic watering hole attacks against websites of specific interest to ICS personnel. Following the initial infiltration of an ICS network, the malware will likely try to execute actions including escalating its privileges on the host system, attempting to connect to a command and control server, downloading further payload packages, enumerating the network, pivoting and propagate further, exfiltrating data, and so on. A highly targeted, or "weaponised", payload is likely to enumerate ICS devices on the network or attempt to sniff and identify particular ICS related network traffic.<br /><br />Detecting advanced multi-stage attacks is difficult in IT systems, but approaches towards detection and response for ICS are comparatively less mature. Moreover, attacks discovered in the wild continue to evolve in sophistication. Stopping such attacks demands continual monitoring of the infrastructure and it is difficult to provide operators with targeted security status information in the face of advanced multi-stage ICS threats.<br /><br />This research aims to develop and test an approach that enhances real-time cyber-security monitoring capabilities for networked ICS environments. The objective is to present information to an operator that is more closely correlated to advanced multi-stage threats, rather than individual alerts, thereby improving the ability of the operator to gauge the current security status of the system. <br /><br />A threat measurement based approach will be used to investigate how the real-time cyber-security status of an ICS network environment can be measured in terms of an observable threat presence. It is hypothesised that such a status can be appraised by using suitable metrics, which may be derived by analysing, decomposing and modelling known advanced multistage threats. The analysis will target the development of threat models based on a combination of reported ICS attacks and an investigation of future potential advanced threats based on emerging trends in crimeware. A proposed solution will be implemented and tested in a test-bed environment based on a realistic factory automation environment.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.qub.ac.uk                                                                                '>http://www.qub.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

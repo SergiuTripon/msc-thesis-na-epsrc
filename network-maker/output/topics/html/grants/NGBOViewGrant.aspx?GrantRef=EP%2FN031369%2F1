@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Challenges of dispersionless integrability: Hirota type equations
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN031369%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAzMTM2OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVSPHN0cm9uZz5DaGFsbGVuZ2VzIG9mIGRpc3BlcnNpb25sZXNzIGludGVncmFiaWxpdHk6IEhpcm90YSB0eXBlIGVxdWF0aW9uczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFSDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NzUyMjgnPkZlcmFwb250b3YsIFByb2Zlc3NvciBFPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFFU1hdGhlbWF0aWNhbCBTY2llbmNlc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF0xvdWdoYm9yb3VnaCBVbml2ZXJzaXR5ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAwMSBGZWJydWFyeSAyMDE3ZGQCAw9kFgICAQ8PFgIfBAUPMzEgSmFudWFyeSAyMDIwZGQCBQ9kFgICAQ8PFgQfBAUHMjgwLDMzNR4HVG9vbFRpcAUKMjgwLDMzNC42MmRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIWQWxnZWJyYSAmYW1wOyBHZW9tZXRyeRRNYXRoZW1hdGljYWwgUGh5c2ljc2QCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzAyIE1hciAyMDE2ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTlFUFNSQyBNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCBNZWV0aW5nIE1hcmNoIDIwMTYfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0zQlZQRFBkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXTH0Rpc3BlcnNpb25sZXNzIHN5c3RlbXMgdHlwaWNhbGx5IGFyaXNlIGFzIGxvbmctd2F2ZSBhcHByb3hpbWF0aW9ucyB0byBlcXVhdGlvbnMgZ292ZXJuaW5nIHZhcmlvdXMgcGh5c2ljYWwgcGhlbm9tZW5hLiBBcHBsaWNhdGlvbnMgaW5jbHVkZSBzaGFsbG93IHdhdGVyIHRoZW9yeSwgYWVyb2R5bmFtaWNzLCBXaGl0aGFtIGF2ZXJhZ2luZyB0aGVvcnksIExhcGxhY2lhbiBncm93dGggcHJvY2Vzc2VzLCBnZW5lcmFsIHJlbGF0aXZpdHksIGFuZCBkaWZmZXJlbnRpYWwgZ2VvbWV0cnkuICBJbiBtYW55IHBhcnRpY3VsYXJseSBpbnRlcmVzdGluZyBjYXNlcyB0aGUgcmVzdWx0aW5nIGRpc3BlcnNpb25sZXNzIHN5c3RlbXMgaGF2ZSBhbiBhZGRpdGlvbmFsIHByb3BlcnR5IG9mIGludGVncmFiaWxpdHkgKGluZm9ybWFsbHksIHRoaXMgbWVhbnMgdGhhdCB0aGV5IGFyZSBhbWVuYWJsZSB0byBhbmFseXRpY2FsLCBub3QganVzdCBudW1lcmljYWwsIHRyZWF0bWVudCkuIFJlY2VudGx5LCBvdXIgZ3JvdXAgaGFzIHByb3Bvc2VkIGEgbm92ZWwgYXBwcm9hY2ggdG8gdGhlIGNsYXNzaWZpY2F0aW9uIG9mIGludGVncmFibGUgbW9kZWxzIG9mIHRoaXMga2luZCwga25vd24gYXMgdGhlIG1ldGhvZCBvZiBoeWRyb2R5bmFtaWMgcmVkdWN0aW9ucy4gSXQgaXMgYmFzZWQgb24gdGhlIHJlcXVpcmVtZW50IHRoYXQgdGhlIG9yaWdpbmFsIG11bHRpLWRpbWVuc2lvbmFsIHN5c3RlbSBjYW4gYmUgZGVjb3VwbGVkIGludG8gYSBjb2xsZWN0aW9uIG9mIGNvbnNpc3RlbnQgMSsxIGRpbWVuc2lvbmFsIHN5c3RlbXMgb2YgaHlkcm9keW5hbWljIHR5cGUgaW4gYW4gaW5maW5pdHkgb2Ygd2F5cy4gSXQgd2FzIGRlbW9uc3RyYXRlZCB0aGF0IHRoaXMgcmVxdWlyZW1lbnQgcHJvdmlkZXMgYW4gZWZmaWNpZW50IGNsYXNzaWZpY2F0aW9uIGNyaXRlcmlvbi4gRGlzcGVyc2lvbmxlc3MgaW50ZWdyYWJpbGl0eSBwcm92ZWQgdG8gYmUgYW4gZXhjaXRpbmcgcmVzZWFyY2ggYXJlYSB3aXRoIGRlZXAgbGlua3MgdG8gZ2VuZXJhbGlzZWQgY29uZm9ybWFsIGdlb21ldHJ5LCB0aGVvcnkgb2Ygc3BlY2lhbCBmdW5jdGlvbnMsIGNvbXBsZXggYW5hbHlzaXMsIGFsZ2VicmFpYyBnZW9tZXRyeSwgYW5kIHR3aXN0b3IgdGhlb3J5LjxiciAvPjxiciAvPlRoZSBrZXkgY2hhbGxlbmdlcyBvZiBkaXNwZXJzaW9ubGVzcyBpbnRlZ3JhYmlsaXR5IGNhbiBiZSBzdW1tYXJpc2VkIGFzIGZvbGxvd3M6PGJyIC8+PGJyIC8+MS4gUHJvdmUgdGhhdCB0aGUgbW9kdWxpIHNwYWNlcyBvZiBkaXNwZXJzaW9ubGVzcyBpbnRlZ3JhYmxlIHN5c3RlbXMgYXJlIGZpbml0ZS1kaW1lbnNpb25hbCAodGhhdCBpcywgc3VjaCBzeXN0ZW1zIGRlcGVuZCBvbiBmaW5pdGVseSBtYW55IGVzc2VudGlhbCBwYXJhbWV0ZXJzKS4gUHJvdmUgdGhhdCBgZ2VuZXJpYycgc3lzdGVtcyBvZiB0aGlzIHR5cGUgY2FuIGJlIHBhcmFtZXRyaXNlZCBieSBzcGVjaWFsIGZ1bmN0aW9ucyBzdWNoIGFzIGdlbmVyYWxpc2VkIGh5cGVyZ2VvbWV0cmljIGZ1bmN0aW9ucywgZWxsaXB0aWMgZnVuY3Rpb25zLCBvciBtb2R1bGFyIGZvcm1zLiA8YnIgLz48YnIgLz4yLiBQcm92ZSB0aGF0IGluIDNELCBldmVyeSBkaXNwZXJzaW9ubGVzcyBpbnRlZ3JhYmxlIHN5c3RlbSBwb3NzZXNzZXMgYW4gaW50ZWdyYWJsZSBkaXNwZXJzaXZlIHJlZ3VsYXJpc2F0aW9uIChzdWNoIHJlZ3VsYXJpc2F0aW9ucyBhcmUga25vd24gdG8gcHJldmVudCBicmVha2Rvd24gb2YgY2xhc3NpY2FsIHNvbHV0aW9ucyBieSBnZW5lcmF0aW5nLCBuZWFyIHRoZSBwb2ludCBvZiBncmFkaWVudCBjYXRhc3Ryb3BoZSwgYSB6b25lIG9mIHJhcGlkIG1vZHVsYXRlZCBvc2NpbGxhdGlvbnMgbGF0ZXIgdHJhbnNmb3JtaW5nIGludG8gc29saXRvbnMpLiBGb3IgYGdlbmVyaWMnIGRpc3BlcnNpb25sZXNzIGludGVncmFibGUgc3lzdGVtcywgc3VjaCByZWd1bGFyaXNhdGlvbnMgY29uc3RpdHV0ZSBhIG5vdmVsIGNsYXNzIG9mIGZ1bGx5IGRpc2NyZXRlIGludGVncmFibGUgZXF1YXRpb25zLiA8YnIgLz48YnIgLz4zLiBQcm92ZSB0aGF0IGluIDRELCBldmVyeSBkaXNwZXJzaW9ubGVzcyBpbnRlZ3JhYmxlIHN5c3RlbSBpcyBuZWNlc3NhcmlseSBsaW5lYXJseSBkZWdlbmVyYXRlICh0aGUgcHJvcGVydHkgb2YgbGluZWFyIGRlZ2VuZXJhY3kgaXMgY2xvc2VseSByZWxhdGVkIHRvIHRoZSBudWxsIGNvbmRpdGlvbiBvZiBLbGFpbmVybWFuIHRoYXQgaW5zdXJlcyBnbG9iYWwgZXhpc3RlbmNlIG9mIGNsYXNzaWNhbCBzb2x1dGlvbnMsIGV2ZW4gd2l0aG91dCBhbnkgZGlzcGVyc2l2ZSByZWd1bGFyaXNhdGlvbikuIDxiciAvPjxiciAvPjQuIERldmVsb3AgYSBnZW5lcmFsIHNvbHV0aW9uIHByb2NlZHVyZSBmb3IgbGluZWFybHkgZGVnZW5lcmF0ZSBkaXNwZXJzaW9ubGVzcyBpbnRlZ3JhYmxlIHN5c3RlbXMgKG5vbi1icmVha2luZyBjaGFyYWN0ZXIgb2YgYSBsaW5lYXJseSBkZWdlbmVyYXRlIGV2b2x1dGlvbiBzdWdnZXN0cyBhIGRpc3BlcnNpb25sZXNzIGFuYWxvZ3VlIG9mIHRoZSBjbGFzc2ljYWwgaW52ZXJzZSBzY2F0dGVyaW5nIHRyYW5zZm9ybSkuIDxiciAvPjxiciAvPjUuIEdlbmVyYWxpc2UgdGhlIG1ldGhvZCBvZiBoeWRyb2R5bmFtaWMgcmVkdWN0aW9ucyB0byBzeXN0ZW1zIHRoYXQgYXJlIG5vdCB0cmFuc2xhdGlvbmFsbHkgaW52YXJpYW50ICh0aGUgbWFpbiBwcm9ibGVtIGhlcmUgaXMgdGhlIGxhY2sgb2YgYSBnZW5lcmFsIHRoZW9yeSBvZiBpbnRlZ3JhYmlsaXR5IG9mIHRyYW5zbGF0aW9uYWxseSBub24taW52YXJpYW50IHN5c3RlbXMgb2YgaHlkcm9keW5hbWljIHR5cGUgaW4gMSsxIGRpbWVuc2lvbnMpLiA8YnIgLz48YnIgLz42LiBSZWxhdGUgZGlzcGVyc2lvbmxlc3MgaW50ZWdyYWJpbGl0eSB0byBnZW5lcmFsaXNlZCBjb25mb3JtYWwgZ2VvbWV0cnkgKGdlbmVyYWxpc2VkIEVpbnN0ZWluLVdleWwgZ2VvbWV0cnkgaW4gM0QsIG9yIGdlbmVyYWxpc2VkIHNlbGYtZHVhbCBnZW9tZXRyeSBpbiA0RCkuPGJyIC8+PGJyIC8+SW4gZnVsbCBnZW5lcmFsaXR5LCB0aGUgcHJvYmxlbXMgZm9ybXVsYXRlZCBhYm92ZSBhcmUgb3V0IG9mIHJlYWNoIGF0IHByZXNlbnQuIFRoaXMgaXMgcHJpbWFyaWx5IGR1ZSB0byB0aGUgY29tcGxleGl0eSBvZiB0aGUgaW50ZWdyYWJpbGl0eSBjb25kaXRpb25zLCBhcyB3ZWxsIGFzIHRoZWlyIHN1YnRsZSBkZXBlbmRlbmNlIG9uIHRoZSB0eXBlIG9mIHN5c3RlbSB1bmRlciBzdHVkeS4gSW4gdGhpcyBwcm9qZWN0LCB3ZSBwbGFuIHRvIGFkZHJlc3MgdGhlc2UgY2hhbGxlbmdlcyBmb3IgdGhlIHBhcnRpY3VsYXJseSBpbnRlcmVzdGluZyBjbGFzcyBvZiBkaXNwZXJzaW9ubGVzcyBIaXJvdGEgdHlwZSBlcXVhdGlvbnMsIHdoaWNoIGFwcGVhciBpbiBhcHBsaWNhdGlvbnMgaW4gbm9ubGluZWFyIGFjb3VzdGljcyAoZGlzcGVyc2lvbmxlc3MgS2Fkb210c2V2LVBldHZpYXNodmlsaSBlcXVhdGlvbiksIGdlbmVyYWwgcmVsYXRpdml0eSAoQm95ZXItRmlubGV5IGVxdWF0aW9uKSwgZGlmZmVyZW50aWFsIGdlb21ldHJ5IChzcGVjaWFsIExhZ3JhbmdpYW4gc3VibWFuaWZvbGRzLCBhZmZpbmUgaHlwZXJzcGhlcmVzKSwgZGlzcGVyc2lvbmxlc3MgbGltaXRzIG9mIHZhcmlvdXMgaW50ZWdyYWJsZSBoaWVyYXJjaGllcyBvZiBLUC9Ub2RhIHR5cGUsIGFuZCBzbyBvbi4gSSBzdHJvbmdseSBiZWxpZXZlIHRoYXQgc3VjY2Vzc2Z1bCBzb2x1dGlvbiBvZiB0aGUgYWJvdmUgcHJvYmxlbXMgZm9yIEhpcm90YSB0eXBlIGVxdWF0aW9ucywgYW5kIHRoZSByZWxldmFudCBuZXcgYW5hbHl0aWMvZ2VvbWV0cmljIHRlY2huaXF1ZXMsIHdvdWxkIHNpZ25pZmljYW50bHkgYWR2YW5jZSBvdXIgdW5kZXJzdGFuZGluZyBvZiBtdWx0aS1kaW1lbnNpb25hbCBkaXNwZXJzaW9ubGVzcyBpbnRlZ3JhYmlsaXR5LiBJbiBmYWN0LCB0aGUgY2xhc3Mgb2YgSGlyb3RhIHR5cGUgZXF1YXRpb25zIGlzIGJyb2FkIGVub3VnaCB0byBjb250YWluIGFsbCBlc3NlbnRpYWwgZGlmZmljdWx0aWVzIG9mIGdlbmVyYWwgY2hhbGxlbmdlcy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3Lmxib3JvLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3Lmxib3JvLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTjAzMTM2OS8xDEVQL04wMzEzNjkvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkuofnG0GZqvK8FVaVTrN+v3DfYk8=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLGz+z8CgLQvN++DAKT/OCVAx73lNaIFsOyJlCZ/vxHX/F2M5sX" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N031369/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Challenges of dispersionless integrability: Hirota type equations</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=75228'>Ferapontov, Professor E</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Loughborough University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 February 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 January 2020</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="280,334.62" class="DetailValue">280,335</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Mathematical Physics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>02 Mar 2016</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-3BVPDP">EPSRC Mathematics Prioritisation Panel Meeting March 2016</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Dispersionless systems typically arise as long-wave approximations to equations governing various physical phenomena. Applications include shallow water theory, aerodynamics, Whitham averaging theory, Laplacian growth processes, general relativity, and differential geometry.  In many particularly interesting cases the resulting dispersionless systems have an additional property of integrability (informally, this means that they are amenable to analytical, not just numerical, treatment). Recently, our group has proposed a novel approach to the classification of integrable models of this kind, known as the method of hydrodynamic reductions. It is based on the requirement that the original multi-dimensional system can be decoupled into a collection of consistent 1+1 dimensional systems of hydrodynamic type in an infinity of ways. It was demonstrated that this requirement provides an efficient classification criterion. Dispersionless integrability proved to be an exciting research area with deep links to generalised conformal geometry, theory of special functions, complex analysis, algebraic geometry, and twistor theory.<br /><br />The key challenges of dispersionless integrability can be summarised as follows:<br /><br />1. Prove that the moduli spaces of dispersionless integrable systems are finite-dimensional (that is, such systems depend on finitely many essential parameters). Prove that `generic' systems of this type can be parametrised by special functions such as generalised hypergeometric functions, elliptic functions, or modular forms. <br /><br />2. Prove that in 3D, every dispersionless integrable system possesses an integrable dispersive regularisation (such regularisations are known to prevent breakdown of classical solutions by generating, near the point of gradient catastrophe, a zone of rapid modulated oscillations later transforming into solitons). For `generic' dispersionless integrable systems, such regularisations constitute a novel class of fully discrete integrable equations. <br /><br />3. Prove that in 4D, every dispersionless integrable system is necessarily linearly degenerate (the property of linear degeneracy is closely related to the null condition of Klainerman that insures global existence of classical solutions, even without any dispersive regularisation). <br /><br />4. Develop a general solution procedure for linearly degenerate dispersionless integrable systems (non-breaking character of a linearly degenerate evolution suggests a dispersionless analogue of the classical inverse scattering transform). <br /><br />5. Generalise the method of hydrodynamic reductions to systems that are not translationally invariant (the main problem here is the lack of a general theory of integrability of translationally non-invariant systems of hydrodynamic type in 1+1 dimensions). <br /><br />6. Relate dispersionless integrability to generalised conformal geometry (generalised Einstein-Weyl geometry in 3D, or generalised self-dual geometry in 4D).<br /><br />In full generality, the problems formulated above are out of reach at present. This is primarily due to the complexity of the integrability conditions, as well as their subtle dependence on the type of system under study. In this project, we plan to address these challenges for the particularly interesting class of dispersionless Hirota type equations, which appear in applications in nonlinear acoustics (dispersionless Kadomtsev-Petviashvili equation), general relativity (Boyer-Finley equation), differential geometry (special Lagrangian submanifolds, affine hyperspheres), dispersionless limits of various integrable hierarchies of KP/Toda type, and so on. I strongly believe that successful solution of the above problems for Hirota type equations, and the relevant new analytic/geometric techniques, would significantly advance our understanding of multi-dimensional dispersionless integrability. In fact, the class of Hirota type equations is broad enough to contain all essential difficulties of general challenges.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.lboro.ac.uk                                                                              '>http://www.lboro.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

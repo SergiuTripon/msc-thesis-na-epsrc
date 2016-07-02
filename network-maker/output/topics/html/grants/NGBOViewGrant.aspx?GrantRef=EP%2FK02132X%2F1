@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Primes, sieves, and their applications
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fK02132X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSzAyMTMyWC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU3PHN0cm9uZz5QcmltZXMsIHNpZXZlcywgYW5kIHRoZWlyIGFwcGxpY2F0aW9uczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFSTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MjI2MDMnPkhlYXRoLUJyb3duLCBQcm9mZXNzb3IgUjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRZNYXRoZW1hdGljYWwgSW5zdGl0dXRlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUVW5pdmVyc2l0eSBvZiBPeGZvcmRkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFETMwIFNlcHRlbWJlciAyMDEzZGQCAw9kFgICAQ8PFgIfBAURMjkgU2VwdGVtYmVyIDIwMTZkZAIFD2QWAgIBDw8WBB8EBQcyOTksNDc5HgdUb29sVGlwBQoyOTksNDc5LjA3ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5FU1hdGhlbWF0aWNhbCBBbmFseXNpc2QCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA2IERlYyAyMDEyZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTZNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCBNZWV0aW5nIERlY2VtYmVyIDIwMTIfAwUiTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS1YMEJNQmRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBdYTVGhpcyBwcm9wb3NhbCB3aWxsIGxvb2sgYXQgYSBudW1iZXIgb2YgaW50ZXItY29ubmVjdGVkIHRvcGljcyBpbiBwcmltZSBudW1iZXIgdGhlb3J5LCB1c2luZyBzaWV2ZSBtZXRob2RzLiAgSXQgaXMgbW90aXZhdGVkIGJ5IGZhbW91cyBvcGVuIHF1ZXN0aW9ucyBvZiB0aGUgdHlwZSAiQXJlIHRoZXJlIGluZmluaXRlbHkgbWFueSB0d2luIHByaW1lcz8iIG9yICJBcmUgdGhlcmUgaW5maW5pdGVseSBtYW55IHByaW1lcyB3aGljaCBhcmUgb25lIG1vcmUgdGhhbiBhIHNxdWFyZT8iPGJyIC8+PGJyIC8+U2lldmUgbWV0aG9kcyBoYXZlIGFscmVhZHkgbWFkZSBwYXJ0aWFsIHByb2dyZXNzIHRvd2FyZHMgdGhlc2UgcXVlc3Rpb25zLCBidXQgd2Ugc2VlayB0byBkZXZlbG9wIHRoZXNlIHRlY2huaXF1ZXMgZnVydGhlciwgYm90aCB0byBpbXByb3ZlIGV4aXN0aW5nIHJlc3VsdHMsIGFuZCB0byBleHRlbmQgdGhlIGFwcGxpY2FiaWxpdHkgb2YgdGhlIG1ldGhvZHMuPGJyIC8+PGJyIC8+QXMgYW4gZXhhbXBsZSwgY29uc2lkZXIgdGhlIGZhbW91cyB0aGVvcmVtIG9mIENoZW4sIGZyb20gMTk3My4gIFRoaXMgc2F5cyB0aGF0IHRoZXJlIGFyZSBpbmZpbml0ZWx5IG1hbnkgcHJpbWVzIHAgZm9yIHdoaWNoIHArMiBpcyBlaXRoZXIgcHJpbWUgKHlpZWxkaW5nIGEgcGFpciBvZiBwcmltZSB0d2lucyksIG9yIGhhcyBvbmx5IHR3byBwcmltZSBmYWN0b3JzLiBXZSB3aWxsIGVzdGFibGlzaCBhIHNpbWlsYXIgcmVzdWx0IGZvciB0cmlwbGVzIG9mIG51bWJlcnMuIEFwYXJ0IGZyb20gdGhlIGNhc2Ugb2YgMyw1IGFuZCA3LCBvbmUgb2YgdGhlIG51bWJlcnMgbiwgbisyIGFuZCBuKzQgd2lsbCBhbHdheXMgYmUgY29tcG9zaXRlLCBzaW5jZSBvbmUgb2YgdGhlIHRocmVlIHdpbGwgYmUgZGl2aXNpYmxlIGJ5IDMuICBIZW5jZSBpdCBpcyBuYXR1cmFsIHRvIGxvb2sgYXQgdHJpcGxlcyBuLCBuKzIgYW5kIG4rNiwgd2hlcmUgd2Ugd291bGQgaG9wZSB0byBmaW5kIGluZmluaXRlbHkgbWFueSBpbnN0YW5jZXMgd2hlcmUgYWxsIHRocmVlIGFyZSBwcmltZS4gIEluIHRoaXMgc2l0dWF0aW9uIHdlIHBsYW4gdG8gZXh0ZW5kIENoZW4ncyByZXN1bHQgdG8gZmluZCBpbmZpbml0ZWx5IG1hbnkgY2FzZSBpbiB3aGljaCBuIGlzIHByaW1lLCBuKzIgaGFzIGF0IG1vc3QgMiBwcmltZSBmYWN0b3JzLCBhbmQgbis2IGhhcyBhdCBtb3N0IHNvbWUgZml4ZWQgbnVtYmVyICg4IHNheSkgb2YgcHJpbWUgZmFjdG9ycy48YnIgLz48YnIgLz5Bbm90aGVyIGV4YW1wbGUgZGVtb25zdHJhdGVzIHRoZSBwb3RlbnRpYWwgY29ubmVjdGlvbiBiZXR3ZWVuIHByaW1lIG51bWJlciBhbmQgRGlvcGhhbnRpbmUgZXF1YXRpb25zIC0gZXF1YXRpb25zIGluIG1hbnkgdmFyaWFibGVzIHdoaWNoIG9uZSBzZWVrcyB0byBzb2x2ZSB1c2luZyBvbmx5IHJhdGlvbmFsIG51bWJlcnMuIE9uZSBtdWNoIHN0dWRpZWQgZXF1YXRpb24gdGFrZXMgdGhlIHNoYXBlIGYodSk9Tih3LHgsLi4uLHopLCB3aGVyZSBmIGlzIGEgcG9seW5vbWlhbCBhbmQgTih3LHgsLi4uLHopIGlzIGEgc28gY2FsbGVkICJOb3JtIGZvcm0iIG9mIGRlZ3JlZSBkLCBpbiBkIHZhcmlhYmxlcy4gV2hlbiBmIGlzIGxpbmVhciB0aGUgZXF1YXRpb24gaXMgYWx3YXlzIHNvbHZhYmxlLCBhbmQgaXQgaXMgb25seSB2ZXJ5IHJlY2VudGx5IHRoYXQgdGhlIGNhc2Ugb2YgcXVhZHJhdGljIHBvbHlub21pYWxzIGhhcyBiZWVuIGhhbmRsZWQuICBXZSBhaW0gdG8gc2hvdyB0aGF0IGluIGNlcnRhaW4gY2FzZXMgb25lIGNhbiBhbHNvIGRlYWwgd2l0aCBjdWJpYyBwb2x5bm9taWFscyBmLiAgSXQgaXMgYnkgbm8gbWVhbnMgb2J2aW91cyB3aHkgcHJpbWUgbnVtYmVyIHRoZW9yeSBzaG91bGQgYmUgcmVsZXZhbnQuICBJbiBvdXIgcGxhbm5lZCBhdHRhY2sgd2Ugd2lsbCByZXN0cmljdCB0aGUgZGVub21pbmF0b3Igb2YgdSB0byBiZSBwcmltZSwgYW5kIHVzZSBzaWV2ZSBtYWNoaW5lcnkgdG8gZmluZCBudW1iZXJzIGYodSkgd2hpY2ggYXJlIGF1dG9tYXRpY2FsbHkgb2YgdGhlIGZvcm0gTih3LHgsLi4uLHopLjxiciAvPjxiciAvPkEgZmluYWwgZXhhbXBsZSBjb25jZXJucyBwcmltZXMgcmVwcmVzZW50ZWQgYnkgcG9seW5vbWlhbHMgaW4gdHdvIG9yIG1vcmUgdmFyaWFibGVzLiAgVGhlIFBJIHNob3dlZCB0aGF0IHRoZSBzZXF1ZW5jZSBvZiBudW1iZXJzIG1eMysybl4zIGluY2x1ZGVzIGluZmluaXRlbHkgbWFueSBwcmltZXMuICBUaGlzIHNlcXVlbmNlIGhhcyBhbiAiZXhwb25lbnRpYWwgZGVuc2l0eSIgb2YgMi8zLiAgV2UgYWltIHRvIGZpbmQgcG9seW5vbWlhbCBzZXF1ZW5jZXMgd2l0aCBsb3dlciBleHBvbmVudGlhbCBkZW5zaXR5IHdoaWNoIHN0aWxsIHRha2UgaW5maW5pdGVseSBtYW55IHByaW1lIHZhbHVlcy4gIFRoaXMgbWF5IGJlIHNlZW4gYXMgYSBtb3ZlIHRvd2FyZHMgdGhlIGNhc2Ugb2YgcHJpbWVzIG9mIHRoZSBzaGFwZSBuXjIrMSwgd2hlcmUgdGhlIGV4cG9uZW50aWFsIGRlbnNpdHkgaXMgMS8yLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cub3guYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cub3guYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDIxMzJYLzEMRVAvSzAyMTMyWC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGTxlQ/h5q7S27j0MbQWjc452kHH8Q==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLnwaa9BQLQvN++DAKT/OCVA4e3RbHFcaXVinAjNDVIl55YIEGH" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/K02132X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Primes, sieves, and their applications</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=22603'>Heath-Brown, Professor R</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematical Institute</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Oxford</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">30 September 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">29 September 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="299,479.07" class="DetailValue">299,479</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Mathematical Analysis</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>06 Dec 2012</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-X0BMB">Mathematics Prioritisation Panel Meeting December 2012</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This proposal will look at a number of inter-connected topics in prime number theory, using sieve methods.  It is motivated by famous open questions of the type "Are there infinitely many twin primes?" or "Are there infinitely many primes which are one more than a square?"<br /><br />Sieve methods have already made partial progress towards these questions, but we seek to develop these techniques further, both to improve existing results, and to extend the applicability of the methods.<br /><br />As an example, consider the famous theorem of Chen, from 1973.  This says that there are infinitely many primes p for which p+2 is either prime (yielding a pair of prime twins), or has only two prime factors. We will establish a similar result for triples of numbers. Apart from the case of 3,5 and 7, one of the numbers n, n+2 and n+4 will always be composite, since one of the three will be divisible by 3.  Hence it is natural to look at triples n, n+2 and n+6, where we would hope to find infinitely many instances where all three are prime.  In this situation we plan to extend Chen's result to find infinitely many case in which n is prime, n+2 has at most 2 prime factors, and n+6 has at most some fixed number (8 say) of prime factors.<br /><br />Another example demonstrates the potential connection between prime number and Diophantine equations - equations in many variables which one seeks to solve using only rational numbers. One much studied equation takes the shape f(u)=N(w,x,...,z), where f is a polynomial and N(w,x,...,z) is a so called "Norm form" of degree d, in d variables. When f is linear the equation is always solvable, and it is only very recently that the case of quadratic polynomials has been handled.  We aim to show that in certain cases one can also deal with cubic polynomials f.  It is by no means obvious why prime number theory should be relevant.  In our planned attack we will restrict the denominator of u to be prime, and use sieve machinery to find numbers f(u) which are automatically of the form N(w,x,...,z).<br /><br />A final example concerns primes represented by polynomials in two or more variables.  The PI showed that the sequence of numbers m^3+2n^3 includes infinitely many primes.  This sequence has an "exponential density" of 2/3.  We aim to find polynomial sequences with lower exponential density which still take infinitely many prime values.  This may be seen as a move towards the case of primes of the shape n^2+1, where the exponential density is 1/2.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.ox.ac.uk                                                                                 '>http://www.ox.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

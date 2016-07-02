@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Morita equivalence classes of blocks
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM015548%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAxNTU0OC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU1PHN0cm9uZz5Nb3JpdGEgZXF1aXZhbGVuY2UgY2xhc3NlcyBvZiBibG9ja3M8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT48YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xOTk5NzInPkVhdG9uLCBEciBDPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFC01hdGhlbWF0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUdVW5pdmVyc2l0eSBvZiBNYW5jaGVzdGVyLCBUaGVkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFETAxIFNlcHRlbWJlciAyMDE1ZGQCAw9kFgICAQ8PFgIfBAUOMzEgQXVndXN0IDIwMThkZAIFD2QWAgIBDw8WBB8EBQczMTcsODU0HgdUb29sVGlwBQozMTcsODUzLjY4ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5AGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzI2IE5vdiAyMDE0ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTVFUFNSQyBNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCBOb3ZlbWJlciAgMjAxNB8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTI5QTlaTGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBdseQSBncm91cCBpcyBhbiBhYnN0cmFjdCBzdHJ1Y3R1cmUgd2hpY2ggY2FuIGFyaXNlIGluIGFsbW9zdCBhbnkgYXJlYSBvZiBtYXRoZW1hdGljcyBvciBpbiBwaHlzaWNzLiBBcyBzdWNoIGl0IGlzIHVuaXZlcnNhbCBhbmQgY2FuIGJlIGEgbWVhbnMgb2YgYnJpZGdpbmcgZGlzcGFyYXRlIGFyZWFzLiBTb21lIGV4YW1wbGVzIG9mIGdyb3VwcyBhcmUgdGhlIGludGVnZXJzICh3aXRoIGFkZGl0aW9uKSwgdGhlIHN5bW1ldHJpZXMgb2YgYSBwb2x5aGVkcm9uICh3aXRoIGNvbXBvc2l0aW9uIG9mIHN5bW1ldHJpZXMpIG9yIHRoZSBmdW5kYW1lbnRhbCBncm91cCBvZiBwYXRocyBvbiBhIHN1cmZhY2UuIFRvIHVuZGVyc3RhbmQgdGhlc2UgYWJzdHJhY3Qgb2JqZWN0cywgd2UgbmVlZCB0byByZXByZXNlbnQgYSBncm91cCBpbiBzb21lIHdheS4gV2UgZG8gdGhpcyBieSBjb25zaWRlcmluZyBpdCBhcyBhIGNvbGxlY3Rpb24gb2YgdHJhbnNmb3JtYXRpb25zIG9mIHNwYWNlLiBUaGUgZ3JvdXAgbWF5IGFscmVhZHkgaGF2ZSBuYXR1cmFsIHJlcHJlc2VudGF0aW9ucywgYXMgaGFwcGVucyBvZnRlbiBpbiBwaHlzaWNzLCBlLmcuLCBvcnRob2dvbmFsIGdyb3Vwcywgb3IgdGhleSBtYXkgYmUgb2JzY3VyZSBhbmQgaW52b2x2ZSB0cmFuc2Zvcm1hdGlvbnMgb2YgdmVyeSBoaWdoIGRpbWVuc2lvbmFsIHNwYWNlcyAoZm9yIGV4YW1wbGUgdGhlICdtb25zdGVyJyBzcG9yYWRpYyBncm91cCByZXF1aXJlcyBhIDE5Niw4ODMgZGltZW5zaW9uYWwgc3BhY2UpLiBGdXJ0aGVyIHdlIG5lZWQgdG8gc3R1ZHkgbm90IGp1c3Qgb25lIHJlcHJlc2VudGF0aW9uIG9mIGEgZ3JvdXAsIGJ1dCB0aGUgZW50aXJldHkgb2YgdGhlIHJlcHJlc2VudGF0aW9ucyBvZiB0aGF0IGdyb3VwLiBBbiBvYmplY3QgY2FwdHVyaW5nIHRoaXMgaW5mb3JtYXRpb24gaXMgYSBtb2R1bGUgY2F0ZWdvcnkuIDxiciAvPjxiciAvPk91ciBpbnRlcmVzdCBpcyBpbiB0aGUgbW9kdWxhciByZXByZXNlbnRhdGlvbnMgb2YgYSBncm91cCwgdGhhdCBpcyB0aG9zZSBvdmVyIGEgZmllbGQgb2YgcHJpbWUgY2hhcmFjdGVyaXN0aWMgcC4gSGVyZSBpdCBtYWtlcyBzZW5zZSB0byByZWZpbmUgb3VyIG1vZHVsZSBjYXRlZ29yeS4gSW5zdGVhZCBvZiBzdHVkeWluZyB0aGUgZ3JvdXAgaXRzZWxmLCB3ZSBzdHVkeSBpdHMgYmxvY2tzLiBTdHVkeSBvZiB0aGUgbW9kdWxlIGNhdGVnb3J5IG9mIGEgZ3JvdXAgYW1vdW50cyB0byBzdHVkeSBvZiB0aGUgbW9kdWxlIGNhdGVnb3J5IG9mIGVhY2ggYmxvY2sgaW4gdHVybi4gQW4gaW52YXJpYW50IGFzc29jaWF0ZWQgdG8gYSBibG9jayBpcyBpdHMgZGVmZWN0IGdyb3VwLiBJbiBhIGJsb2NrIHdpdGggdHJpdmlhbCBkZWZlY3QgZ3JvdXAgYWxsIHJlcHJlc2VudGF0aW9ucyBhcmUgZXNzZW50aWFsbHkgc3VtcyBvZiBjb3BpZXMgb2YgYSBzaW5nbGUgcmVwcmVzZW50YXRpb24sIGJ1dCB0aGUgc3RydWN0dXJlIG9mIHJlcHJlc2VudGF0aW9ucyBvZiBhIGJsb2NrIG9mIGxhcmdlIGRlZmVjdCBjYW4gYmUgdmVyeSBjb21wbGV4LiA8YnIgLz48YnIgLz5XZSBjb21wYXJlIG1vZHVsZSBjYXRlZ29yaWVzIG9mIGJsb2NrcyB1c2luZyBNb3JpdGEgZXF1aXZhbGVuY2UuIE1vcml0YSBlcXVpdmFsZW50IG1vZHVsZSBjYXRlZ29yaWVzIGFyZSBpbiBhIHNlbnNlICd0aGUgc2FtZScuIEEgZnVuZGFtZW50YWwgcXVlc3Rpb24gaXMgYWRkcmVzc2VkIGJ5IERvbm92YW4ncyBjb25qZWN0dXJlLCBwb3NlZCBpbiB0aGUgMTk3MCdzLCB3aGljaCBwcmVkaWN0cyB0aGF0IGZvciBhIGZpeGVkIGRlZmVjdCBncm91cCB0aGVyZSBhcmUgb25seSBmaW5pdGVseSBtYW55IE1vcml0YSBlcXVpdmFsZW5jZSBjbGFzc2VzIG9mIGJsb2Nrcy4gRG9ub3ZhbidzIGNvbmplY3R1cmUgaXMgYm90aCBzaW1wbGUgYW5kIGZ1bmRhbWVudGFsIHRvIG91ciBwZXJjZXB0aW9uIG9mIHRoZSBzdWJqZWN0LiBJZiBpdCBpcyB0cnVlLCB0aGVuIGluIHRoZW9yeSB3ZSBjb3VsZCBjbGFzc2lmeSBtb2R1bGUgY2F0ZWdvcmllcyBvZiBibG9ja3MsIHdoaWxzdCBpZiBpdCBpcyBmYWxzZSwgdGhlbiB0aGUgc3ViamVjdCBpcyBldmVuIHdpbGRlciBhbmQgbW9yZSB1bnByZWRpY3RhYmxlIHRoYW4gd2UgaW1hZ2luZWQuPGJyIC8+PGJyIC8+VGhlIFBJLCBpbiBhIHJlY2VudCBwYXBlciB3aXRoIEtlc3NhciwgS8O8bHNoYW1tZXIgYW5kIFNhbWJhbGUsIGdhdmUgYSBjbGFzc2lmaWNhdGlvbiB1cCB0byBNb3JpdGEgZXF1aXZhbGVuY2Ugb2YgYmxvY2tzIG9mIHF1YXNpc2ltcGxlIGdyb3VwcyB3aXRoIGFiZWxpYW4gZGVmZWN0IGdyb3VwcyB3aGVuIHRoZSBwcmltZSBwIGlzIDIuIFRoaXMgaXMgYSB0cmVtZW5kb3VzIHRvb2wgbm90IG9ubHkgZm9yIHZlcmlmeWluZyBjYXNlcyBvZiBEb25vdmFuJ3MgY29uamVjdHVyZSwgYnV0IGZvciBnb2luZyBmdXJ0aGVyIGFuZCBjbGFzc2lmeWluZyB0aGUgTW9yaXRhIGVxdWl2YWxlbmNlIGNsYXNzZXMgb2YgYmxvY2tzIHdpdGggYSBnaXZlbiBkZWZlY3QgZ3JvdXAuIFRoaXMgaGFzIGJlZW4gZG9uZSBpbiB2ZXJ5IGZldyBtZWFuaW5nZnVsIGNhc2VzIGFuZCBkb2luZyBzbyB3b3VsZCBzaGluZSBhIGxpZ2h0IGluIGFuIGFyZWEgd2hpY2ggaXMgY3VycmVudGx5IHZlcnkgZGFyay4gPGJyIC8+PGJyIC8+QSBsYXJnZSBwYXJ0IG9mIHRoaXMgcHJvcG9zYWwgaXMgdG8gZXhwbG9pdCB0aGUgYWJvdmUgcGFwZXIgdG8gZ2l2ZSBwcmVjaXNlIGRlc2NyaXB0aW9ucyBvZiB0aGUgTW9yaXRhIGVxdWl2YWxlbmNlIGNsYXNzZXMgaW4gYSByYW5nZSBvZiBjYXNlcywgYXMgd2VsbCBhcyB0byBwcm92ZSBEb25vdmFuJ3MgY29uamVjdHVyZSBpbiBhbiBldmVuIHdpZGVyIHJhbmdlIG9mIGNhc2VzLiBJdCBpcyBhbHNvIHRvIGludmVzdGlnYXRlIHRoZSBnZW5lcmFsIHBoZW5vbWVub24gb2YgTW9yaXRhIGVxdWl2YWxlbmNlIGJldHdlZW4gYmxvY2tzIG9mIGZpbml0ZSBncm91cHMsIHBhcnRpY3VsYXJseSBpbiB0aGUgc2l0dWF0aW9uIG9mIEdhbG9pcyBjb25qdWdhdGUgYmxvY2tzIGFzIGNvbnNpZGVyZWQgYnkgS2Vzc2FyLiBIZXJlIHRoZSBzaXR1YXRpb24gaXMgdmVyeSBteXN0ZXJpb3VzLCBpbiB0aGF0IHRoZXJlIGV4aXN0IEdhbG9pcyBjb25qdWdhdGUgYmxvY2tzICh3aGljaCBhcmUgYWxtb3N0IGluZGlzdGluZ3Vpc2hhYmxlKSB0aGF0IGFyZSBub3QgTW9yaXRhIGVxdWl2YWxlbnQuIFRoaXMgd2lsbCBpbnZvbHZlIHNvbWUgYWxnZWJyYWljIG51bWJlciB0aGVvcnksIGFuZCBpcyBjcnVjaWFsIHRvIG91ciB1bmRlcnN0YW5kaW5nIG9mIERvbm92YW4ncyBjb25qZWN0dXJlLjxiciAvPjxiciAvPlRoZSBwcmluY2lwYWwgb3V0Y29tZSBvZiB0aGUgcHJvamVjdCB3aWxsIGJlIGRldGFpbGVkIGluZm9ybWF0aW9uIG9uIE1vcml0YSBlcXVpdmFsZW5jZSBjbGFzc2VzLCBwcm92aWRpbmcgYW4gaW52YWx1YWJsZSByZXNvdXJjZSBmb3IgZnV0dXJlIHJlc2VhcmNoLiBBIHdlYnNpdGUgd2lsbCBiZSBjb25zdHJ1Y3RlZCB0byBtYWtlIHRoaXMgZGV0YWlsZWQgaW5mb3JtYXRpb24gYXZhaWxhYmxlIGFuZCB0byByZWNvcmQgcHJvZ3Jlc3Mgb24gRG9ub3ZhbidzIGNvbmplY3R1cmUgYW5kIHRoZSBjbGFzc2lmaWNhdGlvbiBvZiBNb3JpdGEgZXF1aXZhbGVuY2UgY2xhc3NlcyBpbiBnZW5lcmFsLiAgPGJyIC8+PGJyIC8+VGhlIHByb2plY3QgaW52b2x2ZXMga25vd2xlZGdlIG9mIGZpbml0ZSBncm91cHMgb2YgTGllIHR5cGUsIG9mIGhvbW9sb2dpY2FsIGFsZ2VicmEsIG51bWJlciB0aGVvcnksIGdyb3VwIHRoZW9yeSBhbmQgcmVwcmVzZW50YXRpb24gdGhlb3J5LCBhbmQgd2lsbCBiZW5lZml0IGZyb20gY29sbGFib3JhdGlvbnMgd2l0aCB0aGUgc3Ryb25nIGFsZ2VicmEgY29tbXVuaXR5IGJvdGggaW4gdGhlIFVLIGFuZCBvdXRzaWRlLjxiciAvPjxiciAvPmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9JyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9NMDE1NTQ4LzEMRVAvTTAxNTU0OC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGTuRjy3GvQgaPRe7wFnN3zZEIy3ow==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLjxIjRCQLQvN++DAKT/OCVA34zQvsJxifUkF+24vnwZi6iHTCu" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M015548/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Morita equivalence classes of blocks</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-199972'>Eaton, Dr C</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Manchester, The</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="317,853.68" class="DetailValue">317,854</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>26 Nov 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-29A9ZL">EPSRC Mathematics Prioritisation Panel November  2014</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">A group is an abstract structure which can arise in almost any area of mathematics or in physics. As such it is universal and can be a means of bridging disparate areas. Some examples of groups are the integers (with addition), the symmetries of a polyhedron (with composition of symmetries) or the fundamental group of paths on a surface. To understand these abstract objects, we need to represent a group in some way. We do this by considering it as a collection of transformations of space. The group may already have natural representations, as happens often in physics, e.g., orthogonal groups, or they may be obscure and involve transformations of very high dimensional spaces (for example the 'monster' sporadic group requires a 196,883 dimensional space). Further we need to study not just one representation of a group, but the entirety of the representations of that group. An object capturing this information is a module category. <br /><br />Our interest is in the modular representations of a group, that is those over a field of prime characteristic p. Here it makes sense to refine our module category. Instead of studying the group itself, we study its blocks. Study of the module category of a group amounts to study of the module category of each block in turn. An invariant associated to a block is its defect group. In a block with trivial defect group all representations are essentially sums of copies of a single representation, but the structure of representations of a block of large defect can be very complex. <br /><br />We compare module categories of blocks using Morita equivalence. Morita equivalent module categories are in a sense 'the same'. A fundamental question is addressed by Donovan's conjecture, posed in the 1970's, which predicts that for a fixed defect group there are only finitely many Morita equivalence classes of blocks. Donovan's conjecture is both simple and fundamental to our perception of the subject. If it is true, then in theory we could classify module categories of blocks, whilst if it is false, then the subject is even wilder and more unpredictable than we imagined.<br /><br />The PI, in a recent paper with Kessar, Külshammer and Sambale, gave a classification up to Morita equivalence of blocks of quasisimple groups with abelian defect groups when the prime p is 2. This is a tremendous tool not only for verifying cases of Donovan's conjecture, but for going further and classifying the Morita equivalence classes of blocks with a given defect group. This has been done in very few meaningful cases and doing so would shine a light in an area which is currently very dark. <br /><br />A large part of this proposal is to exploit the above paper to give precise descriptions of the Morita equivalence classes in a range of cases, as well as to prove Donovan's conjecture in an even wider range of cases. It is also to investigate the general phenomenon of Morita equivalence between blocks of finite groups, particularly in the situation of Galois conjugate blocks as considered by Kessar. Here the situation is very mysterious, in that there exist Galois conjugate blocks (which are almost indistinguishable) that are not Morita equivalent. This will involve some algebraic number theory, and is crucial to our understanding of Donovan's conjecture.<br /><br />The principal outcome of the project will be detailed information on Morita equivalence classes, providing an invaluable resource for future research. A website will be constructed to make this detailed information available and to record progress on Donovan's conjecture and the classification of Morita equivalence classes in general.  <br /><br />The project involves knowledge of finite groups of Lie type, of homological algebra, number theory, group theory and representation theory, and will benefit from collaborations with the strong algebra community both in the UK and outside.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	A Theory of Least Change for Bidirectional Transformations
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fK020218%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSzAyMDIxOC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVLPHN0cm9uZz5BIFRoZW9yeSBvZiBMZWFzdCBDaGFuZ2UgZm9yIEJpZGlyZWN0aW9uYWwgVHJhbnNmb3JtYXRpb25zPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVFPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01NDE0OCc+U3RldmVucywgUHJvZmVzc29yIFA8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAz88YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xODk5MzEnPkNoZW5leSwgRHIgSjwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQM9PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD03NzAyOCc+RHIgSiBNY0tpbm5hPC9hPgAAZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRJTY2ggb2YgSW5mb3JtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdVbml2ZXJzaXR5IG9mIEVkaW5idXJnaGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUNMTUgTWFyY2ggMjAxM2RkAgMPZBYCAgEPDxYCHwQFDjAxIEF1Z3VzdCAyMDE2ZGQCBQ9kFgICAQ8PFgQfBAUHMzk1LDE3MB4HVG9vbFRpcAUKMzk1LDE2OS44N2RkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCIEluZm9ybWF0aW9uICZhbXA7IEtub3dsZWRnZSBNZ210FFNvZnR3YXJlIEVuZ2luZWVyaW5nZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhhJbmZvcm1hdGlvbiBUZWNobm9sb2dpZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VBEM8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAyMDkxOS8xJz5FUC9LMDIwOTE5LzE8L2E+AAAAZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTYgSmFuIDIwMTNkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFJEVQU1JDIElDVCBSZXNwb25zaXZlIE1vZGUgLSBKYW4gMjAxMx8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTE0SDVSNGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBZUfQSBiaWRpcmVjdGlvbmFsIHRyYW5zZm9ybWF0aW9uIGlzIGEgbWVhbnMgb2YgbWFpbnRhaW5pbmcgY29uc2lzdGVuY3kgYmV0d2VlbiBtdWx0aXBsZSBpbmZvcm1hdGlvbiBzb3VyY2VzOiB3aGVuIG9uZSBzb3VyY2UgaXMgZWRpdGVkLCB0aGUgb3RoZXJzIG1heSBuZWVkIHVwZGF0aW5nIHRvIHJlc3RvcmUgY29uc2lzdGVuY3kuIFRoZXJlIGFyZSBtYW55IGRvbWFpbnMgaW4gd2hpY2ggYmlkaXJlY3Rpb25hbCB0cmFuc2Zvcm1hdGlvbnMgYXJlIG5lZWRlZC4gQ3VycmVudGx5LCB0aGUgYmVzdC1rbm93biBvZiB0aGVzZSBpcyBtb2RlbC1kcml2ZW4gZGV2ZWxvcG1lbnQuIE1vZGVsLWRyaXZlbiBkZXZlbG9wbWVudCBpcyB0aGUgYXBwcm9hY2ggdG8gZGV2ZWxvcGluZyBzb2Z0d2FyZSBpbiB3aGljaCBtb2RlbHMgLSBzcGVjaWFsaXNlZCBkZXNjcmlwdGlvbnMgb2Ygb25seSBjZXJ0YWluIGFzcGVjdHMgb2YgdGhlIHNvZnR3YXJlIHRvIGJlIGJ1aWx0IC0gYXJlIGltcG9ydGFudCBhcnRlZmFjdHMgaW4gdGhlIGRldmVsb3BtZW50LiBTb21lIG9yIGFsbCBjb2RlIG1heSBiZSBnZW5lcmF0ZWQgZnJvbSBtb2RlbHMsIHJhdGhlciB0aGFuIHdyaXR0ZW4gYnkgaGFuZC4gRGlmZmVyZW50IGV4cGVydHMgd29yayBvbiBkaWZmZXJlbnQgbW9kZWxzLCBhZGFwdGVkIHRvIHRoZWlyIG5lZWRzLCBlYWNoIHJlY29yZGluZyB0aGVpciBkZWNpc2lvbnMgaW4gdGhlaXIgb3duIG1vZGVsLiBJbiBvcmRlciB0byBlbmQgdXAgd2l0aCBhIGNvcnJlY3Qgc3lzdGVtLCB0aGUgbW9kZWxzIG5lZWQgdG8gYmUga2VwdCBjb25zaXN0ZW50OyB3aGVuIG9uZSBkZXZlbG9wZXIgY2hhbmdlcyBvbmUgbW9kZWwsIGFub3RoZXIgbW9kZWwgbWF5IG5lZWQgdG8gYmUgY2hhbmdlZCB0byBtYXRjaCwgYW5kIHZpY2UgdmVyc2EuIEFub3RoZXIgY3VycmVudCBhcHBsaWNhdGlvbiBpcyB0aGUgInZpZXcgdXBkYXRlIiBwcm9ibGVtIGluIGRhdGFiYXNlcyAodXBkYXRpbmcgc291cmNlIHRhYmxlcyBhZnRlciBlZGl0cyB0byB2aWV3IHRhYmxlcykuIFBvdGVudGlhbCBhcHBsaWNhdGlvbnMgaW5jbHVkZSBpbnRlZ3JhdGluZyBkaWZmZXJlbnQgZWxlY3Ryb25pYyBoZWFsdGggcmVjb3JkcywgbWFpbnRhaW5pbmcgY29uc2lzdGVuY3kgYmV0d2VlbiBhIGhpZ2gtbGV2ZWwgc3lzdGVtcyBiaW9sb2d5IG1vZGVsIGFuZCBhIG1vcmUgZGV0YWlsZWQgbW9kZWwgb2Ygc29tZSBhc3BlY3QsIHByb3ZpZGluZyB1c2VyLWZyaWVuZGx5IGFjY2VzcyB0byBtYWNoaW5lLW9yaWVudGVkIGRhdGEgcmVwcmVzZW50YXRpb24sIGF1dG9tYXRpbmcgdGhlIGNvZXZvbHV0aW9uIG9mIGEgcHJvZ3JhbSB3aXRoIGl0cyBwcm9vZiBvZiBjb3JyZWN0bmVzcywgZXRjLjxiciAvPjxiciAvPkEgYmlkaXJlY3Rpb25hbCB0cmFuc2Zvcm1hdGlvbiBjYW4gYmUgaW1wbGVtZW50ZWQgaW4gdGVybXMgb2Ygc2V2ZXJhbCB1bmlkaXJlY3Rpb25hbCByZXN0b3JpbmcgZnVuY3Rpb25zLCBvbmUgcGVyIHNvdXJjZTsgYnV0IHRoaXMgZHVwbGljYXRlcyBpbmZvcm1hdGlvbiAoZm9yIGV4YW1wbGUsIGluZm9ybWF0aW9uIGFib3V0IHRoZSBzdHJ1Y3R1cmUgb2YgdGhlIG1vZGVscyBiZWluZyByZWxhdGVkIGFwcGVhcnMgaW4gZXZlcnkgZnVuY3Rpb24pLCB3YXN0aW5nIGVmZm9ydCBhbmQgcmlza2luZyBpbmNvbnNpc3RlbmNpZXMuIEJpZGlyZWN0aW9uYWwgdHJhbnNmb3JtYXRpb24gbGFuZ3VhZ2VzIGFsbG93IG9uZSB0byBkZXNjcmliZSB0aGUgY29uc2lzdGVuY3kgcmVsYXRpb25zaGlwIGFuZCB0aGUgcmVzdG9yaW5nIGZ1bmN0aW9ucyB3aXRoIGEgc2luZ2xlIGRlY2xhcmF0aXZlIHNwZWNpZmljYXRpb24uIEEgZ29vZCBiaWRpcmVjdGlvbmFsIHRyYW5zZm9ybWF0aW9uIGxhbmd1YWdlIHNob3VsZCBzdXBwb3J0IHRoZSBkZXZlbG9wZXIgb2YgdGhlIHRyYW5zZm9ybWF0aW9uIGJ5IG5vdCBhbGxvd2luZyB0aGUgZGV2ZWxvcGVyIHRvIHdyaXRlIG5vbnNlbnNlOiB3aGVuIGEgdHJhbnNmb3JtYXRpb24gaXMgY29uc2lkZXJlZCBjb3JyZWN0IGFjY29yZGluZyB0byB0aGUgbGFuZ3VhZ2UsIGl0IHNob3VsZCBvYmV5IGJhc2ljIHNhbml0eSBwcm9wZXJ0aWVzLjxiciAvPjxiciAvPlZhcmlvdXMgbmF0dXJhbCBwcm9wZXJ0aWVzIG9mIGJpZGlyZWN0aW9uYWwgdHJhbnNmb3JtYXRpb25zIGFyZSBub3cgd2VsbCB1bmRlcnN0b29kOyBpbiBwYXJ0aWN1bGFyLCAiY29ycmVjdG5lc3MiICh0aGF0IHRoZSBiaWRpcmVjdGlvbmFsIHRyYW5zZm9ybWF0aW9uIGRvZXMgYWN0dWFsbHkgcmVzdG9yZSBjb25zaXN0ZW5jeSkgYW5kICJoaXBwb2NyYXRpY25lc3MiICh0aGF0IGlmIGFuIGVkaXRlZCBzb3VyY2UgcmVtYWlucyBjb25zaXN0ZW50LCB0aGVuIHRoZSBiaWRpcmVjdGlvbmFsIHRyYW5zZm9ybWF0aW9uIG1ha2VzIG5vIGNoYW5nZXMpLiBXaGF0IGlzIG11Y2ggbGVzcyB3ZWxsIHVuZGVyc3Rvb2QsIGFuZCB3aGF0IHdlIHdpbGwgc3R1ZHkgaW4gdGhpcyBwcm9qZWN0LCBpcyB0aGUgInByaW5jaXBsZSBvZiBsZWFzdCBjaGFuZ2UiICh0aGF0IGEgYmlkaXJlY3Rpb25hbCB0cmFuc2Zvcm1hdGlvbiBzaG91bGQgbm90IG1ha2UgdW5uZWNlc3NhcnkgY2hhbmdlcyB3aGVuIGl0IGVuZm9yY2VzIGNvbnNpc3RlbmN5KS48YnIgLz48YnIgLz5PdXIgaHlwb3RoZXNlcyBhcmU6IChpKSB0aGF0IHRoaXMgUHJpbmNpcGxlIG9mIExlYXN0IENoYW5nZSBjYW4gYmUgcHJlY2lzZWx5IGFuZCBwcm9kdWN0aXZlbHkgY2FwdHVyZWQ7IChpaSkgdGhhdCBvdXIgdW5kZXJzdGFuZGluZyBvZiB0aGUgUHJpbmNpcGxlIHdpbGwgYmVuZWZpdCBmcm9tIHdvcmsgb24gInByb3ZlbmFuY2UiIGluIGRhdGFiYXNlcyAtIHByb3ZlbmFuY2UgaW52b2x2ZXMgYnVpbGRpbmcgYW5kIHVzaW5nIGEgcmVjb3JkIG9mIHdoaWNoIG91dHB1dHMgZGVwZW5kIG9uIHdoaWNoIGlucHV0cywgYW5kIGhvdyB0aGV5IGRvIHNvOyBhbmQgKGlpaSkgdGhhdCB0aGlzIHdpbGwgbGVhZCB0byBhIHRoZW9yeSBvZiAiYWxpZ25tZW50IiAtIG1hdGNoaW5nIG9mIHBhcnRzIC0gZm9yIG5vbi1mcmVlIGRhdGF0eXBlcyBzdWNoIGFzIGFzc29jaWF0aXZlIGxpc3RzIGFuZCBncmFwaHMuIEdyYXBocyBhcmUgYW4gZXNwZWNpYWxseSBpbXBvcnRhbnQgZGF0YXR5cGUsIGJlY2F1c2UgdGhleSBhcmUgdWJpcXVpdG91cyBpbiBzb2Z0d2FyZSBlbmdpbmVlcmluZy4gSW4gcGFydGljdWxhciwgdGhlIG1vZGVscyBpbiBtb2RlbC1kcml2ZW4gZGV2ZWxvcG1lbnQgYXJlIG9mdGVuIHR5cGVzIG9mIGdyYXBoLCBzdWNoIGFzIGNsYXNzIGRpYWdyYW1zIGFuZCBzdGF0ZWNoYXJ0cy48YnIgLz48YnIgLz5UaGlzIHByb2plY3Qgd2lsbCB3b3JrIG9uIHRoZSBtYXRoZW1hdGljYWwgZm91bmRhdGlvbnMgb2YgYmlkaXJlY3Rpb25hbCB0cmFuc2Zvcm1hdGlvbnMuIFRoZSByZWFzb24gZm9yIGRvaW5nIHRoaXMgaXMgaW4gb3JkZXIgdGhhdCBhIGJldHRlciB1bmRlcnN0YW5kaW5nIG9mIHRoZSBQcmluY2lwbGUgb2YgTGVhc3QgQ2hhbmdlIHdpbGwsIGluIGZ1dHVyZSwgY29udHJpYnV0ZSB0byBtb3JlIHVzYWJsZSBhbmQgbW9yZSByZWxpYWJsZSBtb2RlbC1kcml2ZW4gZW5naW5lZXJpbmcgdG9vbHMsIHN1cHBvcnRpbmcgZWZmaWNpZW50IGFuZCBjb3JyZWN0IHNvZnR3YXJlIGRldmVsb3BtZW50LCBldmVuIGluIHRoZSBmYWNlIG9mIGNvbnRpbnVvdXMgY2hhbmdlLiBJdCB3aWxsIHRodXMgZW5hYmxlIHNvZnR3YXJlIGRldmVsb3BlcnMgdG8gY29tYmluZSB0aGUgYWR2YW50YWdlcyBvZiBtb2RlbC1kcml2ZW4gZGV2ZWxvcG1lbnQgd2l0aCB0aG9zZSBvZiBhZ2lsZSBtZXRob2RzLiBCeSBlbmFibGluZyBiZXR0ZXIgbGFuZ3VhZ2VzIGFuZCB0b29scyB0byBiZSBkZXZlbG9wZWQsIGl0IHdpbGwgYWxzbyBtYWtlIHByYWN0aWNhbCB0aGUgdXNlIG9mIGJpZGlyZWN0aW9uYWwgdHJhbnNmb3JtYXRpb25zIGluIGEgd2lkZSByYW5nZSBvZiBvdGhlciBhcHBsaWNhdGlvbiBhcmVhcy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmVkLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmVkLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAyMDIxOC8xDEVQL0swMjAyMTgvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkbTceN5C5w5KZR3HcPwG8m5+ATLk=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKzuZvPAgLQvN++DAKT/OCVA3zko8JPC1a50BMC7qNOtSAxaDdv" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/K020218/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>A Theory of Least Change for Bidirectional Transformations</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=54148'>Stevens, Professor P</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-189931'>Cheney, Dr J</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=77028'>Dr J McKinna</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Informatics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Edinburgh</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">15 March 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">01 August 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="395,169.87" class="DetailValue">395,170</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Information &amp; Knowledge Mgmt</td>
+                                    <td class="DetailValue"> Software Engineering</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/K020919/1'>EP/K020919/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>16 Jan 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-14H5R4">EPSRC ICT Responsive Mode - Jan 2013</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">A bidirectional transformation is a means of maintaining consistency between multiple information sources: when one source is edited, the others may need updating to restore consistency. There are many domains in which bidirectional transformations are needed. Currently, the best-known of these is model-driven development. Model-driven development is the approach to developing software in which models - specialised descriptions of only certain aspects of the software to be built - are important artefacts in the development. Some or all code may be generated from models, rather than written by hand. Different experts work on different models, adapted to their needs, each recording their decisions in their own model. In order to end up with a correct system, the models need to be kept consistent; when one developer changes one model, another model may need to be changed to match, and vice versa. Another current application is the "view update" problem in databases (updating source tables after edits to view tables). Potential applications include integrating different electronic health records, maintaining consistency between a high-level systems biology model and a more detailed model of some aspect, providing user-friendly access to machine-oriented data representation, automating the coevolution of a program with its proof of correctness, etc.<br /><br />A bidirectional transformation can be implemented in terms of several unidirectional restoring functions, one per source; but this duplicates information (for example, information about the structure of the models being related appears in every function), wasting effort and risking inconsistencies. Bidirectional transformation languages allow one to describe the consistency relationship and the restoring functions with a single declarative specification. A good bidirectional transformation language should support the developer of the transformation by not allowing the developer to write nonsense: when a transformation is considered correct according to the language, it should obey basic sanity properties.<br /><br />Various natural properties of bidirectional transformations are now well understood; in particular, "correctness" (that the bidirectional transformation does actually restore consistency) and "hippocraticness" (that if an edited source remains consistent, then the bidirectional transformation makes no changes). What is much less well understood, and what we will study in this project, is the "principle of least change" (that a bidirectional transformation should not make unnecessary changes when it enforces consistency).<br /><br />Our hypotheses are: (i) that this Principle of Least Change can be precisely and productively captured; (ii) that our understanding of the Principle will benefit from work on "provenance" in databases - provenance involves building and using a record of which outputs depend on which inputs, and how they do so; and (iii) that this will lead to a theory of "alignment" - matching of parts - for non-free datatypes such as associative lists and graphs. Graphs are an especially important datatype, because they are ubiquitous in software engineering. In particular, the models in model-driven development are often types of graph, such as class diagrams and statecharts.<br /><br />This project will work on the mathematical foundations of bidirectional transformations. The reason for doing this is in order that a better understanding of the Principle of Least Change will, in future, contribute to more usable and more reliable model-driven engineering tools, supporting efficient and correct software development, even in the face of continuous change. It will thus enable software developers to combine the advantages of model-driven development with those of agile methods. By enabling better languages and tools to be developed, it will also make practical the use of bidirectional transformations in a wide range of other application areas.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.ed.ac.uk                                                                                 '>http://www.ed.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

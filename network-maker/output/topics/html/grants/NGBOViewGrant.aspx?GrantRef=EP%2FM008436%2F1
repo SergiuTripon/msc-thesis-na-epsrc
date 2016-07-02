@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Asymptotics and dynamics of forward implied volatility
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM008436%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAwODQzNi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVHPHN0cm9uZz5Bc3ltcHRvdGljcyBhbmQgZHluYW1pY3Mgb2YgZm9yd2FyZCBpbXBsaWVkIHZvbGF0aWxpdHk8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUE8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS00ODE5NjUnPkphY3F1aWVyLCBEciBBPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFE0RlcHQgb2YgTWF0aGVtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdJbXBlcmlhbCBDb2xsZWdlIExvbmRvbmRkAggPZBYCAgEPZBYCAgEPDxYCHwQFGkZpcnN0IEdyYW50IC0gUmV2aXNlZCAyMDA5ZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUQMTEgTm92ZW1iZXIgMjAxNGRkAgMPZBYCAgEPDxYCHwQFEDEwIE5vdmVtYmVyIDIwMTZkZAIFD2QWAgIBDw8WBB8EBQY5Niw4MjYeB1Rvb2xUaXAFCTk2LDgyNi4xMGRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIVTWF0aGVtYXRpY2FsIEFuYWx5c2lzIlN0YXRpc3RpY3MgJmFtcDsgQXBwbC4gUHJvYmFiaWxpdHlkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCEkZpbmFuY2lhbCBTZXJ2aWNlcwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwgCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQsxMCBTZXAgMjAxNGRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUwRVBTUkMgTWF0aGVtYXRpY3MgUHJpb3JpdGlzYXRpb24gUGFuZWwgU2VwdCAyMDE0HwMFI05HQk9WaWV3UGFuZWwuYXNweD9QYW5lbElkPTEtMVpBQzRKZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQF0RxBc3ltcHRvdGljIG1ldGhvZHMgcmVwcmVzZW50IGEgc2V0IG9mIHRvb2xzIChmcm9tIHByb2JhYmlsaXR5LCBQREUgdGhlb3J5LCBnZW9tZXRyeSkgYWxsb3dpbmcgdG8gc3R1ZHkgc3lzdGVtcyB3aGVuIHNvbWUgcGFyYW1ldGVycyBiZWNvbWUgc21hbGwgb3IgbGFyZ2UuIEl0IGlzIHBhcnRpY3VsYXJseSB1c2VmdWwgd2hlbiwgc2F5LCBhbiBlcXVhdGlvbiBkb2VzIG5vdCBoYXZlIGFuIGV4cGxpY2l0IHNvbHV0aW9uLCBidXQgdGhlIGxhdHRlciBjYW4gYmUgd3JpdHRlbiBhcyBhIHNlcmllcyBleHBhbnNpb24gd2hlbiBzb21lIHBhcmFtZXRlciBpcyBzbWFsbC4gVGhpcyB0aGVyZWZvcmUgeWllbGRzIGFwcHJveGltYXRlIHlldCBhY2N1cmF0ZSB1bmRlcnN0YW5kaW5nIG9mIHRoZSBiZWhhdmlvdXIgb2YgdGhlIHNvbHV0aW9uICh1cCB0byBzb21lIHNtYWxsIGVycm9yKS4gSW4gbWF0aGVtYXRpY2FsIGZpbmFuY2UsIG1hbnkgc3RvY2hhc3RpYykgbW9kZWxzIGhhdmUgYmVlbiBwcm9wb3NlZCBhbmQgdXNlZCBpbiB0aGUgcGFzdCBmb3VyIGRlY2FkZXMgaW4gb3JkZXIgdG8gcmVmbGVjdCB0aGUgZHluYW1pY3Mgb2YgYXNzZXQgcHJpY2VzIGFuZCBmaW5hbmNpYWwgbWFya2V0cy4gQmFzZWQgb24gdGhlc2UgcHJvY2Vzc2VzLCBwcmljaW5nIGVxdWF0aW9ucyBjYW4gYmUgd3JpdHRlbiBhbmQgc29sdmVkIG51bWVyaWNhbGx5LiBUaGlzIGNhbiBiZSBwZXJmb3JtZWQsIGVpdGhlciBmcm9tIGEgcHJvYmFiaWxpc3RpYyBwb2ludCBvZiB2aWV3LCB3aGVyZSBjb21wdXRpbmcgZXhwZWN0YXRpb25zIGJvaWxzIGRvd24gdG8gKG9mdGVuIGNvbXBsZXgpIG51bWVyaWNhbCBpbnRlZ3JhdGlvbiwgb3IgZnJvbSBhbiBhbmFseXRpYyBwZXJzcGVjdGl2ZSwgd2hlcmUgdGhlIHNvbHV0aW9uIG9mIHRoZSBwcm9ibGVtIHNvbHZlcyBzb21lIHBhcnRpYWwgKGludGVncm8tKSBkaWZmZXJlbnRpYWwgZXF1YXRpb24uIEV2ZW4gdGhvdWdoIHBvd2VyZnVsIG51bWVyaWNhbCBtZXRob2RzIGV4aXN0LCB0aGV5IGFyZSBvZnRlbiBjb21wdXRlci1pbnRlbnNpdmUgYW5kIGRvIG5vdCBwcm92aWRlIGVhc3kgKGFuZCBpbnR1aXRpdmUpIHVuZGVyc3RhbmRpbmcgb2YgdGhlIGJlaGF2aW91ciBvZiB0aGUgc29sdXRpb24uPGJyIC8+PGJyIC8+VGhlIGNvcm5lcnN0b25lIG9mIHN1Y2ggbW9kZWxzIGlzIHRoZSBzby1jYWxsZWQgQmxhY2stU2Nob2xlcyBtb2RlbCwgZm9yIHdoaWNoIEV1cm9wZWFuIGNhbGwgb3B0aW9uIHByaWNlcyBoYXZlIGEgdHJpdmlhbCBjbG9zZWQtZm9ybSBleHByZXNzaW9uLiBIb3dldmVyLCBpbiBtb3N0IG1vZGVscywgb3B0aW9uIHByaWNlcyBkbyBub3QgaGF2ZSBjbG9zZWQtZm9ybSByZXByZXNlbnRhdGlvbnMsIGFuZCBoYXZlIHRvIGJlIGNvbXB1dGVkIG51bWVyaWNhbGx5LiBUaGlzIGlzIGV2ZW4gbW9yZSBzbyBmb3IgdGhlIGNvcnJlc3BvbmRpbmcgaW1wbGllZCB2b2xhdGlsaXR5LCB3aGljaCBpcyBqdXN0IGEgc3RhbmRhcmRpc2VkIG9wdGlvbiBwcmljZSAobm93IHVuaXZlcnNhbGx5IHVzZWQgaW4gcHJhY3RpY2UgYXMgYSBxdW90aW5nIG1lY2hhbmlzbSkuIE92ZXIgdGhlIHBhc3QgZmlmdGVlbiB5ZWFycywgYWN0aXZlIHJlc2VhcmNoIGhhcyBiZWVuIGNhcnJpZWQgb3V0IHRvIG9idGFpbiBleHBsaWNpdCBhbmFseXRpY2FsIGFwcHJveGltYXRpb25zIGZvciB0aGlzIGltcGxpZWQgdm9sYXRpbGl0eSwgdGh1cyBlZmZlY3RpdmVseSByZXBsYWNpbmcgdGhlIGhpZ2hseSBkZW1hbmRpbmcgbnVtZXJpY2FsIGNvbXB1dGF0aW9ucyBieSBzb21lIHNpbXBsZSBhcHByb3hpbWF0ZSkgc29sdXRpb24uIExlZSB3YXMgb25lIG9mIHRoZSBwaW9uZWVycyBvZiB0aGlzIHN0cmVhbSwgcHJvdmlkaW5nIGEgcHJlY2lzZSBsaW5rIGJldHdlZW4gdGhlIGJlaGF2aW91ciBvZiB0aGUgaW1wbGllZCB2b2xhdGlsaXR5IGFuZCB0aGUgdGFpbCBkaXN0cmlidXRpb24gb2YgdGhlIHN0b2NrIHByaWNlLiBUaGlzIHJlc3VsdCBoYXMgc2luY2UgYmVlbiBleHRlbmRlZCBhbmQgaW1wcm92ZWQgYnkgc2V2ZXJhbCBhdXRob3JzLCBpbmNsdWRpbmcgQmVuYWltLUZyaXosIEd1bGlzYXNodmlsaS1TdGVpbiwgRGUgTWFyY28tSGlsbGFpcmV0LUphY3F1aWVyLiBPdGhlciBpbXBvcnRhbnQgcmVzdWx0cyBpbiB0aGlzIGRpcmVjdGlvbiB3ZXJlIG9idGFpbmVkIGJ5IEhlbnJ5LUxhYm9yZGVyZSAodXNpbmcgZGlmZmVyZW50aWFsIGdlb21ldHJ5KSwgSmFjcXVpZXIsIEtlbGxlci1SZXNzZWwgYW5kIE1pamF0b3ZpYyAodXNpbmcgcHJvYmFiaWxpc3RpYyB0b29scykgYW5kIERldXNjaGVsLCBGcml6LCBKYWNxdWllciBhbmQgVmlvbGFudGUgKHVzaW5nIGJvdGggZ2VvbWV0cmljIGFuZCBwcm9iYWJpbGlzdGljIG1ldGhvZHMpLiBBbGwgdGhlc2UgcmVzdWx0cyBob3dldmVyIGRvIG5vdCBnaXZlIGFueSBpbmZvcm1hdGlvbiBvbiB0aGUgZHluYW1pYyBiZWhhdmlvdXIgb2YgdGhlIGltcGxpZWQgdm9sYXRpbGl0eSwgd2hpY2ggaXMgZXNzZW50aWFsIGluIG9yZGVyIHRvIGFjY3VyYXRlbHkgbW9kZWwgdGhlIHRpbWUtZXZvbHZpbmcgbmF0dXJlIG9mIGZpbmFuY2lhbCBtYXJrZXRzLjxiciAvPjxiciAvPlRoZSBnb2FsIG9mIHRoaXMgcHJvamVjdCBpcyB0byB1bmRlcnN0YW5kIHRoaXMgZHluYW1pYyBiZWhhdmlvdXIgb2YgdGhlIGltcGxpZWQgdm9sYXRpbGl0eSBmb3IgYSBsYXJnZSBjbGFzcyBvZiBtb2RlbHMsIGFuZCB0byBwcm9wb3NlIGEgdHJhY3RhYmxlIGZvcm11bGEgZGVzY3JpYmluZyBpdC4gVGhpcyBoYXMgYmVlbiBwYXJ0aWFsbHkgYWNoaWV2ZWQgaW4gdGhlIHN0YXRpYyBjYXNlLCBidXQgdGhlIHF1ZXN0aW9uIHJlbWFpbnMgd2lkZSBvcGVuIGluIHRoZSBkeW5hbWljIGNhc2UuIEluIG9yZGVyIHRvIGRvIHNvLCB0aGUgUEkgaW50ZW5kcyB0byBmb2xsb3cgdHdvIG1haW4gZGlyZWN0aW9uczo8YnIgLz48YnIgLz4tIGRldGVybWluZSB0aGUgYXN5bXB0b3RpYyBiZWhhdmlvdXIgb2YgdGhlIGR5bmFtaWMgaW1wbGllZCB2b2xhdGlsaXR5IGZvciBhIGxhcmdlIGNsYXNzIG9mIHN0b2NoYXN0aWMgbW9kZWxzOzxiciAvPjxiciAvPi0gZXh0ZW5kIHRvIHRoZSBkeW5hbWljIGNhc2UgdGhlIGV4aXN0aW5nIGFyYml0cmFnZS1mcmVlIGltcGxpZWQgdm9sYXRpbGl0eSBwYXJhbWV0ZXJpc2F0aW9uLjxiciAvPjxiciAvPlByb2dyZXNzIGluIGVpdGhlciBvZiB0aGVzZSBkaXJlY3Rpb25zIHdvdWxkIGltbWVkaWF0ZWx5IHlpZWxkcyBhIGJldHRlciB1bmRlcnN0YW5kaW5nIG9mIHRoZSBtb2RlbHMgY3VycmVudGx5IHVzZWQgaW4gcHJhY3RpY2U6IGFyZSB0aGV5IGFjY3VyYXRlIGVub3VnaD8gRG8gdGhleSBwb3NzZXNzIHJlYWxpc3RpYyBwcm9wZXJ0aWVzIHRvIG1vZGVsIHRoZSBiZWhhdmlvdXIgb2YgZmluYW5jaWFsIG1hcmtldHM/IEl0IHdvdWxkIGFsc28gcHJvdmlkZSBkZWVwZXIgaW5zaWdodCBvbiBzby1jYWxsZWQgbW9kZWwgcmlzaywgbmFtZWx5IHRoZSByaXNrIGFzc29jaWF0ZWQgdG8gdGhlIHVzZSBvZiBhIHN0YXRpY2FsbHkgdGVzdGVkIG1vZGVsIGZvciBkeW5hbWljIHB1cnBvc2VzLiBVbHRpbWF0ZWx5IHRoaXMgY291bGQgeWllbGQgYSBjbGFzc2lmaWNhdGlvbiBvZiBtb2RlbHMgYWNjb3JkaW5nIHRvIHRoZWlyIGFjdHVhbCB1c2VmdWxuZXNzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuaW1wZXJpYWwuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuaW1wZXJpYWwuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9NMDA4NDM2LzEMRVAvTTAwODQzNi8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQYTPWwKyI4os57io6Yc4k9amMOTA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLG1M6xAgLQvN++DAKT/OCVA//16qqcLQdR++2oE49mGt+1JlN1" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M008436/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Asymptotics and dynamics of forward implied volatility</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-481965'>Jacquier, Dr A</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Dept of Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Imperial College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">11 November 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">10 November 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="96,826.10" class="DetailValue">96,826</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> Statistics &amp; Appl. Probability</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Financial Services</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>10 Sep 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1ZAC4J">EPSRC Mathematics Prioritisation Panel Sept 2014</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Asymptotic methods represent a set of tools (from probability, PDE theory, geometry) allowing to study systems when some parameters become small or large. It is particularly useful when, say, an equation does not have an explicit solution, but the latter can be written as a series expansion when some parameter is small. This therefore yields approximate yet accurate understanding of the behaviour of the solution (up to some small error). In mathematical finance, many stochastic) models have been proposed and used in the past four decades in order to reflect the dynamics of asset prices and financial markets. Based on these processes, pricing equations can be written and solved numerically. This can be performed, either from a probabilistic point of view, where computing expectations boils down to (often complex) numerical integration, or from an analytic perspective, where the solution of the problem solves some partial (integro-) differential equation. Even though powerful numerical methods exist, they are often computer-intensive and do not provide easy (and intuitive) understanding of the behaviour of the solution.<br /><br />The cornerstone of such models is the so-called Black-Scholes model, for which European call option prices have a trivial closed-form expression. However, in most models, option prices do not have closed-form representations, and have to be computed numerically. This is even more so for the corresponding implied volatility, which is just a standardised option price (now universally used in practice as a quoting mechanism). Over the past fifteen years, active research has been carried out to obtain explicit analytical approximations for this implied volatility, thus effectively replacing the highly demanding numerical computations by some simple approximate) solution. Lee was one of the pioneers of this stream, providing a precise link between the behaviour of the implied volatility and the tail distribution of the stock price. This result has since been extended and improved by several authors, including Benaim-Friz, Gulisashvili-Stein, De Marco-Hillairet-Jacquier. Other important results in this direction were obtained by Henry-Labordere (using differential geometry), Jacquier, Keller-Ressel and Mijatovic (using probabilistic tools) and Deuschel, Friz, Jacquier and Violante (using both geometric and probabilistic methods). All these results however do not give any information on the dynamic behaviour of the implied volatility, which is essential in order to accurately model the time-evolving nature of financial markets.<br /><br />The goal of this project is to understand this dynamic behaviour of the implied volatility for a large class of models, and to propose a tractable formula describing it. This has been partially achieved in the static case, but the question remains wide open in the dynamic case. In order to do so, the PI intends to follow two main directions:<br /><br />- determine the asymptotic behaviour of the dynamic implied volatility for a large class of stochastic models;<br /><br />- extend to the dynamic case the existing arbitrage-free implied volatility parameterisation.<br /><br />Progress in either of these directions would immediately yields a better understanding of the models currently used in practice: are they accurate enough? Do they possess realistic properties to model the behaviour of financial markets? It would also provide deeper insight on so-called model risk, namely the risk associated to the use of a statically tested model for dynamic purposes. Ultimately this could yield a classification of models according to their actual usefulness.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.imperial.ac.uk                                                                           '>http://www.imperial.ac.uk                                                                           </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

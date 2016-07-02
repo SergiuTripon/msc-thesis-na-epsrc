@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Musical Audio Repurposing using Source Separation
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fL027119%2f2" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTDAyNzExOS8yZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVCPHN0cm9uZz5NdXNpY2FsIEF1ZGlvIFJlcHVycG9zaW5nIHVzaW5nIFNvdXJjZSBTZXBhcmF0aW9uPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0yMTUwMic+UGx1bWJsZXksIFByb2Zlc3NvciBNPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgQWCAIBD2QWAmYPFQNDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMjY2NzI0Jz5IdW1tZXJzb25lLCBEciBDPC9hPj08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xOTA0ODInPldhbmcsIERyIFc8L2E+QjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTE4MTIxNyc+S3VkdW1ha2lzLCBEciBQPC9hPmQCAg9kFgJmDxUDRDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTA5OTM1Jz5Ccnlhbi1LaW5ucywgRHIgTko8L2E+RTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MjIyMzUnPlNhbmRsZXIsIFByb2Zlc3NvciBNPC9hPj48YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xNzc1NjMnPkRpeG9uLCBEciBTPC9hPmQCAw9kFgJmDxUDPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTE0NjMxJz5KYWNrc29uLCBEciBQPC9hPkE8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS05NjYxNic+RGV3aGlyc3QsIERyIE1DPC9hPj08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS01ODgxMCc+TWFzb24sIERyIFI8L2E+ZAIED2QWAmYPFQM+PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMjY1NTAnPlJlaXNzLCBEciBKRDwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQM+PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNDQ1MDk0Jz5NciBDIENhbm5hbTwvYT49PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNDQ0NDEwJz5EciBTIEV3ZXJ0PC9hPgBkAgUPZBYCAgEPZBYCAgEPFgIfBwIDFgYCAQ9kFgJmDxUDPTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDAxNjgnPkJCQzwvYT5UPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTEwNjgnPkNvcmsgSW5zdGl0dXRlIG9mIFRlY2hub2xvZ3k8L2E+WzxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDA1NDknPkVybGFuZ2VuLU51cmVtYmVyZywgVW5pdmVyc2l0eSBvZjwvYT5kAgIPZBYCZg8VAz88YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwNzg0Jz5JTlJJQTwvYT5PPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTIwNjUnPk5vcnRod2VzdGVybiBVbml2ZXJzaXR5PC9hPkk8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xODc2Nic+VGVsZWNvbSBQYXJpc1RlY2g8L2E+ZAIDD2QWAmYPFQNOPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMTY0OCc+VW5pdmVyc2l0eSBvZiBTdXJyZXk8L2E+AABkAgYPZBYCAgEPZBYCAgEPDxYCHwQFI1Zpc2lvbiBTcGVlY2ggYW5kIFNpZ25hbCBQcm9jIENWU1NQZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUVW5pdmVyc2l0eSBvZiBTdXJyZXlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDTAxIEFwcmlsIDIwMTVkZAIDD2QWAgIBDw8WAh8EBQ8zMSBKYW51YXJ5IDIwMThkZAIFD2QWAgIBDw8WBB8EBQc4NTYsNzkzHgdUb29sVGlwBQo4NTYsNzkzLjQ5ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIfTXVzaWMgJmFtcDsgQWNvdXN0aWMgVGVjaG5vbG9neQBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCE0NyZWF0aXZlIEluZHVzdHJpZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBcAQRGVsaXZlcnkgb2YgYXVkaW8gaGFzIGJlY29tZSBpbmNyZWFzaW5nbHkgY29tcGxleDogb3JpZ2luYWxseSBpbiBzaW5nbGUgY2hhbm5lbCAobW9ubykgb3IgMi1jaGFubmVsIHN0ZXJlbyBmb3JtYXQsIG5vdyBzdXJyb3VuZCBzb3VuZCBpbiAiNS4xIiBmb3JtYXQgKDUgbWFpbiBzcGVha2VycyBwbHVzIG9uZSBsb3cgZnJlcXVlbmN5IGVmZmVjdHMgY2hhbm5lbCkgaXMgYXZhaWxhYmxlIGluIG1hbnkgaG9tZSBjaW5lbWEgc3lzdGVtcywgYW5kIG1hbnkgb3RoZXIgbXVsdGljaGFubmVsIGF1ZGlvIGZvcm1hdHMgYXJlIGF2YWlsYWJsZSAoZS5nLiA2LjEsIDcuMSwgMTAuMiBhbmQgMjIuMikuIEluIGFkZGl0aW9uLCBuZXcgaW50ZXJhY3RpdmUgYXBwcyBhbGxvdyB1c2VycyB0byByZW1peCBtdXNpY2FsIGF1ZGlvLCBjaGFuZ2luZyBpbnN0cnVtZW50IHZvbHVtZXMsIGFuZCBtdXNpYyBnYW1lcyBhbGxvdyBwbGF5ZXJzIHRvIGNvbnRyb2wgaW5kaXZpZHVhbCBpbnN0cnVtZW50cy4gQ29udGVudCBjcmVhdG9ycyB0aGVyZWZvcmUgaGF2ZSB0byBkZXZlbG9wIG5ldyB3YXlzIHRvIGNyZWF0ZSBhbmQgZGlzdHJpYnV0ZSB0aGVpciBhdWRpbyBjb250ZW50IHRvIGFsbG93IHRoZWlyIGNvbnRlbnQgdG8gYmUgcGxheWVkIGJhY2sgb24gdGhlc2UgbXVsdGljaGFubmVsIHN5c3RlbXMsIG9yIHJlbWl4ZWQgYnkgdXNlcnMgdG8gc3VpdCB0aGVpciBvd24gdGFzdGVzLjxiciAvPjxiciAvPkhvd2V2ZXIsIG11Y2ggYXVkaW8gY29udGVudCBpcyBzdGlsbCBpbiBsZWdhY3kgZm9ybWF0cywgbWFpbmx5IDItY2hhbm5lbCBzdGVyZW8uICBXZSB0aGVyZWZvcmUgbmVlZCB3YXlzIHRvICJyZXB1cnBvc2UiIHRoaXMgbGVnYWN5IGF1ZGlvIGNvbnRlbnQsIGNvbnZlcnRpbmcgdGhlc2UgaW50byBzdXJyb3VuZCBzb3VuZCBvciB0byB0aGUgc2VwYXJhdGUgInN0ZW1zIiBuZWVkZWQgZm9yIHJlbWl4YWJsZSBhdWRpby48YnIgLz48YnIgLz5UaGUgYWltIG9mIHRoaXMgcHJvamVjdCBpcyB0byBkZXZlbG9wIGEgbmV3IGFwcHJvYWNoIHRvIGhpZ2ggcXVhbGl0eSBhdWRpbyByZXB1cnBvc2luZywgYmFzZWQgb24gaGlnaCBxdWFsaXR5IG11c2ljYWwgYXVkaW8gc291cmNlIHNlcGFyYXRpb24uIFRvIGFjaGlldmUgdGhpcyB3ZSB3aWxsIGNvbWJpbmUgbmV3IGhpZ2ggcmVzb2x1dGlvbiBzZXBhcmF0aW9uIHRlY2huaXF1ZXMgd2l0aCBpbmZvcm1hdGlvbiBzdWNoIGFzIG11c2ljYWwgc2NvcmVzLCBpbnN0cnVtZW50IHJlY29nbml0aW9uLCBvbnNldCBkZXRlY3Rpb24sIGFuZCBwaXRjaCB0cmFja2luZy4gSW5zdGVhZCBvZiBhaW1pbmcgYXQgZ2VuZXJpYyBzb3VyY2Ugc2VwYXJhdGlvbiwgd2Ugd2lsbCBkZXZlbG9wIGFsZ29yaXRobXMgZGVzaWduZWQgdG8gbWF0Y2ggdGhlIHNlcGFyYXRpb24gcGVyZm9ybWFuY2UgdG8gdGhlIGZpbmFsIHRhcmdldCAodXBtaXhpbmcgb3IgcmVtaXhpbmcpLiBJbiBwYXJhbGxlbCwgd2Ugd2lsbCBpbnZlc3RpZ2F0ZSBwZXJjZXB0dWFsIGV2YWx1YXRpb24gbWVhc3VyZXMgZm9yIHNvdXJjZSBzZXBhcmF0aW9uLCByZW1peGluZyBhbmQgdXBtaXhpbmcsIGFuZCBkZXZlbG9wIG5ldyBkaWFnbm9zdGljIGV2YWx1YXRpb24gdGVjaG5pcXVlcyB0YWlsb3JlZCB0byBtZWFzdXJlIGRpZmZlcmVudCBhc3BlY3RzIG9mIHRoZSByZXB1cnBvc2VkIG91dGNvbWUuPGJyIC8+PGJyIC8+VGhlIG91dGNvbWVzIG9mIHRoaXMgcHJvamVjdCB3aWxsIGFsbG93IG11c2ljIGNvbnN1bWVycyB0byBlbmpveSB0aGVpciBmYXZvdXJpdGUgc29uZ3MgaW4gaW50ZXJhY3RpdmUgcmVtaXhpbmcgYXBwcyBhbmQgZ2FtZXMsIGV2ZW4gd2hlcmUgdGhlIG9yaWdpbmFsIHNlcGFyYXRlICJzdGVtcyIgYXJlIG5vdCBhdmFpbGFibGUuIEl0IHdpbGwgYWxzbyBhbGxvdyBtdXNpYyBjb21wYW5pZXMsIGJyb2FkY2FzdGVycyBhbmQgc291bmQgYXJjaGl2ZSBob2xkZXJzIHRvIHByb3ZpZGUgaGlnaCBxdWFsaXR5IHVwbWl4ZWQgdmVyc2lvbnMgb2YgdGhlaXIgbGFyZ2UgYXJjaGl2ZSBjb250ZW50LCBmb3IgYW4gaW5jcmVhc2luZyBnZW5lcmF0aW9uIG9mIGxpc3RlbmVycyB3aXRoIHN1cnJvdW5kIHNvdW5kIHN5c3RlbXMgaW4gdGhlIGhvbWUuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5zdXJyZXkuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5zdXJyZXkuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0wwMjcxMTkvMgxFUC9MMDI3MTE5LzJkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZJOCQSRQ3rKiP+ya23iLwNJ8ZCXw" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLSmIeWBALQvN++DAKT/OCVA5qEdro1W2hjL9takQae3o11f/Sb" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/L027119/2</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Musical Audio Repurposing using Source Separation</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=21502'>Plumbley, Professor M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-266724'>Hummersone, Dr C</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-190482'>Wang, Dr W</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-181217'>Kudumakis, Dr P</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=109935'>Bryan-Kinns, Dr NJ</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=22235'>Sandler, Professor M</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-177563'>Dixon, Dr S</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=114631'>Jackson, Dr P</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-96616'>Dewhirst, Dr MC</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-58810'>Mason, Dr R</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-26550'>Reiss, Dr JD</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-445094'>Mr C Cannam</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-444410'>Dr S Ewert</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000168'>BBC</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-1068'>Cork Institute of Technology</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000549'>Erlangen-Nuremberg, University of</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1000784'>INRIA</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=12065'>Northwestern University</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=18766'>Telecom ParisTech</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001648'>University of Surrey</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Vision Speech and Signal Proc CVSSP</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Surrey</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 January 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="856,793.49" class="DetailValue">856,793</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Music &amp; Acoustic Technology</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Creative Industries</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Delivery of audio has become increasingly complex: originally in single channel (mono) or 2-channel stereo format, now surround sound in "5.1" format (5 main speakers plus one low frequency effects channel) is available in many home cinema systems, and many other multichannel audio formats are available (e.g. 6.1, 7.1, 10.2 and 22.2). In addition, new interactive apps allow users to remix musical audio, changing instrument volumes, and music games allow players to control individual instruments. Content creators therefore have to develop new ways to create and distribute their audio content to allow their content to be played back on these multichannel systems, or remixed by users to suit their own tastes.<br /><br />However, much audio content is still in legacy formats, mainly 2-channel stereo.  We therefore need ways to "repurpose" this legacy audio content, converting these into surround sound or to the separate "stems" needed for remixable audio.<br /><br />The aim of this project is to develop a new approach to high quality audio repurposing, based on high quality musical audio source separation. To achieve this we will combine new high resolution separation techniques with information such as musical scores, instrument recognition, onset detection, and pitch tracking. Instead of aiming at generic source separation, we will develop algorithms designed to match the separation performance to the final target (upmixing or remixing). In parallel, we will investigate perceptual evaluation measures for source separation, remixing and upmixing, and develop new diagnostic evaluation techniques tailored to measure different aspects of the repurposed outcome.<br /><br />The outcomes of this project will allow music consumers to enjoy their favourite songs in interactive remixing apps and games, even where the original separate "stems" are not available. It will also allow music companies, broadcasters and sound archive holders to provide high quality upmixed versions of their large archive content, for an increasing generation of listeners with surround sound systems in the home.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.surrey.ac.uk                                                                             '>http://www.surrey.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

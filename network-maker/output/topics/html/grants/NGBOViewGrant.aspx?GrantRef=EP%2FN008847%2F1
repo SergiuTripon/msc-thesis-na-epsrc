@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	A Zonal CFD Approach for Fully Nonlinear Simulations of Two Vessels in Launch and Recovery Operations
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN008847%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAwODg0Ny8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAV2PHN0cm9uZz5BIFpvbmFsIENGRCBBcHByb2FjaCBmb3IgRnVsbHkgTm9ubGluZWFyIFNpbXVsYXRpb25zIG9mIFR3byBWZXNzZWxzIGluIExhdW5jaCBhbmQgUmVjb3ZlcnkgT3BlcmF0aW9uczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NDM1MTInPkdyZWF2ZXMsIFByb2Zlc3NvciBEPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNIPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMzg5MDU3Jz5JZ2xlc2lhcywgUHJvZmVzc29yIEc8L2E+PzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTUwMjk4MSc+SGFubiwgRHIgTSBSPC9hPgBkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfBwICFgQCAQ9kFgJmDxUDRTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDAxNDgnPkJBRSBTeXN0ZW1zPC9hPj08YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwNTUxJz5FU0k8L2E+XTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDEzMjYnPlJveWFsIE5hdGlvbmFsIExpZmVib2F0IEluc3RpdHV0aW9uPC9hPmQCAg9kFgJmDxUDYDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0zOTQxMSc+U3lzdGVtcyBFbmdpbmVlcmluZyBhbmQgQXNzZXNzbWVudCBMdGQuPC9hPkU8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzAwNDMnPlplbm90ZWNoIEx0ZDwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSdTY2ggb2YgTWFyaW5lIFNjaWVuY2UgJmFtcDsgRW5naW5lZXJpbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRZVbml2ZXJzaXR5IG9mIFBseW1vdXRoZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBPY3RvYmVyIDIwMTVkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAxOGRkAgUPZBYCAgEPDxYEHwQFBzQ0NiwwMTMeB1Rvb2xUaXAFCjQ0NiwwMTIuNTZkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAg5GbHVpZCBEeW5hbWljcw5GbHVpZCBEeW5hbWljc2QCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIdQWVyb3NwYWNlLCBEZWZlbmNlIGFuZCBNYXJpbmUAZAIMD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VBEM8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTjAwODgzOS8xJz5FUC9OMDA4ODM5LzE8L2E+QzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9OMDA4ODYzLzEnPkVQL04wMDg4NjMvMTwvYT4AAGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfBwIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzE4IEp1biAyMDE1ZGQCAQ8PFgIfCAUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTVFbmdpbmVlcmluZyBQcmlvcml0aXNhdGlvbiBQYW5lbCBNZWV0aW5nIDE4IEp1bmUgMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTJKTEFVRmRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBc0UTGF1bmNoIGFuZCByZWNvdmVyeSBvZiBzbWFsbCB2ZWhpY2xlcyBmcm9tIGEgbGFyZ2UgdmVzc2VsIGlzIGEgY29tbW9uIG9wZXJhdGlvbiBpbiBtYXJpdGltZSBzZWN0b3JzLCBzdWNoIGFzIGxhdW5jaGluZyBhbmQgcmVjb3ZlcmluZyB1bm1hbm5lZCB1bmRlcndhdGVyIHZlaGljbGVzIGZyb20gYSBwYXRyb2wgb2YgcmVzZWFyY2ggdmVzc2VsIG9yIGxhdW5jaGluZyBhbmQgcmVjb3ZlcmluZyBsaWZlYm9hdHMgZnJvbSBvZmZzaG9yZSBwbGF0Zm9ybXMgb3Igc2hpcHMuICBTdWNoIG9wZXJhdGlvbnMgYXJlIG9mdGVuIHBlcmZvcm1lZCBpbiBoYXJzaCBzZWEgY29uZGl0aW9ucy4gVGhlIHJlY2VudCBVc2VyIEluc3BpcmVkIEFjYWRlbWljIENoYWxsZW5nZSBXb3Jrc2hvcCBvbiBNYXJpdGltZSBMYXVuY2ggYW5kIFJlY292ZXJ5LCBoZWxkIGluIEp1bHkgMjAxNCBhbmQgY29vcmRpbmF0ZWQgYnkgQkFFIHN5c3RlbXMsIGlkZW50aWZpZWQgdmFyaW91cyBjaGFsbGVuZ2VzIGFzc29jaWF0ZWQgd2l0aCBzYWZlIGxhdW5jaCBhbmQgcmVjb3Zlcnkgb2Ygb2ZmLWJvYXJkLCBzdXJmYWNlIGFuZCBzdWItc3VyZmFjZSBhc3NldHMgZnJvbSB2ZXNzZWxzIHdoaWxlIHVuZGVyd2F5IGluIHNldmVyZSBzZWEgY29uZGl0aW9ucy4gIE9uZSBvZiB0aGVtIGlzIHRoZSBsYWNrIG9mIGFuIGFjY3VyYXRlIGFuZCBlZmZpY2llbnQgbW9kZWxsaW5nIHRvb2wgZm9yIHByZWRpY3RpbmcgdGhlIGh5ZHJvZHluYW1pYyBsb2FkcyBvbiBhbmQgdGhlIG1vdGlvbiBvZiB0d28gZmxvYXRpbmcgYm9kaWVzLCBzdWNoIGFzIHZlc3NlbHMgb2YgZGlmZmVyZW50IHNpemUgd2hpY2ggbWF5IGJlIGNvdXBsZWQgYnkgYSBub24tcmlnaWQgbGluaywgaW4gY2xvc2UgcHJveGltaXR5IGluIGhhcnNoIHNlYXMuICBTdWNoIGEgdG9vbCBtYXkgYmUgZW1wbG95ZWQgdG8gbWluaW1pc2UgdGhlIHJpc2sgb2YgY29sbGlzaW9ucyBhbmQgdW5hY2NlcHRhYmxlIG1vdGlvbnMsIGFuZCB0byBmYWNpbGl0YXRlIGVhcmx5IHRlc3Rpbmcgb2YgbmV3IGNvbmNlcHRzIGFuZCBzeXN0ZW1zLiAgSXQgbWF5IGFsc28gYmUgdXNlZCB0byBlc3RpbWF0ZSBoeWRyb2R5bmFtaWMgbG9hZHMgZHVyaW5nIHRoZSBkZXBsb3ltZW50IG9mIGEgc21hbGxlciB2ZXNzZWwgKGZvciBleGFtcGxlLCBhIGxpZmVib2F0KSBhbmQgZHVyaW5nIHJlY292ZXJ5IG9mIGEgc21hbGxlciB2ZXNzZWwgZnJvbSB0aGUgZGVjayBvZiBhIGxhcmdlciB2ZXNzZWwuICAgVGhlIGRpZmZpY3VsdGllcyBhc3NvY2lhdGVkIHdpdGggZGV2ZWxvcG1lbnQgb2Ygc3VjaCB0b29scyBsaWUgaW4gdGhlIGZvbGxvd2luZyBhc3BlY3RzOiAoMSkgdGhlIHdhdGVyIHdhdmVzIGluIGhhcnNoIHNlYSBzdGF0ZXMgaGF2ZSB0byBiZSBzaW11bGF0ZWQ7ICgyKSB0aGUgbW90aW9uIG9mIHRoZSBzbWFsbCB2ZWhpY2xlIGFuZCBjaGFuZ2UgaW4gaXRzIHdldHRlZCBzdXJmYWNlIGR1cmluZyBsYXVuY2ggb3IgcmVjb3ZlcnkgY2FuIGJlIHZlcnkgbGFyZ2UsIHBvc3NpYmx5IG1vdmluZyBmcm9tIHRvdGFsbHkgZHJ5IGluIGFpciB0byBiZWNvbWluZyBlbnRpcmVseSBzdWJtZXJnZWQ7ICgzKSB0aGUgdmlzY291cyBlZmZlY3RzIG1heSBwbGF5IGFuIGltcG9ydGFudCByb2xlIGFuZCBjYW5ub3QgYmUgaWdub3JlZCwgYW5kIHdpbGwgYWZmZWN0IHRoZSBjb3VwbGluZyBiZXR3ZWVuIG9jZWFuIHdhdmVzIGFuZCBtb3Rpb24gb2YgdGhlIHZlaGljbGVzLiAgIEV4aXN0aW5nIG1ldGhvZHMgYW5kIHRvb2xzIGF2YWlsYWJsZSB0byB0aGUgaW5kdXN0cnkgY2Fubm90IGRlYWwgd2l0aCBhbGwgb2YgdGhlc2UgaXNzdWVzIHRvZ2V0aGVyIGFuZCB0eXBpY2FsbHkgcmVxdWlyZSB2ZXJ5IGhpZ2ggY29tcHV0YXRpb25hbCByZXNvdXJjZXMuIDxiciAvPjxiciAvPlRoaXMgcHJvamVjdCB3aWxsIGRldmVsb3AgYW4gYWNjdXJhdGUgYW5kIGVmZmljaWVudCBudW1lcmljYWwgbW9kZWwgdGhhdCBjYW4gYmUgYXBwbGllZCByb3V0aW5lbHkgZm9yIHRoZSBhbmFseXNpcyBvZiB0aGUgbW90aW9uIGFuZCBsb2FkaW5ncyBvZiB0d28gYm9kaWVzIGluIGNsb3NlIHByb3hpbWl0eSB3aXRoIG9yIHdpdGhvdXQgcGh5c2ljYWwgY29ubmVjdGlvbiBpbiBoaWdoIHNlYS1zdGF0ZXMsIHdoaWNoIG9mIGNvdXJzZSBjYW4gYmUgZW1wbG95ZWQgdG8gYW5hbHlzZSB0aGUgbGF1bmNoIGFuZCByZWNvdmVyeSBwcm9jZXNzIG9mIGEgc21hbGwgdmVoaWNsZSBmcm9tIGEgbGFyZ2UgdmVzc2VsIGFuZCB0byBjYWxjdWxhdGUgdGhlIGh5ZHJvZHluYW1pY3MgZHVyaW5nIHRoZSBwcm9jZXNzLiAgVGhpcyB3aWxsIGJlIGFjaGlldmVkIGJ1aWxkaW5nIHVwb24gdGhlIHJlY2VudCBkZXZlbG9wZWQgbnVtZXJpY2FsIG1ldGhvZHMgYW5kIGNvbXB1dGVyIGNvZGVzIGJ5IHRoZSBwcm9qZWN0IHBhcnRuZXJzIGFuZCBhbHNvIHRoZSBzdWNjZXNzIG9mIHRoZSBwYXN0IGFuZCBvbmdvaW5nIGNvbGxhYm9yYXRpdmUgd29yayBiZXR3ZWVuIHRoZW0uICBJbiBhZGRpdGlvbiwgdGhlIHByb2plY3Qgd2lsbCBpbnZvbHZlIHNldmVyYWwgaW5kdXN0cmlhbCBwYXJ0bmVycyB0byBlbnN1cmUgdGhlIGRlbGl2ZXJ5IG9mIHRoZSBwcm9qZWN0IGFuZCB0byBwcm9tb3RlIGltcGFjdC4gPGJyIC8+PGJyIC8+ZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5wbHltLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5wbHltLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMDg4NDcvMQxFUC9OMDA4ODQ3LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZPuo7WlzCvum1EQ6hdEt1S+Do+6T" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLdu+DrDwLQvN++DAKT/OCVAxVt6pdu7T9QI/IU7oi6uDxJmXNy" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N008847/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>A Zonal CFD Approach for Fully Nonlinear Simulations of Two Vessels in Launch and Recovery Operations</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=43512'>Greaves, Professor D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-389057'>Iglesias, Professor G</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-502981'>Hann, Dr M R</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000148'>BAE Systems</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000551'>ESI</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001326'>Royal National Lifeboat Institution</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-39411'>Systems Engineering and Assessment Ltd.</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-30043'>Zenotech Ltd</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Marine Science &amp; Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Plymouth</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="446,012.56" class="DetailValue">446,013</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fluid Dynamics</td>
+                                    <td class="DetailValue"> Fluid Dynamics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/N008839/1'>EP/N008839/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/N008863/1'>EP/N008863/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>18 Jun 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2JLAUF">Engineering Prioritisation Panel Meeting 18 June 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Launch and recovery of small vehicles from a large vessel is a common operation in maritime sectors, such as launching and recovering unmanned underwater vehicles from a patrol of research vessel or launching and recovering lifeboats from offshore platforms or ships.  Such operations are often performed in harsh sea conditions. The recent User Inspired Academic Challenge Workshop on Maritime Launch and Recovery, held in July 2014 and coordinated by BAE systems, identified various challenges associated with safe launch and recovery of off-board, surface and sub-surface assets from vessels while underway in severe sea conditions.  One of them is the lack of an accurate and efficient modelling tool for predicting the hydrodynamic loads on and the motion of two floating bodies, such as vessels of different size which may be coupled by a non-rigid link, in close proximity in harsh seas.  Such a tool may be employed to minimise the risk of collisions and unacceptable motions, and to facilitate early testing of new concepts and systems.  It may also be used to estimate hydrodynamic loads during the deployment of a smaller vessel (for example, a lifeboat) and during recovery of a smaller vessel from the deck of a larger vessel.   The difficulties associated with development of such tools lie in the following aspects: (1) the water waves in harsh sea states have to be simulated; (2) the motion of the small vehicle and change in its wetted surface during launch or recovery can be very large, possibly moving from totally dry in air to becoming entirely submerged; (3) the viscous effects may play an important role and cannot be ignored, and will affect the coupling between ocean waves and motion of the vehicles.   Existing methods and tools available to the industry cannot deal with all of these issues together and typically require very high computational resources. <br /><br />This project will develop an accurate and efficient numerical model that can be applied routinely for the analysis of the motion and loadings of two bodies in close proximity with or without physical connection in high sea-states, which of course can be employed to analyse the launch and recovery process of a small vehicle from a large vessel and to calculate the hydrodynamics during the process.  This will be achieved building upon the recent developed numerical methods and computer codes by the project partners and also the success of the past and ongoing collaborative work between them.  In addition, the project will involve several industrial partners to ensure the delivery of the project and to promote impact. <br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.plym.ac.uk                                                                               '>http://www.plym.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

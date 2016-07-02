@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Revolutionary Electric Vehicle Battery (REVB) - design and integration of novel state estimation/control algorithms & system optimisation techniques
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fL505286%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTDUwNTI4Ni8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWlATxzdHJvbmc+UmV2b2x1dGlvbmFyeSBFbGVjdHJpYyBWZWhpY2xlIEJhdHRlcnkgKFJFVkIpIC0gZGVzaWduIGFuZCBpbnRlZ3JhdGlvbiBvZiBub3ZlbCBzdGF0ZSBlc3RpbWF0aW9uL2NvbnRyb2wgYWxnb3JpdGhtcyAmIHN5c3RlbSBvcHRpbWlzYXRpb24gdGVjaG5pcXVlczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTQ0ODI2NCc+QXVnZXIsIERyIERKPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQM+PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNDIzOTAyJz5Mb25nbywgRHIgUzwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUqU2NoIG9mIEFlcm9zcGFjZSwgVHJhbnNwb3J0ICZhbXA7IE1hbnVmYWN0ZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUQ3JhbmZpZWxkIFVuaXZlcnNpdHlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRRUZWNobm9sb2d5IFByb2dyYW1tZWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDE0IEZlYnJ1YXJ5IDIwMTRkZAIDD2QWAgIBDw8WAh8EBQ0zMCBBcHJpbCAyMDE3ZGQCBQ9kFgICAQ8PFgQfBAUHNDY4LDYxNx4HVG9vbFRpcAUKNDY4LDYxNy4xNGRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCIkVsZWN0cmljIE1vdG9yICZhbXA7IERyaXZlIFN5c3RlbXMORW5lcmd5IFN0b3JhZ2VkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCBkVuZXJneR5UcmFuc3BvcnQgU3lzdGVtcyBhbmQgVmVoaWNsZXNkAgwPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUEQzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9MNTA1Mjk4LzEnPkVQL0w1MDUyOTgvMTwvYT4AAABkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFvB9UaGUgbGF0ZXN0IGRyYWZ0IG9mIHRoZSBtYWluIGFwcGxpY2F0aW9uIGZvcm0gKHN1Ym1pdHRlZCBieSBPWElTIEVuZXJneSBvbiBiZWhhbGYgb2YgYWxsIGNvbGxhYm9yYXRvcnMpIGlzIGF0dGFjaGVkLiBUaGlzPGJyIC8+PGJyIC8+Z2l2ZXMgYSBmdWxsZXIgcGljdHVyZSBvZiB0aGUgcHJvamVjdCwgaW5jbHVkaW5nIGRldGFpbGVkIHdvcmsgcGFja2FnZSBkZXNjcmlwdGlvbnMuPGJyIC8+PGJyIC8+Q3JhbmZpZWxkJ3MgcmVzZWFyY2ggaXMgZGl2aWRlZCBpbnRvIHNpeCB3b3JrIHBhY2thZ2VzOjxiciAvPjxiciAvPldQIENGMTogSGlnaC1MZXZlbCBSZXF1aXJlbWVudHMgR2F0aGVyaW5nPGJyIC8+PGJyIC8+V1AgQ0YyOiBBcmNoaXRlY3R1cmFsIERlc2lnbjxiciAvPjxiciAvPldQIENGMzogTW9kZWxsaW5nIGFuZCBFc3RpbWF0aW9uPGJyIC8+PGJyIC8+V1AgQ0Y0OiBDb250cm9sIGFuZCBPcHRpbWl6YXRpb248YnIgLz48YnIgLz5XUCBDRjU6IEludGVncmF0aW9uPGJyIC8+PGJyIC8+V1AgQ0Y2OiBEZXZlbG9wbWVudCBvZiBSZXVzYWJsZSBTb2Z0d2FyZSBUb29sczxiciAvPjxiciAvPkRldGFpbGVkIGRlc2NyaXB0aW9ucyBvZiBlYWNoIGZvbGxvdy48YnIgLz48YnIgLz5XUCBDRjE6IEhpZ2gtTGV2ZWwgUmVxdWlyZW1lbnRzIEdhdGhlcmluZzxiciAvPjxiciAvPkluIHRoaXMgd29yayBwYWNrYWdlLCB3ZSB3aWxsIHdvcmsgd2l0aCB0aGUgb3RoZXIgY29uc29ydGl1bSBtZW1iZXJzIHRvIGRldGVybWluZSB0aGUgZXhhY3QgcmVxdWlyZW1lbnRzIHRoYXQgdGhlPGJyIC8+PGJyIC8+YXV0b21vdGl2ZSBiYXR0ZXJ5IHBhY2sgbmVlZHMgdG8gbWVldC4gV2Ugd2lsbCB1bmRlcnN0YW5kIHRoZSBwb3dlciByZXF1aXJlbWVudHMgYW5kIG90aGVyIGRlbWFuZHMgb24gdGhlIGJhdHRlcnk8YnIgLz48YnIgLz5zeXN0ZW0uPGJyIC8+PGJyIC8+VGhlIHVsdGltYXRlIGVuZCB1c2Ugb2YgdGhlIHRlY2hub2xvZ3kgd291bGQgYmUgaW4gYW4gZWxlY3RyaWMgdmVoaWNsZS4gRm9yIHRoZSBwdXJwb3NlIG9mIHRoaXMgcHJvamVjdCwgdGhlIGNvbnNvcnRpdW0gaXM8YnIgLz48YnIgLz5wbGFubmluZyB0byBwcm9kdWNlIGEgaGFyZHdhcmUtaW4tdGhlLWxvb3AgJ3RlY2hub2xvZ3kgZGVtb25zdHJhdG9yJy4gVGhpcyB3aWxsIGJlIGRldmVsb3BlZCBieSBMb3R1cyBFbmdpbmVlcmluZywgYW5kPGJyIC8+PGJyIC8+Q3JhbmZpZWxkIHdpbGwgdXNlIGl0IHRvIGludGVncmF0ZSBhbmQgdGVzdCBzdGF0ZSBlc3RpbWF0b3JzIGFuZCBjb250cm9sIGFsZ29yaXRobXMuIChUaGUgcmVxdWlyZW1lbnRzIGZvciB0aGUgaGFyZHdhcmUtaW4tdGhlLWxvb3Agc2ltdWxhdG9yIGFyZSBkaXJlY3RseSBhbmFsb2dvdXMgdG8gdGhvc2UgZm9yIGEgcmVhbCBlbGVjdHJpYyB2ZWhpY2xlLCBzbyB3ZSBjYW4gYmUgY29uZmlkZW50IHRoYXQgb3VyIHdvcmsgaGFzIHJlYWx3b3JsZDxiciAvPjxiciAvPnJlbGV2YW5jZS4pPGJyIC8+PGJyIC8+V1AgQ0YgMjogQXJjaGl0ZWN0dXJhbCBEZXNpZ248YnIgLz48YnIgLz5JbiB0aGlzIHdvcmsgcGFja2FnZSwgd2Ugd2lsbCB3b3JrIHdpdGggb25lIGNvbGxhYm9yYXRvciBpbiBwYXJ0aWN1bGFyIChMb3R1cyBFbmdpbmVlcmluZykgdG8gZGVzaWduIHRoZSBzdHJ1Y3R1cmUgb2YgdGhlPGJyIC8+PGJyIC8+ZGVtb25zdHJhdG9yJ3MgQmF0dGVyeSBFbmVyZ3kgTWFuYWdlci4gKFRoaXMgaXMgYSBjb21wdXRlciBjb250cm9sIHN5c3RlbSB0aGF0IGNhbiBiZSBlbWJlZGRlZCBpbiBhIHZlaGljbGUsIGFuZCB3ZTxiciAvPjxiciAvPndpbGwgYmUgdXNpbmcgaXQgdG8gY29udHJvbCB0aGUgYmVoYXZpb3VyIG9mIHRoZSBwb3dlcnRyYWluIGNvbXBvbmVudHMuKSBXZSB3aWxsIGZpcnN0IHNlZWsgdG8gdW5kZXJzdGFuZCBMb3R1cydzIGV4aXN0aW5nPGJyIC8+PGJyIC8+Y29udHJvbGxlciBpbiBkZXRhaWwuIEFmdGVyIHRoaXMsIHdlIHdpbGwgYmUgYWJsZSB0byBwcm9kdWNlIGRldGFpbGVkIHJlcXVpcmVtZW50cyBmb3Igb3VyIGNvbnRyb2xsZXIgYW5kIGVzdGltYXRvciwgYW5kIHRoZW48YnIgLz48YnIgLz5kZXNpZ24gYW4gYXJjaGl0ZWN0dXJlIGZvciBpdC48YnIgLz48YnIgLz5XUCBDRjM6IE1vZGVsbGluZyBhbmQgRXN0aW1hdGlvbjxiciAvPjxiciAvPkluIHRoaXMgd29yayBwYWNrYWdlLCB3ZSB3aWxsIGRldmVsb3AgbG93LW9yZGVyIG1vZGVscyBvZiB0aGUgYmF0dGVyeSBzdWl0YWJsZSBmb3IgZW1iZWRkaW5nIGluIHRoZSBCYXR0ZXJ5IEVuZXJneTxiciAvPjxiciAvPk1hbmFnZXIsIGFuZCB3ZSB3aWxsIHVzZSB0aGVzZSB0byBkZXNpZ24gYSBub3ZlbCBzdGF0ZSBlc3RpbWF0b3IgdGhhdCB3aWxsIGdpdmUgJ3ZpcnR1YWwgbWVhc3VyZW1lbnRzJyBmb3IgcXVhbnRpdGllcyB0aGF0IGFyZTxiciAvPjxiciAvPmhhcmQgdG8gbWVhc3VyZSBkaXJlY3RseS4gV2Ugd2lsbCBwcmVwYXJlIGFuIGluaXRpYWwgdmVyc2lvbiBvZiB0aGVzZSBpbiB0aW1lIHRvIHN1cHBvcnQgTG90dXMncyBwYXJhbGxlbCBzb2Z0d2FyZSBkZXNpZ248YnIgLz48YnIgLz5hY3Rpdml0aWVzLiBXZSB3aWxsIHRoZW4gcmVmaW5lIHRoZSBhbGdvcml0aG1zLCB0YWtpbmcgaW50byBhY2NvdW50IGRldmVsb3BtZW50IGluIG91ciBjb2xsYWJvcmF0b3JzJyByZXNlYXJjaCBhY3Rpdml0aWVzLjxiciAvPjxiciAvPlRoZSBsb3ctb3JkZXIgbW9kZWxzIHdpbGwgYWxzbyBiZSB1c2VkIHRvIGRlc2lnbiBjb250cm9sbGVycyBpbiBXUCBDUDQuPGJyIC8+PGJyIC8+V1AgQ0Y0OiBDb250cm9sIGFuZCBPcHRpbWl6YXRpb248YnIgLz48YnIgLz5JbiB0aGlzIHdvcmsgcGFja2FnZSwgd2Ugd2lsbCBhcHBseSBtdWx0aS1vYmplY3RpdmUgc3lzdGVtIG9wdGltaXphdGlvbiB0ZWNobmlxdWVzIHRvIHRoZSBkcml2ZWxpbmUgYXMgYSB3aG9sZS4gV2Ugd2lsbCBhbHNvPGJyIC8+PGJyIC8+dXNlIGFkdmFuY2VkIGNvbnRyb2wgdGVjaG5pcXVlcyB0byBkZXZlbG9wIGEgbm92ZWwgY29udHJvbCBhbGdvcml0aG0gZm9yIHRoZSBCYXR0ZXJ5IEVuZXJneSBNYW5hZ2VyLiBXZSB3aWxsIHByZXBhcmU8YnIgLz48YnIgLz5pbml0aWFsIHZlcnNpb25zIG9mIHRoZXNlIGluIHRpbWUgdG8gc3VwcG9ydCBMb3R1cydzIHBhcmFsbGVsIHNvZnR3YXJlIGRlc2lnbiBhY3Rpdml0aWVzLiBXZSB3aWxsIHRoZW4gcmVmaW5lIHRoZSBhbGdvcml0aG1zLDxiciAvPjxiciAvPnRha2luZyBpbnRvIGFjY291bnQgZGV2ZWxvcG1lbnQgaW4gb3VyIGNvbGxhYm9yYXRvcnMnIHJlc2VhcmNoIGFjdGl2aXRpZXMuPGJyIC8+PGJyIC8+V1AgQ0Y1OiBJbnRlZ3JhdGlvbjxiciAvPjxiciAvPkluIHRoaXMgd29yayBwYWNrYWdlLCB3ZSB3aWxsIHN1cHBvcnQgTG90dXMgYXMgdGhleSBpbnRlZ3JhdGUgb3VyIGVzdGltYXRpb24gYW5kIGNvbnRyb2wgYWxnb3JpdGhtcyBpbnRvIHRoZWlyIEJhdHRlcnkgRW5lcmd5PGJyIC8+PGJyIC8+TWFuYWdlciBhbmQgaGFyZHdhcmUtaW4tdGhlLWxvb3AgdGVjaG5vbG9neSBkZW1vbnN0cmF0b3IuIFdlIHdpbGwgc2ltdWxhdGUgdGhlIGJlaGF2aW91ciBpbiBhIHZpcnR1YWwgZW52aXJvbm1lbnQsPGJyIC8+PGJyIC8+bW9kaWZ5IHRoZSBhbGdvcml0aG1zIGlmIG5lZWRlZCwgYW5kIHRoZW4gc3VwcG9ydCBpbnRlZ3JhdGlvbiBvbiB0aGUgaGFyZHdhcmUtaW4tdGhlLWxvb3AgdGVjaG5vbG9neSBkZW1vbnN0cmF0b3IgaXRzZWxmLjxiciAvPjxiciAvPldQIENGNjogRGV2ZWxvcG1lbnQgb2YgUmV1c2FibGUgU29mdHdhcmUgVG9vbHM8YnIgLz48YnIgLz5JbiB0aGlzIHdvcmsgcGFja2FnZSwgd2Ugd2lsbCB0YWtlIHRoZSBzb2Z0d2FyZSB0b29scyB3ZSBkZXZlbG9wIGluIGVhcmxpZXIgd29yayBwYWNrYWdlcywgYW5kIGRldmVsb3AgdGhlbSB0byBtYWtlIHRoZW08YnIgLz48YnIgLz5yb2J1c3QgZW5vdWdoIHRvIGJlIHVzZWZ1bCB0byBvdGhlcnMgd2hvIHdpc2ggdG8gYXBwbHkgc2ltaWxhciB0ZWNobmlxdWVzLiAoV2Ugd2lsbCBkaXN0cmlidXRlIG91ciB0b29scyBvdmVyIHRoZSBXV1cuKWRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuY3JhbmZpZWxkLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuY3JhbmZpZWxkLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9MNTA1Mjg2LzEMRVAvTDUwNTI4Ni8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGRrB3AIyTxq6PaXPWbi9C7RdMFQbw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLq6s/bBALQvN++DAKT/OCVA/BPhrwW1UWfS4tGNoOtP6Q7vTa2" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/L505286/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Revolutionary Electric Vehicle Battery (REVB) - design and integration of novel state estimation/control algorithms & system optimisation techniques</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-448264'>Auger, Dr DJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-423902'>Longo, Dr S</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Aerospace, Transport &amp; Manufact</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Cranfield University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Technology Programme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">14 February 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 April 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="468,617.14" class="DetailValue">468,617</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Electric Motor &amp; Drive Systems</td>
+                                    <td class="DetailValue"> Energy Storage</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Energy</td>
+                                    <td class="DetailValueAlt"> Transport Systems and Vehicles</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/L505298/1'>EP/L505298/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The latest draft of the main application form (submitted by OXIS Energy on behalf of all collaborators) is attached. This<br /><br />gives a fuller picture of the project, including detailed work package descriptions.<br /><br />Cranfield's research is divided into six work packages:<br /><br />WP CF1: High-Level Requirements Gathering<br /><br />WP CF2: Architectural Design<br /><br />WP CF3: Modelling and Estimation<br /><br />WP CF4: Control and Optimization<br /><br />WP CF5: Integration<br /><br />WP CF6: Development of Reusable Software Tools<br /><br />Detailed descriptions of each follow.<br /><br />WP CF1: High-Level Requirements Gathering<br /><br />In this work package, we will work with the other consortium members to determine the exact requirements that the<br /><br />automotive battery pack needs to meet. We will understand the power requirements and other demands on the battery<br /><br />system.<br /><br />The ultimate end use of the technology would be in an electric vehicle. For the purpose of this project, the consortium is<br /><br />planning to produce a hardware-in-the-loop 'technology demonstrator'. This will be developed by Lotus Engineering, and<br /><br />Cranfield will use it to integrate and test state estimators and control algorithms. (The requirements for the hardware-in-the-loop simulator are directly analogous to those for a real electric vehicle, so we can be confident that our work has realworld<br /><br />relevance.)<br /><br />WP CF 2: Architectural Design<br /><br />In this work package, we will work with one collaborator in particular (Lotus Engineering) to design the structure of the<br /><br />demonstrator's Battery Energy Manager. (This is a computer control system that can be embedded in a vehicle, and we<br /><br />will be using it to control the behaviour of the powertrain components.) We will first seek to understand Lotus's existing<br /><br />controller in detail. After this, we will be able to produce detailed requirements for our controller and estimator, and then<br /><br />design an architecture for it.<br /><br />WP CF3: Modelling and Estimation<br /><br />In this work package, we will develop low-order models of the battery suitable for embedding in the Battery Energy<br /><br />Manager, and we will use these to design a novel state estimator that will give 'virtual measurements' for quantities that are<br /><br />hard to measure directly. We will prepare an initial version of these in time to support Lotus's parallel software design<br /><br />activities. We will then refine the algorithms, taking into account development in our collaborators' research activities.<br /><br />The low-order models will also be used to design controllers in WP CP4.<br /><br />WP CF4: Control and Optimization<br /><br />In this work package, we will apply multi-objective system optimization techniques to the driveline as a whole. We will also<br /><br />use advanced control techniques to develop a novel control algorithm for the Battery Energy Manager. We will prepare<br /><br />initial versions of these in time to support Lotus's parallel software design activities. We will then refine the algorithms,<br /><br />taking into account development in our collaborators' research activities.<br /><br />WP CF5: Integration<br /><br />In this work package, we will support Lotus as they integrate our estimation and control algorithms into their Battery Energy<br /><br />Manager and hardware-in-the-loop technology demonstrator. We will simulate the behaviour in a virtual environment,<br /><br />modify the algorithms if needed, and then support integration on the hardware-in-the-loop technology demonstrator itself.<br /><br />WP CF6: Development of Reusable Software Tools<br /><br />In this work package, we will take the software tools we develop in earlier work packages, and develop them to make them<br /><br />robust enough to be useful to others who wish to apply similar techniques. (We will distribute our tools over the WWW.)</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cranfield.ac.uk                                                                          '>http://www.cranfield.ac.uk                                                                          </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

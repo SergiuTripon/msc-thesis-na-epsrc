@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Algebraic modelling of 5 axis tool path motions
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fL010321%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTDAxMDMyMS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVAPHN0cm9uZz5BbGdlYnJhaWMgbW9kZWxsaW5nIG9mIDUgYXhpcyB0b29sIHBhdGggbW90aW9uczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MzU1OCc+Q3JpcHBzLCBEciBSPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNPPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9OTAyNSc+RGVsY2FtIEludGVybmF0aW9uYWwgcGxjPC9hPgAAZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRZNZWNoYW5pY2FsIEVuZ2luZWVyaW5nZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUYVW5pdmVyc2l0eSBvZiBCaXJtaW5naGFtZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ0zMSBNYXJjaCAyMDE0ZGQCAw9kFgICAQ8PFgIfBAUNMzAgTWFyY2ggMjAxN2RkAgUPZBYCAgEPDxYEHwQFBzI3NSwwMjUeB1Rvb2xUaXAFCjI3NSwwMjQuNjBkZAIKD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VAh9EZXNpZ24gJmFtcDsgVGVzdGluZyBUZWNobm9sb2d5IU1hbnVmYWN0dXJpbmcgTWFjaGluZSAmYW1wOyBQbGFudGQCAg9kFgJmDxUCIU1hbnVmYWN0dXJpbmcgTWFjaGluZSAmYW1wOyBQbGFudABkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCDU1hbnVmYWN0dXJpbmcAZAIMD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VBEM8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTDAwNjMxNi8xJz5FUC9MMDA2MzE2LzE8L2E+AAAAZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDEgT2N0IDIwMTNkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFMUVuZ2luZWVyaW5nIFByaW9yaXRpc2F0aW9uIE1lZXRpbmcgMSBPY3RvYmVyIDIwMTMfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0xOTVDQVBkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXfGFRoZSB1c2Ugb2YgY29tcHV0ZXJzIHRvIGFpZCB0aGUgbWFudWZhY3R1cmluZyBwcm9jZXNzIGhhcyBiZWVuIGxvbmcgZXN0YWJsaXNoZWQuIEluIHBhcnRpY3VsYXIsIHRoZSB1c2Ugb2YgY29tcHV0ZXIgbnVtZXJpY2FsbHkgY29udHJvbGxlZCBtYWNoaW5lcyB0byBwcm9ncmVzc2l2ZWx5IHJlbW92ZSBtYXRlcmlhbCBmcm9tIGEgc29saWQgYmxvY2sgdG8gcHJvZHVjZSBhIGZpbmlzaGVkIGNvbXBvbmVudCBpcyBub3cgYW4gaW50ZWdyYWwgcGFydCBvZiB0aGUgY29tcG9uZW50IGluZHVzdHJ5LiBUaGUgaGFyZHdhcmUsIHNvZnR3YXJlIGFuZCBtZXRob2RvbG9naWVzIGZvciBtYXRlcmlhbCByZW1vdmFsIGhhdmUgYWxsIG1hdHVyZWQgaW50byBzdGF0ZSBvZiB0aGUgYXJ0IHNvZnR3YXJlIHBhY2thZ2VzIGFuZCBtdWx0aS1heGlzIG1hY2hpbmluZyBjZW50cmVzLiBEZXNwaXRlIHRoaXMsIHRoZXJlIHJlbWFpbnMgaXNzdWVzIHdpdGggbWFjaGluaW5nIGhpZ2ggcHJlY2lzaW9uIGNvbXBvbmVudHMgdGhhdCBzaG91bGQgcmVxdWlyZSBsaXR0bGUgb3Igbm8gZmluaXNoaW5nLiBUaGVyZSBhcmUgbWFueSBwYXJhbWV0ZXJzIGludm9sdmVkIGluIHRoZSBtYWNoaW5pbmcgcHJvY2VzcyBhbmQgZXZlbiB3aGVuIG9wdGltaXNlZCB0aGUgcGh5c2ljYWwgcGFydCBtYXkgZXhoaWJpdCB1bmV4cGVjdGVkIGVycm9ycy4gVGhlc2UgbWF5IGJlIGR1ZSB0byBhIG51bWJlciBvZiBlZmZlY3RzIChpZ25vcmluZyBzdWNoIGlzc3VlcyBhcyB0b29sIHdlYXIgYW5kIHZpYnJhdGlvbikgaW5jbHVkaW5nOiBzaW1wbGlmaWNhdGlvbnMgbWFkZSBpbiB0aGUgY29tcHV0ZXIgYWlkZWQgbWFudWZhY3R1cmluZyBzb2Z0d2FyZSByZWdhcmRpbmcgdGhlIG1vZGVsIG9mIHRoZSBjdXR0aW5nIHRvb2w7IHRoZSBuZWVkIHRvIGRpc2NyZXRpc2UgdGhlIHRvb2wgdG8gc2VuZCB0byBtYWNoaW5lIHRvb2wgY29udHJvbGxlcjsgdGhlIG5lZWQgZm9yIHRoZSBjb250cm9sbGVyIHRvIHJlLWludGVycG9sYXRlIHRoZSByZXF1aXJlZCB0b29sIHBhdGggYW5kIHRoZSBuZWVkIHRvIGNvbnRyb2wgdGhlIHRvb2wgdG8gZm9sbG93IHRoZSAobmV3bHkgcmUtaW50ZXJwb2xhdGVkKSBwYXRoLjxiciAvPjxiciAvPlRvIG9mZnNldCB0aGVzZSBlZmZlY3RzLCB0aW1lIGNvbnN1bWluZyBhbmQgZXhwZW5zaXZlIHBoeXNpY2FsIGN1dHRpbmcgdHJpYWxzIGFyZSByZXF1aXJlZCBpbiBvcmRlciB0byBwcm9kdWNlIGEgaGlnaCBxdWFsaXR5IHN1cmZhY2UgZmluaXNoLiBBbiBhbHRlcm5hdGl2ZSB3b3VsZCBiZSB0byBoYXZlIHRoZSBhYmlsaXR5IHRvIGFjY3VyYXRlbHkgc2ltdWxhdGUgdGhlIGN1dHRpbmcgcHJvY2VzcyB0aGF0IHByZWRpY3RzIHRoZSB0cnVlIGN1dHRpbmcgY29uZGl0aW9ucyBhbmQgcmVwcm9kdWNlcyB0aGUgbWFjaGluZWQgc3VyZmFjZSBmaW5pc2guIEl0IHdvdWxkIGJlIG92ZXIgYW1iaXRpb3VzIHRvIGF0dGVtcHQgdG8gY29uc3RydWN0IGEgc2ltdWxhdGlvbiB0aGF0IGlzIGNhcGFibGUgb2YgbW9kZWxsaW5nIGV2ZXJ5IGFzcGVjdCBvZiB0aGUgZW50aXJlIG1hY2hpbmluZyBwcm9jZXNzIGluIGEgc2luZ2xlIHByb2plY3QuIEhvd2V2ZXIsIGlmIGEgZnJhbWV3b3JrIGNhbiBiZSBlc3RhYmxpc2hlZCBhbmQgZGVtb25zdHJhdGVkIGZvciBhIG1hbmFnZWFibGUgc2V0IG9mIHBhcmFtZXRlcnMsIHRoaXMgY291bGQgdGhlbiBiZSBkZXZlbG9wZWQgYnkgb3RoZXJzIHRvIGluY29ycG9yYXRlIG90aGVyIGFzcGVjdHMgaW5jbHVkaW5nIHZpYnJhdGlvbiwgdG9vbCB3ZWFyLCBldGMuIFRoaXMgcHJvamVjdCBhaW1zIGF0IHByb3ZpZGluZyBzdWNoIGEgZnJhbWV3b3JrIGZvciB0aGUgcmVhbGlzdGljIHNpbXVsYXRpb24gb2YgbWF0ZXJpYWwgcmVtb3ZhbCB1c2luZyBtdWx0aS1heGlzIG1hY2hpbmluZyB0b29scyBhbmQgYSByb2J1c3QsIGludGVncmF0ZWQgZnJhbWV3b3JrIGZvciB0aGUgbW9kZWxsaW5nIG9mIHRvb2wgcGF0aCBtb3Rpb25zLjxiciAvPjxiciAvPlByZXZpb3VzIHdvcmsgYXQgdGhlIFVuaXZlcnNpdHkgb2YgQmlybWluZ2hhbSBoYXMgY29uc2lkZXJlZCB0aGUgcHJvYmxlbSBvZiBkZXRlcm1pbmluZyB3aGF0IHRoZSBhY3R1YWwgbWFjaGluZWQgcGFydCBpcyBnb2luZyB0byBiZS4gVGhpcyB3b3JrIHdhcyBiYXNlZCBvbiB0aGUgcHJpbmNpcGxlIG9mIGdlbmVyYXRpbmcgc3VyZmFjZSBub3JtYWxzIHRvIGEgQ0FEIG1vZGVsIG9mIHRoZSBwYXJ0LiBNYWNoaW5pbmcgaXMgdGhlbiBzaW11bGF0ZWQgYnkgdXNpbmcgYW4gZXhhY3QgbW9kZWwgb2YgdGhlIGN1dHRpbmcgdG9vbCBhbmQgdXNpbmcgdGhpcyB0byB0cnVuY2F0ZSB0aGUgbm9ybWFscy4gVGhpcyBoYXMgYmVlbiB1c2VkIHN1Y2Nlc3NmdWxseSB0byBwcmVkaWN0IHRoZSBzbWFsbCBjdXNwcyB0aGF0IGNhbiByZW1haW4gZHVyaW5nIG1hbnVmYWN0dXJlLiBJdCBpcyBwcm9wb3NlZCB0byBleHRlbmQgdGhpcyBhcHByb2FjaCB0byBkZWFsIHdpdGggbW9yZSBjb21wbGljYXRlZCBzdXJmYWNlIGZvcm1zIHNvIHRoYXQgZGVmZWN0cyBjYW4gYmUgcHJlZGljdGVkIGFuZCBoZW5jZSBtZWFucyBmb3IgYXR0ZW51YXRpbmcgdGhlbSBpbnZlc3RpZ2F0ZWQuPGJyIC8+PGJyIC8+SW50ZXJlc3QgYXQgdGhlIFVuaXZlcnNpdHkgb2YgQmF0aCBoYXMgYmVlbiBpbiB0aGUgdXNlIG9mIGdlb21ldHJpYyBhbGdlYnJhIHRvIGRlc2NyaWJlIG1vdGlvbnMuIEdlb21ldHJpYyBhbGdlYnJhIHByb3ZpZGVzIGEgZnJhbWV3b3JrIGluIHdoaWNoIHJpZ2lkLWJvZHkgbW90aW9ucywgYm90aCB0cmFuc2xhdGlvbiBhbmQgcm90YXRpb25zLCBjYW4gYmUgaGFuZGxlZCBpbiBhIGNvbW1vbiBmb3JtLiBUaGlzIGFsbG93cyB0ZWNobmlxdWVzIGZvciBmcmVlLWZvcm0gY3VydmVzIHRvIGJlIGV4dGVuZGVkIGluIGEgbmF0dXJhbCB3YXkgdG8gZGVhbCB3aXRoIGZyZWUtZm9ybSBtb3Rpb25zLiBJdCBpcyBwcm9wb3NlZCB0byBpbnZlc3RpZ2F0ZSB0aGUgdXNlIG9mIHRoZSBhcHByb2FjaCBmb3IgZGVzY3JpYmluZyB0aGUgbW90aW9uIG9mIHRoZSBjdXR0aW5nIHRvb2wgYW5kIGhlbmNlIHRvIGltcHJvdmUgbWVhbnMgZm9yIGludGVycG9sYXRpbmcgKGFuZCByZS1pbnRlcnBvbGF0aW5nKSB0b29sLXBhdGggaW5mb3JtYXRpb24uPGJyIC8+PGJyIC8+ZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5iaGFtLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5iaGFtLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0wwMTAzMjEvMQxFUC9MMDEwMzIxLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZLVvazZIa9vGjPasYrKJTGci7F9D" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLI9aenBALQvN++DAKT/OCVAzXYvCQY+o8aOR7dUO2oYIIILtLM" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/L010321/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Algebraic modelling of 5 axis tool path motions</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=3558'>Cripps, Dr R</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=9025'>Delcam International plc</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mechanical Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Birmingham</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">31 March 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 March 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="275,024.60" class="DetailValue">275,025</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Design &amp; Testing Technology</td>
+                                    <td class="DetailValue"> Manufacturing Machine &amp; Plant</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Manufacturing Machine &amp; Plant</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Manufacturing</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/L006316/1'>EP/L006316/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>01 Oct 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-195CAP">Engineering Prioritisation Meeting 1 October 2013</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The use of computers to aid the manufacturing process has been long established. In particular, the use of computer numerically controlled machines to progressively remove material from a solid block to produce a finished component is now an integral part of the component industry. The hardware, software and methodologies for material removal have all matured into state of the art software packages and multi-axis machining centres. Despite this, there remains issues with machining high precision components that should require little or no finishing. There are many parameters involved in the machining process and even when optimised the physical part may exhibit unexpected errors. These may be due to a number of effects (ignoring such issues as tool wear and vibration) including: simplifications made in the computer aided manufacturing software regarding the model of the cutting tool; the need to discretise the tool to send to machine tool controller; the need for the controller to re-interpolate the required tool path and the need to control the tool to follow the (newly re-interpolated) path.<br /><br />To offset these effects, time consuming and expensive physical cutting trials are required in order to produce a high quality surface finish. An alternative would be to have the ability to accurately simulate the cutting process that predicts the true cutting conditions and reproduces the machined surface finish. It would be over ambitious to attempt to construct a simulation that is capable of modelling every aspect of the entire machining process in a single project. However, if a framework can be established and demonstrated for a manageable set of parameters, this could then be developed by others to incorporate other aspects including vibration, tool wear, etc. This project aims at providing such a framework for the realistic simulation of material removal using multi-axis machining tools and a robust, integrated framework for the modelling of tool path motions.<br /><br />Previous work at the University of Birmingham has considered the problem of determining what the actual machined part is going to be. This work was based on the principle of generating surface normals to a CAD model of the part. Machining is then simulated by using an exact model of the cutting tool and using this to truncate the normals. This has been used successfully to predict the small cusps that can remain during manufacture. It is proposed to extend this approach to deal with more complicated surface forms so that defects can be predicted and hence means for attenuating them investigated.<br /><br />Interest at the University of Bath has been in the use of geometric algebra to describe motions. Geometric algebra provides a framework in which rigid-body motions, both translation and rotations, can be handled in a common form. This allows techniques for free-form curves to be extended in a natural way to deal with free-form motions. It is proposed to investigate the use of the approach for describing the motion of the cutting tool and hence to improve means for interpolating (and re-interpolating) tool-path information.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bham.ac.uk                                                                               '>http://www.bham.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

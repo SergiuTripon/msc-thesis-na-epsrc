@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	The creation of localized current and future weather for the built environment
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM021890%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAyMTg5MC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVfPHN0cm9uZz5UaGUgY3JlYXRpb24gb2YgbG9jYWxpemVkIGN1cnJlbnQgYW5kIGZ1dHVyZSB3ZWF0aGVyIGZvciB0aGUgYnVpbHQgZW52aXJvbm1lbnQ8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUI8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTMxNzInPkNvbGV5LCBQcm9mZXNzb3IgRDwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDQjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTQyMjI1Mic+TWNDdWxsZW4sIERyIE5KPC9hPj88YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0zNzI3NDYnPkJyb3duLCBEciBNQTwvYT5CPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTc4MTQ0Jz5OYXRhcmFqYW4sIERyIFM8L2E+ZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwcCBBYIAgEPZBYCZg8VA0M8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzc3MTYnPkFWUiBMb25kb248L2E+PTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTE1ODU1Jz5DSUJTRTwvYT5OPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTM3NzE5Jz5Db2xpbiBKb2hucyBBcmNoaXRlY3Q8L2E+ZAICD2QWAmYPFQNVPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTMzMjMwJz5GZWlsZGVuIENsZWdnIEJyYWRsZXkgU3R1ZGlvPC9hPkM8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwOTg1Jz5NaWNyb3NvZnQ8L2E+VDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0zNzcxNCc+T2N1bHVzIEJ1aWxkaW5nIENvbnN1bHRhbmN5PC9hPmQCAw9kFgJmDxUDUjxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0zNzcxNSc+U2VlZCBMYW5kc2NhcGUgRGVzaWduIEx0ZDwvYT5fPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTg4OTAnPlRlY2hub2xvZ3kgU3RyYXRlZ3kgQm9hcmQgKElubm92YXRlIFVLKTwvYT5KPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTM3NzIwJz5UaG9kYXkgQXNzb2NpYXRlczwvYT5kAgQPZBYCZg8VA0I8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzc3MTgnPlRvLVN0dWRpbzwvYT4AAGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUiQXJjaGl0ZWN0dXJlIGFuZCBDaXZpbCBFbmdpbmVlcmluZ2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFElVuaXZlcnNpdHkgb2YgQmF0aGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAURMDEgU2VwdGVtYmVyIDIwMTVkZAIDD2QWAgIBDw8WAh8EBQ4zMSBBdWd1c3QgMjAxOGRkAgUPZBYCAgEPDxYEHwQFBzYxNCw2MjgeB1Rvb2xUaXAFCjYxNCw2MjguMTBkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhtVcmJhbiAmYW1wOyBMYW5kIE1hbmFnZW1lbnQAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgtFbnZpcm9ubWVudABkAgwPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUEQzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9NMDIyMDk5LzEnPkVQL00wMjIwOTkvMTwvYT5DPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMTk3OTkvMSc+RVAvTTAxOTc5OS8xPC9hPgAAZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMjUgRmViIDIwMTVkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFOUVuZ2luZWVyaW5nIFByaW9yaXRpc2F0aW9uIFBhbmVsIE1lZXRpbmcgMjUgRmVicnVhcnkgMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTFPTTYyOWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBf4fSXQgaXMgd2VsbCBrbm93biB0aGF0IGNsaW1hdGUgY2hhbmdlIHdpbGwgaGF2ZSBhIHNpZ25pZmljYW50IGltcGFjdCBvbiBVSyBidWlsZGluZyBkZXNpZ24gYW5kIGVuZXJneSB1c2UuIEl0IGlzIGFsc28ga25vd24gd2l0aGluIHRoZSBidWlsZGluZyBzY2llbmNlIGFuZCBhcmNoaXRlY3R1cmFsIGNvbW11bml0aWVzIHRoYXQgdGhlIGN1cnJlbnQgd2VhdGhlciBmaWxlcyB1c2VkIGZvciB0aGVybWFsIG1vZGVsaW5nIG9mIGJ1aWxkaW5ncyBvbmx5IHJlcHJlc2VudCBhdmVyYWdlIHdlYXRoZXIgcmF0aGVyIHRoYW4gaGVhdCB3YXZlcyBvciBjb2xkIHNuYXBzLiBBcyB3YXMgc2hvd24gYnkgdGhlIDE0LDAwMCBkZWF0aHMgaW4gUGFyaXMgZHVyaW5nIHRoZSAyMDAzIGhlYXQgd2F2ZSwgdGhpcyBpcyBhIGhpZ2hseSBzZXJpb3VzIGlzc3VlIGFuZCB0aGVyZSBpcyB0aGUgbmVlZCB0byBlbnN1cmUgZnV0dXJlIGJ1aWxkaW5ncyBhcmUgZGVzaWduZWQgdG8gZGVhbCB3aXRoIGZ1dHVyZSB3ZWF0aGVyLCBvciBleHRyZW1lcyBvZiBjdXJyZW50IHdlYXRoZXIuPGJyIC8+PGJyIC8+SW4gYWRkaXRpb24sIHRoZSBjdXJyZW50IHdlYXRoZXIgZmlsZXMgdXNlZCBieSB0aGUgY29uc3RydWN0aW9uIGluZHVzdHJ5IGFuZCBidWlsZGluZyBzY2llbnRpc3RzIGRpdmlkZSB0aGUgVUsgaW50byBvbmx5IDE0IHJlZ2lvbnMsIHdpdGgsIGZvciBleGFtcGxlLCB0aGUgd2hvbGUgb2YgdGhlIFNvdXRoIFdlc3QgcGVuaW5zdWxhciAoaW5jbHVkaW5nIHVwLWxhbmQgYXJlYXMpIGJlaW5nIGFzc2lnbmVkIHRoZSBjb2FzdGFsIFBseW1vdXRoIHdlYXRoZXIgZmlsZS4gSXQgaXMga25vd24gdGhhdCB0aGlzIGNhbiBlYXNpbHkgbGVhZCB0byBhIDIwMCUgZXJyb3IgaW4gdGhlIGVzdGltYXRpb24gb2YgYW5udWFsIGVuZXJneSBkZW1hbmQuIFRoZSBzY2FsZSBvZiB0aGlzIGVycm9yIGlzIHN1Y2ggdGhhdCBpdCByZW5kZXJzIG1hbnkgb2YgdGhlIGR5bmFtaWMgc2ltdWxhdGlvbnMgY2FycmllZCBvdXQgYnkgZW5naW5lZXJzIHF1ZXN0aW9uYWJsZS4gVGhpcyBpcyB1bmZvcnR1bmF0ZSB3aGVuIHNpbXVsYXRpb24gaXMgdXNlZCB3aXRoaW4gdGhlIGZyYW1ld29yayBvZiB0aGUgYnVpbGRpbmcgcmVndWxhdGlvbnMsIGJ1dCBpdCBpcyBmYXRhbCB3aGVuIHRyeWluZyB0byB1c2Ugc2ltdWxhdGlvbiB0byBlc3RpbWF0ZSBob3cgcmVzaWxpZW50IGEgcHJlLWV4aXN0aW5nIGJ1aWxkaW5nIGlzLCBvciB0aGUgZGFuZ2VyIGl0cyB2dWxuZXJhYmxlIG9jY3VwYW50cyBtaWdodCBiZSBpbi4gPGJyIC8+PGJyIC8+VGhlIGFpbSBvZiB0aGlzIHByb2plY3Qgd2lsbCBiZSB0byBzZWUgaWYgYSBtZXRob2QgY2FuIGJlIGRldmlzZWQgdGhhdCBpcyBjYXBhYmxlIG9mIGNyZWF0aW5nIGxvY2FsIHdlYXRoZXIgZnJvbSAyMDE1IHRvIDIwODAgY292ZXJpbmcgdGhlIHdob2xlIFVLIGF0IGEgcmVzb2x1dGlvbiBvZiA1a20sIGFuZCB0byBpbmNsdWRlIHdpdGhpbiB0aGlzIGZpbGVzIHRoYXQgcmVwcmVzZW50IHZhcmlvdXMgZXhjdXJzaW9ucyBmcm9tIHRoZSBtZWFuOiBlLmcuIGhlYXQgd2F2ZXMgYW5kIGNvbGQgc25hcHMuIDxiciAvPjxiciAvPkFuIGludGVyZGlzY2lwbGluYXJ5IGFwcHJvYWNoIGlzIGVudmlzYWdlZCB3aXRoIHRoZSBwcm9qZWN0IHNlcGFyYXRlZCBpbnRvIHNpeCB3b3JrIHBhY2thZ2VzOjxiciAvPjxiciAvPldQMSBXZSB3aWxsIHVzZSBhIG1ldGhvZCBhbHJlYWR5IHB1Ymxpc2hlZCBieSB0aGUgdGVhbSB0b2dldGhlciB3aXRoIHRoZSBVS0NQMDkgd2VhdGhlciBnZW5lcmF0b3IgdG8gcHJvZHVjZSBjdXJyZW50IGFuZCBmdXR1cmUgdHlwaWNhbCB3ZWF0aGVyIGF0IGEgcmVzb2x1dGlvbiBvZiBhcHByb3hpbWF0ZWx5IDVrbS4gPGJyIC8+PGJyIC8+V1AyIFRoZSB3b3JrIGluIHRoZSBwcmV2aW91cyB3b3JrIHBhY2thZ2Ugd2lsbCBpbml0aWFsbHkgcmVxdWlyZSB0aGUgY3JlYXRpb24gb2YgdGhvdXNhbmRzIG9mIHllYXJzIG9mIHdlYXRoZXIgcGVyIHNpdGUuIFdpdGhpbiB0aGVzZSBpbml0aWFsIHllYXJzIHdpbGwgcmVzaWRlIGEgbGFyZ2UgbnVtYmVyIG9mIHdlYXRoZXIgZXZlbnRzIG9mIGludGVyZXN0IHRvIHRoZSBidWlsZGluZyBzY2llbnRpc3Qgb3IgZW5naW5lZXIuIFRoZXNlIGZpbGVzIHdpbGwgYmUgdXNlZCBpbiBjb21wdXRlciBtb2RlbHMgb2YgMTIwMCBkaWZmZXJpbmcgYXJjaGl0ZWN0dXJlcyBhbmQgYnVpbGRpbmcgdXNlcyB0byBpZGVudGlmeSB3aGF0IGFyZSB0aGUga2V5IGRyaXZlcnMgb2Ygd2VhdGhlciB2YXJpYWJsZSBjb2luY2lkZW5jZSB0aGF0IGRlZmluZXMgdGhlIGxpa2VsaWhvb2Qgb2YgYnVpbGRpbmcgc3lzdGVtIGZhaWx1cmUgb3IgdGhlcm1hbCBpc3N1ZXMgZm9yIG9jY3VwYW50cy4gPGJyIC8+PGJyIC8+V1AzIEhhdmluZyBjaGFyYWN0ZXJpc2VkIHdoaWNoIGV2ZW50cyBiZXN0IGRlc2NyaWJlIHRoZSBzdHJlc3NlcyBvbiBhIGJ1aWxkaW5nLCBpdHMgb2NjdXBhbnRzIGFuZCBzeXN0ZW1zIGluIFdQMi4gRXZlbnQgeWVhcnMgKGkuZS4gdGltZXMgc2VyaWVzIG9mIHdlYXRoZXIgZGF0YSB2YXJpYWJsZXMgb24gYSBvbmUgaG91ciB0aW1lIHN0ZXAgdGhhdCByZXByZXNlbnQgYXR5cGljYWwgaG90LCBkcnksIGNvbGQgYW5kIHdldCBwZXJpb2RzKSB3aWxsIGJlIGNyZWF0ZWQgZm9yIHRoZSB3aG9sZSBVSy4gPGJyIC8+PGJyIC8+V1A0IEhhdmluZyBnZW5lcmF0ZWQgdGhlIGV2ZW50IHllYXJzLCBhbmQgc2ltdWxhdGlvbnMgZnJvbSB0aGUgMTIwMCBidWlsZGluZ3MsIHRoZSB0d28gd2lsbCBiZSByZWNvbWJpbmVkIHRvIHByb2R1Y2UgdGhlIGZpcnN0IG1hcCBvZiBVSyByZXNpbGllbmNlIHRvIGEgY2hhbmdpbmcgY2xpbWF0ZS4gQWx0aG91Z2ggb3RoZXJzIGhhdmUgbG9va2VkIGF0IHRoZSByZWdpb25hbCByZXNpbGllbmNlIG9mIHRoZSBidWlsdCBlbnZpcm9ubWVudCB1c2luZyBhdmVyYWdlIHdlYXRoZXIgeWVhcnMsIHRoZSBjb25jZXJuIGlzIG5vdCBhYm91dCB0aGUgcmVzcG9uc2Ugb2YgYnVpbGRpbmcgYW5kIG9jY3VwYW50cyB0byBzdWNoIGF2ZXJhZ2UgdGltZSBzZXJpZXMsIGJ1dCB0byBtb3JlIGV4dHJlbWUgZXZlbnRzLiA8YnIgLz48YnIgLz5XUDUgR2l2ZW4gdGhlIGxhcmdlIG51bWJlciBvZiBmaWxlcyBwcm9wb3NlZCwgZ3VpZGFuY2Ugd2lsbCBuZWVkIHRvIGJlIGdpdmVuIG9uIHdoaWNoIHRvIHVzZSBpbiBwcmFjdGljZSwgYW5kIGhvdyB0aGlzIG1pZ2h0IGJlIGV4cHJlc3NlZCBpbiB0aGUgYnVpbGRpbmcgcmVndWxhdGlvbnMgYW5kIG90aGVyIGRvY3VtZW50YXRpb24uIDxiciAvPjxiciAvPldlIHBsYW4gdG8gdXNlIGNhc2Ugc3R1ZGllcyBhcyB0aGUgbWFpbiBndWlkYW5jZSB0b29sLiBUaGlzIHdpbGwgYWRkIGdyZWF0bHkgdG8gdGhlaXIgaW50ZWxsZWN0dWFsIHZhbGlkaXR5IHdpdGhpbiB0aGUgdGFyZ2V0IGF1ZGllbmNlIG9mIHByYWN0aWNpbmcgZW5naW5lZXJzLiBJbiB0b3RhbCwgd2UgZXhwZWN0IHRoZSBndWlkYW5jZSB0byBiZSB0ZXN0ZWQgb24gPjEwMCByZWFsIGJ1aWxkaW5nIHByb2plY3RzLiA8YnIgLz48YnIgLz5XUDYgSW1wYWN0LiBBbGwgd2VhdGhlciBmaWxlcyBwcm9kdWNlZCBieSB0aGUgcHJvamVjdCB3aWxsIGJlIHB1YmxpY2x5IGF2YWlsYWJsZSBmb3IgYSBtaW5pbXVtIG9mIDEwIHllYXJzLiBBIHNlcmllcyBvZiByb2FkIHNob3dzIHdpbGwgYmUgdW5kZXJ0YWtlbiBhdCB0aGUgZW5kIG9mIHRoZSBwcm9qZWN0LiBBdCB0aGVzZSBldmVudHMgdGhlIHJlc3VsdHMgb2YgdGhlIHByb2plY3Qgd2lsbCBiZSBwcmVzZW50ZWQgdG8gYSBsYXJnZSBudW1iZXIgb2YgdXNlcnMuIFRoZSBpZGVhIHdpbGwgYmUgdG8gaW50cm9kdWNlIHRoZSB3aG9sZSBVSyBidWlsdCBlbnZpcm9ubWVudCBjb21tdW5pdHkgdG8gdGhlIGlkZWEgb2YgZGVzaWduaW5nIHJlc2lsaWVudCBidWlsZGluZ3MgYWlkZWQgYnkgdGhlIHdlYXRoZXIgZGF0YSBwcm9kdWNlZCBieSB0aGUgcHJvamVjdC4gQSBzaG9ydCBmaWxtIHdpbGwgYWxzbyBiZSBwcm9kdWNlZCBmb3IgdGhvc2UgdGhhdCBjYW5ub3QgYXR0ZW5kIGFuZCBmb3IgYW4gaW50ZXJuYXRpb25hbCBhdWRpZW5jZS5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmJhdGguYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmJhdGguYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTAyMTg5MC8xDEVQL00wMjE4OTAvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkT3pSVDTD5LBBDHnI4hB4V9h4maY=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLP3f7IDwLQvN++DAKT/OCVA4yTxpsohVdGuUeDvT9rQ7PJ1sx2" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M021890/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>The creation of localized current and future weather for the built environment</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=3172'>Coley, Professor D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-422252'>McCullen, Dr NJ</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-372746'>Brown, Dr MA</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-178144'>Natarajan, Dr S</a></td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-37716'>AVR London</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=15855'>CIBSE</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-37719'>Colin Johns Architect</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-33230'>Feilden Clegg Bradley Studio</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1000985'>Microsoft</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-37714'>Oculus Building Consultancy</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-37715'>Seed Landscape Design Ltd</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-8890'>Technology Strategy Board (Innovate UK)</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-37720'>Thoday Associates</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-37718'>To-Studio</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Architecture and Civil Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bath</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="614,628.10" class="DetailValue">614,628</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Urban &amp; Land Management</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Environment</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/M022099/1'>EP/M022099/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/M019799/1'>EP/M019799/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>25 Feb 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1OM629">Engineering Prioritisation Panel Meeting 25 February 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">It is well known that climate change will have a significant impact on UK building design and energy use. It is also known within the building science and architectural communities that the current weather files used for thermal modeling of buildings only represent average weather rather than heat waves or cold snaps. As was shown by the 14,000 deaths in Paris during the 2003 heat wave, this is a highly serious issue and there is the need to ensure future buildings are designed to deal with future weather, or extremes of current weather.<br /><br />In addition, the current weather files used by the construction industry and building scientists divide the UK into only 14 regions, with, for example, the whole of the South West peninsular (including up-land areas) being assigned the coastal Plymouth weather file. It is known that this can easily lead to a 200% error in the estimation of annual energy demand. The scale of this error is such that it renders many of the dynamic simulations carried out by engineers questionable. This is unfortunate when simulation is used within the framework of the building regulations, but it is fatal when trying to use simulation to estimate how resilient a pre-existing building is, or the danger its vulnerable occupants might be in. <br /><br />The aim of this project will be to see if a method can be devised that is capable of creating local weather from 2015 to 2080 covering the whole UK at a resolution of 5km, and to include within this files that represent various excursions from the mean: e.g. heat waves and cold snaps. <br /><br />An interdisciplinary approach is envisaged with the project separated into six work packages:<br /><br />WP1 We will use a method already published by the team together with the UKCP09 weather generator to produce current and future typical weather at a resolution of approximately 5km. <br /><br />WP2 The work in the previous work package will initially require the creation of thousands of years of weather per site. Within these initial years will reside a large number of weather events of interest to the building scientist or engineer. These files will be used in computer models of 1200 differing architectures and building uses to identify what are the key drivers of weather variable coincidence that defines the likelihood of building system failure or thermal issues for occupants. <br /><br />WP3 Having characterised which events best describe the stresses on a building, its occupants and systems in WP2. Event years (i.e. times series of weather data variables on a one hour time step that represent atypical hot, dry, cold and wet periods) will be created for the whole UK. <br /><br />WP4 Having generated the event years, and simulations from the 1200 buildings, the two will be recombined to produce the first map of UK resilience to a changing climate. Although others have looked at the regional resilience of the built environment using average weather years, the concern is not about the response of building and occupants to such average time series, but to more extreme events. <br /><br />WP5 Given the large number of files proposed, guidance will need to be given on which to use in practice, and how this might be expressed in the building regulations and other documentation. <br /><br />We plan to use case studies as the main guidance tool. This will add greatly to their intellectual validity within the target audience of practicing engineers. In total, we expect the guidance to be tested on >100 real building projects. <br /><br />WP6 Impact. All weather files produced by the project will be publicly available for a minimum of 10 years. A series of road shows will be undertaken at the end of the project. At these events the results of the project will be presented to a large number of users. The idea will be to introduce the whole UK built environment community to the idea of designing resilient buildings aided by the weather data produced by the project. A short film will also be produced for those that cannot attend and for an international audience.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bath.ac.uk                                                                               '>http://www.bath.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

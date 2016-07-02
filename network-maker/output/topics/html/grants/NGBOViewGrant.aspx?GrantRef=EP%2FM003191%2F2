@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Distributionally Robust Optimisation With  Matrix Moment Constraints: A Semi-Infinite and Semi-Definite Programming Approach
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM003191%2f2" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAwMzE5MS8yZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWNATxzdHJvbmc+RGlzdHJpYnV0aW9uYWxseSBSb2J1c3QgT3B0aW1pc2F0aW9uIFdpdGggIE1hdHJpeCBNb21lbnQgQ29uc3RyYWludHM6IEEgU2VtaS1JbmZpbml0ZSBhbmQgU2VtaS1EZWZpbml0ZSBQcm9ncmFtbWluZyBBcHByb2FjaDwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFQTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTE1Mjk1Jz5YdSwgUHJvZmVzc29yIEg8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUVU2Nob29sIG9mIE1hdGhlbWF0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUZVW5pdmVyc2l0eSBvZiBTb3V0aGFtcHRvbmRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUNMDEgQXByaWwgMjAxNWRkAgMPZBYCAgEPDxYCHwQFCzMxIE1heSAyMDE3ZGQCBQ9kFgICAQ8PFgQfBAUHMjAwLDIzOB4HVG9vbFRpcAUKMjAwLDIzNy44M2RkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIaTWF0aGVtYXRpY2FsIEFzcGVjdHMgb2YgT1IAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBd8eT25lIG9mIHRoZSBtb3N0IGNoYWxsZW5naW5nIGlzc3VlcyBpbiBkZWNpc2lvbiBhbmFseXNpcyBpcyB0byBmaW5kIGFuIG9wdGltYWwgZGVjaXNpb24gdW5kZXIgdW5jZXJ0YWludHkuIFRoZSBzb2x2YWJpbGl0eSBvZiBzdWNoIGEgZGVjaXNpb24gcHJvYmxlbSBhbmQgdGhlIHF1YWxpdHkgb2YgdGhlIG9wdGltYWwgZGVjaXNpb24gcmVseSBoZWF2aWx5IG9uIGF2YWlsYWJsZSBpbmZvcm1hdGlvbiBvbiB0aGUgdW5kZXJseWluZyB1bmNlcnRhaW50aWVzIHdoaWNoIGFyZSBvZnRlbiBtYXRoZW1hdGljYWxseSByZXByZXNlbnRlZCAgYnkgYSB2ZWN0b3Igb2YgcmFuZG9tIHZhcmlhYmxlcyBvciBhIHJhbmRvbSBwcm9jZXNzLiBJZiBhIGRlY2lzaW9uIG1ha2VyIGhhcyBjb21wbGV0ZSBpbmZvcm1hdGlvbiBvbiB0aGUgZGlzdHJpYnV0aW9uIG9mIHRoZSByYW5kb20gcGFyYW1ldGVycywgdGhlbiBoZSBjYW4gZWl0aGVyIG9idGFpbiBhIGNsb3NlZCBmb3JtIG9mIHRoZSBpbnRlZ3JhbCBvZiB0aGUgcmFuZG9tIGZ1bmN0aW9ucyBpbiB0aGUgcHJvYmxlbSBhbmQgdGhlbiBjb252ZXJ0IGl0IGludG8gYSBkZXRlcm1pbmlzdGljIG9wdGltaXNhdGlvbiBwcm9ibGVtLCBvciBhbHRlcm5hdGl2ZWx5IHVzZSB2YXJpb3VzIHN0YXRpc3RpY2FsIGFuZCBudW1lcmljYWwgaW50ZWdyYXRpb24gYXBwcm9hY2hlcyBzdWNoIGFzIHNjZW5hcmlvIG1ldGhvZCwgTW9udGUgQ2FybG8gc2FtcGxpbmcgbWV0aG9kIGFuZCBxdWFkcmF0dXJlIHJ1bGVzIHRvIGRldmVsb3Agc29tZSBhcHByb3hpbWF0aW9uIHNjaGVtZXMgYW5kIHRoZW4gc29sdmUgdGhpcyB1c2luZyBzdGFuZGFyZCBsaW5lYXIvbm9ubGluZWFyIHByb2dyYW1taW5nIGNvZGVzLiA8YnIgLz48YnIgLz5UaGUgc2l0dWF0aW9uIGNhbiBiZWNvbWUgZmFyIG1vcmUgY29tcGxleCAgaWYgdGhlIGRlY2lzaW9uIG1ha2VyIGRvZXMgbm90IGhhdmUgY29tcGxldGUgaW5mb3JtYXRpb24gb24gdGhlIGRpc3RyaWJ1dGlvbiBvZiB0aGUgcmFuZG9tIHZhcmlhYmxlcy4gRm9yIGluc3RhbmNlLCBpZiB0aGUgZGVjaXNpb24gbWFrZXIgZG9lcyBub3QgaGF2ZSBhbnkgaW5mb3JtYXRpb24gb3RoZXIgdGhhbiB0aGUgcmFuZ2Ugb2YgdGhlIHJhbmRvbSB2YXJpYWJsZXMsIHRoZW4gaXQgbWlnaHQgYmUgYSByZWFzb25hYmxlIHN0cmF0ZWd5IHRvIGNob29zZSBhbiBvcHRpbWFsIGRlY2lzaW9uIG9uIHRoZSBiYXNpcyBvZiB0aGUgd29yc3Qgc2NlbmFyaW8gb2YgdGhlIHJhbmRvbSBwYXJhbWV0ZXJzICBpbiBvcmRlciB0byBpbW11bml6ZSAgdGhlIHJpc2tzIGZyb20gdGhlIHVuY2VydGFpbnR5LiBUaGlzIGtpbmQgb2YgZGVjaXNpb24gbWFraW5nIGZyYW1ld29yayBpcyBrbm93biBhcyByb2J1c3Qgb3B0aW1pc2F0aW9uIGFuZCBpdCBpcyB3ZWxsIGtub3duIGluIGVuZ2luZWVyaW5nIGRlc2lnbiB3aGVyZSBhbiBvcHRpbWFsIGRlc2lnbiBtdXN0IHRha2UgaW50byBhY2NvdW50IG9mIHRoZSBleHRyZW1lIChhbGJlaXQgcmFyZSkgZXZlbnQuIEhvd2V2ZXIsIHRoaXMga2luZCBvZiByb2J1c3Qgc2NoZW1lIGlzIG5vdCBuZWNlc3NhcmlseSBlY29ub21pY2FsIGluIHRoYXQgaXQgc2V0cyBvdXQgZXhjZXNzaXZlIHJlc291cmNlcyBmb3IgcHJldmVudGluZyBhIHJhcmUgZXZlbnQuIEZyb20gbnVtZXJpY2FsIHBlcnNwZWN0aXZlLCB0aGUgcmVzdWx0aW5nIG9wdGltaXphdGlvbiBwcm9ibGVtIGNvdWxkIGJlIGludHJhY3RhYmxlLiBBIGFsdGVybmF0aXZlIGFuZCBwb3NzaWJseSBsZXNzIGNvbnNlcnZhdGl2ZSByb2J1c3Qgb3B0aW1pc2F0aW9uIG1vZGVsLCB3aGljaCBpcyBrbm93biBhcyBkaXN0cmlidXRpb25hbGx5IHJvYnVzdCBvcHRpbWlzYXRpb24sIGlzIHRvICBjb25zaWRlciBhIHNldCBvZiBkaXN0cmlidXRpb25zIHdpdGggaGlzdG9yaWNhbCBkYXRhLCBjb21wdXRlciBzaW11bGF0aW9uIG9yICBzdWJqZWN0aXZlIGp1ZGdlbWVudHMgd2hpY2ggY29udGFpbiB0aGUgdHJ1ZSBkaXN0cmlidXRpb24gd2l0aCBjZXJ0YWluIGNvbmZpZGVuY2UgYW5kICB0aGUgIG9wdGltYWwgZGVjaXNpb24gaXMgY2hvc2VuIG9uIHRoZSBiYXNpcyBvZiB0aGUgd29yc3QgZGlzdHJpYnV0aW9uIHJhdGhlciB0aGFuIHRoZSB3b3JzdCBzY2VuYXJpby48YnIgLz48YnIgLz5JbiB0aGlzIHByb2plY3QsIHdlIGNvbmNlbnRyYXRlIG9uIGEgY2xhc3Mgb2YgZGlzdHJpYnV0aW9uYWxseSByb2J1c3Qgb3B0aW1pemF0aW9uIHByb2JsZW1zIHdoZXJlIHRoZSBzZXQgb2YgZGlzdHJpYnV0aW9ucyBpcyBlc3RpbWF0ZWQgdGhyb3VnaCBtb21lbnQgb2YgcmFuZG9tIG1hdHJpY2VzIHdoaWNoIGNhcHR1cmUgc29tZSBwYXJ0aWFsIGluZm9ybWF0aW9uIHN1Y2ggYXMgdGhlICBtZWFuIHZhbHVlLCAgdGhlIHN0YW5kYXJkIGRldmlhdGlvbiBvciB0aGUgY29ycmVsYXRpb24gb2YgdGhlIHJhbmRvbSB2YXJpYWJsZXMuVGhyb3VnaCBzb21lIGR1YWxpdHkgdGhlb3J5IGluIGNvbnZleCBhbmFseXNpcywgd2UgdHJhbnNmb3JtIHRoZSBkaXN0cmlidXRpb25hbCByb2J1c3Qgb3B0aW1pemF0aW9uIGludG8gbWF0aGVtYXRpY2FsIHByb2dyYW1zIHdpdGggc2VtaS1pbmZpbml0ZSBhbmQgc2VtaS1kZWZpbml0ZSBjb25zdHJhaW50cyAoTVBTSVNEQykuIFR3byBmdW5kYW1lbnRhbCBxdWVzdGlvbnMgYXJpc2U6IDEuIElmIHRoZSBtb21lbnRzIGFyZSBjYWxjdWxhdGVkIGZyb20gc2FtcGxlcywgaG93IHJlbGlhYmxlIGFyZSB0aGUgb3B0aW1hbCB2YWx1ZSBhbmQgdGhlIG9wdGltYWwgc29sdXRpb24gKG9yIHN0YXRpb25hcnkgcG9pbnRzIGlmIHRoZSBwcm9ibGVtIGlzIG5vbmNvbnZleCkgb2J0YWluZWQgZnJvbSBzb2x2aW5nIHRoZSBNUFNJU0RDPyBUaGlzIHJlcXVpcmVzIG9uZSB0byBjYXJyeSBvdXQgY29tcHJlaGVuc2l2ZSBxdWFsaXRhdGl2ZSBhbmQgcXVhbnRpdGF0aXZlIHN0YXRpc3RpY2FsIGFuYWx5c2lzLiBUaGlzIGtpbmQgb2YgYW5hbHlzaXMgaXMga25vd24gYXMgYXN5bXB0b3RpYyBjb252ZXJnZW5jZSBhbmFseXNpcyBvciBzdGFiaWxpdHkgYW5hbHlzaXMgaW4gc3RvY2hhc3RpYyBwcm9ncmFtbWluZyBidXQgbGl0dGxlIGhhcyBiZWVuIGRvbmUgZm9yIHJvYnVzdCBvciBkaXN0cmlidXRpb25hbGx5IHJvYnVzdCBvcHRpbWl6YXRpb24uIDIuIEhvdyBkbyB3ZSBzb2x2ZSB0aGUgTVBTSVNEQz8gVGhpcyBpcyBhIGRldGVybWluaXN0aWMgb3B0aW1pemF0aW9uIHByb2JsZW0gd2hpY2ggaW52b2x2ZXMgc2VtaS1kZWZpbml0ZSBhbmQgc2VtaS1pbmZpbml0ZSBjb25zdHJhaW50cyB3aXRoIG1hdHJpeCB2YXJpYWJsZXMuIElmIHRoZSB1bmRlcmx5aW5nIGZ1bmN0aW9uIGlzIGxpbmVhciBvciBxdWFkcmF0aWMgYW5kIHRoZSBzdXBwb3J0IG9mIHRoZSByYW5kb20gdmFyaWFibGVzIGFyZSBwb2x5bm9taWFsIG9yIHNlbWktYWxnZWJyYWljLCB0aGVuIHRoZSBNUFNJU0RDIG1heSBiZSByZWNhc3QgYXMgYSBzZW1pLWRlZmluaXRlIHByb2dyYW1taW5nIHByb2JsZW0gb3IgYSBjb252ZXggY29uaWMgcHJvZ3JhbW1pbmcgcHJvYmxlbSwgYnV0IGhlcmUgd2UgZG8gbm90IGFzc3VtZSB0aGUgc3BlY2lmaWMgc3RydWN0dXJlIGFuZCBoZW5jZSB0aGVyZSBpcyBubyBleGlzdGluZyBvcHRpbWl6YXRpb24gbWV0aG9kIHdoaWNoIGNhbiBiZSByZWFkaWx5IGFwcGxpZWQgdG8gc29sdmUgTVBTSVNEQy4gPGJyIC8+PGJyIC8+VGhpcyBwcm9qZWN0IGlzIHRvIHVzZSBNUFNJU0RDIGFzIGEgcGxhdGZvcm0gdG8gZXN0YWJsaXNoIHRoZSB0aGVvcnkgb2YgYXN5bXB0b3RpYyBhbmFseXNpcyBmb3IgdGhlIGNsYXNzIG9mIGRpc3RyaWJ1dGlvbmFsbHkgcm9idXN0IG9wdGltaXphdGlvbiBwcm9ibGVtcyBhbmQgZGV2ZWxvcCBub3ZlbCBudW1lcmljYWwgbWV0aG9kcyBmb3Igc29sdmluZyB0aGVtLjxiciAvPjxiciAvPiA8YnIgLz48YnIgLz5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnNvdG9uLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnNvdG9uLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTAwMzE5MS8yDEVQL00wMDMxOTEvMmQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkLCJhJZTZBO0RFYrGlIUVMZ8ap2E=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLiycL7AwLQvN++DAKT/OCVA1zQZey2VSxUyXG48Yv87QUwU+Jv" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M003191/2</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Distributionally Robust Optimisation With  Matrix Moment Constraints: A Semi-Infinite and Semi-Definite Programming Approach</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=115295'>Xu, Professor H</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">School of Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Southampton</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="200,237.83" class="DetailValue">200,238</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Aspects of OR</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">One of the most challenging issues in decision analysis is to find an optimal decision under uncertainty. The solvability of such a decision problem and the quality of the optimal decision rely heavily on available information on the underlying uncertainties which are often mathematically represented  by a vector of random variables or a random process. If a decision maker has complete information on the distribution of the random parameters, then he can either obtain a closed form of the integral of the random functions in the problem and then convert it into a deterministic optimisation problem, or alternatively use various statistical and numerical integration approaches such as scenario method, Monte Carlo sampling method and quadrature rules to develop some approximation schemes and then solve this using standard linear/nonlinear programming codes. <br /><br />The situation can become far more complex  if the decision maker does not have complete information on the distribution of the random variables. For instance, if the decision maker does not have any information other than the range of the random variables, then it might be a reasonable strategy to choose an optimal decision on the basis of the worst scenario of the random parameters  in order to immunize  the risks from the uncertainty. This kind of decision making framework is known as robust optimisation and it is well known in engineering design where an optimal design must take into account of the extreme (albeit rare) event. However, this kind of robust scheme is not necessarily economical in that it sets out excessive resources for preventing a rare event. From numerical perspective, the resulting optimization problem could be intractable. A alternative and possibly less conservative robust optimisation model, which is known as distributionally robust optimisation, is to  consider a set of distributions with historical data, computer simulation or  subjective judgements which contain the true distribution with certain confidence and  the  optimal decision is chosen on the basis of the worst distribution rather than the worst scenario.<br /><br />In this project, we concentrate on a class of distributionally robust optimization problems where the set of distributions is estimated through moment of random matrices which capture some partial information such as the  mean value,  the standard deviation or the correlation of the random variables.Through some duality theory in convex analysis, we transform the distributional robust optimization into mathematical programs with semi-infinite and semi-definite constraints (MPSISDC). Two fundamental questions arise: 1. If the moments are calculated from samples, how reliable are the optimal value and the optimal solution (or stationary points if the problem is nonconvex) obtained from solving the MPSISDC? This requires one to carry out comprehensive qualitative and quantitative statistical analysis. This kind of analysis is known as asymptotic convergence analysis or stability analysis in stochastic programming but little has been done for robust or distributionally robust optimization. 2. How do we solve the MPSISDC? This is a deterministic optimization problem which involves semi-definite and semi-infinite constraints with matrix variables. If the underlying function is linear or quadratic and the support of the random variables are polynomial or semi-algebraic, then the MPSISDC may be recast as a semi-definite programming problem or a convex conic programming problem, but here we do not assume the specific structure and hence there is no existing optimization method which can be readily applied to solve MPSISDC. <br /><br />This project is to use MPSISDC as a platform to establish the theory of asymptotic analysis for the class of distributionally robust optimization problems and develop novel numerical methods for solving them.<br /><br /> <br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.soton.ac.uk                                                                              '>http://www.soton.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

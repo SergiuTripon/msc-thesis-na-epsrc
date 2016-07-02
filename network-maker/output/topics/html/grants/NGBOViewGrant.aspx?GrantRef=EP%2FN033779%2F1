@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	LOCATE: LOcation adaptive Constrained Activity recognition using Transfer learning
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN033779%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAzMzc3OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVjPHN0cm9uZz5MT0NBVEU6IExPY2F0aW9uIGFkYXB0aXZlIENvbnN0cmFpbmVkIEFjdGl2aXR5IHJlY29nbml0aW9uIHVzaW5nIFRyYW5zZmVyIGxlYXJuaW5nPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAU+PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNDkwMjA2Jz5EYW1lbiwgRHIgRDwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDQTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDEyMzInPlFpbmV0aVE8L2E+RDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDE0OTknPlRoYWxlcyBMdGQ8L2E+PzxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDE3NDUnPlhlcm94PC9hPmQCBg9kFgICAQ9kFgICAQ8PFgIfBAUQQ29tcHV0ZXIgU2NpZW5jZWRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFVVuaXZlcnNpdHkgb2YgQnJpc3RvbGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFGkZpcnN0IEdyYW50IC0gUmV2aXNlZCAyMDA5ZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAULMDMgTWF5IDIwMTZkZAIDD2QWAgIBDw8WAh8EBQ0wMiBNYXJjaCAyMDE4ZGQCBQ9kFgICAQ8PFgQfBAUGOTgsMTAxHgdUb29sVGlwBQk5OCwxMDAuNTFkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhdBcnRpZmljaWFsIEludGVsbGlnZW5jZRxJbWFnZSAmYW1wOyBWaXNpb24gQ29tcHV0aW5nZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTUgTWFyIDIwMTZkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFKUVQU1JDIElDVCBQcmlvcml0aXNhdGlvbiBQYW5lbCAtIE1hciAyMDE2HwMFI05HQk9WaWV3UGFuZWwuYXNweD9QYW5lbElkPTEtMkw0TUtSZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQF0xhJdCBpcyBlc3RpbWF0ZWQgdGhhdCB0aGVyZSBhcmUgc2l4IG1pbGxpb24gc3VydmVpbGxhbmNlIGNhbWVyYXMgaW4gdGhlIFVLLCB3aXRoIG9ubHkgMTclIG9mIHRoZW0gcHVibGljbHkgb3BlcmF0ZWQuIEluY3JlYXNpbmdseSwgcGVvcGxlIGFyZSBpbnN0YWxsaW5nIENDVFYgY2FtZXJhcyBpbiB0aGVpciBob21lcyBmb3Igc2VjdXJpdHkgb3IgcmVtb3RlIG1vbml0b3Jpbmcgb2YgZWxkZXJseSwgaW5mYW50cyBvciBwZXRzLiBEZXNwaXRlIHRoaXMgaW5jcmVhc2UsIHRoZSB1c2Ugb2YgdGhlIG92ZXJ3aGVsbWluZyBtYWpvcml0eSBvZiB0aGVzZSBjYW1lcmFzIGlzIGxpbWl0ZWQgdG8gZXZpZGVuY2UgZ2F0aGVyaW5nIG9yIGxpdmUgdmlld2luZy4gVGhlc2Ugc2Vuc29ycyBhcmUgY3VycmVudGx5IGluY2FwYWJsZSBvZiBwcm92aWRpbmcgc21hcnQgbW9uaXRvcmluZyAtIGlkZW50aWZ5aW5nIGFuIGluZmFudCBpbiBkYW5nZXIgb3IgYSBkZWh5ZHJhdGVkIGVsZGVybHkuIFNpbWlsYXJseSwgQ0NUViBpbiBwdWJsaWMgcGxhY2VzIGlzIG1vc3RseSB1c2VkIGZvciBldmlkZW5jZSBnYXRoZXJpbmcuIDxiciAvPjxiciAvPkZvbGxvd2luZyB5ZWFycyBvZiByZXNlYXJjaCwgbWV0aG9kcyBjYXBhYmxlIG9mIGF1dG9tYXRpY2FsbHkgcmVjb2duaXNpbmcgYWN0aXZpdGllcyBvZiBpbnRlcmVzdCwgc3VjaCBhcyBhIHBlcnNvbiBkZXBhcnRpbmcgYSBzZXJ2aWNlIHN0YXRpb24gd2l0aG91dCBtYWtpbmcgYSBwYXltZW50IGZvciByZWZ1ZWxpbmcgdGhlIGNhciwgb3Igb25lIHRhbXBlcmluZyB3aXRoIGEgZnVlbCBkaXNwZW5zZXIsIGFyZSBub3cgYXZhaWxhYmxlLCBhY2hpZXZpbmcgYWNjZXB0YWJsZSBsZXZlbHMgb2Ygc3VjY2VzcyBhbmQgbG93IGZhbHNlIGFsYXJtcy4gVGhvdWdoIGF1dG9tYXRpYyBhZnRlciBpbnN0YWxsYXRpb24sIHRoZSBpbnN0YWxsYXRpb24gcHJvY2VzcyBub3Qgb25seSByZXF1aXJlcyBwdXR0aW5nIHRoZSBoYXJkd2FyZSBpbiBwbGFjZSBidXQgYWxzbyBpbnZvbHZlcyBhbiBleHBlcnQgc3R1ZHlpbmcgdGhlIGZvb3RhZ2UgYW5kIGRlc2lnbmluZyBhIG1vZGVsIHN1aXRhYmxlIGZvciB0aGUgbW9uaXRvcmVkIGxvY2F0aW9uLiAgQXQgZWFjaCBuZXcgbG9jYXRpb24sIGUuZy4gZWFjaCBuZXcgc2VydmljZSBzdGF0aW9uLCBhIG5ldyBtb2RlbCBpcyBuZWVkZWQsIHJlcXVpcmluZyB0aGUgZWZmb3J0IGFuZCB0aW1lIG9mIGFuIGV4cGVydC4gVGhpcyBpcyBleHBlbnNpdmUsIGRpZmZpY3VsdCB0byBzY2FsZSBhbmQgYXQgdGltZXMgaW1wbGF1c2libGUgc3VjaCBhcyBmb3IgaG9tZSBtb25pdG9yaW5nIGZvciBleGFtcGxlLiBUaGlzIHJlcXVpcmVtZW50IHRvIGJ1aWxkIGxvY2F0aW9uLXNwZWNpZmljIG1vZGVscyBpcyBjdXJyZW50bHkgbGltaXRpbmcgdGhlIGFkb3B0aW9uIG9mIGF1dG9tYXRpYyByZWNvZ25pdGlvbiBvZiBhY3Rpdml0aWVzLCBkZXNwaXRlIHRoZSBwb3RlbnRpYWwgYmVuZWZpdHMuPGJyIC8+PGJyIC8+VGhpcyBwcm9qZWN0LCBMT0NBVEUsIHByb3Bvc2VzIGFuIGFsZ29yaXRobWljIHNvbHV0aW9uIHRoYXQgaXMgY2FwYWJsZSBvZiB1c2luZyBhIHByZS1idWlsdCBtb2RlbCBpbiBhIGRpZmZlcmVudCBsb2NhdGlvbiBhbmQgYWRhcHRpbmcgaXQgYnkgc2ltcGx5IG9ic2VydmluZyB0aGUgbmV3IHNjZW5lIGZvciBhIGZldyBkYXlzLiBUaGUgc29sdXRpb24gaXMgaW5zcGlyZWQgYnkgdGhlIGh1bWFuIGFiaWxpdHkgdG8gaW50ZWxsaWdlbnRseSBhcHBseSBwcmV2aW91c2x5LWFjcXVpcmVkIGtub3dsZWRnZSB0byBzb2x2ZSBuZXcgY2hhbGxlbmdlcy4gVGhlIHJlc2VhcmNoZXJzIHdpbGwgd29yayB3aXRoIHNlbmlvciBzY2llbnRpc3RzIGZyb20gdHdvIGxlYWRpbmcgVUsgdmlkZW8gYW5hbHl0aWNzIGluZHVzdHJpYWwgcGFydG5lcnM7IFFpbmV0aVEgYW5kIFRoYWxlcy4gVXNpbmcgdGhlc2UgcGFydG5lcnMnIGV4cGVydGlzZSwgdGhlIHByb2plY3Qgd2lsbCBwcm92aWRlIHByYWN0aWNhbCBhbmQgdmFsdWFibGUgaW5zaWdodCB0aGF0IGNhbiBmdXJ0aGVyIGJvb3N0IHRoZSBzdHJvbmcgVUsgaW5kdXN0cnkgb2YgdmlkZW8gYW5hbHl0aWNzLiBUaGUgVW5pdGVkIEtpbmdkb20gaXMgY3VycmVudGx5IGEgZ2xvYmFsIHBsYXllciBpbiB0aGUgdmlkZW8gYW5hbHl0aWNzIG1hcmtldCwgYW5kIHRoZSBsZWFkaW5nIGNvdW50cnkgaW4gdGhlIEV1cm9wZSwgTWlkZGxlIEVhc3QgYW5kIEFmcmljYSAoRU1FQSkgcmVnaW9uLiA8YnIgLz48YnIgLz5UaGUgbWV0aG9kIHdpbGwgYmUgYXBwbGljYWJsZSB0byB2YXJpb3VzIGRvbWFpbnMsIGluY2x1ZGluZyBmb3IgaG9tZSBtb25pdG9yaW5nIGFuZCBDQ1RWIGluIHB1YmxpYyBwbGFjZXMuIFRvIGV2YWx1YXRlIHRoZSBwcm9wb3NlZCBhcHByb2FjaCBmb3IgaG9tZSBtb25pdG9yaW5nLCBMT0NBVEUgd2lsbCB3b3JrIGFsb25nc2lkZSB0aGUgRVBTUkMtZnVuZGVkIHByb2plY3QgU1BIRVJFLCB3aGljaCBhaW1zIHRvIGRldmVsb3AgYW5kIGRlcGxveSBhIHNlbnNvci1iYXNlZCBwbGF0Zm9ybSBmb3IgcmVzaWRlbnRpYWwgaGVhbHRoY2FyZSBpbiBhbmQgYXJvdW5kIEJyaXN0b2wuIFRoZSBmaW5kaW5ncyBvZiBMT0NBVEUgd2lsbCBiZSBpbnRlZ3JhdGVkIHdpdGhpbiB0aGUgU1BIRVJFIHBsYXRmb3JtLCB0b3dhcmRzIGF1dG9tYXRpYyBtb25pdG9yaW5nIG9mIGFjdGl2aXRpZXMgb2YgZGFpbHkgbGl2aW5nIGluIGEgbmV3IGhvbWUsIHN1Y2ggYXMgcHJlcGFyaW5nIGEgbWVhbCwgZWF0aW5nIG9yIHRha2luZyBtZWRpY2F0aW9uLiA8YnIgLz48YnIgLz5UaGUgdGFyZ2V0ZWQgcGx1Zy1hbmQtcGxheSBhcHByb2FjaCB3aWxsIGVuYWJsZSBhIG5vbi1leHBlcnQgdXNlciB0byBzZXR1cCBhIGNhbWVyYSBhbmQgYXV0b21hdGljYWxseSBkZXRlY3Qgd2hldGhlciBhbiBlbGRlcmx5IGluIHRoZSBob21lIGhhZCBoYWQgdGhlaXIgbWVhbCBhbmQgbWVkaWNhdGlvbiwgZm9yIGV4YW1wbGUuIEEgc2hvcCBvd25lciBjYW4gc2ltaWxhcmx5IGRldGVjdCBwaWNrcG9ja2V0aW5nIGF0dGVtcHRzIGluIHRoZWlyIHN0b3JlLiBUaGUgY29tbXVuaXR5IGNhbiB0aHVzIG1ha2UgYmV0dGVyIHVzZSBvZiB0aGUgYWxyZWFkeSBpbiBwbGFjZSBuZXR3b3JrIG9mIHZpc3VhbCBzZW5zb3JzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuYnJpcy5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuYnJpcy5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9OMDMzNzc5LzEMRVAvTjAzMzc3OS8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQMzm1A0/4618FoKnf1h/Wz9S3nOA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLg/Y3vCQLQvN++DAKT/OCVA9VxWzyowW/6QjAo2gfN5mw6nXVw" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N033779/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>LOCATE: LOcation adaptive Constrained Activity recognition using Transfer learning</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-490206'>Damen, Dr D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001232'>QinetiQ</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001499'>Thales Ltd</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001745'>Xerox</a></td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bristol</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">03 May 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">02 March 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="98,100.51" class="DetailValue">98,101</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Image &amp; Vision Computing</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>15 Mar 2016</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2L4MKR">EPSRC ICT Prioritisation Panel - Mar 2016</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">It is estimated that there are six million surveillance cameras in the UK, with only 17% of them publicly operated. Increasingly, people are installing CCTV cameras in their homes for security or remote monitoring of elderly, infants or pets. Despite this increase, the use of the overwhelming majority of these cameras is limited to evidence gathering or live viewing. These sensors are currently incapable of providing smart monitoring - identifying an infant in danger or a dehydrated elderly. Similarly, CCTV in public places is mostly used for evidence gathering. <br /><br />Following years of research, methods capable of automatically recognising activities of interest, such as a person departing a service station without making a payment for refueling the car, or one tampering with a fuel dispenser, are now available, achieving acceptable levels of success and low false alarms. Though automatic after installation, the installation process not only requires putting the hardware in place but also involves an expert studying the footage and designing a model suitable for the monitored location.  At each new location, e.g. each new service station, a new model is needed, requiring the effort and time of an expert. This is expensive, difficult to scale and at times implausible such as for home monitoring for example. This requirement to build location-specific models is currently limiting the adoption of automatic recognition of activities, despite the potential benefits.<br /><br />This project, LOCATE, proposes an algorithmic solution that is capable of using a pre-built model in a different location and adapting it by simply observing the new scene for a few days. The solution is inspired by the human ability to intelligently apply previously-acquired knowledge to solve new challenges. The researchers will work with senior scientists from two leading UK video analytics industrial partners; QinetiQ and Thales. Using these partners' expertise, the project will provide practical and valuable insight that can further boost the strong UK industry of video analytics. The United Kingdom is currently a global player in the video analytics market, and the leading country in the Europe, Middle East and Africa (EMEA) region. <br /><br />The method will be applicable to various domains, including for home monitoring and CCTV in public places. To evaluate the proposed approach for home monitoring, LOCATE will work alongside the EPSRC-funded project SPHERE, which aims to develop and deploy a sensor-based platform for residential healthcare in and around Bristol. The findings of LOCATE will be integrated within the SPHERE platform, towards automatic monitoring of activities of daily living in a new home, such as preparing a meal, eating or taking medication. <br /><br />The targeted plug-and-play approach will enable a non-expert user to setup a camera and automatically detect whether an elderly in the home had had their meal and medication, for example. A shop owner can similarly detect pickpocketing attempts in their store. The community can thus make better use of the already in place network of visual sensors.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bris.ac.uk                                                                               '>http://www.bris.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

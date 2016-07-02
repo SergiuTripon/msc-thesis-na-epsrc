@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Well-posedness and stability for relativistic Euler equations with free boundaries
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN016777%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAxNjc3Ny8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVjPHN0cm9uZz5XZWxsLXBvc2VkbmVzcyBhbmQgc3RhYmlsaXR5IGZvciByZWxhdGl2aXN0aWMgRXVsZXIgZXF1YXRpb25zIHdpdGggZnJlZSBib3VuZGFyaWVzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVBPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNTI0ODI1Jz5IYWR6aWMsIERyIE0gTTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQtNYXRoZW1hdGljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFEtpbmdzIENvbGxlZ2UgTG9uZG9uZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUaRmlyc3QgR3JhbnQgLSBSZXZpc2VkIDIwMDlkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ0wMSBNYXJjaCAyMDE2ZGQCAw9kFgICAQ8PFgIfBAUQMjggRmVicnVhcnkgMjAxOGRkAgUPZBYCAgEPDxYEHwQFBjkzLDkzNx4HVG9vbFRpcAUJOTMsOTM3LjMwZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhVNYXRoZW1hdGljYWwgQW5hbHlzaXMUTWF0aGVtYXRpY2FsIFBoeXNpY3NkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwgCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQsyMyBOb3YgMjAxNWRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAU8RVBTUkMgTWF0aGVtYXRpY3MgUHJpb3JpdGlzYXRpb24gUGFuZWwgTWVldGluZyBOb3ZlbWJlciAyMDE1HwMFI05HQk9WaWV3UGFuZWwuYXNweD9QYW5lbElkPTEtMzBBVTk2ZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFyxhBIHJpZ29yb3VzIG1hdGhlbWF0aWNhbCBkZXNjcmlwdGlvbiBvZiBhIHN0YXIgcmVxdWlyZXMgYSBjb3VwbGluZyBiZXR3ZWVuIHR3byBmYW1vdXMgc3lzdGVtcyBvZiBwYXJ0aWFsIGRpZmZlcmVudGlhbCBlcXVhdGlvbnM6IHRoZSBFdWxlciBlcXVhdGlvbnMgb2YgZmx1aWQgbWVjaGFuaWNzIGFuZCB0aGUgRWluc3RlaW4gZXF1YXRpb25zIG9mIGdlbmVyYWwgcmVsYXRpdml0eS4gVGhlc2Ugc3lzdGVtcyBwb3NzZXNzIGEgcmljaCBtYXRoZW1hdGljYWwgc3RydWN0dXJlIGFuZCBkZXNjcmliZSBmdW5kYW1lbnRhbCBwaHlzaWNhbCBwcm9jZXNzZXMsIHBsYXlpbmcgYW4gaW1wb3J0YW50IHJvbGUgaW4gYm90aCBtYXRoZW1hdGljcyBhbmQgcGh5c2ljcy4gVGhlaXIgY291cGxpbmcgZ2l2ZXMgdGhlIHNvLWNhbGxlZCBFdWxlci1FaW5zdGVpbiBzeXN0ZW0sIGEgZnVuZGFtZW50YWwgbW9kZWwgaW4gdGhlIGFuYWx5c2lzIG9mIGZsdWlkIGJvZGllcyBjb3VwbGVkIHRvIGdyYXZpdHkuIE9uZSBvZiB0aGUgbW9zdCBpbXBvcnRhbnQgZXhhbXBsZXMgYXJlIHRoZSBzdGFycywgaWRlYWxpc2VkIGFzIGZsdWlkIG9yIGdhcyBjbG91ZHMgd2l0aCBhIG1vdmluZyBib3VuZGFyeSBpbnRlcmZhY2Ugc2VwYXJhdGluZyB0aGVtIGZyb20gdGhlIHZhY3V1bS48YnIgLz48YnIgLz5UaGUgZmlyc3QgYW5kIGJhc2ljIG1hdGhlbWF0aWNhbCBxdWVzdGlvbiB0aGF0IG9uZSBjYW4gYXNrIGFib3V0IHRoZSBmcmVlIGJvdW5kYXJ5IEV1bGVyLUVpbnN0ZWluIHN5c3RlbSBpcyB0aGUgZm9sbG93aW5nOiBjYW4gb25lIGRldmVsb3AgYSByaWdvcm91cyBtYXRoZW1hdGljYWwgZnJhbWV3b3JrIHRoYXQgZXN0YWJsaXNoZXMgdGhlIGV4aXN0ZW5jZSBhbmQgdW5pcXVlbmVzcyBvZiBzb2x1dGlvbnMgdG8gdGhpcyBzeXN0ZW0gZ2l2ZW4gc29tZSBpbml0aWFsIGNvbmZpZ3VyYXRpb24gb2YgdGhlIHN0YXI/IENhbiB3ZSBzaW1pbGFybHkgdHJhY2sgZG93biB0aGUgYmVhaHZpb3VyIGFuZCB0aGUgcmVndWxhcml0eSBvZiB0aGUgbW92aW5nIHZhY3V1bSBib3VuZGFyeT8gSG93IGRvIHRoZSBjaGFuZ2VzIGluIGluaXRpYWwgY29uZmlndXJhdGlvbnMgYWZmZWN0IHRoZSBzb2x1dGlvbnM/IFN1Y2ggcXVlc3Rpb25zIGFyZSB0ZWNobmljYWxseSB0ZXJtZWQgYXMgcHJvYmxlbXMgb2Ygd2VsbC1wb3NlZG5lc3MsIGFuZCB0aGUgcHJpbmNpcGFsIGFpbSBvZiB0aGUgcHJvcG9zYWwgaXMgdG8gZGV2ZWxvcCBhIHJpZ29yb3VzIHdlbGwtcG9zZWRuZXNzIGZyYW1ld29yayBmb3IgdGhlIG1vdmluZyB2YWN1dW0gYm91bmRhcnkgRXVsZXItRWluc3RlaW4gc3lzdGVtLjxiciAvPjxiciAvPk1hdGhlbWF0aWNhbGx5LCB0aGlzIHByb2JsZW0gaW50ZXJ0d2luZXMgdmFyaW91cyBkaWZmaWN1bHRpZXMgYXNzb2NpYXRlZCB3aXRoIGJvdGggdGhlIGZyZWUgYm91bmRhcnkgZmx1aWRzIGFuZCB0aGUgRWluc3RlaW4gZXF1YXRpb25zLiBEdWUgdG8gaXRzIGhpZ2hseSBub25saW5lYXIgbmF0dXJlLCBpdCBpcyBhIHByaW9yaSB1bmNsZWFyIHdoZXRoZXIgdGhlIGZyZWUgdmFjdXVtIGJvdW5kYXJ5IGNhbiBjYXVzZSBhIGRlZ2VuZXJhY3kgaW4gdGhlIG1vZGVsLCBsZWFkaW5nIHRvIGEgcG90ZW50aWFsIGJyZWFrZG93biBvZiB0aGUgc29sdXRpb25zLCBldmVuIGFmdGVyIGEgdmVyeSBzaG9ydCB0aW1lLiBFdmVuIGluIHRoZSBOZXd0b25pYW4gc2V0dGluZywgdGhlIGRlZ2VuZXJhdGUgbmF0dXJlIG9mIHRoZSBwcm9ibGVtIHdhcyBoaW50ZWQgYXQgYnkgSm9obiBWb24gTmV1bWFubiBhcyBlYXJseSBhcyAxOTQ5LiBIb3dldmVyLCB0aGUgcGFzdCBmZXcgZGVjYWRlcyBoYXZlIHNlZW4gc3RyaWtpbmcgZGV2ZWxvcG1lbnRzIGluIHRoZSByaWdvcm91cyBzdHVkeSBvZiB0aGUgTmV3dG9uaWFuIGZyZWUgYm91bmRhcnkgRXVsZXIgZXF1YXRpb25zIG9uIG9uZSBoYW5kLCBhbmQgaW4gdGhlIG1hdGhlbWF0aWNhbCBnZW5lcmFsIHJlbGF0aXZpdHkgb24gdGhlIG90aGVyLiBBIHNhdGlzZmFjdG9yeSB3ZWxsLXBvc2VkbmVzcyB0aGVvcnkgZm9yIHRoZSBOZXd0b25pYW4gZnJlZSBib3VuZGFyeSBjb21wcmVzc2libGUgZmx1aWRzIGhhcyBiZWVuIGRldmVsb3BlZCBpbiB0aGUgcGFzdCAzIHllYXJzLiBTaW1pbGFybHksIGEgcmlnb3JvdXMgbWF0aGVtYXRpY2FsIHN0dWR5IG9mIHJlbGF0aXZpc3RpYyBmbHVpZHMgaXMgYSByaWNoIGFuZCBicm9hZCB0b3BpYywgdGhhdCBoYXMgZ2VuZXJhdGVkIGEgbG90IG9mIG1hdGhlbWF0aWNhbCByZXNlYXJjaCBvdmVyIHRoZSBwYXN0IGRlY2FkZS4gQXMgYW4gZXhhbXBsZSwgYSBtb21lbnRvdXMgYnJlYWt0aHJvdWdoIGluIHRoZSBzdHVkeSBvZiBzdGFibGUgc2hvY2sgZm9ybWF0aW9uIGZvciByZWxhdGl2aXN0aWMgZmx1aWRzIHdhcyBhY2NvbXBsaXNoZWQgYnkgQ2hyaXN0b2RvdWxvdSBpbiAyMDA3LjxiciAvPjxiciAvPldoaWxlIHN1Y2ggd29ya3MgcHJvdmlkZSBhbiBpbXBvcnRhbnQgaW1wZXR1cyBmb3IgdGhpcyBwcm9wb3NhbCwgdGhlIGNvbXBsaWNhdGVkLCBidXQgYmVhdXRpZnVsIGludGVyYWN0aW9uIGJldHdlZW4gdGhlIGZyZWUgYm91bmRhcnkgZ2VvbWV0cnkgYW5kIHRoZSByZWxhdGl2aXN0aWMgZ2VvbWV0cnksIGdpdmVzIHJpc2UgdG8gbmV3IG1hdGhlbWF0aWNhbCBzdHJ1Y3R1cmVzIGFuZCBhZGRpdGlvbmFsIGNoYWxsZW5nZXMgd2l0aCByZXNwZWN0IHRvIHRoZSBleGlzdGluZyBsaXRlcmF0dXJlLiBUaGUgcHJvcG9zYWwgZXhwbG9yZXMgdGhlc2Ugc3RydWN0dXJlcyBpbiBkZXRhaWwgYW5kIGRldmVsb3BzIG5vdmVsIGlkZWFzIHRvIHNob3cgdGhlIHdlbGwtcG9zZWRuZXNzIG9mIDEpIHRoZSBmcmVlIHZhY3V1bSBib3VuZGFyeSBFdWxlciBlcXVhdGlvbnMgb24gdGhlIE1pbmtvd3NraSBzcGFjZXRpbWUgYW5kIDIpIHRoZSBmcmVlIHZhY3V1bSBib3VuZGFyeSBFdWxlci1FaW5zdGVpbiBzeXN0ZW0uIEl0IHRoZW4gdXNlcyB0aGUgdGh1cyBlc3RhYmxpc2hlZCBmcmFtZXdvcmsgdG8gYWRkcmVzcyB0aGUgc3RhYmlsaXR5IG9mIHRoZSB3ZWxsLWtub3duIEZyaWVkbWFubi1MZW1haXRyZS0gUm9iZXJ0c29uLVdhbGtlciBzb2x1dGlvbnMsIGRlc2NyaWJpbmcgYW4gYWNjZWxlcmF0aW5nIGV4cGFuZGluZyB1bml2ZXJzZS5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTjAxNjc3Ny8xDEVQL04wMTY3NzcvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk0votcccRE1IZcTINbsZQ1ftpv6c=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL/25HgDgLQvN++DAKT/OCVAzvMkfpchRjSmw15ZM6n0+OWJ8Wa" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N016777/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Well-posedness and stability for relativistic Euler equations with free boundaries</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-524825'>Hadzic, Dr M M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Kings College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 March 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">28 February 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="93,937.30" class="DetailValue">93,937</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> Mathematical Physics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>23 Nov 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-30AU96">EPSRC Mathematics Prioritisation Panel Meeting November 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">A rigorous mathematical description of a star requires a coupling between two famous systems of partial differential equations: the Euler equations of fluid mechanics and the Einstein equations of general relativity. These systems possess a rich mathematical structure and describe fundamental physical processes, playing an important role in both mathematics and physics. Their coupling gives the so-called Euler-Einstein system, a fundamental model in the analysis of fluid bodies coupled to gravity. One of the most important examples are the stars, idealised as fluid or gas clouds with a moving boundary interface separating them from the vacuum.<br /><br />The first and basic mathematical question that one can ask about the free boundary Euler-Einstein system is the following: can one develop a rigorous mathematical framework that establishes the existence and uniqueness of solutions to this system given some initial configuration of the star? Can we similarly track down the beahviour and the regularity of the moving vacuum boundary? How do the changes in initial configurations affect the solutions? Such questions are technically termed as problems of well-posedness, and the principal aim of the proposal is to develop a rigorous well-posedness framework for the moving vacuum boundary Euler-Einstein system.<br /><br />Mathematically, this problem intertwines various difficulties associated with both the free boundary fluids and the Einstein equations. Due to its highly nonlinear nature, it is a priori unclear whether the free vacuum boundary can cause a degeneracy in the model, leading to a potential breakdown of the solutions, even after a very short time. Even in the Newtonian setting, the degenerate nature of the problem was hinted at by John Von Neumann as early as 1949. However, the past few decades have seen striking developments in the rigorous study of the Newtonian free boundary Euler equations on one hand, and in the mathematical general relativity on the other. A satisfactory well-posedness theory for the Newtonian free boundary compressible fluids has been developed in the past 3 years. Similarly, a rigorous mathematical study of relativistic fluids is a rich and broad topic, that has generated a lot of mathematical research over the past decade. As an example, a momentous breakthrough in the study of stable shock formation for relativistic fluids was accomplished by Christodoulou in 2007.<br /><br />While such works provide an important impetus for this proposal, the complicated, but beautiful interaction between the free boundary geometry and the relativistic geometry, gives rise to new mathematical structures and additional challenges with respect to the existing literature. The proposal explores these structures in detail and develops novel ideas to show the well-posedness of 1) the free vacuum boundary Euler equations on the Minkowski spacetime and 2) the free vacuum boundary Euler-Einstein system. It then uses the thus established framework to address the stability of the well-known Friedmann-Lemaitre- Robertson-Walker solutions, describing an accelerating expanding universe.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

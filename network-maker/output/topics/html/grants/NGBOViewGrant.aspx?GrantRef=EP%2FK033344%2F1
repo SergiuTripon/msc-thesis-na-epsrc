@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Mining the Network Behaviour of Bots
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fK033344%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSzAzMzM0NC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU1PHN0cm9uZz5NaW5pbmcgdGhlIE5ldHdvcmsgQmVoYXZpb3VyIG9mIEJvdHM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUI8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS00MTM4ODYnPkNhdmFsbGFybywgRHIgTDwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAICFgQCAQ9kFgJmDxUDQjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NDc4MDEnPlZvdmssIFByb2Zlc3NvciBWPC9hPkY8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTU2OTgnPkdhbW1lcm1hbiwgUHJvZmVzc29yIEE8L2E+QTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTM1ODYxJz5TaGFuYWhhbiwgRHIgSFA8L2E+ZAICD2QWAmYPFQM7PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xMTI2OTknPkx1bywgRHIgWjwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUUSW5mb3JtYXRpb24gU2VjdXJpdHlkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBR5Sb3lhbCBIb2xsb3dheSwgVW5pdiBvZiBMb25kb25kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDDE2IEp1bmUgMjAxM2RkAgMPZBYCAgEPDxYCHwQFDTE3IEFwcmlsIDIwMTdkZAIFD2QWAgIBDw8WBB8EBQc2ODAsNjIzHgdUb29sVGlwBQo2ODAsNjIyLjg4ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgIWBAIBD2QWAmYPFQIXQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UiTmV0d29ya3MgJmFtcDsgRGlzdHJpYnV0ZWQgU3lzdGVtc2QCAg9kFgJmDxUCIlN0YXRpc3RpY3MgJmFtcDsgQXBwbC4gUHJvYmFiaWxpdHkAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhhJbmZvcm1hdGlvbiBUZWNobm9sb2dpZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMjAgRmViIDIwMTNkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFFUVQU1JDIENFUmVTICBGZWIgMjAxMx8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTE0N0g0NmRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBZkjVGhlIGJvdG5ldHMgcGhlbm9tZW5vbiBoYXMgcXVpY2tseSBiZWNvbWUgYSBtYWpvciBzZWN1cml0eSBjb25jZXJuIGZvciBhbGwgdGhlPGJyIC8+PGJyIC8+SW50ZXJuZXQgdXNlcnMuIEluIGZhY3QsIG5vdCBvbmx5IGhhcyBpdCByYXBpZGx5IGdhaW5lZCBwb3B1bGFyaXR5IGFtb25nIHRoZTxiciAvPjxiciAvPm1hc3MgbWVkaWEsIGJ1dCBpdCBoYXMgYWxzbyByZWNlaXZlZCB0aGUgYXR0ZW50aW9uIG9mIHRoZSByZXNlYXJjaCBjb21tdW5pdHk8YnIgLz48YnIgLz5pbnRlcmVzdGVkIGluIHVuZGVyc3RhbmRpbmcsIGFuYWx5emluZywgYW5kIGRldGVjdGluZyBib3QtaW5mZWN0ZWQgbWFjaGluZXMuPGJyIC8+PGJyIC8+T25jZSBpbmZlY3RlZCB3aXRoIGEgYm90LCB0aGUgdmljdGltIGhvc3Qgam9pbnMgYSBib3RuZXQsIGEgbmV0d29yayBvZjxiciAvPjxiciAvPmNvbXByb21pc2VkIG1hY2hpbmVzIHRoYXQgYXJlIHVuZGVyIHRoZSBjb250cm9sIG9mIGEgbWFsaWNpb3VzIGVudGl0eS4gQm90bmV0czxiciAvPjxiciAvPmFyZSB0aGUgcHJpbWFyeSBtZWFucyBmb3IgY3liZXItY3JpbWluYWxzIHRvIGNhcnJ5IG91dCBjcmltaW5hbCB0YXNrcyw8YnIgLz48YnIgLz5zdWNoIGFzIHNlbmRpbmcgc3BhbSBtYWlsLCBsYXVuY2hpbmcgZGVuaWFsLW9mLXNlcnZpY2UgYXR0YWNrcywgb3Igc3RlYWxpbmc8YnIgLz48YnIgLz5wZXJzb25hbCBkYXRhIHN1Y2ggYXMgbWFpbCBhY2NvdW50cyBvciBiYW5rIGNyZWRlbnRpYWxzLjxiciAvPjxiciAvPkNsdXN0ZXJpbmcgYW5kIGNvcnJlbGF0aW5nIG5ldHdvcmsgZXZlbnRzIHJlcHJlc2VudCB0aGUgc3RhdGUtb2YtdGhlLWFydCB3aGVuPGJyIC8+PGJyIC8+aXQgY29tZXMgdG8gZGV0ZWN0aW5nIGFuZCB1bmRlcnN0YW5kaW5nIHRoZSBib3RuZXRzIHBoZW5vbWVub24gZnJvbSBhIG5ldHdvcms8YnIgLz48YnIgLz5wZXJzcGVjdGl2ZS4gV2hpbGUgZWZmZWN0aXZlLCBzdWNoIGFwcHJvYWNoZXMgcmVzdCBvbiB3ZWFrIGZvdW5kYXRpb25zIGJlaW5nPGJyIC8+PGJyIC8+dnVsbmVyYWJsZSB0byBlYXN5LXRvLXBlcmZvcm0gKHRpbWUgYW5kIG5ldHdvcmspIG9iZnVzY2F0aW9uIGF0dGFja3MuPGJyIC8+PGJyIC8+VGhlIGdvYWwgb2YgdGhpcyBwcm9qZWN0IGlzIHRvIGJ1aWxkIG9uIHRoZSBwcm9taXNpbmcgcmVzdWx0cyBvZiBvdXIgcHJldmlvdXM8YnIgLz48YnIgLz53b3JrIHRvIGV4cGxvcmUgbm92ZWwgbWFjaGluZS1sZWFybmluZyB0ZWNobmlxdWVzIHRvIG1ha2UgdGhlIHN0YXRlLW9mLXRoZS1hcnQ8YnIgLz48YnIgLz5tb3JlIGFjY3VyYXRlIGFuZCByb2J1c3QgYWdhaW5zdCBldmFzaW9ucyBhbmQgYWR2YW5jZWQgbWFsd2FyZS4gRXhwbG9yaW5nIHRoZTxiciAvPjxiciAvPnBvc3NpYmlsaXRpZXMgb2YgYWR2YW5jZWQgbWFsd2FyZSAoYW5kIHRodXMgYm90cykgdG8gZW5hYmxlIHRoZSBkZXZlbG9wbWVudCBvZjxiciAvPjxiciAvPm5vdmVsIG1hdGhlbWF0aWNhbCB0ZWNobmlxdWVzIHRvIGFkZHJlc3Mgc3VjaCB0aHJlYXRzIGlzIG5vdCBhIG1lcmUgYWNhZGVtaWM8YnIgLz48YnIgLz5leGVyY2lzZS4gT24gdGhlIGNvbnRyYXJ5LCBpdCBpcyBvZiBwYXJhbW91bnQgaW1wb3J0YW5jZSB0byBidWlsZCByb2J1c3QgYW5kPGJyIC8+PGJyIC8+aGFyZC10by1lbHVkZSBtaXRpZ2F0aW9uIGFwcHJvYWNoZXM7IHNvbWV0aGluZyB3ZSBjdXJyZW50bHkgbGFjaywgYXM8YnIgLz48YnIgLz5hY2tub3dsZWRnZWQgYnkgdGhlIHJlc2VhcmNoIGNvbW11bml0eSBhdCBsYXJnZS48YnIgLz48YnIgLz5PbiB0aGUgY3liZXIgc2VjdXJpdHkgc2lkZSwgd2Ugd2lsbCBkZXZlbG9wIHRlY2huaXF1ZXMgdG8gYW5hbHl6ZSB0aGUgbmV0d29yazxiciAvPjxiciAvPnRyYWZmaWMgZ2VuZXJhdGVkIGJ5IGEgYm90IHNhbXBsZS4gT3VyIGFuYWx5c2lzIHdpbGwgZm9jdXMgb24gaW5mZXJyaW5nIHRoZTxiciAvPjxiciAvPmludGVyZXN0aW5nIHBhcnQgb2YgYSBib3QncyBuZXR3b3JrIGJlaGF2aW91ciB0byBhdXRvbWF0aWNhbGx5IGdlbmVyYXRlIG1vZGVsczxiciAvPjxiciAvPnRoYXQgZmFpdGhmdWxseSBkZXNjcmliZSBpdC4gT3VyIGFuYWx5c2lzIGFpbXMgYXQgYmVpbmcgaW5kZXBlbmRlbnQgZnJvbSB0aGU8YnIgLz48YnIgLz51bmRlcmx5aW5nIGJvdG5ldCBpbmZyYXN0cnVjdHVyZSwgcGF5bG9hZC1hZ25vc3RpYywgYW5kIGFibGUgdG8gcGlucG9pbnQ8YnIgLz48YnIgLz5sZWdpdGltYXRlLXJlc2VtYmxpbmcgbWFsaWNpb3VzIGFjdGl2aXRpZXMuICBUaGUgbmV0d29yayBmbG93cyBvZiBhIG1vbml0b3JlZDxiciAvPjxiciAvPmJvdCB3aWxsIGJlIGluaXRpYWxseSBmaWx0ZXJlZCB0byByZW1vdmUgd2VsbC1kZWZpbmVkIGF0dGFjayBwYXR0ZXJucy4gVGhlPGJyIC8+PGJyIC8+cmVtYWluaW5nIGZsb3dzIHdpbGwgYmUgY2x1c3RlcmVkIHVzaW5nIGEgbnVtYmVyIG9mIG5ldHdvcmsgZmVhdHVyZXMgYW5kPGJyIC8+PGJyIC8+c3VpdGFibGUgc2ltaWxhcml0eSBmdW5jdGlvbnMuICBDbHVzdGVycyB3aG9zZSBzaXplIGV4Y2VlZHMgYSBnaXZlbiB0aHJlc2hvbGQ8YnIgLz48YnIgLz53aWxsIHRoZW4gYmUgYW5hbHl6ZWQgZm9yIHBlcmlvZGljaXR5OiBib3RzIHRlbmQgdG8gZW5nYWdlIGluIHNpbWlsYXIgbmV0d29yazxiciAvPjxiciAvPmFjdGl2aXRpZXMgdGhhdCBoYXZlIGludGVyZmxvdyBpbnRlcnZhbHMgdGhhdCBlaXRoZXIgYXJlIHNhbXBsZWQgaW5kZXBlbmRlbnRseTxiciAvPjxiciAvPmZyb20gYSBwb3RlbnRpYWxseSB1bmtub3duIHByb2JhYmlsaXR5IGRpc3RyaWJ1dGlvbiwgb3IgYmVsb25nIHRvIGEgc21hbGw8YnIgLz48YnIgLz5udW1iZXIgb2Ygd2VsbC1kZWZpbmVkIGNsdXN0ZXJzLiBPbmNlIGNsdXN0ZXJzIGV4aGliaXRpbmcgaW50ZXJlc3Rpbmc8YnIgLz48YnIgLz5wZXJpb2RpY2l0eSBwYXR0ZXJucyBhcmUgaWRlbnRpZmllZCwgdGhleSBjYW4gYmUgdXNlZCwgYWxvbmcgd2l0aCB0aGVpciBuZXR3b3JrPGJyIC8+PGJyIC8+ZmVhdHVyZXMsIGZvciBkZXRlY3RpbmcgKG9yIHVuZGVyc3RhbmRpbmcgdGhlIGJlaGF2aW91ciBvZikgYm90cyBpbiBhIG1peGVkPGJyIC8+PGJyIC8+cG9wdWxhdGlvbiBjb250YWluaW5nIGJvdGggY29tcHJvbWlzZWQgYW5kIGNsZWFuIGhvc3RzLjxiciAvPjxiciAvPk9uIHRoZSBtYWNoaW5lIGxlYXJuaW5nIHNpZGUsIHdlIHByb3Bvc2UgdG8gZXhwbG9yZSB0aGUgdXNlIG9mIGNvbmZvcm1hbDxiciAvPjxiciAvPnByZWRpY3Rpb24gZGV2ZWxvcGVkIGJ5IG91ciB0ZWFtIHRvIG1ha2Ugc3VjaCBjbHVzdGVyLWJhc2VkIGFuYWx5c2lzIG1vcmU8YnIgLz48YnIgLz5hY2N1cmF0ZSBhbmQgcm9idXN0IGFnYWluc3QgYXJiaXRyYXJ5IG9iZnVzY2F0aW9uLWJhc2VkIGV2YXNpb24gYXR0YWNrcy4gIEE8YnIgLz48YnIgLz5wb3dlcmZ1bCBjbHVzdGVyaW5nIG1ldGhvZCBpcyBiYXNlZCBvbiBub25wYXJhbWV0cmljIHByb2JhYmlsaXR5IGRlbnNpdHk8YnIgLz48YnIgLz5lc3RpbWF0aW9uLiBBIHJlY2VudCB3b3JrIHByb3Bvc2VzIGEgY29tcHV0YXRpb25hbGx5IGVmZmljaWVudCBtZXRob2Qgb2Y8YnIgLz48YnIgLz5ub25wYXJhbWV0cmljIGRlbnNpdHkgZXN0aW1hdGlvbiBiYXNlZCBvbiBjb25mb3JtYWwgcHJlZGljdGlvbiBhbmQgaW5oZXJpdHMgaXRzPGJyIC8+PGJyIC8+cHJvcGVydGllcyBvZiB2YWxpZGl0eS4gV2UgcGxhbiB0byBleHBsb3JlIHRoZSB1c2Ugb2YgdGhpcyBtZXRob2QgZm9yIHRoZTxiciAvPjxiciAvPnB1cnBvc2Ugb2Ygcm9idXN0IGNsdXN0ZXJpbmcuIEEgdGhlb3JldGljYWwgY2hhbGxlbmdlIGlzIHRvIHNwZWxsIG91dCBhbmQgc3R1ZHk8YnIgLz48YnIgLz50aGUgcHJvcGVydGllcyBvZiByb2J1c3RuZXNzIGZvciB0aGlzIGNsdXN0ZXJpbmcgbWV0aG9kIHRoYXQgYXJlIGluaGVyaXRlZCBmcm9tPGJyIC8+PGJyIC8+dGhlIHZhbGlkaXR5IG9mIHRoZSBzdHVkeSBtZW50aW9uZWQgYWJvdmUuIEluIGFkZGl0aW9uLCB0aGUgcHJvcGVydHkgb2Y8YnIgLz48YnIgLz52YWxpZGl0eSBvZiBjb25mb3JtYWwgcHJlZGljdG9ycyBpcyB1c3VhbGx5IGVzdGFibGlzaGVkIHVuZGVyIHRoZSByYW5kb21uZXNzPGJyIC8+PGJyIC8+YXNzdW1wdGlvbjsgd2Ugd2lsbCBleHBsb3JlIGhvdyB0aGlzIGFzc3VtcHRpb24gY2FuIGJlIHJlbGF4ZWQuIEluIGFkZGl0aW9uLDxiciAvPjxiciAvPnRoZSBwcm9wZXJ0eSBvZiB2YWxpZGl0eSBjYW4gYmUgdXNlZCB0byBjb250cm9sIHRoZSBudW1iZXIgb2YgImFsYXJtcyI8YnIgLz48YnIgLz4ocHJlZGljdGluZyB0aGF0IGEgaG9zdCBpcyBjb21wcm9taXNlZCkgcmFpc2VkIGJ5IGEgYm90IGRldGVjdGlvbiBhbGdvcml0aG0uPGJyIC8+PGJyIC8+VGhpcyBpcyB2YWx1YWJsZSBpbiBzaXR1YXRpb25zIHdoZXJlIGFsYXJtcyBoYXZlIHRvIGJlIGludmVzdGlnYXRlZCBieSBodW1hbjxiciAvPjxiciAvPmV4cGVydHMgYnV0IHRoZSBhdmFpbGFibGUgbWFucG93ZXIgaXMgbGltaXRlZC5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAzMzM0NC8xDEVQL0swMzMzNDQvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkqpP08PX7PbnS4THL0qrNlMjg/fg=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKovvWDCALQvN++DAKT/OCVAxt40eI8IS8ZyU1NJnsn29Ydsi6P" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/K033344/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Mining the Network Behaviour of Bots</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-413886'>Cavallaro, Dr L</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=47801'>Vovk, Professor V</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=5698'>Gammerman, Professor A</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-35861'>Shanahan, Dr HP</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=112699'>Luo, Dr Z</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Information Security</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Royal Holloway, Univ of London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">16 June 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">17 April 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="680,622.88" class="DetailValue">680,623</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Networks &amp; Distributed Systems</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Statistics &amp; Appl. Probability</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>20 Feb 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-147H46">EPSRC CEReS  Feb 2013</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The botnets phenomenon has quickly become a major security concern for all the<br /><br />Internet users. In fact, not only has it rapidly gained popularity among the<br /><br />mass media, but it has also received the attention of the research community<br /><br />interested in understanding, analyzing, and detecting bot-infected machines.<br /><br />Once infected with a bot, the victim host joins a botnet, a network of<br /><br />compromised machines that are under the control of a malicious entity. Botnets<br /><br />are the primary means for cyber-criminals to carry out criminal tasks,<br /><br />such as sending spam mail, launching denial-of-service attacks, or stealing<br /><br />personal data such as mail accounts or bank credentials.<br /><br />Clustering and correlating network events represent the state-of-the-art when<br /><br />it comes to detecting and understanding the botnets phenomenon from a network<br /><br />perspective. While effective, such approaches rest on weak foundations being<br /><br />vulnerable to easy-to-perform (time and network) obfuscation attacks.<br /><br />The goal of this project is to build on the promising results of our previous<br /><br />work to explore novel machine-learning techniques to make the state-of-the-art<br /><br />more accurate and robust against evasions and advanced malware. Exploring the<br /><br />possibilities of advanced malware (and thus bots) to enable the development of<br /><br />novel mathematical techniques to address such threats is not a mere academic<br /><br />exercise. On the contrary, it is of paramount importance to build robust and<br /><br />hard-to-elude mitigation approaches; something we currently lack, as<br /><br />acknowledged by the research community at large.<br /><br />On the cyber security side, we will develop techniques to analyze the network<br /><br />traffic generated by a bot sample. Our analysis will focus on inferring the<br /><br />interesting part of a bot's network behaviour to automatically generate models<br /><br />that faithfully describe it. Our analysis aims at being independent from the<br /><br />underlying botnet infrastructure, payload-agnostic, and able to pinpoint<br /><br />legitimate-resembling malicious activities.  The network flows of a monitored<br /><br />bot will be initially filtered to remove well-defined attack patterns. The<br /><br />remaining flows will be clustered using a number of network features and<br /><br />suitable similarity functions.  Clusters whose size exceeds a given threshold<br /><br />will then be analyzed for periodicity: bots tend to engage in similar network<br /><br />activities that have interflow intervals that either are sampled independently<br /><br />from a potentially unknown probability distribution, or belong to a small<br /><br />number of well-defined clusters. Once clusters exhibiting interesting<br /><br />periodicity patterns are identified, they can be used, along with their network<br /><br />features, for detecting (or understanding the behaviour of) bots in a mixed<br /><br />population containing both compromised and clean hosts.<br /><br />On the machine learning side, we propose to explore the use of conformal<br /><br />prediction developed by our team to make such cluster-based analysis more<br /><br />accurate and robust against arbitrary obfuscation-based evasion attacks.  A<br /><br />powerful clustering method is based on nonparametric probability density<br /><br />estimation. A recent work proposes a computationally efficient method of<br /><br />nonparametric density estimation based on conformal prediction and inherits its<br /><br />properties of validity. We plan to explore the use of this method for the<br /><br />purpose of robust clustering. A theoretical challenge is to spell out and study<br /><br />the properties of robustness for this clustering method that are inherited from<br /><br />the validity of the study mentioned above. In addition, the property of<br /><br />validity of conformal predictors is usually established under the randomness<br /><br />assumption; we will explore how this assumption can be relaxed. In addition,<br /><br />the property of validity can be used to control the number of "alarms"<br /><br />(predicting that a host is compromised) raised by a bot detection algorithm.<br /><br />This is valuable in situations where alarms have to be investigated by human<br /><br />experts but the available manpower is limited.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

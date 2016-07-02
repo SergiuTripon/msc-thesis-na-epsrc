@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Preliminary design study for a benchtop, cryogen-free FTICR mass spectrometer
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN021630%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAyMTYzMC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVePHN0cm9uZz5QcmVsaW1pbmFyeSBkZXNpZ24gc3R1ZHkgZm9yIGEgYmVuY2h0b3AsIGNyeW9nZW4tZnJlZSBGVElDUiBtYXNzIHNwZWN0cm9tZXRlcjwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFSTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTIxNTA3OCc+TydDb25ub3IsIFByb2Zlc3NvciBQQjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQlDaGVtaXN0cnlkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRVVbml2ZXJzaXR5IG9mIFdhcndpY2tkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDTAxIEFwcmlsIDIwMTZkZAIDD2QWAgIBDw8WAh8EBQ0zMSBNYXJjaCAyMDE3ZGQCBQ9kFgICAQ8PFgQfBAUHMTA5LDQxOB4HVG9vbFRpcAUKMTA5LDQxNy41NGRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIAEkFuYWx5dGljYWwgU2NpZW5jZWQCCw9kFgICAQ9kFgICAQ8WAh8IAgIWBAIBD2QWAmYPFQIKSGVhbHRoY2FyZSFQaGFybWFjZXV0aWNhbHMgYW5kIEJpb3RlY2hub2xvZ3lkAgIPZBYCZg8VAg5Gb29kIGFuZCBEcmluawBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwgCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQswMyBEZWMgMjAxNWRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUxRVBTUkMgUGh5c2ljYWwgU2NpZW5jZXMgQ2hlbWlzdHJ5IC0gRGVjZW1iZXIgMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTJIME5ZMGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBakcVGhpcyBwcmVsaW1pbmFyeSBkZXNpZ24gc3R1ZHkgaXMgaW50ZW5kZWQgdG8gaW52ZXN0aWdhdGUgdGhlIGZlYXNpYmlsaXR5IGFuZCBjb3N0IG9mIGRldmVsb3BpbmcgYSBoaWdoLWZpZWxkIEZUSUNSIG1hc3Mgc3BlY3Ryb21ldGVyIHdoaWNoIGNhbiBmaXQgb24gYSBiZW5jaHRvcCBiZWNhdXNlIG9mIHVzZSBvZiBhIGNyeW9nZW4tZnJlZSBzdXBlcmNvbmR1Y3RpbmcgbWFnbmV0LiAgVGhpcyBwcmVsaW1pbmFyeSBkZXNpZ24gc3R1ZHkgd2lsbCBsaWtlbHkgZm9sbG93IG9uIHdpdGggYSBmdWxsIHByb3Bvc2FsIHRvIGRldmVsb3AgdGhpcyBpbnN0cnVtZW50IGJ1dCBpcyBpbnRlbmRlZCB0byAnZGUtcmlzaycgYSBmdWxsIGRlc2lnbi9jb25zdHJ1Y3Rpb24gcHJvamVjdCBieSBzZXBhcmF0aW5nIG91dCB0aGUgZGVzaWduIGZlYXNpYmlsaXR5IHN0dWRpZXMuICBJbiB0aGlzIG1hbm5lciwgdGhlIGxvdy1jb3N0IGRlc2lnbiBwcm9qZWN0IGNhbiBiZSBkb25lLCBmb2xsb3dlZCBieSBhIGZ1bGwgYW5kIGRldGFpbGVkIHJldmlldyBvZiB0aGUgbWFpbiBwcm9qZWN0IGF0IGEgbGF0ZXIgZnVuZGluZyBwYW5lbC4gIDxiciAvPjxiciAvPlRoaXMgY3VycmVudCBwcmVsaW1pbmFyeSBkZXNpZ24gcHJvcG9zYWwgd2lsbCBmb2N1cyBvbiB0d28gcGFydHMgb2YgdGhlIG92ZXJhbGwgcHJvamVjdCwgQSkgdGhlIG1hZ25ldCBhbmQgQikgdGhlIG1hc3Mgc3BlY3Ryb21ldGVyIHRoYXQgZ29lcyBpbnRvIHNhaWQgbWFnbmV0LiAgPGJyIC8+PGJyIC8+SW4gcGFydCBBLCB3ZSB3aWxsIGNvbGxhYm9yYXRlIHdpdGggb3VyIGluZHVzdHJpYWwgcGFydG5lciwgQnJ1a2VyIENvcnBvcmF0aW9uLCB0byBkZXNpZ24gdGhlIG1hZ25ldCAoc2VlIGF0dGFjaGVkIGxldHRlciBvZiBzdXBwb3J0IGZyb20gRHIuIEZyYW5rIExhdWtpZW4sIENFTyBvZiBCcnVrZXIgQ29ycCkuICBCcnVrZXIgYWxyZWFkeSBoYXMgYSBwcmVsaW1pbmFyeSBtYWduZXQgZGVzaWduLCBidXQgaXQgaXMgbm90IGNsZWFyIGF0IHRoaXMgdGltZSB0aGF0IGl0IHdpbGwgaGF2ZSB0aGUgcGVyZm9ybWFuY2Ugc3BlY2lmaWNhdGlvaW5zIHRoYXQgd2UgbmVlZCB0byBhY2hpZXZlOyB0aGlzIHBhcnQgb2YgdGhlIHByb2plY3QgYWltcyB0byBjb29yZGluYXRlIG91ciBkZXNpZ24gbmVlZHMgd2l0aCB0aGVpciBkZXNpZ24gY2FwYWJpbGl0aWVzLiAgVGhlIG1hZ25ldCByZXF1aXJlZCBtdXN0IG1hZGUgdG8gYmUgYXMgc21hbGwgYXMgcG9zc2libGUsIHdoaWNoIHdlIGVzdGltYXRlIHRvIGJlIGFib3V0IHRoZSBzaXplIG9mIGEgZGVza3RvcCBsYXNlciBwcmludGVyLiAgVGhlIG1hZ25ldCB3aWxsIGJlIDctVGVzbGEgb3IgaGlnaGVyIChhbmQgd2l0aCBoaWdoIGhvbW9nZW5laXR5KSwgd2lsbCBoYXZlIHRvIGJlIGFjdGl2ZS1zaGllbGRlZCB0byBhdm9pZCBwcm9ibGVtcyB3aXRoIHN0cmF5IG1hZ25ldGljIGZpZWxkcywgd2lsbCBiZSBjb29sZWQgc29sZWx5IGJ5IGEgY29tbWVyY2lhbCBjcnlvY29vbGVyICh0byBiZSBkZXRlcm1pbmVkKSwgd2lsbCBuZWVkIHRvIGJlIHF1ZW5jaC1zdGFibGUsIGFuZCB3aWxsIG5lZWQgdG8gaGF2ZSBhbiBpbnRlZ3JhdGVkLCBhdXRvbWF0ZWQgY2hhcmdpbmcgcG93ZXIgc3VwcGx5LiAgRm9yIHRoaXMgZGVzaWduLCB3ZSBzaG91bGQgYmUgYWJsZSB0byBjYWxjdWxhdGUgdGhlIGNvb2xkb3duIHRpbWUgYW5kIHRoZSAnTWVhbi10aW1lLXRvLXF1ZW5jaCAoTVRUUSknIHdoaWNoIGlzIGhvdyBsb25nIGl0IHdpbGwgdGFrZSBmb3IgdGhlIG1hZ25ldCB0byBxdWVuY2ggYWZ0ZXIgdGhlIHBvd2VyIGlzIGxvc3QsIGFuZCB0aGUgbWFnbmV0IHN0YWJpbGl6YXRpb24gdGltZS4gIElmIHRoZSBNVFRRIGlzIGEgZmV3IG1pbnV0ZXMgb3IgaG91cnMsIHRoZW4gdGhlIGRlc2lnbiBpcyBib3RoIGZlYXNpYmxlIGFuZCBsaWtlbHkgdG8gYmUgc3RhYmxlLCBwYXJ0aWN1bGFybHkgaWYgY291cGxlZCB3aXRoIGFuIHVuaW50ZXJ1cHRpYmxlIHBvd2VyIHN1cHBseSwgYnV0IGlmIGl0J3MgYSBmZXcgc2Vjb25kcyB0byBtaWxsaXNlY29uZHMsIHRoZW4gdGhlIHN5c3RlbSB3aWxsIGJlIHRvbyB1bnN0YWJsZSB0byBiZSB1c2VmdWwuICAgQW5kIGZpbmFsbHksIHdlIHdpbGwgYWltIHRvIGVzdGltYXRlIHRoZSBjb3N0IG9mIHRoZSBtYWduZXQgaW4gNyBULCAxMiBULCAxNSBULCBhbmQgMjEgVCB2YXJpYW50cyBhbmQgaW4gMTEwIC0gMTUwIG1tIGJvcmUgZGlhbWV0ZXIgdmFyaWF0aW9ucy48YnIgLz48YnIgLz5JbiBwYXJ0IEIsIHdlIHdpbGwgZGVzaWduIHRoZSBpbnN0cnVtZW50IHRvIGdvIGludG8gdGhpcyBtYWduZXQsIHdpdGggdGhlIGdvYWwgb2YgbWluaW1pemluZyBpbnN0cnVtZW50IHNpemUgd2hpbGUgc3RpbGwgbWFpbnRhaW5pbmcgcGVyZm9ybWFuY2UgaW4gdGVybXMgb2YgcmVzb2x2aW5nIHBvd2VyLCBtYXNzIGFjY3VyYWN5LCBhbmQgc2Vuc2l0aXZpdHkuICBUaGlzIHJlcXVpcmVzIGEgMWUtMTAgbWJhciB2YWN1dW0gaW4gdGhlIElDUiBjZWxsLCBzbyB0aGF0IGEgZGlmZmVyZW50aWFsIHB1bXBpbmcgc3lzdGVtIHdpdGggYXQgbGVhc3QgNCwgYW5kIG1heWJlIDYgZGlmZmVyZW50aWFsIHN0YWdlcyBvZiBwdW1waW5nIGFyZSBuZWVkZWQgZnJvbSBhdG1vc3BoZXJpYyBwcmVzc3VyZSwgYW5kIHRoZXJlIGFyZSBzZXZlcmFsIGRlc2lnbiB0YWN0aWNzIHdlIGNhbiB1c2UgdG8gb3B0aW1pemUgdGhpcyBpbnN0cnVtZW50LiAgVGhlIEVsZWN0cm9zcHJheSBpb25pemF0aW9uIHNvdXJjZSwgcHVtcGluZyBzeXN0ZW0sIHZhY3V1bSBjaGFtYmVycywgaW9uIG9wdGljcywgYW5kIElDUiBjZWxsIHdpbGwgYWxsIGJlIGRlc2lnbmVkIGluIDNEIENBRCBzb2Z0d2FyZS4gIFB1bXBpbmcgc3BlZWRzIHdpbGwgYmUgY2FsY3VsYXRlZCBhbmQgYmFzZSBwcmVzc3VyZXMgaW4gdGhlIElDUiBjZWxsIHdpbGwgYmUgZXN0aW1hdGVkLiBJb24gdHJhbnNmZXIgZWZmaWNpZW5jeSBjYW4gYWxzbyBiZSBlc3RpbWF0ZWQgdXNpbmcgaW9uLW1vZGVsaW5nIHNvZnR3YXJlIHN1Y2ggYXMgU0lNSU9OLiAgUGFydCBCIHdpbGwgYmUgcHJpbWFyaWx5IGRvbmUgaW4taG91c2UsIHdpdGggc29tZSBjb25zdWx0YXRpb24gd2l0aCBCcnVrZXIgYXMgbmVlZGVkIHRvIG1ha2Ugc3VyZSB0aGF0IG91ciBpbnN0cnVtZW50IGRlc2lnbnMgYXJlIGNvbXBhdGlibGUgd2l0aCB0aGVpciBlbGVjdHJvbmljcyBhbmQgc29mdHdhcmUuPGJyIC8+PGJyIC8+T3ZlcmFsbCwgaWYgc3VjY2Vzc2Z1bCwgd2Ugd2lsbCBnZW5lcmF0ZSBhIHJvYnVzdCwgY29tcGFjdCBkZXNpZ24gZm9yIGEgbmV3IG1hc3Mgc3BlY3Ryb21ldGVyIHdoaWNoIHdpbGwgb3V0LXBlcmZvcm0gYW55IG90aGVyIGluc3RydW1lbnQgaW4gdGhlIGZpZWxkIC0gb2YgYSBzaW1pbGFyIHNpemUuICBUaGlzIGluc3RydW1lbnQgd2lsbCBiZSBhcHBsaWNhYmxlIHRvIHRoZSBzdHVkeSBvZiBiaW9tb2xlY3VsZXMgaW52b2x2ZWQgaW4gZGlzZWFzZSwgcGhhcm1hY2V1dGljYWxzLCBmb29kLXNhZmV0eSBhbmQgZW52aXJvbm1lbnRhbCB0cmFjZXIgc3R1ZGllcywgYW5kIHByZXR0eSBtdWNoIGFueSBvdGhlciBraW5kIG9mIG1vbGVjdWxlIGF2YWlsYWJsZS4gIDxiciAvPjxiciAvPmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cud2Fyd2ljay5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cud2Fyd2ljay5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9OMDIxNjMwLzEMRVAvTjAyMTYzMC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSE/wzB490VtALoDm7aNItO1V5IJQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL8sMeLCgLQvN++DAKT/OCVA26phS0IgmlElNQHRrvHAQhL68Iu" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N021630/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Preliminary design study for a benchtop, cryogen-free FTICR mass spectrometer</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-215078'>O'Connor, Professor PB</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Chemistry</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Warwick</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="109,417.54" class="DetailValue">109,418</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> Analytical Science</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> Pharmaceuticals and Biotechnology</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAltAlt"> Food and Drink</td>
+                                    <td class="DetailValueAltAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>03 Dec 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2H0NY0">EPSRC Physical Sciences Chemistry - December 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This preliminary design study is intended to investigate the feasibility and cost of developing a high-field FTICR mass spectrometer which can fit on a benchtop because of use of a cryogen-free superconducting magnet.  This preliminary design study will likely follow on with a full proposal to develop this instrument but is intended to 'de-risk' a full design/construction project by separating out the design feasibility studies.  In this manner, the low-cost design project can be done, followed by a full and detailed review of the main project at a later funding panel.  <br /><br />This current preliminary design proposal will focus on two parts of the overall project, A) the magnet and B) the mass spectrometer that goes into said magnet.  <br /><br />In part A, we will collaborate with our industrial partner, Bruker Corporation, to design the magnet (see attached letter of support from Dr. Frank Laukien, CEO of Bruker Corp).  Bruker already has a preliminary magnet design, but it is not clear at this time that it will have the performance specificatioins that we need to achieve; this part of the project aims to coordinate our design needs with their design capabilities.  The magnet required must made to be as small as possible, which we estimate to be about the size of a desktop laser printer.  The magnet will be 7-Tesla or higher (and with high homogeneity), will have to be active-shielded to avoid problems with stray magnetic fields, will be cooled solely by a commercial cryocooler (to be determined), will need to be quench-stable, and will need to have an integrated, automated charging power supply.  For this design, we should be able to calculate the cooldown time and the 'Mean-time-to-quench (MTTQ)' which is how long it will take for the magnet to quench after the power is lost, and the magnet stabilization time.  If the MTTQ is a few minutes or hours, then the design is both feasible and likely to be stable, particularly if coupled with an uninteruptible power supply, but if it's a few seconds to milliseconds, then the system will be too unstable to be useful.   And finally, we will aim to estimate the cost of the magnet in 7 T, 12 T, 15 T, and 21 T variants and in 110 - 150 mm bore diameter variations.<br /><br />In part B, we will design the instrument to go into this magnet, with the goal of minimizing instrument size while still maintaining performance in terms of resolving power, mass accuracy, and sensitivity.  This requires a 1e-10 mbar vacuum in the ICR cell, so that a differential pumping system with at least 4, and maybe 6 differential stages of pumping are needed from atmospheric pressure, and there are several design tactics we can use to optimize this instrument.  The Electrospray ionization source, pumping system, vacuum chambers, ion optics, and ICR cell will all be designed in 3D CAD software.  Pumping speeds will be calculated and base pressures in the ICR cell will be estimated. Ion transfer efficiency can also be estimated using ion-modeling software such as SIMION.  Part B will be primarily done in-house, with some consultation with Bruker as needed to make sure that our instrument designs are compatible with their electronics and software.<br /><br />Overall, if successful, we will generate a robust, compact design for a new mass spectrometer which will out-perform any other instrument in the field - of a similar size.  This instrument will be applicable to the study of biomolecules involved in disease, pharmaceuticals, food-safety and environmental tracer studies, and pretty much any other kind of molecule available.  <br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.warwick.ac.uk                                                                            '>http://www.warwick.ac.uk                                                                            </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

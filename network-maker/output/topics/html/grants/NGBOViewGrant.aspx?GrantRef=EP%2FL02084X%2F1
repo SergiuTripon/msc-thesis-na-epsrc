@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Developing a Bespoke Incremental Sheet Forming Machine for Cranioplasty
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fL02084X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTDAyMDg0WC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVYPHN0cm9uZz5EZXZlbG9waW5nIGEgQmVzcG9rZSBJbmNyZW1lbnRhbCBTaGVldCBGb3JtaW5nIE1hY2hpbmUgZm9yIENyYW5pb3BsYXN0eTwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFOTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9ODI2MTEnPk91LCBEciBIPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgIWBAIBD2QWAmYPFQNPPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9OTAyNSc+RGVsY2FtIEludGVybmF0aW9uYWwgcGxjPC9hPk08YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tNzExOCc+TGFibWFuIEF1dG9tYXRpb24gTHRkPC9hPlQ8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMTA0Jz5TaGFuZ2hhaSBKaWFvIFRvbmcgVW5pdmVyc2l0eTwvYT5kAgIPZBYCZg8VA1A8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMTU2OTEnPlVDTCBIb3NwaXRhbHMgTkhTIFRydXN0PC9hPgAAZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRZGYWN1bHR5IG9mIEVuZ2luZWVyaW5nZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUYVW5pdmVyc2l0eSBvZiBOb3R0aW5naGFtZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wNiBPY3RvYmVyIDIwMTRkZAIDD2QWAgIBDw8WAh8EBQ8wNSBPY3RvYmVyIDIwMTdkZAIFD2QWAgIBDw8WBB8EBQcyOTksNzA1HgdUb29sVGlwBQoyOTksNzA1LjM3ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIhTWFudWZhY3R1cmluZyBNYWNoaW5lICZhbXA7IFBsYW50IU1lZC5JbnN0cnVtZW50LkRldmljZSZhbXA7IEVxdWlwLmQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIKSGVhbHRoY2FyZQ1NYW51ZmFjdHVyaW5nZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTEgRmViIDIwMTRkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFG01hbnVmYWN0dXJpbmcgaW4gSGVhbHRoY2FyZR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTFGVUcxRGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBcoVQ3JhbmlvcGxhc3R5IGlzIGEgc3VyZ2ljYWwgcHJvY2VkdXJlIGZvciB0aGUgcmVwYWlyIG9mIGRlZm9ybWl0eSBvZiBhIGh1bWFuIHNrdWxsIGR1ZSB0byBicmFpbiB0dW1vdXIsIHN0cm9rZSBvciB0cmF1bWF0aWMgaW5qdXJpZXMuIEFtb25nIGFsbCBhdmFpbGFibGUgbWF0ZXJpYWxzLCB0aXRhbml1bSBjb250aW51ZXMgdG8gYmUgYSBtYWluIHN0cmVhbSBtYXRlcmlhbCB1c2VkIGluIGNyYW5pb3BsYXN0eSBzdXJnZXJpZXMgYmVjYXVzZSBvZiBpdHMgZXhjZWxsZW50IGJpb2NvbXBhdGliaWxpdHksIHJlc2lzdGFuY2UgdG8gaW5mZWN0aW9uLCBleGNlbGxlbnQgbWF0ZXJpYWwgcHJvcGVydGllcyBhbmQgbGlnaHR3ZWlnaHQuIEhvd2V2ZXIsIGluIHNwaXRlIG9mIHRoZSBwb3B1bGFyIHVzZSBvZiB0aXRhbml1bSBpbiBjcmFuaWFsIHJlY29uc3RydWN0aW9uLCB0aGVyZSBpcyBhIHdpZGUgdmFyaWV0eSBvZiBtZXRob2RzIGluY2x1ZGluZyBjYXN0aW5nLCBtYW51YWwgc2hhcGluZyBhbmQgcnViYmVyIHByZXNzIGZvcm1pbmcgY29tbW9ubHkgdXNlZCBpbiBjcmFuaWFsIHBsYXRlIG1hbnVmYWN0dXJlLiBFdmVuIHdpdGggdGhlIGFzc2lzdGFuY2Ugb2YgYWR2YW5jZWQgQ0FEL0NBTSAoY29tcHV0ZXItYWlkZWQgZGVzaWduIGFuZCBtYW51ZmFjdHVyZSkgYW5kIGNvbXB1dGVkIHRvbW9ncmFwaGljIChDVCkgYW5kIG1hZ25ldGljIHJlc29uYW5jZSBpbWFnaW5nIChNUkkpIHRlY2hub2xvZ2llcywgY3VycmVudGx5IHRoZSBwcm9jZXNzIGZvciBtYW51ZmFjdHVyaW5nIGN1c3RvbWlzZWQgY3JhbmlhbCBwbGF0ZXMgYnkgY29udmVudGlvbmFsIG1ldGhvZHMgbm9ybWFsbHkgdGFrZXMgdXAgdG8gdHdvIHdlZWtzIHRvIGNvbXBsZXRpb24gbWFpbmx5IGR1ZSB0byB0aGUgdGltZSByZXF1aXJlZCBmb3IgdGhlIG1hbnVmYWN0dXJlIG9mIGRpZXMgYW5kIHRvb2xzLiBSZWNlbnQgYWR2YW5jZXMgaW4gM0QgcHJpbnRpbmcgb3IgYWRkaXRpdmUgbWFudWZhY3R1cmluZyBiYXNlZCB0ZWNobmlxdWVzIG1ha2UgaXQgcG9zc2libGUgdG8gY29tcGxldGUgdGhlIDNEIHByaW50aW5nIG9mIGEgY3JhbmlhbCBvciBhIG1heGlsbG9mYWNpYWwgcHJvc3RoZXRpYyBwYXJ0IHdpdGhpbiBzZXZlcmFsIGhvdXJzLiBIb3dldmVyLCB0aGVyZSBhcmUgc3RpbGwgYSBudW1iZXIgb2YgaW1wZWRpbWVudHMgaW5jbHVkaW5nIG1hdGVyaWFsIHByb3BlcnR5IGFuZCBjb3N0IGlzc3VlcyB0byBiZSBvdmVyY29tZSBiZWZvcmUgaXRzIHdpZGUgY2xpbmljYWwgYXBwbGljYXRpb25zLiA8YnIgLz48YnIgLz4gIDxiciAvPjxiciAvPlRoaXMgcHJvamVjdCBwcm9wb3NlcyBhIG5vdmVsIGFsdGVybmF0aXZlIHNvbHV0aW9uIGZvciBhbiBldmVuIGZhc3RlciBhbmQgbW9yZSBjb3N0IGVmZmVjdGl2ZSBtZXRob2QgZm9yIHRoZSBtYW51ZmFjdHVyZSBvZiBwZXJzb25hbGlzZWQgY3JhbmlhbCBwbGF0ZXMgYnkgdXNpbmcgdGhlIGluY3JlbWVudGFsIHNoZWV0IGZvcm1pbmcgKElTRikgdGVjaG5pcXVlLiBPdXIgcmVjZW50IHdvcmsgaGFzIHNob3duIHRoYXQgYSB0eXBpY2FsbHkgbGFyZ2Ugc2l6ZSBjcmFuaWFsIHBsYXRlIGNhbiBiZSBtYWRlIHNhdGlzZmFjdG9yaWx5IGJ5IHVzaW5nIHRoZSBJU0YgcHJvY2VzcyBpbiA3fjggbWludXRlcyByYXRoZXIgdGhhbiBob3VycyBvciBkYXlzLiBUaGlzIG91dGNvbWUgaGFzIGNvbnNpZGVyYWJsZSBpbXBsaWNhdGlvbnMgaW4gcG90ZW50aWFsIHRlY2hub2xvZ2ljYWwgYWR2YW5jZXMgYW5kIGVjb25vbWljIGJlbmVmaXRzIGFzIHdlbGwgYXMgaW1wcm92ZW1lbnQgdG8gcXVhbGl0eSBvZiBsaWZlLiBJbiB0aGlzIHByb2plY3Qgd2UgYWltIHRvIGRldmVsb3AgdGhlIG5ldyBJU0YgYmFzZWQgY3JhbmlvcGxhc3R5IG1hbnVmYWN0dXJpbmcgdGVjaG5pcXVlLCB0byBkZXNpZ24gYW5kIGJ1aWxkIGEgYmVzcG9rZSBkZXNrdG9wIElTRiBtYWNoaW5lIGZvciBjcmFuaWFsIHJlY29uc3RydWN0aW9uIHdpdGggZnVsbCBDVC9NUkkgYW5kIENBRC9DQU0gc29mdHdhcmUgaW50ZWdyYXRpb24gYW5kIElTRiBwcm9jZXNzIGF1dG9tYXRpb24uIEJ5IHVzaW5nIHRoZSBkZXZlbG9wZWQgYmVzcG9rZSBJU0YgbWFjaGluZSwgd2Ugd2lsbCBjb25kdWN0IGEgc2VyaWVzIG9mIElTRiBiZW5jaG1hcmsgdGVzdGluZyBhbmQgY3JhbmlhbCByZWNvbnN0cnVjdGlvbiBwcmUtY2xpbmljYWwgdHJpYWxzIG9mIDMgZGVtb25zdHJhdGlvbiBjYXNlIHN0dWRpZXMgdXNpbmcgdGhlIGRldmVsb3BlZCBiZXNwb2tlIElTRiBtYWNoaW5lLiAgVGhlIHByb2plY3Qgd2lsbCBkZW1vbnN0cmF0ZSBpdHMgdGVjaG5pY2FsIHZpYWJpbGl0eSwgZWNvbm9taWMgYmVuZWZpdCBhbmQgcG90ZW50aWFsIGltcHJvdmVtZW50IG9mIHF1YWxpdHkgb2YgbGlmZS4gQnkgdGhlIGVuZCBvZiB0aGUgcHJvamVjdCB3ZSBhaW0gdG8gYWNoaWV2ZSB1cCB0byA5NSUgbWFudWZhY3R1cmluZyBsZWFkIHRpbWUgcmVkdWN0aW9uIHdpdGggYXNzb2NpYXRlZCBjb3N0IGJlbmVmaXRzIGFzIGNvbXBhcmVkIHRvIHRoZSBjb252ZW50aW9uYWwgbWV0aG9kcy4gV2UgYWxzbyBwbGFuIHRvIHNob3cgdGhhdCB0aGUgYmVzcG9rZSBJU0YgbWFjaGluZSBjYW4gYmUgdXNlZCBhcyBhIG5ldyBhbmQgdmlhYmxlIG1lZGljYWwgZGV2aWNlIGZvciBjcmFuaWFsIG1hbnVmYWN0dXJpbmcgYW5kIHRoZXJlIGlzIGEgbmljaGUgbWFya2V0IHBsYWNlIGZvciBzcGVlZHkgY29tbWVyY2lhbCBleHBsb2l0YXRpb24uICA8YnIgLz48YnIgLz5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3Lm5vdHQuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3Lm5vdHQuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTDAyMDg0WC8xDEVQL0wwMjA4NFgvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkg6+1fn3Kqec53chc7aUGZ+k5Al4=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKB37rmAQLQvN++DAKT/OCVA4kyZ9NlznQz8ue7a8f2zhuFknuY" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/L02084X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Developing a Bespoke Incremental Sheet Forming Machine for Cranioplasty</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=82611'>Ou, Dr H</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=9025'>Delcam International plc</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-7118'>Labman Automation Ltd</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1104'>Shanghai Jiao Tong University</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-15691'>UCL Hospitals NHS Trust</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Faculty of Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Nottingham</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">06 October 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">05 October 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="299,705.37" class="DetailValue">299,705</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Manufacturing Machine &amp; Plant</td>
+                                    <td class="DetailValue"> Med.Instrument.Device&amp; Equip.</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> Manufacturing</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>11 Feb 2014</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-1FUG1D">Manufacturing in Healthcare</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Cranioplasty is a surgical procedure for the repair of deformity of a human skull due to brain tumour, stroke or traumatic injuries. Among all available materials, titanium continues to be a main stream material used in cranioplasty surgeries because of its excellent biocompatibility, resistance to infection, excellent material properties and lightweight. However, in spite of the popular use of titanium in cranial reconstruction, there is a wide variety of methods including casting, manual shaping and rubber press forming commonly used in cranial plate manufacture. Even with the assistance of advanced CAD/CAM (computer-aided design and manufacture) and computed tomographic (CT) and magnetic resonance imaging (MRI) technologies, currently the process for manufacturing customised cranial plates by conventional methods normally takes up to two weeks to completion mainly due to the time required for the manufacture of dies and tools. Recent advances in 3D printing or additive manufacturing based techniques make it possible to complete the 3D printing of a cranial or a maxillofacial prosthetic part within several hours. However, there are still a number of impediments including material property and cost issues to be overcome before its wide clinical applications. <br /><br />  <br /><br />This project proposes a novel alternative solution for an even faster and more cost effective method for the manufacture of personalised cranial plates by using the incremental sheet forming (ISF) technique. Our recent work has shown that a typically large size cranial plate can be made satisfactorily by using the ISF process in 7~8 minutes rather than hours or days. This outcome has considerable implications in potential technological advances and economic benefits as well as improvement to quality of life. In this project we aim to develop the new ISF based cranioplasty manufacturing technique, to design and build a bespoke desktop ISF machine for cranial reconstruction with full CT/MRI and CAD/CAM software integration and ISF process automation. By using the developed bespoke ISF machine, we will conduct a series of ISF benchmark testing and cranial reconstruction pre-clinical trials of 3 demonstration case studies using the developed bespoke ISF machine.  The project will demonstrate its technical viability, economic benefit and potential improvement of quality of life. By the end of the project we aim to achieve up to 95% manufacturing lead time reduction with associated cost benefits as compared to the conventional methods. We also plan to show that the bespoke ISF machine can be used as a new and viable medical device for cranial manufacturing and there is a niche market place for speedy commercial exploitation.  <br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.nott.ac.uk                                                                               '>http://www.nott.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

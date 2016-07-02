@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Regularity and dimension for C*-algebras
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN00874X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAwODc0WC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU5PHN0cm9uZz5SZWd1bGFyaXR5IGFuZCBkaW1lbnNpb24gZm9yIEMqLWFsZ2VicmFzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNTA5NjY0Jz5UaWt1aXNpcywgRHIgQSBQPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFFU1hdGhlbWF0aWNhbCBTY2llbmNlc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFlVuaXZlcnNpdHkgb2YgQWJlcmRlZW5kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRpGaXJzdCBHcmFudCAtIFJldmlzZWQgMjAwOWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDAxIEZlYnJ1YXJ5IDIwMTZkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAxN2RkAgUPZBYCAgEPDxYEHwQFBjk4LDIwNx4HVG9vbFRpcAUJOTgsMjA3LjQyZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5AGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA3IFNlcCAyMDE1ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTBFUFNSQyBNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCBTZXB0IDIwMTUfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0yVkc5QkFkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXiHk9wZXJhdG9yIGFsZ2VicmFzIGlzIGEgYnJhbmNoIG9mIG1hdGhlbWF0aWNzIHRoYXQgZGV2ZWxvcGVkIGluIHRoZSByaWdvdXJpc2F0aW9uIG9mIHF1YW50dW0gbWVjaGFuaWNzLiBJdCBwcmltYXJpbHkgY29uY2VybnMgdHdvIGNhdGVnb3JpZXM6IEMqLWFsZ2VicmFzIGFuZCB2b24gTmV1bWFubiBhbGdlYnJhcywgYW5kIGl0IGludm9sdmVzIGludGVyZGlzY2lwbGluYXJ5IHRlY2huaXF1ZXMgd2l0aGluIHB1cmUgbWF0aGVtYXRpY3MsIGRyYXdpbmcgcGFydGljdWxhcmx5IG9uIGZ1bmN0aW9uYWwgYW5hbHlzaXMsIHRvcG9sb2d5LCBhbmQgYWxnZWJyYS48YnIgLz48YnIgLz5CZXlvbmQgdGhlaXIgcXVhbnR1bSBtZWNoYW5pY2FsIG9yaWdpbnMsIEMqLWFsZ2VicmEgdGhlb3J5IGdhaW5lZCBpbXBvcnRhbmNlIGFzIGl0IHdhcyBxdWlja2x5IHJlYWxpc2VkIHRoYXQgQyotYWxnZWJyYXMgY2FuIGJlIGNvbnN0cnVjdGVkIHRvIGNhcHR1cmUga2V5IGluZm9ybWF0aW9uIGFib3V0IG90aGVyIG1hdGhlbWF0aWNhbCBvYmplY3RzLiBDKi1hbGdlYnJhcyBjYW4gYmUgdXNlZCB0byBlbmNvZGUgc3VjaCB0aGluZ3MgYXMgc3ltbWV0cmllcywgbGFyZ2UgZGF0YSBzZXRzLCBuZXR3b3JrcywgYW5kIGR5bmFtaWNhbCBzeXN0ZW1zLiBUaGVzZSBjb25zdHJ1Y3Rpb25zIGZvbGxvdyBhIGNvbW1vbiBwYXR0ZXJuOiBhIG1hdGhlbWF0aWNhbCBvYmplY3QgKHN1Y2ggYXMgYSBncm91cCBvZiBzeW1tZXRyaWVzKSBpcyBpbnB1dCBhbmQgYSBDKi1hbGdlYnJhIGlzIG91dHB1dC4gVGhleSBzdWdnZXN0IGFuIGltcG9ydGFudCBwcm9ibGVtOiB3aGF0IGRvIHByb3BlcnRpZXMgb2YgdGhlIG91dHB1dCBDKi1hbGdlYnJhIHRlbGwgdXMgYWJvdXQgdGhlIGlucHV0IG1hdGhlbWF0aWNhbCBvYmplY3Q/PGJyIC8+PGJyIC8+U3lzdGVtYXRpYyBhbmFseXNpcyBvZiB0aGlzIHByb2JsZW0gcmV2ZWFscyB0aGF0IHRoZSBrZXkgaXMgaW4gdGhlIGNsYXNzaWZpY2F0aW9uIG9mIEMqLWFsZ2VicmFzLiBDbGFzc2lmaWNhdGlvbiBpcyBtb3RpdmF0ZWQgYnkgdGhlIGZhY3QgdGhhdCBkaWZmZXJlbnQgaW5wdXRzIG1heSBwcm9kdWNlIHRoZSBzYW1lIEMqLWFsZ2VicmEsIGFsdGhvdWdoIGl0IGNhbiBiZSBkaWZmaWN1bHQgdG8gc2VlIHRoYXQgdGhleSBhcmUgYWN0dWFsbHkgdGhlIHNhbWUuIENsYXNzaWZpY2F0aW9uIHNvbHZlcyB0aGlzIGJ5IHByb3ZpbmcgdGhhdCB3aGVuIEMqLWFsZ2VicmFzIGFncmVlIG9uIGNlcnRhaW4gaW52YXJpYW50cywgdGhleSBhcmUgdGhlIHNhbWUuIEhlcmUsIGFuIGludmFyaWFudCBpcyBhIHBpZWNlIG9mIGluZm9ybWF0aW9uIGFzc29jaWF0ZWQgdG8gYSBDKi1hbGdlYnJhOyB0aGUgaW52YXJpYW50cyB1c2VkIGluIHRoZSBjbGFzc2lmaWNhdGlvbiBvZiBDKi1hbGdlYnJhcyBhcmUgY2VydGFpbiBvbmVzIHdpdGggbWFueSB0ZWNobmlxdWVzIGF2YWlsYWJsZSB0byBjb21wdXRlIHRoZW0uPGJyIC8+PGJyIC8+UmVjZW50bHksIHRoZSBwcm9ibGVtIG9mIGNsYXNzaWZ5aW5nIEMqLWFsZ2VicmFzIGhhcyB0YWtlbiBhIHNwZWN0YWN1bGFyIHR1cm4sIGluIHdoaWNoIGl0IGhhcyBiZWNvbWUgYXBwYXJlbnQgdGhhdCBjZXJ0YWluIEMqLWFsZ2VicmFzIGNhbm5vdCBiZSBjbGFzc2lmaWVkIHdpdGggdGhlIHRyYWRpdGlvbmFsIGludmFyaWFudHMsIGkuZS4sIHRoZXNlIGludmFyaWFudHMgYXJlIG5vdCBzZW5zaXRpdmUgZW5vdWdoLiBUaG9yb3VnaCBleGFtaW5hdGlvbnMgb2Ygd2h5IHRoaXMgaXMgdGhlIGNhc2UgcmV2ZWFsIHRoYXQgdGhlIG9ic3RydWN0aW9ucyB0byBjbGFzc2lmaWNhdGlvbiBhcmUgcmVsYXRlZCB0byBoaWdoIHRvcG9sb2dpY2FsIGRpbWVuc2lvbi48YnIgLz48YnIgLz5UaGUgZmFjdCB0aGF0IHRvcG9sb2dpY2FsIGRpbWVuc2lvbiBjYW4gYmUgY29uc2lkZXJlZCBmb3IgQyotYWxnZWJyYXMgaXMgbW90aXZhdGVkIGJ5IGEgY2xhc3NpY2FsIHRoZW9yZW0gb2YgR2VsZmFuZDogdGhhdCBDKi1hbGdlYnJhcyBlbmpveWluZyBhIHNwZWNpYWwgcHJvcGVydHkgY2FsbGVkIGNvbW11dGF0aXZpdHkgYXJlIHNpbXBseSBlbmNvZGluZ3Mgb2YgdG9wb2xvZ2ljYWwgc3BhY2VzLiBObyBpbmZvcm1hdGlvbiBpcyBsb3N0IGlmIG9uZSBzdHVkaWVzIGEgc3BhY2UgYnkgbG9va2luZyBvbmx5IGF0IHRoaXMgYWxnZWJyYSBvZiBjb250aW51b3VzIGZ1bmN0aW9ucy4gSW4gcGFydGljdWxhciwgZGltZW5zaW9uIG9mIHRoZSBzcGFjZSBjYW4gYmUgZm9ybXVsYXRlZCBpbiB0ZXJtcyBvZiBwcm9wZXJ0aWVzIG9mIHRoaXMgYWxnZWJyYS4gVXNpbmcgdGhlIHJpZ2h0IGZvcm11bGF0aW9uLCBkaW1lbnNpb24gY2FuIHRoZW4gYmUgZ2VuZXJhbGlzZWQgdG8gbm9uY29tbXV0YXRpdmUgQyotYWxnZWJyYXMsIHByb3ZpZGluZyBlYWNoIEMqLWFsZ2VicmEgd2l0aCBhIG51bWJlciwgaXRzIGRpbWVuc2lvbi48YnIgLz48YnIgLz5UaGUgc3R1ZHkgb2YgQyotYWxnZWJyYSBkaW1lbnNpb24gaGFzIHJldmVhbGVkIHRoYXQ6PGJyIC8+PGJyIC8+KGkpIEZpbml0ZSBkaW1lbnNpb24gaXMgYSByb2J1c3Qgbm90aW9uLCBlcXVpdmFsZW50IHRvIG90aGVyIHByb3BlcnRpZXMgKGNhbGxlZCByZWd1bGFyaXR5IHByb3BlcnRpZXMpIGZvciBteXN0ZXJpb3VzIHJlYXNvbnMsIHdoaWNoIGlzIG5lY2Vzc2FyeSBmb3IgY2xhc3NpZmljYXRpb24gKGFuZCB0byBzb21lIGV4dGVudCwgc3VmZmljaWVudCk7PGJyIC8+PGJyIC8+KGlpKSBGb3IgQyotYWxnZWJyYSBjb25zdHJ1Y3Rpb25zLCB0aGUgcGFydGljdWxhciB2YWx1ZSBvZiBkaW1lbnNpb24gcmVsYXRlcywgaW4gc29tZSBjYXNlcywgdG8ga25vd24gbnVtZXJpY2FsIGludmFyaWFudHMsIHdoaWxlIGluIG90aGVycyBpdCBwcm9kdWNlcyBhIG5ldyBpbnRlcmVzdGluZyBwcm9wZXJ0eS48YnIgLz48YnIgLz5UaGVzZSBhcmUgb2JzZXJ2YXRpb25zIGxhcmdlbHkgYXQgYW4gZW1waXJpY2FsIGxldmVsICh0aGV5IGhvbGQgZm9yIGNlcnRhaW4gZXhhbXBsZXMgb3Igc3BlY2lhbCBjYXNlcywgc3VnZ2VzdGluZyB0aGF0IHRoZXkgc2hvdWxkIGhvbGQgbW9yZSBnZW5lcmFsbHkpOyB0aGUgYmFzaXMgb2YgdGhpcyBwcm9qZWN0IGlzIHRvIHN5c3RlbWF0aWNhbGx5IGludmVzdGlnYXRlIHRoZW0sIHRvIHNob3cgdGhhdCB0aGV5IGFyZSB0cnVlIGF0IGRlZXBlciBhbmQgbW9yZSBnZW5lcmFsIGxldmVscy4gUG9pbnQgKGkpIGlzIGNhcHR1cmVkIGluIGEgbWFqb3IgY29uamVjdHVyZSBvZiBUb21zIGFuZCBXaW50ZXIsIGFuZCB3ZSBhaW0gdG8gcHJvdmUgdGhpcyBjb25qZWN0dXJlLCBhbmQgbWFrZSB0aGUgcmVhc29ucyBsZXNzIG15c3RlcmlvdXMuIEZvciAoaWkpLCB3ZSBhaW0gdG8gZGVlcGVuIG91ciB1bmRlcnN0YW5kaW5nIG9mIHdoYXQgQyotYWxnZWJyYWljIGRpbWVuc2lvbiBtZWFucyBmb3IgQyotYWxnZWJyYSBjb25zdHJ1Y3Rpb25zLCBtYWtpbmcgdGhlIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiBkaW1lbnNpb24gYW5kIG90aGVyIGludmFyaWFudHMgbW9yZSB0cmFuc3BhcmVudC48YnIgLz48YnIgLz5JbnZlc3RpZ2F0aW9ucyBpbnRvIGRpbWVuc2lvbiB0aHVzIGZhciBoYXZlIG9wZW5lZCB1cCBhIG51bWJlciBvZiBuZXcgcmVzZWFyY2ggZGlyZWN0aW9ucywgYW5kIHRoaXMgcHJvamVjdCB3aWxsIGFsc28gcHVyc3VlIHNvbWUgZGlyZWN0aW9ucyB0aGF0IGhhdmUgcG90ZW50aWFsIGZvciBtYWpvciBpbXBhY3QuPGJyIC8+PGJyIC8+VGhlc2Ugd2lsbDo8YnIgLz48YnIgLz4tIFByb2R1Y2UgbmV3IGNvbm5lY3Rpb25zIGJldHdlZW4gdGhlIG1vZGVybiBzdHVkaWVzIG9mIEMqLWFsZ2VicmFzIGFuZCB0b3BvbG9neSwgYW5kPGJyIC8+PGJyIC8+LSBQcm92aWRlIG5ldyBwZXJzcGVjdGl2ZXMgYW5kIGlucm9hZHMgaW50byB0aGUgY2xhc3NpZmljYXRpb24gb2YgQyotYWxnZWJyYXMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5hYmRuLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5hYmRuLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMDg3NFgvMQxFUC9OMDA4NzRYLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZAh12F7hEKW3HJaVVndlqNeIEn/d" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKDk+PNAQLQvN++DAKT/OCVA4+7ApZZLSdlwvsA3mIhuDvBC2f/" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N00874X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Regularity and dimension for C*-algebras</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-509664'>Tikuisis, Dr A P</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Aberdeen</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 February 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="98,207.42" class="DetailValue">98,207</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>07 Sep 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2VG9BA">EPSRC Mathematics Prioritisation Panel Sept 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Operator algebras is a branch of mathematics that developed in the rigourisation of quantum mechanics. It primarily concerns two categories: C*-algebras and von Neumann algebras, and it involves interdisciplinary techniques within pure mathematics, drawing particularly on functional analysis, topology, and algebra.<br /><br />Beyond their quantum mechanical origins, C*-algebra theory gained importance as it was quickly realised that C*-algebras can be constructed to capture key information about other mathematical objects. C*-algebras can be used to encode such things as symmetries, large data sets, networks, and dynamical systems. These constructions follow a common pattern: a mathematical object (such as a group of symmetries) is input and a C*-algebra is output. They suggest an important problem: what do properties of the output C*-algebra tell us about the input mathematical object?<br /><br />Systematic analysis of this problem reveals that the key is in the classification of C*-algebras. Classification is motivated by the fact that different inputs may produce the same C*-algebra, although it can be difficult to see that they are actually the same. Classification solves this by proving that when C*-algebras agree on certain invariants, they are the same. Here, an invariant is a piece of information associated to a C*-algebra; the invariants used in the classification of C*-algebras are certain ones with many techniques available to compute them.<br /><br />Recently, the problem of classifying C*-algebras has taken a spectacular turn, in which it has become apparent that certain C*-algebras cannot be classified with the traditional invariants, i.e., these invariants are not sensitive enough. Thorough examinations of why this is the case reveal that the obstructions to classification are related to high topological dimension.<br /><br />The fact that topological dimension can be considered for C*-algebras is motivated by a classical theorem of Gelfand: that C*-algebras enjoying a special property called commutativity are simply encodings of topological spaces. No information is lost if one studies a space by looking only at this algebra of continuous functions. In particular, dimension of the space can be formulated in terms of properties of this algebra. Using the right formulation, dimension can then be generalised to noncommutative C*-algebras, providing each C*-algebra with a number, its dimension.<br /><br />The study of C*-algebra dimension has revealed that:<br /><br />(i) Finite dimension is a robust notion, equivalent to other properties (called regularity properties) for mysterious reasons, which is necessary for classification (and to some extent, sufficient);<br /><br />(ii) For C*-algebra constructions, the particular value of dimension relates, in some cases, to known numerical invariants, while in others it produces a new interesting property.<br /><br />These are observations largely at an empirical level (they hold for certain examples or special cases, suggesting that they should hold more generally); the basis of this project is to systematically investigate them, to show that they are true at deeper and more general levels. Point (i) is captured in a major conjecture of Toms and Winter, and we aim to prove this conjecture, and make the reasons less mysterious. For (ii), we aim to deepen our understanding of what C*-algebraic dimension means for C*-algebra constructions, making the relationships between dimension and other invariants more transparent.<br /><br />Investigations into dimension thus far have opened up a number of new research directions, and this project will also pursue some directions that have potential for major impact.<br /><br />These will:<br /><br />- Produce new connections between the modern studies of C*-algebras and topology, and<br /><br />- Provide new perspectives and inroads into the classification of C*-algebras.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.abdn.ac.uk                                                                               '>http://www.abdn.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

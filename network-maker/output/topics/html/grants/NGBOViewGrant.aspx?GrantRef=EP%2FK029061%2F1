@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Fractal and multifractal structure of non-conformal repellers
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fK029061%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSzAyOTA2MS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVOPHN0cm9uZz5GcmFjdGFsIGFuZCBtdWx0aWZyYWN0YWwgc3RydWN0dXJlIG9mIG5vbi1jb25mb3JtYWwgcmVwZWxsZXJzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zMTgxMCc+RmFsY29uZXIsIFByb2Zlc3NvciBLPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFGk1hdGhlbWF0aWNzIGFuZCBTdGF0aXN0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUYVW5pdmVyc2l0eSBvZiBTdCBBbmRyZXdzZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8xMyBKYW51YXJ5IDIwMTRkZAIDD2QWAgIBDw8WAh8EBQ8xMiBKYW51YXJ5IDIwMTdkZAIFD2QWAgIBDw8WBB8EBQcyNTMsNTI2HgdUb29sVGlwBQoyNTMsNTI2LjM0ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhVNYXRoZW1hdGljYWwgQW5hbHlzaXMAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTMgTWFyIDIwMTNkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFM01hdGhlbWF0aWNzIFByaW9yaXRpc2F0aW9uIFBhbmVsIE1lZXRpbmcgTWFyY2ggMjAxMx8DBSJOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLVpGWDYzZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFthk8YnIgLz48YnIgLz5PdmVyIHRoZSBwYXN0IDMwIHllYXJzIHJlc2VhcmNoIGluIHRoZSBhcmVhIG9mIGRpbWVuc2lvbiBhbmQgZHluYW1pY3MgaGFzIGRldmVsb3BlZCBlbm9ybW91c2x5LiBUaGlzIHByb2plY3Qgd2lsbCBzdHVkeSB0aGUgZ2VvbWV0cmljIHN0cnVjdHVyZSBhbmQgZGltZW5zaW9uIG9mIGF0dHJhY3RvcnMgYW5kIHJlcGVsbGVycyBvZiBjZXJ0YWluIG5vbi1jb25mb3JtYWwgZHluYW1pY2FsIHN5c3RlbXMsIHdoaWNoIG9mdGVuIGhhdmUgYSBoaWdobHkgY29tcGxpY2F0ZWQgZnJhY3RhbCBmb3JtLjxiciAvPjxiciAvPkEgZHluYW1pY2FsIHN5c3RlbSBlc3NlbnRpYWxseSBjb25zaXN0cyBvZiBhIG1hcHBpbmcgb24gYSBzZXQsIHN1Y2ggYXMgYSByZWdpb24gb2YgdGhlIHBsYW5lLCBpbnRvIGl0c2VsZi4gT2YgcGFydGljdWxhciBpbnRlcmVzdCBhcmUgdGhlIHRyYWplY3RvcmllcyBmb2xsb3dlZCBieSByZXBlYXRlZGx5IGFwcGx5aW5nIHRoZSBtYXBwaW5nIHRvIHNvbWUgaW5pdGlhbCBwb2ludC4gQSByZXBlbGxlciBpcyBhIHNldCB0aGF0IGlzIG1hcHBlZCBpbnRvIGl0c2VsZiwgYnV0IHN1Y2ggdGhhdCBuZWFyYnkgcG9pbnRzIG91dHNpZGUgdGhlIHNldCBtb3ZlIGF3YXkgZnJvbSB0aGUgc2V0IHVuZGVyIGl0ZXJhdGlvbiBvZiB0aGUgbWFwcGluZy4gUmVwZWxsZXJzIG9mdGVuIGhhdmUgYSBmcmFjdGFsIHN0cnVjdHVyZSwgd2l0aCBldmVyIG1vcmUgaW50cmljYXRlIGRldGFpbCBiZWNvbWluZyBhcHBhcmVudCB1bmRlciBjb250aW51ZWQgZW5sYXJnZW1lbnQuIERpbWVuc2lvbiBwcm92aWRlcyBhIHdheSBvZiBtZWFzdXJpbmcgdGhlIHNpemUgYW5kIGNvbXBsZXhpdHkgb2Ygc3VjaCBzZXRzLiBTbW9vdGggZ2VvbWV0cmljYWwgc2hhcGVzIGhhdmUgZGltZW5zaW9ucyB0aGF0IGFyZSB3aG9sZSBudW1iZXJzOiBjdXJ2ZXMgYXJlIDEtZGltZW5zaW9uYWwsIHN1cmZhY2VzIGFyZSAyLWRpbWVuc2lvbmFsLCBldGMuLCByZWZsZWN0aW5nIHRoZSBudW1iZXIgb2YgY29vcmRpbmF0ZXMgbmVlZGVkIHRvIGxvY2F0ZSBwb2ludHMgaW4gdGhlIG9iamVjdC4gVG8gY29wZSB3aXRoIHRoZSBpbnRyaWNhY3kgb2YgZnJhY3RhbCByZXBlbGxlcnMsIG5vdGlvbnMgb2YgZGltZW5zaW9uIHRoYXQgbmVlZCBub3QgYmUgd2hvbGUgbnVtYmVycyBhcmUgcmVxdWlyZWQsIHN1Y2ggYXMgSGF1c2RvcmZmLCBwYWNraW5nIGFuZCBib3gtY291bnRpbmcgZGltZW5zaW9ucywgYW5kIHN1Y2ggZnJhY3Rpb25hbCBkaW1lbnNpb25zIHdpbGwgcGxheSBhIGtleSByb2xlIGluIHRoaXMgcHJvamVjdC48YnIgLz48YnIgLz5NdWNoIHJlc2VhcmNoIGhhcyBmb2N1c2VkIG9uIGNvbmZvcm1hbCBtYXBwaW5ncywgd2hlcmUgdGhlIHJlcGVsbGVycyBhcmUgdGhlIG9mdGVuLXBpY3R1cmVkIEp1bGlhIHNldHMgb2YgY29tcGxleCBkeW5hbWljcy4gVGhlc2UgYXJlIGdlbmVyYWxseSBsb2NhbGx5IHNlbGYtc2ltaWxhciwgdGhhdCBpcyBtYWRlIHVwIG9mIG1hbnkgc21hbGxlciwgbmVhcmx5IHNpbWlsYXIgY29waWVzIG9mIHRoZW1zZWx2ZXMsIGFuZCB0aGVpciBkaW1lbnNpb25zIG9mdGVuIG1heSBiZSBmb3VuZCBieSBzb2x2aW5nIGFuIGVxdWF0aW9uIGtub3duIGFzIHRoZSBCb3dlbi1SdWVsbGUgZm9ybXVsYS48YnIgLz48YnIgLz5Ob24tY29uZm9ybWFsIG1hcHBpbmdzIGxlYWQgdG8gbG9jYWxseSBzZWxmLWFmZmluZSByZXBlbGxlcnMgd2hpY2ggbWF5IGJlIG9mIGEgdmVyeSBkaWZmZXJlbnQgY2hhcmFjdGVyLCB3aXRoIHNtYWxsIHBhcnRzIG9mIHRoZSByZXBlbGxlcnMgYXBwZWFyaW5nIGluY3JlYXNpbmdseSBlbG9uZ2F0ZWQgb3IgZGlzdG9ydGVkIHVuZGVyIGVubGFyZ2VtZW50LiBHaXZlbiByZWNlbnQgcHJvZ3Jlc3MgaW4gdGhlIGFuYWx5c2lzIG9mIHNlbGYtYWZmaW5lIHNldHMsIHdoaWNoIG1heSBiZSB0aG91Z2h0IG9mIGFzIHBpZWNld2lzZSBsaW5lYXIgYW5hbG9ndWVzIG9mIG5vbi1jb25mb3JtYWwgcmVwZWxsZXJzLCBpdCBpcyB0aW1lbHkgdG8gZXh0ZW5kIHRoZSBkaW1lbnNpb24gZm9ybXVsYWUgdG8gYSBub24tY29uZm9ybWFsLCBub25saW5lYXIgc2V0dGluZy4gSG93ZXZlciwgIGZpbmRpbmcgZGltZW5zaW9ucyBvZiBzZWxmLWFmZmluZSBzZXRzIGlzIGZhciBtb3JlIGF3a3dhcmQgdGhhbiBmb3Igc2VsZi1zaW1pbGFyIHNldHMsIG5vdCBsZWFzdCBiZWNhdXNlIHRoZSBkaW1lbnNpb25zIG5lZWQgbm90IHZhcnkgY29udGludW91c2x5IHdpdGggdGhlIGRlZmluaW5nIHRyYW5zZm9ybWF0aW9ucy4gQnkgYW5hbG9neSwgaXQgbWF5IGJlIGRpZmZpY3VsdCB0byBvYnRhaW4gZGltZW5zaW9uIGZvcm11bGFlIHRoYXQgYXJlIHZhbGlkIGluIGV2ZXJ5IHNpdHVhdGlvbiwgc28gYSBtYWpvciBwYXJ0IG9mIHRoZSBwcm9qZWN0IHdpbGwgYmUgdG8gc2VlayBnZW5lcmljIGZvcm11bGFlIHRoYXQgYXJlICdhbG1vc3QgYWx3YXlzJyB2YWxpZCBpbiBhbiBhcHByb3ByaWF0ZSBzZW5zZS4gSW4gdGhlIGNvbmZvcm1hbCBzZXR0aW5nLCB0aGUgdGhlcm1vZHluYW1pYyBmb3JtYWxpc20gaXMgYW4gaW1wb3J0YW50IHRvb2wgZm9yIGZpbmRpbmcgdGhlIGRpbWVuc2lvbnMsIGJ1dCBmb3Igbm9uLWNvbmZvcm1hbCBzeXN0ZW1zIGEgJ3N1YmFkZGl0aXZlJyB2ZXJzaW9uIG9mIHRoZSB0aGVybW9keW5hbWljIGZvcm1hbGlzbSB3aWxsIGJlIG5lZWRlZC48YnIgLz48YnIgLz5PZiBjb3Vyc2UsIGl0IGlzIGRlc2lyYWJsZSB0byBrbm93IHdpdGggY2VydGFpbnR5IHRoZSBkaW1lbnNpb24gb2Ygc3BlY2lmaWMgcmVwZWxsZXJzLCByYXRoZXIgdGhhbiBqdXN0IGZpbmRpbmcgZm9ybXVsYWUgdGhhdCBhcmUgdmFsaWQgZ2VuZXJpY2FsbHksIHNvIHRoZSBwcm9qZWN0IHdpbGwgYWxzbyBpZGVudGlmeSBjbGFzc2VzIG9mIGZ1bmN0aW9ucyBmb3Igd2hpY2ggdGhlIGdlbmVyaWMgZm9ybXVsYWUgY2FuIGJlIGd1YXJhbnRlZWQgdG8gZ2l2ZSB0aGUgYWN0dWFsIHZhbHVlIG9mIGRpbWVuc2lvbi4gQSBmdXJ0aGVyIGxpbmUgb2YgaW52ZXN0aWdhdGlvbiB3aWxsIGNvbnNpZGVyIGRpc3RyaWJ1dGlvbnMgb2YgbWFzcyBhY3Jvc3Mgbm9uLWNvbmZvcm1hbCByZXBlbGxlcnMsIHdpdGggdGhlIGFpbSBvZiB1c2luZyBhbmFsb2d1ZXMgb2YgZnJhY3Rpb25hbCBkaW1lbnNpb25zIHRvIHF1YW50aWZ5IHRoZSBpcnJlZ3VsYXJpdGllcyBvZiBkaXN0cmlidXRpb24sIGFuIGFyZWEga25vd24gYXMgbXVsdGlmcmFjdGFsIGFuYWx5c2lzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc3QtYW5kLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc3QtYW5kLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDI5MDYxLzEMRVAvSzAyOTA2MS8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSoBSU2zY6GZ0JWyE/kwG70svKokg==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKiuMC+DwLQvN++DAKT/OCVA9MeO1Tbb5yFuoGIukL4mNBHBEKH" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/K029061/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Fractal and multifractal structure of non-conformal repellers</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=31810'>Falconer, Professor K</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics and Statistics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of St Andrews</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">13 January 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">12 January 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="253,526.34" class="DetailValue">253,526</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>13 Mar 2013</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-ZFX63">Mathematics Prioritisation Panel Meeting March 2013</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract"><br /><br />Over the past 30 years research in the area of dimension and dynamics has developed enormously. This project will study the geometric structure and dimension of attractors and repellers of certain non-conformal dynamical systems, which often have a highly complicated fractal form.<br /><br />A dynamical system essentially consists of a mapping on a set, such as a region of the plane, into itself. Of particular interest are the trajectories followed by repeatedly applying the mapping to some initial point. A repeller is a set that is mapped into itself, but such that nearby points outside the set move away from the set under iteration of the mapping. Repellers often have a fractal structure, with ever more intricate detail becoming apparent under continued enlargement. Dimension provides a way of measuring the size and complexity of such sets. Smooth geometrical shapes have dimensions that are whole numbers: curves are 1-dimensional, surfaces are 2-dimensional, etc., reflecting the number of coordinates needed to locate points in the object. To cope with the intricacy of fractal repellers, notions of dimension that need not be whole numbers are required, such as Hausdorff, packing and box-counting dimensions, and such fractional dimensions will play a key role in this project.<br /><br />Much research has focused on conformal mappings, where the repellers are the often-pictured Julia sets of complex dynamics. These are generally locally self-similar, that is made up of many smaller, nearly similar copies of themselves, and their dimensions often may be found by solving an equation known as the Bowen-Ruelle formula.<br /><br />Non-conformal mappings lead to locally self-affine repellers which may be of a very different character, with small parts of the repellers appearing increasingly elongated or distorted under enlargement. Given recent progress in the analysis of self-affine sets, which may be thought of as piecewise linear analogues of non-conformal repellers, it is timely to extend the dimension formulae to a non-conformal, nonlinear setting. However,  finding dimensions of self-affine sets is far more awkward than for self-similar sets, not least because the dimensions need not vary continuously with the defining transformations. By analogy, it may be difficult to obtain dimension formulae that are valid in every situation, so a major part of the project will be to seek generic formulae that are 'almost always' valid in an appropriate sense. In the conformal setting, the thermodynamic formalism is an important tool for finding the dimensions, but for non-conformal systems a 'subadditive' version of the thermodynamic formalism will be needed.<br /><br />Of course, it is desirable to know with certainty the dimension of specific repellers, rather than just finding formulae that are valid generically, so the project will also identify classes of functions for which the generic formulae can be guaranteed to give the actual value of dimension. A further line of investigation will consider distributions of mass across non-conformal repellers, with the aim of using analogues of fractional dimensions to quantify the irregularities of distribution, an area known as multifractal analysis.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.st-and.ac.uk                                                                             '>http://www.st-and.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

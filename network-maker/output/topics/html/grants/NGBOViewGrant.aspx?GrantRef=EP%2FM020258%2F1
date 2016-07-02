@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Mathematical models and algorithms for allocating scarce airport resources (OR-MASTER)
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM020258%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAyMDI1OC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVnPHN0cm9uZz5NYXRoZW1hdGljYWwgbW9kZWxzIGFuZCBhbGdvcml0aG1zIGZvciBhbGxvY2F0aW5nIHNjYXJjZSBhaXJwb3J0IHJlc291cmNlcyAoT1ItTUFTVEVSKTwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFSDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTQ1OTAyMyc+Wm9ncmFmb3MsIFByb2Zlc3NvciBLPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNEPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zNjQzNSc+QnVya2UsIFByb2Zlc3NvciBFSzwvYT5IPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01OTc1Jz5HbGF6ZWJyb29rLCBQcm9mZXNzb3IgS0Q8L2E+AGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8HAgYWDAIBD2QWAmYPFQNhPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTM0ODA3Jz5BZHYgU3lzdCBmb3IgQWlyIFRyYWZmaWMgQ29udHJvbCAoU0lDVEEpPC9hPkc8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMTQ1NzInPkFpciBGcmFuY2UgS0xNPC9hPlU8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzQ4MTQnPkFpcnBvcnQgU2VydmljZXMgQXNzb2NpYXRpb248L2E+ZAICD2QWAmYPFQNbPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTM0ODE1Jz5BaXJwb3J0cyBDb3VuY2lsIEludGwgKEFDSSkgRXVyb3BlPC9hPlU8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzQ4MTInPkF0aGVucyBJbnRlcm5hdGlvbmFsIEFpcnBvcnQ8L2E+RDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0zNDgxMyc+Q1JJREEgQS5JLkU8L2E+ZAIDD2QWAmYPFQNDPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTk0NTcnPkV1cm9jb250cm9sPC9hPlM8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMTI2MCc+R2VybWFuIEFlcm9zcGFjZSBDZW50cmUgRExSPC9hPkk8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzQ4MTEnPkdvbGRhaXIgSGFuZGxpbmc8L2E+ZAIED2QWAmYPFQNUPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTM0ODE2Jz5IQUxBIFNFU0FSIFJlc2VhcmNoIE5ldHdvcms8L2E+XDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTUyODEnPk1hc3NhY2h1c2V0dHMgSW5zdGl0dXRlIG9mIFRlY2hub2xvZ3k8L2E+QDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS05NTE4Jz5OQVRTIEx0ZDwvYT5kAgUPZBYCZg8VA008YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzQ4MTAnPk5FWFRPUi1JSSBDb25zb3J0aXVtPC9hPlo8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMjc4MzcnPk5vcnRocm9wIEdydW1tYW4gUGFyayBBaXIgU3lzdGVtczwvYT4+PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTM3NTE3Jz5TRVNBUjwvYT5kAgYPZBYCZg8VA0c8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMTI4MzgnPlp1cmljaCBBaXJwb3J0PC9hPgAAZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRJNYW5hZ2VtZW50IFNjaWVuY2VkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRRMYW5jYXN0ZXIgVW5pdmVyc2l0eWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEFByb2dyYW1tZSBHcmFudHNkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBPY3RvYmVyIDIwMTVkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAyMWRkAgUPZBYCAgEPDxYEHwQFCTIsMjYyLDQ2OR4HVG9vbFRpcAUMMiwyNjIsNDY4LjY0ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgIWBAIBD2QWAmYPFQIXQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UaTWF0aGVtYXRpY2FsIEFzcGVjdHMgb2YgT1JkAgIPZBYCZg8VAh5UcmFuc3BvcnQgT3BzICZhbXA7IE1hbmFnZW1lbnQAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAh5UcmFuc3BvcnQgU3lzdGVtcyBhbmQgVmVoaWNsZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTggRmViIDIwMTVkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFM1Byb2dyYW1tZSBHcmFudCBJbnRlcnZpZXdzIChNYXRocykgMTggRmVicnVhcnkgMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTJLU0czTmRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBbUeQ29uZ2VzdGlvbiBhdCBtYWpvciBhaXJwb3J0cyBpbiB0aGUgVUsgYW5kIGFjcm9zcyBFdXJvcGUgYW5kIHRoZSByZXN0IG9mIHRoZSB3b3JsZCBpcyBhIHNlcmlvdXMgYW5kIGdyb3dpbmcgcHJvYmxlbS4gQWxyZWFkeSBIZWF0aHJvdyBmYWNlcyBwcm9ibGVtcyBvY2Nhc2lvbmVkIGJ5IHNlcmlvdXMgY29uZ2VzdGlvbiBmb3IgYSBtYWpvciBwYXJ0IG9mIHRoZSBkYXkgd2hpbGUgYXQgR2F0d2ljayBkZW1hbmQgaXMgZXhwZWN0ZWQgdG8gZXhjZWVkIGNhcGFjaXR5IGZvciAxNyBob3VycyBwZXIgZGF5IGJ5IDIwMjUuIEFjY29yZGluZyB0byBhIEV1cm9jb250cm9sIHN0dWR5LCBwbGFubmVkIGNhcGFjaXR5IGF0IHRoZSAxMzggRXVyb2NvbnRyb2wgU3RhdGlzdGljYWwgUmVmZXJlbmNlIEFyZWEgKEVTUkEpIGFpcnBvcnRzIGlzIGV4cGVjdGVkIHRvIGluY3JlYXNlIGJ5IDQxJSBpbiB0b3RhbCBieSAyMDMwLCB3aXRoIGRlbWFuZCBleGNlZWRpbmcgYWlycG9ydCBjYXBhY2l0eSBieSBhcyBtdWNoIGFzIDIuMyBtaWxsaW9uIGZsaWdodHMgKG9yIDExJSkgaW4gdGhlIG1vc3QtbGlrZWx5IGZvcmVjYXN0IGdyb3d0aCBzY2VuYXJpby4gPGJyIC8+PGJyIC8+VGhlIGRldmVsb3BtZW50IGFuZCBkZXBsb3ltZW50IG9mIGFpcnBvcnQgY2FwYWNpdHkgaXMgYSBtYWpvciBzb2NpZXRhbCBpc3N1ZSBlbmdlbmRlcmluZyBpbnRlbnNlIHB1YmxpYyBkZWJhdGUgaW4gdGhlIFVLIGFuZCBhcm91bmQgdGhlIHdvcmxkLjxiciAvPjxiciAvPkNhcGFjaXR5IGF0IGNvbmdlc3RlZCBhaXJwb3J0cyBpcyBleHByZXNzZWQgaW4gc2xvdHMuIEEgc2xvdCBpZGVudGlmaWVzIGEgdGltZSBpbnRlcnZhbCBvbiBhIHNwZWNpZmljIGRhdGUgZHVyaW5nIHdoaWNoIGEgY2FycmllciBpcyBwZXJtaXR0ZWQgdG8gdXNlIHRoZSBhaXJwb3J0IGluZnJhc3RydWN0dXJlIGZvciBsYW5kaW5nIG9yIHRha2Utb2ZmLiBDdXJyZW50IHNsb3QgYWxsb2NhdGlvbiBwcm9jZWR1cmVzIHN1ZmZlciAoaW50ZXIgYWxpYSkgZnJvbSB0aGUgZm9sbG93aW5nIGxpbWl0YXRpb25zOjxiciAvPjxiciAvPjEpU2ltcGxpc3RpYyBtb2RlbGxpbmcgb2YgdGhlIG9iamVjdGl2ZXMgYW5kIG9wZXJhdGlvbmFsL3JlZ3VsYXRvcnkgY29uc3RyYWludHMgYmVhcmluZyBvbiB0aGUgbXVsdGlwbGUgc3Rha2Vob2xkZXJzIGludm9sdmVkIGluIChhbmQgYWZmZWN0ZWQgYnkpIHRoZSBzbG90IGFsbG9jYXRpb24gcHJvY2Vzcy48YnIgLz48YnIgLz4yKUluc3VmZmljaWVudCBjYXB0dXJlIG9mIHRoZSBpbnRlcmFjdGlvbnMgZW5jb3VudGVyZWQgaW4gYWlycG9ydCBuZXR3b3Jrcy48YnIgLz48YnIgLz4zKVRoZSB1c2Ugb2YgZW1waXJpY2FsIG9yIGFkIGhvYyBwcm9jZXNzZXMgZm9yIGRldGVybWluaW5nIChyYXRoZXIgdGhhbiBjb21wdXRpbmcpIGRlY2xhcmVkIGNhcGFjaXR5IHdoaWNoIGFkZHJlc3MgbmVpdGhlciB0aGUgdW5jZXJ0YWludGllcyBpbnZvbHZlZCBpbiBhaXJwb3J0IGNhcGFjaXR5IGFzc2Vzc21lbnQgbm9yIHRoZSBjb21wbGV4aXR5IGFuZCBzaXplIG9mIHRoZSByZWFsLXdvcmxkIHByb2JsZW0sIGV2ZW4gYXQgdGhlIHNpbmdsZS1haXJwb3J0IGxldmVsLjxiciAvPjxiciAvPkNvbnNlcXVlbnRseSwgZXhpc3RpbmcgYXBwcm9hY2hlcyB0byB0aGUgYWxsb2NhdGlvbiBvZiBhaXJwb3J0IGNhcGFjaXR5IGZhaWwgaW4gYSBudW1iZXIgb2YgY3JpdGljYWwgd2F5cyB0byByZWZsZWN0IHRoZSBjb21wbGV4aXRpZXMgcHJlc2VudGVkIGJ5IHRoZSByZWFsIHdvcmxkLiBUaGlzIGNyZWF0ZXMgYWxsb2NhdGlvbiBpbmVmZmljaWVuY2llcyB3aGljaCwgaW4gdHVybiwgcmVzdWx0IGluIHBvb3IgYWlycG9ydCBjYXBhY2l0eSB1dGlsaXNhdGlvbiB3aXRoIHNpZ25pZmljYW50IG5lZ2F0aXZlIGltcGFjdHMgb24gYWlycG9ydCByZXZlbnVlcywgYWlybGluZSBvcGVyYXRpbmcgY29zdHMsIHRoZSBsZXZlbCBvZiBzZXJ2aWNlIG9mZmVyZWQgdG8gcGFzc2VuZ2VycyBhbmQgdGhlIGVudmlyb25tZW50LjxiciAvPjxiciAvPlRoZXJlIGlzIHRodXMgYSBwcmVzc2luZyBuZWVkIHRvIG1lZXQgdGhlIG1ham9yIHNjaWVudGlmaWMgY2hhbGxlbmdlIG9mIGRldmVsb3Bpbmcgbm92ZWwgbWF0aGVtYXRpY2FsIG1vZGVscyBhbmQgc29sdXRpb24gYXBwcm9hY2hlcyB0byB0cmFuc2Zvcm0gdGhlIGFpcnBvcnQgc2xvdCBhbGxvY2F0aW9uIHByb2Nlc3MgYW5kIGl0cyBhc3NvY2lhdGVkIG91dGNvbWVzLiBUaGUgcHJvZ3JhbW1lIGdyYW50IGFpbXMgdG8gZG8ganVzdCB0aGF0IGZvciBhIHNpbmdsZSBhaXJwb3J0IGFuZCBmb3IgYSBuZXR3b3JrIG9mIGFpcnBvcnRzLiBNYXRoZW1hdGljYWwgbW9kZWxzIHdpbGwgYmUgZGV2ZWxvcGVkIGFuZCBhbmFseXNlZCB3aGljaCBjb25zaWRlciB0aGUgb2JqZWN0aXZlcyBhbmQgcmVxdWlyZW1lbnRzIG9mIGFsbCBzdGFrZWhvbGRlcnMgYW5kIHdoaWNoIHRha2UgYWNjb3VudCBvZiBhIHdpZGUgcmFuZ2Ugb2Ygb3BlcmF0aW9uYWwgYW5kIHJlZ3VsYXRvcnkgY29uc3RyYWludHMuIFRoZSBpbnRyaW5zaWMgY29tcGxleGl0eSBvZiB0aGUgcHJvcG9zZWQgcHJvZ3JhbW1lIGFuZCBpdHMgbGFyZ2Ugc2NhbGUgKGVzcGVjaWFsbHkgZm9yIHRoZSBjYXNlIG9mIHRoZSBuZXR3b3JrLXdpZGUgc2xvdCBhbGxvY2F0aW9uKSB3aWxsIG1lYW4gdGhhdCBpdCB3aWxsIHByb3ZpZGUgYW4gZXhjZWxsZW50IHRlc3QtYmVkIGZvciB0aGUgZGV2ZWxvcG1lbnQgb2YgbmV3IGhldXJpc3RpY3MgYW5kIGh5cGVyIGhldXJpc3RpY3MgZm9yIGxhcmdlIHNjYWxlIGNvbXBsZXggc2NoZWR1bGluZyBwcm9ibGVtcyBtb3JlIHdpZGVseS4gQWxnb3JpdGhtcyB0aGF0IHdpbGwgYmUgZGV2ZWxvcGVkIGFuZCB0ZXN0ZWQgYnkgdGhpcyBwcm9qZWN0IHdpbGwgcHJvdmlkZSBlc3NlbnRpYWwgc3VwcG9ydCBmb3IgdGhlIGNvbXBsZXggbGFyZ2Ugc2NhbGUgY2FwYWNpdHkgYWxsb2NhdGlvbiBwcm9ibGVtcyB0aGF0IGFyaXNlIGluIG90aGVyIHR5cGVzIG9mIHRyYW5zcG9ydGF0aW9uIG5ldHdvcmtzLCBpbmNsdWRpbmcgcmFpbCBuZXR3b3Jrcy4gSW4gYWRkaXRpb24sIGl0IGNvdWxkIGV4dGVuZCB0byBvdGhlciB0eXBlcyBvZiBuZXR3b3JrcyB0aGF0IHNoYXJlIHNpbWlsYXIgcHJvYmxlbSBzdHJ1Y3R1cmVzLCBzdWNoIGFzIHRob3NlIGluIGVuZXJneSBhbmQgdGVsZWNvbW11bmljYXRpb25zLjxiciAvPjxiciAvPlRoZSBtb2RlbHMgYW5kIHNvbHV0aW9uIHRlY2huaXF1ZXMgZGV2ZWxvcGVkIHdpbGwgdW5kZXJwaW4gdGhlIGRldmVsb3BtZW50IG9mIG5vdmVsIGRlY2lzaW9uIHN1cHBvcnQgc3lzdGVtcyB3aGljaCBoYXZlIHRoZSBwb3RlbnRpYWwgdG8gbWFrZSBhIG1ham9yIGltcGFjdCBvbiBhaXJwb3J0IG9wZXJhdGlvbnMuIFRoZSByZXNlYXJjaCB0ZWFtIGhhcyBhbiBpbnRlcm5hdGlvbmFsbHkgbGVhZGluZyBwcm9maWxlIGluIHRoZSBhcmVhcyBvZiBtYXRoZW1hdGljYWwgbW9kZWxsaW5nLCBoZXVyaXN0aWMgZGV2ZWxvcG1lbnQsIHN0b2NoYXN0aWMgb3B0aW1pemF0aW9uLCBhaXJwb3J0IHNsb3QgYWxsb2NhdGlvbiwgYWlycG9ydCBtYW5hZ2VtZW50IGFuZCBwZXJmb3JtYW5jZSBhc3Nlc3NtZW50LiBJdCBoYXMgYW4gZXhjZWxsZW50IHRyYWNrIHJlY29yZCBvZiByZXNlYXJjaCBjb29wZXJhdGlvbiB3aXRoIGFsbCBjYXRlZ29yaWVzIG9mIHN0YWtlaG9sZGVycy4gSXQgd2lsbCBjb29wZXJhdGUgY2xvc2VseSB3aXRoIGFuIGltcHJlc3NpdmUgYXJyYXkgb2YgbGVhZGluZyBpbmR1c3RyeSBzdGFrZWhvbGRlcnMgaW4gb3JkZXIgdG8gbWFrZSBzdXJlIHRoYXQgdGhlIHdvcmsgaXMgYXMgY3V0dGluZyBlZGdlIGluZHVzdHJpYWxseSBhcyBpdCBpcyBzY2llbnRpZmljYWxseS48YnIgLz48YnIgLz5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmxhbmNzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmxhbmNzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTAyMDI1OC8xDEVQL00wMjAyNTgvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkIfMH28XII1ur+AtT8OQd/svE+88=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKQ74+vAQLQvN++DAKT/OCVAzD6vyuq6yZvcTm/iLEGv3QGOgDu" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M020258/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Mathematical models and algorithms for allocating scarce airport resources (OR-MASTER)</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-459023'>Zografos, Professor K</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=36435'>Burke, Professor EK</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=5975'>Glazebrook, Professor KD</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-34807'>Adv Syst for Air Traffic Control (SICTA)</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-14572'>Air France KLM</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-34814'>Airport Services Association</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-34815'>Airports Council Intl (ACI) Europe</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-34812'>Athens International Airport</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-34813'>CRIDA A.I.E</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=19457'>Eurocontrol</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-1260'>German Aerospace Centre DLR</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-34811'>Goldair Handling</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-34816'>HALA SESAR Research Network</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=5281'>Massachusetts Institute of Technology</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-9518'>NATS Ltd</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-34810'>NEXTOR-II Consortium</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-27837'>Northrop Grumman Park Air Systems</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-37517'>SESAR</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-12838'>Zurich Airport</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Management Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Lancaster University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Programme Grants</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2021</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="2,262,468.64" class="DetailValue">2,262,469</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Mathematical Aspects of OR</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Transport Ops &amp; Management</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Transport Systems and Vehicles</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>18 Feb 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2KSG3N">Programme Grant Interviews (Maths) 18 February 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Congestion at major airports in the UK and across Europe and the rest of the world is a serious and growing problem. Already Heathrow faces problems occasioned by serious congestion for a major part of the day while at Gatwick demand is expected to exceed capacity for 17 hours per day by 2025. According to a Eurocontrol study, planned capacity at the 138 Eurocontrol Statistical Reference Area (ESRA) airports is expected to increase by 41% in total by 2030, with demand exceeding airport capacity by as much as 2.3 million flights (or 11%) in the most-likely forecast growth scenario. <br /><br />The development and deployment of airport capacity is a major societal issue engendering intense public debate in the UK and around the world.<br /><br />Capacity at congested airports is expressed in slots. A slot identifies a time interval on a specific date during which a carrier is permitted to use the airport infrastructure for landing or take-off. Current slot allocation procedures suffer (inter alia) from the following limitations:<br /><br />1)Simplistic modelling of the objectives and operational/regulatory constraints bearing on the multiple stakeholders involved in (and affected by) the slot allocation process.<br /><br />2)Insufficient capture of the interactions encountered in airport networks.<br /><br />3)The use of empirical or ad hoc processes for determining (rather than computing) declared capacity which address neither the uncertainties involved in airport capacity assessment nor the complexity and size of the real-world problem, even at the single-airport level.<br /><br />Consequently, existing approaches to the allocation of airport capacity fail in a number of critical ways to reflect the complexities presented by the real world. This creates allocation inefficiencies which, in turn, result in poor airport capacity utilisation with significant negative impacts on airport revenues, airline operating costs, the level of service offered to passengers and the environment.<br /><br />There is thus a pressing need to meet the major scientific challenge of developing novel mathematical models and solution approaches to transform the airport slot allocation process and its associated outcomes. The programme grant aims to do just that for a single airport and for a network of airports. Mathematical models will be developed and analysed which consider the objectives and requirements of all stakeholders and which take account of a wide range of operational and regulatory constraints. The intrinsic complexity of the proposed programme and its large scale (especially for the case of the network-wide slot allocation) will mean that it will provide an excellent test-bed for the development of new heuristics and hyper heuristics for large scale complex scheduling problems more widely. Algorithms that will be developed and tested by this project will provide essential support for the complex large scale capacity allocation problems that arise in other types of transportation networks, including rail networks. In addition, it could extend to other types of networks that share similar problem structures, such as those in energy and telecommunications.<br /><br />The models and solution techniques developed will underpin the development of novel decision support systems which have the potential to make a major impact on airport operations. The research team has an internationally leading profile in the areas of mathematical modelling, heuristic development, stochastic optimization, airport slot allocation, airport management and performance assessment. It has an excellent track record of research cooperation with all categories of stakeholders. It will cooperate closely with an impressive array of leading industry stakeholders in order to make sure that the work is as cutting edge industrially as it is scientifically.<br /><br /></span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.lancs.ac.uk                                                                              '>http://www.lancs.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

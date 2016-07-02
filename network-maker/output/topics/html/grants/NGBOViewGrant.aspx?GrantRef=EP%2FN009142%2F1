@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Dynamic Environment Prediction: safe launch and recovery in high sea states: Part of The Launch and Recovery Co-Creation Initiative.
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN009142%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAwOTE0Mi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWVATxzdHJvbmc+RHluYW1pYyBFbnZpcm9ubWVudCBQcmVkaWN0aW9uOiBzYWZlIGxhdW5jaCBhbmQgcmVjb3ZlcnkgaW4gaGlnaCBzZWEgc3RhdGVzOiBQYXJ0IG9mIFRoZSBMYXVuY2ggYW5kIFJlY292ZXJ5IENvLUNyZWF0aW9uIEluaXRpYXRpdmUuPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVFPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xMjEwJz5CZWxtb250LCBQcm9mZXNzb3IgTVI8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA0E8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS00NTc0MDknPkRyIEogQ2hyaXN0bWFzPC9hPgAAZAIFD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VA0U8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwMTQ4Jz5CQUUgU3lzdGVtczwvYT49PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDU1MSc+RVNJPC9hPlM8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwOTk3Jz5NaW5pc3RyeSBvZiBEZWZlbmNlIChNT0QpPC9hPmQCAg9kFgJmDxUDYDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0zOTQxMSc+U3lzdGVtcyBFbmdpbmVlcmluZyBhbmQgQXNzZXNzbWVudCBMdGQuPC9hPkU8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tMzAwNDMnPlplbm90ZWNoIEx0ZDwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSZFbmdpbmVlcmluZyBDb21wdXRlciBTY2llbmNlIGFuZCBNYXRoc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFFVuaXZlcnNpdHkgb2YgRXhldGVyZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ0wMSBBcHJpbCAyMDE2ZGQCAw9kFgICAQ8PFgIfBAUNMzEgTWFyY2ggMjAxOWRkAgUPZBYCAgEPDxYEHwQFBzU3NywzNzceB1Rvb2xUaXAFCjU3NywzNzcuMzdkZAIKD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VAhNDb250cm9sIEVuZ2luZWVyaW5nEkRlc2lnbiBFbmdpbmVlcmluZ2QCAg9kFgJmDxUCDkZsdWlkIER5bmFtaWNzIEludGVsbGlnZW50ICZhbXA7IEV4cGVydCBTeXN0ZW1zZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAh1BZXJvc3BhY2UsIERlZmVuY2UgYW5kIE1hcmluZQBkAgwPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUEQzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9OMDA4NzA3LzEnPkVQL04wMDg3MDcvMTwvYT4AAABkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwcCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQswMSBPY3QgMjAxNWRkAgEPDxYCHwgFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAU3RW5naW5lZXJpbmcgUHJpb3JpdGlzYXRpb24gUGFuZWwgTWVldGluZyAxIE9jdG9iZXIgMjAxNR8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTJKTEFXQmRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBf0PVGhpcyBwcm9qZWN0IGlzIG9uZSBvZiB0aGUgc21hbGwgbnVtYmVyIG9mIHByb3Bvc2FscyBzZWxlY3RlZCBieSBhbiBpbmR1c3RyaWFsIGNvbnNvcnRpdW0gaW4gY29sbGFib3JhdGlvbiB3aXRoIEVQU1JDIHRvIGdvIGZvcndhcmQgYXMgZnVsbCBwcm9wb3NhbHMgdG8gdGhlIEVQU1JDIExhdW5jaCBhbmQgUmVjb3ZlcnkgQ28tQ3JlYXRpb24gSW5pdGlhdGl2ZS4gSXQgaW52b2x2ZXMgYSBjb2xsYWJvcmF0aW9uIGJldHdlZW4gRXhldGVyIGFuZCBTb3V0aGFtcHRvbiBVbml2ZXJzaXRpZXMsIFNjcmlwcHMgSW5zdGl0dXRpb24gb2YgT2NlYW5vZ3JhcGh5IChVU0EpLCBCQUUgU3lzdGVtcywgTU9EIGFuZCBPQ0VBTldBVkVTIChHZXJtYW55KS4gSXQgaXMgc3VwcG9ydGVkIGJ5IGEgbWVudG9yaW5nL2Rpc3NlbWluYXRpb24gZ3JvdXAgY29tcHJpc2luZzogQkFFIFN5c3RlbXMsIE1PRCwgU0VBIEx0ZCwgWmVub3RlY2ggYW5kIEVTSSBHcm91cC4gIFRoZSBwcmFjdGljYWwgZHJpdmVyIGlzIHRvIGVuYWJsZSBhIHdpZGUgcmFuZ2Ugb2Ygd2F2ZSBsaW1pdGVkIG1hcml0aW1lIG9wZXJhdGlvbnMgdG8gYmUgY2FycmllZCBvdXQgc2FmZWx5IGF0IGhpZ2hlciBzZWEgc3RhdGVzIHRoYW4gaXMgcHJlc2VudGx5IGZlYXNpYmxlLiBQYXJ0aWN1bGFybHkgaW1wb3J0YW50IGV4YW1wbGVzIGFyZSBsYXVuY2ggYW5kIHJlY292ZXJ5IG9wZXJhdGlvbnMgZnJvbSBtb3RoZXIgc2hpcHMgb2Ygc21hbGwgYm9hdHMsIG1hbm5lZCBhbmQgdW5tYW5uZWQgYWlyIHZlaGljbGVzLCBhbmQgc3VibWVyc2libGVzLiBUaGUgcmVzZWFyY2ggY29uY2VybnMgdGhlIHR3byBjb3VwbGVkIGFyZWFzIG9mOiAoYSkgcHJlZGljdGluZyB0aGUgYWN0dWFsIHNoYXBlIG9mIHNlYSB3YXZlcywgdGVybWVkIERldGVybWluaXN0aWMgU2VhIFdhdmUgUHJlZGljdGlvbiBhbmQgdGhlIGFwcGxpY2F0aW9uIG9mIHRoaXMgdG8gcHJlZGljdGluZyBjYWxtZXIgcGVyaW9kcyBpbiBvdGhlcndpc2UgbGFyZ2Ugc2VhcyAoUXVpZXNjZW50IFBlcmlvZCBQcmVkaWN0aW9uKSwgYW5kIChiKSBhIGNvbXByZWhlbnNpdmUgaW52ZXN0aWdhdGlvbiBvZiB0aGUgcHJvcGVydGllcyBvZiBzdWNoIHF1aWVzY2VudCBwZXJpb2RzIGFuZCB0aGUgY3JlYXRpb24gb2YgYSBxdWllc2NlbmNlIHNpbXVsYXRvci4gVGhlIHJlc2VhcmNoIGludm9sdmVzIGFuIGludGVncmF0ZWQgY29tYmluYXRpb24gb2YgY2hhbGxlbmdpbmcgZnVuZGFtZW50YWwgbmV3IHRoZW9yeSwgc2ltdWxhdGlvbiwgbGFyZ2Ugc2NhbGUgZGF0YSBhbmFseXNpcyBhbmQgZXhwZXJpbWVudGFsIHRlc3RpbmcuICBBbiBhcHBsaWNhdGlvbnMgb3ZlcnNpZ2h0LCBkZXNpZ25lZCB0byBmYWNpbGl0YXRlIHBvc3QgcHJvamVjdCB0aGUgb3B0aW11bSBwdXNoIHRocm91Z2ggdG8gaGlnaGVyIHRlY2hub2xvZ3kgcmVhZGluZXNzIGxldmVscywgaXMgcHJvdmlkZWQgYnkgdGhlIGluZHVzdHJpYWwgbWVudG9yaW5nIHBhbmVsLiBNT0QgYW5kIEJBRSBTeXN0ZW1zIGFyZSBhbHNvIHJlc2VhcmNoIHBhcnRuZXJzLiBUaGUgcmVzZWFyY2ggd2lsbCBwcm92aWRlIHRoZSBwcmVkaWN0ZWQgd2F2ZSBlbnZpcm9ubWVudCBpbmZvcm1hdGlvbiByZXF1aXJlZCBieSBjbG9zZWx5IGFsbGllZCBwcm9qZWN0cyB3aXRoaW4gdGhpcyBFUFNSQyBMYXVuY2ggYW5kIFJlY292ZXJ5IENvLUNyZWF0aW9uIEluaXRpYXRpdmUgd2hpY2ggYXJlIGFpbWVkIGF0IChhKSBtb2RlbGxpbmcgdGhlIG1vdGlvbiBvZiBzbWFsbCBjcmFmdCBpbiB0aGUgbmVhciB3YXZlL2Zsb3cgZmllbGQgb2YgYSBwYXJlbnQgdmVzc2VsIGFuZCAoYikgY29udHJvbCBvZiBsYXVuY2ggYW5kIHJlY292ZXJ5IG9wZXJhdGlvbnMuIEFuIGFsdGVybmF0aXZlIGFwcGxpY2F0aW9uIG9mIHRoZSBuZXcgc2NpZW5jZSBpcyBpbiB0aGUgb3B0aW1hbCBjb250cm9sIG9mIHdhdmUgZW5lcmd5IGNvbnZlcnRlcnMgd2hlcmUgbGFyZ2UgaW5jcmVhc2VzIGluIHBlcmZvcm1hbmNlIHBlciB1bml0IGNvc3QgYXJlIHBvc3NpYmxlIChzZWUgdGhlIGltcGFjdCBjYXNlKS5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmV4LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmV4LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTjAwOTE0Mi8xDEVQL04wMDkxNDIvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkvitGPyJg03maoRYuKBDvCXqoLv4=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLW5sKgBQLQvN++DAKT/OCVA4BeWAkJYdymV8tgQGjNRLHiB7r8" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N009142/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Dynamic Environment Prediction: safe launch and recovery in high sea states: Part of The Launch and Recovery Co-Creation Initiative.</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=1210'>Belmont, Professor MR</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-457409'>Dr J Christmas</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000148'>BAE Systems</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000551'>ESI</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000997'>Ministry of Defence (MOD)</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-39411'>Systems Engineering and Assessment Ltd.</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-30043'>Zenotech Ltd</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering Computer Science and Maths</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Exeter</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2019</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="577,377.37" class="DetailValue">577,377</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Control Engineering</td>
+                                    <td class="DetailValue"> Design Engineering</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Fluid Dynamics</td>
+                                    <td class="DetailValueAlt"> Intelligent &amp; Expert Systems</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/N008707/1'>EP/N008707/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>01 Oct 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2JLAWB">Engineering Prioritisation Panel Meeting 1 October 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This project is one of the small number of proposals selected by an industrial consortium in collaboration with EPSRC to go forward as full proposals to the EPSRC Launch and Recovery Co-Creation Initiative. It involves a collaboration between Exeter and Southampton Universities, Scripps Institution of Oceanography (USA), BAE Systems, MOD and OCEANWAVES (Germany). It is supported by a mentoring/dissemination group comprising: BAE Systems, MOD, SEA Ltd, Zenotech and ESI Group.  The practical driver is to enable a wide range of wave limited maritime operations to be carried out safely at higher sea states than is presently feasible. Particularly important examples are launch and recovery operations from mother ships of small boats, manned and unmanned air vehicles, and submersibles. The research concerns the two coupled areas of: (a) predicting the actual shape of sea waves, termed Deterministic Sea Wave Prediction and the application of this to predicting calmer periods in otherwise large seas (Quiescent Period Prediction), and (b) a comprehensive investigation of the properties of such quiescent periods and the creation of a quiescence simulator. The research involves an integrated combination of challenging fundamental new theory, simulation, large scale data analysis and experimental testing.  An applications oversight, designed to facilitate post project the optimum push through to higher technology readiness levels, is provided by the industrial mentoring panel. MOD and BAE Systems are also research partners. The research will provide the predicted wave environment information required by closely allied projects within this EPSRC Launch and Recovery Co-Creation Initiative which are aimed at (a) modelling the motion of small craft in the near wave/flow field of a parent vessel and (b) control of launch and recovery operations. An alternative application of the new science is in the optimal control of wave energy converters where large increases in performance per unit cost are possible (see the impact case).</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.ex.ac.uk                                                                                 '>http://www.ex.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

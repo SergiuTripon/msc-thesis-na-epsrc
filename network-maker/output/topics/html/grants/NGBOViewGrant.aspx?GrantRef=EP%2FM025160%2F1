@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Sparsity Regularization for Inverse Problems -- Theory, Algorithm and Application
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fM025160%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTTAyNTE2MC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAViPHN0cm9uZz5TcGFyc2l0eSBSZWd1bGFyaXphdGlvbiBmb3IgSW52ZXJzZSBQcm9ibGVtcyAtLSBUaGVvcnksIEFsZ29yaXRobSBhbmQgQXBwbGljYXRpb248L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBTw8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS01MDY2ODgnPkppbiwgRHIgQjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRBDb21wdXRlciBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUDVUNMZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUaRmlyc3QgR3JhbnQgLSBSZXZpc2VkIDIwMDlkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBPY3RvYmVyIDIwMTVkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAxN2RkAgUPZBYCAgEPDxYEHwQFBjk4LDI2NB4HVG9vbFRpcAUJOTgsMjYzLjkwZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhJOdW1lcmljYWwgQW5hbHlzaXMAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAgpIZWFsdGhjYXJlAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzAzIE1hciAyMDE1ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTFFUFNSQyBNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCBNYXJjaCAyMDE1HwMFI05HQk9WaWV3UGFuZWwuYXNweD9QYW5lbElkPTEtMkY0Rk5VZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFpRxPbmUgZnVuZGFtZW50YWwgdGFzayBpbiBtYW55IHNjaWVudGlmaWMgYW5kIGVuZ2luZWVyaW5nIGRpc2NpcGxpbmVzIGlzIHRvIHByb2JlIHRoZSB3b3JsZCBhcm91bmQgdXMsIG9mdGVuIGluIHRoZSBmb3JtIG9mIGRlZHVjaW5nIHBoeXNpY2FsIGxhd3Mgb3IgZGV0ZXJtaW5pbmcgdGhlIHBhcmFtZXRlcnMgdGhlcmVpbiBmcm9tIGV4cGVyaW1lbnRhbCBkYXRhLiBUaGlzIGdpdmVzIHJpc2UgdG8gYSB3aWRlIHZhcmlldHkgb2YgaW52ZXJzZSBwcm9ibGVtcyBvZiBpbmZlcnJpbmcgdGhlIGNhdXNlIG9mIG9ic2VydmVkIHBoeXNpY2FsIHBoZW5vbWVuYSBvciBkZXRlcm1pbmluZyBtZWRpdW0gcHJvcGVydGllcyBvZiB0aGUgY29uY2VybmVkIG9iamVjdCBmcm9tIHRoZSBtZWFzdXJlZCByZXNwb25zZXMuICBBIG1vZGVsIGJhc2VkIGFwcHJvYWNoIHRvIGludmVyc2UgcHJvYmxlbXMgYXNzdW1lcyBhIGtub3duIHJlbGF0aW9uIGJldHdlZW4gdGhlIHVua25vd24gcGh5c2ljYWwgcXVhbnRpdHkgYW5kIHRoZSBtZWFzdXJlZCByZXNwb25zZXMsIGluIHRoZSBmb3JtIG9mIGxpbmVhciBvciBub25saW5lYXIgZXF1YXRpb25zLiBJbnZlcnNlIHByb2JsZW1zIGFyZSBudW1lcmljYWxseSBjaGFsbGVuZ2luZyB0byBzb2x2ZSBzaW5jZSB0aGV5IGFyZSB1bnN0YWJsZSB3aXRoIHJlc3BlY3QgdG8gZGF0YSBub2lzZS4gT25lIG9mIHRoZSBtb3N0IHN1Y2Nlc3NmdWwgYW5kIHBvd2VyZnVsIHRlY2huaXF1ZXMgaXMgdG8gaW5jb3Jwb3JhdGUgYSBwcmlvcmkga25vd2xlZGdlIGJ5IG1lYW5zIG9mIHJlZ3VsYXJpemF0aW9uLiBUaGlzIHByb2plY3QgZm9jdXNlcyBvbiBvbmUgc3BlY2lmaWMgcmVndWxhcml6YXRpb24gdGVjaG5pcXVlIGJhc2VkIG9uIHNwYXJzaXR5IGNvbnN0cmFpbnRzLjxiciAvPjxiciAvPkluIHNwYXJzaXR5IHJlZ3VsYXJpemF0aW9uLCBvbmUgbG9va3MgZm9yIGFuIGFwcHJveGltYXRlIHNvbHV0aW9uIHRoYXQgaGFzIGFzIGZldyBub256ZXJvIGVudHJpZXMgKG9yIGEgc21hbGwgc3VwcG9ydCkgYXMgcG9zc2libGUuIFRoYXQgaXMsIHdlIGFpbSBhdCBleHBsYWluaW5nIHRoZSBwaHlzaWNhbCBwaGVub21lbm9uIGJ5IHNpbXBseSB1c2luZyBhIHNtYWxsIG51bWJlciBvZiBwYXJhbWV0ZXJzLiBJbiB0aGlzIHByb2plY3QsIHdlIHN0dWR5IHRoZSBtYXRoZW1hdGljYWwgdGhlb3J5LCBjb21wdXRhdGlvbmFsIHRlY2huaXF1ZXMgYW5kIHByYWN0aWNhbCBhcHBsaWNhdGlvbnMgb2YgdGhlIGFwcHJvYWNoLCBlc3BlY2lhbGx5IGJ5IHVzaW5nIGEgbm9uY29udmV4IHBlbmFsdHkgb24gdGhlIHNvdWdodC1mb3Igc29sdXRpb24uIFRoZXJlIGFyZSBzZXZlcmFsIG5vbmNvbnZleCBwZW5hbHRpZXMgcHJvcG9zZWQgaW4gdGhlIGxpdGVyYXR1cmUsIGVzcGVjaWFsbHkgaW4gc3RhdGlzdGljcyBhbmQgbWFjaGluZSBsZWFybmluZywgYW5kIHdlIHNoYWxsIGNvbnNpZGVyLCBmb3IgZXhhbXBsZSwgdGhlIHBvcHVsYXIgbDAgcGVuYWx0eSwgYnJpZGdlIHBlbmFsdHksIHNtb290aGx5IGNsaXBwZWQgYWJzb2x1dGUgZGV2aWF0aW9uLCBtaW5tYXggY29uY2F2aXR5IHBlbmFsdHkgYW5kIGNsaXBwZWQgbDEgcGVuYWx0aWVzLiBEZXNwaXRlIHRoZWlyIHBvcHVsYXJpdHksIHRoZWlyIHVzZSBhbmQgc3R1ZHkgaW4gdGhlIGNvbnRleHQgb2YgaW52ZXJzZSBwcm9ibGVtcyByZW1haW4gdmVyeSBsaW1pdGVkLiBUaGUgcHJvcG9zZWQgcHJvamVjdCBleGFtaW5lcyB0aGVzZSB0ZWNobmlxdWVzIGluIHRoZSBmcmFtZXdvcmsgb2YgaW52ZXJzZSBwcm9ibGVtcyB0aGVvcnkuIFNwZWNpZmljYWxseSwgd2UgZm9jdXMgb24gdGhlIGZvbGxvd2luZyBvYmplY3RpdmVzIGR1cmluZyB0aGUgcHJvamVjdCBwZXJpb2Q6IChhKSB0byBkZXZlbG9wIGEgY29tcHV0YXRpb25hbCBtZXRob2Qgb2YgcHJpbWFsLWR1YWwgYWN0aXZlIHNldCB0eXBlIGZvciBlZmZpY2llbnRseSBzb2x2aW5nIHRoZSByZWd1bGFyaXplZCBtb2RlbCAod2l0aCBub25jb252ZXggcGVuYWx0aWVzKSBhbmQgcmlnb3JvdXNseSBlc3RhYmxpc2ggdGhlIGNvbnZlcmdlbmNlIG9mIHRoZSBhbGdvcml0aG07IChiKSB0byBkZXZlbG9wIGFwcGxpY2FibGUgY2hvaWNlIHJ1bGVzIGZvciB0aGUgcmVndWxhcml6YXRpb24gcGFyYW1ldGVyLCBhbmQgdG8gYW5hbHl6ZSB0aGUgc3RydWN0dXJhbCBwcm9wZXJ0aWVzIG9mICJsb2NhbCIgbWluaW1pemVyczsgKDMpIHRvIGFwcGx5IHRoZSBub25jb252ZXggYXBwcm9hY2ggdG8gdG9tb2dyYXBoeSBpbWFnaW5nLCBieSBjb21iaW5pbmcgaXQgd2l0aCBhbiBhZGFwdGl2ZSBmaW5pdGUgZWxlbWVudCBtZXRob2QuIDxiciAvPjxiciAvPlRoZSBjb21wdXRhdGlvbmFsIHRlY2huaXF1ZSB0byBiZSBkZXZlbG9wZWQsIHByaW1hbCBkdWFsIGFjdGl2ZSBzZXQgYWxnb3JpdGhtLCBpcyB3aWRlbHkgYXBwbGljYWJsZSB0byBtYW55IG90aGVyIGFyZWFzLCBlc3BlY2lhbGx5IG1hY2hpbmUgbGVhcm5pbmcgYW5kIHN0YXRpc3RpY3MsIHNpbmNlIHRoZXNlIG5vbmNvbnZleCBtb2RlbHMgaGF2ZSB0aGVpciBvcmlnaW5zIGFuZCBtb3RpdmF0aW9ucyB0aGVyZS4gTWF0aGVtYXRpY2FsbHksIHRoZSB0aGVvcnkgb2Ygc3BhcnNpdHkgcmVndWxhcml6YXRpb24gd2lsbCBzaGVkIHZhbHVhYmxlIGxpZ2h0cyBpbnRvIHRoZSBhbmFseXNpcyBvZiBub25zbW9vdGggcmVndWxhcml6YXRpb24sIHdoaWNoIHNoYXJlcyBjb21tb24gc3RydWN0dXJlcyB3aXRoIG1hbnkgaW1wb3J0YW50IG1hdGhlbWF0aWNhbCBtb2RlbHMgYXJpc2luZyBpbiBpbWFnaW5nIGFuZCBzaWduYWwgcHJvY2Vzc2luZy4gVGhlIHNwZWNpZmljIGNob2ljZSBydWxlIGZvciB0aGUgcmVndWxhcml6YXRpb24gcGFyYW1ldGVyIHdpbGwgZW5hYmxlIGF1dG9tYXRpYyBwYXJhbWV0ZXIgc2VsZWN0aW9uIHlldCB3aXRoIHJpZ29yb3VzIHRoZW9yZXRpY2FsIGp1c3RpZmljYXRpb24sIGFuZCBpbXByb3ZlIHRoZSBlZmZpY2llbmN5IG9mIHRoZSBjdXJyZW50IHByYWN0aWNlIGJhc2VkIG9uIHRlZGlvdXMgdHJpYWwgYW5kIGVycm9yLiBUaGUgcmVzZWFyY2ggaW4gdG9tb2dyYXBoeSBpbWFnaW5nLCBpLmUuLCB0aGUgYXBwbGljYXRpb24gb2Ygbm9uY29udmV4IHBlbmFsdHkgYW5kIGFkYXB0aXZlIGFsZ29yaXRobSwgd2lsbCBkaXJlY3RseSBpbXBhY3QgdGhlIG1lZGljYWwgaW1hZ2luZyBjb21tdW5pdHkuIFRoZXJlIGFyZSBhIGxhcmdlIGdyb3VwIG9mIHJlc2VhcmNoZXJzIHdvcmtpbmcgb24gdG9tb2dyYXBoeSBpbWFnaW5nIHRoYXQgd2lsbCBiZW5lZml0IGRpcmVjdGx5IGZyb20gdGhlIHJlc2VhcmNoLCBhbmQgdGhlIG9idGFpbmVkIHJlc2VhcmNoIHJlc3VsdHMgd2lsbCBiZSBwcmVzZW50ZWQgdG8gdGhlbSBjb250aW51b3VzbHkuIE1vcmUgZ2VuZXJhbGx5LCBpdCBwcm92aWRlcyBndWlkYW5jZSBmb3IgZGV2ZWxvcGluZyBlZmZpY2llbnQgYWxnb3JpdGhtcyBmb3Igbm9ubGluZWFyIGludmVyc2UgcHJvYmxlbXMgZm9yIGRpZmZlcmVudGlhbCBlcXVhdGlvbnMuIEluIHN1bW1hcnksIHRoZSBwcm9qZWN0IHdpbGwgdGFrZSBzcGFyc2l0eSByZWd1bGFyaXphdGlvbiBmb3IgaW52ZXJzZSBwcm9ibGVtcyB0byB0aGUgbmV4dCBsZXZlbC5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTAyNTE2MC8xDEVQL00wMjUxNjAvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkyr36NRo7ZYWD5ah8p3yVlucbGnE=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKAkZWIBwLQvN++DAKT/OCVA3KJiwsXxxkhvm5DrKdC4KSs+Y5F" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/M025160/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Sparsity Regularization for Inverse Problems -- Theory, Algorithm and Application</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-506688'>Jin, Dr B</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">UCL</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2015</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="98,263.90" class="DetailValue">98,264</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Numerical Analysis</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>03 Mar 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2F4FNU">EPSRC Mathematics Prioritisation Panel March 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">One fundamental task in many scientific and engineering disciplines is to probe the world around us, often in the form of deducing physical laws or determining the parameters therein from experimental data. This gives rise to a wide variety of inverse problems of inferring the cause of observed physical phenomena or determining medium properties of the concerned object from the measured responses.  A model based approach to inverse problems assumes a known relation between the unknown physical quantity and the measured responses, in the form of linear or nonlinear equations. Inverse problems are numerically challenging to solve since they are unstable with respect to data noise. One of the most successful and powerful techniques is to incorporate a priori knowledge by means of regularization. This project focuses on one specific regularization technique based on sparsity constraints.<br /><br />In sparsity regularization, one looks for an approximate solution that has as few nonzero entries (or a small support) as possible. That is, we aim at explaining the physical phenomenon by simply using a small number of parameters. In this project, we study the mathematical theory, computational techniques and practical applications of the approach, especially by using a nonconvex penalty on the sought-for solution. There are several nonconvex penalties proposed in the literature, especially in statistics and machine learning, and we shall consider, for example, the popular l0 penalty, bridge penalty, smoothly clipped absolute deviation, minmax concavity penalty and clipped l1 penalties. Despite their popularity, their use and study in the context of inverse problems remain very limited. The proposed project examines these techniques in the framework of inverse problems theory. Specifically, we focus on the following objectives during the project period: (a) to develop a computational method of primal-dual active set type for efficiently solving the regularized model (with nonconvex penalties) and rigorously establish the convergence of the algorithm; (b) to develop applicable choice rules for the regularization parameter, and to analyze the structural properties of "local" minimizers; (3) to apply the nonconvex approach to tomography imaging, by combining it with an adaptive finite element method. <br /><br />The computational technique to be developed, primal dual active set algorithm, is widely applicable to many other areas, especially machine learning and statistics, since these nonconvex models have their origins and motivations there. Mathematically, the theory of sparsity regularization will shed valuable lights into the analysis of nonsmooth regularization, which shares common structures with many important mathematical models arising in imaging and signal processing. The specific choice rule for the regularization parameter will enable automatic parameter selection yet with rigorous theoretical justification, and improve the efficiency of the current practice based on tedious trial and error. The research in tomography imaging, i.e., the application of nonconvex penalty and adaptive algorithm, will directly impact the medical imaging community. There are a large group of researchers working on tomography imaging that will benefit directly from the research, and the obtained research results will be presented to them continuously. More generally, it provides guidance for developing efficient algorithms for nonlinear inverse problems for differential equations. In summary, the project will take sparsity regularization for inverse problems to the next level.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

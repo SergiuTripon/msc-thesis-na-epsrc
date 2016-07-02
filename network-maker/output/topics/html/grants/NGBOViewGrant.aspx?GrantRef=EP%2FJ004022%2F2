@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Stochastic models for epidemics in large populations: limiting and long-term behaviour
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fJ004022%2f2" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSjAwNDAyMi8yZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVnPHN0cm9uZz5TdG9jaGFzdGljIG1vZGVscyBmb3IgZXBpZGVtaWNzIGluIGxhcmdlIHBvcHVsYXRpb25zOiBsaW1pdGluZyBhbmQgbG9uZy10ZXJtIGJlaGF2aW91cjwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTA3OTU4Jz5MdWN6YWssIFByb2Zlc3NvciBNSjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDSzxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDEwMTAnPk1vbmFzaCBVbml2ZXJzaXR5PC9hPk48YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xOTY3MCc+UHVibGljIEhlYWx0aCBFbmdsYW5kIDwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRxTY2ggb2YgTWF0aGVtYXRpY2FsIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUgUXVlZW4gTWFyeSwgVW5pdmVyc2l0eSBvZiBMb25kb25kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRZMZWFkZXJzaGlwIEZlbGxvd3NoaXBzZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgT2N0b2JlciAyMDEyZGQCAw9kFgICAQ8PFgIfBAUNMzEgTWFyY2ggMjAxN2RkAgUPZBYCAgEPDxYEHwQFBzgyMiwwNjIeB1Rvb2xUaXAFCjgyMiwwNjEuODRkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiJTdGF0aXN0aWNzICZhbXA7IEFwcGwuIFByb2JhYmlsaXR5AGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIKSGVhbHRoY2FyZQBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFvh9UaGUgbWF0aGVtYXRpY2FsIG1vZGVsbGluZyBhbmQgYW5hbHlzaXMgb2YgYmlvbG9naWNhbCBpbnRlcmFjdGlvbnMgaXMgYmVjb21pbmcgZXZlciBtb3JlIGltcG9ydGFudC4gVGhlIHJhbmdlIG9mIGFwcGxpY2F0aW9ucyBpbmNsdWRlcyB0b3BpY3Mgc3VjaCBhcyBtb2RlbHMgb2YgcG9wdWxhdGlvbiBncm93dGggYW5kIGVwaWRlbWljcywgYW5kIHNwYXRpYWwgbW9kZWxzIG9mIGludGVyYWN0aW9uIGJldHdlZW4gc3BlY2llcy4gVHJhZGl0aW9uYWwgbW9kZWxzIG9mIGJpb2xvZ2ljYWwgcHJvY2Vzc2VzIGFyZSBtYWlubHkgYmFzZWQgb24gZGlmZmVyZW50aWFsIGVxdWF0aW9ucywgYW5kIHRoZWlyIGV4YWN0IG9yIGFwcHJveGltYXRlIHNvbHV0aW9uLiBJbiByZWNlbnQgeWVhcnMgdGhlcmUgaGFzIGJlZW4gZ3Jvd3RoIGluIHByb2JhYmlsaXN0aWMgbW9kZWxzLCB3aGljaCBhcmUgb2Z0ZW4gYWJsZSB0byBjYXB0dXJlIG1vcmUgYWNjdXJhdGVseSB0aGUgdHJ1ZSBiZWhhdmlvdXIgb2Ygc3VjaCBwcm9jZXNzZXMuIFRoaXMgaGFzIGJlZW4gY291cGxlZCB3aXRoIG5ldyBtYXRoZW1hdGljYWwgYXBwcm9hY2hlcyBzcGVjaWZpY2FsbHkgdGFpbG9yZWQgdG8gaGFuZGxlIHN1Y2ggbW9kZWxzLjxiciAvPjxiciAvPk1hbnkgb2YgdGhlc2UgbW9kZWxzIGludm9sdmUgbGFyZ2UgYW5kIGNvbXBsZXggc3lzdGVtcyBvZiBpbnRlcmFjdGluZyBpbmRpdmlkdWFscywgd2l0aCBjb21wbGljYXRlZCB0ZW1wb3JhbCBhbmQgc3BhdGlhbCBkeW5hbWljcy4gVGhlIGJlaGF2aW91ciBvZiB0aGUgc3lzdGVtIG1heSBiZSBzZW5zaXRpdmUgdG8gaW5pdGlhbCBjb25kaXRpb25zLCBleHRlcm5hbCBwZXJ0dXJiYXRpb25zIGFuZCBmbHVjdHVhdGlvbnMgdGhhdCBhcmUgYWx3YXlzIHByZXNlbnQgaW4gcmVhbCBsaWZlLiBUaGVyZSBpcyBhbiBldmVyIGluY3JlYXNpbmcgbmVlZCB0byBhY2hpZXZlIGEgYmV0dGVyIHF1YWxpdGF0aXZlIGFuZCBxdWFudGl0YXRpdmUgdW5kZXJzdGFuZGluZyBvZiBzdWNoIHN5c3RlbXMuIEZvciBleGFtcGxlLCBpbiB0aGUgY29udGV4dCBvZiBlcGlkZW1pY3MsIHdlIG5lZWQgdG8gcHJlZGljdCBhcyBhY2N1cmF0ZWx5IGFzIHBvc3NpYmxlIHRoZSBwb3RlbnRpYWwgY291cnNlIGFzIHdlbGwgYXMgdGhlIG1vZGUgb2Ygc3ByZWFkIG9mIGEgZGlzZWFzZSwgc28gYXMgdG8gdGFrZSBlZmZlY3RpdmUgbWVhc3VyZXMgYWdhaW5zdCBpdC4gVGhpcyBpbmZvcm1hdGlvbiBjYW4gcGxheSBhIGNyaXRpY2FsIHJvbGUgaW4gdGhlIGNvbnRleHQgb2YgZ2xvYmFsIHRocmVhdHMgc3VjaCBhcyBjb21tb24gZGlzZWFzZXMgbGlrZSBpbmZsdWVuemEsIEhJViBhbmQgb3RoZXIgU1REcywgYW5kIG5ldyBlbWVyZ2luZyBpbmZlY3Rpb3VzIGRpc2Vhc2VzLiBTaW1pbGFybHksIGluIGVjb2xvZ3ksIHdlIG5lZWQgdG8gdW5kZXJzdGFuZCB0aGUgZWZmZWN0cyBvZiBpbnRlcmFjdGlvbnMgYmV0d2VlbiBzcGVjaWVzLCBpbiBvcmRlciB0byBzdXN0YWluIGFuZCBlbmhhbmNlIGJpby1kaXZlcnNpdHkgaW4gbmF0dXJlLjxiciAvPjxiciAvPldlIGlsbHVzdHJhdGUgdGhlIHR5cGUgb2YgbW9kZWwgd2Ugd2lsbCBzdHVkeSB3aXRoIGEgcmVsYXRpdmVseSBzaW1wbGUgZXhhbXBsZSwgbWVudGlvbmluZyBzb21lIG9mIHRoZSBkaWZmaWN1bHRpZXMgd2UgZmFjZSBpbiBhbmFseXNpbmcgaXQuIEtyZXR6c2NobWFyICgxOTkzKSBpbnRyb2R1Y2VkIGEgbW9kZWwgb2YgcGFyYXNpdGljIGluZmVjdGlvbiwgd2hlcmUgaG9zdHMgYXJlIGRpc3Rpbmd1aXNoZWQgYnkgaG93IG1hbnkgcGFyYXNpdGVzIHRoZXkgY2FycnksIHdpdGggbm8gdXBwZXIgYm91bmQgb24gdGhlIG51bWJlciBvZiBwYXJhc2l0ZXMgaW4gYSBob3N0LiBUaGUgbW9kZWwgaW5jb3Jwb3JhdGVzIGRlYXRocyBvZiBpbmRpdmlkdWFsIHBhcmFzaXRlcywgYmlydGhzIGFuZCBkZWF0aHMgb2YgaG9zdHMsIGFzIHdlbGwgYXMgaW5mZWN0aW9ucyBieSBlbmNvdW50ZXJzIGJldHdlZW4gaG9zdHMuIFRoZSBpbmZlY3Rpb24gcmF0ZSBpbmNyZWFzZXMgYXMgdGhlIGF2ZXJhZ2UgbnVtYmVyIG9mIHBhcmFzaXRlcyBwZXIgaG9zdCBpbmNyZWFzZXMuIEtyZXR6c2NobWFyIHRyZWF0ZWQgaGVyIG1vZGVsIG9ubHkgaW4gYSBkZXRlcm1pbmlzdGljIHZlcnNpb24sIGFuYWx5c2luZyBhbiBpbmZpbml0ZSBzeXN0ZW0gb2YgZGlmZmVyZW50aWFsIGVxdWF0aW9ucy4gU2hlIGlkZW50aWZpZWQgYSBwaGFzZSB0cmFuc2l0aW9uIGJldHdlZW4gZGlmZmVyZW50IHR5cGVzIG9mIGxvbmctdGVybSBiZWhhdmlvdXIsIHdpdGggYSBzdWRkZW4gY2hhbmdlIGF0IGNlcnRhaW4gdGhyZXNob2xkIHZhbHVlcyBvZiB0aGUgcGFyYW1ldGVycyBvZiB0aGUgbW9kZWwuPGJyIC8+PGJyIC8+S3JldHpzY2htYXIncyBtb2RlbCBoYXMgYSBuYXR1cmFsIHByb2JhYmlsaXN0aWMgYW5hbG9ndWUsIHdoZXJlIHRoZSBkZXRlcm1pbmlzdGljIGV2b2x1dGlvbiBvZiB0aGUgc3lzdGVtIGlzIHJlcGxhY2VkIGJ5IGEgcmFuZG9tIHByb2Nlc3MuIEl0IGlzIGJ5IG5vIG1lYW5zIGNsZWFyIHRoYXQgdGhlIHByb2JhYmlsaXN0aWMgbW9kZWwgaGFzIHRoZSBzYW1lIGxvbmctdGVybSBiZWhhdmlvdXIgYXMgdGhlIGNvcnJlc3BvbmRpbmcgZGV0ZXJtaW5pc3RpYyBtb2RlbC4gSWYgdGhlcmUgYXJlIGRpZmZlcmVuY2VzLCB0aGVuIG9uZSBtaWdodCBwcmVzdW1lIHRoYXQgdGhlIHByZWRpY3Rpb25zIG9mIHRoZSBwcm9iYWJpbGlzdGljIG1vZGVsIGFyZSBtb3JlIGFjY3VyYXRlLjxiciAvPjxiciAvPlRoZSBwcm9iYWJpbGlzdGljIHZlcnNpb24gb2YgS3JldHpzY2htYXIncyBtb2RlbCBpcyBhbiBleGFtcGxlIG9mIHRoZSB0eXBlIG9mIHByb2Nlc3MgdGhhdCB3YXMgbm90IGFtZW5hYmxlIGJlZm9yZSBidXQgaXMgd2l0aGluIHRoZSBzY29wZSBvZiBhIHJlY2VudCBwYXBlciBvZiBtaW5lLiBXZSBzaG93IHRoYXQgdGhlIHJhbmRvbSBwcm9jZXNzIGluIHF1ZXN0aW9uIGRvZXMgZm9sbG93IHRoZSBkaWZmZXJlbnRpYWwgZXF1YXRpb24gcHJvcG9zZWQgYnkgS3JldHpzY2htYXIgb3ZlciBhIGJvdW5kZWQgdGltZSBpbnRlcnZhbC4gT25lIG9mIHRoZSBtYWluIG9ic3RhY2xlcyB0byBhIHJpZ29yb3VzIG1hdGhlbWF0aWNhbCB0cmVhdG1lbnQgb2YgdGhlIHJhbmRvbSBwcm9jZXNzIGlzIHRoZSBmYWN0IHRoYXQgdGhlcmUgYXJlIGluZmluaXRlbHkgbWFueSB2YXJpYWJsZXMsIG9uZSBmb3IgZWFjaCB0eXBlIG9mIGhvc3QuIFRoZSBsb25nLXRlcm0gYmVoYXZpb3VyIG9mIHRoZSBwcm9jZXNzIHJlbWFpbnMgdW5rbm93biBhbmQgYSBudW1iZXIgb2YgaW1wb3J0YW50IHF1ZXN0aW9ucyB3aWRlIG9wZW4uIFVuZGVyIHdoYXQgY29uZGl0aW9ucyBkb2VzIHRoZSBlcGlkZW1pYyBhbHdheXMgZGllIG91dCBldmVudHVhbGx5LCBhbmQgdW5kZXIgd2hhdCBjb25kaXRpb25zIG1heSBpdCByZW1haW4gZW5kZW1pYyBpbiB0aGUgcG9wdWxhdGlvbj8gVW5kZXIgd2hhdCBjb25kaXRpb25zIGRvZXMgdGhlIGF2ZXJhZ2UgbnVtYmVyIG9mIHBhcmFzaXRlcyBwZXIgaG9zdCBncm93IHdpdGhvdXQgYm91bmQ/IElmIHRoZSBlcGlkZW1pYyBkb2VzIGRpZSBvdXQsIGlzIHRoZXJlIGEgbG9uZyBgbWV0YXN0YWJsZScgcGhhc2UgYmVmb3JlaGFuZCBhbmQgY2FuIGl0IGJlIGNoYXJhY3RlcmlzZWQ/PGJyIC8+PGJyIC8+VGhlIG1haW4gYWltIG9mIHRoaXMgcHJvcG9zYWwgaXMgdG8gYWRkcmVzcyBzdWNoIHF1ZXN0aW9ucyBmb3IgdGhpcyBhbmQgb3RoZXIgZXBpZGVtaWMgbW9kZWxzLiBUaGUgdGhlb3J5IG9mIHRoZSBsb25nLXRlcm0gYmVoYXZpb3VyIG9mIGVwaWRlbWljIG1vZGVscyBpcyBub3QgdmVyeSB3ZWxsIHVuZGVyc3Rvb2QsIGV4Y2VwdCBpbiBhIGZldyBzcGVjaWFsIGNhc2VzLiBJIHByb3Bvc2UgYSB0aG9yb3VnaCBzdHVkeSwgdHJlYXRpbmcgc3BlY2lmaWMgZXhhbXBsZXMgc3VjaCBhcyB0aGUgS3JldHpzY2htYXIgbW9kZWwsIGFuZCB0aGVuIG1vdmluZyBvbiB0byBtb3JlIGdlbmVyYWwgc2V0dGluZ3MuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5xbXVsLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5xbXVsLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0owMDQwMjIvMgxFUC9KMDA0MDIyLzJkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZGdojfmg+MBzA4RsTnIlu/bbLPNM" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKS/83TBQLQvN++DAKT/OCVA3P5H3neJWaQMkYgCgRTZkmSdMpA" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/J004022/2</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Stochastic models for epidemics in large populations: limiting and long-term behaviour</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=107958'>Luczak, Professor MJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001010'>Monash University</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=19670'>Public Health England </a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Mathematical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Queen Mary, University of London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Leadership Fellowships</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2017</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="822,061.84" class="DetailValue">822,062</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Statistics &amp; Appl. Probability</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The mathematical modelling and analysis of biological interactions is becoming ever more important. The range of applications includes topics such as models of population growth and epidemics, and spatial models of interaction between species. Traditional models of biological processes are mainly based on differential equations, and their exact or approximate solution. In recent years there has been growth in probabilistic models, which are often able to capture more accurately the true behaviour of such processes. This has been coupled with new mathematical approaches specifically tailored to handle such models.<br /><br />Many of these models involve large and complex systems of interacting individuals, with complicated temporal and spatial dynamics. The behaviour of the system may be sensitive to initial conditions, external perturbations and fluctuations that are always present in real life. There is an ever increasing need to achieve a better qualitative and quantitative understanding of such systems. For example, in the context of epidemics, we need to predict as accurately as possible the potential course as well as the mode of spread of a disease, so as to take effective measures against it. This information can play a critical role in the context of global threats such as common diseases like influenza, HIV and other STDs, and new emerging infectious diseases. Similarly, in ecology, we need to understand the effects of interactions between species, in order to sustain and enhance bio-diversity in nature.<br /><br />We illustrate the type of model we will study with a relatively simple example, mentioning some of the difficulties we face in analysing it. Kretzschmar (1993) introduced a model of parasitic infection, where hosts are distinguished by how many parasites they carry, with no upper bound on the number of parasites in a host. The model incorporates deaths of individual parasites, births and deaths of hosts, as well as infections by encounters between hosts. The infection rate increases as the average number of parasites per host increases. Kretzschmar treated her model only in a deterministic version, analysing an infinite system of differential equations. She identified a phase transition between different types of long-term behaviour, with a sudden change at certain threshold values of the parameters of the model.<br /><br />Kretzschmar's model has a natural probabilistic analogue, where the deterministic evolution of the system is replaced by a random process. It is by no means clear that the probabilistic model has the same long-term behaviour as the corresponding deterministic model. If there are differences, then one might presume that the predictions of the probabilistic model are more accurate.<br /><br />The probabilistic version of Kretzschmar's model is an example of the type of process that was not amenable before but is within the scope of a recent paper of mine. We show that the random process in question does follow the differential equation proposed by Kretzschmar over a bounded time interval. One of the main obstacles to a rigorous mathematical treatment of the random process is the fact that there are infinitely many variables, one for each type of host. The long-term behaviour of the process remains unknown and a number of important questions wide open. Under what conditions does the epidemic always die out eventually, and under what conditions may it remain endemic in the population? Under what conditions does the average number of parasites per host grow without bound? If the epidemic does die out, is there a long `metastable' phase beforehand and can it be characterised?<br /><br />The main aim of this proposal is to address such questions for this and other epidemic models. The theory of the long-term behaviour of epidemic models is not very well understood, except in a few special cases. I propose a thorough study, treating specific examples such as the Kretzschmar model, and then moving on to more general settings.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.qmul.ac.uk                                                                               '>http://www.qmul.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

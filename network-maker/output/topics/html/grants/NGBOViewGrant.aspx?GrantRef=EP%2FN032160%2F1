@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Iterated forcing with side conditions and high forcing axioms
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN032160%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAzMjE2MC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVOPHN0cm9uZz5JdGVyYXRlZCBmb3JjaW5nIHdpdGggc2lkZSBjb25kaXRpb25zIGFuZCBoaWdoIGZvcmNpbmcgYXhpb21zPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAU/PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNTIxNTI3Jz5Bc3Blcm8sIERyIEQ8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAULTWF0aGVtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRlVbml2ZXJzaXR5IG9mIEVhc3QgQW5nbGlhZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQwwMSBKdWx5IDIwMTZkZAIDD2QWAgIBDw8WAh8EBQwzMCBKdW5lIDIwMTlkZAIFD2QWAgIBDw8WBB8EBQcyNzYsOTA0HgdUb29sVGlwBQoyNzYsOTAzLjUzZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5GUxvZ2ljICZhbXA7IENvbWJpbmF0b3JpY3NkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwgCAh4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAICZBYCZg9kFgQCAQ9kFgZmD2QWAgIBDw8WAh8EBQswOCBKdW4gMjAxNmRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAU4RVBTUkMgTWF0aGVtYXRpY3MgUHJpb3JpdGlzYXRpb24gUGFuZWwgTWVldGluZyBKdW5lIDIwMTYfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0zRFZWVTVkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAgIPZBYGZg9kFgICAQ8PFgIfBAULMDIgTWFyIDIwMTZkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFOUVQU1JDIE1hdGhlbWF0aWNzIFByaW9yaXRpc2F0aW9uIFBhbmVsIE1lZXRpbmcgTWFyY2ggMjAxNh8DBSNOR0JPVmlld1BhbmVsLmFzcHg/UGFuZWxJZD0xLTNCVlBEUGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUIRGVmZXJyZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFuRw8YnIgLz48YnIgLz5UaGlzIHByb2plY3QgcGVydGFpbnMgdG8gdGhlIHN0dWR5IG9mIGluZGVwZW5kZW5jZSBpbiBtYXRoZW1hdGljcy4gTWF0aGVtYXRpY3MgaXMgZnJhbWVkIHdpdGhpbiBzb21lIGZpeGVkICdmb3VuZGF0aW9uYWwgdGhlb3J5Jy4gTW9yZSBjb25jcmV0ZWx5LCBpbiB0aGUgcHJhY3RpY2Ugb2YgYWR2YW5jZWQgbWF0aGVtYXRpY3Mgb25lIG9mdGVuIG5lZWRzIHRvIHNwZWNpZnkgYSBmb3VuZGF0aW9uYWwgdGhlb3J5IHdpdGhpbiB3aGljaCBvbmUgaW50ZW5kcyB0byBkZXZlbG9wIHNvbWUgbWF0aGVtYXRpY2FsIHRoZW9yeSBvZiBpbnRlcmVzdC4gVGhpcyBmb3VuZGF0aW9uYWwgdGhlb3J5LCBhbHNvIGNhbGxlZCBiYXNpcyB0aGVvcnksIGlzIGZvcm1hbGlzZWQgaW4gc29tZSBmaXhlZCBmb3JtYWwgbGFuZ3VhZ2UgYW5kIGNvbnNpc3RzIG9mIGEgbGlzdCBvZiBheGlvbXMsIHdoaWNoIGFyZSByZWFzb25hYmxlIChzZWxmLWV2aWRlbnQpIHN0YXRlbWVudHMsIGluIHRoZSBmaXhlZCBmb3JtYWwgbGFuZ3VhZ2UsIGFib3V0IHRoZSBtYXRoZW1hdGljYWwgdW5pdmVyc2UuIFRoZSBtYXRoZW1hdGljYWwgdGhlb3JlbXMgb25lIG9idGFpbnMgd29ya2luZyB3aXRoaW4gdGhlIGJhc2lzIHRoZW9yeSBhcmUgc2ltcGx5IHRoZSBzdGF0ZW1lbnRzIHRoYXQgY2FuIGJlIGRlcml2ZWQsIGluIGZpbml0ZWx5IG1hbnkgc3RlcHMsIGZyb20gdGhlIGF4aW9tcyBvZiB0aGUgYmFzaXMgdGhlb3J5IHVzaW5nIGNlcnRhaW4gd2VsbC1kZWZpbmVkIHJ1bGVzIG9mIGxvZ2ljLiBUaGUgbW9zdCBzdGFuZGFyZCBmb3VuZGF0aW9uYWwgdGhlb3J5IGZvciBtYXRoZW1hdGljcyBpcyBrbm93biBhcyBaRkMgKFplcm1lbG8gRnJhZW5rZWwgc2V0IHRoZW9yeSB3aXRoIHRoZSBheGlvbSBvZiBDaG9pY2UpLCBidXQgc29tZXRpbWVzIHBlb3BsZSBjb25zaWRlciBzdHJlbmd0aGVuaW5ncyBvZiBaRkMgb2J0YWluZWQgYnkgYWRkaW5nIHRvIGl0IHNvLWNhbGxlZCAnbGFyZ2UgY2FyZGluYWwgYXhpb21zJy4gVGhlc2UgYXJlIGEgZmFtaWx5IG9mIGF4aW9tcyB0aGF0IG5hdHVyYWxseSBidWlsZCwgbW9kdWxvIFpGQywgYSBoaWVyYXJjaHkgb2Ygc3Ryb25nZXIgYW5kIHN0cm9uZ2VyIHRoZW9yaWVzLiBJdCBpcyBhIHJlbWFya2FibGUgZmFjdCB0aGF0IGV2ZXJ5IHRoZW9yeSBvY2N1cnJpbmcgbmF0dXJhbGx5IGluIG1hdGhlbWF0aWNzIGNhbiBiZSBpbnRlcnByZXRlZCBpbiBvbmUgb2YgdGhlIHJlc3VsdGluZyBmb3VuZGF0aW9uYWwgdGhlb3JpZXMuIEFub3RoZXIgcmVtYXJrYWJsZSBmYWN0IGlzIHRoYXQgbm9uZSBvZiB0aGVzZSBmb3VuZGF0aW9uYWwgdGhlb3JpZXMgVCBkZWNpZGVzIGFsbCBtYXRoZW1hdGljYWwgc3RhdGVtZW50cy4gVGhpcyBtZWFucyB0aGF0IHRoZXJlIGFyZSBzdGF0ZW1lbnRzIFMgc3VjaCB0aGF0IG5laXRoZXIgUyBub3IgaXRzIG5lZ2F0aW9uIGNhbiBiZSBwcm92ZWQgd2l0aGluIFQgKGVxdWl2YWxlbnRseSwgdGhpcyBtZWFucyB0aGF0IG9uZSBjYW5ub3QgZGVyaXZlIGFueSBjb250cmFkaWN0aW9uIGZyb20gYXNzdW1pbmcgdGhlIGF4aW9tcyBvZiBUIHRvZ2V0aGVyIHdpdGggUywgb3IgZnJvbSBhc3N1bWluZyB0aGUgYXhpb21zIG9mIFQgdG9nZXRoZXIgd2l0aCB0aGUgbmVnYXRpb24gb2YgUykuIFRoaXMgcGhlbm9tZW5vbiBpcyBrbm93biBhcyBpbmRlcGVuZGVuY2UuICAgIDxiciAvPjxiciAvPlRoZSB1bHRpbWF0ZSBnb2FsIG9mIHRoaXMgcHJvamVjdCBpcyB0aGUgZGV0YWlsZWQgc3R1ZHkgb2YgY29tYmluYXRvcmlhbCBwcm9wZXJ0aWVzIG9mIGluZmluaXRlIG1hdGhlbWF0aWNhbCBvYmplY3RzIGluIHRoZSBjb250ZXh0IG9mIHRoZSBpbmRlcGVuZGVuY2UgcGhlbm9tZW5vbi4gTW9yZSBjb25jcmV0ZWx5LCB0aGUgcHJvamVjdCBmb2N1c2VzIG1haW5seSBvbiB0aGUgZGV2ZWxvcG1lbnQgb2Ygc3BlY2lmaWMgJ2ZvcmNpbmcnIHRlY2huaXF1ZXMgYWltZWQgYXQgcHJvdmluZyB0aGF0IGNlcnRhaW4gc3VjaCBwcm9wZXJ0aWVzIGFyZSBjb25zaXN0ZW50IHdpdGggWkZDLCBwb3NzaWJseSBlbmhhbmNlZCB3aXRoIGxhcmdlIGNhcmRpbmFsIGF4aW9tczsgaW4gb3RoZXIgd29yZHMsIHByb3ZpbmcgdGhhdCBubyBjb250cmFkaWN0aW9uIGNhbiBiZSBkZXJpdmVkIGZyb20gYXNzdW1pbmcsIHdpdGhpbiBzdGFuZGFyZCBtYXRoZW1hdGljcywgdGhhdCB0aGUgcmVsZXZhbnQgb2JqZWN0cyBoYXZlIHRoZXNlIGNvbWJpbmF0b3JpYWwgcHJvcGVydGllcyAodGhpcyBpcyBvZiBjb3Vyc2Ugb25seSBvbmUgaGFsZiBvZiB0aGUgdGFzayBvZiBwcm92aW5nIHRoZSBpbmRlcGVuZGVuY2UsIGZyb20gYSBnaXZlbiBiYXNpcyB0aGVvcnksIG9mIHRoZSBzdGF0ZW1lbnQgc2F5aW5nIHRoYXQgYSBjZXJ0YWluIHByb3BlcnR5IGhvbGRzIGZvciBhbGwgcmVsZXZhbnQgb2JqZWN0czsgdGhlIG90aGVyIGhhbGYgb2YgdGhlIHRhc2sgaXMgdG8gcHJvdmUgdGhlIGNvbnNpc3RlbmN5IG9mIHRoZSBzdGF0ZW1lbnQgc2F5aW5nIHRoYXQgbm8gb2JqZWN0IGhhcyB0aGUgcHJvcGVydHkgdW5kZXIgZGlzY3Vzc2lvbikuIEluIG91ciBjb250ZXh0LCB0aGUgcHJvb2Ygb2Ygc29tZSBzdWNoIGNvbnNpc3RlbmN5IGlzIGNhcnJpZWQgb3V0IGluIHByYWN0aWNlIGJ5IGJ1aWxkaW5nIGEgcGFydGljdWxhciBtb2RlbCBvZiB0aGUgdXN1YWwgYXhpb21zIGluIHdoaWNoIHRoZSBwcm9wZXJ0aWVzIGhvbGQsIG9idGFpbmVkIGFzIGEgY2FyZWZ1bGx5IGNob3NlbiAnZm9yY2luZyBleHRlbnNpb24nIG9mIHRoZSB1bml2ZXJzZS4gVGhpcyBmb3JjaW5nIGV4dGVuc2lvbiBpcyBhIGNlcnRhaW4gZXh0ZW5zaW9uIG9mIHRoZSBtYXRoZW1hdGljYWwgdW5pdmVyc2Ugb2J0YWluZWQgYnkgYWRkaW5nLCBpbiBhIHByZWNpc2Ugd2VsbC1kZWZpbmVkIHdheSwgYSBuZXcgb2JqZWN0IHRvIGl0LiBBbm90aGVyIHdheSB0byBhY2NvbXBsaXNoIHRoaXMgaXMgYnkgZGVyaXZpbmcgdGhlIGNvbWJpbmF0b3JpYWwgcHJvcGVydHkgb2YgaW50ZXJlc3QgZGlyZWN0bHkgZnJvbSBzb21lICdmb3JjaW5nIGF4aW9tJywgd2hpY2ggaGFzIHByZXZpb3VzbHkgYmVlbiBzaG93biB0byBiZSBjb25zaXN0ZW50IHJlbGF0aXZlIHRvIFpGQyAodG9nZXRoZXIgd2l0aCBsYXJnZSBjYXJkaW5hbCBheGlvbXMpLCBhZ2FpbiBieSBtZWFucyBvZiBzb21lIGZvcmNpbmcgZXh0ZW5zaW9uLiBUaGVzZSBmb3JjaW5nIGF4aW9tcyBhcmUgdHlwaWNhbGx5IHZlcnkgcG93ZXJmdWwgbmF0dXJhbCBleHRlbnNpb25zIG9mIHRoZSB1c3VhbCBheGlvbXMsIGluIHRoZSBzZW5zZSB0aGF0IHRoZXkgdGVuZCB0byBwcm92aWRlIGEgcmljaCB0aGVvcnkgb2YgdGhlIGluZmluaXRlOyB0aGUgdXN1YWwgYXhpb21zIGFyZSB0b28gd2VhayB0byBkZWNpZGUgc3VjaCBhIHRoZW9yeS4gVGhlIGFwcGxpY2FiaWxpdHkgb2YgdGhpcyB0eXBlIG9mIHJlc2VhcmNoIG91dHNpZGUgb2YgbWF0aGVtYXRpY3MgbWlnaHQgY29tZSBmcm9tIGNvbm5lY3Rpb25zIHRvIHRoZW9yZXRpY2FsIGNvbXB1dGVyIHNjaWVuY2UgYW5kIGFydGlmaWNpYWwgaW50ZWxsaWdlbmNlLCBmb3IgZXhhbXBsZSBpbiB0aGUgY29udGV4dCBvZiBtb2RlbGxpbmcgaW5maW5pdGUgcHJvY2Vzc2VzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cudWVhLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cudWVhLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9OMDMyMTYwLzEMRVAvTjAzMjE2MC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGStVqbZcOi1w8LW6Q3nsdXSzuJSxA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLcuJfrCgLQvN++DAKT/OCVA7k/w7urSZyO8z+cpqmrdDFm2j3v" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N032160/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Iterated forcing with side conditions and high forcing axioms</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-521527'>Aspero, Dr D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of East Anglia</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 July 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 June 2019</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="276,903.53" class="DetailValue">276,904</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Logic &amp; Combinatorics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>08 Jun 2016</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-3DVVU5">EPSRC Mathematics Prioritisation Panel Meeting June 2016</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr><tr class="DetailValueAlt">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl03_Label1"><b>02 Mar 2016</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl03_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-3BVPDP">EPSRC Mathematics Prioritisation Panel Meeting March 2016</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl03_Label3"><b>Deferred</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract"><br /><br />This project pertains to the study of independence in mathematics. Mathematics is framed within some fixed 'foundational theory'. More concretely, in the practice of advanced mathematics one often needs to specify a foundational theory within which one intends to develop some mathematical theory of interest. This foundational theory, also called basis theory, is formalised in some fixed formal language and consists of a list of axioms, which are reasonable (self-evident) statements, in the fixed formal language, about the mathematical universe. The mathematical theorems one obtains working within the basis theory are simply the statements that can be derived, in finitely many steps, from the axioms of the basis theory using certain well-defined rules of logic. The most standard foundational theory for mathematics is known as ZFC (Zermelo Fraenkel set theory with the axiom of Choice), but sometimes people consider strengthenings of ZFC obtained by adding to it so-called 'large cardinal axioms'. These are a family of axioms that naturally build, modulo ZFC, a hierarchy of stronger and stronger theories. It is a remarkable fact that every theory occurring naturally in mathematics can be interpreted in one of the resulting foundational theories. Another remarkable fact is that none of these foundational theories T decides all mathematical statements. This means that there are statements S such that neither S nor its negation can be proved within T (equivalently, this means that one cannot derive any contradiction from assuming the axioms of T together with S, or from assuming the axioms of T together with the negation of S). This phenomenon is known as independence.    <br /><br />The ultimate goal of this project is the detailed study of combinatorial properties of infinite mathematical objects in the context of the independence phenomenon. More concretely, the project focuses mainly on the development of specific 'forcing' techniques aimed at proving that certain such properties are consistent with ZFC, possibly enhanced with large cardinal axioms; in other words, proving that no contradiction can be derived from assuming, within standard mathematics, that the relevant objects have these combinatorial properties (this is of course only one half of the task of proving the independence, from a given basis theory, of the statement saying that a certain property holds for all relevant objects; the other half of the task is to prove the consistency of the statement saying that no object has the property under discussion). In our context, the proof of some such consistency is carried out in practice by building a particular model of the usual axioms in which the properties hold, obtained as a carefully chosen 'forcing extension' of the universe. This forcing extension is a certain extension of the mathematical universe obtained by adding, in a precise well-defined way, a new object to it. Another way to accomplish this is by deriving the combinatorial property of interest directly from some 'forcing axiom', which has previously been shown to be consistent relative to ZFC (together with large cardinal axioms), again by means of some forcing extension. These forcing axioms are typically very powerful natural extensions of the usual axioms, in the sense that they tend to provide a rich theory of the infinite; the usual axioms are too weak to decide such a theory. The applicability of this type of research outside of mathematics might come from connections to theoretical computer science and artificial intelligence, for example in the context of modelling infinite processes.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.uea.ac.uk                                                                                '>http://www.uea.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

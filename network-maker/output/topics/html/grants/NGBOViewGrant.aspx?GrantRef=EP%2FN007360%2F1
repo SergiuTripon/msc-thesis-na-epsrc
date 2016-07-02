@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Explicit methods for Jacobi forms over number fields
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fN007360%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvTjAwNzM2MC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVFPHN0cm9uZz5FeHBsaWNpdCBtZXRob2RzIGZvciBKYWNvYmkgZm9ybXMgb3ZlciBudW1iZXIgZmllbGRzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVEPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNTE5NDU0Jz5TdHJvbWJlcmcsIERyIEYgSzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRxTY2ggb2YgTWF0aGVtYXRpY2FsIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUYVW5pdmVyc2l0eSBvZiBOb3R0aW5naGFtZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUaRmlyc3QgR3JhbnQgLSBSZXZpc2VkIDIwMDlkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ0wMSBBcHJpbCAyMDE2ZGQCAw9kFgICAQ8PFgIfBAUNMzEgTWFyY2ggMjAxOGRkAgUPZBYCAgEPDxYEHwQFBjk3LDQ4NR4HVG9vbFRpcAUJOTcsNDg0LjY3ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5AGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA3IFNlcCAyMDE1ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBTBFUFNSQyBNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCBTZXB0IDIwMTUfAwUjTkdCT1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9MS0yVkc5QkFkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXUH1RoaXMgaXMgYSBoaWdobHkgaW50cmEtZGlzY2lwbGluYXJ5IHByb3Bvc2FsIGNvbm5lY3RpbmcgbnVtYmVyIHRoZW9yeSwgY29tcHV0YXRpb25hbCBtYXRoZW1hdGljcyBhbmQgcmVwcmVzZW50YXRpb24gdGhlb3J5LiBUaGlzIHByb3Bvc2FsIGlzIGRlc2lnbmVkIHRvIG9idGFpbiBuZXcgaW5zaWdodHMgaW50byB0aGUgQlNEIGNvbmplY3R1cmUgdGhyb3VnaCB0aGUgdXNlIG9mIHRoZW9yZXRpY2FsIGFuZCBjb21wdXRhdGlvbmFsIG1ldGhvZHMuIFRoZSBCU0QgY29uamVjdHVyZSBkZXNjcmliZSBhIGRlZXAgcmVsYXRpb25zaGlwIGJldHdlZW4gYW5hbHl0aWMgYW5kIGFyaXRobWV0aWMgcHJvcGVydGllcyBvZiBlbGxpcHRpYyBjdXJ2ZXMuIE1vcmUgcHJlY2lzZWx5IHRoZSB3ZWFrIHZlcnNpb24gc2F5cyB0aGF0IHRoZSBvcmRlciBvZiB2YW5pc2hpbmcgYXQgdGhlIHBvaW50IDEsIG9mIHRoZSBMLWZ1bmN0aW9uIGFzc29jaWF0ZWQgd2l0aCBhbiBlbGxpcHRpYyBjdXJ2ZSBFICh0aGUgYW5hbHl0aWMgcmFuaykgaXMgZXF1YWwgdG8gdGhlIHJhbmsgb2YgdGhlIGFiZWxpYW4gZ3JvdXAgZ2l2ZW4gYnkgdGhlIHBvaW50cyBvZiBFIChvdmVyIHNvbWUgZ2l2ZW4gZmllbGQpLjxiciAvPjxiciAvPkFzIHlldCB0aGUgQlNEIGNvbmplY3R1cmUgaXMgb25seSBwcm92ZW4gY29tcGxldGVseSBmb3IgY2VydGFpbiB0eXBlcyBvZiBlbGxpcHRpYyBjdXJ2ZXMuIEluIHBhcnRpY3VsYXIgd2Uga25vdyB0aGF0IGl0IGlzIHRydWUgaWYgdGhlIGFuYWx5dGljIHJhbmsgaXMgbGVzcyB0aGFuIG9yIGVxdWFsIHRvIDEuIEhvd2V2ZXIsIHRoZXJlIGhhcyByZWNlbnRseSBiZWVuIGEgbG90IG9mIHByb2dyZXNzIGZvciB2ZXJzaW9ucyBvZiBCU0QgIG9uIGF2ZXJhZ2UgYnkgdGhlIDIwMTQgRmllbGRzIG1lZGFsbGlzdCBNLiBCaGFyZ2F2YS4gT3VyIG1vc3QgZXh0ZW5zaXZlIGtub3dsZWRnZSBhYm91dCB0aGUgQlNEIGNvbmplY3R1cmUgKGFzIHdlbGwgYXMgdGhlIG9yaWdpbmFsIG1vdGl2YXRpb24gZm9yIGl0KSBjb21lcyBmcm9tIG51bWVyaWNhbCBpbnZlc3RpZ2F0aW9ucy48YnIgLz48YnIgLz5Db25zaWRlciBmb3IgdGhlIG1vbWVudCBvbmx5IHJhdGlvbmFsIGVsbGlwdGljIGN1cnZlcywgdGhhdCBpcywgdGhleSBjYW4gYmUgZGVzY3JpYmVkIGJ5IGVxdWF0aW9ucyB3aXRoIGludGVnZXIgY29lZmZpIGNpZW50cy4gQnkgYSB3ZWxsLWtub3duIGNvbnN0cnVjdGlvbiBvZiBFaWNobGVyIGFuZCBTaGltdXJhIHdlIGNhbiBhc3NvY2lhdGUgc3VjaCBlbGxpcHRpYyBjdXJ2ZXMgdG8gY2VydGFpbiBjb21wbGV4IGZ1bmN0aW9ucyAobmV3Zm9ybXMpLiBUaGUgY29udmVyc2Ugb2YgdGhpcyBjb25zdHJ1Y3Rpb24gaXMgZ2l2ZW4gYnkgdGhlIHNvLWNhbGxlZCBtb2R1bGFyaXR5IHRoZW9yZW0gKGZvcm1lciBUYW5peWFtYS1TaGltdXJhLVdlaWwgY29uamVjdHVyZSkgd2hpY2ggcGxheWVkIGFuIGltcG9ydGFudCByb2xlIGluIFdpbGVzJyBwcm9vZiBvZiBGZXJtYXQncyBsYXN0IHRoZW9yZW0uIEZyb20gdGhlIG1vZHVsYXJpdHkgdGhlb3JlbSB3ZSBrbm93IHRoYXQgdGhlIEwtZnVuY3Rpb24gYXNzb2NpYXRlZCB3aXRoIHRoZSBlbGxpcHRpYyBjdXJ2ZSBFIGlzIGluIGZhY3QgZXF1YWwgdG8gdGhlIEwtZnVuY3Rpb24gb2YgdGhlIG5ld2Zvcm0gYXNzb2NpYXRlZCB3aXRoIEUuPGJyIC8+PGJyIC8+VGhlIHByb2JsZW0gb2YgdmVyaWZ5aW5nIEJTRCBjYW4gdGhlbiBiZSB0cmFuc2ZlcnJlZCB0byB0aGF0IG9mIGNvbXB1dGluZyBMLWZ1bmN0aW9ucyBvZiBtb2R1bGFyIGZvcm1zIGFuZCBpbiBwYXJ0aWN1bGFyIHRoZWlyIHZhbHVlcyBhdCAxLiBJdCB0dXJucyBvdXQgdGhhdCBpZiB3ZSBoYXZlIGFuIGVsbGlwdGljIGN1cnZlIEUgd2l0aCBhc3NvY2lhdGVkIG5ld2Zvcm0gZiBhbmQgTC1mdW5jdGlvbiBMKGYscykgdGhlbiB3ZSBjYW4gb2J0YWluIGEgd2hvbGUgZmFtaWx5IG9mIGN1cnZlcyBieSB0d2lzdGluZyBzbyB0aGF0IHRoZSBjdXJ2ZSBFIHR3aXN0ZWQgYnkgYSBkaXNjcmltaW5hbnQgRCBpcyBhc3NvY2lhdGVkIHRvIHRoZSBMLWZ1bmN0aW9uIEwoZnhELHMpLjxiciAvPjxiciAvPkl0IGlzIG5vdyBrbm93biB0aGF0IHRoZXJlIGV4aXN0cyBhbm90aGVyIGNvbXBsZXggZnVuY3Rpb24gRiBzdWNoIHRoYXQgdGhlIEZvdXJpZXIgY29lZmZpY2llbnRzIG9mIEYgYXJlIGdpdmVuIGJ5IHRoZSB2YWx1ZXMgb2YgTChmeEQscykgYXQgcz0xLiBJZiB3ZSBjb21wdXRlIHRoZSBmdW5jdGlvbiBGIGFuZCBpdHMgRm91cmllciBjb2VmZmljaWVudHMgd2UgbWlnaHQgdGhlbiBiZSBhYmxlIHRvIHZlcmlmeSB0aGUgQlNEIGNvbmplY3R1cmUgaW4gc3BlY2lmaWMgY2FzZXMuPGJyIC8+PGJyIC8+VGhlIGZ1bmN0aW9uIEYgZGVzY3JpYmVkIGFib3ZlIGNhbiBlaXRoZXIgYmUgZ2l2ZW4gYXMgYSBzY2FsYXIgbmV3Zm9ybSBvZiBoYWxmLWludGVncmFsIHdlaWdodCwgYSB2ZWN0b3ItdmFsdWVkIG1vZHVsYXIgZm9ybSwgb3IgYSBzby1jYWxsZWQgSmFjb2JpIGZvcm0uIEluIG1hbnkgd2F5cyB0aGUgbGF0dGVyIGRlc2NyaXB0aW9uIGlzIHRoZSBtb3N0IG5hdHVyYWwgb25lLiBUaGUgcmVsYXRpb25zaGlwIGJldHdlZW4gdGhlIHR3byBmdW5jdGlvbnMgZiBhbmQgRiBpcyBjYWxsZWQgdGhlIFNoaW11cmEgY29ycmVzcG9uZGVuY2UuPGJyIC8+PGJyIC8+SW4gdGhpcyBwcm9qZWN0IHdlIGFpbSBhdCBzdHVkeWluZyB0aGUgQlNEIGNvbmplY3R1cmUgZm9yIGVsbGlwdGljIGN1cnZlcyBvdmVyIG51bWJlciBmaWVsZHMgaW5zdGVhZCBvZiB0aGUgcmF0aW9uYWwgbnVtYmVycy4gSW4gdGhpcyBjYXNlIHRoZSBtb2R1bGFyaXR5IHRoZW9yZW0gaXMgaW4gZ2VuZXJhbCBub3Qga25vd24gYnV0IG9ubHkgY29uamVjdHVyZWQgdG8gaG9sZC4gVGhlIFNoaW11cmEgY29ycmVzcG9uZGVuY2UgaW4gdGVybXMgb2YgSmFjb2JpIGZvcm1zIGhhcyBzby1mYXIgbm90IGV2ZW4gYmVlbiBzdHVkaWVkIGluIHRoaXMgc2V0dGluZy4gSXQgaXMgb25seSB3aXRoIHJlY2VudCBkZXZlbG9wbWVudHMgaW4gdGhlIHRoZW9yeSBvZiBKYWNvYmkgZm9ybXMgb3ZlciBudW1iZXIgZmllbGRzIHRoYXQgaXQgaXMgcG9zc2libGUgdG8gZm9ybXVsYXRlIHByZWNpc2UgY29uamVjdHVyZXMgYWJvdXQgd2hhdCB0aGUgY29ycmVzcG9uZGVuY2Ugc2hvdWxkIGxvb2sgbGlrZS48YnIgLz48YnIgLz5UaGUgbWFpbiBnb2FsIG9mIHRoaXMgcHJvamVjdCBpcyB0byBkZXZlbG9wIGV4cGxpY2l0IG1ldGhvZHMgYW5kIGFsZ29yaXRobXMgZm9yIEphY29iaSBmb3JtcyBvdmVyIG51bWJlciAgZmllbGRzLiBJbiBwYXJ0aWN1bGFyIHdlIHdpbGwgb2J0YWluIGRpbWVuc2lvbiBmb3JtdWxhcyBmb3IgdGhlIHNwYWNlcyBhbmQgZGV2ZWxvcCBhbGdvcml0aG1zIHdoaWNoIGFsbG93IHVzIHRvIGNvbXB1dGUgRm91cmllciBleHBhbnNpb25zIGFuZCBpbiB0aGUgZW5kIG9idGFpbiBleGFtcGxlcyBmb3IgQlNEIGluIHRoZSBzZXR0aW5nIG9mIGVsbGlwdGljIGN1cnZlcyBvdmVyIG51bWJlciBmaWVsZHMuPGJyIC8+PGJyIC8+T25lIG9mIHRoZSBrZXkgcG9pbnRzIGlzIHRoYXQgd2UgYXNzb2NpYXRlIHRoZSBKYWNvYmkgZm9ybXMgKG92ZXIgbnVtYmVyIGZpZWxkcykgd2l0aCB2ZWN0b3ItdmFsdWVkIEhpbGJlcnQgbW9kdWxhciBmb3JtcyBmb3IgdGhlIFdlaWwgcmVwcmVzZW50YXRpb24uIEluIHRoaXMgbWFubmVyIHRoZSBTaGltdXJhIGNvcnJlc3BvbmRlbmNlIGNhbiBiZSByZWFsaXNlZCBhcyBhIGNvcnJlc3BvbmRlbmNlIGJldHdlZW4gZGlmZmVyZW50IFdlaWwgcmVwcmVzZW50YXRpb25zLiBCZWZvcmUgcmVhY2hpbmcgdGhlIG1haW4gZ29hbCBtZW50aW9uZWQgYWJvdmUgd2UgbmVlZCBhIGJldHRlciB1bmRlcnN0YW5kaW5nIG9mIFdlaWwgcmVwcmVzZW50YXRpb25zLCBsYXR0aWNlcyBhbmQgZmluaXRlIHF1YWRyYXRpYyBtb2R1bGVzIG92ZXIgbnVtYmVyIGZpZWxkcy4gQXMgcGFydCBvZiB0aGUgcHJvamVjdCB3ZSB3aWxsIHRoZXJlZm9yZSBhbHNvIGZvY3VzIG9uIHRoZXNlIG9iamVjdHMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5ub3R0LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5ub3R0LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMDczNjAvMQxFUC9OMDA3MzYwLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZEBDf+anzNJG16kqh55qMyVoO1z8" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK0pJbtCwLQvN++DAKT/OCVA81/sqSfR2jm5hapWsGIXcS1hwzx" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/N007360/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Explicit methods for Jacobi forms over number fields</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-519454'>Stromberg, Dr F K</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Mathematical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Nottingham</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2016</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2018</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="97,484.67" class="DetailValue">97,485</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>07 Sep 2015</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="NGBOViewPanel.aspx?PanelId=1-2VG9BA">EPSRC Mathematics Prioritisation Panel Sept 2015</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This is a highly intra-disciplinary proposal connecting number theory, computational mathematics and representation theory. This proposal is designed to obtain new insights into the BSD conjecture through the use of theoretical and computational methods. The BSD conjecture describe a deep relationship between analytic and arithmetic properties of elliptic curves. More precisely the weak version says that the order of vanishing at the point 1, of the L-function associated with an elliptic curve E (the analytic rank) is equal to the rank of the abelian group given by the points of E (over some given field).<br /><br />As yet the BSD conjecture is only proven completely for certain types of elliptic curves. In particular we know that it is true if the analytic rank is less than or equal to 1. However, there has recently been a lot of progress for versions of BSD  on average by the 2014 Fields medallist M. Bhargava. Our most extensive knowledge about the BSD conjecture (as well as the original motivation for it) comes from numerical investigations.<br /><br />Consider for the moment only rational elliptic curves, that is, they can be described by equations with integer coeffi cients. By a well-known construction of Eichler and Shimura we can associate such elliptic curves to certain complex functions (newforms). The converse of this construction is given by the so-called modularity theorem (former Taniyama-Shimura-Weil conjecture) which played an important role in Wiles' proof of Fermat's last theorem. From the modularity theorem we know that the L-function associated with the elliptic curve E is in fact equal to the L-function of the newform associated with E.<br /><br />The problem of verifying BSD can then be transferred to that of computing L-functions of modular forms and in particular their values at 1. It turns out that if we have an elliptic curve E with associated newform f and L-function L(f,s) then we can obtain a whole family of curves by twisting so that the curve E twisted by a discriminant D is associated to the L-function L(fxD,s).<br /><br />It is now known that there exists another complex function F such that the Fourier coefficients of F are given by the values of L(fxD,s) at s=1. If we compute the function F and its Fourier coefficients we might then be able to verify the BSD conjecture in specific cases.<br /><br />The function F described above can either be given as a scalar newform of half-integral weight, a vector-valued modular form, or a so-called Jacobi form. In many ways the latter description is the most natural one. The relationship between the two functions f and F is called the Shimura correspondence.<br /><br />In this project we aim at studying the BSD conjecture for elliptic curves over number fields instead of the rational numbers. In this case the modularity theorem is in general not known but only conjectured to hold. The Shimura correspondence in terms of Jacobi forms has so-far not even been studied in this setting. It is only with recent developments in the theory of Jacobi forms over number fields that it is possible to formulate precise conjectures about what the correspondence should look like.<br /><br />The main goal of this project is to develop explicit methods and algorithms for Jacobi forms over number  fields. In particular we will obtain dimension formulas for the spaces and develop algorithms which allow us to compute Fourier expansions and in the end obtain examples for BSD in the setting of elliptic curves over number fields.<br /><br />One of the key points is that we associate the Jacobi forms (over number fields) with vector-valued Hilbert modular forms for the Weil representation. In this manner the Shimura correspondence can be realised as a correspondence between different Weil representations. Before reaching the main goal mentioned above we need a better understanding of Weil representations, lattices and finite quadratic modules over number fields. As part of the project we will therefore also focus on these objects.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.nott.ac.uk                                                                               '>http://www.nott.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>
