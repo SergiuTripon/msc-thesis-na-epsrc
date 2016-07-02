@@ -524,6 +524,88 @@ class ExtractTopics:
 ########################################################################################################################
 
 
+# ExtractPastTopics class
+class ExtractPastTopics:
+
+    @staticmethod
+    # runs other functions
+    def run():
+        # extract detailed grant information
+        ExtractPastTopics.extract_detailed_grant_info()
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts detailed grant information
+    def extract_detailed_grant_info():
+
+        # if detailed grant info file does not exist
+        if not os.path.isfile('../output/past-topics/info/detailed_grant_info.csv'):
+
+            # print progress
+            print('> Extraction of detailed grants started')
+
+            # variable to hold grant urls
+            grant_urls = open(r'../output/past-topics/urls/grants.txt', "r").readlines()
+
+            # strip http and new line and replace slashes
+            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/').strip('\n').replace('/', '%2F')
+                          for grant_url in grant_urls]
+
+            # variable to hold detailed grants list
+            detailed_grants = OrderedDict()
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for grant url in grant urls
+            for grant_url in grant_urls:
+
+                # variable to hold page
+                page = open(r'../output/past-topics/html/grants/{}'.format(grant_url), "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold topics xpath
+                topics_xpath = "//table[@id='tblFound']/tr[position()=11]/td[position()=2]/table/tr/td/text()"
+
+                # variable to hold topics
+                topics = tree.xpath(topics_xpath)
+
+                # variable to hold clean topics list
+                clean_topics = [topic.strip() for topic in topics if topic.strip()]
+
+                # add detailed grant to detailed grants dictionary
+                detailed_grants[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = clean_topics
+
+                # print progress
+                print('> Extraction of detailed grants in progress'
+                      ' ({} detailed grant(s) extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold output file
+            output_file = open('../output/past-topics/info/detailed_grant_info.csv', mode='w')
+
+            for ref, clean_topics in detailed_grants.items():
+                # write name and attributes to file
+                output_file.write('"{}","{}"\n'.format(ref, clean_topics))
+
+            # variable to hold output file
+            output_file = open(r'../output/past-topics/info/detailed_grant_info.pkl', 'wb')
+            # write data structure to file
+            dump(detailed_grants, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of detailed grants completed'
+                  ' ({} detailed grants extracted)'.format(len(detailed_grants)))
+
+########################################################################################################################
+
+
 # main function
 def main():
 
@@ -533,6 +615,8 @@ def main():
     # extract topics
     ExtractTopics.run()
 
+    # extract past topics
+    ExtractPastTopics.run()
 
 ########################################################################################################################
 

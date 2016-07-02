@@ -2,17 +2,20 @@
 
 ########################################################################################################################
 
-# variable to hold start date and time
-start=$(date "+%d-%m-%Y %H:%M:%S")
-# print start
-echo "> Start date and time: ${start}"
-
-########################################################################################################################
-
 # if topics folder does not exist
 if [ ! -d ../output/topics/html/topics/ ]; then
+    # variable to hold start date and time
+    start=$(date "+%d-%m-%Y %H:%M:%S")
+    # print start
+    echo "> Start date and time: ${start}"
+
     # download pages at the topic urls in the file
-    xargs -P 20 -n 1 wget -nv --directory-prefix=../output/topics/html/topics/ < ../output/topics/urls/topics.txt
+    xargs -P 20 -n 1 wget -bqc --directory-prefix=../output/topics/html/topics/ < ../output/topics/urls/topics.txt
+
+    # variable to hold end date and time
+    end=$(date "+%d-%m-%Y %H:%M:%S")
+    # print end
+    echo "> End date and time: ${end}"
 # close if statement
 fi
 
@@ -20,17 +23,39 @@ fi
 
 # if grants folder does not exist
 if [ ! -d ../output/topics/html/grants/ ]; then
+    # variable to hold start date and time
+    start=$(date "+%d-%m-%Y %H:%M:%S")
+    # print start
+    echo "> Start date and time: ${start}"
+
     # download pages at the grant urls in the file
-    xargs -P 20 -n 1 wget -nv --directory-prefix=../output/topics/html/grants/ < ../output/topics/urls/grants.txt
+    xargs -P 20 -n 1 wget -bqc --directory-prefix=../output/topics/html/grants/ < ../output/topics/urls/grants.txt
+
+    # variable to hold end date and time
+    end=$(date "+%d-%m-%Y %H:%M:%S")
+    # print end
+    echo "> End date and time: ${end}"
 # close if statement
 fi
 
 ########################################################################################################################
 
-# variable to hold end date and time
-end=$(date "+%d-%m-%Y %H:%M:%S")
-# print end
-echo "> End date and time: ${end}"
+# if grants folder does not exist
+if [ ! -d ../output/past-topics/html/grants/ ]; then
+    # variable to hold start date and time
+    start=$(date "+%d-%m-%Y %H:%M:%S")
+    # print start
+    echo "> Start date and time: ${start}"
+
+    # download pages at the grant urls in the file
+    xargs -P 20 -n 1 wget -bqc --directory-prefix=../output/past-topics/html/grants/ < ../output/past-topics/urls/grants.txt
+
+    # variable to hold end date and time
+    end=$(date "+%d-%m-%Y %H:%M:%S")
+    # print end
+    echo "> End date and time: ${end}"
+# close if statement
+fi
 
 ########################################################################################################################
 
