@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Homogeneous structures, homomorphism-homogeneity, and automorphism groups
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fH00677X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSDAwNjc3WC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVaPHN0cm9uZz5Ib21vZ2VuZW91cyBzdHJ1Y3R1cmVzLCBob21vbW9ycGhpc20taG9tb2dlbmVpdHksIGFuZCBhdXRvbW9ycGhpc20gZ3JvdXBzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xNjAzNSc+VHJ1c3MsIFByb2Zlc3NvciBKPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNIPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD05OTYwJz5NYWNwaGVyc29uLCBQcm9mZXNzb3IgSEQ8L2E+AABkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFC01hdGhlbWF0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUTVW5pdmVyc2l0eSBvZiBMZWVkc2RkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgT2N0b2JlciAyMDA5ZGQCAw9kFgICAQ8PFgIfBAULMzEgTWF5IDIwMTNkZAIFD2QWAgIBDw8WBB8EBQczMzksNTU1HgdUb29sVGlwBQozMzksNTU0LjY2ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIZTG9naWMgJmFtcDsgQ29tYmluYXRvcmljcwBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwcCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQswMyBKdW4gMjAwOWRkAgEPDxYCHwgFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUqTWF0aGVtYXRpY3MgUHJpb3JpdGlzYXRpb24gUGFuZWwgSnVuZSAyMDA5HwMFG1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9NDgyNGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBe8YQ29uc2lkZXIgYSBncmFwaCAoYSBzZXQgb2YgdmVydGljZXMsIHdpdGggc29tZSBwYWlycyBvZiB2ZXJ0aWNlcyBqb2luZWQgYnkgZWRnZXMpLCBvciBhIGRpZ3JhcGggKHdoZXJlICBlZGdlcyBoYXZlIGEgZGlyZWN0aW9uKSBvciBnZW5lcmFsaXphdGlvbnMgKHNheSB3aGVyZSB2ZXJ0aWNlcyBvciBlZGdlcyBoYXZlIHNldmVyYWwgcG9zc2libGUgY29sb3VycykuIFN5bW1ldHJ5IGlzIGEgZmFtaWxpYXIgbm90aW9uIGZyb20gZ2VvbWV0cnkuIEEgc3ltbWV0cnkgb2YgYSBncmFwaCBpcyBhbiBgYXV0b21vcnBoaXNtJywgYW5kIHRoZSBhbW91bnQgb2Ygc3ltbWV0cnkgaXMgbWVhc3VyZWQgYnkgdGhlIHJpY2huZXNzIG9mIHRoZSBgYXV0b21vcnBoaXNtIGdyb3VwJy4gT2Z0ZW4sIGhpZ2hseSBzeW1tZXRyaWNhbCBvYmplY3RzIGFyZSB1bmlxdWUsIG9yIGNhbm9uaWNhbCwgb3IgY2F0ZWdvcmljYWwsIGFuZCBhcmlzZSB2ZXJ5IG5hdHVyYWxseSBpbiBtYXRoZW1hdGljcy4gSGVyZSB3ZSBjb25zaWRlciBgaG9tb2dlbmVvdXMnIHN0cnVjdHVyZXMgKGUuZy4gZ3JhcGhzLCBkaWdyYXBocyksIG5hbWVseSBjb3VudGFibHkgaW5maW5pdGUgc3RydWN0dXJlcyBzdWNoIHRoYXQgYW55IGZpbml0ZSBwYXJ0aWFsIGlzb21vcnBoaXNtIGV4dGVuZHMgdG8gYW4gYXV0b21vcnBoaXNtIChpbmZvcm1hbGx5LCBpZiB0d28gZmluaXRlIHBhcnRzIGxvb2sgdGhlIHNhbWUsIHRoaXMgaXMgd2l0bmVzc2VkIGJ5IGEgZ2xvYmFsIHN5bW1ldHJ5KS5UaGUgaW5pdGlhbCB0aGVvcnkgb2YgaG9tb2dlbmVvdXMgc3RydWN0dXJlcyB3YXMgZGV2ZWxvcGVkIGFzIHBhcnQgb2YgbW9kZWwgdGhlb3J5IChtYXRoZW1hdGljYWwgbG9naWMpLiBPbmUgb2YgdGhlIGtleSBhY2hpZXZlbWVudHMgd2FzIGEgY2xhc3NpZmljYXRpb24gYnkgQ2hlcmxpbiwgaW4gYSBtb25vZ3JhcGggIGluIDE5OTgsIG9mIHRoZSBob21vZ2VuZW91cyAgZGlncmFwaHMuIFRoZSBjbGFzcyBvZiBleGFtcGxlcyBoYXMgZ3JlYXQgY29tcGxleGl0eSBidXQgdGhlIGRlc2NyaXB0aW9uIGlzIGNsZWFuIGFuZCBiZWF1dGlmdWwuIEhvd2V2ZXIsIHRoZSBjbGFzc2lmaWNhdGlvbiBzaGVkcyBsaXR0bGUgbGlnaHQgb24gd2hhdCBob21vZ2VuZW91cyAgKGV2ZW4gYmluYXJ5KSBzdHJ1Y3R1cmVzIGxvb2sgbGlrZSBpbiBnZW5lcmFsLCBhbmQgaW4gdGhlIGludHJvZHVjdGlvbiBDaGVybGluIHNheXMgaGlzIGNsYXNzaWZpY2F0aW9uIGBicmluZ3MgdXMgaW50byB0aGUgZGFyayBhZ2VzJy5UaGUgdmVyeSBnZW5lcmFsIGZyYW1ld29yayBvZiBob21vZ2VuZWl0eSBtZWFucyB0aGF0IHRoZSBzdWJqZWN0IHRvdWNoZXMgbWFueSBwYXJ0cyBvZiBtYXRoZW1hdGljcywgc3VjaCBhcyBtb2RlbCB0aGVvcnksIGNvbm5lY3Rpb25zIG9mIGZpbml0ZSBtb2RlbCB0aGVvcnkgd2l0aCBjb21wdXRlciBzY2llbmNlLCBncm91cCB0aGVvcnksIGRlc2NyaXB0aXZlIHNldCB0aGVvcnksIGFuZCwgaW4gcGFydGljdWxhciwgY29tYmluYXRvcmljcy4gTXVjaCBvZiB0aGlzIGhhcyBkZXZlbG9wZWQgc2luY2UgQ2hlcmxpbidzIG1lbW9pci4gRm9yIGV4YW1wbGUsIHRoZXJlIGlzIG5vdyB3aWRlIGludGVyZXN0IGluIGhvbW9nZW5lb3VzIG1ldHJpYyBzcGFjZXMsIGluIGNvbm5lY3Rpb25zIHdpdGggc3RydWN0dXJhbCBSYW1zZXkgdGhlb3J5IGluIGNvbWJpbmF0b3JpY3MsIGFuZCB3aXRoIHRvcG9sb2dpY2FsIGR5bmFtaWNzLiBJdCBoYXMgYmVjb21lIHVyZ2VudCB0byByZXZpc2l0ICBjbGFzc2lmaWNhdGlvbiAgaW4gaG9tb2dlbmVvdXMgc3RydWN0dXJlcywgdG8gaWRlbnRpZnkgaG93IGZhciBpdCBjYW4gcmVhc29uYWJseSBiZSB0YWtlbiwgYW5kIHdoZXRoZXIsIGlmIG9uZSByZXF1aXJlcyBsZXNzIHRoYW4gZnVsbCBjbGFzc2lmaWNhdGlvbiwgbWVhbmluZ2Z1bCBkZXNjcmlwdGlvbnMgcmVtYWluLiBUaGlzIGlzIGF0IHRoZSBoZWFydCBvZiB0aGUgY3VycmVudCBwcm9qZWN0LldlIHNoYWxsIHJlbGF0ZSB0aGlzIHRheG9ub215ICB0byBvdGhlciBleGNpdGluZyByZWNlbnQgZGV2ZWxvcG1lbnRzLiBDb21tb24gdGhlbWVzIGFyaXNpbmcgaW4gUmFtc2V5IHRoZW9yeSBhbmQgdG9wb2xvZ2ljYWwgZ3JvdXBzIHRlbGwgdXMgdG8gaW52ZXN0aWdhdGUgIG9yZGVyZWQgaG9tb2dlbmVvdXMgc3RydWN0dXJlcy4gIEludHJpZ3VpbmcgZ2VuZXJhbGl6YXRpb25zIG9mIGhvbW9nZW5laXR5LCB3aXRoIGlzb21vcnBoaXNtcyByZXBsYWNlZCBieSBob21vbW9ycGhpc21zLCBhcmUgc3RhcnRpbmcgdG8gZW1lcmdlLiBUaGUgcHJvamVjdCB3aWxsIGRldmVsb3AgdGhlc2UsIGFuZCBhbHNvIG1vcmUgdHJhZGl0aW9uYWwgdGhlbWVzOiB0aGUgc3RydWN0dXJlIG9mIHRoZSBhdXRvbW9ycGhpc20gZ3JvdXBzLCBjbGFzc2lmaWNhdGlvbiBwcm9ibGVtcyB1bmRlciB3ZWFrZXIgc3ltbWV0cnkgYXNzdW1wdGlvbnMsIGFuZCBjb25uZWN0aW9ucyB3aXRoIGNvbWJpbmF0b3JpYWwgZW51bWVyYXRpb24gKGNvdW50aW5nIHRoZSBudW1iZXIgb2Ygb2JqZWN0cyBvZiBnaXZlbiBzaXplIGluIGEgY2xhc3MpLkEgdmVyeSByZWNlbnQgdGhlbWUgaW4gdGhpcyBzdWJqZWN0IGlzIGEgY29ubmVjdGlvbiB3aXRoIGNvbnN0cmFpbnQgc2F0aXNmYWN0aW9uLCBhIHRvcGljIGluIGNvbXB1dGVyIHNjaWVuY2UuIEl0IGxlYWRzIG5hdHVyYWxseSB0byB0aGUgY29tcGxleGl0eS10aGVvcmV0aWMgcXVlc3Rpb24sIGdpdmVuIHNvbWUgcmVsYXRpb25hbCBzdHJ1Y3R1cmUgTSAoYSB0ZW1wbGF0ZSk6IGZvciBpbnB1dCBhbnkgZmluaXRlIHN0cnVjdHVyZSBTLCBpcyB0aGVyZSBhIGhvbW9tb3JwaGlzbSAgZnJvbSBTIHRvIE0/IEZvciBtYW55IGhvbW9nZW5lb3VzIChvciBtb3JlIGdlbmVyYWxseSwgb21lZ2EtY2F0ZWdvcmljYWwpIHN0cnVjdHVyZXMsIHRoaXMgaXMgYSBuYXR1cmFsIGFuZCBpbXBvcnRhbnQgY29tcHV0YXRpb25hbCBwcm9ibGVtLiBUaGlzIGxlYWRzIHRvIHRoZSBmb3JtdWxhdGlvbiBvZiBzb21lIG5ldyBhbmQgYmVhdXRpZnVsIHF1ZXN0aW9ucyBhYm91dCBgcmVkdWN0cycgb2YgaG9tb2dlbmVvdXMgc3RydWN0dXJlcy4gQ29uc3RyYWludCBzYXRpc2ZhY3Rpb24gYWxzbyBtb3RpdmF0ZXMgdGhlIHN0dWR5IG9mIGBob21vbW9ycGhpc20taG9tb2dlbmVvdXMnIHN0cnVjdHVyZXMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5sZWVkcy5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5sZWVkcy5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0gwMDY3N1gvMQxFUC9IMDA2NzdYLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZC6PzQ4+cPaWCXzdgjPYIpmxbvsS" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLE/6KTDQLQvN++DAKT/OCVA7Nxdqd6fsgbioAUz+kQNw6qdA4E" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/H00677X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Homogeneous structures, homomorphism-homogeneity, and automorphism groups</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=16035'>Truss, Professor J</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=9960'>Macpherson, Professor HD</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Leeds</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="339,554.66" class="DetailValue">339,555</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Logic &amp; Combinatorics</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>03 Jun 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4824">Mathematics Prioritisation Panel June 2009</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Consider a graph (a set of vertices, with some pairs of vertices joined by edges), or a digraph (where  edges have a direction) or generalizations (say where vertices or edges have several possible colours). Symmetry is a familiar notion from geometry. A symmetry of a graph is an `automorphism', and the amount of symmetry is measured by the richness of the `automorphism group'. Often, highly symmetrical objects are unique, or canonical, or categorical, and arise very naturally in mathematics. Here we consider `homogeneous' structures (e.g. graphs, digraphs), namely countably infinite structures such that any finite partial isomorphism extends to an automorphism (informally, if two finite parts look the same, this is witnessed by a global symmetry).The initial theory of homogeneous structures was developed as part of model theory (mathematical logic). One of the key achievements was a classification by Cherlin, in a monograph  in 1998, of the homogeneous  digraphs. The class of examples has great complexity but the description is clean and beautiful. However, the classification sheds little light on what homogeneous  (even binary) structures look like in general, and in the introduction Cherlin says his classification `brings us into the dark ages'.The very general framework of homogeneity means that the subject touches many parts of mathematics, such as model theory, connections of finite model theory with computer science, group theory, descriptive set theory, and, in particular, combinatorics. Much of this has developed since Cherlin's memoir. For example, there is now wide interest in homogeneous metric spaces, in connections with structural Ramsey theory in combinatorics, and with topological dynamics. It has become urgent to revisit  classification  in homogeneous structures, to identify how far it can reasonably be taken, and whether, if one requires less than full classification, meaningful descriptions remain. This is at the heart of the current project.We shall relate this taxonomy  to other exciting recent developments. Common themes arising in Ramsey theory and topological groups tell us to investigate  ordered homogeneous structures.  Intriguing generalizations of homogeneity, with isomorphisms replaced by homomorphisms, are starting to emerge. The project will develop these, and also more traditional themes: the structure of the automorphism groups, classification problems under weaker symmetry assumptions, and connections with combinatorial enumeration (counting the number of objects of given size in a class).A very recent theme in this subject is a connection with constraint satisfaction, a topic in computer science. It leads naturally to the complexity-theoretic question, given some relational structure M (a template): for input any finite structure S, is there a homomorphism  from S to M? For many homogeneous (or more generally, omega-categorical) structures, this is a natural and important computational problem. This leads to the formulation of some new and beautiful questions about `reducts' of homogeneous structures. Constraint satisfaction also motivates the study of `homomorphism-homogeneous' structures.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.leeds.ac.uk                                                                              '>http://www.leeds.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

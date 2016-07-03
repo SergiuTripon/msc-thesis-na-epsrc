@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	An Efficient Page and Object-based Transactional Memory System
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE036368%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAzNjM2OC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVPPHN0cm9uZz5BbiBFZmZpY2llbnQgUGFnZSBhbmQgT2JqZWN0LWJhc2VkIFRyYW5zYWN0aW9uYWwgTWVtb3J5IFN5c3RlbTwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTY2NTMnPldhdHNvbiwgUHJvZmVzc29yIEk8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAz48YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTg5MTYnPktpcmtoYW0sIERyIENDPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRBDb21wdXRlciBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUdVW5pdmVyc2l0eSBvZiBNYW5jaGVzdGVyLCBUaGVkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDTAxIEFwcmlsIDIwMDdkZAIDD2QWAgIBDw8WAh8EBQwzMCBKdW5lIDIwMTBkZAIFD2QWAgIBDw8WBB8EBQc1OTQsNTc0HgdUb29sVGlwBQo1OTQsNTc0LjI4ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQISUGFyYWxsZWwgQ29tcHV0aW5nDlN5c3RlbSBvbiBDaGlwZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBbQWRm9yIHRoZSBsYXN0IDI1IHllYXJzLCB0aGUgcHJvY2Vzc29yIGNoaXBzIGluc2lkZSBQQ3MsIGdhbWVzIGNvbnNvbGVzIGV0Yy4gaGF2ZSBpbmNyZWFzZWQgaW4gc3BlZWQgbWFueSB0aW1lcyBvdmVyLiBUaGlzIGlzIG9mdGVuIHJlZmVyZWVkIHRvIGFzICdNb29yZXMgTGF3JyB3aGljaCBzdGF0ZXMgdGhhdCB0aGlzIGluY3JlYXNlIHdpbGwgYmUgYXBwcm94aW1hdGVseSBhIGZhY3RvciBvZiAyIGV2ZXJ5IDE4IG1vbnRocy5Ib3dldmVyLCBNb29yZXMgTGF3IG5vIGxvbmdlciBob2xkcyBmb3IgdGhlIGxhdGVzdCBzZW1pY29uZHVjdG9yIHRlY2hub2xvZ3kuIEZhY3RvcnMgc3VjaCBhcyBwb3dlciBkaXNzaXBhdGlvbiBwcmV2ZW50IHRoZSBjb250aW51ZWQgc2hyaW5raW5nIG9mIGVsZWN0cm9uaWMgY2lyY3VpdHMgb24gd2hpY2ggaXQgZGVwZW5kcy5Qcm9jZXNzb3IgbWFudWZhY3R1cmVycyBhcmUgdGhlcmVmb3JlIHR1cm5pbmcgdG8gJ211bHRpLWNvcmUnIHByb2Nlc3NvcnMgdG8gYWNoaWV2ZSBmdXR1cmUgaW5jcmVhc2VzIGluIHBlcmZvcm1hbmNlLiBBIGNvcmUgYmVpbmcgdGhlIGNpcmN1aXQgb2YgYSBzaW5nbGUgcHJvY2Vzc2luZyB1bml0IG9mIHRoZSBzdHJ1Y3R1cmUgZm91bmQgaW4gcHJldmlvdXMgY29tcHV0ZXJzLiBJdCBpcyBhbHJlYWR5IHBvc3NpYmxlIHRvIGJ1eSBQQ3Mgd2hpY2ggaGF2ZSBkdWFsIGNvcmVzIG9uIGEgc2luZ2xlIGNoaXAgYW5kIGFkdmFuY2VkIHByb2Nlc3NvcnMgaW50ZW5kZWQgZm9yIGNvbW1lcmNpYWwgYXBwbGljYXRpb25zIGhhdmUgc2V2ZXJhbCBjb3Jlcy5VbmZvcnR1bmF0ZWx5IHRoZSB0ZWNobmlxdWVzIHJlcXVpcmVkIHRvIHdyaXRlIHByb2dyYW1zIGZvciB0aGVzZSBtdWx0aS1jb3JlIHByb2Nlc3NvcnMsIHBhcnRpY3VsYXJseSBmb3IgZ2VuZXJhbCBwdXJwb3NlIGFwcGxpY2F0aW9ucywgcmVseSBvbiBtZWNoYW5pc21zIHRvIHNoYXJlIHRoZSBtZW1vcnkgYmV0d2VlbiBwcm9jZXNzb3JzIHdoaWNoIHJlcXVpcmUgc3BlY2lhbCBoYXJkd2FyZSB0byBlbnN1cmUgdGhhdCB0aGV5IGFsbCBzZWUgYSBjb25zaXN0ZW50IHZpZXcgb2YgdGhlIHNoYXJlZCBtZW1vcnkgb3ZlciBhIGNvbW1vbiBjb21tdW5pY2F0aW9uIHN5c3RlbS5BbHRob3VnaCBpdCBpcyBwb3NzaWJsZSB0byBidWlsZCBzdWNoIGhhcmR3YXJlIHRvIHBlcmZvcm0gZWZmaWNpZW50bHkgZm9yIHNtYWxsIG51bWJlcnMgb2YgcHJvY2Vzc29ycywgYXMgdGhlIG51bWJlciBvZiBwcm9jZXNzb3JzIGFuZCB0aGUgc2l6ZSBvZiB0aGUgY29tbXVuaWNhdGlvbiBzeXN0ZW0gaW5jcmVhc2VzLCBpdCBpcyBpbXBvc3NpYmxlIHRvIG1haW50YWluIHRoZSByZXF1aXJlZCBzcGVlZC4gVGhpcyB3aWxsIHRoZXJlZm9yZSBsaW1pdCB0aGUgc2l6ZSBvZiBmdXR1cmUgbXVsdGktY29yZSBzeXN0ZW1zIHVubGVzcyBuZXcgdGVjaG5pcXVlcyBhcmUgZm91bmQuVHJhbnNhY3Rpb25hbCBNZW1vcnkgaXMgYSBuZXcgYXBwcm9hY2ggdG8gd3JpdGluZyBwcm9ncmFtcywgdG8gbWFrZSB1c2Ugb2YgbXVsdGktY29yZSBwcm9jZXNzb3JzLCB3aGljaCBkb2VzIG5vdCByZXF1aXJlIHRoZSBzYW1lIGZ1bGx5IGNvbnNpc3RlbnQgdmlldyBvZiBzaGFyZWQgbWVtb3J5LiBJbnN0ZWFkLCBpbmRpdmlkdWFsIHByb2Nlc3NvcnMgd29yayBvbiB0aGVpciBvd24gdGVtcG9yYXJ5IGNvcGllcyBvZiBzaGFyZWQgbWVtb3J5IGFuZCByZWNvbmNpbGUgaXRzIHN0YXRlIGF0IHRoZSBlbmQgb2YgZGVmaW5lZCB0YXNrcy4gVGhpcyBhcHByb2FjaCBjYW4gbm90IG9ubHkgcmVtb3ZlIHRoZSBuZWVkIGZvciBjb21wbGV4IGNvbnNpc3RlbmN5IG1haW50YWluaW5nIG1lY2hhbmlzbXMgYnV0IGFsc28gcmVzdWx0IGluIG1ldGhvZHMgZm9yIHdyaXRpbmcgbXVsdGktdGFzayBwcm9ncmFtcyB3aGljaCBhcmUgZWFzaWVyIHRvIHVuZGVyc3RhbmQuSG93ZXZlciwgVHJhbnNhY3Rpb25hbCBNZW1vcnkgcmVxdWlyZXMgb3JnYW5pc2F0aW9uIHNwZWNpZmljYWxseSB0byBzdXBwb3J0IHRoZSBtYWludGVuYW5jZSBhbmQgcmVjb25jaWxpYXRpb24gb2YgdGVtcG9yYXJ5IHNoYXJlZCBjb3BpZXMuIEN1cnJlbnQgcHJvcG9zYWxzIHRvIGRvIHRoaXMgaGF2ZSByZW1vdmVkIHNvbWUgb2YgdGhlIHJlc3RyaWN0aW9ucyBvZiBjb252ZW50aW9uYWwgbXVsdGktY29yZSBzeXN0ZW1zIGJ1dCBpbnRyb2R1Y2VkIG90aGVycyBvZiB0aGVpciBvd24uVGhpcyBwcm9qZWN0IHByb3Bvc2VzIHRvIHBlcmZvcm0gYSBwcmFjdGljYWwgaW52ZXN0aWdhdGlvbiBvZiBhIG5vdmVsIFRyYW5zYWN0aW9uYWwgTWVtb3J5IHNjaGVtZSB3aGljaCBidWlsZHMgdXBvbiBwcmV2aW91cyBzaW1pbGFyIHdvcmsgYnV0IHVzZXMgcHJvcGVydGllcyBwYXJ0aWN1bGFyIHRvIHRoZSBPYmplY3QgT3JpZW50ZWQgc3R5bGUgb2YgcHJvZ3JhbW1pbmcsIGNvbmNlcm5lZCB3aXRoIHRoZSBzdHJ1Y3R1cmluZyBvZiBkYXRhLCB0byBhdm9pZCBtYW55IG9mIHRoZSBleGlzdGluZyBwcm9ibGVtcy4gSXQgdXNlcyBtZW1vcnkgc3RydWN0dXJpbmcgdGVjaG5pcXVlcyB3aGljaCBoYXZlIGJlZW4gc2hvd24gdG8gYmUgYWR2YW50YWdlb3VzIHRvIHRoZSBPYmplY3QgT3JpZW50ZWQgc3R5bGUgYW5kIGV4dGVuZHMgdGhlc2UgdG8gdGhlIHdvcmxkIG9mIFRyYW5zYWN0aW9ucy4gSW4gYWRkaXRpb24sIGl0IHdpbGwgaW52ZXN0aWdhdGUgc3VwcG9ydCBmb3IgdGhlIG9wdGltaXNhdGlvbiBvZiBUcmFuc2FjdGlvbmFsIGV4ZWN1dGlvbiB1c2luZyB0aGUgaGlnaGx5IGZsZXhpYmxlIHNvZnR3YXJlIHN5c3RlbXMgd2hpY2ggaGF2ZSBiZWVuIGRldmVsb3BlZCBmb3IgdGhlIGV4ZWN1dGlvbiBvZiBPYmplY3QgT3JpZW50ZWQgcHJvZ3JhbXMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwMzYzNjgvMQxFUC9FMDM2MzY4LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZAjZKEMGK3Ii2RtdLfsXNv9x1aVh" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLAutefBwLQvN++DAKT/OCVA4oaAtrGuwkyfEZeWK2MK+cTXIxv" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E036368/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>An Efficient Page and Object-based Transactional Memory System</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=16653'>Watson, Professor I</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=8916'>Kirkham, Dr CC</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Manchester, The</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 June 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="594,574.28" class="DetailValue">594,574</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Parallel Computing</td>
+                                    <td class="DetailValue"> System on Chip</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">For the last 25 years, the processor chips inside PCs, games consoles etc. have increased in speed many times over. This is often refereed to as 'Moores Law' which states that this increase will be approximately a factor of 2 every 18 months.However, Moores Law no longer holds for the latest semiconductor technology. Factors such as power dissipation prevent the continued shrinking of electronic circuits on which it depends.Processor manufacturers are therefore turning to 'multi-core' processors to achieve future increases in performance. A core being the circuit of a single processing unit of the structure found in previous computers. It is already possible to buy PCs which have dual cores on a single chip and advanced processors intended for commercial applications have several cores.Unfortunately the techniques required to write programs for these multi-core processors, particularly for general purpose applications, rely on mechanisms to share the memory between processors which require special hardware to ensure that they all see a consistent view of the shared memory over a common communication system.Although it is possible to build such hardware to perform efficiently for small numbers of processors, as the number of processors and the size of the communication system increases, it is impossible to maintain the required speed. This will therefore limit the size of future multi-core systems unless new techniques are found.Transactional Memory is a new approach to writing programs, to make use of multi-core processors, which does not require the same fully consistent view of shared memory. Instead, individual processors work on their own temporary copies of shared memory and reconcile its state at the end of defined tasks. This approach can not only remove the need for complex consistency maintaining mechanisms but also result in methods for writing multi-task programs which are easier to understand.However, Transactional Memory requires organisation specifically to support the maintenance and reconciliation of temporary shared copies. Current proposals to do this have removed some of the restrictions of conventional multi-core systems but introduced others of their own.This project proposes to perform a practical investigation of a novel Transactional Memory scheme which builds upon previous similar work but uses properties particular to the Object Oriented style of programming, concerned with the structuring of data, to avoid many of the existing problems. It uses memory structuring techniques which have been shown to be advantageous to the Object Oriented style and extends these to the world of Transactions. In addition, it will investigate support for the optimisation of Transactional execution using the highly flexible software systems which have been developed for the execution of Object Oriented programs.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

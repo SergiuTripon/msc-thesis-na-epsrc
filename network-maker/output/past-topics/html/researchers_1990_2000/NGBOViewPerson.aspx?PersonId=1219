@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=1219" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRNQcm9mZXNzb3IgUyBCZW5mb3JkZGQCAw8PFgIfAgUYVW5pdmVyc2l0eSBvZiBOb3R0aW5naGFtZGQCBQ8PFgIfAgUaU2Nob29sIG9mIENvbXB1dGVyIFNjaWVuY2VkZAIHDw8WAh8CBQ0wMTE1IDk1MSA0MjAzZGQCCQ8PFgIfAgUNMDExNSA4NDYgNjQxNmRkAg0PDxYEHwIFWjExNTExNjEwMTExODEwMTA0NjA5ODEwMTExMDEwMjExMTExNDEwMDA2NDExMDExMTExNjExNjEwNTExMDEwMzEwNDA5NzEwOTA0NjA5NzA5OTA0NjExNzEwNx4IUmVhZE9ubHlnFgweC29ubW91c2VvdmVyZR4Hb25mb2N1cwVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7Hgpvbm1vdXNlb3V0BV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzseBm9uYmx1cgVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HwAFPGphdmFzY3JpcHQ6c2VuZHRvKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJykudmFsdWUpOx8BBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJztkAg8PPCsACwEADxYIHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudAIKHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgpkFgJmD2QWFAIBD2QWBGYPZBYCAgEPDxYCHwIFF0FydGlmaWNpYWwgSW50ZWxsaWdlbmNlZGQCAQ9kFgICAQ8PFgIfAgUfQ29tcHV0ZXIgR3JhcGhpY3MgJmFtcDsgVmlzdWFsLmRkAgIPZBYEZg9kFgICAQ8PFgIfAgUfRGVzaWduICZhbXA7IFRlc3RpbmcgVGVjaG5vbG9neWRkAgEPZBYCAgEPDxYCHwIFEkRlc2lnbiBFbmdpbmVlcmluZ2RkAgMPZBYEZg9kFgICAQ8PFgIfAgUSRGVzaWduIEVuZ2luZWVyaW5nZGQCAQ9kFgICAQ8PFgIfAgUYRGlnaXRhbCBBcnQgJmFtcDsgRGVzaWduZGQCBA9kFgRmD2QWAgIBDw8WAh8CBRBEaWdpdGFsIEFydHMgSFRQZGQCAQ9kFgICAQ8PFgIfAgUZRGlnaXRhbCBTaWduYWwgUHJvY2Vzc2luZ2RkAgUPZBYEZg9kFgICAQ8PFgIfAgUaSHVtYW4gQ29tbXVuaWNhdGlvbiBpbiBJQ1RkZAIBD2QWAgIBDw8WAh8CBRtIdW1hbi1Db21wdXRlciBJbnRlcmFjdGlvbnNkZAIGD2QWBGYPZBYCAgEPDxYCHwIFIEluZm9ybWF0aW9uICZhbXA7IEtub3dsZWRnZSBNZ210ZGQCAQ9kFgICAQ8PFgIfAgUhTWVkaWEgJmFtcDsgQ29tbXVuaWNhdGlvbiBTdHVkaWVzZGQCBw9kFgRmD2QWAgIBDw8WAh8CBRBNb2JpbGUgQ29tcHV0aW5nZGQCAQ9kFgICAQ8PFgIfAgUKTXVsdGltZWRpYWRkAggPZBYEZg9kFgICAQ8PFgIfAgUfTXVzaWMgJmFtcDsgQWNvdXN0aWMgVGVjaG5vbG9neWRkAgEPZBYCAgEPDxYCHwIFIk5ldHdvcmtzICZhbXA7IERpc3RyaWJ1dGVkIFN5c3RlbXNkZAIJD2QWBGYPZBYCAgEPDxYCHwIFG05ldyBNZWRpYS9XZWItQmFzZWQgU3R1ZGllc2RkAgEPZBYCAgEPDxYCHwIFIlN0YXRpc3RpY3MgJmFtcDsgQXBwbC4gUHJvYmFiaWxpdHlkZAIKD2QWBGYPZBYCAgEPDxYCHwIFHlRyYW5zcG9ydCBPcHMgJmFtcDsgTWFuYWdlbWVudGRkAgEPZBYCAgEPDxYCHwJlZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAgYfCgIBHwsCBmQWAmYPZBYMAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMTAyODAvMSc+RVAvTjAxMDI4MC8xPC9hPiBkZAIBDw8WAh8CBTVBREFNOiBBbnRocm9wb21vcnBoaWMgRGVzaWduIGZvciBBZHZhbmNlZCBNYW51ZmFjdHVyZWRkAgIPDxYCHwIFAyhDKWRkAgIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMjMxNVgvMSc+RVAvTTAyMzE1WC8xPC9hPiBkZAIBDw8WAh8CBSZGcm9tIEh1bWFuIERhdGEgdG8gUGVyc29uYWwgRXhwZXJpZW5jZWRkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMDA4NzcvMSc+RVAvTTAwMDg3Ny8xPC9hPiBkZAIBDw8WAh8CBRxMaXZpbmcgd2l0aCBEaWdpdGFsIFViaXF1aXR5ZGQCAg8PFgIfAgUDKFApZGQCBA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTDAxNTQ2My8xJz5FUC9MMDE1NDYzLzE8L2E+IGRkAgEPDxYCHwIFNUVQU1JDIENlbnRyZSBmb3IgRG9jdG9yYWwgVHJhaW5pbmcgaW4gTXkgTGlmZSBpbiBEYXRhZGQCAg8PFgIfAgUDKFApZGQCBQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTDAxOTk4MS8xJz5FUC9MMDE5OTgxLzE8L2E+IGRkAgEPDxYCHwIFV0Z1c2luZyBTZW1hbnRpYyBhbmQgQXVkaW8gVGVjaG5vbG9naWVzIGZvciBJbnRlbGxpZ2VudCBNdXNpYyBQcm9kdWN0aW9uIGFuZCBDb25zdW1wdGlvbmRkAgIPDxYCHwIFAyhDKWRkAgYPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0cwMzc1NzQvMSc+RVAvRzAzNzU3NC8xPC9hPiBkZAIBDw8WAh8CBSpVYmlxdWl0b3VzIENvbXB1dGluZyBmb3IgYSBEaWdpdGFsIEVjb25vbXlkZAICDw8WAh8CBQMoUClkZAIDD2QWAmYPZBYCZg88KwALAQAPFggfCBYAHwkCFh8KAgEfCwIWZBYCZg9kFiwCAQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTDAyMzcxNy8xJz5FUC9MMDIzNzE3LzE8L2E+IGRkAgEPDxYCHwIFK0xpdmluZyBXaXRoIEludGVyYWN0aXZlIERlY29yYXRpdmUgUGF0dGVybnNkZAICDw8WAh8CBQMoQylkZAICD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDAzOTQxLzEnPkVQL0swMDM5NDEvMTwvYT4gZGQCAQ8PFgIfAgU7QnVpbGRpbmcgR2xvYmFsIEVuZ2FnZW1lbnRzIGF0IHRoZSBVbml2ZXJzaXR5IG9mIE5vdHRpbmdoYW1kZAICDw8WAh8CBQMoQylkZAIDD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9KMDA1MjE1LzEnPkVQL0owMDUyMTUvMTwvYT4gZGQCAQ8PFgIfAgVQRHJlYW0gRmVsbG93c2hpcDogSW5zcGlyYXRpb24sIEltbWVyc2lvbiBhbmQgSW1wYWN0IHdpdGggdGhlIENyZWF0aXZlIEluZHVzdHJpZXNkZAICDw8WAh8CBQMoUClkZAIED2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDY1ODAyLzEnPkVQL0cwNjU4MDIvMTwvYT4gZGQCAQ8PFgIfAgU8SG9yaXpvbjogRGlnaXRhbCBFY29ub215IEh1YiBhdCB0aGUgVW5pdmVyc2l0eSBvZiBOb3R0aW5naGFtZGQCAg8PFgIfAgUDKEMpZGQCBQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSDAyNDg2Ny8xJz5FUC9IMDI0ODY3LzE8L2E+IGRkAgEPDxYCHwIFF1Rvd2FyZHMgUGVydmFzaXZlIE1lZGlhZGQCAg8PFgIfAgUDKFApZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjA2NDI3Ni8xJz5FUC9GMDY0Mjc2LzE8L2E+IGRkAgEPDxYCHwIFPkhvbWV3b3JrOiBTaGFwaW5nIEZ1dHVyZSBVc2VyIENlbnRyZWQgRG9tZXN0aWMgSW5mcmFzdHJ1Y3R1cmVzZGQCAg8PFgIfAgUDKEMpZGQCBw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjAzMDM4WC8xJz5FUC9GMDMwMzhYLzE8L2E+IGRkAgEPDxYCHwIFMFRoZSBDaGFsbGVuZ2Ugb2YgV2lkZXNwcmVhZCBVYmlxdWl0b3VzIENvbXB1dGluZ2RkAgIPDxYCHwIFAyhQKWRkAggPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0cwMDIwODgvMSc+RVAvRzAwMjA4OC8xPC9hPiBkZAIBDw8WAh8CBUZOZXcgUmVzZWFyY2ggUHJvY2Vzc2VzIGFuZCBCdXNpbmVzcyBNb2RlbHMgZm9yIHRoZSBDcmVhdGl2ZSBJbmR1c3RyaWVzZGQCAg8PFgIfAgUDKFApZGQCCQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjA2NjkxMC8xJz5FUC9GMDY2OTEwLzE8L2E+IGRkAgEPDxYCHwIFXVdlYXJhYmxlIEJpb3NlbnNpbmcgYW5kIHRoZSBEZXNpZ24sIERvY3VtZW50YXRpb24gYW5kIEFkYXB0YXRpb24gb2YgRW50ZXJ0YWlubWVudCBFeHBlcmllbmNlc2RkAgIPDxYCHwIFAyhQKWRkAgoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwMTg1ODAvMSc+RVAvRTAxODU4MC8xPC9hPiBkZAIBDw8WAh8CBUhCcmlkZ2luZyB0aGUgR2FwcyBiZXR3ZWVuIE1hdGhlbWF0aWNzLCBJQ1QgYW5kIEVuZ2luZWVyaW5nIGF0IE5vdHRpbmdoYW1kZAICDw8WAh8CBQMoUClkZAILD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDMzNzgwLzEnPkVQL0QwMzM3ODAvMTwvYT4gZGQCAQ8PFgIfAgVTUGFydGljaXBhdGU6IFBlcnZhc2l2ZSBDb21wdXRpbmcgZm9yIE1hc3MgUGFydGljaXBhdGlvbiBpbiBFbnZpcm9ubWVudGFsIE1vbml0b3JpbmdkZAICDw8WAh8CBQMoUClkZAIMD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9ENTAzMjU2LzEnPkVQL0Q1MDMyNTYvMTwvYT4gZGQCAQ8PFgIfAgVLQSBub3ZlbCB2aXJ0dWFsIHJlYWxpdHkgc3VyZ2VyeSBzaW11bGF0b3IgdXNpbmcgQm91bmRhcnkgRWxlbWVudCB0ZWNobm9sb2d5ZGQCAg8PFgIfAgUDKEMpZGQCDQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvVDIxMDM1LzAxJz5HUi9UMjEwMzUvMDE8L2E+IGRkAgEPDxYCHwIFb1BlcnZhc2l2ZSBNZWRpYSAmYW1wOyBMb2NhdGl2ZSBNZWRpYTogRW5oYW5jaW5nIE1vYmlsZSAmYW1wOyBXaXJlbGVzcyBUZWNobm9sb2dpZXMgZm9yIEN1bHR1cmUgJmFtcDsgQ3JlYXRpdml0eWRkAgIPDxYCHwIFAyhQKWRkAg4PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1I4Njg5OC8wMSc+R1IvUjg2ODk4LzAxPC9hPiBkZAIBDw8WAh8CBUJGbGlnaHRkZWNrIGFuZCBBaXIgVHJhZmZpYyBDb250cm9sIENvbGxhYm9yYXRpb24gRXZhbHVhdGlvbiAoRkFDRSlkZAICDw8WAh8CBQMoQylkZAIPD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SODQwMzAvMDEnPkdSL1I4NDAzMC8wMTwvYT4gZGQCAQ8PFgIfAgVnU2ltdWxhdGlvbiBvZiBzdXJnaWNhbCBvcGVyYXRpb24gdXNpbmcgdmlydHVhbCBvcmdhbnM6IGJvdW5kYXJ5IGVsZW1lbnQgbW9kZWxzIG9mIGRlZm9ybWFibGUgYm9keSBwYXJ0c2RkAgIPDxYCHwIFAyhDKWRkAhAPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL04xNTk4Ni8wMSc+R1IvTjE1OTg2LzAxPC9hPiBkZAIBDw8WAh8CBT9FUVVBVE9SIC0gVEVDSE5PTE9HSUNBTCBJTk5PVkFUSU9OIElOIFBIWVNJQ0FMIEFORCBESUdJVEFMIExJRkVkZAICDw8WAh8CBQMoQylkZAIRD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMjEyNTYvMDEnPkdSL00yMTI1Ni8wMTwvYT4gZGQCAQ8PFgIfAgUuTVVMVElNRURJQSBORVRXT1JLSU5HIEZPUiBJTkhBQklURUQgVEVMRVZJU0lPTmRkAgIPDxYCHwIFAyhQKWRkAhIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0w2MDM4OC8wMSc+R1IvTDYwMzg4LzAxPC9hPiBkZAIBDw8WAh8CBS5NVUxUSU1FRElBIE5FVFdPUktJTkcgRk9SIElOSEFCSVRFRCBURUxFVklTSU9OZGQCAg8PFgIfAgUDKFApZGQCEw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDAyMDc0LzAxJz5HUi9MMDIwNzQvMDE8L2E+IGRkAgEPDxYCHwIFMExBUkdFIFNDQUxFIFJFQUwtVElNRSBNVUxUSS1VU0VSIFZJUlRVQUwgUkVBTElUWWRkAgIPDxYCHwIFAyhQKWRkAhQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0wwMTUyNy8wMSc+R1IvTDAxNTI3LzAxPC9hPiBkZAIBDw8WAh8CBTBMQVJHRSBTQ0FMRSBSRUFMLVRJTUUgTVVMVEktVVNFUiBWSVJUVUFMIFJFQUxJVFlkZAICDw8WAh8CBQMoQylkZAIVD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LMzgyMDUvMDEnPkdSL0szODIwNS8wMTwvYT4gZGQCAQ8PFgIfAgVDUk9QQTogVEhFIERJU1RSSUJVVEVEIEVYVEVOU0lCTEUgVklSVFVBTCBSRUFMSVRZIExBQk9SQVRPUlkgKERFVlJMKWRkAgIPDxYCHwIFAyhQKWRkAhYPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0o1MzgzNi8wMSc+R1IvSjUzODM2LzAxPC9hPiBkZAIBDw8WAh8CBSxWSVJUVU9TSSAtIFNVUFBPUlQgRk9SIFZJUlRVQUwgT1JHQU5JU0FUSU9OU2RkAgIPDxYCHwIFAyhQKWRkAhMPZBYEZg9kFgJmD2QWAgIBDw8WAh4HVmlzaWJsZWdkZAICD2QWAmYPZBYCAgEPDxYGHgpSZXBvcnROYW1lBQpWaWV3UGVyc29uHg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcwhQZXJzb25JRB4OUGFyYW1ldGVyVmFsdWUVAjhodHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTIxOQQxMjE5ZBYCZg9kFgJmD2QWBAIDDxBkZBYBZmQCBQ8PZBYCHwFlZAIHDw8WAh8MaGRkZBt+qC9Ry8QaioRaZEhwZFbJDx17" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALA6q3QBgLQvN++DAKT/OCVAwLKoMrZD60peBZaTWXfTR1Os5CUu4ERm1Ex" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor S Benford</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">University of Nottingham</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">School of Computer Science</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">0115 951 4203</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">0115 846 6416</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="115116101118101046098101110102111114100064110111116116105110103104097109046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Artificial Intelligence</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Computer Graphics &amp; Visual.</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Design &amp; Testing Technology</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2">Design Engineering</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label1">Design Engineering</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label2">Digital Art &amp; Design</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label1">Digital Arts HTP</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label2">Digital Signal Processing</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label1">Human Communication in ICT</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label2">Human-Computer Interactions</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label1">Information &amp; Knowledge Mgmt</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label2">Media &amp; Communication Studies</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl08_Label1">Mobile Computing</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl08_Label2">Multimedia</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl09_Label1">Music &amp; Acoustic Technology</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl09_Label2">Networks &amp; Distributed Systems</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl10_Label1">New Media/Web-Based Studies</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl10_Label2">Statistics &amp; Appl. Probability</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl11_Label1">Transport Ops &amp; Management</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl11_Label2"></span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/N010280/1'>EP/N010280/1</a> </b></td><td align="left">ADAM: Anthropomorphic Design for Advanced Manufacture</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M02315X/1'>EP/M02315X/1</a> </b></td><td align="left">From Human Data to Personal Experience</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M000877/1'>EP/M000877/1</a> </b></td><td align="left">Living with Digital Ubiquity</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L015463/1'>EP/L015463/1</a> </b></td><td align="left">EPSRC Centre for Doctoral Training in My Life in Data</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L019981/1'>EP/L019981/1</a> </b></td><td align="left">Fusing Semantic and Audio Technologies for Intelligent Music Production and Consumption</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G037574/1'>EP/G037574/1</a> </b></td><td align="left">Ubiquitous Computing for a Digital Economy</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L023717/1'>EP/L023717/1</a> </b></td><td align="left">Living With Interactive Decorative Patterns</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K003941/1'>EP/K003941/1</a> </b></td><td align="left">Building Global Engagements at the University of Nottingham</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J005215/1'>EP/J005215/1</a> </b></td><td align="left">Dream Fellowship: Inspiration, Immersion and Impact with the Creative Industries</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G065802/1'>EP/G065802/1</a> </b></td><td align="left">Horizon: Digital Economy Hub at the University of Nottingham</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H024867/1'>EP/H024867/1</a> </b></td><td align="left">Towards Pervasive Media</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F064276/1'>EP/F064276/1</a> </b></td><td align="left">Homework: Shaping Future User Centred Domestic Infrastructures</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F03038X/1'>EP/F03038X/1</a> </b></td><td align="left">The Challenge of Widespread Ubiquitous Computing</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G002088/1'>EP/G002088/1</a> </b></td><td align="left">New Research Processes and Business Models for the Creative Industries</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F066910/1'>EP/F066910/1</a> </b></td><td align="left">Wearable Biosensing and the Design, Documentation and Adaptation of Entertainment Experiences</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E018580/1'>EP/E018580/1</a> </b></td><td align="left">Bridging the Gaps between Mathematics, ICT and Engineering at Nottingham</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D033780/1'>EP/D033780/1</a> </b></td><td align="left">Participate: Pervasive Computing for Mass Participation in Environmental Monitoring</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D503256/1'>EP/D503256/1</a> </b></td><td align="left">A novel virtual reality surgery simulator using Boundary Element technology</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/T21035/01'>GR/T21035/01</a> </b></td><td align="left">Pervasive Media &amp; Locative Media: Enhancing Mobile &amp; Wireless Technologies for Culture &amp; Creativity</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R86898/01'>GR/R86898/01</a> </b></td><td align="left">Flightdeck and Air Traffic Control Collaboration Evaluation (FACE)</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R84030/01'>GR/R84030/01</a> </b></td><td align="left">Simulation of surgical operation using virtual organs: boundary element models of deformable body parts</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N15986/01'>GR/N15986/01</a> </b></td><td align="left">EQUATOR - TECHNOLOGICAL INNOVATION IN PHYSICAL AND DIGITAL LIFE</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M21256/01'>GR/M21256/01</a> </b></td><td align="left">MULTIMEDIA NETWORKING FOR INHABITED TELEVISION</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L60388/01'>GR/L60388/01</a> </b></td><td align="left">MULTIMEDIA NETWORKING FOR INHABITED TELEVISION</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L02074/01'>GR/L02074/01</a> </b></td><td align="left">LARGE SCALE REAL-TIME MULTI-USER VIRTUAL REALITY</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L01527/01'>GR/L01527/01</a> </b></td><td align="left">LARGE SCALE REAL-TIME MULTI-USER VIRTUAL REALITY</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K38205/01'>GR/K38205/01</a> </b></td><td align="left">ROPA: THE DISTRIBUTED EXTENSIBLE VIRTUAL REALITY LABORATORY (DEVRL)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J53836/01'>GR/J53836/01</a> </b></td><td align="left">VIRTUOSI - SUPPORT FOR VIRTUAL ORGANISATIONS</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

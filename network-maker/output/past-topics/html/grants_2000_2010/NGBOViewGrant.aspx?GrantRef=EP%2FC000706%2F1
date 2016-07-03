@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Exactness and the Haagerup property for discrete groups
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC000706%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzAwMDcwNi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVIPHN0cm9uZz5FeGFjdG5lc3MgYW5kIHRoZSBIYWFnZXJ1cCBwcm9wZXJ0eSBmb3IgZGlzY3JldGUgZ3JvdXBzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVEPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zMjAyMSc+TmlibG8sIFByb2Zlc3NvciBHQTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRVTY2hvb2wgb2YgTWF0aGVtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRlVbml2ZXJzaXR5IG9mIFNvdXRoYW1wdG9uZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUeT3ZlcnNlYXMgVHJhdmVsIEdyYW50cyBQcmUtRkVDZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAULMjEgTWF5IDIwMDRkZAIDD2QWAgIBDw8WAh8EBQ4yMCBBdWd1c3QgMjAwNGRkAgUPZBYCAgEPDxYEHwQFAzkyMB4HVG9vbFRpcAUGOTIwLjAwZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5FU1hdGhlbWF0aWNhbCBBbmFseXNpc2QCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAXHCEFuYWx5c2lzIGlzIHBsYXlpbmcgYW4gaW5jcmVhc2luZ2x5IGltcG9ydGFudCByb2xlIGluIGdyb3VwIHRoZW9yeSBhbmQgZ2VvbWV0cnkuIEluIHRoaXMgcHJvamVjdCBpdCBpcyBpbnRlbmRlZCB0byBzdHVkeSAgdGhlIGFuYWx5dGljIHByb3BlcnR5IG9mIGV4YWN0bmVzcyB1c2luZyBnZW9tZXRyaWMgbWV0aG9kcy4gRXhpc3RpbmcgdGVjaG5pcXVlcyBmb3IgdGhlIHN0dWR5IG9mIGZyZWUgZ3JvdXBzZGV2ZWxvcGVkIGJ5IEd1ZW50bmVyIGFuZCBLYW1pbmtlciB3aWxsIGJlIGdlbmVyYWxpc2VkIHRvIHNob3cgdGhhdCBncm91cHMgYWN0aW5nIHByb3Blcmx5IG9uIGZpbml0ZSBkaW1lbnNpb25hbCBDQVQoMCkgY3ViZSBjb21wbGV4ZXMgaGF2ZSBleGFjdCByZWR1Y2VkIEMqIGFsZ2VicmFzLiBUaGUgdGVjaG5pcXVlIHdpbGwgaW52b2x2ZSB0aGUgY29uc3RydWN0aW9uIG9mIGxhcmdlIHNjYWxlIExpcHNjaGl0eiBtYXBzIGZyb20gdGhlIGdyb3VwIHRvIGFuIGFwcHJvcHJpYXRlIEhpbGJlcnQgc3BhY2UuIE1vcmUgc3BlY3VsYXRpdmVseSBpdCBpcyBpbnRlbmRlZCB0byBhdHRlbXB0IHRvIGFwcGx5IHRoZXNlIGlkZWFzIHRvIHN0dWR5IHRoZSBvdXRlciBhdXRvbW9ycGhpc20gZ3JvdXAgb2YgYSBmcmVlIGdyb3VwLiBUaGUgbWFpbiB0ZWNobmlxdWUgaGVyZSB3aWxsIGJlIHRvIHN0dWR5IHRoZSBhY3Rpb24gb2YgdGhlIGdyb3VwIG9uIE91dGVyIHNwYWNlIGFuZCB0byBhdHRlbXB0IHRvIGltcG9zZSB0aGUgYWRkaXRpb25hbCBzdHJ1Y3R1cmUgb2YgYSAgbWVhc3VyZWQgd2FsbCBzcGFjZSBhcyAgcmVjZW50bHkgZGVmaW5lZCBieSBWYWxldHRlIGFuZCBoaXMgY29sbGFib3JhdG9ycy4gVGhlIGluaXRpYWwgc3RlcCB3aWxsIGludm9sdmUgc3R1ZHlpbmcgdGhlIG9uZSBjYXNlIHdoZXJlIHN1Y2ggYW4gYWN0aW9uIGlzIGtub3duIHRvIGV4aXN0LCB0aGUgb3V0ZXIgYXV0b21vcnBoaXNtIGdyb3VwIG9mIHRoZSBmcmVlIGdyb3VwIG9mIHJhbmsgMi4gIEhlcmUgdGhlIGdyb3VwIGFjdHMgb24gYSB0cmVlIGFuZCB3ZSB3aWlsbCBzdHVkeSB0aGUgaW5kdWNlZCAgd2FsbCBzdHJ1Y3R1cmUgaW4gT3V0ZXIgc3BhY2UgLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc290b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc290b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DMDAwNzA2LzEMRVAvQzAwMDcwNi8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGRlYVaEVsZoCRbJPCuTKl1Dt6hEkA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKx0ubyCALQvN++DAKT/OCVA/0FbZZzaPIwfEVNZnJ86f4p+vqT" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C000706/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Exactness and the Haagerup property for discrete groups</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=32021'>Niblo, Professor GA</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">School of Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Southampton</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Overseas Travel Grants Pre-FEC</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">21 May 2004</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">20 August 2004</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="920.00" class="DetailValue">920</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Mathematical Analysis</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Analysis is playing an increasingly important role in group theory and geometry. In this project it is intended to study  the analytic property of exactness using geometric methods. Existing techniques for the study of free groupsdeveloped by Guentner and Kaminker will be generalised to show that groups acting properly on finite dimensional CAT(0) cube complexes have exact reduced C* algebras. The technique will involve the construction of large scale Lipschitz maps from the group to an appropriate Hilbert space. More speculatively it is intended to attempt to apply these ideas to study the outer automorphism group of a free group. The main technique here will be to study the action of the group on Outer space and to attempt to impose the additional structure of a  measured wall space as  recently defined by Valette and his collaborators. The initial step will involve studying the one case where such an action is known to exist, the outer automorphism group of the free group of rank 2.  Here the group acts on a tree and we wiill study the induced  wall structure in Outer space .</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.soton.ac.uk                                                                              '>http://www.soton.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

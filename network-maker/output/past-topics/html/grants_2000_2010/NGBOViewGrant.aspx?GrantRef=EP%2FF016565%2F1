@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	MULTIPHASE FLOW IN VERTICAL AND DEVIATED PIPES
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF016565%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAxNjU2NS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU/PHN0cm9uZz5NVUxUSVBIQVNFIEZMT1cgSU4gVkVSVElDQUwgQU5EIERFVklBVEVEIFBJUEVTPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01MDUwOSc+WWV1bmcsIFByb2Zlc3NvciBIPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgYWDAIBD2QWAmYPFQNSPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTQxMjYnPkFkdmFudGljYSBUZWNobm9sb2dpZXMgTHRkPC9hPjw8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwMjM1Jz5CUDwvYT5BPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTk2NTYnPkNELWFkYXBjbzwvYT5kAgIPZBYCZg8VA0E8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwMzM4Jz5DaGV2cm9uPC9hPkc8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwMzc5Jz5Db25vY29QaGlsaXBzPC9hPj08YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwNTMxJz5FTkk8L2E+ZAIDD2QWAmYPFQNEPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDU3MCc+RXh4b25Nb2JpbDwvYT5DPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDU3Nyc+RkVFU0EgTHRkPC9hPl08YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xNjE0NCc+SW5zdGl0dXRlIG9mIE9pbCBGdWVscyBhbmQgTHVicmljYW50czwvYT5kAgQPZBYCZg8VA0U8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAxMTAxJz5Ob3JzayBIeWRybzwvYT4/PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMTE3NCc+UERTVkE8L2E+YDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS03NjY2Jz5QRVRST0JSQVMgUmVzZWFyY2ggYW5kIERldmVsb3BtZW50IENlbnRlPC9hPmQCBQ9kFgJmDxUDWTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS03NjY1Jz5TY2FucG93ZXIgUGV0cm9sZXVtIFRlY2hub2xvZ3kgQVM8L2E+PzxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDE0MDMnPlNoZWxsPC9hPkA8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAxNDExJz5TaW50ZWY8L2E+ZAIGD2QWAmYPFQNBPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMTQ0OSc+U3RhdG9pbDwvYT5HPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MzkwNCc+VG90YWwgRSZQIFVLIFBMQzwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRJTY2ggb2YgRW5naW5lZXJpbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRRDcmFuZmllbGQgVW5pdmVyc2l0eWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAULMDEgTWF5IDIwMDhkZAIDD2QWAgIBDw8WAh8EBQ0zMCBBcHJpbCAyMDExZGQCBQ9kFgICAQ8PFgQfBAUHMjE0LDg1OR4HVG9vbFRpcAUKMjE0LDg1OC42MWRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCD011bHRpcGhhc2UgRmxvdxhPaWwgJmFtcDsgR2FzIEV4dHJhY3Rpb25kAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCBkVuZXJneQBkAgwPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUEQzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDE2MDUwLzEnPkVQL0YwMTYwNTAvMTwvYT5DPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMTc0NDgvMSc+RVAvRjAxNzQ0OC8xPC9hPgAAZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTggU2VwIDIwMDdkZAIBD2QWBAIBDw8WAh8CaGRkAgMPDxYCHwQFIEVuZ2luZWVyaW5nIFNjaWVuY2UgKEZsb3cpIFBhbmVsZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBfYeVGhpcyBwcm9wb3NhbCBhZGRyZXNzZXMgdGhlIHZpdGFsIGlzc3VlIG9mIHByZWRpY3Rpb24gb2YgbXVsdGlwaGFzZSBmbG93cyBpbiBsYXJnZSBkaWFtZXRlciByaXNlcnMgaW4gb2ZmLXNob3JlIGh5ZHJvY2FyYm9uIHJlY292ZXJ5LiBUaGUgcmlzZXIgaXMgZXNzZW50aWFsbHkgYSB2ZXJ0aWNhbCBvciBuZWFyLXZlcnRpY2FsIHBpcGUgY29ubmVjdGluZyB0aGUgc2VhLWJlZCBjb2xsZWN0aW9uIHBpcGUgbmV0d29yayAodGhlIGZsb3dsaW5lcykgdG8gYSBzZWEtc3VyZmFjZSBpbnN0YWxsYXRpb24sIHR5cGljYWxseSBhIGZsb2F0aW5nIHJlY2VpdmluZyBhbmQgcHJvY2Vzc2luZyB2ZXNzZWwuIEluIHRoZSBlYXJseSB5ZWFycyBvZiBvaWwgYW5kIGdhcyBleHBsb3JhdGlvbiBhbmQgcHJvZHVjdGlvbiwgdGhlIG9pbCBhbmQgZ2FzIGNvbXBhbmllcyBzZWxlY3RlZCB0aGUgbGFyZ2VzdCBhbmQgbW9zdCBhY2Nlc3NpYmxlIG9mZi1zaG9yZSBmaWVsZHMgdG8gZGV2ZWxvcCBmaXJzdC4gSW4gdGhlc2Ugc3lzdGVtcywgdGhlIHJpc2VycyB3ZXJlIHJlbGF0aXZlbHkgc2hvcnQgYW5kIGhhZCBtb2Rlc3QgZGlhbWV0ZXJzLiBIb3dldmVyLCBhcyB0aGVzZSBmaWVsZHMgYXJlIGJlaW5nIGRlcGxldGVkLCB0aGUgb2lsIGFuZCBnYXMgY29tcGFuaWVzIGFyZSBiZWluZyBmb3JjZWQgdG8gbG9vayBmdXJ0aGVyIGFmaWVsZCBmb3IgcmVwbGFjZW1lbnQgcmVzZXJ2ZXMgY2FwYWJsZSBvZiBiZWluZyBkZXZlbG9wZWQgZWNvbm9taWNhbGx5LiAgVGhpcywgdGhlbiwgaGFzIGxlZCB0byBpbmNyZWFzZWQgaW50ZXJlc3QgaW4gZGVlcGVyIHdhdGVycywgYW5kIGhhcnNoZXIgYW5kIG1vcmUgcmVtb3RlIGVudmlyb25tZW50cywgbW9zdCBub3RhYmx5IGluIHRoZSBHdWxmIG9mIE1leGljbywgdGhlIEJyYXppbGlhbiBDYW1wb3MgYmFzaW4sIFdlc3Qgb2YgU2hldGxhbmRzIGFuZCB0aGUgQW5nb2xhbiBBcHRpYW4gYmFzaW4uICBNYW55IG9mIHRoZSBtYWpvciBkZWVwd2F0ZXIgZGV2ZWxvcG1lbnRzIGFyZSBsb2NhdGVkIGluIHdhdGVyIGRlcHRocyBleGNlZWRpbmcgMWttIChlLmcuIEVsZidzIEdpcmFzc29sIGF0IDEzMDBtIG9yIFBldHJvYnJhcycgUm9uY2Fkb3IgYXQgMTUwMC0yMDAwbSkuIFRvIHRyYW5zcG9ydCB0aGUgcHJvZHVjZWQgZmx1aWRzIGluIHN1Y2ggc3lzdGVtcyB3aXRoIHRoZSBhdmFpbGFibGUgcHJlc3N1cmUgZHJpdmluZyBmb3JjZXMgaGFzIGxlZCBuYXR1cmFsbHkgdG8gdGhlIHNwZWNpZmljYXRpb24gb2YgcmlzZXJzIG9mIG11Y2ggZ3JlYXRlciBkaWFtZXRlciAodHlwaWNhbGx5IDMwMCBtbSkgdGhhbiB0aG9zZSB1c2VkIHByZXZpb3VzbHkgKHR5cGljYWxseSA3NSBtbSkuIEludmVzdG1lbnRzIGluIHN1Y2ggc3lzdGVtcyBoYXZlIGJlZW4sIGFuZCB3aWxsIGNvbnRpbnVlIHRvIGJlLCBodWdlIChhcm91bmQgJDM1IGJpbGxpb24gdXAgdG8gMjAwNSkgd2l0aCB0aGUgcmlzZXIgc3lzdGVtcyBhY2NvdW50aW5nIGZvciBhcm91bmQgMjAlIG9mIHRoZSBjb3N0cy4gUHJlZGljdGlvbiBvZiB0aGUgcGVyZm9ybWFuY2Ugb2YgdGhlIG11bHRpcGhhc2UgZmxvdyByaXNlciBzeXN0ZW1zIGlzIG9mIHZpdGFsIGltcG9ydGFuY2UgYnV0LCB2ZXJ5IHVuZm9ydHVuYXRlbHksIGF2YWlsYWJsZSBtZXRob2RzIGZvciBzdWNoIHByZWRpY3Rpb24gYXJlIG9mIGRvdWJ0ZnVsIHZhbGlkaXR5LiBUaGUgbWFpbiByZWFzb24gZm9yIHRoaXMgaXMgdGhhdCB0aGUgYXZhaWxhYmxlIGRhdGEgYW5kIG1ldGhvZHMgaGF2ZSBiZWVuIGJhc2VkIG9uIG1lYXN1cmVtZW50cyBvbiBzbWFsbGVyIGRpYW1ldGVyIHR1YmVzICh0eXBpY2FsbHkgMjUtNzUgbW0pIGFuZCBvbiB0aGUgaW50ZXJwcmV0YXRpb24gb2YgdGhlc2UgbWVhc3VyZW1lbnRzIGluIHRlcm1zIG9mIHRoZSBmbG93IHBhdHRlcm5zIG9jY3VycmluZyBpbiBzdWNoIHR1YmVzLiBUaGVzZSBmbG93IHBhdHRlcm5zIGFyZSB0eXBpY2FsbHkgYnViYmxlLCBzbHVnLCBjaHVybiBhbmQgYW5udWxhciBmbG93cy4gVGhlIGxpbWl0ZWQgYW1vdW50IG9mIGRhdGEgYXZhaWxhYmxlIHNob3dzIHRoYXQgdGhlIGZsb3cgcGF0dGVybnMgaW4gbGFyZ2VyIHR1YmVzIG1heSBiZSBxdWl0ZSBkaWZmZXJlbnQgYW5kIHRoYXQsIHdpdGhpbiBhIGdpdmVuIGZsb3cgcGF0dGVybiwgdGhlIGRldGFpbGVkIHBoZW5vbWVuYSBtYXkgYWxzbyBiZSBkaWZmZXJlbnQuIEZvciBpbnN0YW5jZSwgdGhlcmUgYXJlIHJlYXNvbnMgdG8gYmVsaWV2ZSB0aGF0IHNsdWcgZmxvdyBvZiB0aGUgbm9ybWFsIHR5cGUgKHdpdGggbGlxdWlkIHNsdWdzIHNlcGFyYXRlZCBieSBUYXlsb3IgYnViYmxlcyBvZiBjbGFzc2ljYWwgc2hhcGUpIG1heSBub3QgZXhpc3QgaW4gbGFyZ2UgcGlwZXMuIE1ldGhvZHMgdG8gcHJlZGljdCBzdWNoIGZsb3dzIHdpdGggY29uZmlkZW5jZSB3aWxsIGJlIGltcHJvdmVkIHNpZ25pZmljYW50bHkgYnkgbWVhbnMgb2YgYW4gaW50ZWdyYXRlZCBwcm9ncmFtbWUgb2Ygd29yayBhdCB0aHJlZSB1bml2ZXJzaXRpZXMgKE5vdHRpbmdoYW0sIENyYW5maWVsZCBhbmQgSW1wZXJpYWwgQ29sbGVnZSkgd2hpY2ggd2lsbCBpbnZvbHZlIGJvdGggbGFyZ2VyIHNjYWxlIGludmVzdGlnYXRpb25zIGFzIHdlbGwgYXMgaW52ZXN0aWdhdGlvbnMgaW50byBzcGVjaWZpYyBwaGVub21lbmEgYXQgYSBtb3JlIGludGltYXRlIHNjYWxlIHRvZ2V0aGVyIHdpdGggbW9kZWxsaW5nIHN0dWRpZXMuICBMYXJnZSBmYWNpbGl0aWVzIGF0IE5vdHRpbmdoYW0gYW5kIENyYW5maWVsZCB3aWxsIGJlIHVzZWQgZm9yIGV4cGVyaW1lbnRzIGluIHdoaWNoIHRoZSBwaGFzZSBkaXN0cmlidXRpb24gYWJvdXQgdGhlIHBpcGUgY3Jvc3Mgc2VjdGlvbiB3aWxsIGJlIG1lYXN1cmVkIHVzaW5nIG5vdmVsIGluc3RydW1lbnRhdGlvbiB3aGljaCBjYW4gaGFuZGxlIGEgcmFuZ2Ugb2YgZmx1aWRzLiAgVGhlIENyYW5maWVsZCB0ZXN0cyB3aWxsIGJlIGF0IGEgdmVyeSBsYXJnZSBkaWFtZXRlciAoMjUwIG1tKSBidXQgd2lsbCBiZSBjb25maW5lZCB0byB2ZXJ0aWNhbCwgYWlyL3dhdGVyIHN0dWRpZXMgd2l0aCBzcGVjaWFsIGVtcGhhc2lzIG9uIGxhcmdlIGJ1YmJsZXMgYmVoYXZpb3VyLiAgSW4gY29udHJhc3QgdGhvc2UgYXQgTm90dGluZ2hhbSB3aWxsIGVtcGxveSBhIHNsaWdodGx5IHNtYWxsZXIgcGlwZSBkaWFtZXRlciAoMTI1IG1tKSBidXQgd2lsbCB1c2UgbmV3bHkgYnVpbHQgZmFjaWxpdGllcyBpbiB3aGljaCBhIHZhcmlldHkgb2YgZmx1aWRzIGNhbiBiZSBlbXBsb3llZCB0byB2YXJ5IHBoeXNpY2FsIHByb3BlcnRpZXMgc3lzdGVtYXRpY2FsbHkgYW5kIGNhbiB1dGlsaXNlIHZlcnRpY2FsIGFuZCBzbGlnaHRseSBpbmNsaW5lZCB0ZXN0IHBpcGVzLiAgVGhlIHdvcmsgdG8gYmUgY2FycmllZCBvdXQgYXQgSW1wZXJpYWwgQ29sbGVnZSB3aWxsIGJlIGV4cGVyaW1lbnRhbCBhbmQgbnVtZXJpY2FsLiAgVGhlIGZvcm1lciB3aWxsIGZvY3VzIG9uIGV4YW1pbmluZyB0aGUgc3BhdGlvLXRlbXBvcmFsIGV2b2x1dGlvbiBvZiB3YXZlcyBpbiBjaHVybiBhbmQgYW5udWxhciBmbG93cyBpbiBhbm51bHVzIGdlb21ldHJpZXM7IHRoZSBsYXR0ZXIgd2lsbCB1c2UgaW50ZXJmYWNlLXRyYWNraW5nIG1ldGhvZHMgdG8gcGVyZm9ybSBzaW11bGF0aW9ucyBvZiBidWJibGVzIGluIHR3by1waGFzZSBmbG93IGFuZCB3aWxsIGFsc28gZm9jdXMgb24gdGhlIGRldmVsb3BtZW50IG9mIGEgY29tcHV0ZXIgY29kZSBjYXBhYmxlIG9mIHByZWRpY3RpbmcgcmVsaWFibHkgdGhlIGZsb3cgYmVoYXZpb3VyIGluIGxhcmdlIGRpYW1ldGVyIHBpcGVzLiAgVGhpcyBjb2RlIHdpbGwgdXNlIGFzIGlucHV0IHRoZSBpbmZvcm1hdGlvbiBkaXN0aWxsZWQgZnJvbSB0aGUgb3RoZXIgd29yay1wYWNrYWdlcyByZWdhcmRpbmcgdGhlIHZhcmlvdXMgZmxvdyByZWdpbWVzIGFsb25nIHRoZSBwaXBlLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuY3JhbmZpZWxkLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuY3JhbmZpZWxkLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDE2NTY1LzEMRVAvRjAxNjU2NS8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQ291v+YcKlg6jevAnpokpTeQrqNQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKIpoKEAwLQvN++DAKT/OCVA0VFmgK3r5s31/q2Gt4QWUvCrDQ7" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F016565/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>MULTIPHASE FLOW IN VERTICAL AND DEVIATED PIPES</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=50509'>Yeung, Professor H</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=14126'>Advantica Technologies Ltd</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000235'>BP</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=19656'>CD-adapco</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1000338'>Chevron</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1000379'>ConocoPhilips</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1000531'>ENI</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000570'>ExxonMobil</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000577'>FEESA Ltd</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=16144'>Institute of Oil Fuels and Lubricants</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1001101'>Norsk Hydro</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1001174'>PDSVA</a></td>
+                                    <td class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-7666'>PETROBRAS Research and Development Cente</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-7665'>Scanpower Petroleum Technology AS</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001403'>Shell</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001411'>Sintef</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1001449'>Statoil</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=3904'>Total E&P UK PLC</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Cranfield University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 May 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 April 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="214,858.61" class="DetailValue">214,859</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Multiphase Flow</td>
+                                    <td class="DetailValue"> Oil &amp; Gas Extraction</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Energy</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/F016050/1'>EP/F016050/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/F017448/1'>EP/F017448/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>18 Sep 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Engineering Science (Flow) Panel</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This proposal addresses the vital issue of prediction of multiphase flows in large diameter risers in off-shore hydrocarbon recovery. The riser is essentially a vertical or near-vertical pipe connecting the sea-bed collection pipe network (the flowlines) to a sea-surface installation, typically a floating receiving and processing vessel. In the early years of oil and gas exploration and production, the oil and gas companies selected the largest and most accessible off-shore fields to develop first. In these systems, the risers were relatively short and had modest diameters. However, as these fields are being depleted, the oil and gas companies are being forced to look further afield for replacement reserves capable of being developed economically.  This, then, has led to increased interest in deeper waters, and harsher and more remote environments, most notably in the Gulf of Mexico, the Brazilian Campos basin, West of Shetlands and the Angolan Aptian basin.  Many of the major deepwater developments are located in water depths exceeding 1km (e.g. Elf's Girassol at 1300m or Petrobras' Roncador at 1500-2000m). To transport the produced fluids in such systems with the available pressure driving forces has led naturally to the specification of risers of much greater diameter (typically 300 mm) than those used previously (typically 75 mm). Investments in such systems have been, and will continue to be, huge (around $35 billion up to 2005) with the riser systems accounting for around 20% of the costs. Prediction of the performance of the multiphase flow riser systems is of vital importance but, very unfortunately, available methods for such prediction are of doubtful validity. The main reason for this is that the available data and methods have been based on measurements on smaller diameter tubes (typically 25-75 mm) and on the interpretation of these measurements in terms of the flow patterns occurring in such tubes. These flow patterns are typically bubble, slug, churn and annular flows. The limited amount of data available shows that the flow patterns in larger tubes may be quite different and that, within a given flow pattern, the detailed phenomena may also be different. For instance, there are reasons to believe that slug flow of the normal type (with liquid slugs separated by Taylor bubbles of classical shape) may not exist in large pipes. Methods to predict such flows with confidence will be improved significantly by means of an integrated programme of work at three universities (Nottingham, Cranfield and Imperial College) which will involve both larger scale investigations as well as investigations into specific phenomena at a more intimate scale together with modelling studies.  Large facilities at Nottingham and Cranfield will be used for experiments in which the phase distribution about the pipe cross section will be measured using novel instrumentation which can handle a range of fluids.  The Cranfield tests will be at a very large diameter (250 mm) but will be confined to vertical, air/water studies with special emphasis on large bubbles behaviour.  In contrast those at Nottingham will employ a slightly smaller pipe diameter (125 mm) but will use newly built facilities in which a variety of fluids can be employed to vary physical properties systematically and can utilise vertical and slightly inclined test pipes.  The work to be carried out at Imperial College will be experimental and numerical.  The former will focus on examining the spatio-temporal evolution of waves in churn and annular flows in annulus geometries; the latter will use interface-tracking methods to perform simulations of bubbles in two-phase flow and will also focus on the development of a computer code capable of predicting reliably the flow behaviour in large diameter pipes.  This code will use as input the information distilled from the other work-packages regarding the various flow regimes along the pipe.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cranfield.ac.uk                                                                          '>http://www.cranfield.ac.uk                                                                          </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

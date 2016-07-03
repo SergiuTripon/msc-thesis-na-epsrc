@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Flip: A concurrent bi-modal programming language for computational thinking
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG006989%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzAwNjk4OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVcPHN0cm9uZz5GbGlwOiBBIGNvbmN1cnJlbnQgYmktbW9kYWwgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2UgZm9yIGNvbXB1dGF0aW9uYWwgdGhpbmtpbmc8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBTw8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0zNzc0Myc+R29vZCwgRHIgSjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSJTY2ggb2YgRW5naW5lZXJpbmcgYW5kIEluZm9ybWF0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUVW5pdmVyc2l0eSBvZiBTdXNzZXhkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRJGaXJzdCBHcmFudCBTY2hlbWVkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBKYW51YXJ5IDIwMDlkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAxMWRkAgUPZBYCAgEPDxYEHwQFBzI5NCw4MTYeB1Rvb2xUaXAFCjI5NCw4MTYuMzNkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCGkh1bWFuIENvbW11bmljYXRpb24gaW4gSUNUG0h1bWFuLUNvbXB1dGVyIEludGVyYWN0aW9uc2QCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzE3IEp1bCAyMDA4ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBSRJQ1QgUHJpb3JpdGlzYXRpb24gUGFuZWwgKEp1bHkgMjAwOCkfAwUbVmlld1BhbmVsLmFzcHg/UGFuZWxJZD00NjUwZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQF0B5UaGUgb3ZlcmFsbCBhaW0gb2YgdGhlIEZsaXAgcHJvamVjdCBpcyB0byBleHBsb3JlIGEgbm92ZWwgd2F5IG9mIGhlbHBpbmcgeW91bmcgcGVvcGxlIGxlYXJuIGhvdyB0byBwcm9ncmFtLCB3aGlsZSBhdCB0aGUgc2FtZSB0aW1lIGZvc3RlcmluZyB0aGVpciAgY29tcHV0YXRpb25hbCB0aGlua2luZyAgc2tpbGxzLiAgVGhlIGNvbmNlcHQgb2YgY29tcHV0YXRpb25hbCB0aGlua2luZyBza2lsbHMgaXMgZmFpcmx5IHJlY2VudC4gQWx0aG91Z2ggaXQgY29tZXMgZnJvbSBjb21wdXRlciBzY2llbmNlLCBpdCBkZXNjcmliZXMgYSBzZXQgb2Ygc2tpbGxzIHRoYXQgYXJlIHVzZWQgaW4gZXZlcnlkYXkgbGlmZTogbWFraW5nIGFuZCBjYXJyeWluZyBvdXQgYSBwbGFuOyBzb3J0aW5nIGludG8gY2F0ZWdvcmllczsgdGhpbmtpbmcgaW4gdGVybXMgb2YgdGhlIGFic3RyYWN0IHJhdGhlciB0aGFuIHRoZSBjb25jcmV0ZSwgZXRjLiBUaGUgaW1wb3J0YW5jZSBvZiBjb21wdXRhdGlvbmFsIHRoaW5raW5nIGlzIGluY3JlYXNpbmcsIGFuZCBpdCBpcyByZWNvZ25pc2VkIGFzIGFuIGltcG9ydGFudCBwYXJ0IG9mIG1hbnkgam9icywgdm9jYXRpb25zIGFuZCBhY2FkZW1pYyBkaXNjaXBsaW5lcy4gIEJlaW5nIGFibGUgdG8gIHRoaW5rIGxpa2UgYSBjb21wdXRlciBzY2llbnRpc3QgIGhhcyBhbGxvd2VkIGZvciBuZXcsIGFuZCBzb21ldGltZXMgcmV2b2x1dGlvbmFyeSwgYWR2YW5jZXMgaW4gZmllbGRzIGFzIGRpdmVyc2UgYXMgbGF3LCBiaW9sb2d5LCBhbmQgdGhlIGFydHMuQXMgaW1wb3J0YW50IGFzIGNvbXB1dGF0aW9uYWwgdGhpbmtpbmcgc2tpbGxzIG1heSBiZSwgbGl0dGxlIHJlc2VhcmNoIGhhcyBiZWVuIGNhcnJpZWQgb3V0IG9uIGhvdyB0byBzdXBwb3J0IHRoZW0uICBGdXJ0aGVybW9yZSwgdGhlIGRpZmZpY3VsdGllcyB0aGF0IG1hbnkgcGVvcGxlIGV4cGVyaWVuY2Ugd2hlbiBsZWFybmluZyB0byBwcm9ncmFtIGhhcyBsZWQgdG8gYSByZWNlbnQgbW92ZSB0byB0ZWFjaCBjb21wdXRhdGlvbmFsIHRoaW5raW5nIHdpdGhvdXQgdGVhY2hpbmcgcHJvZ3JhbW1pbmcsIGFuZCBpdCdzIG5vdCB5ZXQgY2xlYXIgd2hldGhlciB0aGlzIGlzIGEgcG9zaXRpdmUgbW92ZSBvciBub3QuVGhlIGdvYWwgb2YgdGhlIEZsaXAgcHJvamVjdCBpcyB0byBicmluZyB0b2dldGhlciBwcm9ncmFtbWluZyBhbmQgY29tcHV0YXRpb25hbCB0aGlua2luZyB3aXRoaW4gdGhlIGNvbnRleHQgb2YgZ2FtZSBjcmVhdGlvbi4gIFByZXZpb3VzIHJlc2VhcmNoIHN1Z2dlc3RzIHRoYXQgeW91bmcgcGVvcGxlIGZpbmQgdGhlIGNyZWF0aW9uIG9mIGdhbWVzIHRvIGJlIGhpZ2hseSBtb3RpdmF0aW5nLiAgWW91bmcgcGVvcGxlIHdpbGxpbmdseSBlbmdhZ2UgaW4gZ2FtZSBjcmVhdGlvbiBhcyBhIGxlaXN1cmUgYWN0aXZpdHksIGFuZCB3aWxsIHNwZW5kIG1hbnkgaG91cnMgYWNxdWlyaW5nIGNvbXBsZXggc2tpbGxzLCBpbmNsdWRpbmcgaW50ZXJhY3RpdmUgc3Rvcnl0ZWxsaW5nLCBjcmVhdGluZyBjb21wZWxsaW5nIGdhbWUgcGxheSBzZXF1ZW5jZXMsIGFuZCB0aGUgY3JlYXRpb24gYW5kIG1hbmlwdWxhdGlvbiBvZiBtdWx0aXBsZSBmb3JtcyBvZiBtZWRpYSwgaW5jbHVkaW5nIGdyYXBoaWNzIGFuZCBzb3VuZC4gSG93ZXZlciwgb25lIG9mIHRoZSBhY3Rpdml0aWVzIHlvdW5nIHBlb3BsZSBmaW5kIG1vc3QgZGlmZmljdWx0IGluIGNvbW1lcmNpYWwgZ2FtZSBjcmVhdGlvbiBlbnZpcm9ubWVudHMgaXMgdGhlIHByb2dyYW1taW5nIHRoYXQgaXMgcmVxdWlyZWQgaW4gb3JkZXIgdG8gbWFrZSB0aGVpciBnYW1lcyBpbnRlcmFjdGl2ZS4gIFRoZSBwcm9ncmFtbWluZyBsYW5ndWFnZXMgaW5jbHVkZWQgaW4gc3VjaCBlbnZpcm9ubWVudHMgd2VyZSBub3QgZGVzaWduZWQgZm9yIHlvdW5nIHBlb3BsZSwgbm9yIHdlcmUgdGhleSBkZXNpZ25lZCB0byBzdXBwb3J0IHBlb3BsZSBtb3JlIGdlbmVyYWxseSBhcyB0aGV5IGxlYXJuIHRvIHByb2dyYW0uICAgVGhlcmVmb3JlLCB3ZSBwcm9wb3NlIHRvIGRlc2lnbiBhIHByb2dyYW1taW5nIGxhbmd1YWdlIHdoaWNoIHdpbGwgYWxsb3cgeW91bmcgcGVvcGxlIHRvIGNyZWF0ZSBzaW1wbGUgcHJvZ3JhbXMgaW4gdHdvIHdheXM6IHVzaW5nIHRleHR1YWwgaW5wdXQsIHdoaWNoIGlzIHNpbWlsYXIgdG8gdGhlIHdheSB0aGV5IG5hdHVyYWxseSBleHByZXNzIHRoZWlyIHN0b3J5IGlkZWFzIHdoZW4gdGFsa2luZyBhYm91dCB0aGVtIHRvIG90aGVycywgYW5kIHVzaW5nIGdyYXBoaWNhbCBpbnB1dCwgd2hpY2ggaW5jbHVkZXMgdGhlIHVzZSBvZiBpY29ucyBhbmQgY29sb3VyIHRvIGhpZ2hsaWdodCB0aGUgY29tcHV0YXRpb25hbCBzdHJ1Y3R1cmVzIHdpdGhpbiB0aGUgcHJvZ3JhbS4gIFRoZSBsYW5ndWFnZSB3aWxsIGJlIGludGVncmF0ZWQgd2l0aGluIGEgY29tbWVyY2lhbCBnYW1lIGNyZWF0aW9uIHRvb2xraXQgd2hpY2ggYWxsb3dzIHlvdW5nIHBlb3BsZSB0byBjcmVhdGUgc29waGlzdGljYXRlZCByb2xlLXBsYXlpbmcgZ2FtZXMgd2l0aCBhIHByb2Zlc3Npb25hbCBmZWVsLCB3aGljaCBpcyBpbiBpdHNlbGYgdmVyeSBtb3RpdmF0aW5nLlRoZSBmaXJzdCBzdGFnZSBvZiB0aGUgcHJvamVjdCB3aWxsIGJlIHRvIHdvcmsgd2l0aCBhIGdyb3VwIG9mIHlvdW5nIHBlb3BsZSB0byBkZXRlcm1pbmUgaG93IHRoZXkgbmF0dXJhbGx5IGV4cHJlc3MgdGhlaXIgc3RvcnkgaWRlYXMgd2hlbiBjcmVhdGluZyBhIGdhbWUuICBXZSB3aWxsIHVzZSB0aGlzIGluZm9ybWF0aW9uIGluIGRlc2lnbmluZyB0aGUgdGV4dHVhbCBjb21wb25lbnQgb2YgdGhlIGxhbmd1YWdlLCBhbmQgd2lsbCBjcmVhdGUgc3VjY2Vzc2l2ZWx5IHNvcGhpc3RpY2F0ZWQgdmVyc2lvbnMgb2YgdGhlIGxhbmd1YWdlLCBnZXR0aW5nIGlucHV0IGZyb20gb3VyIHRhcmdldCB1c2VycyBhdCBlYWNoIHN0YWdlLiAgV2Ugd2lsbCBhbHNvIHdvcmsgd2l0aCB0aGVzZSB1c2VycyB0byBkZXZlbG9wIHRoZSBncmFwaGljYWwgY29tcG9uZW50IG9mIHRoZSBsYW5ndWFnZSwgYW5kIGdldCB0aGVpciBpbnB1dCBvbiB0aGUgZWFzZSBvZiB1c2Ugb2YgdmFyaW91cyBncmFwaGljYWwgc3lzdGVtcyBpbiBoZWxwaW5nIHRoZW0gYXMgdGhleSBsZWFybiB0byBwcm9ncmFtIGFuZCBkZXZlbG9wIGNvbXB1dGF0aW9uYWwgdGhpbmtpbmcgc2tpbGxzLkZvbGxvd2luZyB0aGlzLCB3ZSB3aWxsIGxvb2sgYXQgd2F5cyBvZiBtZWFzdXJpbmcgY29tcHV0YXRpb25hbCB0aGlua2luZyBza2lsbHMuICBBbHRob3VnaCB0aGVyZSBoYXMgYmVlbiBtdWNoIHRhbGsgb2Ygd2hhdCBjb21wdXRhdGlvbmFsIHNraWxscyBhcmUsIHRoZXJlIGhhcyBiZWVuIGxlc3MgZGlzY3Vzc2lvbiBvbiBob3cgdG8gbWVhc3VyZSB0aGVzZSBza2lsbHMsIGFuZCB3b3JrIGlzIG5lZWRlZCBpbiB0aGlzIGFyZWEgdG8gZGV2ZWxvcCBlZmZlY3RpdmUgYXNzZXNzbWVudHMsIHdoaWNoIHdpbGwgYmUgb2YgdXNlIGJvdGggdG8gdGhpcyBwcm9qZWN0LCBhbmQgbW9yZSBicm9hZGx5LkZpbmFsbHksIHdlIHdpbGwgdGVzdCB0aGUgbGFuZ3VhZ2UgaW4gYW4gZW1waXJpY2FsIHN0dWR5IGRlc2lnbmVkIHRvIGRldGVybWluZSB3aGV0aGVyIHRoZSBsYW5ndWFnZSBkb2VzIGluIGZhY3QgaGVscCB5b3VuZyBwZW9wbGUgdG8gZGV2ZWxvcCBmaXJzdGx5LCB0aGVpciBwcm9ncmFtbWluZyBza2lsbHMgYW5kIHNlY29uZGx5LCB0aGUgYXNzb2NpYXRlZCBoaWdoZXIgbGV2ZWwgY29tcHV0YXRpb25hbCB0aGlua2luZyBza2lsbHMuICBBZGRpdGlvbmFsIHF1ZXN0aW9ucyB3ZSB3b3VsZCBsaWtlIHRvIGFuc3dlciBhcmUgd2hldGhlciB0aGUgZ3JhcGhpY2FsIGFuZCB0ZXh0dWFsIGNvbXBvbmVudHMgYXJlIHVzZWQgaW4gZGlmZmVyZW50IHdheXMsIGFuZC9vciBmb3IgZGlmZmVyZW50IHRhc2tzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc3Vzc2V4LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc3Vzc2V4LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDA2OTg5LzEMRVAvRzAwNjk4OS8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSYcxwH2ccZ6xZCBZ+SMdNYGnTelw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKm8ImYAwLQvN++DAKT/OCVA5rMi0yEGoQjL4VFA/mP91Qfpawv" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G006989/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Flip: A concurrent bi-modal programming language for computational thinking</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-37743'>Good, Dr J</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering and Informatics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Sussex</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="294,816.33" class="DetailValue">294,816</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Human Communication in ICT</td>
+                                    <td class="DetailValue"> Human-Computer Interactions</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>17 Jul 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4650">ICT Prioritisation Panel (July 2008)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The overall aim of the Flip project is to explore a novel way of helping young people learn how to program, while at the same time fostering their  computational thinking  skills.  The concept of computational thinking skills is fairly recent. Although it comes from computer science, it describes a set of skills that are used in everyday life: making and carrying out a plan; sorting into categories; thinking in terms of the abstract rather than the concrete, etc. The importance of computational thinking is increasing, and it is recognised as an important part of many jobs, vocations and academic disciplines.  Being able to  think like a computer scientist  has allowed for new, and sometimes revolutionary, advances in fields as diverse as law, biology, and the arts.As important as computational thinking skills may be, little research has been carried out on how to support them.  Furthermore, the difficulties that many people experience when learning to program has led to a recent move to teach computational thinking without teaching programming, and it's not yet clear whether this is a positive move or not.The goal of the Flip project is to bring together programming and computational thinking within the context of game creation.  Previous research suggests that young people find the creation of games to be highly motivating.  Young people willingly engage in game creation as a leisure activity, and will spend many hours acquiring complex skills, including interactive storytelling, creating compelling game play sequences, and the creation and manipulation of multiple forms of media, including graphics and sound. However, one of the activities young people find most difficult in commercial game creation environments is the programming that is required in order to make their games interactive.  The programming languages included in such environments were not designed for young people, nor were they designed to support people more generally as they learn to program.   Therefore, we propose to design a programming language which will allow young people to create simple programs in two ways: using textual input, which is similar to the way they naturally express their story ideas when talking about them to others, and using graphical input, which includes the use of icons and colour to highlight the computational structures within the program.  The language will be integrated within a commercial game creation toolkit which allows young people to create sophisticated role-playing games with a professional feel, which is in itself very motivating.The first stage of the project will be to work with a group of young people to determine how they naturally express their story ideas when creating a game.  We will use this information in designing the textual component of the language, and will create successively sophisticated versions of the language, getting input from our target users at each stage.  We will also work with these users to develop the graphical component of the language, and get their input on the ease of use of various graphical systems in helping them as they learn to program and develop computational thinking skills.Following this, we will look at ways of measuring computational thinking skills.  Although there has been much talk of what computational skills are, there has been less discussion on how to measure these skills, and work is needed in this area to develop effective assessments, which will be of use both to this project, and more broadly.Finally, we will test the language in an empirical study designed to determine whether the language does in fact help young people to develop firstly, their programming skills and secondly, the associated higher level computational thinking skills.  Additional questions we would like to answer are whether the graphical and textual components are used in different ways, and/or for different tasks.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.sussex.ac.uk                                                                             '>http://www.sussex.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Development of Monte Carlo Techniques for Verification of Conformal Radiotherapy using the UK e-Science Grid
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC538641%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzUzODY0MS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAV9PHN0cm9uZz5EZXZlbG9wbWVudCBvZiBNb250ZSBDYXJsbyBUZWNobmlxdWVzIGZvciBWZXJpZmljYXRpb24gb2YgQ29uZm9ybWFsIFJhZGlvdGhlcmFweSB1c2luZyB0aGUgVUsgZS1TY2llbmNlIEdyaWQ8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUQ8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTQ2OTk5Jz5XYWxrZXIsIFByb2Zlc3NvciBEPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQM9PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD03NjYyOCc+TGV3aXMsIERyIERHPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAz08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTEwOTM4MSc+TXIgSlAgR2lkZHk8L2E+AABkAgUPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDWzxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEzMzkxJz5OYXRpb25hbCBSZXNlYXJjaCBDb3VuY2lsIG9mIENhbmFkYTwvYT5WPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTkzNzEnPlBvbGljbGluaWNvIFMuIE9yc29sYSBNYWxwaWdoaTwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRBDb21wdXRlciBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUSQ2FyZGlmZiBVbml2ZXJzaXR5ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbU3RhbmRhcmQgUmVzZWFyY2ggKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgT2N0b2JlciAyMDA1ZGQCAw9kFgICAQ8PFgIfBAUPMzEgSmFudWFyeSAyMDA5ZGQCBQ9kFgICAQ8PFgQfBAUHMzk5LDExMB4HVG9vbFRpcAUKMzk5LDExMC4yM2RkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCCGVTY2llbmNlHU1lZGljYWwgc2NpZW5jZSAmYW1wOyBkaXNlYXNlZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgpIZWFsdGhjYXJlAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAW4HFJhZGlvdGhlcmFweSBpcyB1c2VkIHRvIHRyZWF0IGNlcnRhaW4gdHlwZXMgb2YgY2FuY2VyIGJ5IGZpcmluZyBYLXJheXMgYXQgdGhlIHR1bW91ci4gVGhpcyBwcm9jZXNzIHNob3VsZCBiZSBvcHRpbWlzZWQgc28gdGhhdCBhIGhpZ2ggZG9zYWdlIG9mIFgtcmF5cyBpcyBkZWxpdmVyZWQgdG8gdGhlIHR1bW91ciwgd2hpbGUgc2ltdWx0YW5lb3VzbHkgbWluaW1pc2luZyBkYW1hZ2UgdG8gc3Vycm91bmRpbmcgaGVhbHRoeSB0aXNzdWUgYW5kIG9yZ2Fucy4gVG8gdGhpcyBlbmQsIGNvbmZvcm1hbCByYWRpb3RoZXJhcHkgKENGUlQpIGFpbXMgdG8gc2hhcGUgdGhlIHRocmVlLWRpbWVuc2lvbmFsIGRvc2FnZSBkaXN0cmlidXRpb24gdG8gY29uZm9ybSB0byB0aGUgdHVtb3VyIHZvbHVtZS4gQm90aCB0aGUgZ2VvbWV0cmljYWwgc2hhcGluZyBhbmQgaW50ZW5zaXR5IG1vZHVsYXRpb24gb2YgdGhlIFgtcmF5IGJlYW1zIGFyZSBpbXBvcnRhbnQgaW4gZGV0ZXJtaW5pbmcgdGhlIGVmZmVjdGl2ZW5lc3Mgb2YgdGhlIHRyZWF0bWVudCwgYW5kIHVsdGltYXRlbHkgd2hldGhlciB0aGUgcGF0aWVudCBzdXJ2aXZlcy4gVGhlIGNvbW1lcmNpYWwgYW5kIGluLWhvdXNlIHNvZnR3YXJlIHBhY2thZ2VzIGN1cnJlbnRseSB1c2VkIHRvIGRldmVsb3AgcmFkaW90aGVyYXB5IHRyZWF0bWVudCBwbGFucyBzdHJpa2UgYSBiYWxhbmNlIGJldHdlZW4gZXhlY3V0aW9uIHRpbWUgYW5kIHRoZSBhY2N1cmFjeSBvZiB0aGUgZG9zZSBjYWxjdWxhdGlvbi4gTW9udGUgQ2FybG8gc2ltdWxhdGlvbnMgYXJlIGFibGUgdG8gZGV0ZXJtaW5lIG1vcmUgYWNjdXJhdGVseSB0aGUgZG9zZSB0byB0aGUgdHVtb3VyIGFuZCBzdXJyb3VuZGluZyBhbmF0b215LCBhbmQgaGVuY2UgcmVzdWx0IGluIG1vcmUgZWZmZWN0aXZlIHRyZWF0bWVudCBwbGFucy4gSG93ZXZlciwgdGhlIE1vbnRlIENhcmxvIGFwcHJvYWNoIHJlcXVpcmVzIGEgbG90IG9mIGNvbXB1dGluZyBwb3dlciBhbmQgaXQgd291bGQgdHlwaWNhbGx5IHRha2UgZGF5cyB0byBydW4gYSBzaW11bGF0aW9uIGZvciBvbmUgcGF0aWVudCBvbiB0aGUgZGVza3RvcCBjb21wdXRlcnMgdXN1YWxseSBhdmFpbGFibGUgdG8gdHJlYXRtZW50IHBsYW5uZXJzLlRoZSBwcm9wb3NlZCByZXNlYXJjaCB3aWxsIHRoZXJlZm9yZSBpbnZlc3RpZ2F0ZSB0aGUgdXNlIG9mIEdyaWQgY29tcHV0aW5nIHRvIHJlZHVjZSB0aGUgcnVudGltZSBvZiB0aGUgTW9udGUgQ2FybG8gc2ltdWxhdGlvbnMgaW4gb3JkZXIgdG8gbWFrZSB0aGlzIGFwcHJvYWNoIGNsaW5pY2FsbHkgZGVwbG95YWJsZS4gVGhpcyByZWR1Y3Rpb24gd2lsbCBiZSBicm91Z2h0IGFib3V0IGJvdGggYnkgYWNjZXNzaW5nIG1vcmUgcG93ZXJmdWwgbWFjaGluZXMgdmlhIHRoZSBHcmlkLCBhbmQgYnkgZXhwbG9pdGluZyBjb2Fyc2VncmFpbiBwYXJhbGxlbGlzbSB0byBhbGxvdyBwYXJ0cyBvZiB0aGUgc2ltdWxhdGlvbiB0byBiZSBwZXJmb3JtZWQgc2ltdWx0YW5lb3VzbHkgb24gZGlmZmVyZW50IGNvbXB1dGVycy4gQWxzbyB0aGUgdXNlIG9mIEdyaWQtb3JpZW50ZWQgd29ya2xvYWQgbWFuYWdlbWVudCBzeXN0ZW1zLCBzdWNoIGFzIENvbmRvci1HLCB3aWxsIGJlIGludmVzdGlnYXRlZCB0byBhbGxvdyB0aGUgc2ltdWx0YW5lb3VzIGV4ZWN1dGlvbiBvZiBtdWx0aXBsZSBNb250ZSBDYXJsbyBzaW11bGF0aW9ucyBhY3Jvc3MgYSBwb29sIG9mIGF2YWlsYWJsZSBjb21wdXRlcnMuIFRoaXMgbW9kZSBvZiB1c2UgY2FuIGJlIHVzZWQgZm9yIHBhcmFtZXRlciBzd2VlcCBzdHVkaWVzLkdyaWQgY29tcHV0aW5nIGlzIGJhc2VkIG9uIGEgc2VydmljZS1vcmllbnRlZCBwYXJhZGlnbSBpbiB3aGljaCBjb21wdXRhdGlvbmFsIHRhc2tzIGFyZSBwZXJmb3JtZWQgYnkgV2ViIHNlcnZpY2VzLiBXZWIgc2VydmljZXMgYXJlIHNvZnR3YXJlIGNvbXBvbmVudHMgdGhhdCBleGhpYml0IGNlcnRhaW4gYmVoYXZpb3VycyBhbmQgY29uZm9ybSB0byBjZXJ0YWluIHByb3RvY29scy4gT25lIG9mIHRoZSBrZXkgdGFza3Mgb2YgdGhlIHByb3Bvc2VkIHJlc2VhcmNoIHdpbGwgYmUgdG8gY29udmVydCB0aGUgY3VycmVudCBNb250ZSBDYXJsbyBzaW11bGF0aW9uIGNvZGUgaW50byBhIFdlYiBzZXJ2aWNlLiBUaGUgY29kZSB3aWxsIGFsc28gYmUgcGFyYWxsZWxpc2VkIGF0IGEgY29hcnNlLWdyYWluIGxldmVsLCBhbmQgZWFjaCBvZiB0aGUgcmVzdWx0aW5nIGNvZGUgY29tcG9uZW50cyB3aWxsIGJlIGNvbnZlcnRlZCBpbnRvIGEgV2ViIHNlcnZpY2UuIEJ5IGRlcGxveWluZyB0aGVzZSBXZWIgc2VydmljZXMgb24gR3JpZC1lbmFibGVkIG1hY2hpbmVzIGluIHRoZSBXZWxzaCBlLVNjaWVuY2UgQ2VudHJlIGFuZCB0aGUgTmF0aW9uYWwgR3JpZCBTZXJ2aWNlIGl0IHNob3VsZCBiZSBwb3NzaWJsZSB0byByZWR1Y2UgdGhlIHJ1bnRpbWUgZnJvbSBkYXlzIHRvIGhvdXJzIHRocm91Z2ggdGhlIHVzZSBvZiBoaWdoIHBlcmZvcm1hbmNlIG1hY2hpbmVzIGFuZCBwYXJhbGxlbCBwcm9jZXNzaW5nLlRoZSBlZmZlY3RpdmVuZXNzIG9mIHRoZSBHcmlkLWJhc2VkIGFwcHJvYWNoIHdpbGwgYmUgZGVtb25zdHJhdGVkIHdpdGggYSBjbGluaWNhbCBhcHBsaWNhdGlvbiBpbiB3aGljaCB0cmVhdG1lbnRzIGdlbmVyYXRlZCBieSBjb252ZW50aW9uYWwgc29mdHdhcmUgcGFja2FnZXMgd2lsbCBiZSBjb21wYXJlZCB3aXRoIHRob3NlIG9mIHRoZSBNb250ZSBDYXJsbyBhcHByb2FjaCBmb3IgYSBjb2hvcnQgb2YgcGF0aWVudHMuIFRoZSBhaW0gb2YgdGhpcyBzdHVkeSBpcyB0byBkZXRlcm1pbmUgaW4gd2hhdCBjaXJjdW1zdGFuY2VzIHRoZSBNb250ZSBDYXJsbyBhcHByb2FjaCBtYWtlcyBhIHNpZ25pZmljYW50IGRpZmZlcmVuY2UgdG8gdHJlYXRtZW50IHBsYW5zIC0gb25lIHdvdWxkIGV4cGVjdCB0aGUgaW1wYWN0IHRvIGJlIG1vc3Qgbm90aWNlYWJsZSBmb3IgYW5hdG9taWNhbGx5IGNvbXBsZXggcmVnaW9ucyBzdWNoIGFzIHRoZSBuZWNrIGFuZCBsdW5ncy5BIHByb3RvdHlwZSBvZiBhIG5hdGlvbmFsIHNlcnZpY2UgZm9yIHJhZGlvdGhlcmFweSB0cmVhdG1lbnQgcGxhbm5pbmcgYmFzZWQgb24gTW9udGUgQ2FybG8gc2ltdWxhdGlvbiB0ZWNobmlxdWVzIGFuZCBHcmlkIGNvbXB1dGluZyB3aWxsIGJlIGRldmVsb3BlZC4gVGhpcyB3aWxsIGludm9sdmUgdGhlIHVzZSBieSByYWRpb3RoZXJhcHkgcGh5c2ljaXN0cyBvZiBhIGNvbGxhYm9yYXRpdmUgcHJvYmxlbS1zb2x2aW5nIGVudmlyb25tZW50IHRvIGluaXRpYXRlLCBtYW5hZ2UsIGFuZCBtb25pdG9yIHRoZSBHcmlkYmFzZWQgZXhlY3V0aW9uIG9mIE1vbnRlIENhcmxvIHNpbXVsYXRpb25zLCBhbmQgdG8gdXNlIHRoZSByZXN1bHRzIGluIHZlcmlmeWluZyByYWRpb3RoZXJhcHkgdHJlYXRtZW50IHBsYW5zLjMpIFRvIGRlcGxveSBHcmlkLWVuYWJsZWQgdmVyc2lvbnMgb2YgY3VycmVudCBNb250ZSBDYXJsbyBjb2RlcyBhcyBXZWIgc2VydmljZXMuNCkgVG8gZGV2ZWxvcCBhIGNvYXJzZS1ncmFpbiBwYXJhbGxlbCB2ZXJzaW9uIG9mIGV4aXN0aW5nIHNlcXVlbnRpYWwgTW9udGUgQ2FybG8gY29kZXMsIGFuZCBkZXBsb3kgYXMgYSBHcmlkIGFwcGxpY2F0aW9uIGludm9sdmluZyB0aGUgaW50ZXJhY3Rpb24gb2ZkZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmNmLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmNmLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvQzUzODY0MS8xDEVQL0M1Mzg2NDEvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkupBeA3MXHdZsFD5T5TD+TJzQ+Qc=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLQyIGABQLQvN++DAKT/OCVA8tRbnCnhh1MH9rpbTjG3DFWHuI2" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C538641/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Development of Monte Carlo Techniques for Verification of Conformal Radiotherapy using the UK e-Science Grid</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=46999'>Walker, Professor D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=76628'>Lewis, Dr DG</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=109381'>Mr JP Giddy</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=13391'>National Research Council of Canada</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=19371'>Policlinico S. Orsola Malpighi</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Cardiff University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 January 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="399,110.23" class="DetailValue">399,110</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> eScience</td>
+                                    <td class="DetailValue"> Medical science &amp; disease</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Radiotherapy is used to treat certain types of cancer by firing X-rays at the tumour. This process should be optimised so that a high dosage of X-rays is delivered to the tumour, while simultaneously minimising damage to surrounding healthy tissue and organs. To this end, conformal radiotherapy (CFRT) aims to shape the three-dimensional dosage distribution to conform to the tumour volume. Both the geometrical shaping and intensity modulation of the X-ray beams are important in determining the effectiveness of the treatment, and ultimately whether the patient survives. The commercial and in-house software packages currently used to develop radiotherapy treatment plans strike a balance between execution time and the accuracy of the dose calculation. Monte Carlo simulations are able to determine more accurately the dose to the tumour and surrounding anatomy, and hence result in more effective treatment plans. However, the Monte Carlo approach requires a lot of computing power and it would typically take days to run a simulation for one patient on the desktop computers usually available to treatment planners.The proposed research will therefore investigate the use of Grid computing to reduce the runtime of the Monte Carlo simulations in order to make this approach clinically deployable. This reduction will be brought about both by accessing more powerful machines via the Grid, and by exploiting coarsegrain parallelism to allow parts of the simulation to be performed simultaneously on different computers. Also the use of Grid-oriented workload management systems, such as Condor-G, will be investigated to allow the simultaneous execution of multiple Monte Carlo simulations across a pool of available computers. This mode of use can be used for parameter sweep studies.Grid computing is based on a service-oriented paradigm in which computational tasks are performed by Web services. Web services are software components that exhibit certain behaviours and conform to certain protocols. One of the key tasks of the proposed research will be to convert the current Monte Carlo simulation code into a Web service. The code will also be parallelised at a coarse-grain level, and each of the resulting code components will be converted into a Web service. By deploying these Web services on Grid-enabled machines in the Welsh e-Science Centre and the National Grid Service it should be possible to reduce the runtime from days to hours through the use of high performance machines and parallel processing.The effectiveness of the Grid-based approach will be demonstrated with a clinical application in which treatments generated by conventional software packages will be compared with those of the Monte Carlo approach for a cohort of patients. The aim of this study is to determine in what circumstances the Monte Carlo approach makes a significant difference to treatment plans - one would expect the impact to be most noticeable for anatomically complex regions such as the neck and lungs.A prototype of a national service for radiotherapy treatment planning based on Monte Carlo simulation techniques and Grid computing will be developed. This will involve the use by radiotherapy physicists of a collaborative problem-solving environment to initiate, manage, and monitor the Gridbased execution of Monte Carlo simulations, and to use the results in verifying radiotherapy treatment plans.3) To deploy Grid-enabled versions of current Monte Carlo codes as Web services.4) To develop a coarse-grain parallel version of existing sequential Monte Carlo codes, and deploy as a Grid application involving the interaction of</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cf.ac.uk                                                                                 '>http://www.cf.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

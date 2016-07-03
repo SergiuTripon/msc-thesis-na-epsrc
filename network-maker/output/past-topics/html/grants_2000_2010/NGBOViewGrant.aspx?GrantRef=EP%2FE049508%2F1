@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Classification of Finite Simple Groups. Second Generation Proof.
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE049508%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTA0OTUwOC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVRPHN0cm9uZz5DbGFzc2lmaWNhdGlvbiBvZiBGaW5pdGUgU2ltcGxlIEdyb3Vwcy4gU2Vjb25kIEdlbmVyYXRpb24gUHJvb2YuPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVCPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMjU3NzInPkNhcGRlYm9zY3EsIERyIEk8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAULTWF0aGVtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRVVbml2ZXJzaXR5IG9mIFdhcndpY2tkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRJGaXJzdCBHcmFudCBTY2hlbWVkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQsyMCBNYXkgMjAwN2RkAgMPZBYCAgEPDxYCHwQFEDE5IE5vdmVtYmVyIDIwMDlkZAIFD2QWAgIBDw8WBB8EBQY3NSw3ODkeB1Rvb2xUaXAFCTc1LDc4OC41OWRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIWQWxnZWJyYSAmYW1wOyBHZW9tZXRyeQBkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQF/hBUaGUgQ2xhc3NpZmljYXRpb24gb2YgRmluaXRlIFNpbXBsZSBHcm91cHMgaXMgd2lkZWx5IGFja25vd2xlZGdlZCB0byBiZSBvbmUgb2YgdGhlIG1ham9yIHJlc3VsdHMgaW4gbW9kZXJuIE1hdGhlbWF0aWNzLlRoZSBzdWNjZXNzZnVsIGNvbXBsZXRpb24gb2YgaXRzIHByb29mIHdhcyBhbm5vdW5jZWQgaW4gdGhlIGVhcmx5MTk4MCdzLiBIb3dldmVyLCBpbiByZWFsaXR5LCBpdCB3YXMgb25seSBpbiAyMDA0IHRoYXQgdGhlIG9yaWdpbmFscHJvb2YgaGFzIGNvbWUgdG8gYW4gZW5kIHdpdGggdGhlIG1vbnVtZW50YWwgd29yayBvZiBNLkFzY2hiYWNoZXJhbmQgUy5TbWl0aDogIFRoZSBDbGFzc2lmaWNhdGlvbiBvZiBRdWFzaXRoaW4gR3JvdXBzIC5UaGUgb3JpZ2luYWwgcHJvb2Ygb2YgdGhlIENsYXNzaWZpY2F0aW9uIG9mIEZpbml0ZSBTaW1wbGUgR3JvdXBzb2NjdXBpZXMgc29tZXdoZXJlIGFyb3VuZCAxNSwwMDAgam91cm5hbCBwYWdlcyBzcHJlYWQgYWNyb3NzIG1vcmV0aGFuIDUwMCBzZXBhcmF0ZSBhcnRpY2xlcywgbWFueSB1bnB1Ymxpc2hlZCwgd3JpdHRlbiBieSBtb3JlIHRoYW4xMDAgbWF0aGVtYXRpY2lhbnMuIEFzIGltcHJlc3NpdmUgYXMgaXQgaXMsIGl0IGltbWVkaWF0ZWx5IG1ha2Vzb25lIHdvbmRlciB3aGV0aGVyIGl0IHdvdWxkIGJlIHBvc3NpYmxlIHRvIHByb2R1Y2UgYSBuZXcgdW5pZmllZGNvbXBsZXRlIHByb29mIG9mIENsYXNzaWZpY2F0aW9uIG9mIEZpbml0ZSBTaW1wbGUgR3JvdXBzIHBvc3NpYmx5c2hvcnRlciBpbiBsZW5ndGguQW4gYW5zd2VyIHRvIHRoYXQgcXVlc3Rpb24gYmVjYW1lIGEgcHJvamVjdCBzdGFydGVkIGJ5IEQuR29yZW5zdGVpbiwgUi4gTHlvbnMgYW5kIFIuIFNvbG9tb24sIHRoZSBnb2FsIG9mIGl0IGJlaW5nOiB0b3Byb2R1Y2UgYSBuZXcgIEdlbmVyYXRpb24gMiAgdW5pZmllZCBwcm9vZiBvZiB0aGUgQ2xhc3NpZmljYXRpb25UaGVvcmVtLiBJdHMgc3RyYXRlZ3kgY29uc2lkZXJhYmx5IGRpZmZlcnMgZnJvbSB0aGUgb3JpZ2luYWwgb25lYW5kIHdpbGwgYmUgb3V0bGluZWQgaW4gdGhlIHByb3Bvc2FsLiBUaGUgZXhwZWN0ZWQgbGVuZ3RoIG9mIHRoZW5ldyAgR2VuZXJhdGlvbiAyICBQcm9vZiBpcyBvZiBhYm91dCA1LDAwMCBwYWdlcyB0byBiZSBwdWJsaXNoZWRpbiAxMSB2b2x1bWVzIG9mIHRoZSBBbWVyaWNhbiBNYXRoZW1hdGljYWwgU29jaWV0eSBNb25vZ3JhcGhTZXJpZXMuIFRoZXkgYmUgcmVmZXJyZWQgdG8gaW4gdGhlIHNlcXVlbCBhcyB0aGUgR0xTLVNlcmllcy5Wb2x1bWVzIDEgdGhyb3VnaCA2IG9mIHRoZSBHTFMtU2VyaWVzIGhhdmUgYWxyZWFkeSBiZWVuIHB1Ymxpc2hlZC5UaGUgcHJvamVjdCB3aGljaCBJIGFtIGRpc2N1c3NpbmcgaW4gdGhpcyBwcm9wb3NhbCBhbmQgaGF2ZSBiZWVud29ya2luZyBvbiB0b2dldGhlciB3aXRoIFIuIEx5b25zIGFuZCBSLiBTb2xvbW9uIGlzIGEgY29udHJpYnV0aW9udG8gVm9sdW1lIDggb2YgdGhlIEdMUy1TZXJpZXMuIE9uZSBvZiB0aGUgYWR2YW50YWdlcyBhbmQgbW9zdGludGVyZXN0aW5nIHBvaW50cyBvZiB0aGUgIEdlbmVyYXRpb24gMiAgUHJvb2Ygb2YgdGhlIENsYXNzaWZpY2F0aW9uVGhlb3JlbSwgaXMgdGhhdCBpdCB3aWxsIGdpdmUgdGhlIGZpcnN0IHVuaWZpZWQgY2hhcmFjdGVyaXphdGlvbm9mIFNwb3JhZGljIFNpbXBsZSBHcm91cHMsIHRoZSBteXN0ZXJpb3VzIG9iamVjdHMsIHdob3NlICBsaWZlIGRpZCBub3QgaGF2ZSBhIHVuaWZpZWQgZXhwbGFuYXRpb24gdW50aWxsIG5vdy4gSW4gcGFydGljdWxhciwgVm9sdW1lOCAgZXhwbGFpbnMgIGFuZCBjaGFyYWN0ZXJpemVzIDExIG91dCBvZiAyNiBzcG9yYWRpYyBzaW1wbGUgZ3JvdXBzYW1vbmcgd2hpY2ggaXMgdGhlIGxhcmdlc3Qgb25lLCB0aGUgTW9uc3RlciBHcm91cC5UaHVzIHRoZSBtYWluIHB1cnBvc2Ugb2YgdGhpcyBHcmFudCBBcHBsaWNhdGlvbiBpcyB0byBlbnN1cmUgYXN1cHBvcnQgd2hpY2ggd2lsbCBhbGxvdyB0aGUgc3VjY2Vzc2Z1bCBkZXZlbG9wbWVudCBhbmQgcG9zc2libGVjb21wbGV0aW9uIG9mIHNvbWUgcGFydHMgb2YgdGhlIHByb29mIG9mIHdoYXQgaXMga25vd24gYXMgb25lIG9mdGhlIG1ham9yIHJlc3VsdHMgb2YgTW9kZXJuIE1hdGhlbWF0aWNzOiBDbGFzc2lmaWNhdGlvbiBvZiBGaW5pdGVTaW1wbGUgR3JvdXBzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cud2Fyd2ljay5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cud2Fyd2ljay5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9FMDQ5NTA4LzEMRVAvRTA0OTUwOC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSPW80TMcB/EgefXLsA9lSokKT+Kw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKv2redAQLQvN++DAKT/OCVA9vBxEgohSM+Xe5ClbcsntSujwfY" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E049508/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Classification of Finite Simple Groups. Second Generation Proof.</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-25772'>Capdeboscq, Dr I</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Warwick</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">20 May 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">19 November 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="75,788.59" class="DetailValue">75,789</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The Classification of Finite Simple Groups is widely acknowledged to be one of the major results in modern Mathematics.The successful completion of its proof was announced in the early1980's. However, in reality, it was only in 2004 that the originalproof has come to an end with the monumental work of M.Aschbacherand S.Smith:  The Classification of Quasithin Groups .The original proof of the Classification of Finite Simple Groupsoccupies somewhere around 15,000 journal pages spread across morethan 500 separate articles, many unpublished, written by more than100 mathematicians. As impressive as it is, it immediately makesone wonder whether it would be possible to produce a new unifiedcomplete proof of Classification of Finite Simple Groups possiblyshorter in length.An answer to that question became a project started by D.Gorenstein, R. Lyons and R. Solomon, the goal of it being: toproduce a new  Generation 2  unified proof of the ClassificationTheorem. Its strategy considerably differs from the original oneand will be outlined in the proposal. The expected length of thenew  Generation 2  Proof is of about 5,000 pages to be publishedin 11 volumes of the American Mathematical Society MonographSeries. They be referred to in the sequel as the GLS-Series.Volumes 1 through 6 of the GLS-Series have already been published.The project which I am discussing in this proposal and have beenworking on together with R. Lyons and R. Solomon is a contributionto Volume 8 of the GLS-Series. One of the advantages and mostinteresting points of the  Generation 2  Proof of the ClassificationTheorem, is that it will give the first unified characterizationof Sporadic Simple Groups, the mysterious objects, whose  life did not have a unified explanation untill now. In particular, Volume8  explains  and characterizes 11 out of 26 sporadic simple groupsamong which is the largest one, the Monster Group.Thus the main purpose of this Grant Application is to ensure asupport which will allow the successful development and possiblecompletion of some parts of the proof of what is known as one ofthe major results of Modern Mathematics: Classification of FiniteSimple Groups.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.warwick.ac.uk                                                                            '>http://www.warwick.ac.uk                                                                            </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

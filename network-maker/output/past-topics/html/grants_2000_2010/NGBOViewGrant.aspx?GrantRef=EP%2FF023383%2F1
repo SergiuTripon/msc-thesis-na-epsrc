@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Understanding a new buckling pattern of twisted inextensible strips
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF023383%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAyMzM4My8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVUPHN0cm9uZz5VbmRlcnN0YW5kaW5nIGEgbmV3IGJ1Y2tsaW5nIHBhdHRlcm4gb2YgdHdpc3RlZCBpbmV4dGVuc2libGUgc3RyaXBzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVNPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD04MjQzMSc+dmFuIGRlciBIZWlqZGVuLCBQcm9mZXNzb3IgRzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSRDaXZpbCBFbnZpcm9ubWVudGFsIGFuZCBHZW9tYXRpYyBFbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBQNVQ0xkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDTIxIEFwcmlsIDIwMDhkZAIDD2QWAgIBDw8WAh8EBQ0yMCBBcHJpbCAyMDEwZGQCBQ9kFgICAQ8PFgQfBAUHMjM5LDQ2NB4HVG9vbFRpcAUKMjM5LDQ2My45OGRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgIWBAIBD2QWAmYPFQITQ29udGludXVtIE1lY2hhbmljcx1FbmcuIER5bmFtaWNzICZhbXA7IFRyaWJvbG9neWQCAg9kFgJmDxUCHk5vbi1saW5lYXIgU3lzdGVtcyBNYXRoZW1hdGljcwBkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCDU1hbnVmYWN0dXJpbmcAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTEgU2VwIDIwMDdkZAIBD2QWBAIBDw8WAh8CaGRkAgMPDxYCHwQFJkVuZ2luZWVyaW5nIFNjaWVuY2UgKENvbXBvbmVudHMpIFBhbmVsZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBeAPSWYgb25lIHR3aXN0cyBhIHN0cmlwIG9mIHBhcGVyIHVuZGVyIHJlbGF0aXZlbHkgaGlnaCB0ZW5zaW9uIG9uZSBvYnNlcnZlcywgYXQgYWNyaXRpY2FsIGxvYWQsIGEgYnVja2xpbmcgKGNydW1wbGluZykgb2YgdGhlIHN0cmlwIGludG8gYSByZWd1bGFyIHRyaWFuZ3VsYXIgcGF0dGVybi4gU3VycHJpc2luZ2x5LCB0aGlzIGJ1Y2tsaW5nIGJlaGF2aW91ciBoYXMgbm90IGJlZW4gcmVwb3J0ZWQgb3IgYW5hbHlzZWQgYmVmb3JlLiBUaGUgYWltIG9mIHRoZSBwcm9wb3NlZCB3b3JrIGlzIHRvIHRha2UgYWR2YW50YWdlIG9mIHJlY2VudCBhZHZhbmNlcyBpbiB0aGUgbW9kZWxsaW5nIG9mIHRoaW4gaW5leHRlbnNpYmxlIHNoZWV0cyBpbiBvcmRlciB0byBpbnZlc3RpZ2F0ZSB0aGlzIGJlaGF2aW91ciBhbmRpdHMgaW1wbGljYXRpb25zIGZvciBmdXJ0aGVyIHN0cnVjdHVyYWwgc3RhYmlsaXR5IGFuZCBwZXJmb3JtYW5jZS5UaGUgZmlyc3QgZXF1YXRpb25zIGZvciB0aGUgbGFyZ2UgZGVmb3JtYXRpb24gb2YgaW5leHRlbnNpYmxlIHJlY3Rhbmd1bGFyIHNoZWV0cyBoYXZlIHJlY2VudGx5IGJlZW4gZGVyaXZlZCBieSB0aGUgYXBwbGljYW50IGFuZCBoaXMgY28td29ya2VyLCBzdXBwb3J0ZWQgYnkgYSBydW5uaW5nIEVQU1JDIGdyYW50LiBUaGUgZXF1YXRpb25zIGhhdmUgYmVlbiB1c2VkIHRvIHNvbHZlIGEgY2xhc3NpY2FscHJvYmxlbSBpbiB0aGUgbGl0ZXJhdHVyZSwgbmFtZWx5IHRoYXQgb2YgZmluZGluZyB0aGUgZXF1aWxpYnJpdW0gc2hhcGUgb2YgYU1vZWJpdXMgc3RyaXAuIFRoZSBzb2x1dGlvbiBzaG93cyBmZWF0dXJlcyBvZiBiZW5kaW5nIGxvY2FsaXNhdGlvbiBzaW1pbGFyIHRvd2hhdCBpcyBzZWVuIGluIHRoZSB0cmlhbmd1bGFyIGJ1Y2tsaW5nIHBhdHRlcm4gb2YgdGhlIHR3aXN0ZWQgc3RyaXAgbWVudGlvbmVkYWJvdmUuIFRoZSBhbmFsb2d5IHdpbGwgYmUgdXNlZCB0byBtb2RlbCBhbmQgYW5hbHlzZSB0aGUgbmV3IGJ1Y2tsaW5nIHBhdHRlcm4uIFRoZSBhbmFseXRpY2FsIHJlc3VsdHMgd2lsbCBiZSB2YWxpZGF0ZWQgYWdhaW5zdCBleHBlcmltZW50YWwgd29yayBvbiBhIHB1cnBvc2UtYnVpbHQgdGVzdGluZyByaWcuIEEgc2ltcGxpZmllZCBkaXNjcmV0ZSBtb2RlbCwgYWJsZSB0byBnaXZlIHJlbGF0aXZlbHlxdWljayBhcHByb3hpbWF0ZSBzb2x1dGlvbnMsIHdpbGwgYWxzbyBiZSBkZXZlbG9wZWQgYW5kIHZhbGlkYXRlZC4gVGhlIHByb2plY3Qgd291bGQgcnVuIGluIHBhcmFsbGVsIHdpdGggdGhlIGN1cnJlbnRseS1ydW5uaW5nIEVQU1JDIGdyYW50IGZvciBtdXR1YWwgYmVuZWZpdC5BcGFydCBmcm9tIHByb2dyZXNzIGluIG91ciB1bmRlcnN0YW5kaW5nIG9mIHRoZSBzdHJ1Y3R1cmFsIHN0YWJpbGl0eSBhbmQgcG9zdC1idWNrbGluZyBiZWhhdmlvdXIgb2YgZWxhc3RpYyBzaGVldHMsIHRoZSB3b3JrIHdpbGwgYWxzbyBnaXZlIHVzIHJlc3VsdHN3aXRoIHJlYWwgc2NvcGUgZm9yIGFwcGxpY2F0aW9uIHRvIG1vZGVybiBhbmQgZW1lcmdpbmcgdGVjaG5vbG9naWVzLiBTaGVldHNhbmQgc3RyaXBzIGhhdmUgYmVlbiBvYnNlcnZlZCBpbiBtb2xlY3VsYXIgYmlvbG9neSBhbmQgZmFicmljYXRlZCBpbiBuYW5vdGVjaG5vbG9neS4gVGhlIGFwcGxpY2FudCdzIHN0cm9uZyBsaW5rcyB3aXRoIGdyb3VwcyBpbiB0aGVzZSBhcmVhcyB3aWxsZW5zdXJlIHRoYXQgcG90ZW50aWFsIGFwcGxpY2F0aW9ucyB3aWxsIGJlIGZvbGxvd2VkIHVwLiBJbmV4dGVuc2libGUgc2hlZXRzIGFyZSBmdXJ0aGVybW9yZSB1c2VkIHdpZGVseSBpbiBpbmR1c3RyeSBhbmQgYSBiZXR0ZXIgdW5kZXJzdGFuZGluZyBvZiB0aGVpciBlbGFzdGljIGJlaGF2aW91ciB3aWxsIGhlbHAgdG8gaW1wcm92ZSBlY29ub21pYyBlZmZpY2llbmN5LiBUaGUgcmVzdWx0cyB3aWxsIGJlIHBhcnRpY3VsYXJseSByZWxldmFudCBmb3Igc3VjaCBtb2Rlcm4gdGVjaG5vbG9naWVzIGFzIGNvbXB1dGVyLWFpZGVkIGRlc2lnbiBhbmQgY29tcHV0ZXIgZ3JhcGhpY3MuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMjMzODMvMQxFUC9GMDIzMzgzLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZAfSwcAA7Y8VO/UYfsCVwdxZvsvc" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKBqY6eCwLQvN++DAKT/OCVA/wmVuwQCjVpvIS4/31QbiEUuVBv" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F023383/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Understanding a new buckling pattern of twisted inextensible strips</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=82431'>van der Heijden, Professor G</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Civil Environmental and Geomatic Eng</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">UCL</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">21 April 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">20 April 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="239,463.98" class="DetailValue">239,464</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Continuum Mechanics</td>
+                                    <td class="DetailValue"> Eng. Dynamics &amp; Tribology</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Non-linear Systems Mathematics</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Manufacturing</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>11 Sep 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Engineering Science (Components) Panel</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">If one twists a strip of paper under relatively high tension one observes, at acritical load, a buckling (crumpling) of the strip into a regular triangular pattern. Surprisingly, this buckling behaviour has not been reported or analysed before. The aim of the proposed work is to take advantage of recent advances in the modelling of thin inextensible sheets in order to investigate this behaviour andits implications for further structural stability and performance.The first equations for the large deformation of inextensible rectangular sheets have recently been derived by the applicant and his co-worker, supported by a running EPSRC grant. The equations have been used to solve a classicalproblem in the literature, namely that of finding the equilibrium shape of aMoebius strip. The solution shows features of bending localisation similar towhat is seen in the triangular buckling pattern of the twisted strip mentionedabove. The analogy will be used to model and analyse the new buckling pattern. The analytical results will be validated against experimental work on a purpose-built testing rig. A simplified discrete model, able to give relativelyquick approximate solutions, will also be developed and validated. The project would run in parallel with the currently-running EPSRC grant for mutual benefit.Apart from progress in our understanding of the structural stability and post-buckling behaviour of elastic sheets, the work will also give us resultswith real scope for application to modern and emerging technologies. Sheetsand strips have been observed in molecular biology and fabricated in nanotechnology. The applicant's strong links with groups in these areas willensure that potential applications will be followed up. Inextensible sheets are furthermore used widely in industry and a better understanding of their elastic behaviour will help to improve economic efficiency. The results will be particularly relevant for such modern technologies as computer-aided design and computer graphics.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

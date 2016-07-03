@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Identification of model parameters for unsaturated elasto-plastic models from pressuremeter tests
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC526627%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzUyNjYyNy8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVyPHN0cm9uZz5JZGVudGlmaWNhdGlvbiBvZiBtb2RlbCBwYXJhbWV0ZXJzIGZvciB1bnNhdHVyYXRlZCBlbGFzdG8tcGxhc3RpYyBtb2RlbHMgZnJvbSBwcmVzc3VyZW1ldGVyIHRlc3RzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVBPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xMjQ3NDcnPkdhbGxpcG9saSwgRHIgRDwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDRTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NTcyOTknPkF1Z2FyZGUsIFByb2Zlc3NvciBDPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSJFbmdpbmVlcmluZyBhbmQgQ29tcHV0aW5nIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUVRHVyaGFtLCBVbml2ZXJzaXR5IG9mZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUaRmlyc3QgR3JhbnQgU2NoZW1lIFByZS1GRUNkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAxMiBEZWNlbWJlciAyMDA1ZGQCAw9kFgICAQ8PFgIfBAUQMTEgRGVjZW1iZXIgMjAwOGRkAgUPZBYCAgEPDxYEHwQFBzExNSw1MTMeB1Rvb2xUaXAFCjExNSw1MTIuODVkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhJHcm91bmQgRW5naW5lZXJpbmcAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgxDb25zdHJ1Y3Rpb24AZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBb4aU29pbHMgYXJlIHBvcm91cyBtYXRlcmlhbHMgYW5kIHRoZSBkZWZpbml0aW9uIG9mICB1bnNhdHVyYXRlZCBzb2lscyAgYXBwbGllcyB0byB0aG9zZSBzb2lscyB3aG9zZSBwb3JlcyBhcmUgcGFydGx5IGZpbGxlZCBieSB3YXRlciBhbmQgcGFydGx5IGZpbGxlZCBieSBhaXIuIFVuc2F0dXJhdGVkIHNvaWxzIGFyZSByZWxldmFudCB0byBhIHdpZGUgdmFyaWV0eSBvZiBjaXZpbCBlbmdpbmVlcmluZyBhcHBsaWNhdGlvbnMgcmFuZ2luZyBmcm9tIHRyYWRpdGlvbmFsIHByb2JsZW1zIHN1Y2ggYXMgc2hhbGxvdyBmb3VuZGF0aW9ucyBhbmQgZWFydGggZGFtcywgdG8gbW9yZSByZWNlbnQgYXJlYXMgb2Ygc3R1ZHkgc3VjaCBhcyB0aGUgZ2VvLWhhemFyZHMgcG9zZWQgYnkgYnVyaWVkIG51Y2xlYXIgd2FzdGUsIGdyb3VuZHdhdGVyIHBvbGx1dGFudCBtaWdyYXRpb24gYW5kIHJhaW5mYWxsLWluZHVjZWQgbGFuZHNsaWRlcy4gUmFpbmZhbGwtaW5kdWNlZCBsYW5kc2xpZGVzLCBmb3IgZXhhbXBsZSwgYXJlIGNhdXNlZCBieSBhIHN1ZGRlbiByZWR1Y3Rpb24gb2Ygc3RyZW5ndGggaW4gdGhlIHNvaWwgZHVlIHRvIHRoZSBwcm9ncmVzc2l2ZSBzYXR1cmF0aW9uIG9mIHNvaWwgcG9yZXMgYnkgd2F0ZXIgZHVyaW5nIGhlYXZ5IHByZWNpcGl0YXRpb25zLiBUaGVzZSBsYW5kc2xpZGVzIGFyZSBvZnRlbiB0aGUgcmVhc29uIG9mIHNldmVyZSBodW1hbiBjYXN1YWx0aWVzIGFuZCBtYXRlcmlhbCBsb3NzZXMsIGFzIGl0IGhhcHBlbmVkIG9uIHRoZSA2dGggb2YgTWF5IDE5OTggaW4gdGhlIGFyZWEgb2YgU2Fybm8gKHNvdXRoZXJuIEl0YWx5KSB3aGVyZSAxNjcgcGVvcGxlIGRpZWQgYXMgYSByZXN1bHQgb2YgbWFzc2l2ZSBtdWRzbGlkZS4gRGVzcGl0ZSB0aGUgd2lkZXNwcmVhZCBvY2N1cnJlbmNlIGFuZCBpbXBvcnRhbmNlIG9mIHVuc2F0dXJhdGVkIHNvaWxzLCBjb252ZW50aW9uYWwgc29pbCBtZWNoYW5pY3MgaXMgYmFzZWQgb24gdGhlIGFzc3VtcHRpb24gdGhhdCBzb2lscyBhcmUgc2F0dXJhdGVkIChpLmUuIHRoZSBwb3JlcyBhcmUgZW50aXJlbHkgZmlsbGVkIGJ5IHdhdGVyKSBtYWlubHkgYmVjYXVzZSBvZiB0aGUgbWFueSBjb21wbGV4aXRpZXMgYXNzb2NpYXRlZCB0byBsYWJvcmF0b3J5IHRlc3Rpbmcgb2YgdW5zYXR1cmF0ZWQgc29pbCBzYW1wbGVzLiBEdXJpbmcgdGhlIGxhc3QgdHdvIGRlY2FkZXMgdmFyaW91cyByZXNlYXJjaGVycyBoYXZlIHByb3Bvc2VkIGFjY3VyYXRlIGVsYXN0by1wbGFzdGljIG1vZGVscyB0byBwcmVkaWN0IHRoZSBzdHJlbmd0aCBhbmQgdGhlIG1lY2hhbmljYWwgcmVzcG9uc2Ugb2YgdW5zYXR1cmF0ZWQgc29pbHMuIEhvd2V2ZXIsIGEgbWFqb3Igb2JzdGFjbGUgdG8gdGhlIHVzZSBvZiBzdWNoIGFkdmFuY2VkIG1vZGVscyBpcyB0aGUgbmVjZXNzaXR5IHRvIGRldGVybWluZSBhIHJlbGF0aXZlbHkgbGFyZ2UgbnVtYmVyIG9mIHNvaWwgcGFyYW1ldGVycyBieSBwZXJmb3JtaW5nIGNvc3RseSBhbmQgdGltZWNvbnN1bWluZyBsYWJvcmF0b3J5IHRlc3RzLiBUaGUgcHJlc3N1cmVtZXRlciB0ZXN0IGlzIGFuIGV4cGVyaW1lbnRhbCB0ZWNobmlxdWUgZm9yIHRoZSBpbi1zaXR1IG1lYXN1cmVtZW50IG9mIHRoZSBzdHJlbmd0aCBhbmQgb3RoZXIgbWVjaGFuaWNhbCBwYXJhbWV0ZXJzIG9mIHNvaWxzLiBUaGUgcHJlc3N1cmVtZXRlciBpcyBhIGN5bGluZHJpY2FsIGRldmljZSBkZXNpZ25lZCB0byBhcHBseSB1bmlmb3JtIHByZXNzdXJlIHRvIHRoZSB3YWxscyBvZiBhIGJvcmVob2xlIGJ5IG1lYW5zIG9mIGEgZmxleGlibGUgbWVtYnJhbmUuIFRoZSBhcHBsaWNhdGlvbiBvZiBwcmVzc3VyZW1ldGVyIHRlc3RzIHRvIHVuc2F0dXJhdGVkIHNvaWxzIGlzIHBhcnRpY3VsYXJseSBhcHBlYWxpbmcgYmVjYXVzZSB0aGVzZSB0ZXN0cyBhcmUgY29uc2lkZXJhYmx5IGZhc3RlciBhbmQgZWFzaWVyIHRoYW4gbGFib3JhdG9yeSB0ZXN0cyBvbiB1bnNhdHVyYXRlZCBzb2lsIHNhbXBsZXMuIEluIGFkZGl0aW9uIHRvIHRoaXMsIHByZXNzdXJlbWV0ZXIgdGVzdHMsIHVubGlrZSBsYWJvcmF0b3J5IHRlc3RzLCBkbyBub3QgcmVxdWlyZSBjb3Jpbmcgb2Ygc29pbCBzYW1wbGVzIGZyb20gdGhlIGZpZWxkLCBsaW1pdGluZyBpbiB0aGlzIHdheSB0aGUgbGV2ZWwgb2Ygc29pbCBkaXN0dXJiYW5jZSBwcmlvciB0byB0ZXN0aW5nLiBTdWNoIGZlYXR1cmUgaXMgZXNwZWNpYWxseSBhZHZhbnRhZ2VvdXMgZm9yIHVuc2F0dXJhdGVkIHNvaWxzIHRoYXQgYXJlIG9mdGVuIGNoYXJhY3Rlcml6ZWQgYnkgYW4gb3BlbiBzb2lsIGZhYnJpYywgd2l0aCBsYXJnZSBwb3JlcyBhbmQgYSBtZXRhc3RhYmxlIHN0cnVjdHVyZSBoZWxkIHRvZ2V0aGVyIGJ5IGNhcGlsbGFyeSB0ZW5zaW9ucywgd2hpY2ggbWFrZXMgdGhlc2Ugc29pbHMgcGFydGljdWxhcmx5IGRpZmZpY3VsdCB0byBzYW1wbGUuIFByZXNzdXJlbWV0ZXIgdGVzdHMgYXJlIHdpZGVseSB1c2VkIGZvciB0aGUgYW5hbHlzaXMgb2YgdGhlIGVuZ2luZWVyaW5nIHByb3BlcnRpZXMgb2Ygc2F0dXJhdGVkIHNvaWxzLCBob3dldmVyIHRoZXkgYXJlIHN0aWxsIHRlbnRhdGl2ZWx5IGVtcGxveWVkIGluIHVuc2F0dXJhdGVkIHNvaWxzIG1haW5seSBiZWNhdXNlIG9mIHRoZSBsYWNrIG9mIHJlY29nbml6ZWQgdGVzdCBzdGFuZGFyZHMgYW5kIHJlbGlhYmxlIGludGVycHJldGF0aW9uIG1ldGhvZHMuVGhpcyByZXNlYXJjaCB3aWxsIGVzdGFibGlzaCBhIHJlbGlhYmxlIGFuZCBjb3N0LWVmZmVjdGl2ZSBtZXRob2RvbG9neSBmb3IgdGhlIGludGVycHJldGF0aW9uIG9mIHByZXNzdXJlbWV0ZXIgdGVzdHMgaW4gdW5zYXR1cmF0ZWQgc29pbHMgYnkgZW1wbG95aW5nIGEgY29tYmluYXRpb24gb2YgY29tcHV0YXRpb25hbCBtZXRob2RzIHRvIGJhY2stYW5hbHlzZSB0aGUgZXhwZXJpbWVudGFsIGRhdGEgZnJvbSB0aGUgdGVzdHMuIEl0IHdpbGwgY29tYmluZSBhIGZpbml0ZSBlbGVtZW50IGNvbXB1dGVyIHByb2dyYW0sIHVzZWQgZm9yIHRoZSBudW1lcmljYWwgc2ltdWxhdGlvbiBvZiBwcmVzc3VyZW1ldGVyIHRlc3RzLCB3aXRoIGFuIG9wdGltaXphdGlvbiBhbGdvcml0aG0sIHVzZWQgZm9yIHRoZSBpZGVudGlmaWNhdGlvbiBvZiB0aGUgc29pbCBwYXJhbWV0ZXJzIGJ5IG1hdGNoaW5nIHRoZSBudW1lcmljYWwgc2ltdWxhdGlvbnMgdG8gdGhlIGV4cGVyaW1lbnRhbCBkYXRhLiBUaGUgZmluYWwgcHJvZHVjdCB3aWxsIGJlIGEgcGllY2Ugb2Ygc29mdHdhcmUgdGhhdCBtYXkgYmUgcm91dGluZWx5IHVzZWQgaW4gZW5naW5lZXJpbmcgcHJhY3RpY2UgZm9yIHRoZSBpZGVudGlmaWNhdGlvbiBvZiB0aGUgcGFyYW1ldGVycyBmb3IgYWR2YW5jZWQgZWxhc3RvLXBsYXN0aWMgdW5zYXR1cmF0ZWQgc29pbCBtb2RlbHMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0M1MjY2MjcvMQxFUC9DNTI2NjI3LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZLkkMowwvqMtlApuI1k7scJSSMPb" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKjrNOWAgLQvN++DAKT/OCVA8ySX0VzX06sqRWVl68aPKpEwrof" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C526627/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Identification of model parameters for unsaturated elasto-plastic models from pressuremeter tests</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=124747'>Gallipoli, Dr D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=57299'>Augarde, Professor C</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering and Computing Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Durham, University of</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme Pre-FEC</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">12 December 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">11 December 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="115,512.85" class="DetailValue">115,513</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Ground Engineering</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Construction</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Soils are porous materials and the definition of  unsaturated soils  applies to those soils whose pores are partly filled by water and partly filled by air. Unsaturated soils are relevant to a wide variety of civil engineering applications ranging from traditional problems such as shallow foundations and earth dams, to more recent areas of study such as the geo-hazards posed by buried nuclear waste, groundwater pollutant migration and rainfall-induced landslides. Rainfall-induced landslides, for example, are caused by a sudden reduction of strength in the soil due to the progressive saturation of soil pores by water during heavy precipitations. These landslides are often the reason of severe human casualties and material losses, as it happened on the 6th of May 1998 in the area of Sarno (southern Italy) where 167 people died as a result of massive mudslide. Despite the widespread occurrence and importance of unsaturated soils, conventional soil mechanics is based on the assumption that soils are saturated (i.e. the pores are entirely filled by water) mainly because of the many complexities associated to laboratory testing of unsaturated soil samples. During the last two decades various researchers have proposed accurate elasto-plastic models to predict the strength and the mechanical response of unsaturated soils. However, a major obstacle to the use of such advanced models is the necessity to determine a relatively large number of soil parameters by performing costly and timeconsuming laboratory tests. The pressuremeter test is an experimental technique for the in-situ measurement of the strength and other mechanical parameters of soils. The pressuremeter is a cylindrical device designed to apply uniform pressure to the walls of a borehole by means of a flexible membrane. The application of pressuremeter tests to unsaturated soils is particularly appealing because these tests are considerably faster and easier than laboratory tests on unsaturated soil samples. In addition to this, pressuremeter tests, unlike laboratory tests, do not require coring of soil samples from the field, limiting in this way the level of soil disturbance prior to testing. Such feature is especially advantageous for unsaturated soils that are often characterized by an open soil fabric, with large pores and a metastable structure held together by capillary tensions, which makes these soils particularly difficult to sample. Pressuremeter tests are widely used for the analysis of the engineering properties of saturated soils, however they are still tentatively employed in unsaturated soils mainly because of the lack of recognized test standards and reliable interpretation methods.This research will establish a reliable and cost-effective methodology for the interpretation of pressuremeter tests in unsaturated soils by employing a combination of computational methods to back-analyse the experimental data from the tests. It will combine a finite element computer program, used for the numerical simulation of pressuremeter tests, with an optimization algorithm, used for the identification of the soil parameters by matching the numerical simulations to the experimental data. The final product will be a piece of software that may be routinely used in engineering practice for the identification of the parameters for advanced elasto-plastic unsaturated soil models.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

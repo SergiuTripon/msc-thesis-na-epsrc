@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Robust Stability for Nonlinear Control: Analysis and Synthesis
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF035950%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAzNTk1MC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVPPHN0cm9uZz5Sb2J1c3QgU3RhYmlsaXR5IGZvciBOb25saW5lYXIgQ29udHJvbDogQW5hbHlzaXMgYW5kIFN5bnRoZXNpczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NzQ5MjknPkZyZW5jaCwgRHIgTTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDOzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTU5MTEyJz5EciBXIEJpYW48L2E+AABkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFIEVsZWN0cm9uaWNzIGFuZCBDb21wdXRlciBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUZVW5pdmVyc2l0eSBvZiBTb3V0aGFtcHRvbmRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUQMTUgRmVicnVhcnkgMjAwOGRkAgMPZBYCAgEPDxYCHwQFEDE0IEZlYnJ1YXJ5IDIwMTFkZAIFD2QWAgIBDw8WBB8EBQcyODcsMTczHgdUb29sVGlwBQoyODcsMTcyLjg0ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQITQ29udHJvbCBFbmdpbmVlcmluZwBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwcCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQswNiBGZWIgMjAwOGRkAgEPDxYCHwgFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUZRW5naW5lZXJpbmcgU3lzdGVtcyBQYW5lbB8DBRtWaWV3UGFuZWwuYXNweD9QYW5lbElkPTQ1ODRkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWwFVJvYnVzdG5lc3MgaXMgdGhlIGtleSBjb25jZXB0IGZvciBtb2Rlcm4gY29udHJvbCB0aGVvcnk6IGl0IGNvbmNlcm5zIHRoZSBhYmlsaXR5IG9mIGEgY29udHJvbCBzeXN0ZW0gdG8gd29yayBub3Qgb25seSBmb3IgdGhlIG1hdGhlbWF0aWNhbCBtb2RlbCBvZiB0aGUgc3lzdGVtIHRvIGJlIGNvbnRyb2xsZWQsIGJ1dCBhbHNvIHRvIHdvcmsgaW4gdGhlIGByZWFsIHdvcmxkJyB3aGVyZSB0aGUgdHJ1ZSBzeXN0ZW0gYWx3YXlzIGRldmlhdGVzIGZyb20gdGhlIG1vZGVsLiBGb3IgbGluZWFyIHN5c3RlbXMsIGNvbnRyb2wgZW5naW5lZXJzIGhhdmUgZGV2ZWxvcGVkIHNpZ25pZmljYW50IGFwcHJvYWNoZXMgdG8gYWRkcmVzc2VzIHRoaXMgaXNzdWUgKGZvciBleGFtcGxlIEgtaW5maW5pdHkgY29udHJvbCkuSW4gdGhlIHBhc3QgZGVjYWRlIHN1YnN0YW50aWFsIHByb2dyZXNzIGluIHRoZSBkZXZlbG9wbWVudCBvZiBhIHJvYnVzdCBjb250cm9sIHRoZW9yeSBmb3Igbm9ubGluZWFyIHN5c3RlbXMgaGFzIGFsc28gYmVlbiBtYWRlLCBidXQgdGhpcyBzdWJqZWN0IGlzIHZlcnkgbXVjaCBpbiBpdHMgaW5mYW5jeS4gSGVyZSB3ZSBjb25zaWRlciB0aGUgaW5wdXQtb3V0cHV0IHRoZW9yeSBiYXNlZCBvbiB0aGUgMTk5NyBkZXZlbG9wbWVudCBvZiB0aGUgYG5vbmxpbmVhciBnYXAgbWV0cmljJyBkdWUgdG8gR2Vvcmdpb3UgYW5kIFNtaXRoLiBBIG5vdGFibGUgbGltaXRhdGlvbiB0aGlzIGV4aXN0aW5nIG5vbmxpbmVhciBpbnB1dCBvdXRwdXQgdGhlb3J5IGlzIHRoYXQgaXQgb25seSBkaXJlY3RseSBhcHBsaWVzIHRvIHN5c3RlbXMgd2hpY2ggc3RhcnQgYXQgcmVzdC4gVGhlIGNvcmUgcGFydCBvZiB0aGlzIHByb3Bvc2FsIGlzIHRvIHVuZGVydGFrZSB0aGUgc3Vic3RhbnRpYWwgZ2VuZXJhbGlzYXRpb24gb2YgdGhpcyB0aGVvcnkgdG8gdGhlIGNhc2Ugb2Ygc3lzdGVtcyB3aGljaCBkbyBub3Qgc3RhcnQgYXQgZXF1aWxpYnJpdW0gcG9zaXRpb25zLiBUaGlzIGFwcHJvYWNoIG1heSBpbiBwYXJ0IGludm9sdmUgYSB1bmlmaWNhdGlvbiBvZiB0aGUgbm9ubGluZWFyICdzdGF0ZS1zcGFjZScgZHVlIHRvIFNvbnRhZyAod2hpY2ggaGFuZGxlcyBub24temVybyBpbml0aWFsIGNvbmRpdGlvbnMsIGJ1dCByb2J1c3RuZXNzIGlzIG5vdCBhbiBleHBsaWNpdCBwYXJ0IG9mIHRoZSBmcmFtZXdvcmspIHdpdGggdGhlIGlucHV0LW91dHB1dCB0aGVvcnkgKGluIHdoaWNoIHJvYnVzdG5lc3MgaXMgdGhlIGNlbnRyYWwgaXNzdWUsIGJ1dCBub24gemVybyBpbml0aWFsIGNvbmRpdGlvbnMgYXJlIG5vdCBoYW5kbGVkKS5Ud28gc3Vic3RhbnRpYWwgYXBwbGljYXRpb25zIG9mIHRoZSB1bmRlcmx5aW5nIHRoZW9yeSB3aWxsIHRoZW4gYmUgaW52ZXN0aWdhdGVkLjEuIE5vbmxpbmVhciBzZXBlcmF0aW9uIHByaW5jaXBsZXMuIFN1Y2ggcHJpbmNpcGxlcyBkZXNjcmliZSBjb25kaXRpb25zIHVuZGVyIHdoaWNoIGEgY29udHJvbGxlciBiYXNlZCBvbiBpbmZvcm1hdGlvbiBhYm91dCB0aGUgc3RhdGUgY2FuIGJlIHJlcGxhY2VkIGJ5IGEgY29udHJvbGxlciBiYXNlZCBvbmx5IG9uIHRoZSBmZWVkYmFjayBvZiB0aGUgbWVhc3VyZWQgb3V0cHV0LiBIZXJlIHdlIGFyZSBzZWVraW5nIHRvIHVzZSB0aGUgaW5wdXQtb3V0cHV0IHRvb2xzIHRvIHN1YnN0YW50aWFsbHkgZXh0ZW5kIHRoZSBleGlzdGluZyByZXN1bHRzIGluIHRoZSBsaXRlcmF0dXJlOyB0byBleHBsaWNpdGx5IGhhbmRsZSByb2J1c3RuZXNzIHRvIHVubW9kZWxsZWQgZHluYW1pY3MgYW5kIGRpc3R1cmJhbmNlcyBhdCBib3RoIHRoZSBpbnB1dCBhbmQgdGhlIG91dHB1dCBvZiB0aGUgc3lzdGVtLjIuIE5vbmxpbmVhciBjb21wbGV4aXR5IHJlZHVjdGlvbi4gQSBzdWJzdGFudGlhbCBvYnN0YWNsZSB0byBtYW55IG9mIHRoZSBjb250cm9sIGRlc2lnbnMgZGV2ZWxvcGVkIGluIG5vbmxpbmVhciBjb250cm9sIHRoZW9yeSwgaXMgdGhhdCBmb3Igc3lzdGVtcyBvZiBtb2RlcmF0ZSBvcmRlciwgdGhlIHJlY3Vyc2l2ZSBuYXR1cmUgb2YgdGhlIGRlc2lnbiBjb25zdHJ1Y3Rpb25zIG1lYW5zIHRoYXQgdGhlIGV4cGxpY2l0IGZvcm11bGFlIGZvciB0aGUgY29udHJvbGxlciBoYXZlIGEgdmVyeSByYXBpZCBncm93dGggKHdpdGggdGhlIG9yZGVyIG9mIHRoZSBzeXN0ZW0pIGluIHRoZSBudW1iZXIgb2YgdGVybXMuIFRoaXMgbWVhbnMgdGhlIGV4cHJlc3Npb25zIGFyZSB0b28gbGFyZ2UgYW5kIHVud2llbGR5IGZvciBwcmFjdGljYWwgcHVycG9zZXMgZm9yIHN5c3RlbXMgb2YgbW9kZXJhdGUgb3JkZXIuIENvbXBsZXhpdHkgcmVkdWN0aW9uIGFpbXMgdG8gcmVkdWNlIHRoZSBjb21wbGV4aXR5IG9mIHRoZXNlIGV4cHJlc3Npb25zIGluIGEgc3lzdGVtYXRpYyB3YXksIHdoaWxzdCBrZWVwaW5nIGNvbnRyb2wgb2YgdGhlIGNvbnNlcXVlbnQgYWx0ZXJlZCByb2J1c3RuZXNzIGFuZCBwZXJmb3JtYW5jZSBvZiB0aGUgY29udHJvbCBzeXN0ZW0uUHJvYmxlbXMgMS4gYW5kIDIuIGFyZSBpbXBvcnRhbnQgaW4gdGhlaXIgb3duIHJpZ2h0LCBhbmQgd2Ugd2lsbCBiZSBpbnRyb2R1Y2luZyBhIGNvbXBsZXRlbHkgbmV3IGFybW91cnkgb2YgdG9vbHMgaW50byB0aGUgcmVsZXZhbnQgbGl0ZXJhdHVyZS4gSW1wb3J0YW50bHkgYWxzbywgdGhlc2UgYXBwbGljYXRpb25zIHdpbGwgc2VydmUgdG8gaWxsdXN0cmF0ZSB0aGUgcG93ZXIgb2YgdGhlIGNvcmUgaW5wdXQtb3V0cHV0IGFwcHJvYWNoLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc290b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc290b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDM1OTUwLzEMRVAvRjAzNTk1MC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQeAArxzRABDot1FNkbarbR3uWrjQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKHwsnyAwLQvN++DAKT/OCVA8EjH5FixK73QmSbHuk02sRg1mlv" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F035950/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Robust Stability for Nonlinear Control: Analysis and Synthesis</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=74929'>French, Dr M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-59112'>Dr W Bian</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Electronics and Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Southampton</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">15 February 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">14 February 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="287,172.84" class="DetailValue">287,173</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Control Engineering</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>06 Feb 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4584">Engineering Systems Panel</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Robustness is the key concept for modern control theory: it concerns the ability of a control system to work not only for the mathematical model of the system to be controlled, but also to work in the `real world' where the true system always deviates from the model. For linear systems, control engineers have developed significant approaches to addresses this issue (for example H-infinity control).In the past decade substantial progress in the development of a robust control theory for nonlinear systems has also been made, but this subject is very much in its infancy. Here we consider the input-output theory based on the 1997 development of the `nonlinear gap metric' due to Georgiou and Smith. A notable limitation this existing nonlinear input output theory is that it only directly applies to systems which start at rest. The core part of this proposal is to undertake the substantial generalisation of this theory to the case of systems which do not start at equilibrium positions. This approach may in part involve a unification of the nonlinear 'state-space' due to Sontag (which handles non-zero initial conditions, but robustness is not an explicit part of the framework) with the input-output theory (in which robustness is the central issue, but non zero initial conditions are not handled).Two substantial applications of the underlying theory will then be investigated.1. Nonlinear seperation principles. Such principles describe conditions under which a controller based on information about the state can be replaced by a controller based only on the feedback of the measured output. Here we are seeking to use the input-output tools to substantially extend the existing results in the literature; to explicitly handle robustness to unmodelled dynamics and disturbances at both the input and the output of the system.2. Nonlinear complexity reduction. A substantial obstacle to many of the control designs developed in nonlinear control theory, is that for systems of moderate order, the recursive nature of the design constructions means that the explicit formulae for the controller have a very rapid growth (with the order of the system) in the number of terms. This means the expressions are too large and unwieldy for practical purposes for systems of moderate order. Complexity reduction aims to reduce the complexity of these expressions in a systematic way, whilst keeping control of the consequent altered robustness and performance of the control system.Problems 1. and 2. are important in their own right, and we will be introducing a completely new armoury of tools into the relevant literature. Importantly also, these applications will serve to illustrate the power of the core input-output approach.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.soton.ac.uk                                                                              '>http://www.soton.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

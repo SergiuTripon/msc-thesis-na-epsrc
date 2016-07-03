@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Optimisation of network outage schedules
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE005292%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAwNTI5Mi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU5PHN0cm9uZz5PcHRpbWlzYXRpb24gb2YgbmV0d29yayBvdXRhZ2Ugc2NoZWR1bGVzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTA0OTY3Jz5CZWxsLCBQcm9mZXNzb3IgS1JXPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFH0luc3QgZm9yIEVuZXJneSBhbmQgRW52aXJvbm1lbnRkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRlVbml2ZXJzaXR5IG9mIFN0cmF0aGNseWRlZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUSRmlyc3QgR3JhbnQgU2NoZW1lZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgT2N0b2JlciAyMDA2ZGQCAw9kFgICAQ8PFgIfBAUNMzEgTWFyY2ggMjAxMGRkAgUPZBYCAgEPDxYEHwQFBjgwLDM2Mh4HVG9vbFRpcAUJODAsMzYxLjk1ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhNQb3dlciBTeXN0ZW1zIFBsYW50AGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIGRW5lcmd5AGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAWqFVRoZSBsb25nLXRlcm0gcmVsaWFiaWxpdHkgb2YgYW4gZWxlY3RyaWMgcG93ZXIgc3lzdGVtIGFuZCBjb250aW51aXR5IG9mIHN1cHBseSBvZiBwb3dlciB0byBjb25zdW1lcnMgYXJlIGNyaXRpY2FsbHkgZGVwZW5kZW50IG9uIHRoZSB0aW1lbHkgbWFpbnRlbmFuY2Ugb2Ygc3lzdGVtIGFzc2V0cyBhbmQgdGhlIGNvbnN0cnVjdGlvbiBvZiBuZXcgYXNzZXRzLiBOZXcgYXNzZXRzIGFyZSBpbnN0YWxsZWQgaW4gZXh0ZW5zaW9uIG9mIHRoZSBzeXN0ZW0gdG8gcHJvdmlkZSBncmVhdGVyIHBvd2VyIHRyYW5zZmVyIGNhcGFiaWxpdHkgb3IgaW4gcmVwbGFjZW1lbnQgb2Ygb2xkIGVxdWlwbWVudCB0aGF0IGhhcyByZWFjaGVkIHRoZSBlbmQgb2YgaXRzIGVjb25vbWljIG9yIHRlY2huaWNhbCBsaWZlLCBpLmUuIHdoZXJlIHRoZSBwcm9iYWJpbGl0eSBvZiBhbiBpcnJlcGFyYWJsZSBmYWlsdXJlIGlzIGV4Y2Vzc2l2ZWx5IGhpZ2ggb3IgcmVwYWlyIG9yIG1haW50ZW5hbmNlIHdvdWxkIGJlIHVuZWNvbm9taWMuIEJvdGggbWFpbnRlbmFuY2UgYW5kIGNvbnN0cnVjdGlvbiB3b3JrIHJlcXVpcmUgdGhlIHJlbW92YWwgb2YgcGFydHMgb2YgdGhlIHN5c3RlbSBmcm9tIHNlcnZpY2Ugc28gdGhhdCB0aGUgcmVsZXZhbnQgcGFydHMgb2YgaXQgY2FuIGJlIHNhZmVseSBhY2Nlc3NlZCBhbmQgd29ya2VkIG9uLiBIb3dldmVyLCB0aGUgcmVtYWluZGVyIG9mIHRoZSBzeXN0ZW0gbXVzdCBiZSBjYXBhYmxlIG9mIG1lZXRpbmcgbWluaW11bSBzZXJ2aWNlIHN0YW5kYXJkcywgaS5lLiBiZSBjYXBhYmxlIG9mIG1lZXRpbmcgZGVtYW5kIHdpdGhvdXQgb3ZlcmxvYWRpbmcgb2YgdGhlIHJlbWFpbmluZyBuZXR3b3JrIGJyYW5jaGVzLCB2aW9sYXRpb24gb2Ygdm9sdGFnZSBsaW1pdHMgb3IgcmlzayBvZiBpbnN0YWJpbGl0eSBvZiB0aGUgc3lzdGVtLkFzIGVsZWN0cmljIHBvd2VyIHRyYW5zbWlzc2lvbiBhbmQgZGlzdHJpYnV0aW9uIG5ldHdvcmtzIGluIHRoZSBVSyBhZ2UsIGluIHRoZSBuZXh0IDEgdG8gMTAgeWVhcnMsIHZlcnkgbGFyZ2UgcGFydHMgb2YgdGhlbSB3aWxsIG5lZWQgdG8gYmUgcmVwbGFjZWQuIFRoZSBhc3NvY2lhdGVkIGNvbnN0cnVjdGlvbiBvdXRhZ2VzIHdpbGwgYmUgdmVyeSBtdWNoIGxvbmdlciB0aGFuIG1haW50ZW5hbmNlIG91dGFnZXM7IGR1ZSB0byB0aGUgJ2JvdyB3YXZlJyBvZiBhc3NldCByZXBsYWNlbWVudHMgbmVlZGVkLCB0aGUgbnVtYmVyIG9mIG91dGFnZXMgdG8gYmUgdGFrZW4gd2lsbCBiZSBoaWdoZXIgdGhhbiBldmVyIGJlZm9yZS4gVGhpcyB3aWxsIG9jY3VyIGF0IHRoZSBzYW1lIHRpbWUgYXMsIGZvbGxvd2luZyB5ZWFyLW9uLXllYXIgZGVtYW5kIGdyb3d0aCwgY2hhbmdlcyB0byBnZW5lcmF0aW9uIHBhdHRlcm5zIGFuZCBncmVhdGVyIHJlc3RyaWN0aW9ucyBvbiBuZXR3b3JrIG93bmVycycgYWJpbGl0eSB0byBhZGQgbmV3IGNpcmN1aXQgcm91dGVzLCBzeXN0ZW1zIGFyZSB1dGlsaXNlZCB0byBhIGdyZWF0ZXIgZGVncmVlIHRoYW4gZXZlciBiZWZvcmUuIE1vcmVvdmVyLCBzdGlsbCBtb3JlIGNvbnN0cnVjdGlvbiBvdXRhZ2VzIGFyZSBuZWVkZWQgZm9yIHRoZSBhY2NvbW1vZGF0aW9uIG9mIG5ldyBnZW5lcmF0aW9uLCBpbiBwYXJ0aWN1bGFyIHJlbmV3YWJsZXMuSW4gb3JkZXIgdG8gZW5zdXJlIHRoYXQgYSBzdWZmaWNpZW50IG51bWJlciBvZiBuZXR3b3JrIG91dGFnZXMgb2YgYWRlcXVhdGUgbGVuZ3RoIGNhbiBiZSB0YWtlbiBieSB0aGUgdGltZXMgYXQgd2hpY2ggdGhleSBhcmUgcmVxdWlyZWQgd2hpbGUgbWFpbnRhaW5pbmcgc3lzdGVtIHNlY3VyaXR5LCBhIGh1Z2UgZWZmb3J0IG11c3QgYmUgZXhwZW5kZWQgb3B0aW1pc2luZyB0aGUgc2NoZWR1bGUgb2Ygb3V0YWdlcy4gVGhpcyByZXF1aXJlcyBkZXRhaWxlZCBhbmFseXNpcyBvZiBzeXN0ZW0gc2VjdXJpdHkgdW5kZXIgZGlmZmVyZW50IG91dGFnZSBjb25kaXRpb25zIGFuZCBhcHByb3ByaWF0ZSBtYW5hZ2VtZW50IG9mIHRoZSByaXNrcyBvZiBkZXBlbmRlbmNpZXMgb24gYXZhaWxhYmlsaXR5IGFuZCBwcmljZXMgb2YgZ2VuZXJhdGlvbiwgZmx1Y3R1YXRpb25zIGluIGRlbWFuZCBhbmQgb3ZlcnJ1biBvZiB3b3JrIG9uIHRoZSBvdXRhZ2VkIG5ldHdvcmsgYXNzZXRzLiBUaGUgd29yc3Qgb3V0Y29tZSBvZiBhIGZhaWx1cmUgdG8gbWFuYWdlIHRoZSByaXNrcyB3b3VsZCBiZSB0aGF0IGNyaXRpY2FsIG91dGFnZXMgY2Fubm90IGJlIHRha2VuIHdpdGggdGhlIHJlc3VsdCB0aGF0IGVzc2VudGlhbCBuZXR3b3JrIGFzc2V0cyBhcmUgYXQgZ3JlYXRlciByaXNrIG9mIGZhaWx1cmUgYW5kIHRoYXQgbmV3IGdlbmVyYXRpb24gLyBpbiBwYXJ0aWN1bGFyIHJlbmV3YWJsZXMgLyBjYW5ub3QgYmUgYWNjb21tb2RhdGVkLlRoaXMgcHJvamVjdCBhaW1zIHRvIGRldmVsb3AgbWV0aG9kcyB0byBmYWNpbGl0YXRlIHRoZSBtZWV0aW5nIG9mIHRoZSBncmVhdGVyLXRoYW4tZXZlciBjaGFsbGVuZ2VzIGluIHRoZSBzY2hlZHVsaW5nIG9mIG5ldHdvcmsgb3V0YWdlcyBhbmQgZGVtb25zdHJhdGUgdGhlbSBieSBtZWFucyBvZiBwcm90b3R5cGUgc29mdHdhcmUgdG9vbHMuIFRoZSByZXN1bHQgd2lsbCBiZSByZWR1Y3Rpb24gb2YgdGhlIGFmb3JlbWVudGlvbmVkIHJpc2tzIGFuZCBhIG1vcmUgZWZmaWNpZW50IGFuZCB0aW1lbHkgZmFjaWxpdGF0aW9uIG9mIHRoZSBjb25uZWN0aW9uIG9mIHJlbmV3YWJsZSBnZW5lcmF0aW9uLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc3RyYXRoLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc3RyYXRoLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9FMDA1MjkyLzEMRVAvRTAwNTI5Mi8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSFkhNL2XrmlrrSb/vNjaohMxwWvg==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKj373JBwLQvN++DAKT/OCVA4Nu8LtMbSyY8Zc20T+WI8YCh482" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E005292/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Optimisation of network outage schedules</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-104967'>Bell, Professor KRW</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Inst for Energy and Environment</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Strathclyde</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="80,361.95" class="DetailValue">80,362</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Power Systems Plant</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Energy</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The long-term reliability of an electric power system and continuity of supply of power to consumers are critically dependent on the timely maintenance of system assets and the construction of new assets. New assets are installed in extension of the system to provide greater power transfer capability or in replacement of old equipment that has reached the end of its economic or technical life, i.e. where the probability of an irreparable failure is excessively high or repair or maintenance would be uneconomic. Both maintenance and construction work require the removal of parts of the system from service so that the relevant parts of it can be safely accessed and worked on. However, the remainder of the system must be capable of meeting minimum service standards, i.e. be capable of meeting demand without overloading of the remaining network branches, violation of voltage limits or risk of instability of the system.As electric power transmission and distribution networks in the UK age, in the next 1 to 10 years, very large parts of them will need to be replaced. The associated construction outages will be very much longer than maintenance outages; due to the 'bow wave' of asset replacements needed, the number of outages to be taken will be higher than ever before. This will occur at the same time as, following year-on-year demand growth, changes to generation patterns and greater restrictions on network owners' ability to add new circuit routes, systems are utilised to a greater degree than ever before. Moreover, still more construction outages are needed for the accommodation of new generation, in particular renewables.In order to ensure that a sufficient number of network outages of adequate length can be taken by the times at which they are required while maintaining system security, a huge effort must be expended optimising the schedule of outages. This requires detailed analysis of system security under different outage conditions and appropriate management of the risks of dependencies on availability and prices of generation, fluctuations in demand and overrun of work on the outaged network assets. The worst outcome of a failure to manage the risks would be that critical outages cannot be taken with the result that essential network assets are at greater risk of failure and that new generation / in particular renewables / cannot be accommodated.This project aims to develop methods to facilitate the meeting of the greater-than-ever challenges in the scheduling of network outages and demonstrate them by means of prototype software tools. The result will be reduction of the aforementioned risks and a more efficient and timely facilitation of the connection of renewable generation.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.strath.ac.uk                                                                             '>http://www.strath.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

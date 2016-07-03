@@ -204,6 +204,8 @@ class ExtractTopics:
         ExtractTopics.extract_grant_info()
         # extract detailed grant information
         ExtractTopics.extract_detailed_grant_info()
+        # extract detailed researcher information
+        ExtractTopics.extract_detailed_researcher_info()
 
     ####################################################################################################################
 
@@ -553,8 +555,15 @@ class ExtractTopics:
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
 
-                # variable to hold clean topics list
-                clean_topics = [topic.strip() for topic in topics if topic.strip()]
+                # variable to hold clean topics
+                clean_topics = []
+
+                # for topic in topics
+                for topic in topics:
+                    # if topic is not empty and is not in clean topics
+                    if topic.strip() and topic not in clean_topics:
+                        # add topic to clean topics
+                        clean_topics += [topic.strip()]
 
                 # add detailed grant to detailed grants dictionary
                 detailed_grants[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = clean_topics
@@ -584,6 +593,80 @@ class ExtractTopics:
             print('> Extraction of detailed grants completed'
                   ' ({} detailed grants extracted)'.format(len(detailed_grants)))
 
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts detailed researcher information
+    def extract_detailed_researcher_info():
+
+        # if detailed researcher information file does not exist
+        if not os.path.isfile('../output/topics/info/detailed_researcher_info.csv'):
+
+            # print progress
+            print('> Extraction of detailed researchers started')
+
+            # variable to hold researcher urls
+            researcher_urls = [researcher_url.strip('http://gow.epsrc.ac.uk/') for researcher_url in
+                               open(r'../output/topics/urls/researchers.txt', "r").read().splitlines()]
+
+            # variable to hold detailed researchers
+            detailed_researchers = OrderedDict()
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher url in researcher urls
+            for researcher_url in researcher_urls:
+
+                # variable to hold page
+                page = open(r'../output/topics/html/researchers/{}'.format(researcher_url), "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold topics xpath
+                topics_xpath = "//span[starts-with(@id, 'dgResearchTopics_ctl')]/text()"
+
+                # variable to hold topics
+                topics = tree.xpath(topics_xpath)
+
+                # variable to hold clean topics
+                clean_topics = []
+
+                # for topic in topics
+                for topic in topics:
+                    # if topic is not empty and is not in clean topics
+                    if topic.strip() and topic not in clean_topics:
+                        # add topic to clean topics
+                        clean_topics += [topic.strip()]
+
+                # add detailed researcher to detailed researchers
+                detailed_researchers[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = clean_topics
+
+                # print progress
+                print('> Extraction of detailed researchers in progress'
+                      ' ({} detailed researcher(s) extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold output file
+            output_file = open('../output/topics/info/detailed_researcher_info.csv', mode='w')
+
+            # for identifier and clean topics in detailed researchers
+            for identifier, clean_topics in detailed_researchers.items():
+                # write identifier and clean topics to file
+                output_file.write('"{}","{}"\n'.format(identifier, clean_topics))
+
+            # variable to hold output file
+            output_file = open(r'../output/topics/info/detailed_researcher_info.pkl', 'wb')
+            # write data structure to file
+            dump(detailed_researchers, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of detailed researcher completed'
+                  ' ({} detailed researcher extracted)'.format(len(detailed_researchers)))
 
 ########################################################################################################################
 
@@ -597,11 +680,15 @@ class ExtractPastTopics:
         # extract researcher urls from 1990 to 2000
         ExtractPastTopics.extract_researcher_urls('_1990_2000')
         # extract researcher urls from 2000 to 2010
-        # ExtractTopics.extract_researcher_urls('_2000_2010')
+        ExtractPastTopics.extract_researcher_urls('_2000_2010')
         # extract detailed grant information from 1990 to 2000
         ExtractPastTopics.extract_detailed_grant_info('_1990_2000')
         # extract detailed grant information from 2000 to 2010
-        # ExtractPastTopics.extract_detailed_grant_info('_2000_2010')
+        ExtractPastTopics.extract_detailed_grant_info('_2000_2010')
+        # extract detailed researcher information from 1990 to 2000
+        ExtractPastTopics.extract_detailed_researcher_info('_1990_2000')
+        # extract detailed researcher information from 2000 to 2010
+        ExtractPastTopics.extract_detailed_researcher_info('_2000_2010')
 
     ####################################################################################################################
 
@@ -679,7 +766,7 @@ class ExtractPastTopics:
             grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url
                           in open(r'../output/past-topics/urls/grants{}.txt'.format(years), "r").read().splitlines()]
 
-            # variable to hold detailed grants list
+            # variable to hold detailed grants
             detailed_grants = OrderedDict()
 
             # variable to hold extraction count set to 1
@@ -700,8 +787,15 @@ class ExtractPastTopics:
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
 
-                # variable to hold clean topics list
-                clean_topics = [topic.strip() for topic in topics if topic.strip()]
+                # variable to hold clean topics
+                clean_topics = []
+
+                # for topic in topics
+                for topic in topics:
+                    # if topic is not empty and is not in clean topics
+                    if topic.strip() and topic not in clean_topics:
+                        # add topic to clean topics
+                        clean_topics += [topic.strip()]
 
                 # add detailed grant to detailed grants dictionary
                 detailed_grants[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = clean_topics
@@ -730,6 +824,82 @@ class ExtractPastTopics:
             # print progress
             print('> Extraction of detailed grants completed'
                   ' ({} detailed grants extracted)'.format(len(detailed_grants)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts detailed researcher information from 1990/2000 to 2000/2010
+    def extract_detailed_researcher_info(years):
+
+        # if detailed researcher information file does not exist
+        if not os.path.isfile('../output/past-topics/info/detailed_researcher_info{}.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of detailed researchers started')
+
+            # variable to hold researcher urls
+            researcher_urls = [researcher_url.strip('http://gow.epsrc.ac.uk/') for researcher_url in
+                               open(r'../output/past-topics/urls/researchers{}.txt'.format(years),
+                                    "r").read().splitlines()]
+
+            # variable to hold detailed researchers
+            detailed_researchers = OrderedDict()
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher url in researcher urls
+            for researcher_url in researcher_urls:
+
+                # variable to hold page
+                page = open(r'../output/past-topics/html/researchers{}/{}'.format(years, researcher_url), "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold topics xpath
+                topics_xpath = "//span[starts-with(@id, 'dgResearchTopics_ctl')]/text()"
+
+                # variable to hold topics
+                topics = tree.xpath(topics_xpath)
+
+                # variable to hold clean topics
+                clean_topics = []
+
+                # for topic in topics
+                for topic in topics:
+                    # if topic is not empty and is not in clean topics
+                    if topic.strip() and topic not in clean_topics:
+                        # add topic to clean topics
+                        clean_topics += [topic.strip()]
+
+                # add detailed researcher to detailed researchers
+                detailed_researchers[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = clean_topics
+
+                # print progress
+                print('> Extraction of detailed researchers in progress'
+                      ' ({} detailed researcher(s) extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold output file
+            output_file = open('../output/past-topics/info/detailed_researcher_info{}.csv'.format(years), mode='w')
+
+            # for identifier and clean topics in detailed researchers
+            for identifier, clean_topics in detailed_researchers.items():
+                # write identifier and clean topics to file
+                output_file.write('"{}","{}"\n'.format(identifier, clean_topics))
+
+            # variable to hold output file
+            output_file = open(r'../output/past-topics/info/detailed_researcher_info{}.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(detailed_researchers, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of detailed researcher completed'
+                  ' ({} detailed researcher extracted)'.format(len(detailed_researchers)))
 
 ########################################################################################################################
 

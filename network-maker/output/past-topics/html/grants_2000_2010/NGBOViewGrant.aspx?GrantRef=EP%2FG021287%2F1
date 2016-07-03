@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Nodal domains for discrete Laplacians on graphs: morphology, percolation and isospectrality
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG021287%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzAyMTI4Ny8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVsPHN0cm9uZz5Ob2RhbCBkb21haW5zIGZvciBkaXNjcmV0ZSBMYXBsYWNpYW5zIG9uIGdyYXBoczogbW9ycGhvbG9neSwgcGVyY29sYXRpb24gYW5kIGlzb3NwZWN0cmFsaXR5PC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVJPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTkxODU4Jz5TbWlsYW5za3ksIFByb2Zlc3NvciBVPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00MTkyMyc+TGV2aXRpbiwgUHJvZmVzc29yIE1BPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRJTY2ggb2YgTWF0aGVtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRJDYXJkaWZmIFVuaXZlcnNpdHlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDjAxIEF1Z3VzdCAyMDA5ZGQCAw9kFgICAQ8PFgIfBAUMMzEgSnVseSAyMDEyZGQCBQ9kFgICAQ8PFgQfBAUHMzA5LDkyMx4HVG9vbFRpcAUKMzA5LDkyMi45NmRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCFU1hdGhlbWF0aWNhbCBBbmFseXNpcxRNYXRoZW1hdGljYWwgUGh5c2ljc2QCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfBwIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA0IFNlcCAyMDA4ZGQCAQ8PFgIfCAUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBSBNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbB8DBRtWaWV3UGFuZWwuYXNweD9QYW5lbElkPTQ2ODFkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXyD09uZSBvZiB0aGUgbW9zdCBvdXRzdGFuZGluZyBkaXNjb3ZlcmllcyBpbiB0aGUgbmluZXRlZW4gY2VudHVyeSB3YXMgQ2hsYWRuaSdzIHdvcmsgb24gdGhlIHZpYnJhdGlvbiBvZiBwbGF0ZXMsIGluIHdoaWNoIGhlIGRpc2NvdmVyZWQgdGhlIGludHJpY2F0ZSBwYXR0ZXJucyBvZiBub2RhbCBsaW5lcyAtIHRoZSBsaW5lcyB3aGVyZSB0aGUgdmlicmF0aW9uIGFtcGxpdHVkZSB2YW5pc2hlcy4gVGhlIGFyZWFzIGJvdW5kZWQgYnkgdGhlIG5vZGFsIGxpbmVzIGFyZSB0aGUgbm9kYWwgZG9tYWlucywgd2hvc2UgY291bnRzIGFuZCBtb3JwaG9sb2dpZXMgd2VyZSB0aGUgc3ViamVjdCBvZiBtYW55IHN0dWRpZXMgdGlsbCB0aGlzIHZlcnkgZGF5LiBIb3dldmVyLCBvbmx5IHJlY2VudGx5IHdhcyBpdCByZWFsaXplZCwgdGhhdCB0aGUgY29tcGxleGl0eSBhbmQgcmljaG5lc3Mgb2YgZm9ybXMgZGlzcGxheWVkIGJ5IG5vZGFsIGRvbWFpbnMgaW5jcmVhc2UgZHJhbWF0aWNhbGx5IGlmIHRoZSBkb21haW5zIG9mIHN0dWR5IHdlcmUgb2YgZ2VuZXJhbCBzaGFwZXMgKGFuZCBub3QgdGhlIHNxdWFyZXMgYW5kIGRpc2NzIHVzZWQgb3JpZ2luYWxseSkuIEZ1cnRoZXIgc3VycHJpc2VzIGZvbGxvd2VkIHdoZW4gZGV0YWlsZWQgYW5hbHlzaXMgb2YgdGhlIG5vZGFsIG1vcnBob2xvZ2llcyB3YXMgYXR0ZW1wdGVkLiBJbmRlZWQsIHRoZSBiZXN0IGRlc2NyaXB0aW9uIG9mIHRoaXMgcGhlbm9tZW5vbiBpcyB0YWtlbiBmcm9tIHBlcmNvbGF0aW9uIHRoZW9yeSAtIGEgc3RhdGlzdGljYWwgdGhlb3J5IHdoaWNoIGEgcHJpb3J5IGhhcyBub3RoaW5nIHRvIGRvIHdpdGggd2F2ZSBkeW5hbWljcyEgIEFub3RoZXIgc3VycHJpc2luZyBkaXNjb3ZlcnkgZW1lcmdlZCBpbiB0aGUgIGF0dGVtcHRzIHRvIHVuZGVyc3RhbmQgdGhlIHdheSBieSB3aGljaCB0aGUgbnVtYmVyIG9mIG5vZGFsIGRvbWFpbnMgZGVwZW5kIG9uIHRoZSBmcmVxdWVuY3kgb2YgdGhlIHZpYnJhdGlvbi4gSXQgdHVybnMgb3V0IHRoYXQgaW4gc29tZSBjYXNlcywgdGhlIHNlcXVlbmNlIG9mIHRoaXMgbnVtYmVycyAodGhlIG5vZGFsIGNvdW50KSBjYW4gYmUgdXNlZCB0byBkZWR1Y2UgdGhlIGdlb21ldHJ5IG9mIHRoZSB2aWJyYXRpbmcgZG9tYWluLCBhbmQgaW4gc29tZSBjYXNlcyBldmVuIHRvIHNwZWNpZnkgaXQgY29tcGxldGVseS4gVGhlc2UgcmVzdWx0cywgYW5kIHNldmVyYWwgb3RoZXJzIG9mIG1vcmUgdGVjaG5pY2FsIG5hdHVyZSBoYXZlIGRyYXduIHRoZSBhdHRlbnRpb24gb2YgYm90aCBtYXRoZW1hdGljYWwgYW5kIHBoeXNpY2FsIGNvbW11bml0aWVzIHRvIHRoZSBzdHVkeSBvZiBub2RhbCBkb21haW5zLkluIHRoZSBwcmVzZW50IHdvcmsgd2Ugd291bGQgbGlrZSB0byBjb250cmlidXRlIHRvIHRoaXMgc3R1ZHkgYnkgYW4gYW5hbHlzaXMgb2YgYSBjbGFzcyBvZiBtb2RlbHMgd2hpY2ggYXJlIHNpbXBsZXIgdG8gaW52ZXN0aWdhdGUsIHlldCBwcmVzZXJ2ZSBtdWNoIG9mIHRoZSBjb21wbGV4aXR5IG9mIHRoZSBvcmlnaW5hbCBwcm9ibGVtLiBUaGVzZSBhcmUgIGdyYXBocyAgd2hpY2ggY2FuIGJlIHRob3VnaHQgb2YgYXMgdGhlIHJlcHJlc2VudGF0aW9ucyBvZiB0aGUgdmlicmF0aW5nIG1lbWJyYW5lcyBieSBhIG5ldHdvcmsgb2YgaW50cmljYXRlbHkgY29ubmVjdGVkIHdpcmVzLiBJbmRlZWQsIHByZWxpbWluYXJ5IHN0dWRpZXMgc2hvdyB0aGF0IG1hbnkgb2YgdGhlIGNoYXJhY3RlcmlzdGljcyBvZiBub2RhbCBkb21haW5zIGFyZSBleHByZXNzZWQgYWxzbyBpbiB0aGVpciBncmFwaCBtb2RlbHMuIEdyYXBocywgaG93ZXZlciBhcmUgc2ltcGxlciB0byBoYW5kbGUsIGFuZCBieSBlc3RhYmxpc2hpbmcgcmlnb3JvdXMgcmVzdWx0cyBvbiBncmFwaHMsIHdlIHNoZWxsIHNoZWQgbGlnaHQgb24gdGhlIHN1YmplY3QsIGFuZCBhY3F1aXJlIHRoZSBza2lsbCBhbmQgdGhlIGluc2lnaHQgd2hpY2ggd2lsbCBiZSB1c2VmdWwgaW4gYWRkcmVzc2luZyB0aGUgcHJvYmxlbSBpbiBpdHMgZ2VuZXJhbCBzZXR0aW5nLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuY2YuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuY2YuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDIxMjg3LzEMRVAvRzAyMTI4Ny8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGRRpeFEycJS8sWsdUucJ8nswslh6A==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLIlunkAwLQvN++DAKT/OCVA6ayTQVNDpPr/hV7jITYUeoRqPRt" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G021287/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Nodal domains for discrete Laplacians on graphs: morphology, percolation and isospectrality</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-191858'>Smilansky, Professor U</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=41923'>Levitin, Professor MA</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Cardiff University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 August 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 July 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="309,922.96" class="DetailValue">309,923</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> Mathematical Physics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>04 Sep 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4681">Mathematics Prioritisation Panel</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">One of the most outstanding discoveries in the nineteen century was Chladni's work on the vibration of plates, in which he discovered the intricate patterns of nodal lines - the lines where the vibration amplitude vanishes. The areas bounded by the nodal lines are the nodal domains, whose counts and morphologies were the subject of many studies till this very day. However, only recently was it realized, that the complexity and richness of forms displayed by nodal domains increase dramatically if the domains of study were of general shapes (and not the squares and discs used originally). Further surprises followed when detailed analysis of the nodal morphologies was attempted. Indeed, the best description of this phenomenon is taken from percolation theory - a statistical theory which a priory has nothing to do with wave dynamics!  Another surprising discovery emerged in the  attempts to understand the way by which the number of nodal domains depend on the frequency of the vibration. It turns out that in some cases, the sequence of this numbers (the nodal count) can be used to deduce the geometry of the vibrating domain, and in some cases even to specify it completely. These results, and several others of more technical nature have drawn the attention of both mathematical and physical communities to the study of nodal domains.In the present work we would like to contribute to this study by an analysis of a class of models which are simpler to investigate, yet preserve much of the complexity of the original problem. These are  graphs  which can be thought of as the representations of the vibrating membranes by a network of intricately connected wires. Indeed, preliminary studies show that many of the characteristics of nodal domains are expressed also in their graph models. Graphs, however are simpler to handle, and by establishing rigorous results on graphs, we shell shed light on the subject, and acquire the skill and the insight which will be useful in addressing the problem in its general setting.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cf.ac.uk                                                                                 '>http://www.cf.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

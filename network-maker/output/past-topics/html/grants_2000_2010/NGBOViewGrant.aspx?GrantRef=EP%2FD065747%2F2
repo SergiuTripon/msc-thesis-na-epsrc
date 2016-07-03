@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Model Theory of some Differential Equations arising from Diophantine Geometry
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD065747%2f2" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDA2NTc0Ny8yZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVePHN0cm9uZz5Nb2RlbCBUaGVvcnkgb2Ygc29tZSBEaWZmZXJlbnRpYWwgRXF1YXRpb25zIGFyaXNpbmcgZnJvbSBEaW9waGFudGluZSBHZW9tZXRyeTwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTk0MjE1Jz5LaXJieSwgRHIgUEo8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAULTWF0aGVtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRlVbml2ZXJzaXR5IG9mIEVhc3QgQW5nbGlhZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbUG9zdGRvYyBSZXNlYXJjaCBGZWxsb3dzaGlwZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAURMDEgU2VwdGVtYmVyIDIwMDlkZAIDD2QWAgIBDw8WAh8EBQ0zMSBNYXJjaCAyMDEwZGQCBQ9kFgICAQ8PFgQfBAUGNDMsMDI5HgdUb29sVGlwBQk0MywwMjkuMDhkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCFkFsZ2VicmEgJmFtcDsgR2VvbWV0cnkZTG9naWMgJmFtcDsgQ29tYmluYXRvcmljc2QCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAXrDVRoaXMgcHJvamVjdCBpcyBhYm91dCB1c2luZyBpZGVhcyBmcm9tIG1vZGVsIHRoZW9yeSAoYSBicmFuY2ggb2YgbWF0aGVtYXRpY2FsIGxvZ2ljKSB0byBhbnN3ZXIgcXVlc3Rpb25zIHJlbGF0aW5nIHRvIGRpb3BoYW50aW5lIGdlb21ldHJ5ICh0aGUgIGdlb21ldHJ5IG9mIG51bWJlcnMgKS5Nb2RlbCB0aGVvcnkgaXMgY29uY2VybmVkIHdpdGggd2hhdCB5b3UgY2FuIHNheSBhYm91dCBvYmplY3RzIGluIGEgcGFydGljdWxhciwgZm9ybWFsIGxhbmd1YWdlLiBXZSB1c3VhbGx5IHVzZSBhICBmaXJzdCBvcmRlciAgbGFuZ3VhZ2UsIHdoaWNoIGlzIHNpbXBsZSBlbm91Z2ggdGhhdCB3ZSBjYW4gb2Z0ZW4gZ2V0IGNvbXBsZXRlIHVuZGVyc3RhbmRpbmcgb2YgZXZlcnl0aGluZyB0aGF0IGNhbiBiZSBzYWlkIGFib3V0IGFuIG9iamVjdCBpbiB0aGUgbGFuZ3VhZ2UsIGJ1dCB3aGljaCBpcyBleHByZXNzaXZlIGVub3VnaCB0byBjYXB0dXJlIHRoZSBlc3NlbnRpYWwgcG9pbnRzLiBUaGUgZ2VvbWV0cmljIG9iamVjdHMgb2YgdGhlIHByb2plY3QgYXJlIGVsbGlwdGljIGN1cnZlcywgYW5kIGhpZ2hlci1kaW1lbnNpb25hbCBhbmFsb2d1ZXMgc3VjaCBhcyBhYmVsaWFuIHZhcmlldGllcywgd2hpY2ggaGF2ZSBhbiBhZGRpdGl2ZSBzdHJ1Y3R1cmUuIFNjaG9vbCBjaGlsZHJlbiBhcmUgdGF1Z2h0IHRvIGFkZCBvbiBhIG51bWJlciBsaW5lLCBhbmQgdGhpcyBpcyB0aGUgc2FtZSBpZGVhIGV4Y2VwdCB0aGF0IGluc3RlYWQgb2YgYSBsaW5lIHdlIGhhdmUgYSBkb3VnaG51dC1zaGFwZSAoYW4gZWxsaXB0aWMgY3VydmUpIG9yIHNvbWV0aGluZyBzaW1pbGFyIGluIGhpZ2hlciBkaW1lbnNpb25zLlRoZSBrZXkgYWltIG9mIHRoZSBwcm9qZWN0IGlzIHRvIHVzZSBtb2RlbCB0aGVvcnkgdG8gc3R1ZHkgaG93IGN1cnZlcyAoYW5kIG90aGVyIGFsZ2VicmFpYyB2YXJpZXRpZXMpIGRyYXduIG9uIHRoZXNlIGFiZWxpYW4gdmFyaWV0aWVzIGNhbiBpbnRlcnNlY3QuIFJhdGhlciB0aGFuIGFwcGx5aW5nIHRoZSBtb2RlbCB0aGVvcnkgZGlyZWN0bHkgdG8gdGhlIGFiZWxpYW4gdmFyaWV0aWVzIHRoZXJlIGFyZSBpbnRlcm1lZGlhdGUgc3RhZ2VzLiBGaXJzdCB3ZSBhcHBseSB0aGUgbW9kZWwgdGhlb3J5IHRvIHNvbWUgZGlmZmVyZW50aWFsIGFsZ2VicmFpYyBvYmplY3RzIHJlbGF0ZWQgdG8gdGhlIGFiZWxpYW4gdmFyaWV0aWVzLCBhbmQgdGhlbiB3ZSB1c2Ugc29tZSBjb21wbGV4IGFuYWx5dGljIGdlb21ldHJ5IHRvIHJlbGF0ZSB0aGUgYW5zd2VycyBvYnRhaW5lZCB0aGVyZSBiYWNrIHRvIHRoZSBhYmVsaWFuIHZhcmlldGllcy5XaXRoIG1hbnkgZGlmZmVyZW50IGJyYW5jaGVzIG9mIG1hdGhlbWF0aWNzIGludm9sdmVkLCBhbm90aGVyIGFpbSBpcyB0byBleHBsYWluIHRoZSB3aG9sZSBwcm9jZXNzIGluIHRlcm1zIHdoaWNoIGNhbiBiZSB1bmRlcnN0b29kIGJ5IHBlb3BsZSB3b3JraW5nIGluIGVhY2ggb2YgdGhlIGJyYW5jaGVzIHNlcGFyYXRlbHkhVGhlIHJlc2VhcmNoIHdpbGwgYmUgY2FycmllZCBvdXQgYnkgSm9uYXRoYW4gS2lyYnkgaW4gT3hmb3JkLCBpbiB0aGUgTWF0aGVtYXRpY2FsIExvZ2ljIEdyb3VwIG9mIHRoZSBNYXRoZW1hdGljYWwgSW5zdGl0dXRlLiBJdCB3aWxsIGludm9sdmUgdGhlIGRldmVsb3BtZW50IGFuZCBzaGFyaW5nIG9mIGlkZWFzIHdpdGggbWFueSBvdGhlciBwZW9wbGUgZnJvbSBPeGZvcmQgYW5kIGZyb20gb3RoZXIgbWF0aGVtYXRpY3MgZGVwYXJ0bWVudHMgYXJvdW5kIHRoZSB3b3JsZC5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnVlYS5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnVlYS5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDA2NTc0Ny8yDEVQL0QwNjU3NDcvMmQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkUpXKEP13hk7oQUDrZEjMMyWxK18=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLj1t7JDgLQvN++DAKT/OCVA0+YDYKY0p/lJ1rWnRF8wOFMABRk" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D065747/2</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Model Theory of some Differential Equations arising from Diophantine Geometry</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-94215'>Kirby, Dr PJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of East Anglia</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Postdoc Research Fellowship</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="43,029.08" class="DetailValue">43,029</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Logic &amp; Combinatorics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This project is about using ideas from model theory (a branch of mathematical logic) to answer questions relating to diophantine geometry (the  geometry of numbers ).Model theory is concerned with what you can say about objects in a particular, formal language. We usually use a  first order  language, which is simple enough that we can often get complete understanding of everything that can be said about an object in the language, but which is expressive enough to capture the essential points. The geometric objects of the project are elliptic curves, and higher-dimensional analogues such as abelian varieties, which have an additive structure. School children are taught to add on a number line, and this is the same idea except that instead of a line we have a doughnut-shape (an elliptic curve) or something similar in higher dimensions.The key aim of the project is to use model theory to study how curves (and other algebraic varieties) drawn on these abelian varieties can intersect. Rather than applying the model theory directly to the abelian varieties there are intermediate stages. First we apply the model theory to some differential algebraic objects related to the abelian varieties, and then we use some complex analytic geometry to relate the answers obtained there back to the abelian varieties.With many different branches of mathematics involved, another aim is to explain the whole process in terms which can be understood by people working in each of the branches separately!The research will be carried out by Jonathan Kirby in Oxford, in the Mathematical Logic Group of the Mathematical Institute. It will involve the development and sharing of ideas with many other people from Oxford and from other mathematics departments around the world.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.uea.ac.uk                                                                                '>http://www.uea.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

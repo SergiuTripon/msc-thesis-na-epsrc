@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Iterative Methods for PDE-Constrained Optimization
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fH026053%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSDAyNjA1My8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVDPHN0cm9uZz5JdGVyYXRpdmUgTWV0aG9kcyBmb3IgUERFLUNvbnN0cmFpbmVkIE9wdGltaXphdGlvbjwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFQzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MjMyMTMnPkdvdWxkLCBQcm9mZXNzb3IgTjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTE1ODQ5MCc+RHIgSFMgVGhvcm5lPC9hPgAAZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBR9Db21wdXRhdGlvbmFsIFNjaSBhbmQgRW5nIC0gUkFMZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUbU1RGQyBMYWJvcmF0b3JpZXMgKEdyb3VwZWQpZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8xOCBKYW51YXJ5IDIwMTBkZAIDD2QWAgIBDw8WAh8EBQwxNyBKdW5lIDIwMTBkZAIFD2QWAgIBDw8WBB8EBQYxMiwxMDQeB1Rvb2xUaXAFCTEyLDEwNC4wMGRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCEk51bWVyaWNhbCBBbmFseXNpcwBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFhw1Ob25saW5lYXIgb3B0aW1pemF0aW9uIGlzIGEgZnVuZGFtZW50YWwgYnJhbmNoIG9mIG51bWVyaWNhbCBhbmFseXNpcyBhbmRpcyB1YmlxdWl0b3VzIGluIHNjaWVuY2UgYW5kIGVuZ2luZWVyaW5nLiBJdCBhbGxvd3Mgb25lLCBmb3IgZXhhbXBsZSwgdG9kZXRlcm1pbmUgYW4gb3B0aW1hbCBmbGlnaHQgcGxhbiB1bmRlciBzcGVjaWZpZWQgY2lyY3Vtc3RhbmNlcywgdG8gZmluZHRoZSBzaG9ydGVzdCBwYXRocyBiZXR3ZWVuIGZpeGVkIHBvc2l0aW9ucyBvbiBhIGdpdmVuIG1hbmlmb2xkKGdlb2Rlc2ljcyksIHRvIHByZWRpY3QgdGhlIHNoYXBlIGFuZCBsYXlvdXQgb2YgdGVsZXNjb3BlIGFycmF5cyB0aGF0bWF4aW1pemUgbGlnaHQgaW50ZW5zaXR5LCBvciB0byBmaW5kIGFuIG9wdGltYWwgZGVzaWduIGFtb25nIGluZmluaXRlbHltYW55IHBvc3NpYmxlIGVsYXN0aWMgc3RydWN0dXJlcy4gUmVjZW50IHByb2dyZXNzIGluIGxhcmdlLXNjYWxlbm9ubGluZWFyIG9wdGltaXphdGlvbiBhbmQgbGluZWFyIGFsZ2VicmEgb3BlbnMgbmV3IHBlcnNwZWN0aXZlcyBvbiB0aGVzb2x1dGlvbiBvZiBvcHRpbWl6YXRpb24gcHJvYmxlbXMgd2hvc2UgY29uc3RyYWludHMgYXJlIGRlZmluZWQgYnlkaXNjcmV0aXplZCBzZXRzIG9mIHBhcnRpYWwtZGlmZmVyZW50aWFsIGVxdWF0aW9ucyAoUERFcykuIFN1Y2ggcHJvYmxlbXNhcmUgY2hhbGxlbmdpbmcgYm90aCBiZWNhdXNlIG9mIHRoZSBzdHJ1Y3R1cmFsIHByb3BlcnRpZXMgcHJlc2VudCBpbiB0aGVjb250aW51b3VzIGVxdWF0aW9ucyBhbmQgYmVjYXVzZSBvZiB0aGVpciBzaGVlciBpbnRpbWlkYXRpbmcgc2l6ZS4gIFRoZXlhcmUgaW1wb3J0YW50IGJlY2F1c2Ugb2YgdGhlaXIgd2lkZS1yYW5naW5nIGFwcGxpY2F0aW9uOyBhIHBhcnRpY3VsYXJseXZpdGFsIGluc3RhbmNlIGlzIHRoZSBOYXZpZXItU3Rva2VzIGVxdWF0aW9ucywgdGhlIGJhc2ljIGVxdWF0aW9ucyBvZmZsdWlkIG1lY2hhbmljcy4gIENoYWxsZW5naW5nIGFzIHN1Y2ggZXF1YXRpb25zIG1heSBiZSwgdGhlaXJkaXNjcmV0aXphdGlvbiBieSB0aGUgZmluaXRlLWVsZW1lbnQgbWV0aG9kIGxlYWRzIHRvIGEgY29uc2lzdGVudHN0cnVjdHVyZSB0aGF0IGNhbiBiZSBleHBsb2l0ZWQgYnkgbnVtZXJpY2FsIGFsZ29yaXRobXMuT3VyIHByb3Bvc2VkIHJlc2VhcmNoIGlzIHRvIGRlc2lnbiBhbmQgYW5hbHlzZSBudW1lcmljYWwgbWV0aG9kc2ZvciBzb2x2aW5nIFBERS1jb25zdHJhaW5lZCBvcHRpbWl6YXRpb24gcHJvYmxlbXMsIGFuZCB0byBidWlsZGhpZ2gtcXVhbGl0eSBzb2Z0d2FyZSB0byBhbGxvdyBvdGhlcnMgdG8gdXNlIG91ciB3b3JrLiBXZSBzaGFsbHBhcnRpY3VsYXJseSBiZSBjb25jZXJuZWQgd2l0aCBtZXRob2RzIHdoaWNoIGFyZSBndWFyYW50ZWVkIHRvY29udmVyZ2UgdG8gYSBsb2NhbGx5LWJlc3Qgc29sdXRpb24sIGFuZCB3aGljaCB1bHRpbWF0ZWx5IGNvbnZlcmdlcmFwaWRseSB0byB0aGlzIHNvbHV0aW9uIGZhc3QuIFdlIHNoYWxsIGFkZHJlc3MgdGhlIGlzc3VlcyBvZmFkZGl0aW9uYWwgc2lkZSBjb25zdHJhaW50cyB0aGF0IG1pZ2h0IGJlIGltcG9zZWQgcGh5c2ljYWxseSBhbmRvZiBuYXR1cmFsIHJhbmstZGVmaWNpZW5jaWVzIHRoYXQgYXJpc2UgZnJvbSB0aGUgZGlmZmVyZW50aWFsIGVxdWF0aW9ucy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSDAyNjA1My8xDEVQL0gwMjYwNTMvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkyqR7fvVBsdhVF3/MjqfSjUBpNd0=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKv7dLDBwLQvN++DAKT/OCVA9hbhLFM+Y3nPw8SPipD0KkdIa9t" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/H026053/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Iterative Methods for PDE-Constrained Optimization</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=23213'>Gould, Professor N</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-158490'>Dr HS Thorne</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computational Sci and Eng - RAL</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">STFC Laboratories (Grouped)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">18 January 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">17 June 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="12,104.00" class="DetailValue">12,104</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Numerical Analysis</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Nonlinear optimization is a fundamental branch of numerical analysis andis ubiquitous in science and engineering. It allows one, for example, todetermine an optimal flight plan under specified circumstances, to findthe shortest paths between fixed positions on a given manifold(geodesics), to predict the shape and layout of telescope arrays thatmaximize light intensity, or to find an optimal design among infinitelymany possible elastic structures. Recent progress in large-scalenonlinear optimization and linear algebra opens new perspectives on thesolution of optimization problems whose constraints are defined bydiscretized sets of partial-differential equations (PDEs). Such problemsare challenging both because of the structural properties present in thecontinuous equations and because of their sheer intimidating size.  Theyare important because of their wide-ranging application; a particularlyvital instance is the Navier-Stokes equations, the basic equations offluid mechanics.  Challenging as such equations may be, theirdiscretization by the finite-element method leads to a consistentstructure that can be exploited by numerical algorithms.Our proposed research is to design and analyse numerical methodsfor solving PDE-constrained optimization problems, and to buildhigh-quality software to allow others to use our work. We shallparticularly be concerned with methods which are guaranteed toconverge to a locally-best solution, and which ultimately convergerapidly to this solution fast. We shall address the issues ofadditional side constraints that might be imposed physically andof natural rank-deficiencies that arise from the differential equations.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

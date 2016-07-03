@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=12295" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRBQcm9mZXNzb3IgQSBQZW5uZGQCAw8PFgIfAgUDVUNMZGQCBQ8PFgIfAgUdQmFydGxldHQgU2NoIG9mIEFyY2hpdGVjdHVyZSBkZAIHDw8WAh8CBQ0wMjAgMzEwOCA5MTM5ZGQCCQ8PFgIfAgUNMDIwIDc5MTYgMTg4N2RkAg0PDxYEHwIFMDA5NzA0NjExMjEwMTExMDExMDA2NDExNzA5OTEwODA0NjA5NzA5OTA0NjExNzEwNx4IUmVhZE9ubHlnFgweC29ubW91c2VvdmVyZR4Hb25mb2N1cwVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7Hgpvbm1vdXNlb3V0BV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzseBm9uYmx1cgVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HwAFPGphdmFzY3JpcHQ6c2VuZHRvKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJykudmFsdWUpOx8BBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJztkAg8PPCsACwEADxYIHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudAIGHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgZkFgJmD2QWDAIBD2QWBGYPZBYCAgEPDxYCHwIFF0Jpb2NoZW1pY2FsIGVuZ2luZWVyaW5nZGQCAQ9kFgICAQ8PFgIfAgUdQnVpbGRpbmcgT3BzICZhbXA7IE1hbmFnZW1lbnRkZAICD2QWBGYPZBYCAgEPDxYCHwIFH0NvbXB1dGVyIEdyYXBoaWNzICZhbXA7IFZpc3VhbC5kZAIBD2QWAgIBDw8WAh8CBRZGdWVsIENlbGwgVGVjaG5vbG9naWVzZGQCAw9kFgRmD2QWAgIBDw8WAh8CBRtIdW1hbi1Db21wdXRlciBJbnRlcmFjdGlvbnNkZAIBD2QWAgIBDw8WAh8CBRxJbWFnZSAmYW1wOyBWaXNpb24gQ29tcHV0aW5nZGQCBA9kFgRmD2QWAgIBDw8WAh8CBSBJbmZvcm1hdGlvbiAmYW1wOyBLbm93bGVkZ2UgTWdtdGRkAgEPZBYCAgEPDxYCHwIFDk1hY3JvZWNvbm9taWNzZGQCBQ9kFgRmD2QWAgIBDw8WAh8CBRBNb2JpbGUgQ29tcHV0aW5nZGQCAQ9kFgICAQ8PFgIfAgUKTXVsdGltZWRpYWRkAgYPZBYEZg9kFgICAQ8PFgIfAgUTUG9saXRpY2FsIEdlb2dyYXBoeWRkAgEPZBYCAgEPDxYCHwIFEVdhdGVyIEVuZ2luZWVyaW5nZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAgMfCgIBHwsCA2QWAmYPZBYGAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMjM1ODMvMSc+RVAvTTAyMzU4My8xPC9hPiBkZAIBDw8WAh8CBS5VSyBSZWdpb25zIERpZ2l0YWwgUmVzZWFyY2ggRmFjaWxpdHkgKFVLIFJEUkYpZGQCAg8PFgIfAgUDKFApZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAzODY1Ni8xJz5FUC9LMDM4NjU2LzE8L2E+IGRkAgEPDxYCHwIFcUNlbnRyZSBmb3IgTmF0dXJlIEluc3BpcmVkIEVuZ2luZWVyaW5nIChDTklFKTogQWRkcmVzc2luZyBDaGFsbGVuZ2VzIGluIFN1c3RhaW5hYmlsaXR5IGFuZCBTY2FsYWJsZSBNYW51ZmFjdHVyaW5nZGQCAg8PFgIfAgUDKEMpZGQCAw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzAzNzE1OS8xJz5FUC9HMDM3MTU5LzE8L2E+IGRkAgEPDxYCHwIFTEluZHVzdHJpYWwgRG9jdG9yYXRlIENlbnRyZTogVmlydHVhbCBFbnZpcm9ubWVudHMsIEltYWdpbmcgYW5kIFZpc3VhbGlzYXRpb25kZAICDw8WAh8CBQMoQylkZAIDD2QWAmYPZBYCZg88KwALAQAPFggfCBYAHwkCGR8KAgEfCwIZZBYCZg9kFjICAQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTAyOTMzNi8xJz5FUC9NMDI5MzM2LzE8L2E+IGRkAgEPDxYCHwIFek5ld3RvbiBGdW5kOiBSaW8tVUsrQmlnRGF0YSAtIE1vZGVsaW5nIGFuZCBJbXByb3ZpbmcgUmlvIGRlIEphbmVpcm8gU3RhdGUgRWNvbm9taWMgUG9saWNpZXMgdXNpbmcgQmlnIERhdGEgQW5hbHl0aWNzIFRvb2xzZGQCAg8PFgIfAgUDKEMpZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSTAzMTgzOS8xJz5FUC9JMDMxODM5LzE8L2E+IGRkAgEPDxYCHwIFTkV4cGxvcmluZyB0aGUgcG90ZW50aWFsIG9mIG5ldHdvcmtlZCB1cmJhbiBzY3JlZW5zIGZvciBjb21tdW5pdGllcyBhbmQgY3VsdHVyZWRkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0cwMjYxOVgvMSc+RVAvRzAyNjE5WC8xPC9hPiBkZAIBDw8WAh8CBUtQbGF0Zm9ybSBHcmFudDogU3BhY2UsIFRlY2hub2xvZ2llcyBhbmQgdGhlIERlc2lnbiBvZiB0aGUgQnVpbHQgRW52aXJvbm1lbnRkZAICDw8WAh8CBQMoUClkZAIED2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDE5MjU0LzEnPkVQL0YwMTkyNTQvMTwvYT4gZGQCAQ8PFgIfAgVDRVBTUkMgRG9uZ3RhbiBTdXN0YWluYWJsZSBDaXR5IE5ldHdvcmtzOiBDb29yZGluYXRpb24gRnJhbWV3b3JrIC0gMmRkAgIPDxYCHwIFAyhDKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMDIyMlgvMSc+RVAvRjAwMjIyWC8xPC9hPiBkZAIBDw8WAh8CBTNDaXR5IEhpc3RvcnkgYW5kIE11bHRpLVNjYWxlIFNwYXRpYWwgTWFzdGVycGxhbm5pbmdkZAICDw8WAh8CBQMoUClkZAIGD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TMTgzODAvMDInPkdSL1MxODM4MC8wMjwvYT4gZGQCAQ8PFgIfAgVmVXJiYW4gU3VzdGFpbmFiaWxpdHkgZm9yIHRoZSBUd2VudHktRm91ciBIb3VyIENpdHk6IERldmVsb3BtZW50IG9mIERlc2lnbi1tYWtpbmcgVG9vbHMgJmFtcDsgUmVzb3VyY2VzZGQCAg8PFgIfAgUDKEMpZGQCBw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvQzU0NzY5MS8xJz5FUC9DNTQ3NjkxLzE8L2E+IGRkAgEPDxYCHwIFLENpdHl3YXJlOiB1cmJhbiBkZXNpZ24gYW5kIHBlcnZhc2l2ZSBzeXN0ZW1zZGQCAg8PFgIfAgUDKFApZGQCCA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUzY0NTYxLzAxJz5HUi9TNjQ1NjEvMDE8L2E+IGRkAgEPDxYCHwIFiwFQbGF0Zm9ybSBHcmFudDogU3BhY2UsIHRpbWUgYW5kIGludGVyYWN0aW9uOiBpbnRlZ3JhdGluZyBzcGF0aWFsIGFuZCB0ZW1wb3JhbCBkb21haW5zIGluIGFuYWx5c2lzIG9mIHRoZSBmdW5jdGlvbiBvZiB0aGUgYnVpbHQgZW52aXJvbm1lbnQuZGQCAg8PFgIfAgUDKFApZGQCCQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUzgwMDQyLzAxJz5HUi9TODAwNDIvMDE8L2E+IGRkAgEPDxYCHwIFNlZpcnR1YWwgRW52aXJvbm1lbnRzLCBJbWFnaW5nIGFuZCBWaXN1YWxpc2F0aW9uIChWSUVWKWRkAgIPDxYCHwIFAyhDKWRkAgoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1MxODM4MC8wMSc+R1IvUzE4MzgwLzAxPC9hPiBkZAIBDw8WAh8CBWZVcmJhbiBTdXN0YWluYWJpbGl0eSBmb3IgdGhlIFR3ZW50eS1Gb3VyIEhvdXIgQ2l0eTogRGV2ZWxvcG1lbnQgb2YgRGVzaWduLW1ha2luZyBUb29scyAmYW1wOyBSZXNvdXJjZXNkZAICDw8WAh8CBQMoQylkZAILD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SOTk3MjAvMDEnPkdSL1I5OTcyMC8wMTwvYT4gZGQCAQ8PFgIfAgVTRW5naW5lZXJpbmcgRG9jdG9yYXRlIENlbnRyZTogVmlydHVhbCBFbnZpcm9tZW50cywgSW1hZ2luZyBhbmQgVmlzdWFsaXNhdGlvbiAoVkVJVilkZAICDw8WAh8CBQMoQylkZAIMD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9OMDA4NzYvMDInPkdSL04wMDg3Ni8wMjwvYT4gZGQCAQ8PFgIfAgVSVEhFIFZJUlRVQUwgQ09OU1RSVUNUSU9OIFNJVEU6IEEgREVDSVNJT04gU1VQUE9SVCBTWVNURU0gRk9SIENPTlNUUlVDVElPTiBQTEFOTklOR2RkAgIPDxYCHwIFAyhDKWRkAg0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL04wMjkxNy8wMSc+R1IvTjAyOTE3LzAxPC9hPiBkZAIBDw8WAh8CBTtNSU5JTUlTSU5HIFRIRSBJTVBBQ1QgT0YgUkVGVVJCSVNITUVOVCBPTiBDVVNUT01FUiBNT1ZFTUVOVGRkAgIPDxYCHwIFAyhQKWRkAg4PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL04yMTM3Ni8wMSc+R1IvTjIxMzc2LzAxPC9hPiBkZAIBDw8WAh8CBWdDT05GSUdVUkFUSU9OLCBBVFRSQUNUSU9OIEFORCBFTUVSR0VOQ0U6IEVGRkVDVFMgT0YgU1BBQ0UgUEFUVEVSTiBPTiBFTUVSR0VOVCBCRUhBVklPUiAtIFBMQVRGT1JNIEdSQU5UZGQCAg8PFgIfAgUDKFApZGQCDw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTjAwODc2LzAxJz5HUi9OMDA4NzYvMDE8L2E+IGRkAgEPDxYCHwIFUlRIRSBWSVJUVUFMIENPTlNUUlVDVElPTiBTSVRFOiBBIERFQ0lTSU9OIFNVUFBPUlQgU1lTVEVNIEZPUiBDT05TVFJVQ1RJT04gUExBTk5JTkdkZAICDw8WAh8CBQMoQylkZAIQD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MNTQ5NDMvMDEnPkdSL0w1NDk0My8wMTwvYT4gZGQCAQ8PFgIfAgUyQSBWSVJUVUFMIFJFQUxJVFkgQ0VOVFJFIEZPUiBUSEUgQlVJTFQgRU5WSVJPTk1FTlRkZAICDw8WAh8CBQMoQylkZAIRD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MNTQ5NTAvMDEnPkdSL0w1NDk1MC8wMTwvYT4gZGQCAQ8PFgIfAgUwVklSVFVBTCBSRUFMSVRZIENFTlRSRSBGT1IgVEhFIEJVSUxUIEVOVklST05NRU5UZGQCAg8PFgIfAgUDKEMpZGQCEg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzk5NzMyLzAxJz5HUi9LOTk3MzIvMDE8L2E+IGRkAgEPDxYCHwIFXEEgRlVMTFkgSU1NRVJTSVZFIFZJUlRVQUwgUkVBTElUWSBJTlNUQUxMQVRJT04gRk9SIEJVSUxUIEVOVklST05NRU5UIEFOQUxZU0lTIEJBU0VEIFJFU0VBUkNIZGQCAg8PFgIfAgUDKEMpZGQCEw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjQ5MzI3LzAxJz5HUi9KNDkzMjcvMDE8L2E+IGRkAgEPDxYCHwIFWUlOQ0lERU5UIERFVEVDVElPTiBBTkQgREFUQSBHQVRIRVJJTkcgRk9SIENST1dEUyBJTiBDT05GSU5FRCBBUkVBUyBVU0lORyBJTUFHRSBQUk9DRVNTSU5HZGQCAg8PFgIfAgUDKEMpZGQCFA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjUwNjEzLzAxJz5HUi9KNTA2MTMvMDE8L2E+IGRkAgEPDxYCHwIFbEVGRkVDVFMgT0YgU1RSRUVUIEdSSUQgQ09ORklHVVJBVElPTiBPTiBQRURFU1RSSUFOIEVYUE9TVVJFVE8gVkVISUNVTEFSIFBPTExVVElPTiA6IENJVklMSVNJTkcgVVJCQU4gVFJBRkZJQ2RkAgIPDxYCHwIFAyhQKWRkAhUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0ozMzYwOS8wMSc+R1IvSjMzNjA5LzAxPC9hPiBkZAIBDw8WAh8CBSZJTlRFTExJR0VOVCBBUkNISVRFQ1RVUkUgKElFRDQvMS84MDAzKWRkAgIPDxYCHwIFAyhQKWRkAhYPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0g4MzUzOS8wMSc+R1IvSDgzNTM5LzAxPC9hPiBkZAIBDw8WAh8CBWVQSUxPVCBTVFVEWSBPTiBBVVRPTUFUSUMgREFUQS1DQVBUVVJFIEFORCBBTkFMWVNJUyBPRiBDUk9XRFMgSU4gQ09ORklORUQgQVJFQVMgVVNJTkcgSU1BR0UgUFJPQ0VTU0lOR2RkAgIPDxYCHwIFAyhDKWRkAhcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0g0ODQyMi8wMSc+R1IvSDQ4NDIyLzAxPC9hPiBkZAIBDw8WAh8CBWpUSEUgUkVMQVRJT05TSElQIEJFVFdFRU4gVVJCQU4gU1RSVUNUVVJFICZhbXA7IE1PVkVNRU5UIEFUVEhFIE5FSUdIQk9VUkhPT0QgTEVWRUw6Q0lWSUxJU0lORyBVUkJBTiBUUkFGRklDZGQCAg8PFgIfAgUDKFApZGQCGA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSDE4NjQ3LzAxJz5HUi9IMTg2NDcvMDE8L2E+IGRkAgEPDxYCHwIFb0dSQVBISUNBTCBLTk9XTEVER0UgSU5URVJGQUNFUzogQ09ORklHVVJBVElPTkFMIE1PREVMUyZhbXA7IFBSRUNFREVOVCBEQVRBQkFTRVMgRk9SIEJVSUxESU5HIEVOVklST05NRU5UIERFU0lHTmRkAgIPDxYCHwIFAyhDKWRkAhkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0cyMzYwOS8wMSc+R1IvRzIzNjA5LzAxPC9hPiBkZAIBDw8WAh8CBWdUSEUgUkVMQVRJT05TSElQIEJFVFdFRU4gVkVISUNVTEFSIEFORCBQRURFU1RSSUFOIE1PVkVNRU5UIElOIFRIRVNNQUxMRVIgU0NBTEUgVVJCQU4gR1JJRCBBIFBJTE9UIFNUVURZZGQCAg8PFgIfAgUDKFApZGQCEw9kFgRmD2QWAmYPZBYCAgEPDxYCHgdWaXNpYmxlZ2RkAgIPZBYCZg9kFgICAQ8PFgYeClJlcG9ydE5hbWUFClZpZXdQZXJzb24eDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzCFBlcnNvbklEHg5QYXJhbWV0ZXJWYWx1ZRUCOWh0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xMjI5NQUxMjI5NWQWAmYPZBYCZg9kFgQCAw8QZGQWAWZkAgUPD2QWAh8BZWQCBw8PFgIfDGhkZGQ6ggBHuygvKyGjv+Kq1VGfoIm7Ew==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAK3853IAQLQvN++DAKT/OCVAwLKoMrZD+uRoyfOjhxDW3tSjuaxlXCa737o" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor A Penn</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">UCL</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Bartlett Sch of Architecture </span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">020 3108 9139</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">020 7916 1887</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="097046112101110110064117099108046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Biochemical engineering</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Building Ops &amp; Management</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Computer Graphics &amp; Visual.</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2">Fuel Cell Technologies</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label1">Human-Computer Interactions</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label2">Image &amp; Vision Computing</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label1">Information &amp; Knowledge Mgmt</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label2">Macroeconomics</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label1">Mobile Computing</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label2">Multimedia</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label1">Political Geography</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label2">Water Engineering</span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M023583/1'>EP/M023583/1</a> </b></td><td align="left">UK Regions Digital Research Facility (UK RDRF)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K038656/1'>EP/K038656/1</a> </b></td><td align="left">Centre for Nature Inspired Engineering (CNIE): Addressing Challenges in Sustainability and Scalable Manufacturing</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G037159/1'>EP/G037159/1</a> </b></td><td align="left">Industrial Doctorate Centre: Virtual Environments, Imaging and Visualisation</td><td align="left" width="5%">(C)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M029336/1'>EP/M029336/1</a> </b></td><td align="left">Newton Fund: Rio-UK+BigData - Modeling and Improving Rio de Janeiro State Economic Policies using Big Data Analytics Tools</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I031839/1'>EP/I031839/1</a> </b></td><td align="left">Exploring the potential of networked urban screens for communities and culture</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G02619X/1'>EP/G02619X/1</a> </b></td><td align="left">Platform Grant: Space, Technologies and the Design of the Built Environment</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F019254/1'>EP/F019254/1</a> </b></td><td align="left">EPSRC Dongtan Sustainable City Networks: Coordination Framework - 2</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F00222X/1'>EP/F00222X/1</a> </b></td><td align="left">City History and Multi-Scale Spatial Masterplanning</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S18380/02'>GR/S18380/02</a> </b></td><td align="left">Urban Sustainability for the Twenty-Four Hour City: Development of Design-making Tools &amp; Resources</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C547691/1'>EP/C547691/1</a> </b></td><td align="left">Cityware: urban design and pervasive systems</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S64561/01'>GR/S64561/01</a> </b></td><td align="left">Platform Grant: Space, time and interaction: integrating spatial and temporal domains in analysis of the function of the built environment.</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S80042/01'>GR/S80042/01</a> </b></td><td align="left">Virtual Environments, Imaging and Visualisation (VIEV)</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S18380/01'>GR/S18380/01</a> </b></td><td align="left">Urban Sustainability for the Twenty-Four Hour City: Development of Design-making Tools &amp; Resources</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R99720/01'>GR/R99720/01</a> </b></td><td align="left">Engineering Doctorate Centre: Virtual Enviroments, Imaging and Visualisation (VEIV)</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N00876/02'>GR/N00876/02</a> </b></td><td align="left">THE VIRTUAL CONSTRUCTION SITE: A DECISION SUPPORT SYSTEM FOR CONSTRUCTION PLANNING</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N02917/01'>GR/N02917/01</a> </b></td><td align="left">MINIMISING THE IMPACT OF REFURBISHMENT ON CUSTOMER MOVEMENT</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N21376/01'>GR/N21376/01</a> </b></td><td align="left">CONFIGURATION, ATTRACTION AND EMERGENCE: EFFECTS OF SPACE PATTERN ON EMERGENT BEHAVIOR - PLATFORM GRANT</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N00876/01'>GR/N00876/01</a> </b></td><td align="left">THE VIRTUAL CONSTRUCTION SITE: A DECISION SUPPORT SYSTEM FOR CONSTRUCTION PLANNING</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L54943/01'>GR/L54943/01</a> </b></td><td align="left">A VIRTUAL REALITY CENTRE FOR THE BUILT ENVIRONMENT</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L54950/01'>GR/L54950/01</a> </b></td><td align="left">VIRTUAL REALITY CENTRE FOR THE BUILT ENVIRONMENT</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K99732/01'>GR/K99732/01</a> </b></td><td align="left">A FULLY IMMERSIVE VIRTUAL REALITY INSTALLATION FOR BUILT ENVIRONMENT ANALYSIS BASED RESEARCH</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J49327/01'>GR/J49327/01</a> </b></td><td align="left">INCIDENT DETECTION AND DATA GATHERING FOR CROWDS IN CONFINED AREAS USING IMAGE PROCESSING</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J50613/01'>GR/J50613/01</a> </b></td><td align="left">EFFECTS OF STREET GRID CONFIGURATION ON PEDESTRIAN EXPOSURETO VEHICULAR POLLUTION : CIVILISING URBAN TRAFFIC</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J33609/01'>GR/J33609/01</a> </b></td><td align="left">INTELLIGENT ARCHITECTURE (IED4/1/8003)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H83539/01'>GR/H83539/01</a> </b></td><td align="left">PILOT STUDY ON AUTOMATIC DATA-CAPTURE AND ANALYSIS OF CROWDS IN CONFINED AREAS USING IMAGE PROCESSING</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H48422/01'>GR/H48422/01</a> </b></td><td align="left">THE RELATIONSHIP BETWEEN URBAN STRUCTURE &amp; MOVEMENT ATTHE NEIGHBOURHOOD LEVEL:CIVILISING URBAN TRAFFIC</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H18647/01'>GR/H18647/01</a> </b></td><td align="left">GRAPHICAL KNOWLEDGE INTERFACES: CONFIGURATIONAL MODELS&amp; PRECEDENT DATABASES FOR BUILDING ENVIRONMENT DESIGN</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G23609/01'>GR/G23609/01</a> </b></td><td align="left">THE RELATIONSHIP BETWEEN VEHICULAR AND PEDESTRIAN MOVEMENT IN THESMALLER SCALE URBAN GRID A PILOT STUDY</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

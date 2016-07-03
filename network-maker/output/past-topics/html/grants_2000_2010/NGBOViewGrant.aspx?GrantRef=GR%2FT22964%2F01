@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Modelling Pre- Failure Shear Strain (solifluction) in Freezing and Thawing Soil Slopes
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fT22964%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvVDIyOTY0LzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVnPHN0cm9uZz5Nb2RlbGxpbmcgUHJlLSBGYWlsdXJlIFNoZWFyIFN0cmFpbiAoc29saWZsdWN0aW9uKSBpbiBGcmVlemluZyBhbmQgVGhhd2luZyBTb2lsIFNsb3Blczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTIwODU3Jz5IYXJyaXMsIFByb2Zlc3NvciBDPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQM+PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD03NTExNCc+Q2xlYWxsLCBEciBQSjwvYT5FPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xNTY4MSc+VGhvbWFzLCBQcm9mZXNzb3IgSFI8L2E+AGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNbPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTU0Nic+VW5pdmVyc2l0eSBDZW50cmUgaW4gU3ZhbGJhcmQgKFVOSVMpPC9hPgAAZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSJTY2hvb2wgb2YgRWFydGggYW5kIE9jZWFuIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUSQ2FyZGlmZiBVbml2ZXJzaXR5ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbU3RhbmRhcmQgUmVzZWFyY2ggKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAULMDEgTWF5IDIwMDVkZAIDD2QWAgIBDw8WAh8EBQ0zMCBBcHJpbCAyMDA4ZGQCBQ9kFgICAQ8PFgQfBAUHMzg1LDQxMR4HVG9vbFRpcAUKMzg1LDQxMC41OWRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCEkdyb3VuZCBFbmdpbmVlcmluZwBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCDENvbnN0cnVjdGlvbgBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQF0Q5Db2xkIHJlZ2lvbnMgYXJlIGNoYXJhY3RlcmlzZWQgYnkgZGVlcCBzZWFzb25hbCBncm91bmQgZnJlZXppbmcgb3IgYnkgcGVybWFuZW50bHkgZnJvemVuIGdyb3VuZCBpbiB3aGljaCB0aGUgdXBwZXIgZmV3IGRlY2ltZXRyZXMgdGhhdyBpbiBzdW1tZXIuIFRoYXdpbmcgb2YgaWNlLXJpY2ggc29pbHMgbGVhZHMgdG8gc2lnbmlmaWNhbnQgbG9zcyBvZiBzdHJlbmd0aCBkdWUgdG8gaGlnaCBtb2lzdHVyZSBjb250ZW50cyBhbmQgcmFpc2VkIHBvcmUgcHJlc3N1cmVzLCByZXN1bHRpbmcgaW4gd2lkZXNwcmVhZCBhY2NlbGVyYXRlZCBzb2lsIGNyZWVwIChzb2xpZmx1Y3Rpb24pLCBhbmQgbW9yZSBsb2NhbGlzZWQgc2hhbGxvdyBzbG9wZSBmYWlsdXJlcyBvbiBwZXJpZ2xhY2lhbCBzbG9wZXMuIEJvdGggbWF5IGhhdmUgbWFqb3IgaW1wbGljYXRpb25zIGZvciB0aGUgbG9uZy10ZXJtIHNlcnZpY2VhYmlsaXR5IG9mIGVuZ2luZWVyaW5nIHN0cnVjdHVyZXMuIFRoaXMgcHJvamVjdCB3aWxsIHV0aWxpemUgcHJvY2VzcyBvYnNlcnZhdGlvbnMgaW4gc2NhbGVkIGdlb3RlY2huaWNhbCBjZW50cmlmdWdlIG1vZGVsbGluZyB0byBjb25zdHJhaW4gdGhlIGZvcm11bGF0aW9uIG9mIG5ldyBudW1lcmljYWwgbW9kZWxzIHRvIHByZWRpY3Qgc3R5bGVzIGFuZCByYXRlcyBvZiBzb2xpZmx1Y3Rpb24uIEV4aXN0aW5nIG51bWVyaWNhbCBtb2RlbHMgb2YgY291cGxlZCB0aGVybWFsLWh5ZHJhdWxpYy1tZWNoYW5pY2FsIChUSE0pIGJlaGF2aW91ciBvZiBub24tY3J5b2dlbmljIHNvaWxzIHdpbGwgYmUgZGV2ZWxvcGVkIHRvIGluY2x1ZGUgaGVhdCBhbmQgbW9pc3R1cmUgdHJhbnNmZXIgaW4gZnJlZXppbmcvZnJvemVuL3RoYXdpbmcgL3RoYXdlZCBzb2lsLCBpY2Ugc2VncmVnYXRpb24sIGZyb3N0IGhlYXZpbmcgYW5kIGNvbnNlcXVlbnQgY3J5b3RpYyBzdHJlc3NlcyB3aXRoaW4gdGhlIHNvaWwuIE51bWVyaWNhbCBzaW11bGF0aW9ucyBvZiB0aGUgc2NhbGVkIGNlbnRyaWZ1Z2UgcGh5c2ljYWwgbW9kZWxzIHdpbGwgYmUgY2FycmllZCBvdXQgdXNpbmcgdGhlIGluaXRpYWwgYW5kIGJvdW5kYXJ5IGNvbmRpdGlvbnMgZGVmaW5lZCBieSB0aGUgZXhwZXJpbWVudGFsIHdvcmssIHRvZ2V0aGVyIHdpdGggcHJldmlvdXNseSBkZXRlcm1pbmVkIHNvaWwgcGFyYW1ldGVycy4gQXNzZXNzbWVudCBvZiB0aGUgbnVtZXJpY2FsIG1vZGVsIHdpbGwgYmUgdmlhIHNpbXVsYXRpb24gb2YgZGF0YSBmcm9tIHR3byBmaWVsZCBzdGF0aW9ucywgb25lIGluIE5vcndheSBhbmQgdGhlIHNlY29uZCBpbiBTcGl0c2Jlcmdlbi4gVGhlIG51bWVyaWNhbCBtb2RlbCBkZXZlbG9wZWQgd2lsbCBmaW5hbGx5IGJlIGFwcGxpZWQgaW4gc2VsZWN0ZWQgY29udGV4dHMgdG8gYXNzZXNzIGludGVybWVkaWF0ZSBhbmQgbG9uZy10ZXJtIHNsb3BlIGV2b2x1dGlvbiB1bmRlciBzcGVjaWZpZWQgdGhlcm1hbCBib3VuZGFyeSBhbmQgc29pbCBjb25kaXRpb25zLCBmaXJzdGx5IGluIGRpc2NvbnRpbnVvdXMgcGVybWFmcm9zdCBhbG9uZyB0aGUgVHJhbnMgQWxhc2thIFBpcGVsaW5lIFN5c3RlbSAoVEFQUykgd2hlcmUgc29saWZsdWN0aW9uIGlzIG1vbml0b3JlZCwgYW5kIHNlY29uZGx5LCB0byBleHBsb3JlIGxvbmcgdGVybSBzbG9wZSBldm9sdXRpb24gb3ZlciBnZW9sb2dpY2FsIHRpbWUgc2NhbGVzLiBUaGlzIHJlc2VhcmNoIHdpbGwgcHJvdmlkZSBmdW5kYW1lbnRhbCB1bmRlcnN0YW5kaW5nIG9mIGNvbXBsZXggY3J5b2dlbmljIHNsb3BlIHByb2Nlc3NlcywgYW5kIGFsbG93IG1vZGVsbGluZyBvZiBwcm9jZXNzIHJhdGVzIGFuZCBwYXR0ZXJucyBib3RoIHJldHJvc3BlY3RpdmVseSBhbmQgaW4gYSBwcmVkaWN0aXZlIGNvbnRleHQuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5jZi5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5jZi5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1QyMjk2NC8wMQxHUi9UMjI5NjQvMDFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZFUWJ7h7/PXkmaNCfEz8ggl1i8h2" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLCi+vVAwLQvN++DAKT/OCVA/EwcAs2PxxOUn3eQgThAdD3ej6H" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/T22964/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Modelling Pre- Failure Shear Strain (solifluction) in Freezing and Thawing Soil Slopes</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=120857'>Harris, Professor C</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=75114'>Cleall, Dr PJ</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=15681'>Thomas, Professor HR</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-546'>University Centre in Svalbard (UNIS)</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">School of Earth and Ocean Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Cardiff University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 May 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 April 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="385,410.59" class="DetailValue">385,411</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Ground Engineering</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Construction</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Cold regions are characterised by deep seasonal ground freezing or by permanently frozen ground in which the upper few decimetres thaw in summer. Thawing of ice-rich soils leads to significant loss of strength due to high moisture contents and raised pore pressures, resulting in widespread accelerated soil creep (solifluction), and more localised shallow slope failures on periglacial slopes. Both may have major implications for the long-term serviceability of engineering structures. This project will utilize process observations in scaled geotechnical centrifuge modelling to constrain the formulation of new numerical models to predict styles and rates of solifluction. Existing numerical models of coupled thermal-hydraulic-mechanical (THM) behaviour of non-cryogenic soils will be developed to include heat and moisture transfer in freezing/frozen/thawing /thawed soil, ice segregation, frost heaving and consequent cryotic stresses within the soil. Numerical simulations of the scaled centrifuge physical models will be carried out using the initial and boundary conditions defined by the experimental work, together with previously determined soil parameters. Assessment of the numerical model will be via simulation of data from two field stations, one in Norway and the second in Spitsbergen. The numerical model developed will finally be applied in selected contexts to assess intermediate and long-term slope evolution under specified thermal boundary and soil conditions, firstly in discontinuous permafrost along the Trans Alaska Pipeline System (TAPS) where solifluction is monitored, and secondly, to explore long term slope evolution over geological time scales. This research will provide fundamental understanding of complex cryogenic slope processes, and allow modelling of process rates and patterns both retrospectively and in a predictive context.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cf.ac.uk                                                                                 '>http://www.cf.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

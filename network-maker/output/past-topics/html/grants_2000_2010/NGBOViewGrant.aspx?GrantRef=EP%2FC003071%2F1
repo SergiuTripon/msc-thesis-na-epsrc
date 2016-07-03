@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Performance, degradation and defect structure of MOS devices using high-k materials as gate dielectrics
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC003071%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzAwMzA3MS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAV4PHN0cm9uZz5QZXJmb3JtYW5jZSwgZGVncmFkYXRpb24gYW5kIGRlZmVjdCBzdHJ1Y3R1cmUgb2YgTU9TIGRldmljZXMgdXNpbmcgaGlnaC1rIG1hdGVyaWFscyBhcyBnYXRlIGRpZWxlY3RyaWNzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zNDU3Nyc+WmhhbmcsIFByb2Zlc3NvciBKPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgIWBAIBD2QWAmYPFQM+PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDc2Myc+SU1FQzwvYT5RPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDc2Nyc+SW1wZXJpYWwgQ29sbGVnZSBMb25kb248L2E+TjxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTE2Mjk4Jz5JbnRlcm5hdGlvbmFsIFNFTUFURUNIPC9hPmQCAg9kFgJmDxUDPDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTE3OTc5Jz5OTVJDPC9hPk88YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAxNTk5Jz5Vbml2ZXJzaXR5IG9mIEdsYXNnb3c8L2E+AGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUoRW5naW5lZXJpbmcgVGVjaCBhbmQgTWFyaXRpbWUgT3BlcmF0aW9uc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFIExpdmVycG9vbCBKb2huIE1vb3JlcyBVbml2ZXJzaXR5ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbU3RhbmRhcmQgUmVzZWFyY2ggKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUQMDEgRmVicnVhcnkgMjAwNWRkAgMPZBYCAgEPDxYCHwQFDTMxIE1hcmNoIDIwMDhkZAIFD2QWAgIBDw8WBB8EBQcxOTEsMDk3HgdUb29sVGlwBQoxOTEsMDk2LjYzZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgIWBAIBD2QWAmYPFQIgRWxlY3Ryb25pYyBEZXZpY2VzICZhbXA7IFN1YnN5cy4RRW5lcmd5IEVmZmljaWVuY3lkAgIPZBYCZg8VAhpNYXRlcmlhbHMgQ2hhcmFjdGVyaXNhdGlvbhBTb2xhciBUZWNobm9sb2d5ZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgtFbGVjdHJvbmljcwBkAgwPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUEQzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DMDAzMTAxLzEnPkVQL0MwMDMxMDEvMTwvYT5DPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0MwMDMwOTgvMSc+RVAvQzAwMzA5OC8xPC9hPgAAZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBcgNVGhlIHRyYW5zaXN0b3JzIGluIGludGVncmF0ZWQgY2lyY3VpdHMgaGF2ZSBpbmNyZWFzZWQgaW4gc3BlZWQgYW5kIHJlZHVjZWQgaW4gY29zdCBhbmQgcG93ZXIgY29uc3VtcHRpb24gYmVjYXVzZSBvZiByZWR1Y2VkIHRyYW5zaXN0b3Igc2l6ZSBpbiBzdWNjZXNzaXZlIHRlY2hub2xvZ3kgZ2VuZXJhdGlvbnMuIEhvd2V2ZXIsIGl0IGlzIG5vdCBwb3NzaWJsZSB0byByZWR1Y2UgdGhlIHZvbHRhZ2UgdG8gdGhlIHNhbWUgc2NhbGluZyBmYWN0b3JzIHNvIHRoZSBlbGVjdHJpYyBmaWVsZHMgaGF2ZSBpbmNyZWFzZWQuIFRoZSBzaWxpY29uIGRpb3hpZGUgd2hpY2ggaXMgdXNlZCBhcyB0aGUgZ2F0ZSBvZiB0aGVzZSB0cmFuc2lzdG9ycyBpcyBub3cgc28gdGhpbiB0aGF0IGEgc2lnbmlmaWNhbnQgY3VycmVudCBmbG93cyB0aHJvdWdoIGl0IGJlY2F1c2Ugb2YgZGlyZWN0IHR1bm5lbGxpbmcuIFRoaXMgaW5jcmVhc2VzIHBvd2VyIGNvbnN1bXB0aW9uIGFuZCByZWR1Y2VzIHJlbGlhYmlsaXR5LiBGdXR1cmUgdHJhbnNpc3RvciBnZW5lcmF0aW9ucyB3aWxsIG5lZWQgYSBnYXRlIGRpZWxlY3RyaWMgb2YgaGlnaGVyIHBlcm1pdHRpdml0eSAoaGlnaC1rKSBzbyBhbGxvd2luZyBhIGxhcmdlciBwaHlzaWNhbCB0aGlja25lc3Mgb2YgZGllbGVjdHJpYyB0byBiZSB1c2VkIHdpdGhvdXQgaW5jcmVhc2luZyB0aGUgZXF1aXZhbGVudCBlbGVjdHJpY2FsIHRoaWNrbmVzcy4gVGhpcyBpcyB0aGUgbW9zdCBpbXBvcnRhbnQgc2luZ2xlIGlzc3VlIGZhY2luZyB0aGUgZGV2ZWxvcG1lbnQgb2YgYSBrZXkgSVQgdGVjaG5vbG9neSBhbmQgb25lIGluIHdoaWNoIG5ldyBpZGVhcyBhbmQgYXBwcm9hY2hlcyB0byBtZWFzdXJlbWVudCBhcmUgcmVxdWlyZWQuIFRoZSBwcm9wb3NlZCBoaWdoLWsgbWF0ZXJpYWxzIChtYXRlcmlhbHMgYmFzZWQgb24gaGFmbml1bSBveGlkZSB3aWxsIGJlIHN0dWRpZWQgaW5pdGlhbGx5KSBhcmUgcGh5c2ljYWxseSBhbmQgY2hlbWljYWxseSB2ZXJ5IGRpZmZlcmVudCB0byBzaWxpY29uIGRpb3hpZGUuIENvbnNpZGVyaW5nIHRoZSBpbXBvcnRhbmNlIG9mIHRoaXMgdGVjaG5vbG9naWNhbCBsZWFwIHN1cnByaXNpbmdseSBsaXR0bGUgaXMga25vd24gYWJvdXQgdGhlaXIgaW50ZXJmYWNlIGNoYXJhY3RlcmlzdGljcyB3aXRoIHNpbGljb24gb3IgYWJvdXQgdGhlIHRyYXBwaW5nIHNpdGVzIGluIHRoZSBveGlkZS4gSW4gdGhpcyByZXNlYXJjaCBwcm9ncmFtbWUgd2Ugd2lsbCBjb2xsYWJvcmF0ZSB3aXRoIElNRUMgaW4gQmVsZ2l1bSwgU0VNQVRFQ0ggaW4gdGhlIFVTQSwgTk1SQyBpbiBJcmVsYW5kIGFuZCBHbGFzZ293IFVuaXZlcnNpdHkgdG8gYWNoaWV2ZSBhbiB1bmRlcnN0YW5kaW5nIG9mIHRoZSB1bmRlcmx5aW5nIHNjaWVuY2Ugb2YgdGhlc2UgZGllbGVjdHJpY3MuIFRoaXMgd2lsbCBiZSBkb25lIGJ5IGFwcGx5aW5nIGJvdGggbm92ZWwgcmVzZWFyY2ggdG9vbHMgYW5kIGluZHVzdHJ5IHN0YW5kYXJkIG1ldGhvZHMgdG8gYW5hbHlzZSB0aGUgaW50ZXJmYWNlIGFuZCBidWxrIHRyYXBwaW5nIGNlbnRyZXMgYW5kIHRvIG9ic2VydmUgdGhlaXIgZXZvbHV0aW9uIHVuZGVyIGVsZWN0cmljYWwgc3RyZXNzLiBBIGtleSBpc3N1ZSB3aWxsIGJlIHRoZSByb2xlIG9mIGh5ZHJvZ2VuIGFuZCBkZXV0ZXJpdW0gaW4gdGhlc2UgbWF0ZXJpYWxzIGFuZCB0aGUgcGh5c2ljYWwgYW5kIGVsZWN0cm9uaWMgc3RydWN0dXJlIG9mIHRoZSB0cmFwcy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmxpdmptLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmxpdmptLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvQzAwMzA3MS8xDEVQL0MwMDMwNzEvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk9LZkPp1ij4K0xb8q/DEfvLrv08g=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL/2IW+BALQvN++DAKT/OCVAz4jdoH8+i9iFiDyLn6cwhq5sNU0" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C003071/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Performance, degradation and defect structure of MOS devices using high-k materials as gate dielectrics</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=34577'>Zhang, Professor J</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000763'>IMEC</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000767'>Imperial College London</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=16298'>International SEMATECH</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=17979'>NMRC</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1001599'>University of Glasgow</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering Tech and Maritime Operations</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Liverpool John Moores University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 February 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="191,096.63" class="DetailValue">191,097</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Electronic Devices &amp; Subsys.</td>
+                                    <td class="DetailValue"> Energy Efficiency</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Materials Characterisation</td>
+                                    <td class="DetailValueAlt"> Solar Technology</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Electronics</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/C003101/1'>EP/C003101/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/C003098/1'>EP/C003098/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The transistors in integrated circuits have increased in speed and reduced in cost and power consumption because of reduced transistor size in successive technology generations. However, it is not possible to reduce the voltage to the same scaling factors so the electric fields have increased. The silicon dioxide which is used as the gate of these transistors is now so thin that a significant current flows through it because of direct tunnelling. This increases power consumption and reduces reliability. Future transistor generations will need a gate dielectric of higher permittivity (high-k) so allowing a larger physical thickness of dielectric to be used without increasing the equivalent electrical thickness. This is the most important single issue facing the development of a key IT technology and one in which new ideas and approaches to measurement are required. The proposed high-k materials (materials based on hafnium oxide will be studied initially) are physically and chemically very different to silicon dioxide. Considering the importance of this technological leap surprisingly little is known about their interface characteristics with silicon or about the trapping sites in the oxide. In this research programme we will collaborate with IMEC in Belgium, SEMATECH in the USA, NMRC in Ireland and Glasgow University to achieve an understanding of the underlying science of these dielectrics. This will be done by applying both novel research tools and industry standard methods to analyse the interface and bulk trapping centres and to observe their evolution under electrical stress. A key issue will be the role of hydrogen and deuterium in these materials and the physical and electronic structure of the traps.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.livjm.ac.uk                                                                              '>http://www.livjm.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

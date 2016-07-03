@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Dielectrophoretic dots: development of hardware for realtime cellular assessment
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE037135%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAzNzEzNS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVhPHN0cm9uZz5EaWVsZWN0cm9waG9yZXRpYyBkb3RzOiBkZXZlbG9wbWVudCBvZiBoYXJkd2FyZSBmb3IgcmVhbHRpbWUgY2VsbHVsYXIgYXNzZXNzbWVudDwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFQTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTEyMDk4NCc+TGFiZWVkLCBEciBGSEw8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUeQ3RyIGZvciBCaW9tZWRpY2FsIEVuZ2luZWVyaW5nZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUVW5pdmVyc2l0eSBvZiBTdXJyZXlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRJGaXJzdCBHcmFudCBTY2hlbWVkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQwwMSBKdWx5IDIwMDdkZAIDD2QWAgIBDw8WAh8EBRAzMSBEZWNlbWJlciAyMDA5ZGQCBQ9kFgICAQ8PFgQfBAUHMTg2LDIxMx4HVG9vbFRpcAUKMTg2LDIxMy40NWRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgIWBAIBD2QWAmYPFQIFQ2VsbHMfRHJ1ZyBGb3JtdWxhdGlvbiAmYW1wOyBEZWxpdmVyeWQCAg9kFgJmDxUCIkVsZWN0cm9jaGVtaWNhbCBTY2llbmNlICZhbXA7IEVuZy4hTWVkLkluc3RydW1lbnQuRGV2aWNlJmFtcDsgRXF1aXAuZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAgpIZWFsdGhjYXJlAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAWGFERpZWxlY3Ryb3Bob3Jlc2lzIChERVApLCB0aGUgbW90aW9uIG9mIHBvbGFyaXNhYmxlIHBhcnRpY2xlcyBpbiBub24tdW5pZm9ybSBmaWVsZHMsIGhhcyBhbHJlYWR5IGJlZW4gc2hvd24gdG8gYmUgZWZmZWN0aXZlIGZvciB0aGUgZGV0ZXJtaW5hdGlvbiBvZiB0aGUgZGllbGVjdHJpYyBwcm9wZXJ0aWVzIG9mIGNlbGxzIGZvciBlbGVjdHJvcGh5c2lvbG9naWNhbCBpbnZlc3RpZ2F0aW9uLiAgQXBwbGljYXRpb25zIGhhdmUgYmVlbiBkZW1vbnN0cmF0ZWQgZnJvbSBkcnVnIHNjcmVlbmluZyB0byBleHRlbmRpbmcgb3VyIHVuZGVyc3RhbmRpbmcgb2YgY2FuY2VyIGJpb2xvZ3kuIEhvd2V2ZXIgY29udmVudGlvbmFsIG1ldGhvZHMgZm9yIGRpZWxlY3Ryb3Bob3JldGljIGFuYWx5c2lzIGFyZSBub3Qgd2VsbCBzdWl0ZWQgZm9yIGxhcmdlIG51bWJlcnMgb2YgcGFyYWxsZWwgZXhwZXJpbWVudHMsIGR1ZSB0byB0aGUgY29tcGxleCBuYXR1cmUgb2YgZWxlY3Ryb2RlIGZhYnJpY2F0aW9uLCB0aGUgdmVyeSBsb3cgZWZmZWN0aXZlIHZvbHVtZXMgKG9mIHRoZSBvcmRlciBvZiBuYW5vbGl0cmVzKSBpbiB3aGljaCBERVAgaXMgZWZmZWN0aXZlLCBhbmQgdGhlIGRpZmZpY3VsdHkgaW4gbWFraW5nIHNpbXBsZSBvYnNlcnZhdGlvbnMgb2YgbWFueSBjZWxscyAod2hpY2ggYXJlIHR5cGljYWxseSBtaWNyb3Njb3BlLWJhc2VkKS4gIEluIHRoaXMgcHJvcG9zYWwsIGEgbmV3IHN5c3RlbSBvZiBERVAgYW5hbHlzaXMgd2lsbCBiZSBjb25zdHJ1Y3RlZCB1c2luZyBwYXJhbGxlbCBhcnJheXMgb2YgZWxlY3Ryb2RlcyAodGhlIHNvLWNhbGxlZCAgZG90IGVsZWN0cm9kZXMgKS4gIEVsZWN0cm9kZSB0ZWNobm9sb2d5IHJlY2VudGx5IGRldmVsb3BlZCBhdCB0aGUgVW5pdmVyc2l0eSBvZiBTdXJyZXkgaGFzIHByb2R1Y2VkIGEgbm92ZWwgZWxlY3Ryb2RlIHN0cnVjdHVyZSBmb3IgREVQLCBmb3Igd2hpY2ggYSBwYXRlbnQgaGFzIHJlY2VudGx5IGJlZW4gZmlsZWQuICBXaGVyZWFzIHByZXZpb3VzIERFUCBzdHVkaWVzIGhhdmUgdXNlZCBlbGVjdHJpYyBmaWVsZHMgZ2VuZXJhdGVkIGJ5IHBsYW5hciAoZWZmZWN0aXZlbHkgMkQpIGVsZWN0cm9kZXMgZXRjaGVkIGZyb20gZ29sZCBhY3Jvc3MgdGhlIHN1cmZhY2Ugb2YgYSBtaWNyb3Njb3BlIHNsaWRlLCB0aGUgbmV3IHRlY2hub2xvZ3kgdXNlcyBwYXJhbGxlbC1wbGFuZSAgZG90ICBlbGVjdHJvZGUgc3RydWN0dXJlcyB0byBnZW5lcmF0ZSBzaW1wbGUtdG8taW50ZXJwcmV0IERFUCBkYXRhIHJhcGlkbHkgKG9mIHRoZSBvcmRlciBvZiAxMC0yMCBzZWNvbmRzKS4gIFRoZSBzeXN0ZW0gb3BlcmF0ZXMgYXMgZm9sbG93cy4gIFRoZSBkaWVsZWN0cm9waG9yZXRpYyBkb3QgY2hhbWJlcnMgYXJlIGZpbGxlZCB3aXRoIGNlbGwgc3VzcGVuc2lvbiwgZm9sbG93ZWQgYnkgdGhlIGRydWcgY2FuZGlkYXRlLiBBbiBhcnJheSBvZiBkb3RzIHdpbGwgYmUgZW5lcmdpemVkIGJ5IHBlcmhhcHMgMjAgZnJlcXVlbmNpZXMsIG9uZSB0byBlYWNoIGRvdCwgc28gdGhhdCB0aGUgd2hvbGUgc3BlY3RydW0gY2FuIGJlIG9idGFpbmVkIHNpbXVsdGFuZW91c2x5LiAgVGhlIGRvdHMgd2lsbCBiZSBvZiBzdWZmaWNpZW50IHNpemUgYW5kIHNwcmVhZCB0byBlbnN1cmUgdGhlIHdob2xlIGFycmF5IGlzIHZpc2libGUgc2ltdWx0YW5lb3VzbHkgdXNpbmcgdGhlIG1pY3Jvc2NvcGUuICBVcG9uIHRoZSBhcHBsaWNhdGlvbiBvZiB0aGUgZWxlY3RyaWMgZmllbGQsIHBvc2l0aXZlIGRpZWxlY3Ryb3Bob3Jlc2lzIHJlbW92ZXMgdGhlIGNlbGxzIGZyb20gdGhlIGJ1bGsgbGlxdWlkIGFuZCByZWR1Y2VzIGxpZ2h0IHNjYXR0ZXJpbmcsIHdoZXJlYXMgbmVnYXRpdmUgZGllbGVjdHJvcGhvcmVzaXMgZm9jdXNlcyBwYXJ0aWNsZXMgaW4gdGhlIG1pZGRsZSBvZiB0aGUgZG90IGFuZCBpbmNyZWFzZXMgbGlnaHQgc2NhdHRlcmluZy4gIEEgaGlnaC1yZXNvbHV0aW9uIGRpZ2l0YWwgY2FtZXJhIHVzZXMgaW1hZ2UtcHJvY2Vzc2luZyBhbGdvcml0aG1zIHRvIGFuYWx5c2UgdGhlIGNoYW5nZSBpbiBjZWxsIGRpc3RyaWJ1dGlvbiwgYXQgYSBzcGVjaWZpYyB0aW1lIGFmdGVyIHRoZSBhcHBsaWNhdGlvbiBvZiB0aGUgZmllbGQsIGFuZCBoZW5jZSBkZXRlcm1pbmUgdGhlIGRpZWxlY3Ryb3Bob3Jlc2lzIHNwZWN0cnVtLiAgVGhpcyBub3ZlbCBhcHByb2FjaCB3aWxsIGVuYWJsZSBvYnNlcnZhdGlvbiBvZiBtdWNoIG1vcmUgcmFwaWQgY2VsbHVsYXIgcGhlbm9tZW5hOyBpbiB0aGlzIHByb2plY3QgdGhlIGVxdWlwbWVudCB3aWxsIGJlIGRlbW9uc3RyYXRlZCBieSBvYnNlcnZhdGlvbiBvZiBjYW5jZXIgZHJ1ZyBhY3Rpb24gYW5kIGluIHRoZSBvbnNldCBvZiBjZWxsIHRveGljaXR5LCBhbmQgdGhlIG9uc2V0IG9mIGFwb3B0b3Npcy4gIEFsbCB0aHJlZSBvZiB0aGVzZSByZXByZXNlbnQgaW1wb3J0YW50IGFzcGVjdHMgb2YgdGhlIHN0dWR5IG9mIHBoYXJtYWNvbG9neSBhbmQgdG94aWNvbG9neSwgZm9yIHdoaWNoIGZpZWxkcyB0aGlzIHByb2plY3QgaGFzIHBvdGVudGlhbCB0byBpbXBhY3Qgc2lnbmlmaWNhbnRseS5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnN1cnJleS5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnN1cnJleS5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAzNzEzNS8xDEVQL0UwMzcxMzUvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk2N7LENmzALzFPh9G0DVeBFz4FMc=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLqg6mqCALQvN++DAKT/OCVA7y5L1/80pPte3PpEQDRP1CDK9Mq" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E037135/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Dielectrophoretic dots: development of hardware for realtime cellular assessment</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-120984'>Labeed, Dr FHL</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Ctr for Biomedical Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Surrey</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 July 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 December 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="186,213.45" class="DetailValue">186,213</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Cells</td>
+                                    <td class="DetailValue"> Drug Formulation &amp; Delivery</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Electrochemical Science &amp; Eng.</td>
+                                    <td class="DetailValueAlt"> Med.Instrument.Device&amp; Equip.</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Dielectrophoresis (DEP), the motion of polarisable particles in non-uniform fields, has already been shown to be effective for the determination of the dielectric properties of cells for electrophysiological investigation.  Applications have been demonstrated from drug screening to extending our understanding of cancer biology. However conventional methods for dielectrophoretic analysis are not well suited for large numbers of parallel experiments, due to the complex nature of electrode fabrication, the very low effective volumes (of the order of nanolitres) in which DEP is effective, and the difficulty in making simple observations of many cells (which are typically microscope-based).  In this proposal, a new system of DEP analysis will be constructed using parallel arrays of electrodes (the so-called  dot electrodes ).  Electrode technology recently developed at the University of Surrey has produced a novel electrode structure for DEP, for which a patent has recently been filed.  Whereas previous DEP studies have used electric fields generated by planar (effectively 2D) electrodes etched from gold across the surface of a microscope slide, the new technology uses parallel-plane  dot  electrode structures to generate simple-to-interpret DEP data rapidly (of the order of 10-20 seconds).  The system operates as follows.  The dielectrophoretic dot chambers are filled with cell suspension, followed by the drug candidate. An array of dots will be energized by perhaps 20 frequencies, one to each dot, so that the whole spectrum can be obtained simultaneously.  The dots will be of sufficient size and spread to ensure the whole array is visible simultaneously using the microscope.  Upon the application of the electric field, positive dielectrophoresis removes the cells from the bulk liquid and reduces light scattering, whereas negative dielectrophoresis focuses particles in the middle of the dot and increases light scattering.  A high-resolution digital camera uses image-processing algorithms to analyse the change in cell distribution, at a specific time after the application of the field, and hence determine the dielectrophoresis spectrum.  This novel approach will enable observation of much more rapid cellular phenomena; in this project the equipment will be demonstrated by observation of cancer drug action and in the onset of cell toxicity, and the onset of apoptosis.  All three of these represent important aspects of the study of pharmacology and toxicology, for which fields this project has potential to impact significantly.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.surrey.ac.uk                                                                             '>http://www.surrey.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Computation of electron transfer properties for heme-containing oxidoreductases
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF004699%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAwNDY5OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVgPHN0cm9uZz5Db21wdXRhdGlvbiBvZiBlbGVjdHJvbiB0cmFuc2ZlciBwcm9wZXJ0aWVzIGZvciBoZW1lLWNvbnRhaW5pbmcgb3hpZG9yZWR1Y3Rhc2VzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVCPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tOTkwMjQnPkJsdW1iZXJnZXIsIERyIEo8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUJQ2hlbWlzdHJ5ZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUXVW5pdmVyc2l0eSBvZiBDYW1icmlkZ2VkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRJGaXJzdCBHcmFudCBTY2hlbWVkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAwMSBGZWJydWFyeSAyMDA4ZGQCAw9kFgICAQ8PFgIfBAUPMzEgSmFudWFyeSAyMDExZGQCBQ9kFgICAQ8PFgQfBAUHMjIwLDExOB4HVG9vbFRpcAUKMjIwLDExOC4zNGRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIaQ2F0YWx5c2lzICZhbXA7IGVuenltb2xvZ3kQQ2hlbWljYWwgQmlvbG9neWQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA4IE1heSAyMDA3ZGQCAQ9kFgQCAQ8PFgIfAmhkZAIDDw8WAh8EBShDaGVtaXN0cnkgUHJpb3JpdGlzYXRpb24gUGFuZWwgKFNjaWVuY2UpZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBY8cQXRvbWlzdGljIGNvbXB1dGVyIHNpbXVsYXRpb25zIGFyZSBwcm9wb3NlZCB0byBhZHZhbmNlIGFxdWFudGl0YXRpdmUgdW5kZXJzdGFuZGluZyBvZiBsb25nLXJhbmdlIGVsZWN0cm9uIHRyYW5zZmVyIChFVCkgcmVhY3Rpb25zaW4gZWxlY3Ryb24gdHJhbnNwb3J0IHByb3RlaW5zLiBUaGlzIHdvcmsgaXMgY2FycmllZCBvdXQgdG8gYWlkIGFuZCBjb21wbGVtZW50ZXhwZXJpbWVudGFsIHdvcmsgaW4gdGhpcyBmaWVsZC4gRXhpc3RpbmcgY29tcHV0ZXIgc2ltdWxhdGlvbiB0ZWNobmlxdWVzIGFyZWV4dGVuZGVkIHRvIGNvbXB1dGUga2V5IHBhcmFtZXRlcnMgdGhhdCBnb3Zlcm4gdGhlIHJhdGUgb2YgYmlvbG9naWNhbEVUIHJlYWN0aW9ucy4gVGhlc2UgcGFyYW1ldGVycyBhcmUgb2Z0ZW4gdW5rbm93biBhbmQgdXN1YWxseSByYXRoZXJkaWZmaWN1bHQgdG8gbWVhc3VyZS4gVXNpbmcgbnVtZXJpY2FsIG1ldGhvZHMgd2UgYWltIGF0IHByb3ZpZGluZ3F1YW50aXRhdGl2ZSBlc3RpbWF0ZXMgdGhhdCBjYW4gYmUgdXNlZCBpbiBlbGVjdHJvbiB0dW5uZWxpbmcgc2ltdWxhdGlvbnMgb2ZiaW9sb2dpY2FsIGVsZWN0cm9uIGNhcnJpZXJzLiBNb3Jlb3ZlciwgZXhwbG9pdGluZyB0aGUgbWljcm9zY29waWMgaW5mb3JtYXRpb24gb2Ztb2xlY3VsYXIgc2ltdWxhdGlvbnMsIHRoZSBjb250cmlidXRpb25zIG9mIHNpbmdsZSBhbWlubyBhY2lkIHJlc2lkdWVzIGFuZHRoZSBzdXJyb3VuZGluZyBzb2x2ZW50IHRvIHRoZSBFVCByYXRlIGFyZSBhbmFseXplZCBhbmQgdXNlZCB0byBpbnRlcnByZXQgZWZmZWN0cyBvZnByb3RlaW4gbXV0YXRpb25zIHRoYXQgY291bGQgZ3VpZGUgdGhlIGRlc2lnbiBvZiBlZmZpY2llbnQgYmlvbWltZXRpY3MuIEluIHRoZSBzaG9ydCB0ZXJtIHRoZSBzaW11bGF0aW9uIG1ldGhvZHMgYXJlIHZhbGlkYXRlZCBvbiBzaW1wbGUgYW5kIGV4cGVyaW1lbnRhbGx5IHdlbGwgY2hhcmFjdGVyaXplZCBlbGVjdHJvbiB0cmFuc3BvcnQgcHJvdGVpbnMgKHNwZWNpZmljIGFpbSBJKS4gSW4gdGhlIG1lZGl1bSB0byBsb25nIHRlcm0gcmVkb3ggYW5kIEVUIHJlYWN0aW9ucyBpbiB0aGUgbW9yZSBjb21wbGV4IGhlbWUgY2F0YWxhc2VzIGFyZSBpbnZlc3RpZ2F0ZWQgKHNwZWNpZmljIGFpbSBJSSkuIFJlc2VhcmNoIHByb2dyYW1tZSAoc3BlY2lmaWMgYWltIEkpOiBSZWxpYWJsZSBleHBlcmltZW50YWwgRVQgcGFyYW1ldGVycyBhcmVhdmFpbGFibGUgZm9yIG9ubHkgdmVyeSBmZXcgYmlvbG9naWNhbCBFVCByZWFjdGlvbnMgd2hlcmUgZG9ub3IgYW5kIGFjY2VwdG9yIGhhdmVhIHdlbGwgZGVmaW5lZCBzdHJ1Y3R1cmUuIEFtb25nIHRoZXNlIHN5c3RlbXMgYXJlIHJ1dGhlbml1bSBtb2RpZmllZCBjeXRvY2hyb21lIChjeXQpIHByb3RlaW5zIHN1Y2ggYXMgY3l0IGMsIG15b2dsb2JpbiwgY3l0IGI1IGFuZCBjeXQgYjU2Mi4gIEEgd2VhbHRoIG9mIHN0cnVjdHVyYWwsIHRoZXJtb2R5bmFtaWMgYW5kIGtpbmV0aWMgZGF0YSBhdmFpbGFibGUgZm9yIHRoZXNlIHByb3RlaW5zLCB3aGljaCBtYWtlcyB0aGVtIHBvc3NpYmx5IHRoZSBiZXN0IGJlbmNobWFyayBzeXN0ZW1zIGZvciBhc3Nlc3NtZW50IG9mIHRoZSBhY2N1cmFjeSBvZmNvbXB1dGVyIHNpbXVsYXRpb25zLiBGaXJzdCBvYmplY3RpdmUgaXMgdGhlIGNvbXB1dGF0aW9uIG9mIEVUIHBhcmFtZXRlcnNmb3IgRVQgZnJvbSB0aGUgaGVtZSBncm91cCBsb2NhdGVkIGluc2lkZSB0aGUgcHJvdGVpbnRvIHRoZSBydXRoZW5pdW0gY29tcGxleCBsb2NhdGVkIGF0IHRoZSBzdXJmYWNlIG9mIHRoZSBwcm90ZWluLiBUaGUgc2ltdWxhdGlvbnNvZiB0aGUgcHJvdGVpbnMgYXJlIGNhcnJpZWQgb3V0IGZvciBtb2RlbHMgd2l0aCBpbmNyZWFzaW5nIGRlZ3JlZSBvZiBjb21wbGV4aXR5LiBEZXBlbmRpbmcgb24gdGhlIGRldmlhdGlvbiB3aXRoIGV4cGVyaW1lbnRhbCBkYXRhLCBuZXcgaWRlYXMgZm9yIGltcHJvdmVtZW50IG9mIHRoZSBzaW11bGF0aW9uIG1ldGhvZG9sb2d5IGFyZSBleHBsb3JlZC4gVGhlIGZpbml0ZSB0ZW1wZXJhdHVyZSBtb3Rpb24gb2YgdGhlIGRpZmZlcmVudCBjeXRvY2hyb21lcyBhcmUgYW5hbHl6ZWQgYW5kIHVzZWQgdG8gaW52ZXN0aWdhdGUgdGhlIGluZmx1ZW5jZSBvZiB0aGUgZGlmZmVyZW50IHByb3RlaW4gZm9sZHMgYW5kIGhlbWUgZ3JvdXBzIG9uIHRoZSBFVCBwYXJhbWV0ZXJzLiBUaGVyZWFmdGVyIHRoZSBmb2N1cyBvZiByZXNlYXJjaCB3aWxsIHNoaWZ0IHRvIHRoZSBtb3JlIGNvbXBsaWNhdGVkIGhlbWUgY2F0YWxhc2VzIGRlc2NyaWJlZCBiZWxvdy5SZXNlYXJjaCBwcm9ncmFtbWUgKHNwZWNpZmljIGFpbSBJSSk6SGVtZSBjYXRhbGFzZXMgcHJldmVudCBjZWxscyBmcm9tIG94aWRhdGl2ZSBkYW1hZ2UgYnkgY2F0YWx5emluZyB0aGUgZGVjb21wb3NpdGlvbiBvZiBoeWRyb2dlbiBwZXJveGlkZSBpbiBveHlnZW4gYW5kIHdhdGVyLiAgVGhlIGNhdGFseXRpYyBhY3Rpdml0eSBpcyBkcmFzdGljYWxseXJlZHVjZWQgb3IgZXZlbiBsb3N0IHVuZGVyIGNlcnRhaW4gY29uZGl0aW9ucywgaWYgcmVhY3Rpb24gaW50ZXJtZWRpYXRlY29tcG91bmQgSSB1bmRlcmdvZXMgb25lLWVsZWN0cm9uIHJlZHVjdGlvbiB0byBjb21wb3VuZCBJSS5SZWNlbnQgY3J5c3RhbGxvZ3JhcGhpYyBhbmQgY29tcHV0YXRpb25hbCBzdHVkaWVzIGhhdmUgZ2l2ZW4gZXZpZGVuY2V0aGF0IHRoZSBveGlkaXplZCBmb3JtIG9mIGhlbWUgYiBjb250YWluaW5nIGNhdGFsYXNlIG9mICBILiBweWxvcmkgKEhQQykgZm9ybXN0aGUgY2F0YWx5dGljYWxseSBsZXNzIGFjdGl2ZSBjb21wb3VuZCBJSSB3aGVyZWFzIHRoZSBoZW1lIGQgY29udGFpbmluZyAgY2F0YWxhc2Ugb2YgUC4gdml0YWxlIHJlbWFpbnMgaW4gdGhlYWN0aXZlIGNvbXBvdW5kIEkgZm9ybS4gTmF0dXJhbGx5LCB0aGUgcXVlc3Rpb24gYXJpc2VzIHdoZXRoZXIgdGhpcyBkaWZmZXJlbmNlIGlzIHJlbGF0ZWQgdG8gdGhlIGRpZmZlcmVudCBoZW1lIGdyb3VwcyBvciB0byB0aGUgZGlmZmVyZW50IHByb3RlaW4gc3RydWN0dXJlIG9mIHRoZSB0d28gY2F0YWxhc2VzLiBVc2luZyB0aGUgbWV0aG9kcyB2YWxpZGF0ZWQgb24gc2ltcGxlIGN5dG9jaHJvbWUgcHJvdGVpbnMgKHNlZSBhYm92ZSksIHdlIHByb3Bvc2UgdG8gY2FsY3VsYXRlIEVUIHBhcmFtZXRlcnMgZm9yIEhQQyBhbmQgUFZDIGFuZCB0byBkZXRlcm1pbmUgdGhlIGNvcnJlc3BvbmRpbmcgY29udHJpYnV0aW9ucyBvZiBjb2ZhY3RvciwgcHJvdGVpbiBhbmQgc29sdmVudC5JbiB0aGUgbmV4dCBzdGVwIGlvbml6YWJsZSBncm91cHMgaW4gdGhlIHZpY2luaXR5IG9mIHRoZSBoZW1lIGdyb3VwcyBhcmUgaWRlbnRpZmllZCBhbmQgdGhlIEVUIHBhcmFtZXRlcnMgY29tcHV0ZWQgZm9yIEVUIGZyb20gdGhlIGlvbml6YWJsZSBncm91cCB0byB0aGUgb3hpZGl6ZWQgaGVtZSBjZW50ZXIuIFdlIGhvcGUgdGhhdCBvbiB0aGUgYmFzaXMgb2YgdGhlc2UgY2FsY3VsYXRpb25zIG9uZSBjYW4gZXhwbGFpbiB0aGUgZGlmZmVyZW50IHRlbmRlbmNpZXMgb2YgSFBDIGFuZCBQVkMgdG8gZm9ybSB0aGUgY2F0YWx5dGljYWxseSBsZXNzIGFjdGl2ZSBjb21wb3VuZCBJSS5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmNhbS5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmNhbS5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjAwNDY5OS8xDEVQL0YwMDQ2OTkvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkDhHwxUxf7drRpqtIvvaXrjWdubs=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL3vN2DBgLQvN++DAKT/OCVAzL+9E7JAOIwHs0X/cjjRWn2G/RK" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F004699/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Computation of electron transfer properties for heme-containing oxidoreductases</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-99024'>Blumberger, Dr J</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Chemistry</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Cambridge</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 February 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 January 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="220,118.34" class="DetailValue">220,118</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Catalysis &amp; enzymology</td>
+                                    <td class="DetailValue"> Chemical Biology</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>08 May 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Chemistry Prioritisation Panel (Science)</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Atomistic computer simulations are proposed to advance aquantitative understanding of long-range electron transfer (ET) reactionsin electron transport proteins. This work is carried out to aid and complementexperimental work in this field. Existing computer simulation techniques areextended to compute key parameters that govern the rate of biologicalET reactions. These parameters are often unknown and usually ratherdifficult to measure. Using numerical methods we aim at providingquantitative estimates that can be used in electron tunneling simulations ofbiological electron carriers. Moreover, exploiting the microscopic information ofmolecular simulations, the contributions of single amino acid residues andthe surrounding solvent to the ET rate are analyzed and used to interpret effects ofprotein mutations that could guide the design of efficient biomimetics. In the short term the simulation methods are validated on simple and experimentally well characterized electron transport proteins (specific aim I). In the medium to long term redox and ET reactions in the more complex heme catalases are investigated (specific aim II). Research programme (specific aim I): Reliable experimental ET parameters areavailable for only very few biological ET reactions where donor and acceptor havea well defined structure. Among these systems are ruthenium modified cytochrome (cyt) proteins such as cyt c, myoglobin, cyt b5 and cyt b562.  A wealth of structural, thermodynamic and kinetic data available for these proteins, which makes them possibly the best benchmark systems for assessment of the accuracy ofcomputer simulations. First objective is the computation of ET parametersfor ET from the heme group located inside the proteinto the ruthenium complex located at the surface of the protein. The simulationsof the proteins are carried out for models with increasing degree of complexity. Depending on the deviation with experimental data, new ideas for improvement of the simulation methodology are explored. The finite temperature motion of the different cytochromes are analyzed and used to investigate the influence of the different protein folds and heme groups on the ET parameters. Thereafter the focus of research will shift to the more complicated heme catalases described below.Research programme (specific aim II):Heme catalases prevent cells from oxidative damage by catalyzing the decomposition of hydrogen peroxide in oxygen and water.  The catalytic activity is drasticallyreduced or even lost under certain conditions, if reaction intermediatecompound I undergoes one-electron reduction to compound II.Recent crystallographic and computational studies have given evidencethat the oxidized form of heme b containing catalase of  H. pylori (HPC) formsthe catalytically less active compound II whereas the heme d containing  catalase of P. vitale remains in theactive compound I form. Naturally, the question arises whether this difference is related to the different heme groups or to the different protein structure of the two catalases. Using the methods validated on simple cytochrome proteins (see above), we propose to calculate ET parameters for HPC and PVC and to determine the corresponding contributions of cofactor, protein and solvent.In the next step ionizable groups in the vicinity of the heme groups are identified and the ET parameters computed for ET from the ionizable group to the oxidized heme center. We hope that on the basis of these calculations one can explain the different tendencies of HPC and PVC to form the catalytically less active compound II.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cam.ac.uk                                                                                '>http://www.cam.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

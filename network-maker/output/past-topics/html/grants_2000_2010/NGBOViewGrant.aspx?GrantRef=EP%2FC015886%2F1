@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Novel applications of Sequential Monte Carlo algorithms
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC015886%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzAxNTg4Ni8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVIPHN0cm9uZz5Ob3ZlbCBhcHBsaWNhdGlvbnMgb2YgU2VxdWVudGlhbCBNb250ZSBDYXJsbyBhbGdvcml0aG1zPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVFPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD05NjMyNic+QW5kcmlldSwgUHJvZmVzc29yIEM8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA0U8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTEyMjM1OCc+Q2hvcGluLCBQcm9mZXNzb3IgTjwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAULTWF0aGVtYXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRVVbml2ZXJzaXR5IG9mIEJyaXN0b2xkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRpGaXJzdCBHcmFudCBTY2hlbWUgUHJlLUZFQ2RkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzAxIE9jdG9iZXIgMjAwNWRkAgMPZBYCAgEPDxYCHwQFETMwIFNlcHRlbWJlciAyMDA4ZGQCBQ9kFgICAQ8PFgQfBAUGNzMsODMxHgdUb29sVGlwBQk3Myw4MzAuNThkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiJTdGF0aXN0aWNzICZhbXA7IEFwcGwuIFByb2JhYmlsaXR5AGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQILRW52aXJvbm1lbnQSRmluYW5jaWFsIFNlcnZpY2VzZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBcQeV2h5IGRvIGdpcmFmZmVzIGhhdmUgbG9uZyBuZWNrcz8gQ2hhcmxlcyBEYXJ3aW4sIHRoZSBmYW1vdXMgbmluZXRlZW50aC1jZW50dXJ5IGJpb2xvZ2lzdCwgcG9zdHVsYXRlZCB0aGF0IGdpcmFmZmVzIHdoaWNoIGhhcHBlbmVkIHRvIGhhdmUsIGJ5IGNoYW5jZSwgYSBsb25nZXIgbmVjayB0aGFuIHRoZSBvdGhlcnMgd2VyZSBtb3JlIGxpa2VseSB0byBzdXJ2aXZlIGR1cmluZyB0aW1lcyBvZiBmb29kIHNjYXJjaXR5LCBhcyB0aGV5IGNvdWxkIHJlYWNoIGhpZ2hlciBsZWF2ZXMgaW4gdHJlZXMuIFRoZXNlIGdpcmFmZmVzIHdvdWxkIHRoZXJlZm9yZSBoYXZlIG1vcmUgb2Zmc3ByaW5nLCB0byB3aGljaCB0aGV5IHRyYW5zbWl0dGVkIHRoaXMgbG9uZy1uZWNrIGdlbmV0aWNhbCB0cmFpdC4gQXMgYSByZXN1bHQsIGdpcmFmZmVzJ25lY2tzIGdvdCBsb25nZXIgYW5kIGxvbmdlciB0aHJvdWdoIHRpbWUuIEZvbGxvd2luZyBEYXJ3aW4ncyBleGFtcGxlLCB3ZSBrbm93IHRvZGF5IHRoYXQgZXZvbHV0aW9uIG9mIG5hdHVyYWwgc3BlY2llcyBpcyBzaGFwZWQgYnkgdHdvIG1lY2hhbmlzbXM6IGdlbmV0aWMgbXV0YXRpb25zLCB0aGF0IGlzIHNtYWxsIGNoYW5nZXMgdGhhdCBoYXBwZW4gYnkgYGNoYW5jZScgKGEgZ2lyYWZmZSBoYXZpbmcgYSBzbGlnaHRseSBsb25nZXIgbmVjayk7IGFuZCBzZWxlY3Rpb24sIHRoYXQgaXMgdGhlIGZhY3QgdGhhdCBhZHZhbnRhZ2VvdXMgY2hhbmdlcyBhcmUgaW5oZXJpdGVkIGJ5IGZvbGxvd2luZyBnZW5lcmF0aW9ucywgYW5kIGJlY29tZSBkb21pbmFudCBhbW9uZyB0aGUgcG9wdWxhdGlvbiB0aHJvdWdoIHRpbWUuIFRoaXMgaXMgd2hhdCBiaW9sb2dpc3RzIGNhbGwgYG5hdHVyYWwgc2VsZWN0aW9uJy4gV2hhdCBpcyB0cnVseSBpbnNwaXJpbmcgd2l0aCBuYXR1cmFsIHNlbGVjdGlvbiBpcyB0aGF0IGl0IGV4cGxhaW5zIHRoZSBldm9sdXRpb24gb2Ygb3VyIGV4dHJhb3JkaW5hcmlseSBjb21wbGV4IGVjb3N5c3RlbSwgaW5jbHVkaW5nIHBsYW50cywgYW5pbWFscywgYW5kIGV2ZW4gaHVtYW4gYmVpbmdzLCB3aXRoIHZlcnkgc2ltcGxlIHByaW5jaXBsZXMuIFRoaXMgaGFzIGludHJpZ3VlZCBtYW55IHNjaWVudGlzdHMuIEluIHBhcnRpY3VsYXIsIG1hdGhlbWF0aWNpYW5zIHdvbmRlcmVkIGlmIG5hdHVyYWwgc2VsZWN0aW9uIGNvdWxkIGJlIGFkYXB0ZWQgdG8gdGhlIHdvcmxkIG9mIG1hdGhlbWF0aWNzLCBlc3BlY2lhbGx5IGluIHByb2JsZW1zIHdoZXJlIGl0IGlzIGVzc2VudGlhbCB0byBgYWRhcHQnIGNvbnN0YW50bHkgdG8gbmV3IGNvbmRpdGlvbnMuIExldCdzIGRpc2N1c3MgYSBzaW1wbGUgZXhhbXBsZS4gQ29uc2lkZXIgYSBzaGlwIG5hdmlnYXRpbmcgYWxvbmcgdGhlIEJyaXRpc2ggY29hc3QuIFlvdSBhcmUgaW4gYSBsaWdodGhvdXNlLCBhbmQgeW91IG9ic2VydmUgdGhlIHNoaXAgd2l0aCBhIHJhZGFyLCBidXQgaW5hY2N1cmF0ZWx5IGFuZCBpbmZyZXF1ZW50bHkgKHNheSBldmVyeSBtaW51dGUpLCBiZWNhdXNlIG9mIHZlcnkgYmFkIHdlYXRoZXIgY29uZGl0aW9ucy4gWW91IHdvdWxkIGxpa2UgdG8gZGV0ZXJtaW5lIHRoZSBjdXJyZW50IHRyYWplY3Rvcnkgb2YgdGhpcyBzaGlwOyBtYXliZSB5b3Ugd291bGQgbGlrZSB0byB3YXJuIHRoZSBjYXB0YWluIGJ5IHJhZGlvIHRoYXQgdGhlIHNoaXAgaGVhZHMgdG8gZGFuZ2Vyb3VzIHJlZWZzLCBpZiBpbmRlZWQgaXQgaXMgdGhlIGNhc2UuIEJlY2F1c2Ugb2YgdGhlIGluYWNjdXJhY3kgb2YgdGhlIHJhZGFyLCB5b3UgZG8gbm90IGtub3cgZXhhY3RseSB3aGVyZSBpcyB0aGUgc2hpcCBhdCBhIGdpdmVuIG1vbWVudC4gUmF0aGVyLCB5b3UgbWF5IHB1dCBzZXZlcmFsIGNyb3NzZXMgb24geW91ciBtYXAgd2hlcmUgdGhlIHNoaXAgaXMgbGlrZWx5IHRvIGJlOyBzYXkgaW4gYSBzbWFsbCBjaXJjdWxhciByZWdpb24uIFdoYXQgY2FuIHdlIGRvIHRvIHByZWRpY3QgdGhlIG5leHQgbW92ZSBvZiB0aGUgc2hpcD8gTGV0J3Mgc2VlIGlmIHdlIGNhbiB0cmVhdCBvdXIgbGl0dGxlIGNyb3NzZXMgb24gdGhlIG1hcCBhcyBhIG5hdHVyYWwgc3BlY2llcywgdGhhdCBpcyBpZiB3ZSBjYW4gYXBwbHkgbmF0dXJhbCBzZWxlY3Rpb24gdG8gdGhlbS4gRmlyc3QsIHdlIGNvdWxkIHRyeSB0byBndWVzcyB0aGUgc2hpcCdzIG5leHQgcG9zaXRpb24sIGJ5IHNsaWdodGx5IG1vdmluZyBvdXIgY3Jvc3NlcyBvbiBvdXIgbWFwIGluIGV2ZXJ5IGRpcmVjdGlvbiwgdGhhdCBpcywgYnkgbW92aW5nIHRoaXMgY3Jvc3MgdG8gdGhlIGxlZnQsIHRoYXQgb25lIGRvd24sIGV0Yy4gVGhlc2Ugc2xpZ2h0cyBjaGFuZ2VzIHdvdWxkIHJlcHJlc2VudCB0aGUgYG11dGF0aW9ucycgdGhhdCBhZmZlY3Qgb3VyIHBvcHVsYXRpb24gb2YgbGl0dGxlIGNyb3NzZXMuIFdoZW4gd2UgY29sbGVjdCB0aGUgbmV4dCByYWRhciBtZWFzdXJlbWVudHMgYWZ0ZXIgc29tZSB0aW1lLCB3ZSBvYnRhaW4gYSBtb3JlIHJlY2VudCBpbmZvcm1hdGlvbiBvbiB0aGUgc2hpcCdzIG5ldyBsb2NhdGlvbiwgYWxiZWl0IGFnYWluIHdpdGggc29tZSBpbmFjY3VyYWN5OyB0aGlzIG1lYW5zIHRoYXQgc29tZSBvZiBvdXIgYG11dGF0ZWQnIGxpdHRsZSBjcm9zc2VzIG1heSBiZSBxdWl0ZSBmYXIgZnJvbSB3aGVyZSB3ZSBleHBlY3QgdGhlIHNoaXAgdG8gYmUgbm93LCB3aGlsZSBvdGhlcnMgbWF5IGJlIG1vcmUgYWNjZXB0YWJsZS4gTGV0J3MgYGtpbGwnIChlcmFzZSkgdGhvc2UgY3Jvc3NlcyB0aGF0IGFyZSBub3QgaW4gYSBzYXRpc2ZhY3RvcnkgbG9jYXRpb24sIGFuZCBgcmVwcm9kdWNlJyAocmVjb3B5IHZhcmlvdXMgdGltZXMpIHRoZSBjb3JyZWN0bHkgbG9jYXRlZCBvbmVzLiBJbiB0aGlzIHdheSB3ZSBzZWxlY3RlZCB0aG9zZSBsaXR0bGUgY3Jvc3NlcyB0aGF0IHJlcHJlc2VudCBtb3JlIGNsb3NlbHkgd2hlcmUgd2UgdGhpbmsgdGhlIHNoaXAgaXMuIEJ5IHJlcGVhdGluZyB0aGVzZSB0d28gc3RlcHMgKG11dGF0aW9ucywgc2VsZWN0aW9uKSBvbiBhbiBvbiwgd2UgY2FuIGVuc3VyZSB0aGF0IG91ciBsaXR0bGUgY3Jvc3NlcyBhbHdheXMgYWRhcHQgdG8gdGhlIHJhZGFyIGluZm9ybWF0aW9uLCBhbmQgY29uc3RhbnRseSBnaXZlcyB1cyBhIGdvb2QgaWRlYSBvZiB3aGVyZSB0aGUgc2hpcCBpcyBoZWFkaW5nIHRvLiBPYnZpb3VzbHksIGRyYXdpbmcgYW5kIGVyYXNpbmcgbGl0dGxlIGNyb3NzZXMgb24gYSBtYXAgbWF5IGJlIHJhdGhlciB0ZWRpb3VzLCBhbmQgYSBjb21wdXRlciBkb2VzIHRoYXQgZm9yIHVzIGluIHByYWN0aWNlLiBUaGF0IGtpbmQgb2YgY29tcHV0ZXIgdGVjaG5pcXVlcyBpcyB1c3VhbGx5IHRlcm1lZCBhcyBhIGBwYXJ0aWNsZSBmaWx0ZXInLiBQYXJ0aWNsZSBmaWx0ZXJzIGhhdmUgYmVjb21lIGVzc2VudGlhbCBpbiBTdGF0aXN0aWNzLCB3aGljaCBpcyB0aGUgYnJhbmNoIG9mIE1hdGhlbWF0aWNzIGludGVyZXN0ZWQgaW4gdGhlIGFuYWx5c2lzIG9mIGRhdGEgKHN1Y2ggYXMgdGhlIHJhZGFyIG1lYXN1cmVtZW50cyBpbiBvdXIgc2hpcCBleGFtcGxlKS4gTXkgcHJvamVjdCBkZWFscyB3aXRoIHRoZSBhcHBsaWNhdGlvbiBvZiBwYXJ0aWNsZSBmaWx0ZXJzIHRvIGNvbXBsZXggcHJvYmxlbXMgYXJpc2luZyBpbiB2YXJpb3VzIGZpZWxkcyBvZiBTY2llbmNlLCBmb3IgaW5zdGFuY2UgaW4gU2Vpc21vbG9neSwgdGhlIHNjaWVuY2UgdGhhdCBzdHVkaWVzIGVhcnRocXVha2VzLiBJbiB0aGlzIHdheSwgd2UgbWF5IGJlIGFibGUgdG8gZGV2ZWxvcCBzb21lIGRheSBiZXR0ZXIgbWV0aG9kcyBmb3IgcHJlZGljdGluZyBmdXR1cmUgZWFydGhxdWFrZXMsIGluIHF1aXRlIHRoZSBzYW1lIHdheSB0aGF0IHdlcmUgd2VyZSBhYmxlIHRvIGBndWVzcycgdGhlIG5leHQgbG9jYXRpb24gaW4gb3VyIHNoaXAgZXhhbXBsZS5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmJyaXMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmJyaXMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvQzAxNTg4Ni8xDEVQL0MwMTU4ODYvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk9ecXfe7xxPs2TSEeuPoDcH1KbRM=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKChsbPDwLQvN++DAKT/OCVA7wlImhrW+zfVgz7y9oOE5npbOOO" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C015886/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Novel applications of Sequential Monte Carlo algorithms</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=96326'>Andrieu, Professor C</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=122358'>Chopin, Professor N</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bristol</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme Pre-FEC</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="73,830.58" class="DetailValue">73,831</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Statistics &amp; Appl. Probability</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Environment</td>
+                                    <td class="DetailValueAlt"> Financial Services</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Why do giraffes have long necks? Charles Darwin, the famous nineteenth-century biologist, postulated that giraffes which happened to have, by chance, a longer neck than the others were more likely to survive during times of food scarcity, as they could reach higher leaves in trees. These giraffes would therefore have more offspring, to which they transmitted this long-neck genetical trait. As a result, giraffes'necks got longer and longer through time. Following Darwin's example, we know today that evolution of natural species is shaped by two mechanisms: genetic mutations, that is small changes that happen by `chance' (a giraffe having a slightly longer neck); and selection, that is the fact that advantageous changes are inherited by following generations, and become dominant among the population through time. This is what biologists call `natural selection'. What is truly inspiring with natural selection is that it explains the evolution of our extraordinarily complex ecosystem, including plants, animals, and even human beings, with very simple principles. This has intrigued many scientists. In particular, mathematicians wondered if natural selection could be adapted to the world of mathematics, especially in problems where it is essential to `adapt' constantly to new conditions. Let's discuss a simple example. Consider a ship navigating along the British coast. You are in a lighthouse, and you observe the ship with a radar, but inaccurately and infrequently (say every minute), because of very bad weather conditions. You would like to determine the current trajectory of this ship; maybe you would like to warn the captain by radio that the ship heads to dangerous reefs, if indeed it is the case. Because of the inaccuracy of the radar, you do not know exactly where is the ship at a given moment. Rather, you may put several crosses on your map where the ship is likely to be; say in a small circular region. What can we do to predict the next move of the ship? Let's see if we can treat our little crosses on the map as a natural species, that is if we can apply natural selection to them. First, we could try to guess the ship's next position, by slightly moving our crosses on our map in every direction, that is, by moving this cross to the left, that one down, etc. These slights changes would represent the `mutations' that affect our population of little crosses. When we collect the next radar measurements after some time, we obtain a more recent information on the ship's new location, albeit again with some inaccuracy; this means that some of our `mutated' little crosses may be quite far from where we expect the ship to be now, while others may be more acceptable. Let's `kill' (erase) those crosses that are not in a satisfactory location, and `reproduce' (recopy various times) the correctly located ones. In this way we selected those little crosses that represent more closely where we think the ship is. By repeating these two steps (mutations, selection) on an on, we can ensure that our little crosses always adapt to the radar information, and constantly gives us a good idea of where the ship is heading to. Obviously, drawing and erasing little crosses on a map may be rather tedious, and a computer does that for us in practice. That kind of computer techniques is usually termed as a `particle filter'. Particle filters have become essential in Statistics, which is the branch of Mathematics interested in the analysis of data (such as the radar measurements in our ship example). My project deals with the application of particle filters to complex problems arising in various fields of Science, for instance in Seismology, the science that studies earthquakes. In this way, we may be able to develop some day better methods for predicting future earthquakes, in quite the same way that were were able to `guess' the next location in our ship example.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bris.ac.uk                                                                               '>http://www.bris.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

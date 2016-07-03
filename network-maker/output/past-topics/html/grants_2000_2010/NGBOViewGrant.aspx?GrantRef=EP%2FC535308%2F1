@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Multi-Modal Blind Source Separation Algorithms
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC535308%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzUzNTMwOC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU/PHN0cm9uZz5NdWx0aS1Nb2RhbCBCbGluZCBTb3VyY2UgU2VwYXJhdGlvbiBBbGdvcml0aG1zPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zNjkzOCc+Q2hhbWJlcnMsIFByb2Zlc3NvciBKPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQM+PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xMjI3ODAnPkhpY2tzLCBEciBZQTwvYT5GPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01NzYxNCc+TWFyc2hhbGwsIFByb2Zlc3NvciBBPC9hPj48YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0zODA5MTInPlNhbmVpLCBEciBTPC9hPmQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUSU2NoIG9mIEVuZ2luZWVyaW5nZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUSQ2FyZGlmZiBVbml2ZXJzaXR5ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbU3RhbmRhcmQgUmVzZWFyY2ggKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAURMTYgU2VwdGVtYmVyIDIwMDVkZAIDD2QWAgIBDw8WAh8EBQ4zMSBBdWd1c3QgMjAwN2RkAgUPZBYCAgEPDxYEHwQFBzI3OCw5ODgeB1Rvb2xUaXAFCjI3OCw5ODguMzlkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhlEaWdpdGFsIFNpZ25hbCBQcm9jZXNzaW5nAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIOQ29tbXVuaWNhdGlvbnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBfEWVGhpcyBwcm9qZWN0IGNvbmNlcm5zIHRoZSBlbXVsYXRpb24gb2YgdGhlIGFiaWxpdHkgb2YgYSBodW1hbiB0byBzZXBhcmF0ZSBvbmUgc3BlZWNoIHNvdXJjZSBmcm9tIGEgYmFja2dyb3VuZCBvZiBvdGhlciBzcGVha2VycyBhbmQgcG9zc2libHkgbm9pc2Ugc291cmNlcywgc3VjaCBhcyBhbiBhaXIgY29uZGl0aW9uaW5nIHVuaXQsIHdpdGhpbiBhbiBvZmZpY2UgZW52aXJvbm1lbnQuIFRoaXMgaXMgdGVybWVkIHRoZSAgY29ja3RhaWwgcGFydHkgIHByb2JsZW0gYW5kIGl0IGlzIGEgdmVyeSBjaGFsbGVuZ2luZyB0YXNrIHRvIHVzZSBhIG51bWJlciBvZiBtaWNyb3Bob25lcyB0b2dldGhlciB3aXRoIGEgY29tcHV0ZXIgdG8gcHJvY2VzcyB0aGUgcmVjb3JkaW5ncywgYW5kIHRoZXJlYnkgZXh0cmFjdCB0aGUgc3BlYWtlciBvZiBpbnRlcmVzdC4gQXMgaHVtYW5zLCB3ZSB1c2UgbXVjaCBtb3JlIHRoYW4gdGhlIHNvdW5kIHRoYXQgaXMgcGVyY2VpdmVkIGJ5IG91ciB0d28gZWFycyB0byBhZGRyZXNzIHRoaXMgcHJvYmxlbS4gT3VyIGV5ZXMsIGZvciBleGFtcGxlLCBhbHNvIHByb3ZpZGUgdmlzdWFsIGN1ZXMgd2hpY2ggaGVscCBpbiB0aGUgcHJvY2Vzcy4gSXQgaXMgdGhlcmVmb3JlIHRoZSBmb2N1cyBvZiB0aGlzIHdvcmsgdG8gaW50ZWdyYXRlIGJvdGggYXVkaW8gYW5kIHZpc3VhbCBtZWFzdXJlbWVudHMsIGF0dGFpbmVkIGZyb20gbWljcm9waG9uZXMgYW5kIGNhbWVyYXMgd2l0aGluIHRoZSBvZmZpY2UsIHRvIGFpZCBpbiB0aGUgc2VwYXJhdGlvbiBwcm9jZXNzLiBUaGUgaHVtYW4gaXMgYWxzbyBsaWtlbHkgdG8gZXhwbG9pdCBrbm93bGVkZ2Ugb2YgbGFuZ3VhZ2UgaW4gdGhlIHNlcGFyYXRpb24gcHJvY2Vzcywgd2UgdGhlcmVmb3JlIHBsYW4gdG8gdXRpbGl6ZSBtYXRoZW1hdGljYWwgbW9kZWxzIG9mIHRoZSBhdWRpbyBhbmQgc3BlZWNoIHJlY29yZGluZ3MgaW4gdGhlIHNlcGFyYXRpb24gcHJvY2VzcywgdGhlc2UgYXJlIGNhbGxlZCBjb3VwbGVkIChvciBmdXNlZCkgSGlkZGVuIE1hcmtvdiBNb2RlbHMuIFdoZW4gYSB3b3JkIGlzIHV0dGVyZWQgd2l0aGluIGEgcm9vbSwgdGhlIHNvdW5kIHdhdmUgcHJvcGFnYXRlcyB0aHJvdWdoIG1hbnkgcGF0aHMgdG8gdGhlIG1pY3JvcGhvbmUsIGR1ZSB0byByZWZsZWN0aW9ucyBvbiB0aGUgd2FsbHMsIGNlaWxpbmcgb3IgZmxvb3IsIG9yIG90aGVyIG9iamVjdHMgaW4gdGhlIHJvb20sIHN1Y2ggYXMgYSB0YWJsZS4gVGhpcyBzby1jYWxsZWQgIG11bHRpcGF0aCAgcHJvcGFnYXRpb24sIGlzIG1vZGVsbGVkIGJ5IHdoYXQgaXMgY2FsbGVkIGEgIGNvbnZvbHV0aXZlICBtaXh0dXJlLiBBIGNvbnZvbHV0aXZlIG1vZGVsIGlzIHRoZSByZWxhdGlvbnNoaXAgYmV0d2VlbiB0aGUgaW5wdXQgYW5kIG91dHB1dCBvZiBhIGxpbmVhciwgcG9zc2libHkgbXVsdGljaGFubmVsLCBzeXN0ZW0gd2hpY2ggcmVtZW1iZXJzIChoYXMgbWVtb3J5KSBwYXN0IGlucHV0cyBhbmQgcG9zc2libHkgb3V0cHV0cyAob25seSBpbnB1dHMgaW4gdGhpcyBwcm9qZWN0KS4gVG8gcGVyZm9ybSB0aGUgc2VwYXJhdGlvbiBwcm9jZXNzIGl0IGlzIHRoZXJlZm9yZSBuZWNlc3NhcnkgdG8gdXNlIGEgY29udm9sdXRpdmUgbW9kZWwuIFN1Y2ggYSBtb2RlbCB3b3VsZCBuZWVkIG1hbnkgY2FsY3VsYXRpb25zIHRvIHBlcmZvcm0gc2VwYXJhdGlvbiBidXQgdGhpcyBiZWNvbWVzIG11Y2ggZWFzaWVyIGluIHRoZSBmcmVxdWVuY3kgZG9tYWluLiBTZXBhcmF0aW9uIGluIHRoZSBmcmVxdWVuY3kgZG9tYWluIGlzLCB3ZSBiZWxpZXZlLCB0aGUgd2F5IGZvcndhcmQgdG8gdGFja2xlIHRoaXMgcHJvYmxlbSwgYnV0IHRoZXJlIGFyZSBwcm9ibGVtcyB0byBiZSBzb2x2ZWQuIEluIHBhcnRpY3VsYXIsIGhvdyB0byByZWNvbnN0cnVjdCB0aGUgZXh0cmFjdGVkIHNwZWVjaCBzaWduYWwgYmFjayBpbiB0aGUgdGltZSBkb21haW4gKHRoZSBzby1jYWxsZWQgcGVybXV0YXRpb24gcHJvYmxlbSksIGhvdyB0byBkZWFsIHdpdGggdGhlIGNhc2Ugb2YgbW9yZSB0aGFuIHR3byBzcGVha2VycyBpbiB0aGUgcm9vbSBhbmQgd2hlbiB0aGUgc3BlYWtlcnMgYXJlIG1vdmluZy4gT3VyIGFwcHJvYWNoIGluIHRoaXMgd29yayBpcyB0byB1c2UgYWRkaXRpb25hbCB2aXN1YWwgaW5mb3JtYXRpb24gdG8gb3ZlcmNvbWUgdGhlc2UgcHJvYmxlbXMuIFdlIHRoZXJlZm9yZSB3aXNoIHRvIGVxdWlwIGFuIGludGVsbGlnZW50IG9mZmljZSB3aXRoaW4gdGhlIENlbnRyZSBvZiBEaWdpdGFsIFNpZ25hbCBQcm9jZXNzaW5nIGF0IHRoZSBDYXJkaWZmIFNjaG9vbCBvZiBFbmdpbmVlcmluZyB3aXRoIG1pY3JvcGhvbmVzIGFuZCBjYW1lcmFzIHRvZ2V0aGVyIHdpdGggdGhlIG5lY2Vzc2FyeSBjb21wdXRpbmcgZmFjaWxpdGllcyB0byByZWNvcmQgZXhhbXBsZXMgb2YgYXVkaW8gYW5kIHZpc3VhbCBzaWduYWxzIGZvciB0ZXN0aW5nLCBpbml0aWFsbHkgd2l0aCB0d28gd2VsbCBwb3NpdGlvbmVkIHNwZWFrZXJzIHV0dGVyaW5nIGRpc3RpbmN0IHNvdW5kcywgc3VjaCBhcyB2b3dlbHMgYW5kIGNvbnNlbmFudHMsIGFuZCB0aGVuIG1vdmluZyBvbnRvIG1vcmUgc3BlYWtlcnMgYW5kIG1vdmVtZW50OyB1bHRpbWF0ZWx5LCByZWNvcmRpbmcgbmF0dXJhbCBjb250aW51b3VzIHNwZWVjaC4gVGhlIG92ZXJhbGwgZ29hbCBpcyB0byBiZSBhYmxlIHRvIGRlbW9uc3RyYXRlIHRoZSBhYmlsaXR5IHRvIHNlcGFyYXRlIGFueSBvbmUgb2YgdGhlIHNwZWFrZXJzIHV0dGVyYW5jZXMgd2l0aGluIHRoZSBpbnRlbGxpZ2VudCBvZmZpY2Ugd2hpY2ggd291bGQgdGhlbiBmYWNpbGl0YXRlIGludGVyYWN0aW9uLCBmb3IgZXhhbXBsZSwgd2l0aCBhIHZvaWNlIHJlY29nbmlzZXIgb3IgdGhpcmQgcGFydHksIGF0IGEgcmVtb3RlIGxvY2F0aW9uLCBhcyBpbiB0ZWxlY29uZmVyZW5jaW5nLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuY2YuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuY2YuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DNTM1MzA4LzEMRVAvQzUzNTMwOC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGTaQnlfXIb72VNypYMUSsmxtKG/Bw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK7lIfJCALQvN++DAKT/OCVA4+/4c96ra9Y1bwOz1VoXpTZJthu" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C535308/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Multi-Modal Blind Source Separation Algorithms</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=36938'>Chambers, Professor J</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=122780'>Hicks, Dr YA</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=57614'>Marshall, Professor A</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-380912'>Sanei, Dr S</a></td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Cardiff University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">16 September 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="278,988.39" class="DetailValue">278,988</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Digital Signal Processing</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Communications</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This project concerns the emulation of the ability of a human to separate one speech source from a background of other speakers and possibly noise sources, such as an air conditioning unit, within an office environment. This is termed the  cocktail party  problem and it is a very challenging task to use a number of microphones together with a computer to process the recordings, and thereby extract the speaker of interest. As humans, we use much more than the sound that is perceived by our two ears to address this problem. Our eyes, for example, also provide visual cues which help in the process. It is therefore the focus of this work to integrate both audio and visual measurements, attained from microphones and cameras within the office, to aid in the separation process. The human is also likely to exploit knowledge of language in the separation process, we therefore plan to utilize mathematical models of the audio and speech recordings in the separation process, these are called coupled (or fused) Hidden Markov Models. When a word is uttered within a room, the sound wave propagates through many paths to the microphone, due to reflections on the walls, ceiling or floor, or other objects in the room, such as a table. This so-called  multipath  propagation, is modelled by what is called a  convolutive  mixture. A convolutive model is the relationship between the input and output of a linear, possibly multichannel, system which remembers (has memory) past inputs and possibly outputs (only inputs in this project). To perform the separation process it is therefore necessary to use a convolutive model. Such a model would need many calculations to perform separation but this becomes much easier in the frequency domain. Separation in the frequency domain is, we believe, the way forward to tackle this problem, but there are problems to be solved. In particular, how to reconstruct the extracted speech signal back in the time domain (the so-called permutation problem), how to deal with the case of more than two speakers in the room and when the speakers are moving. Our approach in this work is to use additional visual information to overcome these problems. We therefore wish to equip an intelligent office within the Centre of Digital Signal Processing at the Cardiff School of Engineering with microphones and cameras together with the necessary computing facilities to record examples of audio and visual signals for testing, initially with two well positioned speakers uttering distinct sounds, such as vowels and consenants, and then moving onto more speakers and movement; ultimately, recording natural continuous speech. The overall goal is to be able to demonstrate the ability to separate any one of the speakers utterances within the intelligent office which would then facilitate interaction, for example, with a voice recogniser or third party, at a remote location, as in teleconferencing.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cf.ac.uk                                                                                 '>http://www.cf.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

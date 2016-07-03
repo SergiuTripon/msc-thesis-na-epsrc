@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Integrability tests for discrete and differential equations
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC54319X%2f2" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzU0MzE5WC8yZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVMPHN0cm9uZz5JbnRlZ3JhYmlsaXR5IHRlc3RzIGZvciBkaXNjcmV0ZSBhbmQgZGlmZmVyZW50aWFsIGVxdWF0aW9uczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9OTcxMTgnPkhhbGJ1cmQsIFByb2Zlc3NvciBSRzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQtNYXRoZW1hdGljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFA1VDTGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFHUFkdmFuY2VkIEZlbGxvd3NoaXAgKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAURMDEgU2VwdGVtYmVyIDIwMDdkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAxMGRkAgUPZBYCAgEPDxYEHwQFBzE5NSwxMDgeB1Rvb2xUaXAFCjE5NSwxMDcuOTlkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCFU1hdGhlbWF0aWNhbCBBbmFseXNpcx5Ob24tbGluZWFyIFN5c3RlbXMgTWF0aGVtYXRpY3NkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFvA9EaWZmZXJlbnRpYWwgYW5kIGRpZmZlcmVuY2UgZXF1YXRpb25zIGFyaXNlIGluIGFsbCBhcmVhcyBvZiB0aGUgbWF0aGVtYXRpY2FsIHNjaWVuY2VzIGZyb20gcG9wdWxhdGlvbiBkeW5hbWljcyB0byByZWxhdGl2aXR5IHRvIHRoZSBtb3N0IGFic3RyYWN0IGFyZWFzIG9mIHB1cmUgbWF0aGVtYXRpY3MuIFdoZW4gb25lIGlzIGNvbnNpZGVycyBhIHBhcnRpY3VsYXIgZXF1YXRpb24gaXQgaXMgbmF0dXJhbCB0byBhc2sgd2hldGhlciB0aGlzIGVxdWF0aW9uIGNhbiBiZSBzb2x2ZWQgZXhwbGljaXRseSBvciBhdCBsZWFzdCB3aGV0aGVyIHdlIGNhbiBjaGFyYWN0ZXJpc2UgdGhlIHNvbHV0aW9ucyBpbiBhIG5pY2Ugd2F5LiBJbiBvdGhlciB3b3JkcywgaXMgdGhlIGVxdWF0aW9uIGludGVncmFibGU/IFRoaXMgcXVlc3Rpb24gbGllcyBhdCB0aGUgaGVhcnQgb2YgbXVjaCBvZiB0aGlzIHByb2plY3QuQSBsYXJnZSBwYXJ0IG9mIHRoZSBwcm9qZWN0IGlzIGRpcmVjdGVkIHRvd2FyZHMgdGhlIHVzZSBvZiB3ZWxsLWRlZmluZWQgcHJvcGVydGllcyB0aGF0IGFyZSBjb3JyZWxhdGVkIHdpdGggaW50ZWdyYWJpbGl0eSBhbmQgdGhlIGRldmVsb3BtZW50IG9mIHBvd2VyZnVsIHRlc3RzIGZvciB0aGVzZSBwcm9wZXJ0aWVzLiBGb3IgZGlmZmVyZW5jZSBhbmQgZGlzY3JldGUgZXF1YXRpb25zLCB0aHJlZSBzdWNoIHByb3BlcnRpZXMgd2lsbCBiZSB1c2VkLiBPbmUgcHJvcGVydHkgaW52b2x2ZXMgc3R1ZHlpbmcgZGlmZmVyZW5jZSBlcXVhdGlvbnMgaW4gdGhlIGNvbXBsZXggcGxhbmUuIEFub3RoZXIgcHJvcGVydHkgaW52b2x2ZXMgc3R1ZHlpbmcgaG93IGNvbXBsaWNhdGVkIHJhdGlvbmFsIGZ1bmN0aW9ucyAocmF0aW9zIG9mIHBvbHlub21pYWxzKSBnZXQgd2hlbiBpdGVyYXRlZCBieSBhIGRpc2NyZXRlIGVxdWF0aW9uLiBUaGUgZmluYWwgcHJvcGVydHkgaW52b2x2ZXMgbG9va2luZyBhdCByYXRpb25hbCBudW1iZXJzIHRoYXQgYXJlIGdlbmVyYXRlZCBieSBkaXNjcmV0ZSBlcXVhdGlvbnMgYW5kIGNvbnNpZGVyaW5nIGhvdyBxdWlja2x5IHRoZWlyIG51bWVyYXRvcnMgYW5kIGRlbm9taW5hdGVzIGdyb3cgdW5kZXIgaXRlcmF0aW9uLiBUaGlzIHByb2plY3QgaXMgbm90IG9ubHkgYWltZWQgYXQgcHJvdmlkaW5nIHVzZWZ1bCB0ZXN0cyBmb3IgYXBwbGllZCBtYXRoZW1hdGljaWFucyBhbmQgc2NpZW50aXN0cyB0byBhcHBseSB0byAgcmVhbCB3b3JsZCAgZXF1YXRpb25zLCBidXQgaXQgaXMgYWxzbyBhaW1lZCBhdCBwcm92aWRpbmcgYSByaWdvcm91cyBiYXNpcyBmb3IgcGFydCBvZiB0aGUgdGhlb3J5LkZvciBvcmRpbmFyeSBkaWZmZXJlbnRpYWwgZXF1YXRpb25zIChPREVzKSBpdCBoYXMgbG9uZyBiZWVuIGtub3duIHRoYXQgZXF1YXRpb25zIHdob3NlIHNvbHV0aW9ucyBoYXZlIGEgYSB2ZXJ5IHNpbXBsZSBzaW5ndWxhcml0eSBzdHJ1Y3R1cmUgYXJlIGludGVncmFibGUuIEFub3RoZXIgbWFpbiBhaW0gb2YgdGhpcyByZXNlYXJjaCBpcyB0byB1bmRlcnN0YW5kIHRoZSB0eXBlcyBvZiAobW92YWJsZSkgc2luZ3VsYXJpdGllcyB0aGF0IHNvbHV0aW9ucyBvZiBjbGFzc2VzIG9mIE9ERXMgY2FuIGRldmVsb3AuIFRoaXMgaXMgYWltZWQgYXQgYSBiZXR0ZXIgdW5kZXJzdGFuZGluZyBvZiB3aGF0IG1ha2VzIGNlcnRhaW4gaW50ZWdyYWJsZSBlcXVhdGlvbnMgc3BlY2lhbCBhbmQgYWxzbyB0b3dhcmRzIGRldmVsb3BpbmcgdGVzdHMgdG8gZGV0ZXJtaW5lIHdoZW4gYW4gZXF1YXRpb24gaGFzIGEgZ2xvYmFsIHNpbmd1bGFyaXR5IHN0cnVjdHVyZSB0aGF0IGlzIG5laXRoZXIgdHJpdmlhbCBub3IgdmVyeSBiYWQgc28gdGhlIGVxdWF0aW9uIG1pZ2h0IGJlIGludGVncmFibGUuIFRoaXMgd29yayBoYXMgYWxzbyBsZWQgdG8gbWV0aG9kcyBmb3IgZGV0ZWN0aW5nIHNwZWNpYWwgY2xhc3NlcyBvZiBzb2x1dGlvbnMgaW4gb3RoZXJ3aXNlIG5vbi1pbnRlZ3JhYmxlIGVxdWF0aW9ucy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvQzU0MzE5WC8yDEVQL0M1NDMxOVgvMmQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkdHKDK1gqeP6GdAa2QqTuQd+7hgU=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLT8+fSCwLQvN++DAKT/OCVA9nlZfUXqIdrP0IcktDevZcrTJ4l" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C54319X/2</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Integrability tests for discrete and differential equations</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=97118'>Halburd, Professor RG</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">UCL</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Advanced Fellowship (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="195,107.99" class="DetailValue">195,108</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> Non-linear Systems Mathematics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Differential and difference equations arise in all areas of the mathematical sciences from population dynamics to relativity to the most abstract areas of pure mathematics. When one is considers a particular equation it is natural to ask whether this equation can be solved explicitly or at least whether we can characterise the solutions in a nice way. In other words, is the equation integrable? This question lies at the heart of much of this project.A large part of the project is directed towards the use of well-defined properties that are correlated with integrability and the development of powerful tests for these properties. For difference and discrete equations, three such properties will be used. One property involves studying difference equations in the complex plane. Another property involves studying how complicated rational functions (ratios of polynomials) get when iterated by a discrete equation. The final property involves looking at rational numbers that are generated by discrete equations and considering how quickly their numerators and denominates grow under iteration. This project is not only aimed at providing useful tests for applied mathematicians and scientists to apply to  real world  equations, but it is also aimed at providing a rigorous basis for part of the theory.For ordinary differential equations (ODEs) it has long been known that equations whose solutions have a a very simple singularity structure are integrable. Another main aim of this research is to understand the types of (movable) singularities that solutions of classes of ODEs can develop. This is aimed at a better understanding of what makes certain integrable equations special and also towards developing tests to determine when an equation has a global singularity structure that is neither trivial nor very bad so the equation might be integrable. This work has also led to methods for detecting special classes of solutions in otherwise non-integrable equations.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

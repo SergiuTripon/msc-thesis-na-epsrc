@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Multilevel Preconditioners based on Composite Finite Element Methods for Fluid Flow Problems
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fH005498%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSDAwNTQ5OC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVtPHN0cm9uZz5NdWx0aWxldmVsIFByZWNvbmRpdGlvbmVycyBiYXNlZCBvbiBDb21wb3NpdGUgRmluaXRlIEVsZW1lbnQgTWV0aG9kcyBmb3IgRmx1aWQgRmxvdyBQcm9ibGVtczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NzU1NjUnPkhvdXN0b24sIFByb2Zlc3NvciBQPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFHFNjaCBvZiBNYXRoZW1hdGljYWwgU2NpZW5jZXNkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRhVbml2ZXJzaXR5IG9mIE5vdHRpbmdoYW1kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzAxIEphbnVhcnkgMjAxMGRkAgMPZBYCAgEPDxYCHwQFEDMxIERlY2VtYmVyIDIwMTJkZAIFD2QWAgIBDw8WBB8EBQcyNDcsMzU0HgdUb29sVGlwBQoyNDcsMzUzLjU5ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhJOdW1lcmljYWwgQW5hbHlzaXMAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgIeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAmQWAmYPZBYEAgEPZBYGZg9kFgICAQ8PFgIfBAULMDMgSnVuIDIwMDlkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFKk1hdGhlbWF0aWNzIFByaW9yaXRpc2F0aW9uIFBhbmVsIEp1bmUgMjAwOR8DBRtWaWV3UGFuZWwuYXNweD9QYW5lbElkPTQ4MjRkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCERlZmVycmVkZGQCAg9kFgZmD2QWAgIBDw8WAh8EBQswMyBTZXAgMjAwOWRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUuTWF0aGVtYXRpY3MgUHJpb3JpdGlzYXRpb24gUGFuZWwgU2VwdCAzcmQgMjAwOR8DBRtWaWV3UGFuZWwuYXNweD9QYW5lbElkPTQ4NTVkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWRHkNvbXB1dGF0aW9uYWwgZmx1aWQgZHluYW1pY3MgKENGRCkgaGFzIGJlY29tZSBhIGtleSB0ZWNobm9sb2d5IGluIHRoZSBkZXZlbG9wbWVudCBvZiBuZXcgcHJvZHVjdHMgaW4gdGhlIGFlcm9uYXV0aWNhbCBpbmR1c3RyeS4gRHVyaW5nIHRoZSBsYXN0IGRlY2FkZSBhZXJvZHluYW1pYyBkZXNpZ24gZW5naW5lZXJzIGhhdmUgcHJvZ3Jlc3NpdmVseSBhZGFwdGVkIHRoZWlyIHdheS1vZi13b3JraW5nIHRvIHRha2UgYWR2YW50YWdlIG9mIHRoZSBwb3NzaWJpbGl0aWVzIG9mZmVyZWQgYnkgbmV3IENGRCBjYXBhYmlsaXRpZXMgYmFzZWQgb24gdGhlIHNvbHV0aW9uIG9mIHRoZSBFdWxlciBhbmQgTmF2aWVyLVN0b2tlcyBlcXVhdGlvbnMuIFNpZ25pZmljYW50IGltcHJvdmVtZW50cyBpbiBwaHlzaWNhbCBtb2RlbGxpbmcgYW5kIHNvbHV0aW9uIGFsZ29yaXRobXMgaGF2ZSBiZWVuIGFzIGltcG9ydGFudCBhcyB0aGUgZW5vcm1vdXMgaW5jcmVhc2Ugb2YgY29tcHV0ZXIgcG93ZXIgdG8gZW5hYmxlIG51bWVyaWNhbCBzaW11bGF0aW9ucyBhdCBhbGwgc3RhZ2VzIG9mIGFpcmNyYWZ0IGRldmVsb3BtZW50LiBIb3dldmVyLCBkZXNwaXRlIHRoZSBwcm9ncmVzcyBtYWRlIGluIENGRCwgaW4gdGVybXMgb2YgdXNlciB0aW1lIGFuZCBjb21wdXRhdGlvbmFsIHJlc291cmNlcywgbGFyZ2UgYWVyb2R5bmFtaWMgc2ltdWxhdGlvbnMgb2YgdmlzY291cyBmbG93cyBhcm91bmQgY29tcGxleCBjb25maWd1cmF0aW9ucyBhcmUgc3RpbGwgdmVyeSBleHBlbnNpdmUuIFRoZSByZXF1aXJlbWVudCB0byByZWxpYWJseSBjb21wdXRlIHJlc3VsdHMgd2l0aCBhIHN1ZmZpY2llbnQgbGV2ZWwgb2YgYWNjdXJhY3kgd2l0aGluIHNob3J0IHR1cm4tYXJvdW5kIHRpbWVzIHBsYWNlcyBzZXZlcmUgY29uc3RyYWludHMgb24gdGhlIGFwcGxpY2F0aW9uIG9mIENGRC4gSW4gcmVjZW50IHllYXJzIHRoZXJlIGhhcyBiZWVuIHNpZ25pZmljYW50IGludGVyZXN0IGluIHRoZSBkZXZlbG9wbWVudCBvZiBoaWdoLW9yZGVyIGRpc2NyZXRpemF0aW9uIG1ldGhvZHMgd2hpY2ggYWxsb3cgZm9yIGFuIGltcHJvdmVkIHByZWRpY3Rpb24gb2YgY3JpdGljYWwgZmxvdyBwaGVub21lbmEsIHN1Y2ggYXMgYm91bmRhcnkgbGF5ZXJzLCB3YWtlcywgYW5kIHZvcnRpY2VzLCBmb3IgZXhhbXBsZSwgYXMgd2VsbCBhcyBmb3JjZSBjb2VmZmljaWVudHMsIGUuZy4sIGRyYWcsIGxpZnQsIG1vbWVudCwgd2hpbGUgZXhwbG9pdGluZyBzaWduaWZpY2FudGx5IGZld2VyIGRlZ3JlZXMgb2YgZnJlZWRvbSBjb21wYXJlZCB3aXRoIGNsYXNzaWNhbCAoZmluaXRlIHZvbHVtZSkgbWV0aG9kcy4gT25lIGV4dHJlbWVseSBwcm9taXNpbmcgY2xhc3Mgb2YgaGlnaC1vcmRlciBzY2hlbWVzIGJhc2VkIG9uIHRoZSBmaW5pdGUgZWxlbWVudCBmcmFtZXdvcmsgYXJlIERpc2NvbnRpbnVvdXMgR2FsZXJraW4gKERHLCBmb3Igc2hvcnQpIG1ldGhvZHMuIEluZGVlZCwgdGhlIGRldmVsb3BtZW50IG9mIERHIG1ldGhvZHMgZm9yIHRoZSBudW1lcmljYWwgYXBwcm94aW1hdGlvbiBvZiB0aGUgRXVsZXIgYW5kIE5hdmllci1TdG9rZXMgZXF1YXRpb25zIGlzIGFuIGV4dHJlbWVseSBleGNpdGluZyByZXNlYXJjaCB0b3BpYyB3aGljaCBpcyBjdXJyZW50bHkgYmVpbmcgZGV2ZWxvcGVkIGJ5IGEgbnVtYmVyIG9mIGdyb3VwcyBhbGwgb3ZlciB0aGUgd29ybGQuIERlc3BpdGUgdGhlIGFkdmFudGFnZXMgYW5kIGNhcGFiaWxpdGllcyBvZiB0aGUgREcgYXBwcm9hY2gsIHRoZSBtZXRob2QgaXMgbm90IHlldCBtYXR1cmUgYW5kIGN1cnJlbnQgaW1wbGVtZW50YXRpb25zIGFyZSBzdWJqZWN0IHRvIHN0cm9uZyBsaW1pdGF0aW9ucyBmb3IgaXRzIGFwcGxpY2F0aW9uIHRvIGxhcmdlIHNjYWxlIGluZHVzdHJpYWwgcHJvYmxlbXMuICBJbiBwYXJ0aWN1bGFyLCBvbmUgb2YgdGhlIGtleSBpc3N1ZXMgaXMgdGhlIGRlc2lnbiBvZiBlZmZpY2llbnQgc3RyYXRlZ2llcyBmb3IgdGhlIHNvbHV0aW9uIG9mIHRoZSBzeXN0ZW0gb2YgZXF1YXRpb25zIGdlbmVyYXRlZCBieSBhIERHIG1ldGhvZC4gSW4gdGhpcyBwcm9wb3NhbCB3ZSBhaW0gdG8gZGV2ZWxvcCBhIG5ldyBjbGFzcyBvZiBtdWx0aWxldmVsIFNjaHdhcnotdHlwZSBwcmVjb25kaXRpb25lcnMgZm9yIHRoZSBoaWdoLW9yZGVyIERHIGRpc2NyZXRpemF0aW9uIG9mIHR3by0gYW5kIHRocmVlLWRpbWVuc2lvbmFsIGNvbXByZXNzaWJsZSBmbHVpZCBmbG93IHByb2JsZW1zLiBIZXJlLCBtZXNoIGFnZ3JlZ2F0aW9uIHdpbGwgYmUgdW5kZXJ0YWtlbiBiYXNlZCBvbiBleHBsb2l0aW5nIGEgbmV3IGNsYXNzIG9mIGZpbml0ZSBlbGVtZW50IG1ldGhvZHMsIHJlZmVycmVkIHRvIGFzIENvbXBvc2l0ZSBGaW5pdGUgRWxlbWVudHMgKENGRXMpLCB3aGljaCBhcmUgcGFydGljdWxhcmx5IHN1aXRlZCB0byBwcm9ibGVtcyBjaGFyYWN0ZXJpemVkIGJ5IHNtYWxsIGRldGFpbHMgaW4gdGhlIGNvbXB1dGF0aW9uYWwgZG9tYWluIG9yIG1pY3JvLXN0cnVjdHVyZXMuIFRoZSBrZXkgaWRlYSBvZiBDRkVzIGlzIHRvIGV4cGxvaXQgZ2VuZXJhbCBzaGFwZWQgZWxlbWVudCBkb21haW5zIHVwb24gd2hpY2ggZWxlbWVudGFsIGJhc2lzIGZ1bmN0aW9ucyBhcmUgb25seSBsb2NhbGx5IHBpZWNld2lzZSBzbW9vdGguIEluIHBhcnRpY3VsYXIsIGFuIGVsZW1lbnQgZG9tYWluIHdpdGhpbiBhIENGRSBtYXkgY29uc2lzdCBvZiBhIGNvbGxlY3Rpb24gb2YgbmVpZ2hib3VyaW5nIGVsZW1lbnRzIHByZXNlbnQgd2l0aGluIGEgc3RhbmRhcmQgZmluaXRlIGVsZW1lbnQgbWV0aG9kLCB3aXRoIHRoZSBiYXNpcyBmdW5jdGlvbiBvZiB0aGUgQ0ZFIGJlaW5nIGNvbnN0cnVjdGVkIGFzIGEgbGluZWFyIGNvbWJpbmF0aW9uIG9mIHRob3NlIGRlZmluZWQgb24gdGhlIHN0YW5kYXJkIGZpbml0ZSBlbGVtZW50IHN1YmRvbWFpbnMuIEluIHRoaXMgd2F5LCBDRkVzIG9mZmVyIGFuIGlkZWFsIG1hdGhlbWF0aWNhbCBhbmQgcHJhY3RpY2FsIGZyYW1ld29yayB3aXRoaW4gd2hpY2ggZmluaXRlIGVsZW1lbnQgc29sdXRpb25zIG9uIChjb2Fyc2UpIGFnZ3JlZ2F0ZWQgbWVzaGVzIG1heSBiZSBkZWZpbmVkLiBUbyBkYXRlLCB0aGUgYXBwbGljYXRpb24gb2YgQ0ZFcyBoYXMgYmVlbiByZXN0cmljdGVkIHRvIHN0YW5kYXJkIGNvbmZvcm1pbmcgZmluaXRlIGVsZW1lbnQgYXBwcm94aW1hdGlvbnMgb2Ygc2ltcGxlIG1vZGVsIHByb2JsZW1zIGVtcGxveWluZyBsb3dlc3Qtb3JkZXIgKHBpZWNld2lzZSBsaW5lYXIpIGVsZW1lbnRzLiAgSW4gdGhpcyBwcm9wb3NhbCB3ZSBhaW0gdG8gZGV2ZWxvcCBhIHRob3JvdWdoIG1hdGhlbWF0aWNhbCBhbmFseXNpcyBvZiBDRkVzIHdpdGhpbiB0aGUgY29udGV4dCBvZiBoaWdoLW9yZGVyIERHIG1ldGhvZHMsIGluY2x1ZGluZyB0aGVpciBleHRlbnNpb24gdG8gZ2VuZXJhbCB1bnN0cnVjdHVyZWQgaHlicmlkIG1lc2hlcyBjb250YWluaW5nIGhhbmdpbmcgbm9kZXMuIEhlcmUsIHBhcnRpY3VsYXIgZW1waGFzaXMgd2lsbCBiZSBkZXZvdGVkIHRvIHRoZSBkZXNpZ24gb2YgYXBwcm9wcmlhdGUgYWdncmVnYXRpb24gc3RyYXRlZ2llcywgd2hpY2ggYWxsb3cgZm9yIHRoZSB1bmRlcmx5aW5nIERHIENGRSBtZXRob2QgdG8gYmUgZW1wbG95ZWQgYXMgYSBjb2Fyc2UgbWVzaCBzb2x2ZXIgd2l0aGluIFNjaHdhcnotdHlwZSBwcmVjb25kaXRpb25pbmcgc3RyYXRlZ2llcy4gVGhpcyByZXNlYXJjaCB3aWxsIGxlYWQgdG8gc2lnbmlmaWNhbnQgYWR2YW5jZXMgaW4gYm90aCB0aGUgdGhlb3JldGljYWwgYW5kIHByYWN0aWNhbCBkZXZlbG9wbWVudCBvZiBoaWdoLW9yZGVyIERHIG1ldGhvZHMgZm9yIENGRCBhcHBsaWNhdGlvbnMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5ub3R0LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5ub3R0LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0gwMDU0OTgvMQxFUC9IMDA1NDk4LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZFb3SWk6JaykfXxiK9sNVjdBYR43" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLsmYK6DgLQvN++DAKT/OCVAzzD0N9rUTPs5MjHOzMdLufGOxXj" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/H005498/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Multilevel Preconditioners based on Composite Finite Element Methods for Fluid Flow Problems</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=75565'>Houston, Professor P</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Mathematical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Nottingham</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 December 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="247,353.59" class="DetailValue">247,354</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Numerical Analysis</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>03 Jun 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4824">Mathematics Prioritisation Panel June 2009</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Deferred</b></span>
+												</td>
+				</tr><tr class="DetailValueAlt">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl03_Label1"><b>03 Sep 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl03_lnkPanelName" href="ViewPanel.aspx?PanelId=4855">Mathematics Prioritisation Panel Sept 3rd 2009</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl03_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Computational fluid dynamics (CFD) has become a key technology in the development of new products in the aeronautical industry. During the last decade aerodynamic design engineers have progressively adapted their way-of-working to take advantage of the possibilities offered by new CFD capabilities based on the solution of the Euler and Navier-Stokes equations. Significant improvements in physical modelling and solution algorithms have been as important as the enormous increase of computer power to enable numerical simulations at all stages of aircraft development. However, despite the progress made in CFD, in terms of user time and computational resources, large aerodynamic simulations of viscous flows around complex configurations are still very expensive. The requirement to reliably compute results with a sufficient level of accuracy within short turn-around times places severe constraints on the application of CFD. In recent years there has been significant interest in the development of high-order discretization methods which allow for an improved prediction of critical flow phenomena, such as boundary layers, wakes, and vortices, for example, as well as force coefficients, e.g., drag, lift, moment, while exploiting significantly fewer degrees of freedom compared with classical (finite volume) methods. One extremely promising class of high-order schemes based on the finite element framework are Discontinuous Galerkin (DG, for short) methods. Indeed, the development of DG methods for the numerical approximation of the Euler and Navier-Stokes equations is an extremely exciting research topic which is currently being developed by a number of groups all over the world. Despite the advantages and capabilities of the DG approach, the method is not yet mature and current implementations are subject to strong limitations for its application to large scale industrial problems.  In particular, one of the key issues is the design of efficient strategies for the solution of the system of equations generated by a DG method. In this proposal we aim to develop a new class of multilevel Schwarz-type preconditioners for the high-order DG discretization of two- and three-dimensional compressible fluid flow problems. Here, mesh aggregation will be undertaken based on exploiting a new class of finite element methods, referred to as Composite Finite Elements (CFEs), which are particularly suited to problems characterized by small details in the computational domain or micro-structures. The key idea of CFEs is to exploit general shaped element domains upon which elemental basis functions are only locally piecewise smooth. In particular, an element domain within a CFE may consist of a collection of neighbouring elements present within a standard finite element method, with the basis function of the CFE being constructed as a linear combination of those defined on the standard finite element subdomains. In this way, CFEs offer an ideal mathematical and practical framework within which finite element solutions on (coarse) aggregated meshes may be defined. To date, the application of CFEs has been restricted to standard conforming finite element approximations of simple model problems employing lowest-order (piecewise linear) elements.  In this proposal we aim to develop a thorough mathematical analysis of CFEs within the context of high-order DG methods, including their extension to general unstructured hybrid meshes containing hanging nodes. Here, particular emphasis will be devoted to the design of appropriate aggregation strategies, which allow for the underlying DG CFE method to be employed as a coarse mesh solver within Schwarz-type preconditioning strategies. This research will lead to significant advances in both the theoretical and practical development of high-order DG methods for CFD applications.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.nott.ac.uk                                                                               '>http://www.nott.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

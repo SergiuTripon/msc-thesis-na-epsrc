@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Development of diamond dynodes for the next generation high throughput photon counting detectors
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE014011%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAxNDAxMS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVxPHN0cm9uZz5EZXZlbG9wbWVudCBvZiBkaWFtb25kIGR5bm9kZXMgZm9yIHRoZSBuZXh0IGdlbmVyYXRpb24gaGlnaCB0aHJvdWdocHV0IHBob3RvbiBjb3VudGluZyBkZXRlY3RvcnM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUI8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTMzODc3Jz5NYXksIFByb2Zlc3NvciBQVzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDOjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MzU0NDknPkZveCwgRHIgTjwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUJQ2hlbWlzdHJ5ZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUVVW5pdmVyc2l0eSBvZiBCcmlzdG9sZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ0wMSBNYXJjaCAyMDA3ZGQCAw9kFgICAQ8PFgIfBAUQMjkgRmVicnVhcnkgMjAwOGRkAgUPZBYCAgEPDxYEHwQFBjE5LDUyMh4HVG9vbFRpcAUJMTksNTIyLjAyZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIgT3B0aWNhbCBEZXZpY2VzICZhbXA7IFN1YnN5c3RlbXMAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VBEM8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAxNzc2Mi8xJz5FUC9FMDE3NzYyLzE8L2E+AAAAZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBd4ZVmlzaW9uVGhlIGRpYW1vbmQgZHlub2RlIHRlY2hub2xvZ3kgd2UgcHJvcG9zZSBpcyB0aGUgcHJlY3Vyc29yIHRvIGEgcG90ZW50aWFsIHN0ZXAgY2hhbmdlIGZyb20gdmFjdXVtIHR1YmUgZGV2aWNlcywgcGhvdG9tdWx0aXBsaWVyIHR1YmVzIGFuZCBpbWFnZSBpbnRlbnNpZmllcnMsIHRvd2FyZHMgdGhlIHByb21pc2Ugb2YgbGFyZ2UgYXJlYSwgZmxhdCBwYW5lbCBwaG90b24gY291bnRpbmcgZGV0ZWN0b3IgZGVzaWducyB1dGlsaXNpbmcgbWljcm8tbWFjaGluZWQgMkQgcGl4ZWwgYXJyYXlzOyBhIHJldm9sdXRpb24gYW5hbG9nb3VzIHRvIHRoZSByZXBsYWNlbWVudCBvZiB0aGUgY2F0aG9kZSByYXkgdHViZSAoQ1JUKSB3aXRoIHRvZGF5cydzIGZsYXQgc2NyZWVuIGxpcXVpZCBjcnlzdGFsIGRpc3BsYXlzIChMQ0RzKS5JbXByb3ZlZCBwaG90b24gYW5kIHBhcnRpY2xlIGNvdW50aW5nIGRldGVjdG9yIHN5c3RlbXMgYXJlIGNydWNpYWwgZm9yIGNvbnRpbnVpbmcgdGVjaG5vbG9naWNhbCBwcm9ncmVzcyBpbiB3aWRlIHZhcmlldHkgb2YgZGl2ZXJzZSBhcHBsaWNhdGlvbnMgZnJvbSB0aGUgbGlmZSBzY2llbmNlcyB0byBwYXJ0aWNsZSBwaHlzaWNzLCBlbnZpcm9ubWVudGFsIG1vbml0b3JpbmcgdG8gYXN0cm9ub215LiBUaGUgYWltIG9mIHRoaXMgcHJvamVjdCBpcyB0byBpbnZlc3RpZ2F0ZSB0aGUgcHJvcGVydGllcyBvZiBhcnRpZmljaWFsbHkgZGVwb3NpdGVkIGRpYW1vbmQgYXMgYSBkeW5vZGUgbWF0ZXJpYWwgZm9yIGVsZWN0cm9uIG11bHRpcGxpY2F0aW9uIGluIGhpZ2ggcGVyZm9ybWFuY2UgZGV0ZWN0b3JzLiBQcmV2aW91cyBzdHVkaWVzIHN1Z2dlc3QgdGhhdCBkaWFtb25kIGNvdWxkIGJlIGV4Y2VwdGlvbmFsbHkgd2VsbCBzdWl0ZWQgY2FuZGlkYXRlIGZvciB0aGlzIHJvbGUsIGJ1dCB0aHVzIGZhciBpdHMgcHJvcGVydGllcyBoYXZlIG5vdCBiZWVuIGV4cGxvaXRlZCB0aHVzIGZhciBpbiB0aGlzIGZpZWxkLiBUaGUgb25lLXllYXIgcHJvamVjdCB3aWxsIGJlIGEgY29sbGFib3JhdGlvbiBiZXR3ZWVuIHRoZSBTcGFjZSBSZXNlYXJjaCBDZW50cmUsIFVuaXZlcnNpdHkgb2YgTGVpY2VzdGVyIGFuZCB0aGUgRGVwYXJ0bWVudCBvZiBDaGVtaXN0cnkgYXQgQnJpc3RvbCBVbml2ZXJzaXR5LCBhbmQgaGFzIGEgdG90YWwgZnVsbCBlY29ub21pYyBjb3N0IG9mIDEyMSw0MDAuIE1hbnBvd2VyIHdpbGwgYmUgcHJvdmlkZWQgYnkgYSBQRFJBIHByb2plY3Qgc2NpZW50aXN0IGVtcGxveWVkIGZ1bGx0aW1lIGZvciAxMiBtb250aHMsIHVuZGVyIHRoZSBzdXBlcnZpc2lvbiBvZiB0aGUgUEkgZnJvbSBMZWljZXN0ZXIgYW5kIENvLUlzIGZyb20gQnJpc3RvbCwgYW5kIGFzc2lzdGVkIGJ5IG9uZSBtb250aCBtZWNoYW5pY2FsIHRlY2huaWNpYW4gZWZmb3J0IGF0IExlaWNlc3Rlci4gVGhlIHllYXIgbG9uZyBzY2hlZHVsZSBjb21wcmlzZXMgNSB3b3JrIHBhY2thZ2VzIDotMS4gQSByZXZpZXcgb2YgZXhpc3RpbmcgZGF0YSBvbiBkZXBvc2l0ZWQgZGlhbW9uZCBmaWxtIGNoYXJhY3RlcmlzdGljcywgaWRlbnRpZmljYXRpb24gb2YgbGlrZWx5IGR5bm9kZSBjYW5kaWRhdGVzIChkb3BhbnQgY29uY2VudHJhdGlvbnMsIHByb2Nlc3MgcGFyYW1ldGVycywgZXRjLiwgc3VyZmFjZSBtb2RpZmljYXRpb24pIGFuZCBzaW11bGF0aW9uIGFuZCBtb2RlbGxpbmcgb2YgZHlub2RlIHBlcmZvcm1hbmNlLjIuIEludmVzdGlnYXRpb24gb2YgZGlhbW9uZCBjb2F0aW5nIHRlY2huaXF1ZXMgaW5jbHVkaW5nIENWRCBkZXBvc2l0aW9uIGFuZCBpbmtqZXQgcHJpbnRpbmcgb2YgZGlhbW9uZCBwb3dkZXIgaW4gYSBjb25kdWN0aXZlIG5hbm8tcGFydGljbGUgbWF0cml4LjMuIE1hbnVmYWN0dXJlIG9mIGRpYW1vbmQgY29hdGVkIGR5bm9kZXMgdXNpbmcgYSBwcmVmZXJyZWQgcmFuZ2Ugb2YgcHJvY2VzcyBwYXJhbWV0ZXJzLCBkb3BhbnQgY29uY2VudHJhdGlvbnMsIGFuZCBzdXJmYWNlIG1vZGlmaWNhdGlvbiwgaW5jbHVkaW5nIGludmVzdGlnYXRpb24gb2YgIHRyYW5zcGFyZW50ICBkeW5vZGUgc3RydWN0dXJlcyB1c2luZyBkaWFtb25kIGNvYXRlZCBtZXNoZXMuIEZvbGxvd2luZyBjaGFyYWN0ZXJpemF0aW9uLCBvbmUgcHJvY2VzcyBpdGVyYXRpb24gd2lsbCBiZSB1bmRlcnRha2VuLjQuIE1lYXN1cmVtZW50IG9mIHNlY29uZGFyeSBlbGVjdHJvbiBlbWlzc2lvbiBjaGFyYWN0ZXJpc3RpY3MgKGVtaXNzaW9uIGNvZWZmaWNpZW50LCBlbmVyZ3kgYW5kIGFuZ3VsYXIgZGlzdHJpYnV0aW9uKSBmb3IgdmFyaW91cyBkaWFtb25kIGNvYXRlZCBkeW5vZGUgc2FtcGxlcyBhcyBhIGZ1bmN0aW9uIG9mIGlucHV0IGVsZWN0cm9uIGVuZXJneSBhbmQgYW5nbGUuNS4gUGVyZm9ybWFuY2UgZXZhbHVhdGlvbiBvZiBhIGRpc2NyZXRlIGR5bm9kZSBwaG90b211bHRpcGxpZXIgdHViZSBkZXNpZ25lZCBmb3IsIGFuZCB1c2luZyBkaWFtb25kIGNvYXRlZCBkeW5vZGVzVGhlIGNvbGxhYm9yYXRpb24gd2l0aCBQaG90ZWsgTHRkLiB3aWxsIGVuYWJsZSB0aGUgcHJvamVjdCB0ZWFtIHRvIGRlbW9uc3RyYXRlIGRpYW1vbmQgZHlub2RlIHByb29mLW9mLWNvbmNlcHQgdXNpbmcgYSBwaG90by1tdWx0aXBsaWVyIHR1YmUgc3BlY2lhbGx5IGRlc2lnbmVkIGZvciB0aGlzIHB1cnBvc2UuIFBob3RlayB3aWxsIGNvbnRyaWJ1dGUgaW4ta2luZCBhc3Npc3RhbmNlIHdpdGggUE1UIGRlc2lnbiBhbmQgYXNzZW1ibHkgYW5kIGR5bm9kZSBwZXJmb3JtYW5jZSBkZW1vbnN0cmF0aW9uIGluIHJldHVybiBmb3IgdGhlIGFjYWRlbWljIHBhcnRuZXJzJyBkZXZlbG9wbWVudCBvZiBzdWl0YWJsZSBkaWFtb25kIGNvYXRpbmcgdGVjaG5pcXVlcyBhbmQgYWdyZWVtZW50IHRvIG5lZ290aWF0ZSBhcnJhbmdlbWVudHMgZm9yIHBvc3NpYmxlIGNvbW1lcmNpYWxpemF0aW9uLlRoaXMgcHJvamVjdCBpcyBzeW5lcmdpc3RpYyB3aXRoIGFuIGltbWluZW50IEJhc2ljIHRlY2hub2xvZ3kgIENvbnNvcnRpdW0gQnVpbGRpbmcgIHByb3Bvc2FsIHRvIGVzdGFibGlzaCBhIGRldmVsb3BlciBhbmQgZW5kLXVzZXIgbmV0d29yayBmb3IgdGhlIGRldmVsb3BtZW50IG9mIHJldm9sdXRpb25hcnkgdGVjaG5vbG9naWVzIGZvciBnZW5lcmljIHBob3RvbiBhbmQgY291bnRpbmcgcGFydGljbGUgc2Vuc29yIHN5c3RlbXMuIFRoZSBnb2FsIGlzIHRvIHByb3ZpZGUgc3RlcCBjaGFuZ2UgaW4gZGV0ZWN0b3IgcGVyZm9ybWFuY2UgZW5hYmxpbmcgZ3JvdW5kLWJyYWtpbmcgYXBwbGljYXRpb24gYWNyb3NzIGEgYnJvYWQgcmFuZ2Ugb2YgZGlzY2lwbGluZXMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5icmlzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5icmlzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwMTQwMTEvMQxFUC9FMDE0MDExLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZHFjRqnu8LckVz8fNc7tQJBQ/1n8" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKU4pvcCgLQvN++DAKT/OCVAzuX05Thv4CFbR+hX1L8srSFl5Oc" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E014011/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Development of diamond dynodes for the next generation high throughput photon counting detectors</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=33877'>May, Professor PW</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=35449'>Fox, Dr N</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Chemistry</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bristol</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 March 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">29 February 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="19,522.02" class="DetailValue">19,522</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Optical Devices &amp; Subsystems</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/E017762/1'>EP/E017762/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">VisionThe diamond dynode technology we propose is the precursor to a potential step change from vacuum tube devices, photomultiplier tubes and image intensifiers, towards the promise of large area, flat panel photon counting detector designs utilising micro-machined 2D pixel arrays; a revolution analogous to the replacement of the cathode ray tube (CRT) with todays's flat screen liquid crystal displays (LCDs).Improved photon and particle counting detector systems are crucial for continuing technological progress in wide variety of diverse applications from the life sciences to particle physics, environmental monitoring to astronomy. The aim of this project is to investigate the properties of artificially deposited diamond as a dynode material for electron multiplication in high performance detectors. Previous studies suggest that diamond could be exceptionally well suited candidate for this role, but thus far its properties have not been exploited thus far in this field. The one-year project will be a collaboration between the Space Research Centre, University of Leicester and the Department of Chemistry at Bristol University, and has a total full economic cost of 121,400. Manpower will be provided by a PDRA project scientist employed fulltime for 12 months, under the supervision of the PI from Leicester and Co-Is from Bristol, and assisted by one month mechanical technician effort at Leicester. The year long schedule comprises 5 work packages :-1. A review of existing data on deposited diamond film characteristics, identification of likely dynode candidates (dopant concentrations, process parameters, etc., surface modification) and simulation and modelling of dynode performance.2. Investigation of diamond coating techniques including CVD deposition and inkjet printing of diamond powder in a conductive nano-particle matrix.3. Manufacture of diamond coated dynodes using a preferred range of process parameters, dopant concentrations, and surface modification, including investigation of  transparent  dynode structures using diamond coated meshes. Following characterization, one process iteration will be undertaken.4. Measurement of secondary electron emission characteristics (emission coefficient, energy and angular distribution) for various diamond coated dynode samples as a function of input electron energy and angle.5. Performance evaluation of a discrete dynode photomultiplier tube designed for, and using diamond coated dynodesThe collaboration with Photek Ltd. will enable the project team to demonstrate diamond dynode proof-of-concept using a photo-multiplier tube specially designed for this purpose. Photek will contribute in-kind assistance with PMT design and assembly and dynode performance demonstration in return for the academic partners' development of suitable diamond coating techniques and agreement to negotiate arrangements for possible commercialization.This project is synergistic with an imminent Basic technology  Consortium Building  proposal to establish a developer and end-user network for the development of revolutionary technologies for generic photon and counting particle sensor systems. The goal is to provide step change in detector performance enabling ground-braking application across a broad range of disciplines.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bris.ac.uk                                                                               '>http://www.bris.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

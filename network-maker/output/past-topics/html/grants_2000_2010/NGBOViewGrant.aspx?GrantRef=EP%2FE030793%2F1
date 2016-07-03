@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Understanding Linear and Non-Linear Processing in Early Vision: An Extended Kalman Filter Approach.
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE030793%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAzMDc5My8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAV0PHN0cm9uZz5VbmRlcnN0YW5kaW5nIExpbmVhciBhbmQgTm9uLUxpbmVhciBQcm9jZXNzaW5nIGluIEVhcmx5IFZpc2lvbjogQW4gRXh0ZW5kZWQgS2FsbWFuIEZpbHRlciBBcHByb2FjaC48L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTkxNjAnPkxhbmdsZXksIERyIEs8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAzs8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0zNDg1Jz5CZXgsIERyIFBKPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQpQc3ljaG9sb2d5ZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUDVUNMZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ0xNiBBcHJpbCAyMDA3ZGQCAw9kFgICAQ8PFgIfBAUQMTUgRGVjZW1iZXIgMjAxMGRkAgUPZBYCAgEPDxYEHwQFBzMxNyw5NTceB1Rvb2xUaXAFCjMxNyw5NTYuNjhkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAh9WaXNpb24gJmFtcDsgU2Vuc2VzIC0gSUNUIGFwcGwuAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIOQ29tbXVuaWNhdGlvbnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBaUNSWYgeW91IHdhbmRlciBpbnRvIGFuIGVsZWN0cmljYWwgcmV0YWlsZXIgYW5kIGluc3BlY3QgdGhlIGxhdGVzdCBIaSBEZWZpbml0aW9uIHBsYXNtYSB0ZWxldmlzaW9uIHNldHMgeW91IHdpbGwgbGlrZWx5IGJlIGFtYXplZCBhdCB0aGUgZmlkZWxpdHkgb2YgdGhlIHBpY3R1cmVzIG9uIGRpc3BsYXkuIFlvdSBtYXkgYmUgc28gaW1wcmVzc2VkIHdpdGggdGhlIHF1YWxpdHkgdGhhdCB5b3UgYnV5IG9uZSBmb3IgaG9tZSB2aWV3aW5nLiAgV2hlbiB5b3Ugc3dpdGNoIG9uIHRoZSAgdGVsZXZpc2lvbiBzZXQgYXQgaG9tZSwgaG93ZXZlciwgeW91IGFyZSBsaWtlbHkgdG8gYmUgZGlzYXBwb2ludGVkLiBUaGUgcmVhc29uIGlzIGJlY2F1c2UgdGhlIHRlbGV2aXNpb24gc2lnbmFscyBjdXJyZW50bHkgZW1pdHRlZCBieSB0cmFuc21pc3Npb24gc3RhdGlvbnMgZG8gbm90IHN1cHBvcnQgaGlnaCBkZWZpbml0aW9uIHRlbGV2aXNpb24uIFRoZSBxdWFsaXR5IG9mIHRoZSB0cmFuc21pdHRlZCBzaWduYWxzIGlzIHRvbyBsb3cuIFlvdXIgYnJhaW4gaXMgYWJsZSB0byBkZXRlY3QgdGhlIHJlZ2lvbnMgd2hlcmUgdGhlIHJlY2VpdmVkICBzaWduYWwncyBxdWFsaXR5IGlzIGxvdyB2ZXJ5IGVhc2lseS4gVGhlc2UgcmVnaW9ucyBvZiB0aGUgdGVsZXZpc2lvbiBwaWN0dXJlIGFyZSBsaWtlbHkgdG8gaW5jbHVkZSBicmlnaHQgYXJlYXMgb2YgdGhlIHNjcmVlbiBpbiB3aGljaCB5b3UgbWlnaHQgb2JzZXJ2ZSBzdHJhbmdlIGNvbnRvdXJzIG9mIGNvbnN0YW50IGJyaWdodG5lc3M6IGtub3duIGFzIGEgcXVhbnRpemF0aW9uIGVycm9yLCBvciwgaW4gaGlnaGx5IGRldGFpbGVkIGFyZWFzIG9mIHRoZSBzY3JlZW4sIHRoZSBicmlnaHRuZXNzIG9mIGluZGl2aWR1YWwgZWxlbWVudHMgb2YgdGhlIHNjcmVlbiBiZWNhdXNlIHRoZSByZXNvbHV0aW9uIG9mIHRoZSB0cmFuc21pdHRlZCB0ZWxldmlzaW9uIHNpZ25hbCBpcyB0b28gbG93LiBZb3UgbWlnaHQgYXNrIHdoeSB5b3UgaGF2ZSBuZXZlciBub3RpY2VkIHRoZXNlIGVmZmVjdHMgYmVmb3JlPyBPbmUgcmVhc29uIGlzIGJlY2F1c2UgdGhlIGxhdGVzdCB0ZWxldmlzaW9ucyBvcGVyYXRlIGF0IG11Y2ggaGlnaGVyIG1lYW4gbHVtaW5hbmNlIGxldmVscyB0aGF0IHRoZSBvbGRlciBkZXZpY2VzLCBhbmQgdGhlIGFiaWxpdHkgb2Ygb3VyIGJyYWlucyB0byBkZXRlY3QgdGhlIGRldGFpbCBwcmVzZW50IGluIHZpc3VhbGl6ZWQgaW1hZ2VzIGRlcGVuZHMgdXBvbiBtZWFuIGx1bWluYW5jZS4gQW5vdGhlciByZWFzb24gaXMgdGhhdCB2aXN1YWwgcGVyY2VwdGlvbiBpcyBlc3BlY2lhbGx5IHN1aXRlZCB0byBwcm9jZXNzaW5nIHBpY3R1cmVzIGF0IGEgc3BlY2lmaWMgbGV2ZWwgb2YgZGV0YWlsIGJ1dCBjYW4gY2hhbmdlIGl0cyBzZXR0aW5ncyBhY2NvcmRpbmcgdG8gdGhlIGltYWdlcyB0aGF0IHdlIHNlZS4gIFRoZSBwdXJwb3NlIG9mIHRoaXMgcHJvcG9zYWwgaXMgdG8gaW52ZXN0aWdhdGUgYW5kIHF1YW50aWZ5IHRob3NlIGNoYW5nZXMgaW4gdmlzdWFsIGRldGFpbCBhbmQgdG8gYnVpbGQgYSBtYXRoZW1hdGljYWwgbW9kZWwgb2YgdGhlIHZpc3VhbCBzeXN0ZW0gaW4gb3JkZXIgdGhhdCB3ZSBtYXkgYmUgYWJsZSB0byBiZXR0ZXIgcHJlZGljdCB0aGUgcmVzcG9uc2Ugb2YgdmlzdWFsIHBlcmNlcHRpb24gdG8gaXRzIGltbWVkaWF0ZSBzdXJyb3VuZGluZ3MuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwMzA3OTMvMQxFUC9FMDMwNzkzLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZLZGndMFBUeAybiShJDlAjGxekNy" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLK7K78CQLQvN++DAKT/OCVA7HC+hizR6L9eY6X8fukDLqUxCL4" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E030793/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Understanding Linear and Non-Linear Processing in Early Vision: An Extended Kalman Filter Approach.</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=9160'>Langley, Dr K</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-3485'>Bex, Dr PJ</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Psychology</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">UCL</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">16 April 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">15 December 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="317,956.68" class="DetailValue">317,957</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Vision &amp; Senses - ICT appl.</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Communications</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">If you wander into an electrical retailer and inspect the latest Hi Definition plasma television sets you will likely be amazed at the fidelity of the pictures on display. You may be so impressed with the quality that you buy one for home viewing.  When you switch on the  television set at home, however, you are likely to be disappointed. The reason is because the television signals currently emitted by transmission stations do not support high definition television. The quality of the transmitted signals is too low. Your brain is able to detect the regions where the received  signal's quality is low very easily. These regions of the television picture are likely to include bright areas of the screen in which you might observe strange contours of constant brightness: known as a quantization error, or, in highly detailed areas of the screen, the brightness of individual elements of the screen because the resolution of the transmitted television signal is too low. You might ask why you have never noticed these effects before? One reason is because the latest televisions operate at much higher mean luminance levels that the older devices, and the ability of our brains to detect the detail present in visualized images depends upon mean luminance. Another reason is that visual perception is especially suited to processing pictures at a specific level of detail but can change its settings according to the images that we see.  The purpose of this proposal is to investigate and quantify those changes in visual detail and to build a mathematical model of the visual system in order that we may be able to better predict the response of visual perception to its immediate surroundings.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

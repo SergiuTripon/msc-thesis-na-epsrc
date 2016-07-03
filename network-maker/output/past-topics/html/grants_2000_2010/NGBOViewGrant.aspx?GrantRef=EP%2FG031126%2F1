@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	REFactoring and TESTing ('REFTEST') Network
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG031126%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzAzMTEyNi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU8PHN0cm9uZz5SRUZhY3RvcmluZyBhbmQgVEVTVGluZyAoJ1JFRlRFU1QnKSBOZXR3b3JrPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVBPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tODcwNjInPkNvdW5zZWxsLCBEciBTSjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDRTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NjU1NzMnPkhpZXJvbnMsIFByb2Zlc3NvciBSPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VA2E8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwNjA0Jz5GcmF1bmhvZmVyIEluc3RpdHV0IChNdWx0aXBsZSwgR3JvdXBlZCk8L2E+RDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0xMTA0OSc+UXVhbnRlbCBMdGQ8L2E+UDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDEzMDQnPlJveWFsIEJhbmsgb2YgU2NvdGxhbmQ8L2E+ZAICD2QWAmYPFQNWPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTExMDY1Jz5UZXN0aW5nIFRlY2hub2xvZ2llcyBJU1QgR21iSDwvYT4AAGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUnSW5mb3JtYXRpb24gU3lzdGVtcyBDb21wdXRpbmcgYW5kIE1hdGhzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUYQnJ1bmVsIFVuaXZlcnNpdHkgTG9uZG9uZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUHTmV0d29ya2RkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDDA5IEp1bmUgMjAwOWRkAgMPZBYCAgEPDxYCHwQFDDA4IEp1bmUgMjAxMmRkAgUPZBYCAgEPDxYEHwQFBjUyLDg3OB4HVG9vbFRpcAUJNTIsODc3Ljg2ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIUU29mdHdhcmUgRW5naW5lZXJpbmcAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhhJbmZvcm1hdGlvbiBUZWNobm9sb2dpZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMjEgT2N0IDIwMDhkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFIklDVCBQcmlvcml0c2F0aW9uIFBhbmVsIChPY3QgMjAwOCkfAwUbVmlld1BhbmVsLmFzcHg/UGFuZWxJZD00NzI5ZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFuhxDb21wdXRlciBzeXN0ZW1zIG9mIGFsbCB0eXBlcyB0ZW5kIHRvIGRldGVyaW9yYXRlIGluIHF1YWxpdHkgYXMgdGhleSBhZ2UgYW5kIGdyb3cgbGFyZ2VyLiBBcyBtb3JlIGFuZCBtb3JlIGNoYW5nZXMgYXJlIGFwcGxpZWQgdG8gYSBzeXN0ZW0gYnkgZGV2ZWxvcGVycyBhcyBwYXJ0IG9mIHN5c3RlbSBtYWludGVuYW5jZSAoZWl0aGVyIHRocm91Z2ggdGhlIG9jY3VycmVuY2Ugb2YgYSBmYXVsdCBvciBjaGFuZ2UgcmVxdWVzdHMgYnkgdGhlIHVzZXJzKSB0aGUgbmV0IGVmZmVjdCBpcyB1c3VhbGx5IHRvIHJlbmRlciB0aGUgc3lzdGVtIG1vcmUgZGlmZmljdWx0IHRvIG1haW50YWluIGFuZCwgd2l0aCBpdCwgdGhlIHJpc2sgb2YgaW52ZXN0aW5nIG1vcmUgZmF1bHRzIGluIHRoZSBzYW1lIHN5c3RlbS4gVGhlIGRlY2xpbmUgb2YgYSBzeXN0ZW0gaW4gdGhpcyB3YXkgaGFzIGNvbWUgdG8gYmUga25vd24gYXMgJ2NvZGUgZGVjYXknLiBBIHRlY2huaXF1ZSB0aGF0IGF0dGVtcHRzIHRvIHJldmVyc2UgdGhhdCBkZWNheSBpcyByZWZhY3RvcmluZy4gUmVmYWN0b3JpbmcgcmVmZXJzIHRvIGEgcHJvY2VzcyB3aGVyZSBhIHN5c3RlbSBpcyBjaGFuZ2VkIGluIHN1Y2ggYSB3YXkgdGhhdCB0aGUgc3lzdGVtIGRvZXMgbm90IGNoYW5nZSAnd2hhdCcgaXQgZG9lcywgaXQganVzdCBjaGFuZ2VzIHRoZSAnd2F5JyBpdCBkb2VzIGl0LiBGb3IgZXhhbXBsZSwgb25lIG9mIHRoZSBzaW1wbGVzdCByZWZhY3RvcmluZ3MgdGhhdCBhIGRldmVsb3BlciBjYW4gZG8gaXMgdG8gcmVuYW1lIGEgY29kZSBhcnRlZmFjdCBzbyB0aGF0IHRoZSBwdXJwb3NlIG9mIHRoYXQgYXJ0ZWZhY3QgaXMgbWFkZSBjbGVhcmVyLiBBbm90aGVyIHJlZmFjdG9yaW5nIG1heSBzcGxpdCBhbiBleGNlc3NpdmVseSBsYXJnZSBjb2RlIGFydGVmYWN0IGludG8gdHdvIHNvIHRoYXQgdGhlIHN5c3RlbSBpcyBtb3JlIG1hbmFnZWFibGUgYXMgYSByZXN1bHQuIFRoZSBiZW5lZml0cyBvZiByZWZhY3RvcmluZyB0aGVyZWZvcmUgaW5jbHVkZSBtb3JlIHVuZGVyc3RhbmRhYmxlIGNvZGUsIGJ1dCwgbW9yZSBzaWduaWZpY2FudGx5LCBpbiBhIGZhciBlYXNpZXIgam9iIGluIHRoZSBmdXR1cmUgZm9yIGRldmVsb3BlcnMuIE1hbnkgZGlmZmVyZW50IGRldmVsb3BlcnMgbWF5IG5lZWQgdG8gbG9vayBhdCBhbmQgY2hhbmdlIHRoYXQgY29kZSBzbyBpdCBtYWtlIHNlbnNlIHRvIG1ha2UgdGhhdCBjb2RlIGFzIGVhc2lseSB1bmRlcnN0b29kIGFzIHBvc3NpYmxlLiAgQWZ0ZXIgYW55IGNoYW5nZSAob3Igc2V0IG9mIGNoYW5nZXMpIGlzIG1hZGUgYnkgYSBkZXZlbG9wZXIgdG8gYSBzeXN0ZW0sIGl0IGhhcyB0byBiZSB0ZXN0ZWQgdG8gZW5zdXJlIHRoYXQgdGhlIGNoYW5nZSBoYXMgYmVlbiBhcHBsaWVkIGNvcnJlY3RseTsgYXMgaW1wb3J0YW50IGlzIHRvIGVuc3VyZSB0aGF0IHRoZSBzYW1lIGNoYW5nZSBoYXMgbm90IGFkdmVyc2VseSBhZmZlY3RlZCBvdGhlciBwYXJ0cyBvZiB0aGUgc3lzdGVtLiBPbmUgZG93biBzaWRlIG9mIGEgZGVjYXlpbmcgYW5kIGdyb3dpbmcgc3lzdGVtIGlzIHRoYXQgbW9yZSBhbmQgbW9yZSB0ZXN0cyBuZWVkIHRvIGJlIGFwcGxpZWQgYWZ0ZXIgYSBjaGFuZ2UgaGFzIGJlZW4gbWFkZSBieSBhIGRldmVsb3BlciBhcyB0aGUgc3lzdGVtIGZyYWdtZW50cy4gVGhpcyBwbGFjZXMgYSBidXJkZW4gb24gdGhlIGRldmVsb3Blci4gTWFraW5nIGEgY2hhbmdlIHRvIGNvZGUgaXMgdGltZS1jb25zdW1pbmcgZW5vdWdoOyBoYXZpbmcgdG8gdGVzdCB0aGUgc3lzdGVtIGFzIHdlbGwgZG91YmxlcyB0aGUgZWZmb3J0IHJlcXVpcmVkLiBUaGUgYmVuZWZpdHMgb2YgcmVmYWN0b3JpbmcgYXJlLCBhcyB3ZSBoYXZlIHNhaWQsIG1vcmUgdW5kZXJzdGFuZGFibGUgYW5kIG1vcmUgbWFuYWdlYWJsZSBjb2RlLiBJZiB0aGF0IGlzIGFjaGlldmVkLCB0aGVuIHRoZXJlIG5hdHVyYWxseSBmb2xsb3dzIGEgcmVkdWN0aW9uIGluIHRoZSB0ZXN0aW5nIGJ1cmRlbiwgc2luY2UgY2hhbmdlcyBhcmUgbWFkZSBtb3JlIGVmZmVjdGl2ZWx5OyBtb3Jlb3ZlciwgdGhlcmUgYXJlIGxlc3Mgb3Bwb3J0dW5pdGllcyBmb3IgJ3NpZGUtZWZmZWN0cycgaW4gb3RoZXIgcGFydHMgb2YgdGhlIHN5c3RlbSBjYXVzaW5nIGZhdWx0czsgZmluYWxseSB0aGVyZSBpcyB0aGUgYWRkZWQgYmVuZWZpdCBvZiBhIGdlbmVyYWwgJ3N0YWJpbGl0eScgdG8gdGhlIHN5c3RlbSBpbiBzaXplIGFuZCBtYW5hZ2VhYmlsaXR5IGFzIGl0IGV2b2x2ZXMgb3ZlciB0aW1lLiBBbHRob3VnaCB3ZSBrbm93IG11Y2ggYWJvdXQgcmVmYWN0b3JpbmcgYW5kIHRlc3RpbmcgYXMgaW5kZXBlbmRlbnQgYWN0aXZpdGllcywgdGhlcmUgYXJlIG1hbnkgb3BlbiByZXNlYXJjaCBpc3N1ZXMgcmVsYXRlZCB0byB0aGUgbGluayBiZXR3ZWVuIHRoZSB0d28gYXJlYXMuIEluIGZhY3QsIHRoZSBwcm9ibGVtIGhhcyB0dXJuZWQgZnVsbC1jaXJjbGUuIFRoZSBjb2RlIHRoYXQgdGVzdHMgdGhlIHN5c3RlbSAodGVzdHMgYXJlIG9mdGVuIGNvbXB1dGVyIHByb2dyYW1zIGFzIHdlbGwpIGlzIGJlY29taW5nIG1vcmUgZGlmZmljdWx0IHRvIG1haW50YWluIHRoYW4gdGhlIGNvZGUgaXQgYWN0dWFsbHkgdGVzdHMhIEV2ZW4gbW9yZSBpbnRlcmVzdGluZ2x5LCB3ZSBoYXZlIGJlZW4gc3VjY2Vzc2Z1bGx5IGFwcGx5aW5nIHJlZmFjdG9yaW5ncyBpbiB0aGUgcmVjZW50IHBhc3QgdG8gaW5mb3JtYXRpb24gc3lzdGVtcyB1c2VkIGluIGV2ZXJ5IGRheSBsaWZlLiBUaGVyZSBpcyBhIHZhc3QgYW1vdW50IG9mIG9wcG9ydHVuaXR5IGZvciBhcHBseWluZyByZWZhY3RvcmluZyBwcmluY2lwbGVzIHRvIHRoZSB0ZXN0IGNvZGUgaXRzZWxmLCBpLmUuLCBub3Qgb25seSB0byB0aGUgYXBwbGljYXRpb24gY29kZSwgYnV0IHRoZSBjb2RlIHRoYXQgdGVzdHMgdGhhdCBhcHBsaWNhdGlvbi5UaGUgcHVycG9zZSBvZiB0aGUgcHJvcG9zZWQgcmVzZWFyY2ggaXMgdG8gaW52ZXN0aWdhdGUgdGhlIGxpbmsgYmV0d2VlbiB0aGVzZSB0d28gYXJlYXMgZnJvbSB0aHJlZSBwZXJzcGVjdGl2ZXMuIEZpcnN0bHksIG9wcG9ydHVuaXRpZXMgZm9yLCBhbmQgYmVuZWZpdHMgb2YsIHJlZmFjdG9yaW5nIG9mIHRoZSB0ZXN0IGNvZGUgYXMganVzdCBtZW50aW9uZWQ7IHNlY29uZGx5LCB0aGUgdGhlb3JldGljYWwgYXNwZWN0cyBvZiB0aGUgbGluayBiZXR3ZWVuIHJlZmFjdG9yaW5nIGFuZCB0ZXN0aW5nIC0gc2luY2UgYWxsIHNvdW5kIHByYWN0aWNhbCB3b3JrIHJlbGllcyBvbiBhbiBlcXVhbGx5IHNvdW5kIHRoZW9yZXRpY2FsIGJhc2lzLiBGb3IgZXhhbXBsZSwgYXJlIHNvbWUgcmVmYWN0b3JpbmdzIG1vcmUgJ2NvbXBsZXgnIHRoYW4gb3RoZXJzIGFuZCwgaWYgc28sIGJ5IGhvdyBtdWNoPyBUaGlyZGx5LCBjYW4gd2UgY29sbGVjdCAnZW1waXJpY2FsJyBkYXRhIGZyb20gcmVhbC13b3JsZCBzeXN0ZW1zIHRvIGRldGVybWluZSB0aGUgZXh0ZW50IG9mIHRoZSBiZW5lZml0cyBvZiByZWZhY3RvcmluZyBib3RoIGFwcGxpY2F0aW9ucyBhbmQgdGVzdCBjb2RlPyBUaGVzZSBhcmUgdGhlIHJlc2VhcmNoIHF1ZXN0aW9ucyB0aGF0IHRoZSBSRUZURVNUIE5ldHdvcmsgd2lsbCBhZGRyZXNzIGFuZCBzdW1tYXJpc2VzIHRoZSByZXNlYXJjaC5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzAzMTEyNi8xDEVQL0cwMzExMjYvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkKnUJd2vCiJ5WUZgF5u0pw0LxLpY=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK44NriDwLQvN++DAKT/OCVA51fKHZ/SoG7tv2DMHf2jUZMciy+" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G031126/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>REFactoring and TESTing ('REFTEST') Network</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-87062'>Counsell, Dr SJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=65573'>Hierons, Professor R</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000604'>Fraunhofer Institut (Multiple, Grouped)</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-11049'>Quantel Ltd</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001304'>Royal Bank of Scotland</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-11065'>Testing Technologies IST GmbH</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Information Systems Computing and Maths</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Brunel University London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Network</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">09 June 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">08 June 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="52,877.86" class="DetailValue">52,878</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Software Engineering</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>21 Oct 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4729">ICT Prioritsation Panel (Oct 2008)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Computer systems of all types tend to deteriorate in quality as they age and grow larger. As more and more changes are applied to a system by developers as part of system maintenance (either through the occurrence of a fault or change requests by the users) the net effect is usually to render the system more difficult to maintain and, with it, the risk of investing more faults in the same system. The decline of a system in this way has come to be known as 'code decay'. A technique that attempts to reverse that decay is refactoring. Refactoring refers to a process where a system is changed in such a way that the system does not change 'what' it does, it just changes the 'way' it does it. For example, one of the simplest refactorings that a developer can do is to rename a code artefact so that the purpose of that artefact is made clearer. Another refactoring may split an excessively large code artefact into two so that the system is more manageable as a result. The benefits of refactoring therefore include more understandable code, but, more significantly, in a far easier job in the future for developers. Many different developers may need to look at and change that code so it make sense to make that code as easily understood as possible.  After any change (or set of changes) is made by a developer to a system, it has to be tested to ensure that the change has been applied correctly; as important is to ensure that the same change has not adversely affected other parts of the system. One down side of a decaying and growing system is that more and more tests need to be applied after a change has been made by a developer as the system fragments. This places a burden on the developer. Making a change to code is time-consuming enough; having to test the system as well doubles the effort required. The benefits of refactoring are, as we have said, more understandable and more manageable code. If that is achieved, then there naturally follows a reduction in the testing burden, since changes are made more effectively; moreover, there are less opportunities for 'side-effects' in other parts of the system causing faults; finally there is the added benefit of a general 'stability' to the system in size and manageability as it evolves over time. Although we know much about refactoring and testing as independent activities, there are many open research issues related to the link between the two areas. In fact, the problem has turned full-circle. The code that tests the system (tests are often computer programs as well) is becoming more difficult to maintain than the code it actually tests! Even more interestingly, we have been successfully applying refactorings in the recent past to information systems used in every day life. There is a vast amount of opportunity for applying refactoring principles to the test code itself, i.e., not only to the application code, but the code that tests that application.The purpose of the proposed research is to investigate the link between these two areas from three perspectives. Firstly, opportunities for, and benefits of, refactoring of the test code as just mentioned; secondly, the theoretical aspects of the link between refactoring and testing - since all sound practical work relies on an equally sound theoretical basis. For example, are some refactorings more 'complex' than others and, if so, by how much? Thirdly, can we collect 'empirical' data from real-world systems to determine the extent of the benefits of refactoring both applications and test code? These are the research questions that the REFTEST Network will address and summarises the research.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

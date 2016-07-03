@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Numerical Simulation of Rotating Stall and Surge for the Determination of Dynamic Loads and Blade Response in Aero-engine Core Compressors
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF001789%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAwMTc4OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWbATxzdHJvbmc+TnVtZXJpY2FsIFNpbXVsYXRpb24gb2YgUm90YXRpbmcgU3RhbGwgYW5kIFN1cmdlIGZvciB0aGUgRGV0ZXJtaW5hdGlvbiBvZiBEeW5hbWljIExvYWRzIGFuZCBCbGFkZSBSZXNwb25zZSBpbiBBZXJvLWVuZ2luZSBDb3JlIENvbXByZXNzb3JzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAU+PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01MzAzMCc+VmFoZGF0aSwgRHIgTTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDRDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9ODAxNSc+SW1yZWd1biwgUHJvZmVzc29yIE08L2E+RTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MzY3Mic+Q3VtcHN0eSwgUHJvZmVzc29yIE5BPC9hPgBkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDSTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDEyOTQnPlJvbGxzLVJveWNlIFBsYzwvYT4AAGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUeRGVwdCBvZiBNZWNoYW5pY2FsIEVuZ2luZWVyaW5nZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUXSW1wZXJpYWwgQ29sbGVnZSBMb25kb25kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDTAxIEFwcmlsIDIwMDhkZAIDD2QWAgIBDw8WAh8EBQ0zMSBNYXJjaCAyMDExZGQCBQ9kFgICAQ8PFgQfBAUHMzM1LDc5Mh4HVG9vbFRpcAUKMzM1LDc5MS43MWRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCDEFlcm9keW5hbWljcwBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCHlRyYW5zcG9ydCBTeXN0ZW1zIGFuZCBWZWhpY2xlcx1BZXJvc3BhY2UsIERlZmVuY2UgYW5kIE1hcmluZWQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfBwIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzIxIEp1biAyMDA3ZGQCAQ9kFgQCAQ8PFgIfAmhkZAIDDw8WAh8EBSBFbmdpbmVlcmluZyBTY2llbmNlIChGbG93KSBQYW5lbGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAXSC0Flcm8tZW5naW5lIGNvbXByZXNzb3JzIGRlbGl2ZXIgYSBsYXJnZSBxdWFudGl0eSBvZiBhaXIgYXQgaGlnaCBwcmVzc3VyZS4gRnJvbSBhbiBlZmZpY2llbmN5IHZpZXdwb2ludCwgaXQgaXMgZGVzaXJhYmxlIHRvIG9wZXJhdGUgdGhlbSBhdCB0aGUgaGlnaGVzdCBwb3NzaWJsZSBwcmVzc3VyZSByYXRpb3MgYnV0IHN1Y2ggb3BlcmF0aW5nIHBvaW50cyBhcmUgaW5oZXJlbnRseSB1bnN0YWJsZSBiZWNhdXNlIG9mIHRoZWlyIGNsb3NlIHByb3hpbWl0eSB0byB1bmRlc2lyYWJsZSBhZXJvZHluYW1pYyBwaGVub21lbmEgb2Ygc3RhbGwgYW5kIHN1cmdlLiBSb3RhdGluZyBzdGFsbCBpcyBhIGxvY2FsICBpbnN0YWJpbGl0eSB3aGVyZSByZWR1Y2VkIGZsb3cgcmF0ZSBnaXZlcyByaXNlIHRvIGZsb3cgc2VwYXJhdGlvbiBhbmQgcmVzdWx0cyBpbiB0aGUgZm9ybWF0aW9uIG9mIHN0YWxsIGNlbGxzLiBUaGVzZSBjZWxscyAgYmVnaW4gdG8gcm90YXRlIGFyb3VuZCB0aGUgYW5udWx1cyBhbmQgaGl0IHRoZSBibGFkZXMsIHRodXMgY2F1c2luZyBoaWdoIHZpYnJhdG9yeSBsb2Fkcy4gU3VyZ2UgaXMgYSBnbG9iYWwgaW5zdGFiaWxpdHkgaW4gd2hpY2ggZmxvdyByZXZlcnNhbCBvY2N1cnMgdGhyb3VnaG91dCB0aGUgbWFjaGluZSwgY2F1c2luZyAgaGlnaCB0cmFuc2llbnQgc3RyZXNzZXMgaW4gdGhlIGJsYWRpbmcuIERlZmljaWVuY2llcyBpbiB1bmRlcnN0YW5kaW5nIHRoZSBleGFjdCBtZWNoYW5pc21zIGFuZCBhIGxhY2sgb2YgbW9kZWxsaW5nIG1ldGhvZG9sb2d5IHByZXZlbnQgdGhlIGRldGVybWluYXRpb24gb2YgdGhlIGR5bmFtaWMgbG9hZHMgYW5kIHRoZSBlbnN1aW5nIGJsYWRlIHJlc3BvbnNlLiBUaGVyZWZvcmUsIGN1cnJlbnQgZGVzaWducyBhcmUgYmFzZWQgb24gc2FmZSBtYXJnaW5zIHdoZXJlIHRoZSBibGFkZXJvdyBzcGFjaW5nIGlzIG5vdCBvcHRpbXVtLiBVc2luZyBhbiBhZHZhbmNlZCBjb21wdXRhdGlvbmFsIG1ldGhvZCwgaXQgaXMgcHJvcG9zZWQgdG8gYnVpbGQgYSBsYXJnZS1zY2FsZSAgbW9kZWwgb2YgYSB0eXBpY2FsIGluZHVzdHJpYWwgY29yZS1jb21wcmVzc29yIHdoaWNoIGhhcyBiZWVuIHRoZSBzdWJqZWN0IG9mIHByZXZpb3VzIHN0dWRpZXMgYnkgdGhlIHByb3Bvc2VycyBhbmQgZm9yIHdoaWNoIGV4cGVyaW1lbnRhbCBkYXRhIGFyZSBhdmFpbGFibGUuIFRoZSBhaW0gb2YgdGhlIHByb2plY3QgaXMgbm90IG9ubHkgdG8gdW5kZXJzdGFuZCB0aGUgcm90YXRpbmcgc3RhbGwgYW5kIHN1cmdlIG1lY2hhbmlzbXMgYW5kIHRoZSBsaW5rcyBiZXR3ZWVuIHRoZW0sIGJ1dCBhbHNvIHRvIHByb3ZlIHRoZSBmZWFzaWJpbGl0eSBvZiB0aGUgbGFyZ2Utc2NhbGUgbW9kZWxsaW5nIGFwcHJvYWNoIGFzIGEgZGVzaWduIHRvb2wuIEEgZnVydGhlciBvYmplY3RpdmUgaXMgdGhlIGludmVzdGlnYXRpb24gb2YgcmVjb3ZlcnkgbWVjaGFuaXNtcyBmcm9tIHJvdGF0aW5nIHN0YWxsIGFuZCBzdXJnZS4uZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5pbXBlcmlhbC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5pbXBlcmlhbC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMDE3ODkvMQxFUC9GMDAxNzg5LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZLdaFAFcAXdx/4QaCNyqI9eFVD4f" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLdhIj3CQLQvN++DAKT/OCVA1Cx9TuVdqhID9UrZ3V0k+HV7Yyh" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F001789/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Numerical Simulation of Rotating Stall and Surge for the Determination of Dynamic Loads and Blade Response in Aero-engine Core Compressors</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=53030'>Vahdati, Dr M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=8015'>Imregun, Professor M</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=3672'>Cumpsty, Professor NA</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001294'>Rolls-Royce Plc</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Dept of Mechanical Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Imperial College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="335,791.71" class="DetailValue">335,792</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Aerodynamics</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Transport Systems and Vehicles</td>
+                                    <td class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>21 Jun 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Engineering Science (Flow) Panel</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Aero-engine compressors deliver a large quantity of air at high pressure. From an efficiency viewpoint, it is desirable to operate them at the highest possible pressure ratios but such operating points are inherently unstable because of their close proximity to undesirable aerodynamic phenomena of stall and surge. Rotating stall is a local  instability where reduced flow rate gives rise to flow separation and results in the formation of stall cells. These cells  begin to rotate around the annulus and hit the blades, thus causing high vibratory loads. Surge is a global instability in which flow reversal occurs throughout the machine, causing  high transient stresses in the blading. Deficiencies in understanding the exact mechanisms and a lack of modelling methodology prevent the determination of the dynamic loads and the ensuing blade response. Therefore, current designs are based on safe margins where the bladerow spacing is not optimum. Using an advanced computational method, it is proposed to build a large-scale  model of a typical industrial core-compressor which has been the subject of previous studies by the proposers and for which experimental data are available. The aim of the project is not only to understand the rotating stall and surge mechanisms and the links between them, but also to prove the feasibility of the large-scale modelling approach as a design tool. A further objective is the investigation of recovery mechanisms from rotating stall and surge..</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.imperial.ac.uk                                                                           '>http://www.imperial.ac.uk                                                                           </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

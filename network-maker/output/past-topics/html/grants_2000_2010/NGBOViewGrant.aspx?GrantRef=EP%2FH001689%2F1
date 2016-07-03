@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Architectural and Micro-architectural Countermeasures against Physical Attack
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fH001689%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSDAwMTY4OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVePHN0cm9uZz5BcmNoaXRlY3R1cmFsIGFuZCBNaWNyby1hcmNoaXRlY3R1cmFsIENvdW50ZXJtZWFzdXJlcyBhZ2FpbnN0IFBoeXNpY2FsIEF0dGFjazwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTEyMjMwJz5QYWdlLCBEciBEPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNAPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTc0MTAxJz5Pc3dhbGQsIERyIE1FPC9hPkM8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTc4ODQ1Jz5TbWFydCwgUHJvZmVzc29yIE48L2E+AGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8HAgIWBAIBD2QWAmYPFQM8PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTk1MjMnPkFJU1Q8L2E+UjxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS0xMjczOSc+Q3J5cHRvZ3JhcGh5IFJlc2VhcmNoIEluYzwvYT5CPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTgxNDQnPlNpLVZlbnR1cmU8L2E+ZAICD2QWAmYPFQNAPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTY1MzcnPlhNT1MgTHRkPC9hPgAAZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRBDb21wdXRlciBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUVVW5pdmVyc2l0eSBvZiBCcmlzdG9sZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBPY3RvYmVyIDIwMDlkZAIDD2QWAgIBDw8WAh8EBQ0zMSBNYXJjaCAyMDE0ZGQCBQ9kFgICAQ8PFgQfBAUHODIzLDM5Nh4HVG9vbFRpcAUKODIzLDM5Ni4wNWRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCIEVsZWN0cm9uaWMgRGV2aWNlcyAmYW1wOyBTdWJzeXMuAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIYSW5mb3JtYXRpb24gVGVjaG5vbG9naWVzC0VsZWN0cm9uaWNzZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDIgSnVuIDIwMDlkZAIBDw8WAh8IBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFIklDVCBQcmlvcml0aXNhdGlvbiBQYW5lbCAoSnVuZSAwOSkfAwUbVmlld1BhbmVsLmFzcHg/UGFuZWxJZD00ODM5ZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQF4B1BZHZhbmNlcyBpbiBjcnlwdGFuYWx5c2lzIGFyZSBvZnRlbiBwcm9kdWNlZCBieSBtYXRoZW1hdGljaWFucyB3aG8gc2VlayB0ZWNobmlxdWVzIHRvIHVucmF2ZWwgdGhlIGhhcmQgcHJvYmxlbXMgb24gd2hpY2ggbW9kZXJuIGNyeXB0b3N5c3RlbXMgYXJlIGJhc2VkLiBBdHRhY2tzIGJhc2VkIG9uIHRoZSBjb25jZXB0IG9mIHBoeXNpY2FsIHNlY3VyaXR5IG1vdmUgdGhlIGFydCBvZiBjcnlwdGFuYWx5c2lzIGZyb20gdGhlIG1hdGhlbWF0aWNhbCBkb21haW4gaW50byB0aGUgcHJhY3RpY2FsIGRvbWFpbiBvZiBpbXBsZW1lbnRhdGlvbi4gIEJ5IGNvbnNpZGVyaW5nIHRoZSBpbXBsZW1lbnRhdGlvbiBvZiBjcnlwdG9zeXN0ZW1zIHJhdGhlciB0aGFuIHB1cmVseSB0aGVpciBzcGVjaWZpY2F0aW9uLCByZXNlYXJjaGVycyBoYXZlIGZvdW5kIHRoZXkgY2FuIG1vdW50IHBoeXNpY2FsIGF0dGFja3Mgd2hpY2ggYXJlIG9mIGxvdyBjb3N0LCBpbiB0ZXJtcyBvZiB0aW1lIGFuZCBlcXVpcG1lbnQsIGFuZCBhcmUgaGlnaGx5IHN1Y2Nlc3NmdWwgaW4gZXh0cmFjdGluZyB1c2VmdWwgcmVzdWx0cy4gIFJlY2VudCBleGFtcGxlcyB0aGF0IGRlbW9uc3RyYXRlIHRoZSByZWFsLXdvcmxkIGltcGFjdCBvZiBzdWNoIGF0dGFja3MgYXJlIHRob3NlIGFnYWluc3QgdGhlIEtlZUxvcSByYW5nZSBvZiBSRklEIGRldmljZXMgdXNlZCBmb3IgY2FyIGFuZCBidWlsZGluZyBhY2Nlc3MgY29udHJvbCwgYW5kIE1JRkFSRSBjb250YWN0bGVzcyBzbWFydC1jYXJkcyAoZS5nLiB0aGUgYGBPeXN0ZXInJyBjYXJkcyB1c2VkIGJ5IHRoZSBMb25kb24gVW5kZXJncm91bmQpLlNpZGUtY2hhbm5lbCBhdHRhY2tzIGFyZSBhIGdlbnJlIG9mIHBoeXNpY2FsIGF0dGFjayBiYXNlZCBvbiB0aGUgYXNzdW1wdGlvbiB0aGF0IG9uZSBjYW4gcGFzc2l2ZWx5IG9ic2VydmUgYW4gYWxnb3JpdGhtIGJlaW5nIGV4ZWN1dGVkIGJ5IHNvbWUgaGFyZHdhcmUgZGV2aWNlLCBhbmQgaW5mZXIgZGV0YWlscyBhYm91dCB0aGUgaW50ZXJuYWwgc3RhdGUgb2YgY29tcHV0YXRpb24gZnJvbSB0aGUgZmVhdHVyZXMgdGhhdCBvY2N1ci4gIEEgdHlwaWNhbCBzaWRlLWNoYW5uZWwgYXR0YWNrIGNvbnNpc3RzIG9mIGEgY29sbGVjdGlvbiBwaGFzZSB0aGF0IHByb3ZpZGVzIHRoZSBhdHRhY2tlciB3aXRoIHByb2ZpbGVzIG9mIGV4ZWN1dGlvbiwgYW5kIGFuIGFuYWx5c2lzIHBoYXNlIHdoaWNoIHJlY292ZXJzIG90aGVyd2lzZSBzZWNyZXQgaW5mb3JtYXRpb24gZnJvbSB0aGUgcHJvZmlsZXMuICBGb2N1c2luZyBvbiBwb3dlciBhbmQgRU0gYmFzZWQgYXR0YWNrcyBpbiBwYXJ0aWN1bGFyLCBjb3VudGVybWVhc3VyZXMgYWdhaW5zdCBzaWRlLWNoYW5uZWwgYXR0YWNrIGFyZSBpbmNyZWFzaW5nbHkgd2VsbCB1bmRlcnN0b29kIG9uIGEgY2FzZSBieSBjYXNlIGJhc2lzOyBhdCBhIGhpZ2gtbGV2ZWwgdGhleSBjYW4gYmUgY2xhc3NpZmllZCBhcyBlaXRoZXIgaGlkaW5nIChicmVha2luZyB0aGUgbGluayBiZXR3ZWVuIGV4ZWN1dGlvbiBhbmQgcHJvZmlsZXMpIG9yIG1hc2tpbmcgKGJyZWFraW5nIHRoZSBsaW5rIGJldHdlZW4gZXhlY3V0aW9uIGFuZCBhbGdvcml0aG0pLiAgQXBwcm9hY2hlcyB0byBoaWRpbmcgc3R5bGUgY291bnRlcm1lYXN1cmVzIHR5cGljYWxseSBhdHRlbXB0IHRvIG1ha2UgZWFjaCBwcm9maWxlIGNvbnN0YW50IGZvciBhbGwgc2VjcmV0cywgb3IgZW50aXJlbHkgcmFuZG9tOyBpbiBib3RoIGNhc2VzIHRoZSBwcmVtaXNlIGlzIHRoYXQgYSBwcm9maWxlIGNhbiBubyBsb25nZXIgYmUgY29ycmVsYXRlZCB0byB0aGUgc2VjcmV0IGluZm9ybWF0aW9uLlRoZXJlIGFyZSBhIG51bWJlciBvZiBhcHByb2FjaGVzIHRvIGltcGxlbWVudGluZyB0aGVzZSBzb3J0cyBvZiBjb3VudGVybWVhc3VyZS4gIEF0IHRoZSBoaWdoZXN0LWxldmVsLCBvbmUgY2FuIGNvbnNpZGVyIGFsdGVybmF0ZSBhbGdvcml0aG1zIChvciBpbXBsZW1lbnRhdGlvbiBhcHByb2FjaGVzKSB0aGF0IHJlYWxpc2UgaGlkaW5nIG9yIG1hc2tpbmcgaW4gc29mdHdhcmUuICBPbiBvbmUgaGFuZCB0aGlzIGFwcHJvYWNoIGlzIHZlcnkgYWxnb3JpdGhtLXNwZWNpZmljIGFuZCBjYW4gaW1wbHkgYSBzaWduaWZpY2FudCBwZXJmb3JtYW5jZSBwZW5hbHR5OyBvbiB0aGUgb3RoZXIgaGFuZCwgbm8gYWx0ZXJhdGlvbnMgYXJlIHJlcXVpcmVkIHRvIHRoZSBoYXJkd2FyZSBvbiB3aGljaCB0aGUgc29mdHdhcmUgZXhlY3V0ZXMuICBBdCB0aGUgbG93ZXN0LWxldmVsLCBvbmUgY2FuIGNvbnNpZGVyIHVzaW5nIHNvLWNhbGxlZCBzZWN1cmUgbG9naWMgc3R5bGVzOyB0aGUgYmFzaWMgaWRlYSBpcyB0byByZXBsYWNlIENNT1MgY2VsbCBsaWJyYXJpZXMgd2l0aCBhbHRlcm5hdGl2ZXMgd2hpY2gsIGZvciBleGFtcGxlLCBjb25zdW1lIGEgY29uc3RhbnQgYW1vdW50IG9mIHBvd2VyIHJlZ2FyZGxlc3Mgb2YgdGhlIHJlc3VsdCB0aGV5IGNvbXB1dGUuICBUaGUgbWFqb3IgZGlzYWR2YW50YWdlIG9mIHRoaXMgYXBwcm9hY2ggaXMgdGhlIHJlc3VsdGluZyBvdmVyaGVhZCBpbiB0ZXJtcyBvZiBhcmVhOyB0aGUgbWFqb3IgYWR2YW50YWdlIGlzIHRoYXQgdGhlIGFwcHJvYWNoIGlzIGxhcmdlbHkgYWxnb3JpdGhtLWFnbm9zdGljLCBpLmUuIGlzIGEgZ2VuZXJhbCBzb2x1dGlvbiB3aGljaCBjYW4gYmUgYXV0b21hdGljYWxseSBhcHBsaWVkLlRoZSByZXNlYXJjaCBwcm9ncmFtbWUgd2l0aGluIHRoaXMgcHJvcG9zYWwgYWltcywgaW4gYSBzZW5zZSwgdG8gYWRvcHQgYW4gYXBwcm9hY2ggYmV0d2VlbiB0aGVzZSB0d28gZXh0cmVtZXMuICBUaGUgY3J1eCBvZiB0aGUgcmVzZWFyY2ggaXMgdGhlIGFsdGVyYXRpb24gb2YgYSBnZW5lcmFsIHB1cnBvc2UgcHJvY2Vzc29yIHNvIHRoYXQgY291bnRlcm1lYXN1cmVzIGFnYWluc3Qgc2lkZS1jaGFubmVsIGF0dGFjayBhcmUgaW1wbGVtZW50ZWQgYXQgdGhlIG1pY3JvLWFyY2hpdGVjdHVyYWwgbGV2ZWwuICBUaGUgcHJvY2Vzc29yIHdpbGwgcmV0YWluIHRoZSBzYW1lIEluc3RydWN0aW9uIFNldCBBcmNoaXRlY3R1cmUgKElTQSkgYW5kIGhlbmNlIHRoZSBzYW1lIGZ1bmN0aW9uYWwgY2hhcmFjdGVyaXN0aWNzLCBidXQgdGhlIGJlaGF2aW91cmFsIGNoYXJhY3RlcmlzdGljcyB3aWxsIHByZXZlbnQgbGVha2FnZSBvZiBpbmZvcm1hdGlvbiB2aWEsIGZvciBleGFtcGxlLCBwb3dlciBhbmFseXNpcy4gIE91ciBmb2N1cyBpcyBvbiBhc3BlY3RzIG9mIHRoZSBtaWNyby1hcmNoaXRlY3R1cmUgd2hpY2ggY2FuIGJlIHJhbmRvbWlzZWQgaW4gc29tZSB3YXkuICBXZSBzdWdnZXN0IHRoYXQgdGhpcyBhcHByb2FjaCB3aWxsIGFmZm9yZCBhIGxldmVsIG9mIGZsZXhpYmlsaXR5IGFuZCAgYWxnb3JpdGhtIGFnaWxpdHkgIHJlcHJlc2VudGluZyBhbiBhdHRyYWN0aXZlIHRyYWRlLW9mZiBiZXR3ZWVuIHNlY3VyaXR5IGFuZCBvdGhlciBtZXRyaWNzLiAgU3BlY2lmaWNhbGx5LCBpdCBwZXJtaXRzIGhpZ2gtbGV2ZWwgYWxnb3JpdGhtaWMgY291bnRlcm1lYXN1cmVzIHRvIGJlIGF1dG9tYXRpY2FsbHkgc3VwcG9ydGVkIGJ5IHRoZSBoYXJkZW5lZCBwcm9jZXNzb3IgcGxhdGZvcm0gKG1lc2hpbmcgd2l0aCB0aGUgaWRlYWwgb2YgdGllcmVkIGNvdW50ZXJtZWFzdXJlcyByYXRoZXIgdGhhbiBhIHNpbmdsZSBwYW5hY2VhKSwgd2hpbGUgbGFyZ2VseSBhdm9pZGluZyB0aGUgb3ZlcmhlYWQgYW5kIHNlbnNpdGl2aXR5IHRvIHVuZGVybHlpbmcgcHJvY2VzcyB0ZWNobm9sb2d5IHRyYWRpdGlvbmFsbHkgYXNzb2NpYXRlZCB3aXRoIHNlY3VyZSBsb2dpYyBzdHlsZXMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5icmlzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5icmlzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0gwMDE2ODkvMQxFUC9IMDAxNjg5LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZI0xjyEsuV9e3559QMwd1vL3BlDE" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLao6PpAgLQvN++DAKT/OCVA0/jbNXRy7EAls7SKDQX7Lgx1rsW" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/H001689/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Architectural and Micro-architectural Countermeasures against Physical Attack</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=112230'>Page, Dr D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-174101'>Oswald, Dr ME</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=78845'>Smart, Professor N</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=19523'>AIST</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-12739'>Cryptography Research Inc</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-8144'>Si-Venture</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-6537'>XMOS Ltd</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bristol</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2014</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="823,396.05" class="DetailValue">823,396</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Electronic Devices &amp; Subsys.</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> Electronics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>02 Jun 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4839">ICT Prioritisation Panel (June 09)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Advances in cryptanalysis are often produced by mathematicians who seek techniques to unravel the hard problems on which modern cryptosystems are based. Attacks based on the concept of physical security move the art of cryptanalysis from the mathematical domain into the practical domain of implementation.  By considering the implementation of cryptosystems rather than purely their specification, researchers have found they can mount physical attacks which are of low cost, in terms of time and equipment, and are highly successful in extracting useful results.  Recent examples that demonstrate the real-world impact of such attacks are those against the KeeLoq range of RFID devices used for car and building access control, and MIFARE contactless smart-cards (e.g. the ``Oyster'' cards used by the London Underground).Side-channel attacks are a genre of physical attack based on the assumption that one can passively observe an algorithm being executed by some hardware device, and infer details about the internal state of computation from the features that occur.  A typical side-channel attack consists of a collection phase that provides the attacker with profiles of execution, and an analysis phase which recovers otherwise secret information from the profiles.  Focusing on power and EM based attacks in particular, countermeasures against side-channel attack are increasingly well understood on a case by case basis; at a high-level they can be classified as either hiding (breaking the link between execution and profiles) or masking (breaking the link between execution and algorithm).  Approaches to hiding style countermeasures typically attempt to make each profile constant for all secrets, or entirely random; in both cases the premise is that a profile can no longer be correlated to the secret information.There are a number of approaches to implementing these sorts of countermeasure.  At the highest-level, one can consider alternate algorithms (or implementation approaches) that realise hiding or masking in software.  On one hand this approach is very algorithm-specific and can imply a significant performance penalty; on the other hand, no alterations are required to the hardware on which the software executes.  At the lowest-level, one can consider using so-called secure logic styles; the basic idea is to replace CMOS cell libraries with alternatives which, for example, consume a constant amount of power regardless of the result they compute.  The major disadvantage of this approach is the resulting overhead in terms of area; the major advantage is that the approach is largely algorithm-agnostic, i.e. is a general solution which can be automatically applied.The research programme within this proposal aims, in a sense, to adopt an approach between these two extremes.  The crux of the research is the alteration of a general purpose processor so that countermeasures against side-channel attack are implemented at the micro-architectural level.  The processor will retain the same Instruction Set Architecture (ISA) and hence the same functional characteristics, but the behavioural characteristics will prevent leakage of information via, for example, power analysis.  Our focus is on aspects of the micro-architecture which can be randomised in some way.  We suggest that this approach will afford a level of flexibility and  algorithm agility  representing an attractive trade-off between security and other metrics.  Specifically, it permits high-level algorithmic countermeasures to be automatically supported by the hardened processor platform (meshing with the ideal of tiered countermeasures rather than a single panacea), while largely avoiding the overhead and sensitivity to underlying process technology traditionally associated with secure logic styles.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bris.ac.uk                                                                               '>http://www.bris.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

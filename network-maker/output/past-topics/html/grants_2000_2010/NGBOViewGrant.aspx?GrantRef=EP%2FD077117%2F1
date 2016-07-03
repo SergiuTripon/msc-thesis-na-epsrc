@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Finite deformation geomechanics:  developing a meshless scaled boundary method
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD077117%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDA3NzExNy8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVfPHN0cm9uZz5GaW5pdGUgZGVmb3JtYXRpb24gZ2VvbWVjaGFuaWNzOiAgZGV2ZWxvcGluZyBhIG1lc2hsZXNzIHNjYWxlZCBib3VuZGFyeSBtZXRob2Q8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUU8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTU3Mjk5Jz5BdWdhcmRlLCBQcm9mZXNzb3IgQzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDRDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NDgyMjMnPkNyb3VjaCwgUHJvZmVzc29yIFI8L2E+AABkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFIkVuZ2luZWVyaW5nIGFuZCBDb21wdXRpbmcgU2NpZW5jZXNkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRVEdXJoYW0sIFVuaXZlcnNpdHkgb2ZkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDDI1IEp1bmUgMjAwN2RkAgMPZBYCAgEPDxYCHwQFDDI0IEp1bmUgMjAxMGRkAgUPZBYCAgEPDxYEHwQFBzMzNyw4MDkeB1Rvb2xUaXAFCjMzNyw4MDkuMDRkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhJHcm91bmQgRW5naW5lZXJpbmcAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgxDb25zdHJ1Y3Rpb24AZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMzAgTWFyIDIwMDZkZAIBD2QWBAIBDw8WAh8CaGRkAgMPDxYCHwQFIEVuZ2luZWVyaW5nIFNjaWVuY2UgKENvbXBvbmVudHMpZGQCAg9kFgICAQ8PFgIfBAUIRGVmZXJyZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFkRVDaXZpbCBlbmdpbmVlcnMgbWFrZSByZWd1bGFyIHVzZSBvZiBjb21wdXRhdGlvbmFsIHRvb2xzIHRvIHByZWRpY3QgdGhlIGJlaGF2aW91ciBvZiB0aGUgdGhpbmdzIHRoZXkgd2lzaCB0byBidWlsZCwgcHJpb3IgdG8gY29uc3RydWN0aW9uLiBUaGUgbW9zdCBwb3B1bGFyIGNvbXB1dGF0aW9uYWwgbWV0aG9kIGlzIHRoZSBGaW5pdGUgRWxlbWVudCBNZXRob2QgKEZFTSkgd2hpY2ggd29ya3MgYnkgZGl2aWRpbmcgYSBjb21wbGV4IHN0cnVjdHVyZSAoYnVpbGRpbmcgb3IgZm91bmRhdGlvbiwgZm9yIGV4YW1wbGUpIGludG8gc21hbGxlciBlbGVtZW50cy4gVGhlc2UgZWxlbWVudHMgYXJlIGNvbm5lY3RlZCB0byBlYWNoIG90aGVyIGJ5IHRoZWlyIGNvcm5lciBub2Rlcy4gRWFjaCBlbGVtZW50IGZvbGxvd3MgYSBzZXQgb2YgcnVsZXMgdGhhdCBlbnN1cmVzIHRoZSBsYXdzIG9mIGVxdWlsaWJyaXVtIGFuZCBjb21wYXRpYmlsaXR5IChpLmUuIHRoZSBmYWN0IHRoYXQgZWxlbWVudHMgY2Fubm90IG92ZXJsYXApIGFyZSBzYXRpc2ZpZWQuIENvbWJpbmluZyBhIGxhcmdlIG51bWJlciBvZiBlbGVtZW50cyBhbGxvd3MgdGhlIChjb21wbGljYXRlZCkgY29tcGxldGUgc3RydWN0dXJlIHRvIGJlIHNpbXVsYXRlZCBpbiBhbiBhcHByb3hpbWF0ZSAoYnV0IHBvdGVudGlhbGx5IGhpZ2hseSBhY2N1cmF0ZSkgc2Vuc2UuVGhlIEZFTSBpcyB3aWRlbHkgdXNlZCBidXQgaGFzIHNvbWUgZGlzYWR2YW50YWdlczsgaW4gcGFydGljdWxhciwgaW5maW5pdGUgYm91bmRhcmllcyBjYW5ub3QgYmUgbW9kZWxsZWQuIEZ1cnRoZXJtb3JlLCBnZW5lcmF0aW5nIHRoZSAgbWVzaCAgb2YgZWxlbWVudHMgY2FuIGJlIHByb2JsZW1hdGljIHdoZW4gd29ya2luZyBpbiB0aHJlZS1kaW1lbnNpb25zLiBGb3IgY2FzZXMgd2hlcmUgdGhlcmUgaXMgY29uc2lkZXJhYmxlIGRlZm9ybWF0aW9uLCB0aGUgZWxlbWVudHMgY2FuIGNoYW5nZSBzaGFwZSBzbyBtdWNoIHRoYXQgdGhlaXIgYWNjdXJhY3kgZGV0ZXJpb3JhdGVzLiBBbiBleGFtcGxlIHdoZXJlIG9uZSB3aXNoZXMgdG8gbW9kZWwgbGFyZ2UgZGVmb3JtYXRpb25zIGlzIHB1c2hlZC1pbiBwaWxlIGZvdW5kYXRpb25zIChlc3NlbnRpYWxseSBhIHR1YmUgb2Ygc3RlZWwgb3IgY29uY3JldGUgcHVzaGVkIGludG8gdGhlIGdyb3VuZCwgd2hpY2ggbGF0ZXIgc3VwcG9ydHMgcGFydCBvZiBhIGJ1aWxkaW5nKS4gQW5vdGhlciBleGFtcGxlIGlzIGEgdGVzdCBrbm93biBhcyB0aGUgQ29uZSBQZW5ldHJvbWV0ZXIgdGVzdCB0aGF0IGRldGVybWluZXMgdGhlIHNvaWwncyBzdGlmZm5lc3MgYW5kIHN0cmVuZ3RoLlRoaXMgcHJvamVjdCB3aWxsIGRldmVsb3AgYSBuZXcgbWV0aG9kIGZvciBtb2RlbGxpbmcgdGhlc2UgdHlwZXMgb2YgcHJvYmxlbSB3aGljaCBvdmVyY29tZXMgbWFueSBvZiB0aGUgZGlmZmljdWx0aWVzIGFzc29jaWF0ZWQgd2l0aCBGRXMuIFRoZSBhcHByb2FjaCBpcyBhIGNvbWJpbmF0aW9uIG9mIGEgIG1lc2hsZXNzICBtZXRob2QgYW5kIGEgIHNjYWxlZCBib3VuZGFyeSAgbWV0aG9kLiBNZXNobGVzcyBtZXRob2RzIGVudHJpZWx5IHJlbW92ZSB0aGUgcHJvYmxlbSBvZiBnZW5lcmF0aW5nIHRoZSBtZXNoIG9mIGVsZW1lbnRzOyBvbmUgc2ltcGx5IGdlbmVyYXRlcyBhIGRpc3RyaWJ1dGlvbiBvZiBub2RlcyBpbnNpZGUgdGhlIGJvdW5kYXJpZXMgb2YgdGhlIG1vZGVsLiBUaGUgU2NhbGVkIEJvdW5kYXJ5IHRlY2huaXF1ZSBhbGxvd3MgYWNjdXJhdGUgbW9kZWxsaW5nIG9mIHRoZSBpbmZpbml0ZSBib3VuZGFyaWVzIChyZXByZXNlbnRpbmcgdGhlIHNvaWwgZXh0ZW5kaW5nIHZlcnRpY2FsbHkgZG93bndhcmRzIGFuZCBsYXRlcmFsbHkpLiBBIGtleSBwYXJ0IG9mIHRoaXMgcHJvamVjdCBpcyBjb25jZXJuZWQgd2l0aCBjcmVhdGluZyBhIHJlYWxpc3RpYyBzaW11bGF0aW9uIGNhcGFiaWxpdHkgZm9yIGxhcmdlICggZmluaXRlICkgZGVmb3JtYXRpb25zIGluIHRoZSBzb2lsLiBJbiBjb252ZW50aW9uYWwgc21hbGwgZGVmb3JtYXRpb24gdGhlb3J5IHdlIGFzc3VtZSB0aGF0IHdlIGNhbiBjYWxjdWxhdGUgc3RyZXNzZXMgYW5kIHN0cmFpbnMgb24gdGhlIGJhc2lzIHRoYXQgaXQgaGFzIG5vdCBjaGFuZ2VkIGl0cyBvcmlnaW5hbCBzaGFwZS4gVGhpcyBzaW1wbGlmaWNhdGlvbiB3b3JrcyB3ZWxsIGluIG1hbnkgY2FzZXMsIGJ1dCB3aGVuIHRoZSBsb2FkcyBhcHBsaWVkIGNhdXNlIGxhcmdlIGRlZm9ybWF0aW9ucywgZXJyb3JzIGFwcGVhciB1bmxlc3Mgd2Uga2VlcCB0cmFjayBvZiB0aGUgY2hhbmdpbmcgIHNoYXBlICBvZiB0aGUgcHJvYmxlbS4gVGhlIHBlcm1hbmVudCAobGFyZ2UpIGRpc3BsYWNlbWVudHMgd2lsbCBiZSByZXByZXNlbnRlZCBieSBhIG5ldyBmb3JtdWxhdGlvbiB0aGF0IHRha2VzIGFjY291bnQgb2YgdGhlIGRpZmZlcmVudCBzb2lsIGNvbXByZXNzaWJpbGl0aWVzIGluIGRpZmZlcmVudCBkaXJlY3Rpb25zIChhbmlzb3Ryb3B5KS4gV2Ugd2lsbCBjb21iaW5lIHRoaXMgcmF0aGVyIGZ1bmRhbWVudGFsIHdvcmsgd2l0aCB0aGUgbmV3IGNvbXB1dGF0aW9uYWwgbWV0aG9kIHRvIGNyZWF0ZSBhIGdlbmVyYWwgdG9vbCB0aGF0IGNhbiBoYW5kbGUgbWFueSBwcm9ibGVtcyBpbiBnZW9tZWNoYW5pY3MgKHBhcnRpY3VsYXJseSB0aG9zZSB0aGF0IHBvc2UgcmVhbCBkaWZmaWN1bHRpZXMgZm9yIHRoZSBGRU0pLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9JyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDc3MTE3LzEMRVAvRDA3NzExNy8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGT1WFavoVWYrpMEPR6+xa/9edrJcA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKC/KvgCwLQvN++DAKT/OCVA1+VDeaoLuVt86EaNpyQXLLQjxUn" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D077117/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Finite deformation geomechanics:  developing a meshless scaled boundary method</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=57299'>Augarde, Professor C</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=48223'>Crouch, Professor R</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering and Computing Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Durham, University of</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">25 June 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">24 June 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="337,809.04" class="DetailValue">337,809</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Ground Engineering</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Construction</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>30 Mar 2006</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Engineering Science (Components)</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Deferred</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Civil engineers make regular use of computational tools to predict the behaviour of the things they wish to build, prior to construction. The most popular computational method is the Finite Element Method (FEM) which works by dividing a complex structure (building or foundation, for example) into smaller elements. These elements are connected to each other by their corner nodes. Each element follows a set of rules that ensures the laws of equilibrium and compatibility (i.e. the fact that elements cannot overlap) are satisfied. Combining a large number of elements allows the (complicated) complete structure to be simulated in an approximate (but potentially highly accurate) sense.The FEM is widely used but has some disadvantages; in particular, infinite boundaries cannot be modelled. Furthermore, generating the  mesh  of elements can be problematic when working in three-dimensions. For cases where there is considerable deformation, the elements can change shape so much that their accuracy deteriorates. An example where one wishes to model large deformations is pushed-in pile foundations (essentially a tube of steel or concrete pushed into the ground, which later supports part of a building). Another example is a test known as the Cone Penetrometer test that determines the soil's stiffness and strength.This project will develop a new method for modelling these types of problem which overcomes many of the difficulties associated with FEs. The approach is a combination of a  meshless  method and a  scaled boundary  method. Meshless methods entriely remove the problem of generating the mesh of elements; one simply generates a distribution of nodes inside the boundaries of the model. The Scaled Boundary technique allows accurate modelling of the infinite boundaries (representing the soil extending vertically downwards and laterally). A key part of this project is concerned with creating a realistic simulation capability for large ( finite ) deformations in the soil. In conventional small deformation theory we assume that we can calculate stresses and strains on the basis that it has not changed its original shape. This simplification works well in many cases, but when the loads applied cause large deformations, errors appear unless we keep track of the changing  shape  of the problem. The permanent (large) displacements will be represented by a new formulation that takes account of the different soil compressibilities in different directions (anisotropy). We will combine this rather fundamental work with the new computational method to create a general tool that can handle many problems in geomechanics (particularly those that pose real difficulties for the FEM).</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

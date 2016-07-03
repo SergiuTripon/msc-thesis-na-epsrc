@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Analysis and Optimisation of Network Resource Allocations and Quality of Service (QoS) for Heterogeneous Internet Traffic
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC525027%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzUyNTAyNy8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWKATxzdHJvbmc+QW5hbHlzaXMgYW5kIE9wdGltaXNhdGlvbiBvZiBOZXR3b3JrIFJlc291cmNlIEFsbG9jYXRpb25zIGFuZCBRdWFsaXR5IG9mIFNlcnZpY2UgKFFvUykgZm9yIEhldGVyb2dlbmVvdXMgSW50ZXJuZXQgVHJhZmZpYzwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFQTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTg3MDInPk1pbiwgUHJvZmVzc29yIEc8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCAhYEAgEPZBYCZg8VAz08YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwNzUyJz5JQk08L2E+SzxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEzNzQyJz5MdWNlbnQgVGVjaG5vbG9naWVzPC9hPkI8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAxMDIxJz5Nb3Rvcm9sYTwvYT5kAgIPZBYCZg8VA1I8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xNjY5Nic+UG9saXNoIEFjYWRlbXkgb2YgU2NpZW5jZXM8L2E+AABkAgYPZBYCAgEPZBYCAgEPDxYCHwQFLFNjaG9vbCBvZiBDb21wdXRpbmcsIEluZm9ybWF0aWNzICZhbXA7IE1lZGlhZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUWVW5pdmVyc2l0eSBvZiBCcmFkZm9yZGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFGkZpcnN0IEdyYW50IFNjaGVtZSBQcmUtRkVDZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMjYgT2N0b2JlciAyMDA1ZGQCAw9kFgICAQ8PFgIfBAULMjUgTWF5IDIwMDhkZAIFD2QWAgIBDw8WBB8EBQcxMjUsMDg2HgdUb29sVGlwBQoxMjUsMDg2LjQ3ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIiTmV0d29ya3MgJmFtcDsgRGlzdHJpYnV0ZWQgU3lzdGVtcwBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCDkNvbW11bmljYXRpb25zAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAWeG1RoZSBleHBsb3NpdmUgZXZvbHV0aW9uIG9mIHRoZSBJbnRlcm5ldCBhbmQgdGhlIGNvbnRpbnVlZCBkcmFtYXRpYyBpbmNyZWFzZSBpbiB3aXJlbGVzcyBzZXJ2aWNlcyBhcmUgZnVlbGxpbmcgdGhlIGRlbWFuZCBmb3IgaW5jcmVhc2VkIGNhcGFjaXR5IGFuZCBzdXBwb3J0IGZvciBndWFyYW50ZWVkIFF1YWxpdHkgb2YgU2VydmljZSAoUW9TKSBpbiBmdXR1cmUgYWxsLUlQIChJbnRlcm5ldCBQcm90b2NvbCkgbmV0d29ya3MuIEEgY3JpdGljYWwgaXNzdWUgZm9yIHRoZSBzdWNjZXNzIG9mIG5leHQtZ2VuZXJhdGlvbiBJbnRlcm5ldCBpcyBob3cgdG8gZWZmaWNpZW50bHkgYWxsb2NhdGUgbmV0d29yayByZXNvdXJjZXMgdG8gZGl2ZXJzZSB0cmFmZmljIGNsYXNzZXMgd2l0aCBkaWZmZXJlbnRpYXRlZCBRb1MgY29uc3RyYWludHMuIFVubGlrZSBtb3N0IGV4aXN0aW5nIHN0dWRpZXMgdGhhdCBhcmUgZ2VuZXJhbGx5IGJhc2VkIG9uIHNpbXBsZSBydWxlcy1vZi10aHVtYiwgdGhpcyBwcm9wb3NlZCByZXNlYXJjaCwgdG8gdGhlIGJlc3Qgb2Ygb3VyIGtub3dsZWRnZSwgaXMgdGhlIGZpcnN0IG9mIGl0cyBraW5kIHRvIGRldmVsb3Agc3RhdGUtb2YtdGhlLWFydCBhbmFseXRpY2FsIG1vZGVscyBhbmQgcGVyZm9ybWFuY2UgdG9vbHMgZm9yIG11bHRpcGxlLXF1ZXVlIHNlcnZpY2Ugc3lzdGVtcyB3aXRoIGhldGVyb2dlbmVvdXMgSW50ZXJuZXQgdHJhZmZpYywgYW5kIHRvIHVzZSB0aGVzZSBwZXJmb3JtYW5jZSB0b29scyB0byBpbnZlc3RpZ2F0ZSBhbmQgb3B0aW1pc2Ugc3lzdGVtYXRpYyBuZXR3b3JrIGRpbWVuc2lvbmluZyBhbmQgcmVzb3VyY2UgYWxsb2NhdGlvbi5OdW1lcm91cyBoaWdoLXF1YWxpdHkgbWVhc3VyZW1lbnQgc3R1ZGllcyBoYXZlIGNvbnZpbmNpbmdseSBkZW1vbnN0cmF0ZWQgdGhhdCBzZWxmLXNpbWlsYXIgYnVyc3RpbmVzcyBhbmQgaGVhdnktdGFpbGVkIGRpc3RyaWJ1dGlvbnMgaW4gaW50ZXItYXJyaXZhbCB0aW1lcyBhbmQgcGFja2V0IHNpemVzIGFyZSBkb21pbmFudCBjaGFyYWN0ZXJpc3RpY3Mgb2YgbW9kZXJuIG11bHRpbWVkaWEgbmV0d29yayB0cmFmZmljLiBTdWNoIGNoYXJhY3RlcmlzdGljcyBoYXZlIHBvc2VkIG1hbnkgbm92ZWwgYW5kIGNoYWxsZW5naW5nIHByb2JsZW1zIGluIHRyYWZmaWMgZW5naW5lZXJpbmcgYW5kIG9wZW5lZCB1cCBuZXcgYXJlYXMgb2YgcmVzZWFyY2ggaW4gcXVldWluZyB0aGVvcnkgYW5kIHBlcmZvcm1hbmNlIGFuYWx5c2lzIGludm9sdmluZyBzZWxmLXNpbWlsYXIgbWF0aGVtYXRpY2FsIG1vZGVscy4gV2hpbHN0IGV4aXN0aW5nIHJlc2VhcmNoIHdvcmsgaGFzIGJlZW4gcHJpbWFyaWx5IGZvY3VzZWQgb24gdGhlIGFuYWx5c2lzIG9mIHNpbmdsZS1xdWV1ZSBzeXN0ZW1zIGJhc2VkIG9uIHRoZSBzaW1wbGUgRmlyc3QtQ29tZSBGaXJzdFNlcnZlZCAoRkNGUykgc2NoZWR1bGluZyBwb2xpY3ksIHRoaXMgcHJvcG9zZWQgcmVzZWFyY2ggYWltcyB0byBkZXZpc2UgdGhlIGZpcnN0IGFuYWx5dGljYWwgcGVyZm9ybWFuY2UgbW9kZWwgZm9yIG11bHRpcGxlLXF1ZXVlIHN5c3RlbXMgd2l0aCBzZWxmc2ltaWxhciB0cmFmZmljIHNjaGVkdWxlZCBieSBhIGh5YnJpZCBtZWNoYW5pc20gdGhhdCBjb21iaW5lcyBQcmlvcml0eSBRdWV1aW5nIGFuZCBXZWlnaHRlZC1GYWlyIFF1ZXVpbmcsIGNhbGxlZCBQUS1XRlEsIGEgcHJvbWlzaW5nIHNjaGVkdWxpbmcgcG9saWN5IGZvciBzdXBwb3J0aW5nIGRpZmZlcmVudGlhdGVkIFFvUy4gVGhlIHJlc2VhcmNoIGlzIGJ1aWx0IHVwb24gdGhlIGV4cGVydGlzZSBvZiB0aGUgaW52ZXN0aWdhdG9yIGFuZCBoaXMgcmVzZWFyY2ggZ3JvdXAgaW4gdGhlIGZpZWxkIG9mIG5ldHdvcmsgcGVyZm9ybWFuY2UgbW9kZWxsaW5nLCB0cmFmZmljIGVuZ2luZWVyaW5nLCBjYXBhY2l0eSBhbmQgcmVzb3VyY2UgbWFuYWdlbWVudCBvcHRpbWlzYXRpb24uIFRoZSBwZXJmb3JtYW5jZSBtb2RlbHMgdG8gYmUgZGV2ZWxvcGVkIHdpbGwgdXNlIHRoZSBsYXJnZSBkZXZpYXRpb24gcHJpbmNpcGxlIGFuZCB0aGUgcXVldWUtYmFzZWQgZGVjb21wb3NpdGlvbiB0ZWNobmlxdWUsIGFuZCB3aWxsIGJlIGdlbmVyYWxpc2VkIHRvIGhhbmRsZSBtdWx0aXBsZS1jbGFzcyBoZXRlcm9nZW5lb3VzIHRyYWZmaWMgbW9kZWxsZWQgYnkgbm9uLWJ1cnN0eSBQb2lzc29uLCBidXJzdHkgTWFya292IGFycml2YWwsIGFuZCBzZWxmLXNpbWlsYXIgcHJvY2Vzc2VzLiBUaGUgbW9kZWwgdmFsaWRpdHkgd2lsbCBiZSBkZW1vbnN0cmF0ZWQgYnkgY29tcGFyaW5nIGFuYWx5dGljYWwgcmVzdWx0cyB0byB0aG9zZSBvYnRhaW5lZCB0aHJvdWdoIHNpbXVsYXRpb24gZXhwZXJpbWVudHMgb2YgdGhlIGFjdHVhbCBzeXN0ZW0uQSBtdWx0aXBsZS1vYmplY3RpdmUgb3B0aW1pc2F0aW9uIG1ldGhvZCB3aWxsIGJlIGludGVncmF0ZWQgaW50byB0aGUgZGV2ZWxvcGVkIHBlcmZvcm1hbmNlIHRvb2xzIGZvciBlZmZpY2llbnRseSBhbGxvY2F0aW5nIGJ1ZmZlciBzcGFjZSBhbmQgYmFuZHdpZHRoIHRvIGluZGl2aWR1YWwgdHJhZmZpYyBjbGFzc2VzIHdpdGggdGhlIGFpbSBvZiBndWFyYW50ZWVpbmcgdGhlIFFvUyByZXF1aXJlZCBieSBkaXZlcnNlIGFwcGxpY2F0aW9ucyBhbmQgbWF4aW1pc2luZyB0aGUgdG90YWwgc3lzdGVtIHV0aWxpdHkuIEEgc3lzdGVtYXRpYyBwZXJmb3JtYW5jZSBzdHVkeSBvZiBlbmQtdG8tZW5kIFFvUyBpbiBpbnRlZ3JhdGVkIEludGVybmV0IGFuZCB3aXJlbGVzcyBVbml2ZXJzYWwgTW9iaWxlIFRlbGVjb21tdW5pY2F0aW9ucyBTeXN0ZW0gKFVNVFMpIG5ldHdvcmtzIHdpbGwgYmUgY29uZHVjdGVkIHVzaW5nIE1PVE9ST0xBIGxhYm9yYXRvcnkgaW5mcmFzdHJ1Y3R1cmUgYW5kIGVxdWlwbWVudCB0byB0ZXN0IGFuZCBkZW1vbnN0cmF0ZSB0aGUgdmlhYmlsaXR5IG9mIHRoZSByZXNvdXJjZSBhbGxvY2F0aW9uIHNjaGVtZXMgZGV2ZWxvcGVkIGluIHJlYWwtd29ybGQgbmV0d29ya2luZyBzY2VuYXJpb3MuVGhlIHJhbmdlIG9mIHRoZW1lcyBpbiB0aGlzIHdvcmsgc3BhbnMgZnVuZGFtZW50YWwgdHJhZmZpYyBtb2RlbGxpbmcsIHN0b2NoYXN0aWMgYW5hbHlzaXMgYW5kIG5ldHdvcmsgZGVzaWduLiBPbiB0aGUgdGhlb3JldGljYWwgc2lkZSwgdGhlIGltcGxpY2F0aW9ucyBvZiB0aGlzIHJlc2VhcmNoIGdvIGJleW9uZCB0aGUgdHJhZmZpYyBlbmdpbmVlcmluZyBjb250ZXh0IGFuZCBhcmUgZXhwZWN0ZWQgdG8gY29udHJpYnV0ZSB0byBhcHBsaWVkIHByb2JhYmlsaXR5IHRoZW9yeSwgcXVldWluZyBhbmFseXNpcywgYXN5bXB0b3RpYyBhcHByb3hpbWF0aW9uLCBhbmQgb3B0aW1pc2F0aW9uLiBPbiB0aGUgYXBwbGljYXRpb25zIHNpZGUsIHRoZSBwcm9wb3NlZCB3b3JrIHByb3ZpZGVzIHNpZ25pZmljYW50IGluc2lnaHQgYW5kIGd1aWRhbmNlIGZvciB0aGUgZGVzaWduIG9mIGN1cnJlbnQgYW5kIG5leHQgZ2VuZXJhdGlvbiBoaWdoLXNwZWVkIG5ldHdvcmtzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuYnJhZC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuYnJhZC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DNTI1MDI3LzEMRVAvQzUyNTAyNy8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGRPGrCP/9PVK5jtOaZiSVKFn1JKcw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKDj/3uBQLQvN++DAKT/OCVA7uf/Y2EEr0T0tcEEjsaFGMLkYwL" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C525027/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Analysis and Optimisation of Network Resource Allocations and Quality of Service (QoS) for Heterogeneous Internet Traffic</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-8702'>Min, Professor G</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000752'>IBM</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=13742'>Lucent Technologies</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001021'>Motorola</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=16696'>Polish Academy of Sciences</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">School of Computing, Informatics &amp; Media</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bradford</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme Pre-FEC</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">26 October 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">25 May 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="125,086.47" class="DetailValue">125,086</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Networks &amp; Distributed Systems</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Communications</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The explosive evolution of the Internet and the continued dramatic increase in wireless services are fuelling the demand for increased capacity and support for guaranteed Quality of Service (QoS) in future all-IP (Internet Protocol) networks. A critical issue for the success of next-generation Internet is how to efficiently allocate network resources to diverse traffic classes with differentiated QoS constraints. Unlike most existing studies that are generally based on simple rules-of-thumb, this proposed research, to the best of our knowledge, is the first of its kind to develop state-of-the-art analytical models and performance tools for multiple-queue service systems with heterogeneous Internet traffic, and to use these performance tools to investigate and optimise systematic network dimensioning and resource allocation.Numerous high-quality measurement studies have convincingly demonstrated that self-similar burstiness and heavy-tailed distributions in inter-arrival times and packet sizes are dominant characteristics of modern multimedia network traffic. Such characteristics have posed many novel and challenging problems in traffic engineering and opened up new areas of research in queuing theory and performance analysis involving self-similar mathematical models. Whilst existing research work has been primarily focused on the analysis of single-queue systems based on the simple First-Come FirstServed (FCFS) scheduling policy, this proposed research aims to devise the first analytical performance model for multiple-queue systems with selfsimilar traffic scheduled by a hybrid mechanism that combines Priority Queuing and Weighted-Fair Queuing, called PQ-WFQ, a promising scheduling policy for supporting differentiated QoS. The research is built upon the expertise of the investigator and his research group in the field of network performance modelling, traffic engineering, capacity and resource management optimisation. The performance models to be developed will use the large deviation principle and the queue-based decomposition technique, and will be generalised to handle multiple-class heterogeneous traffic modelled by non-bursty Poisson, bursty Markov arrival, and self-similar processes. The model validity will be demonstrated by comparing analytical results to those obtained through simulation experiments of the actual system.A multiple-objective optimisation method will be integrated into the developed performance tools for efficiently allocating buffer space and bandwidth to individual traffic classes with the aim of guaranteeing the QoS required by diverse applications and maximising the total system utility. A systematic performance study of end-to-end QoS in integrated Internet and wireless Universal Mobile Telecommunications System (UMTS) networks will be conducted using MOTOROLA laboratory infrastructure and equipment to test and demonstrate the viability of the resource allocation schemes developed in real-world networking scenarios.The range of themes in this work spans fundamental traffic modelling, stochastic analysis and network design. On the theoretical side, the implications of this research go beyond the traffic engineering context and are expected to contribute to applied probability theory, queuing analysis, asymptotic approximation, and optimisation. On the applications side, the proposed work provides significant insight and guidance for the design of current and next generation high-speed networks.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.brad.ac.uk                                                                               '>http://www.brad.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

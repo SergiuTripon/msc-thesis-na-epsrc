@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=4012" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBQtEciBQIERhd3NvbmRkAgMPDxYCHwIFHVF1ZWVuJ3MgVW5pdmVyc2l0eSBvZiBCZWxmYXN0ZGQCBQ8PFgIfAgUeU2NoIG9mIE1hdGhlbWF0aWNzIGFuZCBQaHlzaWNzZGQCBw8PFgIfAgUNMDI4IDkwIDk3MzUzMmRkAgkPDxYCHwIFDTAyOCA5MCA5NzMxMTBkZAINDw8WBB8CBTYxMTIwNDYxMDAwOTcxMTkxMTUxMTExMTAwNjQxMTMxMTcwOTgwNDYwOTcwOTkwNDYxMTcxMDceCFJlYWRPbmx5ZxYMHgtvbm1vdXNlb3ZlcmUeB29uZm9jdXMFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx4Kb25tb3VzZW91dAVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HgZvbmJsdXIFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx8ABTxqYXZhc2NyaXB0OnNlbmR0byhkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpLnZhbHVlKTsfAQVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7ZAIPDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCAh4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAICZBYCZg9kFgQCAQ9kFgRmD2QWAgIBDw8WAh8CBRlMaWdodC1NYXR0ZXIgSW50ZXJhY3Rpb25zZGQCAQ9kFgICAQ8PFgIfAgUcTWFnbmV0aXNtL01hZ25ldGljIFBoZW5vbWVuYWRkAgIPZBYEZg9kFgICAQ8PFgIfAgUZU3VyZmFjZXMgJmFtcDsgSW50ZXJmYWNlc2RkAgEPZBYCAgEPDxYCHwJlZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAgEfCgIBHwsCAWQWAmYPZBYCAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0kwMzg0MTEvMSc+RVAvSTAzODQxMS8xPC9hPiBkZAIBDw8WAh8CBUVBIHBsYXNtb25pYyBhbnRlbm5hIGZvciBtYWduZXRvLW9wdGljYWwgaW1hZ2luZyBhdCB0aGUgZGVlcCBuYW5vc2NhbGVkZAICDw8WAh8CBQMoUClkZAIDD2QWAmYPZBYCZg88KwALAQAPFggfCBYAHwkCDB8KAgEfCwIMZBYCZg9kFhgCAQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzAwMDQzMy8xJz5FUC9HMDAwNDMzLzE8L2E+IGRkAgEPDxYCHwIFQVJlc2lzdGl2ZS1tZXRhbC1lbGVjdHJvZGUgU2Nob3R0a3kgZGlvZGVzIGZvciB0ZW1wZXJhdHVyZSBzZW5zaW5nZGQCAg8PFgIfAgUDKFApZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDA0ODg1MC8xJz5FUC9EMDQ4ODUwLzE8L2E+IGRkAgEPDxYCHwIFPk5hbm9zY2FsZSBlbGVjdHJvLW9wdGljcyBvZiBtZXRhbHMgYW5kIG1vbGVjdWxlcyB1c2luZyBVSFYtU1RNZGQCAg8PFgIfAgUDKFApZGQCAw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUjY4NzQwLzAxJz5HUi9SNjg3NDAvMDE8L2E+IGRkAgEPDxYCHwIFPUVxdWlwbWVudCBmb3Igc3VyZmFjZSBlbmhhbmNlZCBGb3VyaWVyIHRyYW5zZm9ybSBzcGVjdHJvc2NvcHlkZAICDw8WAh8CBQMoUClkZAIED2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9OMDMyNzMvMDEnPkdSL04wMzI3My8wMTwvYT4gZGQCAQ8PFgIfAgUxTk9SVEhFUk4gSVJFTEFORCBUSElOIEZJTE0gQ0hBUkFDVEVSSVNBVElPTiBTVUlURWRkAgIPDxYCHwIFAyhDKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0wzMTkzNy8wMSc+R1IvTDMxOTM3LzAxPC9hPiBkZAIBDw8WAh8CBUNPUFRJQ0FMIFNDQU5OSU5HIFBST0JFIE1JQ1JPU0NPUFkgSU4gVEhFIE1FU08gVE8gTkFOT1NDT1BJQyBSRUdJTUVTZGQCAg8PFgIfAgUDKFApZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzc2MDc4LzAxJz5HUi9LNzYwNzgvMDE8L2E+IGRkAgEPDxYCHwIFTU9QVElDQUwgVFVOTkVMTElORyBBVCA4MEsgSU4gQVBQTElFRCBBTkQgRlVOREFNRU5UQUwgU1RVRElFUyBPRiBQVFNJIEFORCBZQkNPZGQCAg8PFgIfAgUDKFApZGQCBw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzY2NTEyLzAxJz5HUi9LNjY1MTIvMDE8L2E+IGRkAgEPDxYCHwIFZkJSSURHSU5HIFNVUFBPUlQgRk9SIFNFUkMgQ09OVFJBQ1QgR1IvSDgzMDAzLCAnU1VSRkFDRSBQTEFTTU9OIEVOSEFOQ0VEIExBU0VSIEFCTEFUSU9OIE9GIE1FVEFMIEZJTE1TJ2RkAgIPDxYCHwIFAyhQKWRkAggPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0g4MzAwMy8wMSc+R1IvSDgzMDAzLzAxPC9hPiBkZAIBDw8WAh8CBTZTVVJGQUNFIFBMQVNNT04gRU5IQU5DRUQgTEFTRVIgQUJMQVRJT04gT0YgTUVUQUwgRklMTVNkZAICDw8WAh8CBQMoUClkZAIJD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9HMjQyNTUvMDEnPkdSL0cyNDI1NS8wMTwvYT4gZGQCAQ8PFgIfAgU7U1VSRkFDRSBQTEFTTU9OIEVOSEFOQ0VEIElORlJBUkVEIFNDSE9UVEtZLUJBUlJJRVIgREVURUNUT1JkZAICDw8WAh8CBQMoUClkZAIKD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9GODI2MjcvMDEnPkdSL0Y4MjYyNy8wMTwvYT4gZGQCAQ8PFgIfAgUvSElHSCBFRkZJQ0lFTkNZIExJR0hUIEVNSVRUSU5HIFRVTk5FTCBKVU5DVElPTlNkZAICDw8WAh8CBQMoQylkZAILD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9GNTM3MDIvMDEnPkdSL0Y1MzcwMi8wMTwvYT4gZGQCAQ8PFgIfAgU8SElHSCBUQyBTVVBFUkNPTkRVQ1RPUiBGSUxNUyBCWSBFWENJTUVSIExBU0VSIFBVTFNFIEFCTEFUSU9OZGQCAg8PFgIfAgUDKEMpZGQCDA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRjEyMjQyLzAxJz5HUi9GMTIyNDIvMDE8L2E+IGRkAgEPDxYCHwIFRFNVUkZBQ0UgUExBU01PTiBTUEVDVFJPU0NPUFkgQU5EIFJBRElBVElWRSBERUNBWSBPRiBTVVJGQUNFIFBMQVNNT05TZGQCAg8PFgIfAgUDKFApZGQCEw9kFgRmD2QWAmYPZBYCAgEPDxYCHgdWaXNpYmxlZ2RkAgIPZBYCZg9kFgICAQ8PFgYeClJlcG9ydE5hbWUFClZpZXdQZXJzb24eDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzCFBlcnNvbklEHg5QYXJhbWV0ZXJWYWx1ZRUCOGh0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00MDEyBDQwMTJkFgJmD2QWAmYPZBYEAgMPEGRkFgFmZAIFDw9kFgIfAWVkAgcPDxYCHwxoZGRkcXak3xc91eqFJOKZi7ECxYmNi7U=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKBjoj5BwLQvN++DAKT/OCVAwLKoMrZDyPsxxS5+D/AF17SoZGl47Nz3C9p" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Dr P Dawson</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">Queen's University of Belfast</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Sch of Mathematics and Physics</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">028 90 973532</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">028 90 973110</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="112046100097119115111110064113117098046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Light-Matter Interactions</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Magnetism/Magnetic Phenomena</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Surfaces &amp; Interfaces</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2"></span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I038411/1'>EP/I038411/1</a> </b></td><td align="left">A plasmonic antenna for magneto-optical imaging at the deep nanoscale</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G000433/1'>EP/G000433/1</a> </b></td><td align="left">Resistive-metal-electrode Schottky diodes for temperature sensing</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D048850/1'>EP/D048850/1</a> </b></td><td align="left">Nanoscale electro-optics of metals and molecules using UHV-STM</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R68740/01'>GR/R68740/01</a> </b></td><td align="left">Equipment for surface enhanced Fourier transform spectroscopy</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N03273/01'>GR/N03273/01</a> </b></td><td align="left">NORTHERN IRELAND THIN FILM CHARACTERISATION SUITE</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L31937/01'>GR/L31937/01</a> </b></td><td align="left">OPTICAL SCANNING PROBE MICROSCOPY IN THE MESO TO NANOSCOPIC REGIMES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K76078/01'>GR/K76078/01</a> </b></td><td align="left">OPTICAL TUNNELLING AT 80K IN APPLIED AND FUNDAMENTAL STUDIES OF PTSI AND YBCO</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K66512/01'>GR/K66512/01</a> </b></td><td align="left">BRIDGING SUPPORT FOR SERC CONTRACT GR/H83003, 'SURFACE PLASMON ENHANCED LASER ABLATION OF METAL FILMS'</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H83003/01'>GR/H83003/01</a> </b></td><td align="left">SURFACE PLASMON ENHANCED LASER ABLATION OF METAL FILMS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G24255/01'>GR/G24255/01</a> </b></td><td align="left">SURFACE PLASMON ENHANCED INFRARED SCHOTTKY-BARRIER DETECTOR</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F82627/01'>GR/F82627/01</a> </b></td><td align="left">HIGH EFFICIENCY LIGHT EMITTING TUNNEL JUNCTIONS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F53702/01'>GR/F53702/01</a> </b></td><td align="left">HIGH TC SUPERCONDUCTOR FILMS BY EXCIMER LASER PULSE ABLATION</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F12242/01'>GR/F12242/01</a> </b></td><td align="left">SURFACE PLASMON SPECTROSCOPY AND RADIATIVE DECAY OF SURFACE PLASMONS</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

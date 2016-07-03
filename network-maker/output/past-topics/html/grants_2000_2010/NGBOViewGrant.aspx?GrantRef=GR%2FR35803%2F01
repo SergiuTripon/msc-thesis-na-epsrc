@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Mutiple Stable/unstable equilibria and dynamics of a marine riser in the wake of an upstream riser
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fR35803%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvUjM1ODAzLzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVzPHN0cm9uZz5NdXRpcGxlIFN0YWJsZS91bnN0YWJsZSBlcXVpbGlicmlhIGFuZCBkeW5hbWljcyBvZiBhIG1hcmluZSByaXNlciBpbiB0aGUgd2FrZSBvZiBhbiB1cHN0cmVhbSByaXNlcjwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NTE4MTknPkh1YW5nLCBEciBTPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00MjcyMic+QmFybHRyb3AsIFByb2Zlc3NvciBOPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1Q8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xNDA2MCc+MiBIIE9mZnNob3JlIEVuZ2luZWVyaW5nIEx0ZDwvYT48PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDIzNSc+QlA8L2E+AGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUjTmF2YWwgQXJjaGl0ZWN0dXJlICZhbXA7IE1hcmluZSBFbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRVVbml2ZXJzaXR5IG9mIEdsYXNnb3dkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRtTdGFuZGFyZCBSZXNlYXJjaCAoUHJlLUZFQylkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAyNiBOb3ZlbWJlciAyMDAxZGQCAw9kFgICAQ8PFgIfBAULMjUgTWF5IDIwMDRkZAIFD2QWAgIBDw8WBB8EBQY4MiwzMzQeB1Rvb2xUaXAFCTgyLDMzNC40OWRkAgoPZBYCAgEPZBYCAgEPFgIfBwICFgQCAQ9kFgJmDxUCIkNvYXN0YWwgJmFtcDsgV2F0ZXJ3YXkgRW5naW5lZXJpbmcdRW5nLiBEeW5hbWljcyAmYW1wOyBUcmlib2xvZ3lkAgIPZBYCZg8VAg5GbHVpZCBEeW5hbWljcxhPaWwgJmFtcDsgR2FzIEV4dHJhY3Rpb25kAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCBkVuZXJneQBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFrwxBcyB0aGUgb2Zmc2hvcmUgb2lsIGFuZCBnYXMgaW5kdXN0cnkgbW92ZXMgaW50byBldmVyIGRlZXBlciB3YXRlcnMgYW5kIG1vcmUgaG9zdGlsZSBlbnZpcm9ubWVudHMsIHRoZXJlIGlzIGFuIGluY3JlYXNpbmcgY29uY2VybiBvbiBob3cgdG8gZGV0ZXJtaW5lIFRMUC9TUEFSIHJpc2VyIHNwYWNpbmcgdG8gYXZvaWQgcG9zc2libGUgY2xhc2hpbmcgZHVlIHRvIHN0cm9uZyBjdXJyZW50cyBmb3VuZCBhdCB0aGUgbG9jYXRpb25zIG9mIGRlZXB3YXRlciBkZXZlbG9wbWVudHMuIFRoZSBwcm9wb3NlZCBwcm9qZWN0IGZpdHMgd2l0aGluIHRoZSBvYmplY3RpdmVzIG9mIHRoZSAzcmQgQ2FsbCBvZiBFUFNSQy9EVEkgUHJvZ3JhbW1lIGluIE9pbCBhbmQgR2FzIEV4dHJhY3Rpb24gKE1heSAyMDAwKSwgaS5lLiB0byBpbXByb3ZlIHRoZSBlZmZlY3RpdmVuZXNzIG9mIGRyaWxsaW5nIGFuZCBwcm9kdWN0aW9uIHRlY2hub2xvZ3kuIFRoZSBwcm9qZWN0IGFpbXMgdG8gaW52ZXN0aWdhdGUgdGhlIGZ1bmRhbWVudGFsIG1lY2hhbmlzbSBvZiByaXNlciBjbGFzaGluZyBjYXVzZWQgYnkgd2FrZS1pbmR1Y2VkIGluc3RhYmlsaXR5LiBUbyBhY2hpZXZlIHRoaXMgd2Ugd2lsbCBidWlsZCB1cG9uIG91ciBleHBlcnRpc2UgZ2F0aGVyZWQgZnJvbSBvdXIgd29yayBpbiB0aGUgbGFzdCB0aHJlZSB5ZWFycyBhbmQgZXh0ZW5kIG91ciB0d28tZGltZW5zaW9uYWwgbWV0aG9kb2xvZ3kgdG8gdGhlIHRocmVlLWRpbWVuc2lvbmFsIHJpc2VyIGNhc2UuIEEgbWF0aGVtYXRpY2FsIG1vZGVsIHdpbGwgYmUgZXN0YWJsaXNoZWQgZm9yIGEgcGFpciBvZiB0b3AgdGVuc2lvbmVkIHZlcnRpY2FsIHJpc2VycyBhbmQgYSBjb250aW51YXRpb24vZWlnZW52YWx1ZSBhbmFseXNpcyB3aWxsIGJlIGVtcGxveWVkIHRvIHN5c3RlbWF0aWNhbGx5IG9idGFpbiBtdWx0aXBsZSBzb2x1dGlvbnMgYW5kIHRvIGV4YW1pbmUgdGhlaXIgc3RhYmlsaXR5LiBUaGUgZW1waGFzaXMgd2lsbCBiZSBvbiBpZGVudGlmeWluZyB0aGUgY3JpdGljYWwgY3VycmVudCBzcGVlZCBmb3IgYSBnaXZlbiByaXNlciBjb25maWd1cmF0aW9uLCB3aXRoIHRoZSBjcml0aWNhbCBjdXJyZW50IHNwZWVkIGJlaW5nIGRlZmluZWQgYXMgdGhlIG9uZSBhdCB3aGljaCB0aGUgZG93bnN0cmVhbSByaXNlciBsb3NlcyBpdHMgc3RhYmlsaXR5IGFuZCBtb3ZlcyB0b3dhcmRzIGFuZCB1bHRpbWF0ZWx5IGNvbGxpZGVzIHdpdGggdGhlIHVwc3RyZWFtIHJpc2VyLiBBIHRpbWVkb21haW4gc2ltdWxhdGlvbiB3aWxsIGFsc28gYmUgY2FycmllZCBvdXQgdG8gaW52ZXN0aWdhdGUgdGhlIHBvc3Qtc3RhYmlsaXR5LWxvc3MgYmVoYXZpb3VyIG9mIHRoZSBkb3duc3RyZWFtIHJpc2VyLiBJbiBwYXJ0aWN1bGFyLCB0aGUgbW90aW9uIG9mIHRoZSBkb3duc3RyZWFtIHJpc2VyIGp1c3QgYmVmb3JlIGl0cyBjb2xsaXNpb24gd2l0aCB0aGUgdXBzdHJlYW0gcmlzZXIgd2lsbCBiZSBxdWFudGlmaWVkLiBUaGUga2V5IGZpbmRpbmdzIHdpbGwgYmUgcHJlc2VudGVkIGluIGdyYXBocyB3aGljaCBjYW4gYmUgcmVhZGlseSBleHBsb2l0ZWQgYnkgcmlzZXIgZGVzaWduZXJzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuZ2xhLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuZ2xhLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SMzU4MDMvMDEMR1IvUjM1ODAzLzAxZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSZui9b9XLAkd8lNsROkFa698mNBA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKPr7rdDwLQvN++DAKT/OCVA/5Rn5RCZ4vIEvFKU+kRqupOb413" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/R35803/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Mutiple Stable/unstable equilibria and dynamics of a marine riser in the wake of an upstream riser</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=51819'>Huang, Dr S</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=42722'>Barltrop, Professor N</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=14060'>2 H Offshore Engineering Ltd</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000235'>BP</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Naval Architecture &amp; Marine Eng</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Glasgow</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">26 November 2001</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">25 May 2004</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="82,334.49" class="DetailValue">82,334</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Coastal &amp; Waterway Engineering</td>
+                                    <td class="DetailValue"> Eng. Dynamics &amp; Tribology</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Fluid Dynamics</td>
+                                    <td class="DetailValueAlt"> Oil &amp; Gas Extraction</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Energy</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">As the offshore oil and gas industry moves into ever deeper waters and more hostile environments, there is an increasing concern on how to determine TLP/SPAR riser spacing to avoid possible clashing due to strong currents found at the locations of deepwater developments. The proposed project fits within the objectives of the 3rd Call of EPSRC/DTI Programme in Oil and Gas Extraction (May 2000), i.e. to improve the effectiveness of drilling and production technology. The project aims to investigate the fundamental mechanism of riser clashing caused by wake-induced instability. To achieve this we will build upon our expertise gathered from our work in the last three years and extend our two-dimensional methodology to the three-dimensional riser case. A mathematical model will be established for a pair of top tensioned vertical risers and a continuation/eigenvalue analysis will be employed to systematically obtain multiple solutions and to examine their stability. The emphasis will be on identifying the critical current speed for a given riser configuration, with the critical current speed being defined as the one at which the downstream riser loses its stability and moves towards and ultimately collides with the upstream riser. A timedomain simulation will also be carried out to investigate the post-stability-loss behaviour of the downstream riser. In particular, the motion of the downstream riser just before its collision with the upstream riser will be quantified. The key findings will be presented in graphs which can be readily exploited by riser designers.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.gla.ac.uk                                                                                '>http://www.gla.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

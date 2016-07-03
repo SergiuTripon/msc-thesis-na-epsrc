@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	BabyTalk: Generating Textual Summaries of Clinical Temporal Data
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD049520%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDA0OTUyMC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVRPHN0cm9uZz5CYWJ5VGFsazogR2VuZXJhdGluZyBUZXh0dWFsIFN1bW1hcmllcyBvZiBDbGluaWNhbCBUZW1wb3JhbCBEYXRhPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVEPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00ODU0MSc+UmVpdGVyLCBQcm9mZXNzb3IgRTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAICFgQCAQ9kFgJmDxUDPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MjkxMTgnPk1jSW50b3NoLCBEciBOPC9hPkM8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTc5MDgnPkh1bnRlciwgUHJvZmVzc29yIEo8L2E+QDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTE1ODkyJz5TcmlwYWRhLCBEciBTRzwvYT5kAgIPZBYCZg8VAz08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS04MTE5NCc+RnJlZXIsIERyIFk8L2E+QzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NjM3NjcnPkxvZ2llLCBQcm9mZXNzb3IgSDwvYT4AZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRFDb21wdXRpbmcgU2NpZW5jZWRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFlVuaXZlcnNpdHkgb2YgQWJlcmRlZW5kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRtTdGFuZGFyZCBSZXNlYXJjaCAoUHJlLUZFQylkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBREwMSBTZXB0ZW1iZXIgMjAwNmRkAgMPZBYCAgEPDxYCHwQFDjMxIEF1Z3VzdCAyMDEwZGQCBQ9kFgICAQ8PFgQfBAUHMzMwLDc1Nh4HVG9vbFRpcAUKMzMwLDc1NS43NGRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCGkNvbXB1dC4vQ29ycHVzIExpbmd1aXN0aWNzIEluZm9ybWF0aW9uICZhbXA7IEtub3dsZWRnZSBNZ210ZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhNDcmVhdGl2ZSBJbmR1c3RyaWVzCkhlYWx0aGNhcmVkAgwPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUEQzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDUwNTdYLzEnPkVQL0QwNTA1N1gvMTwvYT4AAABkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFuBRJbnRlbnNpdmUgY2FyZSB1bml0cyAoSUNVcykgZXhpc3QgdG8gcHJvdmlkZSBzcGVjaWFsaXNlZCBjYXJlIHRvIHBhdGllbnRzIChpbiBvdXIgY2FzZSBwcmVtYXR1cmUgYmFiaWVzKSB3aG8gYXJlIHZlcnkgaWxsLiBNb2Rlcm4gZWxlY3Ryb25pYyB0ZWNobm9sb2d5IGhhcyBtYWRlIGl0IHBvc3NpYmxlIHRvIG1ha2UgbGFyZ2UgbnVtYmVycyBvZiBtZWFzdXJlbWVudHMgb24gdGhlIGJhYnkuIEhlYXJ0IHJhdGUsIGJsb29kIHByZXNzdXJlcywgdGVtcGVyYXR1cmVzIGFuZCBsZXZlbHMgb2Ygb3h5Z2VuIGFuZCBjYXJib24gZGlveGlkZSBpbiB0aGUgYmxvb2QgY2FuIGFsbCBiZSBtZWFzdXJlZCBjb250aW51b3VzbHkgYXMgb2Z0ZW4gYXMgb25jZSBwZXIgc2Vjb25kLiBJbiBhZGRpdGlvbiwgdGhlIGludHJvZHVjdGlvbiBvZiB0aGUgJ3BhcGVybGVzcycgSUNVIG1lYW5zIHRoYXQgdGVzdCByZXN1bHRzLCBkcnVnIHByZXNjcmlwdGlvbnMsIGVxdWlwbWVudCBzZXR0aW5ncywgZXRjLiBhcmUgYWxsIGVudGVyZWQgcm91dGluZWx5IGF0IHRoZSBjb3RzaWRlIGJ5IHRoZSBtZWRpY2FsIHN0YWZmLiAgICBIb3dldmVyLCBpdCBpcyBub3QgYXQgYWxsIGNsZWFyIHRoYXQgcGVvcGxlIGFyZSBjYXBhYmxlIG9mIG1ha2luZyBmdWxsIHVzZSBvZiBhbGwgdGhpcyBpbmZvcm1hdGlvbi4gVGhlIGNvbnZlbnRpb25hbCBhcHByb2FjaCBpcyB0byBkaXNwbGF5IHRoZSBkYXRhIGFzIGdyYXBocywgYnV0IHdlIGhhdmUgcnVuIGV4cGVyaW1lbnRzIHdoaWNoIHNob3dlZCB0aGF0IHVuZGVyIHNvbWUgY2lyY3Vtc3RhbmNlcyBJQ1UgZG9jdG9ycyBhbmQgbnVyc2VzIG1ha2UgYmV0dGVyIGRlY2lzaW9ucyB3aGVuIHRoZXkgYXJlIGdpdmVuIHdyaXR0ZW4gc3VtbWFyaWVzIGluIEVuZ2xpc2guIEl0IHdvdWxkIGJlIGJlbmVmaWNpYWwgaWYgd2UgY291bGQgcHJvdmlkZSB0aGVzZSBzdW1tYXJpZXMgb24gYSByb3V0aW5lIGJhc2lzLCBidXQgaW4gb3VyIGV4cGVyaW1lbnRzLCB0aGUgc3VtbWFyaWVzIGhhZCB0byBiZSBzcGVjaWFsbHkgd3JpdHRlbiBieSBleHBlcnQgY2xpbmljaWFucy4gT3VyIHByb3Bvc2VkIHNvbHV0aW9uIGlzIHRvIGRldmVsb3AgY29tcHV0ZXIgc29mdHdhcmUgd2hpY2ggd291bGQgZ2VuZXJhdGUgYSBzdW1tYXJ5IGF1dG9tYXRpY2FsbHkgd2hlbmV2ZXIgYW55b25lIHdhbnRlZC4gV2UgaG9wZSB0aGF0IHRoaXMgd291bGQgbGVhZCB0byBiZXR0ZXIgZGVjaXNpb25zIGFuZCB0aGVyZWZvcmUgYmV0dGVyIGNhcmUgZm9yIHRoZSBiYWJpZXMuICAgQXV0b21hdGljYWxseSB3cml0dGVuIHN1bW1hcmllcyBjb3VsZCBiZSB1c2VkIGZvciBvdGhlciBwdXJwb3Nlcy4gRm9yIGV4YW1wbGUsIGF0IHRoZSBlbmQgb2YgYSBsb25nIDEyIGhvdXIgc2hpZnQsIHRoZSBudXJzZSBoYXMgdG8gd3JpdGUgYSByZXBvcnQgb2Ygd2hhdCBoYXMgaGFwcGVuZWQgb24gaGVyIHNoaWZ0IHRvIGdpdmUgdG8gdGhlIG51cnNlIHdobyBpcyB0YWtpbmcgb3Zlci4gSWYgdGhpcyBjb3VsZCBiZSBkb25lIGF1dG9tYXRpY2FsbHksIGl0IHdvdWxkIHNhdmUgdGltZSBhbmQgYXZvaWQgdGhlIHBvc3NpYmlsaXR5IG9mIHNpZ25pZmljYW50IGV2ZW50cyBiZWluZyBmb3Jnb3R0ZW4uICAgQW5vdGhlciBwb3NzaWJpbGl0eSB3aGljaCBpcyBiZWluZyBleHBsb3JlZCwgaXMgdGhlIHBvc3NpYmlsaXR5IG9mIGdpdmluZyBwYXJlbnRzIGEgZGFpbHkgc3VtbWFyeSBvZiBob3cgdGhlaXIgYmFieSBpcyBkb2luZy4gV2hlbiBhIGJhYnkgaXMgaW4gaW50ZW5zaXZlIGNhcmUsIGl0IGlzIGNsZWFybHkgYSB2ZXJ5IGFueGlvdXMgYW5kIGVtb3Rpb25hbCB0aW1lIGZvciB0aGUgZmFtaWx5LCBhbmQgYW55IGF1dG9tYXRpYyBzdW1tYXJ5IHdvdWxkIGhhdmUgdG8gYmUgd3JpdHRlbiBpbiBzdWNoIGEgd2F5IHRoYXQgd2FzIHNlbnNpdGl2ZSB0byB0aGlzLiAgIEZyb20gYSBjb21wdXRpbmcgcGVyc3BlY3RpdmUsIHRoZSBtYWluIGNoYWxsZW5nZSBpbiBnZW5lcmF0aW5nIEVuZ2xpc2ggc3VtbWFyaWVzIG9mIG1lZGljYWwgZGF0YSBpcyB0byBjaG9vc2UgYSBzbWFsbCBudW1iZXIgb2Ygd29yZHMgd2hpY2ggZWZmZWN0aXZlbHkgY29tbXVuaWNhdGUgdGhlIGltcG9ydGFudCBpbmZvcm1hdGlvbiBmcm9tIG1lZ2FieXRlcyBvZiBzZW5zb3IgZGF0YS4gIFdlIGhhdmUgc3VjY2Vzc2Z1bGx5IGRldmVsb3BlZCBzb2Z0d2FyZSB0byBnZW5lcmF0ZSB0ZXh0dWFsIHN1bW1hcmllcyBvZiB3ZWF0aGVyIGRhdGEgKHRoYXQgaXMsIHRvIGdlbmVyYXRlIHRleHR1YWwgd2VhdGhlciBmb3JlY2FzdHMpLCBidXQgZ2VuZXJhdGluZyBzdW1tYXJpZXMgb2YgbWVkaWNhbCBkYXRhIGlzIGhhcmRlciBiZWNhdXNlIHRoZXJlIGlzIG11Y2ggbW9yZSBkYXRhIChtZWdhYnl0ZXMgaW5zdGVhZCBvZiBraWxvYnl0ZXMpLCBhbmQgYWxzbyBiZWNhdXNlIHRoZSBzdW1tYXJpZXMgY2FuIGJlIHVzZWQgZm9yIG1hbnkgZGlmZmVyZW50IHB1cnBvc2VzLCBpbmNsdWRpbmcgaGVscGluZyBkb2N0b3JzIG1ha2UgZGVjaXNpb25zLCBoZWxwaW5nIG51cnNlcyB3cml0ZSByZXBvcnRzLCBhbmQgaW5mb3JtaW5nIGFuZCByZWFzc3VyaW5nIHRoZSBmYW1pbGllcyBvZiBwYXRpZW50cy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFYDxhICBocmVmPSdodHRwOi8vaW5mLmFiZG4uYWMudWsvcmVzZWFyY2gvYmFieXRhbGsvJz5odHRwOi8vaW5mLmFiZG4uYWMudWsvcmVzZWFyY2gvYmFieXRhbGsvPC9hPmQCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmFiZG4uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmFiZG4uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDA0OTUyMC8xDEVQL0QwNDk1MjAvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkibie5rV40dfuVqB6XbjnrEzL2yo=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL/sJutBwLQvN++DAKT/OCVA0gQ8MUW+S3XPBV3b/0vH3T6HV9G" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D049520/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>BabyTalk: Generating Textual Summaries of Clinical Temporal Data</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=48541'>Reiter, Professor E</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=29118'>McIntosh, Dr N</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=7908'>Hunter, Professor J</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=115892'>Sripada, Dr SG</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-81194'>Freer, Dr Y</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=63767'>Logie, Professor H</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computing Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Aberdeen</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="330,755.74" class="DetailValue">330,756</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Comput./Corpus Linguistics</td>
+                                    <td class="DetailValue"> Information &amp; Knowledge Mgmt</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Creative Industries</td>
+                                    <td class="DetailValueAlt"> Healthcare</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/D05057X/1'>EP/D05057X/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Intensive care units (ICUs) exist to provide specialised care to patients (in our case premature babies) who are very ill. Modern electronic technology has made it possible to make large numbers of measurements on the baby. Heart rate, blood pressures, temperatures and levels of oxygen and carbon dioxide in the blood can all be measured continuously as often as once per second. In addition, the introduction of the 'paperless' ICU means that test results, drug prescriptions, equipment settings, etc. are all entered routinely at the cotside by the medical staff.    However, it is not at all clear that people are capable of making full use of all this information. The conventional approach is to display the data as graphs, but we have run experiments which showed that under some circumstances ICU doctors and nurses make better decisions when they are given written summaries in English. It would be beneficial if we could provide these summaries on a routine basis, but in our experiments, the summaries had to be specially written by expert clinicians. Our proposed solution is to develop computer software which would generate a summary automatically whenever anyone wanted. We hope that this would lead to better decisions and therefore better care for the babies.   Automatically written summaries could be used for other purposes. For example, at the end of a long 12 hour shift, the nurse has to write a report of what has happened on her shift to give to the nurse who is taking over. If this could be done automatically, it would save time and avoid the possibility of significant events being forgotten.   Another possibility which is being explored, is the possibility of giving parents a daily summary of how their baby is doing. When a baby is in intensive care, it is clearly a very anxious and emotional time for the family, and any automatic summary would have to be written in such a way that was sensitive to this.   From a computing perspective, the main challenge in generating English summaries of medical data is to choose a small number of words which effectively communicate the important information from megabytes of sensor data.  We have successfully developed software to generate textual summaries of weather data (that is, to generate textual weather forecasts), but generating summaries of medical data is harder because there is much more data (megabytes instead of kilobytes), and also because the summaries can be used for many different purposes, including helping doctors make decisions, helping nurses write reports, and informing and reassuring the families of patients.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<a  href='http://inf.abdn.ac.uk/research/babytalk/'>http://inf.abdn.ac.uk/research/babytalk/</a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.abdn.ac.uk                                                                               '>http://www.abdn.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Theory And Applications of Induction Recursion
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG033056%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzAzMzA1Ni8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU/PHN0cm9uZz5UaGVvcnkgQW5kIEFwcGxpY2F0aW9ucyBvZiBJbmR1Y3Rpb24gUmVjdXJzaW9uPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD02OTQxMSc+R2hhbmksIFByb2Zlc3NvciBOPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFIUNvbXB1dGVyIGFuZCBJbmZvcm1hdGlvbiBTY2llbmNlc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFGVVuaXZlcnNpdHkgb2YgU3RyYXRoY2x5ZGVkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDTAxIE1hcmNoIDIwMDlkZAIDD2QWAgIBDw8WAh8EBQ4zMSBBdWd1c3QgMjAxMmRkAgUPZBYCAgEPDxYEHwQFBzMxMCw5MDQeB1Rvb2xUaXAFCjMxMCw5MDMuNzNkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCGUZ1bmRhbWVudGFscyBvZiBDb21wdXRpbmcAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VBEM8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzAzMzM3NC8xJz5FUC9HMDMzMzc0LzE8L2E+QzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDMyOThYLzEnPkVQL0cwMzI5OFgvMTwvYT4AAGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzAxIERlYyAyMDA4ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBShJQ1QgUHJpb3JpdGlzYXRpb24gUGFuZWwgKERlY2VtYmVyIDIwMDgpHwMFG1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9NDc0MWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBaAbQ29tcHV0ZXJzIGFyZSBnb29kIGF0IGFkZGluZyBiaWxsaW9ucyBvZiBudW1iZXJzIGluIG1pY3Jvc2Vjb25kcy4gSHVtYW5zLCBvbiB0aGUgb3RoZXIgaGFuZCwgYXJlIGdvb2QgYXQgYWJzdHJhY3QgdGhpbmtpbmcuIFRoaXMgaXMgZXhlbXBsaWZpZWQgYnkgdGhlIGRldmVsb3BtZW50IG9mIHBoaWxvc29waHksIGxpdGVyYXR1cmUsIHNjaWVuY2UgYW5kIG1hdGhlbWF0aWNzLiBUaGVzZSBvYnNlcnZhdGlvbnMgaGF2ZSBkZWVwIGNvbnNlcXVlbmNlcyBmb3IgcHJvZ3JhbW1pbmcgYW5kIHRoZSBkZXNpZ24gb2YgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2VzLiBUaGUgb3ZlcmFyY2hpbmcgY29uY2VybiBvZiBtdWNoIHJlc2VhcmNoIGluIGNvbXB1dGVyIHNjaWVuY2UgaXMgdG8gbWluaW1pemUgdGhlIGRpZmZlcmVuY2UgYmV0d2VlbiBob3cgaHVtYW5zIGNvbmNlcHR1YWxpc2UgcHJvZ3JhbXMgYW5kIGhvdyB0aG9zZSBwcm9ncmFtcyBhcmUgaW1wbGVtZW50ZWQgaW4gYSBwcm9ncmFtbWluZyBsYW5ndWFnZS4gVG8gYWNoaWV2ZSB0aGlzLCB3ZSBkbyB0aGUgc2FtZSB0aGluZyBodW1hbnMgaGF2ZSBiZWVuIGRvaW5nIGZvciA1MDAwIHllYXJzIGFzIHdlIHRyeSB0byB1bmRlcnN0YW5kIHRoZSB3b3JsZCBhcm91bmQgdXMuIFRoYXQgaXMsIHdlIGNvbnN0cnVjdCBtYXRoZW1hdGljYWwgbW9kZWxzIC0tLSBpbiB0aGlzIGNhc2UsIG1hdGhlbWF0aWNhbCBtb2RlbHMgb2YgY29tcHV0YXRpb24gLSBhbmQgdGhlbiByZWZsZWN0IHRoYXQgdW5kZXJzdGFuZGluZyBvZiBjb21wdXRhdGlvbiB3aXRoaW4gdGhlIGRlc2lnbiBvZiBwcm9ncmFtbWluZyBsYW5ndWFnZXMuIFRodXMsIHRoZXJlIGlzIGEgc3ltYmlvdGljIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIG1hdGhlbWF0aWNzLCBwcm9ncmFtbWluZywgYW5kIHRoZSBkZXNpZ24gb2YgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2VzLCBhbmQgYW55IGF0dGVtcHQgdG8gc2V2ZXIgdGhpcyBjb25uZWN0aW9uIHdpbGwgZGltaW5pc2ggZWFjaCBjb21wb25lbnQuIFJlY3Vyc2lvbiBpcyBvbmUgb2YgdGhlIG1vc3QgZnVuZGFtZW50YWwgbWF0aGVtYXRpY2FsIGNvbmNlcHRzIGluIGNvbXB1dGF0aW9uLiBJdHMgaW1wb3J0YW5jZSBsaWVzIGluIHRoZSBhYmlsaXR5IGl0IGdpdmVzIHVzIHRvIGRlZmluZSBjb21wdXRhdGlvbmFsIGFnZW50cyBpbiB0ZXJtcyBvZiB0aGVtc2VsdmVzIC0gdGhlc2UgY291bGQgYmUgcmVjdXJzaXZlIHByb2dyYW1zLCByZWN1cnNpdmUgIGRhdGEgdHlwZXMsIHJlY3Vyc2l2ZSBhbGdvcml0aG1zIG9yIGFueSBvZiBhIG15cmlhZCBvZiBvdGhlcnN0cnVjdHVyZXMuIFRoZSBvcmlnaW5hbCB0cmVhdG1lbnRzIG9mIHJlY3Vyc2lvbiBnbyBiYWNrIHRvIHRoZSAxOTMwcyB3aGVyZSB0aGUgY29uY2VwdCBvZiBjb21wdXRhYmlsaXR5IHdhcyBmb3JtYWxpc2VkIHZpYSB0aGUgdGhlb3J5IG9mZ2VuZXJhbCByZWN1cnNpdmUgZnVuY3Rpb25zLiBJdCBpcyB2aXJ0dWFsbHkgaW1wb3NzaWJsZSB0byBvdmVyZXN0aW1hdGUgaG93IHJlY3Vyc2lvbiBoYXMgY29udHJpYnV0ZWQgdG8gb3VyIGFiaWxpdHkgdG8gY29tcHV0ZWFuZCB0byB1bmRlcnN0YW5kIHRoZSBwcm9jZXNzIG9mIGNvbXB1dGF0aW9uLiBJcyBpdCBwb3NzaWJsZSB0aGF0IHRoZXJlIGlzIGFueXRoaW5nIGZ1bmRhbWVudGFsIGxlZnQgdG8gc2F5IGFib3V0IHJlY3Vyc2lvbj8gV2UgYmVsaWV2ZSB0aGVyZSBpcy4gT3VyIGNlbnRyYWwgaW5zaWdodCBpcyB0aGlzOiB3aGVuIGRlZmluaW5nIGEgZnVuY3Rpb24gcmVjdXJzaXZlbHksIHRoZSBpbnB1dHMgb2YgdGhlIGZ1bmN0aW9uIGFyZSAgdXN1YWxseSBmaXhlZCBpbiBhZHZhbmNlLiBCdXQgd2hhdCBpZiB0aGV5IGFyZSBub3Q/IFdoYXQgaWYsIGFzIHdlIGJ1aWxkIHVwIHRoZSBmdW5jdGlvbiByZWN1cnNpdmVseSwgd2UgYWxzbyBidWlsZCB1cCBpdHMgaW5wdXRzIGluZHVjdGl2ZWx5PyBUaGUgc3R1ZHkgb2YgZnVuY3Rpb25zIGRlZmluZWQgaW4gdGhpcyB3YXkgaXMgY2FsbGVkIGluZHVjdGlvbiByZWN1cnNpb24gYW5kIHRoaXMgcHJvcG9zYWwgYWltcyB0byBkZXZlbG9wIHRoZSB0aGVvcnkgYW5kIGFwcGxpY2F0aW9ucyBvZiBpbmR1Y3Rpb24gcmVjdXJzaW9uLk91ciBjZW50cmFsIGFtYml0aW9uIGlzIHRvIHR1cm4gaW5kdWN0aW9uIHJlY3Vyc2lvbiwgd2hpY2ggaXMgY3VycmVudGx5IGtub3duIG9ubHkgdG8gYSByZWxhdGl2ZWx5IHNtYWxsIG51bWJlciBvZiByZXNlYXJjaGVycyB3aXRoaW4gdHlwZSB0aGVvcnksIGludG8gYSBtYWluc3RyZWFtIHRlY2huaXF1ZSB3aXRoaW4gdGhlIHByb2dyYW1taW5nIGxhbmd1YWdlIGNvbW11bml0eS4gVGhpcyB3aWxsIHJlcXVpcmUgYm90aCB0aGUgdGhlb3JldGljYWwgZGV2ZWxvcG1lbnQgb2YgaW5kdWN0aW9uIHJlY3Vyc2lvbiBzbyBhcyB0byBnaXZlIHVzIG1vcmUgd2F5cyB0byB1bmRlcnN0YW5kIGl0LCBidXQgYWxzbyBjYXNlIHN0dWRpZXMgYW5kIGV4YW1wbGVzIHRvIG1ha2UgaXQgbW9yZSBhY2Nlc3NpYmxlIHRvIHByb2dyYW1tZXJzLiBGb3J0dW5hdGVseSB0aGlzIGlzIGFuIGV4Y2VsbGVudCB0aW1lIHRvIGRvIHRoaXMgcmVzZWFyY2ghICBUaGUgY2F0ZWdvcmljYWwgc3R1ZHkgb2YgZGF0YSB0eXBlcyBoYXMgYWR2YW5jZWQgdG8gdGhlIHN0YWdlIHdoZXJlIHRoZSB0aGVvcmV0aWNhbCB0b29scyBhcmUgbm93IGluIHBsYWNlIHRvIHRhY2tsZSBpbmR1Y3Rpb25yZWN1cnNpb24uIFBlcmhhcHMgZXZlbiBtb3JlIGZ1bmRhbWVudGFsbHksIGRlcGVuZGVudGx5IHR5cGVkIHByb2dyYW1taW5nIGxhbmd1YWdlcyBpbiB0aGUgc2hhcGUgb2YgRXBpZ3JhbSBhbmQgQWdkYSBoYXZlIGFkdmFuY2VkdG8gdGhlIHN0YWdlIHdoZXJlIG91ciBpZGVhcyBjYW4gYmUgaW1wbGVtZW50ZWQgaW4gY29kZSBhbmQgaGVuY2UgdGhlIGJlbmVmaXRzIG9mIGluZHVjdGlvbiByZWN1cnNpb24gY2FuIGJlIG1hZGUgZGlyZWN0bHkgYXZhaWxhYmxlIHRvcHJvZ3JhbW1lcnMgaW4gYSBmb3JtIHRoZXkgdW5kZXJzdGFuZC4gV2UgY2FuIHN1cHBseSB0aGVtIHdpdGggY29kZSB0byBwbGF5IHdpdGghIEluZGVlZCwgd2UgaG9wZSB0byBnbyBldmVuIGZ1cnRoZXIgYW4gZXhwbG9yZSB0aGUgZXh0ZW50IHRvIHdoaWNoIGluZHVjdGlvbiByZWN1cnNpb24gY2FuIGZvcm0gdGhlIGJhc2lzIG9mIGEgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2UuIEluIHN1bW1hcnksIHRoaXMgcHJvcG9zYWwgdGFrZXMgc3RhdGUgb2YgIHRoZSBhcnQgaWRlYXMgaW4gdGhlb3JldGljYWwgY29tcHV0ZXIgc2NpZW5jZSBhbmQgd2lsbCBhaW0gdG8gdHVybiB0aGVtIGRpcmVjdGx5IGludG8gc3RhdGUgb2YgdGhlIGFydCB0ZWNobmlxdWVzIHdpdGhpbiBwcm9ncmFtbWluZyBsYW5ndWFnZXMuIFN1Y2ggY29tYmluYXRpb25zIG9mIHRoZW9yeSBhbmQgYXBwbGljYXRpb25zIGdvaW5nIGhhbmQgaW4gaGFuZCB0b2dldGhlciBpcyBvZnRlbiB0aGUgaGFsbCBtYXJrIG9mIGdvb2Qgc2NpZW5jZSFkZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnN0cmF0aC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnN0cmF0aC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzAzMzA1Ni8xDEVQL0cwMzMwNTYvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkkQiLZZsKNxlEhctpIhuljaEH99Y=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLL7ZmUBALQvN++DAKT/OCVA+turHC/51S/h4vjvsSnPQbtHJEa" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G033056/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Theory And Applications of Induction Recursion</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=69411'>Ghani, Professor N</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer and Information Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Strathclyde</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 March 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="310,903.73" class="DetailValue">310,904</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/G033374/1'>EP/G033374/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/G03298X/1'>EP/G03298X/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>01 Dec 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4741">ICT Prioritisation Panel (December 2008)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Computers are good at adding billions of numbers in microseconds. Humans, on the other hand, are good at abstract thinking. This is exemplified by the development of philosophy, literature, science and mathematics. These observations have deep consequences for programming and the design of programming languages. The overarching concern of much research in computer science is to minimize the difference between how humans conceptualise programs and how those programs are implemented in a programming language. To achieve this, we do the same thing humans have been doing for 5000 years as we try to understand the world around us. That is, we construct mathematical models --- in this case, mathematical models of computation - and then reflect that understanding of computation within the design of programming languages. Thus, there is a symbiotic relationship between mathematics, programming, and the design of programming languages, and any attempt to sever this connection will diminish each component. Recursion is one of the most fundamental mathematical concepts in computation. Its importance lies in the ability it gives us to define computational agents in terms of themselves - these could be recursive programs, recursive  data types, recursive algorithms or any of a myriad of otherstructures. The original treatments of recursion go back to the 1930s where the concept of computability was formalised via the theory ofgeneral recursive functions. It is virtually impossible to overestimate how recursion has contributed to our ability to computeand to understand the process of computation. Is it possible that there is anything fundamental left to say about recursion? We believe there is. Our central insight is this: when defining a function recursively, the inputs of the function are  usually fixed in advance. But what if they are not? What if, as we build up the function recursively, we also build up its inputs inductively? The study of functions defined in this way is called induction recursion and this proposal aims to develop the theory and applications of induction recursion.Our central ambition is to turn induction recursion, which is currently known only to a relatively small number of researchers within type theory, into a mainstream technique within the programming language community. This will require both the theoretical development of induction recursion so as to give us more ways to understand it, but also case studies and examples to make it more accessible to programmers. Fortunately this is an excellent time to do this research!  The categorical study of data types has advanced to the stage where the theoretical tools are now in place to tackle inductionrecursion. Perhaps even more fundamentally, dependently typed programming languages in the shape of Epigram and Agda have advancedto the stage where our ideas can be implemented in code and hence the benefits of induction recursion can be made directly available toprogrammers in a form they understand. We can supply them with code to play with! Indeed, we hope to go even further an explore the extent to which induction recursion can form the basis of a programming language. In summary, this proposal takes state of  the art ideas in theoretical computer science and will aim to turn them directly into state of the art techniques within programming languages. Such combinations of theory and applications going hand in hand together is often the hall mark of good science!</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.strath.ac.uk                                                                             '>http://www.strath.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	STRUCTURE-BORNE SOUND SOURCE MODEL AS A PRE-PROCESSOR FOR STATISTICAL ENERGY ANALYSIS:  SuBSS-SEA Pre-processor
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD002427%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDAwMjQyNy8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWAATxzdHJvbmc+U1RSVUNUVVJFLUJPUk5FIFNPVU5EIFNPVVJDRSBNT0RFTCBBUyBBIFBSRS1QUk9DRVNTT1IgRk9SIFNUQVRJU1RJQ0FMIEVORVJHWSBBTkFMWVNJUzogIFN1QlNTLVNFQSBQcmUtcHJvY2Vzc29yPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVEPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zNDU4Nic+R2liYnMsIFByb2Zlc3NvciBCTTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAICFgQCAQ9kFgJmDxUDTDxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTUwMzYnPkJsYWNrICYgRGVja2VyIEV1cm9wZTwvYT48PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTk2NjcnPkNTVEI8L2E+WjxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTE5NjY2Jz5EeW5hbWljIFN0cnVjdHVyZXMgYW5kIFN5c3RlbXMgTHRkPC9hPmQCAg9kFgJmDxUDPTxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDA1NTEnPkVTSTwvYT5KPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTk5Jz5NYXJpbmV0ZWNoIFNvdXRoIEx0ZDwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQxBcmNoaXRlY3R1cmVkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdVbml2ZXJzaXR5IG9mIExpdmVycG9vbGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFG1N0YW5kYXJkIFJlc2VhcmNoIChQcmUtRkVDKWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDTMxIE1hcmNoIDIwMDZkZAIDD2QWAgIBDw8WAh8EBQ0zMCBNYXJjaCAyMDA5ZGQCBQ9kFgICAQ8PFgQfBAUGNzksOTMxHgdUb29sVGlwBQk3OSw5MzAuNzlkZAIKD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VAglBY291c3RpY3McTWF0ZXJpYWxzIHRlc3RpbmcgJmFtcDsgZW5nLmQCAg9kFgJmDxUCEk51bWVyaWNhbCBBbmFseXNpcyJTdGF0aXN0aWNzICZhbXA7IEFwcGwuIFByb2JhYmlsaXR5ZAILD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VAh1BZXJvc3BhY2UsIERlZmVuY2UgYW5kIE1hcmluZQxDb25zdHJ1Y3Rpb25kAgIPZBYCZg8VAh5UcmFuc3BvcnQgU3lzdGVtcyBhbmQgVmVoaWNsZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VBEM8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDAwMjEwOS8xJz5FUC9EMDAyMTA5LzE8L2E+QzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDAyMTVYLzEnPkVQL0QwMDIxNVgvMTwvYT4AAGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAWIE1N0YXRpc3RpY2FsIEVuZXJneSBBbmFseXNpcyAoU0VBKSB3YXMgaW50cm9kdWNlZCBpbiB0aGUgMTk2MHMgdG8gcHJlZGljdCBpZiByb2NrZXQgcGF5bG9hZHMgKHNhdGVsaXRlcywgZGVsaWNhdGUgaW5zdHJ1bWVudHMpIHdvdWxkIGJlIGRhbWFnZWQgYnkgdGhlIHZpYnJhdGlvbiBvZiB0aGUgcm9ja2V0IGR1cmluZyBmbGlnaHQuIFNpbmNlIHRoZW4sIFNFQSBoYXMgYmVlbiB1c2VkIHRvIHByZWRpY3QgdGhlIHZpYnJhdGlvbiBhbmQgbm9pc2UgY3JlYXRlZCBieSBzdHJ1Y3R1cmVzIHdoZW4gaW4gb3BlcmF0aW9uLCBzdWNoIGFzIGF1dG9tb2JpbGVzLCBhaXJjcmFmdCwgdHJhaW5zLCBzaGlwcywgYnVpbGRpbmdzLCBvZmZzaG9yZSBzdHJ1Y3R1cmVzIGFuZCBkb21lc3RpYyBhcHBsaWFuY2VzLiBJdCByZW1haW5zIHRoZSBvbmx5IHdpZGVseSB1c2VkIGNhbGN1bGF0aW9uIG1ldGhvZCBmb3IgaGlnaCBmcmVxdWVuY2llcyBhbmQgY29tcGxpY2F0ZWQgc3RydWN0dXJlcy4gSXQgaXMgcGFydGljdWxhcmx5IHVzZWZ1bCBpbiBwcmVkaWN0aW5nIGhvdyB2aWJyYXRpb25zIGFuZCBzb3VuZCB0cmF2ZWwgdGhyb3VnaCB0aGUgc3RydWN0dXJlLkl0IHdvcmtzIHdlbGwgaWYgdGhlIGNhdXNlIG9mIHRoZSB2aWJyYXRpb24gaXMgYWlyYm9ybmUgZS5nLiBsb3Vkc3BlYWtlcnMsIGZhbnMsIGFpciBmbG93IG5vaXNlLCBidXQgbGVzcyB3ZWxsIGZvciB2aWJyYXRpbmcgbWFjaGluZXMgZGlyZWN0bHkgY29ubmVjdGVkIHRvIHRoZSBzdHJ1Y3R1cmUsIGUuZy4gbW90b3JzLCBwdW1wcywgY29tcHJlc3NvcnM7IHRoZXNlIGFyZSBrbm93biBhcyBzdHJ1Y3R1cmUtYm9ybmUgc291cmNlcy4gVGhpcyBpcyBiZWNhdXNlIHRoZSBtYWNoaW5lJ3MgdmlicmF0aW9ucyB0cmFuc21pdCB0byB0aGUgc3VwcG9ydGluZy9zdXJyb3VuZGluZyBzdHJ1Y3R1cmUgaW4gYSBjb21wbGljYXRlZCBjb21iaW5hdGlvbiBvZiBtb3Rpb25zLiBBbHNvLCB0aGluIGxpZ2h0d2VpZ2h0IHN0cnVjdHVyZXMgd2lsbCB2aWJyYXRlIG1vcmUgdGhhbiBoZWF2eSBzdHJ1Y3R1cmVzIHdoZW4gY29ubmVjdGVkIHRvIHRoZSBzYW1lIHZpYnJhdGluZyBtYWNoaW5lcywgc28gd2UgbmVlZCB0byBrbm93IGFzIG11Y2ggYWJvdXQgdGhlIHN0cnVjdHVyZSAodGhlIHJlY2VpdmVyKSBhcyBhYm91dCB0aGUgbWFjaGluZSAodGhlIHNvdXJjZSkuIEFzIGEgcmVzdWx0LCB0aGVyZSBpcyBub3QgYXQgcHJlc2VudCBhIHByYWN0aWNhbCBtZXRob2Qgb2YgZXN0aW1hdGluZyB0aGUgc3RyZW5ndGggb2YgYSBtYWNoaW5lJ3MgdmlicmF0aW9uIHN1Y2ggdGhhdCB0aGUgbm9pc2UgYW5kIHZpYnJhdGlvbiB3aGljaCBpdCBjYXVzZXMgd2hlbiBpdCBpcyBpbnN0YWxsZWQgY2FuIGJlIHByZWRpY3RlZC5UaGlzIGFwcGxpY2F0aW9uIHNlZWtzIHRvIGJyaW5nIHRvZ2V0aGVyIHRocmVlIGNlbnRyZXMgb2YgZXhwZXJ0aXNlIHRvIHdvcmsgb24gdGhpcyBwcm9ibGVtOyB0aGUgRHluYW1pY3MgR3JvdXAgb2YgdGhlIEluc3RpdHV0ZSBvZiBTb3VuZCBhbmQgVmlicmF0aW9uIFJlc2VhcmNoIG9mIFNvdXRoYW1wdG9uIFVuaXZlcnNpdHk7IHRoZSBBY291c3RpY3MgUmVzZWFyY2ggQ2VudHJlIG9mIFNhbGZvcmQgVW5pdmVyc2l0eTsgdGhlIEFjb3VzdGljcyBSZXNlYXJjaCBVbml0IG9mIHRoZSBVbml2ZXJzaXR5IG9mIExpdmVycG9vbC5UaGUgYWltIG9mIHRoZSBwcm9qZWN0IGlzIHRvIGRldmVsb3AgYSB3YXkgb2Ygb2J0YWluaW5nIGRhdGEgb24gdGhlIHN0cmVuZ3RoIG9mIHN0cnVjdHVyZS1ib3JuZSBzb3VyY2VzLCB3aGljaCBjYW4gYmUgdXNlZCBhcyBpbnB1dCB0byBTRUEgbW9kZWxzIG9mIHZlaGljbGVzLCBidWlsZGluZ3MsIGFwcGxpYW5jZXMsIGV0Yy4sIHRvIHByZWRpY3QgdGhlIHZpYnJhdGlvbiBhbmQgbm9pc2Ugd2hlbiB0aGUgc291cmNlIGlzIGluc3RhbGxlZC4gVGhlIHJlc2VhcmNoIHdpbGwgYW5zd2VyIHRoZSBmb2xsb3dpbmcgdGhyZWUgcXVlc3Rpb25zOldoYXQgZG8gbWFudWZhY3R1cmVycyBvZiBtYWNoaW5lcyBhbmQgbWFjaGluZSBjb21wb25lbnRzIG5lZWQgdG8gbWVhc3VyZSBpbiBvcmRlciB0byBvYnRhaW4gdGhlIHN0cmVuZ3RoIG9mIHRoZXNlIHN0cnVjdHVyZS1ib3JuZSBzb3VuZCBzb3VyY2VzPyBIb3cgY2FuIHRoaXMgc291cmNlIGRhdGEgYmUgb3JnYW5pc2VkIGFuZCBzaW1wbGlmaWVkIGluIG9yZGVyIHRvIGJlIHVuZGVyc3RhbmRhYmxlIGJ5IGVuZ2luZWVycyB1c2luZyBTRUEgY29tcHV0ZXIgcHJvZ3JhbXM/SG93IG11Y2ggaW5mb3JtYXRpb24sIG9uIHRob3NlIHBhcnRzIG9mIHRoZSB2ZWhpY2xlLCBidWlsZGluZywgZXRjLiwgd2hpY2ggYXJlIGNvbm5lY3RlZCB0byB0aGUgdmlicmF0aW5nIG1hY2hpbmUsIGRvIHdlIHJlcXVpcmUgdG8gcHJlZGljdCB0aGUgdmlicmF0aW9uIGVuZXJneSBiZWluZyB0cmFuc21pdHRlZD9kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3Lmxpdi5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3Lmxpdi5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDAwMjQyNy8xDEVQL0QwMDI0MjcvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk8GbiiZvx9JKIHV6SGiUONOVlrkw=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKqwOT4BwLQvN++DAKT/OCVA+DI422CFX/Y2Fw6BFXCupvcH3xU" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D002427/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>STRUCTURE-BORNE SOUND SOURCE MODEL AS A PRE-PROCESSOR FOR STATISTICAL ENERGY ANALYSIS:  SuBSS-SEA Pre-processor</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=34586'>Gibbs, Professor BM</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=5036'>Black & Decker Europe</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=19667'>CSTB</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=19666'>Dynamic Structures and Systems Ltd</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1000551'>ESI</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=199'>Marinetech South Ltd</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Architecture</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Liverpool</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">31 March 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 March 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="79,930.79" class="DetailValue">79,931</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Acoustics</td>
+                                    <td class="DetailValue"> Materials testing &amp; eng.</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Numerical Analysis</td>
+                                    <td class="DetailValueAlt"> Statistics &amp; Appl. Probability</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                    <td class="DetailValueAlt"> Construction</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAltAlt"> Transport Systems and Vehicles</td>
+                                    <td class="DetailValueAltAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/D002109/1'>EP/D002109/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/D00215X/1'>EP/D00215X/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Statistical Energy Analysis (SEA) was introduced in the 1960s to predict if rocket payloads (satelites, delicate instruments) would be damaged by the vibration of the rocket during flight. Since then, SEA has been used to predict the vibration and noise created by structures when in operation, such as automobiles, aircraft, trains, ships, buildings, offshore structures and domestic appliances. It remains the only widely used calculation method for high frequencies and complicated structures. It is particularly useful in predicting how vibrations and sound travel through the structure.It works well if the cause of the vibration is airborne e.g. loudspeakers, fans, air flow noise, but less well for vibrating machines directly connected to the structure, e.g. motors, pumps, compressors; these are known as structure-borne sources. This is because the machine's vibrations transmit to the supporting/surrounding structure in a complicated combination of motions. Also, thin lightweight structures will vibrate more than heavy structures when connected to the same vibrating machines, so we need to know as much about the structure (the receiver) as about the machine (the source). As a result, there is not at present a practical method of estimating the strength of a machine's vibration such that the noise and vibration which it causes when it is installed can be predicted.This application seeks to bring together three centres of expertise to work on this problem; the Dynamics Group of the Institute of Sound and Vibration Research of Southampton University; the Acoustics Research Centre of Salford University; the Acoustics Research Unit of the University of Liverpool.The aim of the project is to develop a way of obtaining data on the strength of structure-borne sources, which can be used as input to SEA models of vehicles, buildings, appliances, etc., to predict the vibration and noise when the source is installed. The research will answer the following three questions:What do manufacturers of machines and machine components need to measure in order to obtain the strength of these structure-borne sound sources? How can this source data be organised and simplified in order to be understandable by engineers using SEA computer programs?How much information, on those parts of the vehicle, building, etc., which are connected to the vibrating machine, do we require to predict the vibration energy being transmitted?</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.liv.ac.uk                                                                                '>http://www.liv.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

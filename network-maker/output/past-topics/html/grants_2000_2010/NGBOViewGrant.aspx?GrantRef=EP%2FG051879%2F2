@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Introducing lanes and lane changing in analytic dynamic modelling of congested road traffic
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG051879%2f2" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzA1MTg3OS8yZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVsPHN0cm9uZz5JbnRyb2R1Y2luZyBsYW5lcyBhbmQgbGFuZSBjaGFuZ2luZyBpbiBhbmFseXRpYyBkeW5hbWljIG1vZGVsbGluZyBvZiBjb25nZXN0ZWQgcm9hZCB0cmFmZmljPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD03NDIwNic+Q2FyZXksIFByb2Zlc3NvciBNPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFH0luc3RpdHV0ZSBmb3IgVHJhbnNwb3J0IFN0dWRpZXNkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRNVbml2ZXJzaXR5IG9mIExlZWRzZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBPY3RvYmVyIDIwMDlkZAIDD2QWAgIBDw8WAh8EBQwzMSBKdWx5IDIwMTJkZAIFD2QWAgIBDw8WBB8EBQcyNDcsNzQ5HgdUb29sVGlwBQoyNDcsNzQ5LjI3ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhpNYXRoZW1hdGljYWwgQXNwZWN0cyBvZiBPUh5UcmFuc3BvcnQgT3BzICZhbXA7IE1hbmFnZW1lbnRkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCHlRyYW5zcG9ydCBTeXN0ZW1zIGFuZCBWZWhpY2xlcwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQF1RdNb2RlbGxpbmcgb2Ygcm9hZCB0cmFmZmljIGFuZCBpdHMgdmFyaWF0aW9uIG92ZXIgdGltZSAoZHluYW1pY3MpIG9uIG5ldHdvcmtzIGlzIG5lZWRlZCBmb3IgZGVzaWduaW5nLCBldmFsdWF0aW5nLCBwcmljaW5nIGFuZCBtYW5hZ2luZyByb2FkIHRyYWZmaWMsIGFuZCBmb3IgcHJvcG9zZWQgaW50ZWxsaWdlbnQgdHJhbnNwb3J0IHN5c3RlbXMgYmFzZWQgb24gaW5mb3JtYXRpY3MsIHJvdXRlIGd1aWRhbmNlLCBhbmQgb3RoZXIgdHJhZmZpYyBjb250cm9sIG1lYXN1cmVzLiAgTW9kZWxzIG9mIHRyYWZmaWMgZmxvd3Mgb24gcm9hZCBuZXR3b3JrIGNhbiBiZSBjb252ZW5pZW50bHkgZGl2aWRlZCBpbnRvIGFwcHJveGltYXRlbHkgdHdvIGNhdGVnb3JpZXMsIG5hbWVseSBtaWNyb3NpbXVsYXRpb24gKG1pY3Jvc2NvcGljIHNpbXVsYXRpb24pIG1vZGVscyBhbmQgd2hhdCBhcmUgb2Z0ZW4gcmVmZXJyZWQgdG8gYXMgYW5hbHl0aWMgbW9kZWxzIG9yIG1hY3Jvc2NvcGljIG1vZGVscy4gIFRoZSBmb3JtZXIgdGVuZHMgdG8gbW9kZWwgdHJhZmZpYyBhcyBpbmRpdmlkdWFsIHZlaGljbGVzIHdoaWxlIHRoZSBsYXR0ZXIgbW9kZWxzIGl0IGFzIGZsb3dzLiAgQm90aCBhcHByb2FjaGVzIGhhdmUgaW1wb3J0YW50IHJvbGVzIGFuZCBib3RoIGhhdmUgaW1wb3J0YW50IGFkdmFudGFnZXMgYW5kIHNvbWUgZGlzYWR2YW50YWdlcy4gW0UuZy4sIG1pY3Jvc2ltdWxhdGlvbiBtb2RlbHMgY2FuIHByb3ZpZGUgbW9yZSBkZXRhaWwgd2hpbGUgYW5hbHl0aWMgbW9kZWxzIGNvbnNpZGVyIGJyb2FkZXIgZ29hbHMgYW5kIGR5bmFtaWNzLCByZXF1aXJlIGxlc3MgZGF0YSBhbmQgZmV3ZXIgcGFyYW1ldGVycywgcnVuIGZhc3RlciBhbmQgaGF2ZSBvdGhlciBkZXNpcmFibGUgcHJvcGVydGllcy5dIEEgcmVtYXJrYWJsZSBkaWZmZXJlbmNlIGJldHdlZW4gdGhlIHR3byBhcHByb2FjaGVzIGlzIHRoYXQsIGluIG1pY3Jvc2ltdWxhdGlvbiwgdGhlIG1vZGVsbGluZyBvZiBsYW5lcyBhbmQgbGFuZS1jaGFuZ2luZyBiZWhhdmlvdXIgcGxheXMgYW4gZXNzZW50aWFsIHJvbGUuICBJbiBjb250cmFzdCwgaW4gdGhlIGN1cnJlbnQgc3RhdGUgb2YgdGhlIGFydCBmb3IgIGFuYWx5dGljICBtb2RlbHMsIGxhbmVzIGFuZCBsYW5lIGNoYW5naW5nIGFyZSBsYXJnZWx5IGlnbm9yZWQgYW5kIHJvYWRzIGFyZSBjb21tb25seSB0cmVhdGVkIGFzIGhhdmluZyBvbmx5IGEgc2luZ2xlIGxhbmUgaW4gZWFjaCBkaXJlY3Rpb24uIFRoaXMgY29udHJhc3QsIG9yIGxhY2sgb2YgcmVhbGlzbSBpbiBhbmFseXRpYyBuZXR3b3JrIG1vZGVscywgaXMgc3VmZmljaWVudCB0byBleHBsYWluIHdoeSBtaWNyb3NpbXVsYXRpb24gbW9kZWxzIGFyZSBpbmNyZWFzaW5nbHkgdXNlZCBpbiBwcmFjdGljZSBpbiBjb250cmFzdCB0byBhbmFseXRpYyBtb2RlbHMgZGVzcGl0ZSB0aGUgbmVlZCBmb3IgdGhlIGxhdHRlciBhbmQgdGhlaXIgbWFueSByZWNlbnQgdGhlb3JldGljYWwgYW5kIGNvbXB1dGF0aW9uYWwgYWR2YW5jZXMuICBUaGUgcHVycG9zZSBvZiB0aGUgcHJvcG9zZWQgcmVzZWFyY2ggaXMgdG8gZmFjaWxpdGF0ZSBhbmQgYWR2YW5jZSB0aGUgaW50cm9kdWN0aW9uIG9mIGxhbmVzIGFuZCBsYW5lLWNoYW5naW5nIGJlaGF2aW91ciBpbnRvIGFuYWx5dGljIG1hY3Jvc2NvcGljIG1vZGVscywgdG8gYnJpbmcgdG8gdGhlc2UgbW9kZWxzIHRoZSBiZW5lZml0cyBhbmQgYWR2YW50YWdlcyB0aGF0IGl0IGJyb3VnaHQgdG8gbWljcm9zaW11bGF0aW9uIG1vZGVscywgd2hpbGUgc28gZmFyIGFzIHBvc3NpYmxlIHJldGFpbmluZyBleGlzdGluZyBhZHZhbnRhZ2VzIG9mIGFuYWx5dGljIG5ldHdvcmsgbW9kZWxzLiBPbmUgb2YgdGhlIG1haW4gcmVhc29ucyB3aHkgdHJhZmZpYyBjaGFuZ2VzIGZyb20gb25lIGxhbmUgdG8gYW5vdGhlciBpcyB0byBhdm9pZCBjb25nZXN0aW9uLCBxdWV1ZXMgb3Igc3BpbGwtYmFja3MgaW4gdGhlIG90aGVyIGxhbmVzLCBoZW5jZSB3ZSB3aWxsIHNpbXVsdGFuZW91c2x5IG1vZGVsIHRoZSBmb3JtYXRpb24gYW5kIGJlaGF2aW91ciBvZiBzdWNoIGNvbmdlc3Rpb24sIHF1ZXVlcyBhbmQgc3BpbGxiYWNrcy4gICBXZSBwcm9wb3NlIHRvIGRldmVsb3AgdGhlc2UgbW9kZWxzICh3aXRoIGxhbmVzLCBsYW5lLWNoYW5naW5nLCBjb25nZXN0aW9uLCBxdWV1ZXMgYW5kIHNwaWxsYmFjaykgaW4gdHdvIGRpZmZlcmVudCB3YXlzOiBmaXJzdGx5IGJ5IHJlZm9ybXVsYXRpbmcgZWFjaCBvZiB2YXJpb3VzIGV4aXN0aW5nIHRyYWZmaWMgbGluayBtb2RlbHMgdXNlZCBpbiBkeW5hbWljIHRyYWZmaWMgYXNzaWdubWVudCwgc28gYXMgdG8gaW5jbHVkZSBsYW5lcyBhbmQgbGFuZSBjaGFuZ2luZywgYW5kIHNlY29uZGx5IGJ5IGludHJvZHVjaW5nIGxhbmVzIGFuZCBsYW5lIGNoYW5naW5nIGludG8gdGhlIHVzdWFsIGNvbnRpbnVvdXMgc2luZ2xlLWxhbmUgdHJhZmZpYyBmbG93IHRoZW9yeSAoZmx1aWQgZmxvdyBhbmQga2luZW1hdGljIHdhdmUgbW9kZWxzKS4gIFdlIGFsc28gcGxhbiB0byBkZXZlbG9wIHNvbHV0aW9uIGFsZ29yaXRobXMgZWFjaCBvZiB0aGUgcmVzdWx0aW5nIG1vZGVscywgYW5kIHRvIGludmVzdGlnYXRlIGFuZCBjb21wYXJlIHRoZSB2YXJpb3VzIHByb3BlcnRpZXMsIGFkdmFudGFnZXMgYW5kIGRpc2FkdmFudGFnZXMgb2YgZWFjaCBvZiB0aGUgbW9kZWxzIGFuZCBhbGdvcml0aG1zLCBhbmQgdGhlIGltcGxpY2l0IHRyYWRlLW9mZnMgdGhleSBtYWtlIGJldHdlZW4sIGZvciBleGFtcGxlLCByZWFsaXNtLCBzaW1wbGljaXR5IGFuZCBjb21wdXRhdGlvbmFsIGNvc3QuICAgVG8gdW5kZXJ0YWtlIHRoZSBhYm92ZSByZXNlYXJjaCB3ZSBhcmUgcmVxdWVzdGluZyBmdW5kaW5nIGZvciBvbmUgcmVzZWFyY2ggYXNzaXN0YW50IChSZXNlYXJjaCBGZWxsb3cpIGZvciAzIHllYXJzIHRvZ2V0aGVyIHdpdGggc29tZSBzdXBwb3J0IGZvciBjb21wdXRpbmcgZXF1aXBtZW50IGFuZCB0cmF2ZWwgdG8gcmVzZWFyY2ggbWVldGluZ3MgYW5kIGNvbmZlcmVuY2VzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cubGVlZHMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cubGVlZHMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDUxODc5LzIMRVAvRzA1MTg3OS8yZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGT2iXR1G3KssVnXP8WK6dkkmogCdA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKNsbiCDwLQvN++DAKT/OCVA4dwXge1HsCFRSLyoN2sGKgocau8" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G051879/2</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Introducing lanes and lane changing in analytic dynamic modelling of congested road traffic</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=74206'>Carey, Professor M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Institute for Transport Studies</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Leeds</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 July 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="247,749.27" class="DetailValue">247,749</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Aspects of OR</td>
+                                    <td class="DetailValue"> Transport Ops &amp; Management</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Transport Systems and Vehicles</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Modelling of road traffic and its variation over time (dynamics) on networks is needed for designing, evaluating, pricing and managing road traffic, and for proposed intelligent transport systems based on informatics, route guidance, and other traffic control measures.  Models of traffic flows on road network can be conveniently divided into approximately two categories, namely microsimulation (microscopic simulation) models and what are often referred to as analytic models or macroscopic models.  The former tends to model traffic as individual vehicles while the latter models it as flows.  Both approaches have important roles and both have important advantages and some disadvantages. [E.g., microsimulation models can provide more detail while analytic models consider broader goals and dynamics, require less data and fewer parameters, run faster and have other desirable properties.] A remarkable difference between the two approaches is that, in microsimulation, the modelling of lanes and lane-changing behaviour plays an essential role.  In contrast, in the current state of the art for  analytic  models, lanes and lane changing are largely ignored and roads are commonly treated as having only a single lane in each direction. This contrast, or lack of realism in analytic network models, is sufficient to explain why microsimulation models are increasingly used in practice in contrast to analytic models despite the need for the latter and their many recent theoretical and computational advances.  The purpose of the proposed research is to facilitate and advance the introduction of lanes and lane-changing behaviour into analytic macroscopic models, to bring to these models the benefits and advantages that it brought to microsimulation models, while so far as possible retaining existing advantages of analytic network models. One of the main reasons why traffic changes from one lane to another is to avoid congestion, queues or spill-backs in the other lanes, hence we will simultaneously model the formation and behaviour of such congestion, queues and spillbacks.   We propose to develop these models (with lanes, lane-changing, congestion, queues and spillback) in two different ways: firstly by reformulating each of various existing traffic link models used in dynamic traffic assignment, so as to include lanes and lane changing, and secondly by introducing lanes and lane changing into the usual continuous single-lane traffic flow theory (fluid flow and kinematic wave models).  We also plan to develop solution algorithms each of the resulting models, and to investigate and compare the various properties, advantages and disadvantages of each of the models and algorithms, and the implicit trade-offs they make between, for example, realism, simplicity and computational cost.   To undertake the above research we are requesting funding for one research assistant (Research Fellow) for 3 years together with some support for computing equipment and travel to research meetings and conferences.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.leeds.ac.uk                                                                              '>http://www.leeds.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

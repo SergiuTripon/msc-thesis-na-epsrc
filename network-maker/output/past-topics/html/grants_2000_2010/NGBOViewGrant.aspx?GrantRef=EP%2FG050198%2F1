@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Quadratic Fourier analysis in combinatorics.
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG050198%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzA1MDE5OC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU9PHN0cm9uZz5RdWFkcmF0aWMgRm91cmllciBhbmFseXNpcyBpbiBjb21iaW5hdG9yaWNzLjwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTIxNTA4NSc+U2lzYXNrLCBEciBPPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFHFNjaCBvZiBNYXRoZW1hdGljYWwgU2NpZW5jZXNkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBSBRdWVlbiBNYXJ5LCBVbml2ZXJzaXR5IG9mIExvbmRvbmRkAggPZBYCAgEPZBYCAgEPDxYCHwQFG1Bvc3Rkb2MgUmVzZWFyY2ggRmVsbG93c2hpcGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzAxIE9jdG9iZXIgMjAwOWRkAgMPZBYCAgEPDxYCHwQFETMwIFNlcHRlbWJlciAyMDEyZGQCBQ9kFgICAQ8PFgQfBAUHMjEyLDE3OB4HVG9vbFRpcAUKMjEyLDE3OC4xOGRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIVTWF0aGVtYXRpY2FsIEFuYWx5c2lzAGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAICHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgJkFgJmD2QWBAIBD2QWBmYPZBYCAgEPDxYCHwQFCzE3IE1hciAyMDA5ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBS5NYXRocyBQb3N0ZG9jdG9yYWwgRmVsbG93c2hpcHMgSW50ZXJ2aWV3IFBhbmVsHwMFJ1ZpZXdQYW5lbEZlbGxvd3NoaXBWMi5hc3B4P1BhbmVsSWQ9NDgyNWRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCAg9kFgZmD2QWAgIBDw8WAh8EBQsxMiBGZWIgMjAwOWRkAgEPDxYCHwcFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUxTWF0aHMgUG9zdGRvY3RvcmFsIFJlc2VhcmNoIEZlbGxvd3NoaXBzIDIwMDgvMjAwOR8DBSdWaWV3UGFuZWxGZWxsb3dzaGlwVjIuYXNweD9QYW5lbElkPTQ3NzhkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCEV4Y2x1ZGVkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBfYPT25lIG9mIHRoZSBndWlkaW5nIHByaW5jaXBsZXMgb2YgYWRkaXRpdmUgY29tYmluYXRvcmljcyBpcyB0aGF0IGlmIG9uZSBoYXMgYSBoaWdobHkgc3RydWN0dXJlZCBtYXRoZW1hdGljYWwgb2JqZWN0LCBzYXkgYW4gYWJlbGlhbiBncm91cCwgdGhlbiBvbmUgaGFzIHRvIGRvIGEgbG90IG9mIHdvcmsgaW4gb3JkZXIgdG8gcmVtb3ZlIGNlcnRhaW4gdHlwZXMgb2Ygc3RydWN0dXJlIGZyb20gdGhhdCBvYmplY3QuIEEgZnVuZGFtZW50YWwgZXhhbXBsZSBvZiB0aGlzIHByaW5jaXBsZSBpcyBnaXZlbiBieSB0aGUgY2VsZWJyYXRlZCB0aGVvcmVtIG9mIEtsYXVzIFJvdGgsIGRhdGluZyBiYWNrIHRvIDE5NTMsIHN0YXRpbmcgdGhhdCBpZiBvbmUgc2VsZWN0cyBhIHBvc2l0aXZlIHByb3BvcnRpb24gb2YgdGhlIG51bWJlcnMgYmV0d2VlbiAxIGFuZCBOLCB0aGVuIG9uZSBpcyBmb3JjZWQgdG8gaW5oZXJpdCBzb21lIG9mIHRoZSBhZGRpdGl2ZSBzdHJ1Y3R1cmUgb2YgdGhpcyBjb2xsZWN0aW9uIG9mIG51bWJlcnMsIHByb3ZpZGVkIE4gaXMgbGFyZ2UuIEluIHRoaXMgY2FzZSwgdGhlIGFkZGl0aXZlIHN0cnVjdHVyZSBjb21lcyBpbiB0aGUgZm9ybSBvZiBzb2x1dGlvbnMgdG8gdHJhbnNsYXRpb24taW52YXJpYW50IGxpbmVhciBlcXVhdGlvbnMsIGdpdmluZyByaXNlIHRvIHN1Y2ggc3RydWN0dXJlcyBhcyB0aHJlZS10ZXJtIGFyaXRobWV0aWMgcHJvZ3Jlc3Npb25zIHgsIHgrZCwgeCsyZCB3aGVyZSBkIGlzIG5vbi16ZXJvLiBJbiBkZW1vbnN0cmF0aW5nIHRoaXMsIFJvdGggc29sdmVkIGEgMjAteWVhciBvbGQgY29uamVjdHVyZSwgeWV0IGl0IHdhcyB0byBiZSBhbm90aGVyIDIwIHllYXJzIGJlZm9yZSBhIGZ1cnRoZXIgbWFqb3IgYnJlYWt0aHJvdWdoIHdhcyBtYWRlIGFsb25nIHRoZXNlIGxpbmVzOiBpbiAxOTc1LCBFbmRyZSBTemVtZXJlZGkgZXN0YWJsaXNoZWQgdGhhdCwgaW4gZmFjdCwgYW55IHN1YmNvbGxlY3Rpb24gb2YgcG9zaXRpdmUgZGVuc2l0eSBvZiB0aGUgbnVtYmVycyBiZXR3ZWVuIDEgYW5kIE4gbXVzdCBjb250YWluIGEgdmVyeSBsb25nIGFyaXRobWV0aWMgcHJvZ3Jlc3Npb24sIG5vdCBqdXN0IG9uZSBvZiB0aHJlZSB0ZXJtcy4gSG93ZXZlciwgU3plbWVyZWRpJ3MgcHJvb2Ygb2YgdGhpcyBmYWN0IHdhcyBjb21wbGV0ZWx5IGNvbWJpbmF0b3JpYWwgd2hlcmVhcyBSb3RoJ3MgdXNlZCB0aGUgdGhlb3J5IG9mIEZvdXJpZXIgYW5hbHlzaXMsIHdoaWNoIGxlZCB0byBhIHN1YnN0YW50aWFsbHkgbW9yZSBlZmZpY2llbnQgYXJndW1lbnQuIFRoZSBxdWVzdGlvbiBhcyB0byB3aGV0aGVyIFJvdGgncyBnZW5lcmFsIG1ldGhvZCBvZiBwcm9vZiBjb3VsZCBiZSBleHRlbmRlZCB0byBwcm92ZSBTemVtZXJlZGkncyByZXN1bHQgd2FzIHRoZXJlZm9yZSBuYXR1cmFsLCBhbmQgdGhpcyB3YXMgYWZmaXJtYXRpdmVseSBhbnN3ZXJlZCBpbiBmb3VuZGF0aW9uYWwgd29yayBvZiBUaW0gR293ZXJzIGJldHdlZW4gMTk5OCBhbmQgMjAwMSwgbGVhZGluZyB0byB0aGUgYmlydGggb2Ygc28tY2FsbGVkIHF1YWRyYXRpYyBGb3VyaWVyIGFuYWx5c2lzLiBJbiB0aGUgbWVhbnRpbWUsIGhvd2V2ZXIsIHRoZSAobGluZWFyKSBGb3VyaWVyIGFuYWx5c2lzIHRoYXQgUm90aCBoYWQgdXNlZCBoYWQgYmVlbiBzaWduaWZpY2FudGx5IGRldmVsb3BlZCBhbmQgYmV0dGVyIHVuZGVyc3Rvb2QsIGxlYWRpbmcgdG8gbWFueSBleHRlbnNpb25zIG9mIHRoZSBzdWJqZWN0LiBUaGUgbWFpbiBhaW0gb2YgdGhpcyBwcm9qZWN0IGlzIHRodXMgdG8gdHJ5IHRvIGRldmVsb3AgcXVhZHJhdGljIEZvdXJpZXIgYW5hbHlzaXMgaW4gYSBzaW1pbGFyIHdheSB0byB3aGF0IGhhcyBiZWVuIHBvc3NpYmxlIHdpdGggbGluZWFyIEZvdXJpZXIgYW5hbHlzaXMsIGFzIHdlbGwgYXMgdG8gaW52ZXN0aWdhdGUgbGlua3MgYmV0d2VlbiBtb2Rlcm4gYWRkaXRpdmUgRm91cmllciBhbmFseXNpcyBhbmQgcmVjZW50IGV4dGVuc2lvbnMgb2YgdGhlIGdlbmVyYWwgbWV0aG9kIG9mIFN6ZW1lcmVkaSdzIHByb29mLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cucW11bC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cucW11bC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDUwMTk4LzEMRVAvRzA1MDE5OC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSHnVg4rUAZ5M6gTXC9UkW+BBWykQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLlseOiAwLQvN++DAKT/OCVA5q7E/8wAy9PcchvzXdu69HDmI8A" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G050198/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Quadratic Fourier analysis in combinatorics.</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-215085'>Sisask, Dr O</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Mathematical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Queen Mary, University of London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Postdoc Research Fellowship</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="212,178.18" class="DetailValue">212,178</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>17 Mar 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanelFellowshipV2.aspx?PanelId=4825">Maths Postdoctoral Fellowships Interview Panel</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr><tr class="DetailValueAlt">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl03_Label1"><b>12 Feb 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl03_lnkPanelName" href="ViewPanelFellowshipV2.aspx?PanelId=4778">Maths Postdoctoral Research Fellowships 2008/2009</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl03_Label3"><b>Excluded</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">One of the guiding principles of additive combinatorics is that if one has a highly structured mathematical object, say an abelian group, then one has to do a lot of work in order to remove certain types of structure from that object. A fundamental example of this principle is given by the celebrated theorem of Klaus Roth, dating back to 1953, stating that if one selects a positive proportion of the numbers between 1 and N, then one is forced to inherit some of the additive structure of this collection of numbers, provided N is large. In this case, the additive structure comes in the form of solutions to translation-invariant linear equations, giving rise to such structures as three-term arithmetic progressions x, x+d, x+2d where d is non-zero. In demonstrating this, Roth solved a 20-year old conjecture, yet it was to be another 20 years before a further major breakthrough was made along these lines: in 1975, Endre Szemeredi established that, in fact, any subcollection of positive density of the numbers between 1 and N must contain a very long arithmetic progression, not just one of three terms. However, Szemeredi's proof of this fact was completely combinatorial whereas Roth's used the theory of Fourier analysis, which led to a substantially more efficient argument. The question as to whether Roth's general method of proof could be extended to prove Szemeredi's result was therefore natural, and this was affirmatively answered in foundational work of Tim Gowers between 1998 and 2001, leading to the birth of so-called quadratic Fourier analysis. In the meantime, however, the (linear) Fourier analysis that Roth had used had been significantly developed and better understood, leading to many extensions of the subject. The main aim of this project is thus to try to develop quadratic Fourier analysis in a similar way to what has been possible with linear Fourier analysis, as well as to investigate links between modern additive Fourier analysis and recent extensions of the general method of Szemeredi's proof.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.qmul.ac.uk                                                                               '>http://www.qmul.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

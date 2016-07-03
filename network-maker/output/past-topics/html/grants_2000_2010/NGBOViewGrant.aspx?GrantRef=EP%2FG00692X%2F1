@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Automatic ontology augmentation: evaluation issues
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG00692X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzAwNjkyWC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVDPHN0cm9uZz5BdXRvbWF0aWMgb250b2xvZ3kgYXVnbWVudGF0aW9uOiBldmFsdWF0aW9uIGlzc3Vlczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9OTU5OTAnPkNvcGVzdGFrZSwgUHJvZmVzc29yIEE8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA1I8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0tODA4Myc+Um95YWwgU29jaWV0eSBvZiBDaGVtaXN0cnk8L2E+AABkAgYPZBYCAgEPZBYCAgEPDxYCHwQFE0NvbXB1dGVyIExhYm9yYXRvcnlkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdVbml2ZXJzaXR5IG9mIENhbWJyaWRnZWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUNMDEgQXByaWwgMjAwOWRkAgMPZBYCAgEPDxYCHwQFDTMxIE1hcmNoIDIwMTBkZAIFD2QWAgIBDw8WBB8EBQYzMywwNDMeB1Rvb2xUaXAFCTMzLDA0Mi41NGRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCF0FydGlmaWNpYWwgSW50ZWxsaWdlbmNlIEluZm9ybWF0aW9uICZhbXA7IEtub3dsZWRnZSBNZ210ZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhhJbmZvcm1hdGlvbiBUZWNobm9sb2dpZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBe4OTmV3IHNjaWVudGlmaWMga25vd2xlZGdlIGluIGFyZWFzIHN1Y2ggYXMgYmlvbG9neSBhbmQgYmlvY2hlbWlzdHJ5IGlzIGJlaW5nIGRpc2NvdmVyZWQgYXQgYW4gdW5wcmVjZWRlbnRlZCByYXRlLiAgSW4gc29tZSBjYXNlcywgc3RydWN0dXJlZCBrbm93bGVkZ2Ugc291cmNlcyBhcmUgYXZhaWxhYmxlLCBpbiB0aGUgZm9ybSBvZiBzZW1hbnRpYyB3ZWIgbWFya3VwIG9yIGRhdGFiYXNlcywgYnV0IG1vc3Qgc2NpZW50aWZpYyBkaXNjb3ZlcmllcyBhcmUgc3RpbGwgcmVwb3J0ZWQgaW4gdGhldHJhZGl0aW9uYWwgd2F5LCBhcyBqb3VybmFsIGFydGljbGVzIG9yIGNvbmZlcmVuY2UgcHJvY2VlZGluZ3MuIE1hbmFnaW5nIHRoaXMgdmFzdCBhbW91bnQgb2YgaW5mb3JtYXRpb24sIHdoZXRoZXIgc3RydWN0dXJlZCBvciB1bnN0cnVjdHVyZWQsIHJlcXVpcmVzIG1hcHBpbmcgYmV0d2VlbiBkaXNwYXJhdGUga25vd2xlZGdlIHNvdXJjZXMsIGludm9sdmluZyBkaWZmZXJlbnQgbm9tZW5jbGF0dXJlIGFuZCByZWxhdGlvbnNoaXBzLiAgT250b2xvZ2llcyBoYXZlIHBsYXllZCBhIGNyaXRpY2FsIHJvbGUgaW4gYWRkcmVzc2luZyB0aGUgY2hhbGxlbmdlIG9mIHNlbWFudGljIGludGVncmF0aW9uIG9mIHN1Y2gga25vd2xlZGdlLiAgQ29uc3RydWN0aW5nIG9udG9sb2dpZXMgaXMgYW4gZXh0cmVtZWx5IGxhYm9yaW91cyBlZmZvcnQuIE5vdCBvbmx5IG11c3QgcmVzZWFyY2hlcnMgYWdyZWUgb24gdGhlIGNvbmNlcHRzIGFuZCByZWxhdGlvbnNoaXBzIG5lZWRlZCBmb3IgYSBkb21haW4gb2Yga25vd2xlZGdlLCBidXQgdGhleSBtdXN0IGFsc28gZG8gc28gaW4gYSB3YXkgdGhhdCBtaW5pbWl6ZXMgZXJyb3JzIGFuZCBpcyBlYXN5IHRvIHVwZGF0ZSBhbmQgbWFpbnRhaW4uICBUaGVyZSBpcyB0aGVyZWZvcmUgY29uc2lkZXJhYmxlIGludGVyZXN0IGluIGNyZWF0aW5nIG9yIGF1Z21lbnRpbmcgb250b2xvZ2llcyBhdXRvbWF0aWNhbGx5IGJ5IGFuYWx5c2luZyB0ZXh0LiAgSG93ZXZlciwgbm9uZSBvZiB0aGUgcmVzZWFyY2ggaW4gdGhpcyBhcmVhIGhhcyB5ZXQgaGFkIGEgc2lnbmlmaWNhbnQgaW1wYWN0IG9uIHRoZSBwcm9jZXNzIG9mIGNyZWF0aW5nIG9udG9sb2dpZXMgZm9yIHNjaWVudGlmaWMgZG9tYWlucy4gIEluIHRoaXMgc2hvcnQgcHJvamVjdCwgd2UgaW50ZW5kIHRvIGNvbGxhYm9yYXRlIHdpdGggYSB2aXNpdGluZyByZXNlYXJjaGVyLCBEciBJbmRlcmplZXQgTWFuaSwgd2hvIGlzIGEgbGVhZGVyIGluIHRoaXMgZmllbGQgdG8gbG9vayBzcGVjaWZpY2FsbHkgYXQgdGhlIGlzc3VlIG9mIGV2YWx1YXRpbmdhdXRvbWF0aWNhbGx5IGNyZWF0ZWQgb250b2xvZ2llcy4gIFJlc2VhcmNoIGluIGxhbmd1YWdlIHByb2Nlc3NpbmcgaW4gZ2VuZXJhbCByZXF1aXJlcyBnb29kIGV2YWx1YXRpb24gdGVjaG5pcXVlcyB0byBiZSBhZ3JlZWQgb24gYnkgdGhlIHJlbGV2YW50IGNvbW11bml0eS4gIFdpdGhvdXQgc3VjaCB0ZWNobmlxdWVzLCBpdCBpcyBpbXBvc3NpYmxlIHRvIHJlcGxpY2F0ZSByZXN1bHRzIGFuZCBidWlsZCBvbiBwcmV2aW91cyB3b3JrIGluIGEgbW90aXZhdGVkIGZhc2hpb24uIEV2YWx1YXRpb24gb2YgYXV0b21hdGljYWxseSBjcmVhdGVkIG9udG9sb2dpZXMgaXMgaW4gaXRzIGluZmFuY3ksIHdoaWNoIGlzIGhhbXBlcmluZyByZXNlYXJjaCBpbiB0aGUgYXJlYS4gIFRoZSBtb3N0IGVmZmVjdGl2ZSB3YXkgdG8gbWFrZSBwcm9ncmVzcyBpcyBieSBpbnRlbnNpdmUgZGlzY3Vzc2lvbiBiZXR3ZWVuIGRpZmZlcmVudCBncm91cHMsYmFja2VkIHVwIHdpdGggc21hbGwgc2NhbGUgZXhwZXJpbWVudGF0aW9uLiBEciBNYW5pJ3MgdmlzaXQgd2lsbCBhbGxvdyB1cyB0byBpbXByb3ZlIG9uIGV4aXN0aW5nIGV2YWx1YXRpb24gcHJhY3RpY2UuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0cwMDY5MlgvMQxFUC9HMDA2OTJYLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZIIrW02vTV0r4UVVBhrnF5DCYY6+" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKJsfiIBQLQvN++DAKT/OCVA9nii8FHRMojbW8PNfb8mDZnEPzu" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G00692X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Automatic ontology augmentation: evaluation issues</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=95990'>Copestake, Professor A</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-8083'>Royal Society of Chemistry</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Laboratory</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Cambridge</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 April 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="33,042.54" class="DetailValue">33,043</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Information &amp; Knowledge Mgmt</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">New scientific knowledge in areas such as biology and biochemistry is being discovered at an unprecedented rate.  In some cases, structured knowledge sources are available, in the form of semantic web markup or databases, but most scientific discoveries are still reported in thetraditional way, as journal articles or conference proceedings. Managing this vast amount of information, whether structured or unstructured, requires mapping between disparate knowledge sources, involving different nomenclature and relationships.  Ontologies have played a critical role in addressing the challenge of semantic integration of such knowledge.  Constructing ontologies is an extremely laborious effort. Not only must researchers agree on the concepts and relationships needed for a domain of knowledge, but they must also do so in a way that minimizes errors and is easy to update and maintain.  There is therefore considerable interest in creating or augmenting ontologies automatically by analysing text.  However, none of the research in this area has yet had a significant impact on the process of creating ontologies for scientific domains.  In this short project, we intend to collaborate with a visiting researcher, Dr Inderjeet Mani, who is a leader in this field to look specifically at the issue of evaluatingautomatically created ontologies.  Research in language processing in general requires good evaluation techniques to be agreed on by the relevant community.  Without such techniques, it is impossible to replicate results and build on previous work in a motivated fashion. Evaluation of automatically created ontologies is in its infancy, which is hampering research in the area.  The most effective way to make progress is by intensive discussion between different groups,backed up with small scale experimentation. Dr Mani's visit will allow us to improve on existing evaluation practice.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cam.ac.uk                                                                                '>http://www.cam.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

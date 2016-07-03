@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Modelling constrained shrinking and cracking
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF037430%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAzNzQzMC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU9PHN0cm9uZz5Nb2RlbGxpbmcgY29uc3RyYWluZWQgc2hyaW5raW5nIGFuZCBjcmFja2luZzwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFQTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9Mzk0OTEnPlBhbiwgUHJvZmVzc29yIEo8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA2E8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwNjA0Jz5GcmF1bmhvZmVyIEluc3RpdHV0IChNdWx0aXBsZSwgR3JvdXBlZCk8L2E+STxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDEyOTQnPlJvbGxzLVJveWNlIFBsYzwvYT4AZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQtFbmdpbmVlcmluZ2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF1VuaXZlcnNpdHkgb2YgTGVpY2VzdGVyZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBRAwMSBOb3ZlbWJlciAyMDA4ZGQCAw9kFgICAQ8PFgIfBAUPMzEgT2N0b2JlciAyMDExZGQCBQ9kFgICAQ8PFgQfBAUHMjY4LDcyMR4HVG9vbFRpcAUKMjY4LDcyMC41NWRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCHUVuZy4gRHluYW1pY3MgJmFtcDsgVHJpYm9sb2d5Gk1hdGVyaWFscyBDaGFyYWN0ZXJpc2F0aW9uZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAg1NYW51ZmFjdHVyaW5nAGQCDA9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQRDPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwNDE4NTMvMSc+RVAvRjA0MTg1My8xPC9hPkM8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjAzNzcyNC8xJz5FUC9GMDM3NzI0LzE8L2E+AABkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwcCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQsxMiBGZWIgMjAwOGRkAgEPDxYCHwgFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUuTWF0ZXJpYWxzIFByaW9yaXRpc2F0aW9uIFBhbmVsIEZlYnJ1YXJ5IChUZWNoKR8DBRtWaWV3UGFuZWwuYXNweD9QYW5lbElkPTQ1NDNkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWGHklORFVTVFJJQUwgQkFDS0dST1VORDogVGhpcyBwcm9wb3NhbCBhZGRyZXNzZXMgYSBnZW5lcmljIHByb2JsZW0gZXhwZXJpZW5jZWQgaW4gdGhlIG1hbnVmYWN0dXJpbmcgb2YgZm9sbG93aW5nIHN5c3RlbXM6ICgxKSAgVGhlIHNvbGlkIG94aWRlIGZ1ZWwgY2VsbCBtYW51ZmFjdHVyZWQgYnkgUm9sbHMgUm95Y2UgRnVlbCBDZWxsIFN5c3RlbXMgTHRkIChSUkZDUykgIGlzIGEgbXVsdGktbGF5ZXJlZCBjZXJhbWljIHN5c3RlbS4gIEVhY2ggbGF5ZXIgaXMgYWJvdXQgNS0xMCBtaWNyb21ldHJlcyB0aGljayBhbmQgaGFzIGEgZGlmZmVyZW50IHBvcm9zaXR5IGFuZCBjb21wb3NpdGlvbi4gVGhlIGxheWVycyBhcmUgc2NyZWVuLXByaW50ZWQgYW5kIHNpbnRlcmVkIHNlcXVlbnRpYWxseS4gICAoMikgIFRoZSBUV0kgcHJvdGVjdGl2ZSBjb2F0aW5ncywgaW5jbHVkaW5nIG9wdGljYWwgY29hdGluZ3Mgb2YgaW5kaXVtLXRpbiBveGlkZSwgc2lsaWNhIGJhc2VkIHByb3RlY3RpdmUgY29hdGluZ3MgYW5kIGFudGktc29pbGluZyBjb2F0aW5ncyB3aXRoIGZsdW9yaW5lIGluY29ycG9yYXRpb24sIGFyZSBtYWRlIHRocm91Z2ggYSBzb2wtZ2VsIGFuZCBzdWJzZXF1ZW50IGN1cmluZyBwcm9jZXNzLiBUaGVzZSBjb2F0aW5ncyBhcmUgdHlwaWNhbGx5IGxlc3MgdGhhbiAxLjUgbWljcm9tZXRyZXMgdGhpY2suICAgKDMpICBQaWV6b2VsZWN0cmljIGZpbG1zLCBiZXR3ZWVuIDEgYW5kIDUwIG1pY3JvbWV0cmVzIHRoaWNrLCBmb3IgbWljcm8gZWxlY3Ryb21lY2hhbmljYWwgc3lzdGVtcywgYXJlIG9mdGVuIG1hZGUgYnkgZmlyc3QgZGVwb3NpdGluZyBmaW5lIHBvd2RlcnMgdXNpbmcgZWxlY3Ryb3N0YXRpYyBzcHJheWluZywgaW5ramV0IHByaW50aW5nIG9yIGRpcCBjb2F0aW5nIGFuZCBzdWJzZXF1ZW50bHkgc2ludGVyaW5nLiBQUk9CTEVNIERFRklOSVRJT046IFRoZSBwcm9ibGVtIGlzIGhvdyB0byBhdm9pZCBjcmFja2luZyBvZiB0aGUgZmlsbXMgZHVyaW5nIHRoZSBkcnlpbmcsIGN1cmluZyBhbmQgc2ludGVyaW5nIHN0ZXBzLiBFbGV2YXRlZCB0ZW1wZXJhdHVyZXMgYXJlIHVzZWQgdG8gY29uc29saWRhdGUgdGhlIGZpbG1zLiBBcyB0ZW1wZXJhdHVyZSBpbmNyZWFzZXMsIHRoZSBwb3JvdXMgYW5kIGxpcXVpZC1maWxsZWQgZmlsbXMgc2hyaW5rIGZpcnN0IGR1ZSB0byBsaXF1aWQgZXZhcG9yYXRpb24gYW5kIHN1YnNlcXVlbnRseSBkdWUgdG8gc2ludGVyaW5nIG9yIGN1cmluZy4gVGhlIGxpbmUtc2hyaW5rYWdlIGNhbiBiZSBhcyBsYXJnZSBhcyAyMCUuIEhvd2V2ZXIgdGhlIGZpbG1zIGNhbm5vdCBzaHJpbmsgZnJlZWx5IGluIHRoZSBwbGFuZSBvZiB0aGUgZmlsbSBzdXJmYWNlIGJlY2F1c2Ugb2YgdGhlaXIgYm91bmRpbmcgd2l0aCB0aGUgc3Vic3RyYXRlLCBhbmQgd2l0aCBlYWNoIG90aGVyIGluIG11bHRpbGF5ZXJlZCBmaWxtcy4gVGhlIHNocmlua2luZyBpcyBoaWdobHkgY29uc3RyYWluZWQgd2hpY2ggbGVhZHMgdG8gc3RyZXNzZXMgYW5kIGhlbmNlIGNyYWNraW5nIGluIHRoZSBmaWxtcy4gUkVTRUFSQ0ggSVNTVUVTOiBUaGUgY3VycmVudCBzeXN0ZW1zIGFyZSBmYXIgZnJvbSBiZWluZyBvcHRpbWlzZWQuIEl0IGlzIGFsbW9zdCBpbXBvc3NpYmxlIHRvIGFjaGlldmUgdGhlIG9wdGltaXNhdGlvbiB1c2luZyB0cmlhbCBhbmQgZXJyb3IgZXhwZXJpbWVudHMgYmVjYXVzZSB0aGVyZSBhcmUgdG9vIG1hbnkgbWF0ZXJpYWwgYW5kIHByb2Nlc3NpbmcgdmFyaWFibGVzIGludm9sdmVkLiBUaGVyZSBpcyBhbiB1cmdlbnQgbmVlZCB0byBkZXZlbG9wIGEgY29tcHV0ZXIgbW9kZWxsaW5nIGNhcGFjaXR5IGZvciB0aGUgY29uc3RyYWluZWQgc2hyaW5raW5nIGFuZCBjcmFja2luZyBwaGVub21lbm9uLiBIb3dldmVyIHN1Y2ggYSBjYXBhY2l0eSBkb2VzIG5vdCB5ZXQgZXhpc3QgbWFpbmx5IGJlY2F1c2Ugb2YgdHdvIHJlYXNvbnM6ICAoYSkgIFRoZSBleGlzdGluZyBtb2RlbGxpbmcgdGVjaG5pcXVlICh0aGUgZmluaXRlIGVsZW1lbnQgbWV0aG9kKSByZXF1aXJlcyB0aGUgdmlzY29zaXRpZXMgb2YgdGhlIGZpbG0gbWF0ZXJpYWwuIFRoZXNlIHZpc2Nvc2l0aWVzICBkZXBlbmQgc3Ryb25nbHkgb24gdGhlIG1pY3Jvc3RydWN0dXJlIG9mIHRoZSBtYXRlcmlhbCB3aGljaCBjaGFuZ2VzIGRyYW1hdGljYWxseSBhcyB0aGUgZmlsbSBzaHJpbmtzLiBUaGVzZSBkYXRhIGFyZSB0b28gZGlmZmljdWx0IHRvIG9idGFpbiBleHBlcmltZW50YWxseS4gKGIpICBUaGUgc2NpZW5jZSBvZiBwcmVkaWN0aW5nIG11bHRpLWNyYWNraW5nIGlzIHByZW1hdHVyZS5USEUgUFJPSkVDVCBURUFNOiBTdXBwb3J0ZWQgYnkgUlJGQ1MgYW5kIFRXSSwgdGhpcyBwcm9wb3NhbCBicmluZ3MgdG9nZXRoZXIgdGhyZWUgcmVzZWFyY2ggZ3JvdXBzIGF0IFVuaXZlcnNpdGllcyBvZiBMZWljZXN0ZXIsIFN1cnJleSBhbmQgQ3JhbmZpZWxkIGFuZCBhIGZ1dGhlciByZXNlYXJjaCBncm91cCBpbiBHZXJtYW55IHRvIGFkZHJlc3MgdGhlc2UgaXNzdWVzIGFuZCB0byBkZXZlbG9wIGFuZCB2YWxpZGF0ZSBhIGNvbXB1dGVyIG1vZGVsbGluZyB0ZWNobmlxdWUuIE1FVEhPRE9MT0dZOiBJbiBhIHJlY2VudGx5IGNvbXBsZXRlZCBQaEQgcHJvamVjdCwgdGhlIGludmVzdGlnYXRvcnMgZGV2ZWxvcGVkIGEgZ3JvdW5kIGJyZWFraW5nIHRlY2huaXF1ZSB0byBtb2RlbCB0aW1lIGRlcGVuZGVudCBzaHJpbmthZ2UgZGVmb3JtYXRpb24gd2l0aG91dCBrbm93aW5nIHRoZSB2aXNjb3NpdGllcy4gVGhlIHByb3Bvc2VkIHByb2plY3QgaXMgdG8gYnVpbGQgb24gdGhpcyBzdWNjZXNzIGFuZCB0byBmdXJ0aGVyIGRldmVsb3AgdGhlIHRlY2huaXF1ZSBmb3IgY29uc3RyYWluZWQgc2hyaW5raW5nIGFuZCB0byBpbmNsdWRlIG11bHRpLWNyYWNraW5nLiBUaGUgZGlmZmljdWx0eSB0byBkZWFsIHdpdGggbXVsdGktY3JhY2tzIHdpbGwgYmUgYWRkcmVzc2VkIHVzaW5nIGEgc28tY2FsbGVkIG1hdGVyaWFscyBwb2ludCBtZXRob2QuIFRoaXMgbWV0aG9kIHdhcyBpbml0aWFsbHkgZGV2ZWxvcGVkIGZvciBwbGFzdGljIGRlZm9ybWF0aW9uIGJ1dCBoYXMgYmVlbiBzdWNjZXNzZnVsbHkgZXh0ZW5kZWQgdG8gdGhlIG11bHRpLWNyYWNraW5nIHByb2JsZW0gaW4gb3VyIHBpbG90IHN0dWRpZXMuIFRoZSBjb21wdXRlciBtb2RlbHMgd2lsbCBiZSBkZXZlbG9wZWQgYXJvdW5kIHRocmVlIGV4cGVyaW1lbnRhbCBjYXNlIHN0dWRpZXMuIFRocmVlIGRpZmZlcmVudCBleHBlcmltZW50YWwgdGVjaG5pcXVlcyB3aWxsIGJlIHVzZWQgYXQgU3VycmV5LCBDcmFuZmllbGQgYW5kIFd1cnpidXJnIHRvIG1lYXN1cmUgdGhlIG1hdGVyaWFsIGRhdGEgcmVxdWlyZWQgaW4gdGhlIG1vZGVsIGFuZCB0byB2YWxpZGF0ZSB0aGUgbW9kZWwgcHJlZGljdGlvbnMuIFBST0pFQ1QgSU1QQUNUOiBUaGlzIHByb2plY3Qgd2lsbCBtYWtlIGl0IHBvc3NpYmxlIHRvIG9wdGltaXNlIHRoZSBkZXNpZ24sIG1hdGVyaWFsIHNlbGVjdGlvbiBhbmQgcHJvY2Vzc2luZyBwYXJhbWV0ZXJzIGZvciBzb2xpZCBveGlkZSBmdWVsIGNlbGxzLCBjb2F0aW5ncyBhbmQgcGllem9lbGVjdHJpYyBmaWxtcy4gTW9yZSBnZW5lcmFsbHkgdGhlIHByb2plY3Qgd2lsbCBtYWtlIGEgbWFqb3IgaW1wYWN0IG9uIG1vZGVsbGluZyB0aGUgbXVsdGktY3JhY2tpbmcgb2YgYnJpdHRsZSBtYXRlcmlhbHMuIFN1Y2ggcHJvYmxlbXMgaW5jbHVkZSBiYWxsaXN0aWMgaW1wYWN0IG9mIGNlcmFtaWMgYXJtb3VyLCBtaXNzaWxlIG9yIGV4cGxvc2l2ZSBpbXBhY3Qgb2YgY2l2aWwgc3RydWN0dXJlcyBhbmQgc2FmZXR5IGNvbmNlcm5zIG9mIGFsbCBnbGFzcyBzdHJ1Y3R1cmVzLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cubGUuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cubGUuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDM3NDMwLzEMRVAvRjAzNzQzMC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGT0YKZ5qRJ7jfRyhW/sC6tlKURwEw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKxrreWAwLQvN++DAKT/OCVA8Za0+FIm/yxn+75hrBQjRgmHuVa" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F037430/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Modelling constrained shrinking and cracking</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=39491'>Pan, Professor J</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000604'>Fraunhofer Institut (Multiple, Grouped)</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001294'>Rolls-Royce Plc</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Leicester</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 November 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 October 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="268,720.55" class="DetailValue">268,721</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Eng. Dynamics &amp; Tribology</td>
+                                    <td class="DetailValue"> Materials Characterisation</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Manufacturing</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/F041853/1'>EP/F041853/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/F037724/1'>EP/F037724/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>12 Feb 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4543">Materials Prioritisation Panel February (Tech)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">INDUSTRIAL BACKGROUND: This proposal addresses a generic problem experienced in the manufacturing of following systems: (1)  The solid oxide fuel cell manufactured by Rolls Royce Fuel Cell Systems Ltd (RRFCS)  is a multi-layered ceramic system.  Each layer is about 5-10 micrometres thick and has a different porosity and composition. The layers are screen-printed and sintered sequentially.   (2)  The TWI protective coatings, including optical coatings of indium-tin oxide, silica based protective coatings and anti-soiling coatings with fluorine incorporation, are made through a sol-gel and subsequent curing process. These coatings are typically less than 1.5 micrometres thick.   (3)  Piezoelectric films, between 1 and 50 micrometres thick, for micro electromechanical systems, are often made by first depositing fine powders using electrostatic spraying, inkjet printing or dip coating and subsequently sintering. PROBLEM DEFINITION: The problem is how to avoid cracking of the films during the drying, curing and sintering steps. Elevated temperatures are used to consolidate the films. As temperature increases, the porous and liquid-filled films shrink first due to liquid evaporation and subsequently due to sintering or curing. The line-shrinkage can be as large as 20%. However the films cannot shrink freely in the plane of the film surface because of their bounding with the substrate, and with each other in multilayered films. The shrinking is highly constrained which leads to stresses and hence cracking in the films. RESEARCH ISSUES: The current systems are far from being optimised. It is almost impossible to achieve the optimisation using trial and error experiments because there are too many material and processing variables involved. There is an urgent need to develop a computer modelling capacity for the constrained shrinking and cracking phenomenon. However such a capacity does not yet exist mainly because of two reasons:  (a)  The existing modelling technique (the finite element method) requires the viscosities of the film material. These viscosities  depend strongly on the microstructure of the material which changes dramatically as the film shrinks. These data are too difficult to obtain experimentally. (b)  The science of predicting multi-cracking is premature.THE PROJECT TEAM: Supported by RRFCS and TWI, this proposal brings together three research groups at Universities of Leicester, Surrey and Cranfield and a futher research group in Germany to address these issues and to develop and validate a computer modelling technique. METHODOLOGY: In a recently completed PhD project, the investigators developed a ground breaking technique to model time dependent shrinkage deformation without knowing the viscosities. The proposed project is to build on this success and to further develop the technique for constrained shrinking and to include multi-cracking. The difficulty to deal with multi-cracks will be addressed using a so-called materials point method. This method was initially developed for plastic deformation but has been successfully extended to the multi-cracking problem in our pilot studies. The computer models will be developed around three experimental case studies. Three different experimental techniques will be used at Surrey, Cranfield and Wurzburg to measure the material data required in the model and to validate the model predictions. PROJECT IMPACT: This project will make it possible to optimise the design, material selection and processing parameters for solid oxide fuel cells, coatings and piezoelectric films. More generally the project will make a major impact on modelling the multi-cracking of brittle materials. Such problems include ballistic impact of ceramic armour, missile or explosive impact of civil structures and safety concerns of all glass structures.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.le.ac.uk                                                                                 '>http://www.le.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

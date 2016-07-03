@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Classifiers Ensembles for Changing Environments
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD04040X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDA0MDQwWC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVAPHN0cm9uZz5DbGFzc2lmaWVycyBFbnNlbWJsZXMgZm9yIENoYW5naW5nIEVudmlyb25tZW50czwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NTY3OTInPkt1bmNoZXZhLCBEciBMPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFElNjaCBvZiBFbGVjdHJvbmljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFEUJhbmdvciBVbml2ZXJzaXR5ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbU3RhbmRhcmQgUmVzZWFyY2ggKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAULMDEgTWF5IDIwMDZkZAIDD2QWAgIBDw8WAh8EBQszMSBNYXkgMjAwN2RkAgUPZBYCAgEPDxYEHwQFBjQ1LDc4Mx4HVG9vbFRpcAUJNDUsNzgzLjQyZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhdBcnRpZmljaWFsIEludGVsbGlnZW5jZRxJbWFnZSAmYW1wOyBWaXNpb24gQ29tcHV0aW5nZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBcIeUGF0dGVybiBSZWNvZ25pdGlvbiBkZWFscyB3aXRoIGFzc2lnbmluZyBjbGFzcyBsYWJlbHMgdG8gb2JqZWN0cy4gQW4gb2JqZWN0IGNvdWxkIGJlIGFueXRoaW5nLCBlLmcuIGEgcGF0aWVudCAodG8gYmUgZGlhZ25vc2VkKSwgYSBiYW5rIGxvYW4gYXBwbGljYXRpb24gKHRvIGJlIGFwcHJvdmVkIG9yIHJlamVjdGVkKSwgYSBwcm9ub3VuY2VkIHZvd2VsICh0byBiZSBtYXRjaGVkIHRvIG9uZSBvZiBhIHNldCBvZiB2b3dlbHMpLCBhbiBlLW1haWwgbWVzc2FnZSAodG8gYmUgbWFya2VkIGFzIGxlZ2l0aW1hdGUgb3Igc3BhbSksIGV0Yy4gSW4gbWFueSBkb21haW5zLCBjbGFzcyBkZXNjcmlwdGlvbnMgY2hhbmdlIHdpdGggdGltZS4gVGFrZSBmb3IgZXhhbXBsZSB0aGUgY2xhc3NpZmljYXRpb24gb2YgZS1tYWlsIG1lc3NhZ2VzIGludG8gc3BhbSBhbmQgbGVnaXRpbWF0ZS4gU3BhbSBlLW1haWwgd2FzIG1vcmUgZWFzaWx5IHJlY29nbmlzYWJsZSBpbiB0aGUgcGFzdCBiZWNhdXNlIG9mIHNwZWNpZmljIGNvbW1vbiB3b3JkcyBiZWluZyB1c2VkIHdpdGhpbi4gTm93IHRoYXQgZS1tYWlsIGZpbHRlcnMgY2FuIHNjYW4gZm9yIHN1Y2ggd29yZHMgYW5kIHNwb3QgdGhlIHNwYW0gZWFzaWx5LCB0aGUgc3BhbW1lcnMgaW52ZW50ZWQgZGlmZmVyZW50IHdheXMgdG8gdHJpY2sgdGhlIGZpbHRlcnMsIHRoZXJlZm9yZSB0aGUgIGRlc2NyaXB0aW9uICBvZiBjbGFzcyBzcGFtIGhhcyBjaGFuZ2VkLiBVc2VyIHByZWZlcmVuY2VzIGFsc28gY2hhbmdlIHdpdGggdGltZS4gRm9yIGV4YW1wbGUsIHN1cHBvc2UgdGhhdCB0aGUgdXNlciBzdWJzY3JpYmVzIHRvIGEgbmV3c2xldHRlciBhbm5vdW5jaW5nIG5ldyBzb2Z0d2FyZSBldmVyeSBtb250aC4gVGhlbiBzb2Z0d2FyZSBhZHMsIGNvbnNpZGVyZWQganVuayBtYWlsIGluIHRoZSBwYXN0LCB3aWxsIGJlIG5vdyB3ZWxjb21lLCBhZ2FpbiBjaGFuZ2luZyB0aGUgZGVzY3JpcHRpb24gb2YgY2xhc3Mgc3BhbS4gVGhlc2UgY2hhbmdpbmcgZW52aXJvbm1lbnRzIGFyZSBjYWxsZWQgaW4gTWFjaGluZSBMZWFybmluZyAgY29uY2VwdCBkcmlmdCAuIEEgY2xhc3NpZmllciBpcyBhIGZ1bmN0aW9uLCBhbGdvcml0aG0gb3IgYSBkZXZpY2UgdGhhdCBjYW4gYXNzaWduIGxhYmVscyB0byBvYmplY3RzLiBDbGFzc2lmaWVyIG1vZGVscyBoYXZlIGJlZW4gZGV2ZWxvcGVkIGZvciBjb3Bpbmcgd2l0aCBjb25jZXB0IGRyaWZ0LiBSZWNlbnRseSwgY2xhc3NpZmllciBlbnNlbWJsZXMgaGF2ZSBiZWVuIGVtcGxveWVkIGZvciB0aGlzIHRhc2sgYXMgd2VsbC4gQ2xhc3NpZmllciBlbnNlbWJsZXMgKGNhbGxlZCBhbHNvIGNvbW1pdHRlZXMgb2YgY2xhc3NpZmllcnMpIG9wZXJhdGUgYXMgYSBwYW5lbCBvZiBleHBlcnRzLiBXaGVuIHRoZSBvYmplY3QgY29tZXMgdG8gYmUgbGFiZWxsZWQsIGVhY2ggbWVtYmVyIG9mIHRoZSBlbnNlbWJsZSBhc3NpZ25zIGEgY2xhc3MgbGFiZWwgdG8gdGhlIG9iamVjdC4gVGhlIG92ZXJhbGwgZGVjaXNpb24gb2YgdGhlIHBhbmVsIGlzIGRlcml2ZWQgb24gdGhlIGJhc2lzIG9mIHRoZSBpbmRpdmlkdWFsIG9waW5pb25zLiBPbmUgcG9zc2libGUgd2F5IGZvciB0aGlzIGlzIHRvIHRha2UgdGhlIG1ham9yaXR5IHZvdGUuIENsYXNzaWZpZXIgZW5zZW1ibGVzIGhhdmUgYmVlbiBmb3VuZCB0byBiZSBtb3JlIGFjY3VyYXRlIHRoYW4gc2luZ2xlIGNsYXNzaWZpZXJzIGZvciB0cmFkaXRpb25hbCAoPXN0YXRpYykgY2xhc3NpZmljYXRpb24gcHJvYmxlbXMuIFRoZSBob3BlIGlzIHRoYXQgdGhleSB3aWxsIGJlIGFsc28gYmV0dGVyIHRoYW4gc2luZ2xlIGNsYXNzaWZpZXJzIGluIHRoZSBwcmVzZW5jZSBvZiBjb25jZXB0IGRyaWZ0LiBDdXJyZW50IGxpdGVyYXR1cmUgb24gY2xhc3NpZmllciBlbnNlbWJsZXMgb24gY2hhbmdpbmcgZW52aXJvbm1lbnRzIGNhbiBiZSBzdHJlYW1saW5lZCBpbnRvIHRocmVlIHN0cmF0ZWdpZXM6ICgxKSBkeW5hbWljIGNvbWJpbmVycyAod2hlcmUgb25seSB0aGUgd2F5IHRoZSBpbmRpdmlkdWFsIG9waW5pb25zIGFyZSBjb21iaW5lZCBjaGFuZ2VzIHdpdGggdGltZSksICgyKSB1cGRhdGluZyBvZiB0aGUgZW5zZW1ibGUgbWVtYmVycyAoYXNzdW1pbmcgdGhhdCBlYWNoIG1lbWJlciBvZiB0aGUgZW5zZW1ibGUgaXMgY2FwYWJsZSBvZiBkZWFsaW5nIHdpdGggY29uY2VwdCBkcmlmdCBpbmRpdmlkdWFsbHksIHRoZSB3YXkgb2YgY29tYmluaW5nIHRoZSBvcGluaW9ucyBtYXkgc3RheSBmaXhlZDsgdGhlIGNoYW5nZXMgd2lsbCBiZSB0YWtlbiBjYXJlIG9mIGJ5IGVhY2ggbWVtYmVyKTsgKDMpIHN0cnVjdHVyYWwgY2hhbmdlcyBpbiB0aGUgZW5zZW1ibGUgKGhlcmUgd2UgbWF5IHdhbnQgdG8gcmVwbGFjZSByZWd1bGFybHkgdGhlIG91dGRhdGVkIG1lbWJlcnMgb2YgdGhlIGVuc2VtYmxlcyBvciB0aGUgb25lcyB3aG9zZSBleHBlcnRpc2UgaXMgbm8gbG9uZ2VyIGFkZXF1YXRlIGZvciB0aGUgdGFzaykuIFRoZXJlIGFyZSBjbGFzc2lmaWVyIGVuc2VtYmxlcyBpbiBlYWNoIG9mIHRoZXNlIGNhdGVnb3JpZXMgcHJvcG9zZWQgaW4gdGhlIGxpdGVyYXR1cmUuIFdlIGFyZSBwbGFubmluZyB0byBzdHVkeSB0aGVzZSBtZXRob2RzIGFuZCBwcm9wb3NlIG5ldyBvbmVzIHdoaWNoIHdpbGwgYmVuZWZpdCBmcm9tIG1lcmdpbmcgdGhlIHRocmVlIHN0cmF0ZWdpZXMuIEluIG9yZGVyIHRvIGNvbXBhcmUgdGhlIG5ldyBtZXRob2RzIHdpdGggdGhlIG1vc3Qgc3VjY2Vzc2Z1bCBleGlzdGluZyBtZXRob2RzLCB3ZSBuZWVkIGEgY29sbGVjdGlvbiBvZiBkYXRhIHNldHMgd2l0aCBkaWZmZXJlbnQgY29uY2VwdCBkcmlmdHMuIEFzIHRoZXJlIGlzIG5vIHN1Y2ggYmVuY2htYXJrIGNvbGxlY3Rpb24gKGFuZCBhbiBleGNlbGxlbnQgY29sbGVjdGlvbiBpcyBhdmFpbGFibGUgZm9yIHN0YXRpYyBlbnZpcm9ubWVudHMsIG1haW50YWluZWQgYXQgdGhlIFVuaXZlcnNpdHkgb2YgQ2FsaWZvcm5pYSwgSXJ2aW5lLCBVQ0kpLCBvbmUgb2YgdGhlIG9iamVjdGl2ZXMgb2YgdGhpcyBwcm9qZWN0IGlzIHRvIGJ1aWxkIGEgc3VpdGUgb2YgTWF0bGFiIHByb2dyYW1tZXMgd2hpY2ggd2lsbCBnZW5lcmF0ZSBkYXRhIHdpdGggdmFyaW91cyBzaW11bGF0ZWQgdHlwZXMgb2YgY29uY2VwdCBkcmlmdC4gV2Ugd2lsbCBsb29rIGludG8gbW9kaWZ5aW5nIGJlbmNobWFyayBkYXRhIHNldHMgZnJvbSBVQ0kgdG8gc2ltdWxhdGUgY29uY2VwdCBkcmlmdC4gV2Ugd2lsbCBhbHNvIGxvb2sgZm9yIHJlYWwgZGF0YSBzZXRzIHdpdGggdHJ1ZSBwcm9ibGVtIG9mIGNvbmNlcHQgZHJpZnQsIGUuZy4sIGZyb20gcm9ib3RpY3Mgb3IgdHJhY2tpbmcuIEhhdmluZyBwdXQgdG9nZXRoZXIgYSBkYXRhIHNldCBjb2xsZWN0aW9uLCB3ZSB3aWxsIGNvZGUgaW4gTWF0bGFiIGEgc2VsZWN0ZWQgc2V0IG9mIGV4aXN0aW5nIGNsYXNzaWZpY2F0aW9uIG1ldGhvZHMsIGJvdGggaW5kaXZpZHVhbCBjbGFzc2lmaWVyIGFuZCBjbGFzc2lmaWVyIGVuc2VtYmxlcyBmb3IgY2hhbmdpbmcgZW52aXJvbm1lbnQuIFRoZSBjb2RlIHdpbGwgYmUgcHJvdmlkZWQgZm9yIGZyZWUgZG93bmxvYWQgb24gdGhlIEludGVybmV0IGFuZCB3aWxsIGJlIHN1aXRhYmxlIGZvciB1c2UgYXMgYSBNYXRsYWIgdG9vbGJveC4gVG8gZGVzaWduIG91dCB0b29sYm94IHdlIHdpbGwgZHJhdyB1cG9uIHRoZSBNYXRsYWIgdG9vbGJveCBmb3IgcGF0dGVybiByZWNvZ25pdGlvbiwgUFJUb29scywgZGV2ZWxvcGVkIGF0IERlbGZ0IFVuaXZlcnNpdHkgb2YgVGVjaG5vbG9neSwgVGhlIE5ldGhlcmxhbmRzLiBBcGFydCBmcm9tIGJlaW5nIGluY2x1ZGVkIGluIHRoZSB0b29sYm94LCB0aGUgbmV3IG1ldGhvZHMgd2lsbCBiZSByZXBvcnRlZCBpbiBhIHB1YmxpY2F0aW9uIHN1Ym1pc3Npb24uZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5iYW5nb3IuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5iYW5nb3IuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0QwNDA0MFgvMQxFUC9EMDQwNDBYLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZATTIixuZDlZQsa27nmN3YuqG8Sa" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLT4bbCBwLQvN++DAKT/OCVA7qbXeZESgfCmIiJAgK2LxlG3s3f" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D04040X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Classifiers Ensembles for Changing Environments</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=56792'>Kuncheva, Dr L</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Electronics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Bangor University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 May 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="45,783.42" class="DetailValue">45,783</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Image &amp; Vision Computing</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Pattern Recognition deals with assigning class labels to objects. An object could be anything, e.g. a patient (to be diagnosed), a bank loan application (to be approved or rejected), a pronounced vowel (to be matched to one of a set of vowels), an e-mail message (to be marked as legitimate or spam), etc. In many domains, class descriptions change with time. Take for example the classification of e-mail messages into spam and legitimate. Spam e-mail was more easily recognisable in the past because of specific common words being used within. Now that e-mail filters can scan for such words and spot the spam easily, the spammers invented different ways to trick the filters, therefore the  description  of class spam has changed. User preferences also change with time. For example, suppose that the user subscribes to a newsletter announcing new software every month. Then software ads, considered junk mail in the past, will be now welcome, again changing the description of class spam. These changing environments are called in Machine Learning  concept drift . A classifier is a function, algorithm or a device that can assign labels to objects. Classifier models have been developed for coping with concept drift. Recently, classifier ensembles have been employed for this task as well. Classifier ensembles (called also committees of classifiers) operate as a panel of experts. When the object comes to be labelled, each member of the ensemble assigns a class label to the object. The overall decision of the panel is derived on the basis of the individual opinions. One possible way for this is to take the majority vote. Classifier ensembles have been found to be more accurate than single classifiers for traditional (=static) classification problems. The hope is that they will be also better than single classifiers in the presence of concept drift. Current literature on classifier ensembles on changing environments can be streamlined into three strategies: (1) dynamic combiners (where only the way the individual opinions are combined changes with time), (2) updating of the ensemble members (assuming that each member of the ensemble is capable of dealing with concept drift individually, the way of combining the opinions may stay fixed; the changes will be taken care of by each member); (3) structural changes in the ensemble (here we may want to replace regularly the outdated members of the ensembles or the ones whose expertise is no longer adequate for the task). There are classifier ensembles in each of these categories proposed in the literature. We are planning to study these methods and propose new ones which will benefit from merging the three strategies. In order to compare the new methods with the most successful existing methods, we need a collection of data sets with different concept drifts. As there is no such benchmark collection (and an excellent collection is available for static environments, maintained at the University of California, Irvine, UCI), one of the objectives of this project is to build a suite of Matlab programmes which will generate data with various simulated types of concept drift. We will look into modifying benchmark data sets from UCI to simulate concept drift. We will also look for real data sets with true problem of concept drift, e.g., from robotics or tracking. Having put together a data set collection, we will code in Matlab a selected set of existing classification methods, both individual classifier and classifier ensembles for changing environment. The code will be provided for free download on the Internet and will be suitable for use as a Matlab toolbox. To design out toolbox we will draw upon the Matlab toolbox for pattern recognition, PRTools, developed at Delft University of Technology, The Netherlands. Apart from being included in the toolbox, the new methods will be reported in a publication submission.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bangor.ac.uk                                                                             '>http://www.bangor.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

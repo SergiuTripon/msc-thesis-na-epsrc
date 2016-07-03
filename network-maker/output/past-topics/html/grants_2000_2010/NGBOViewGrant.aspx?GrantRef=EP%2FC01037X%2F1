@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Computing with arbitrary precision curves
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC01037X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzAxMDM3WC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU6PHN0cm9uZz5Db21wdXRpbmcgd2l0aCBhcmJpdHJhcnkgcHJlY2lzaW9uIGN1cnZlczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTE3MTExJz5Lb25lY255LCBEciBNPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFJlNjaCBvZiBFbmdpbmVlcmluZyBhbmQgQXBwbGllZCBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUQQXN0b24gVW5pdmVyc2l0eWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFGkZpcnN0IEdyYW50IFNjaGVtZSBQcmUtRkVDZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUNMDEgTWFyY2ggMjAwNmRkAgMPZBYCAgEPDxYCHwQFCzMxIE1heSAyMDA5ZGQCBQ9kFgICAQ8PFgQfBAUHMTIxLDQ5NR4HVG9vbFRpcAUKMTIxLDQ5NS4xNWRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIZRnVuZGFtZW50YWxzIG9mIENvbXB1dGluZxlMb2dpYyAmYW1wOyBDb21iaW5hdG9yaWNzZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBa4VVGhpcyBwcm9qZWN0IGFpbXMgdG8gY29udHJpYnV0ZSB0byB0aGUgdGhlb3J5IG9mIGNvbXB1dGF0aW9uIHdpdGggc21vb3RoIG9iamVjdHMgc3VjaCBhcyBjdXJ2ZXMgb3JnZW9tZXRyaWMgc2hhcGVzLiAgU3VjaCBjb21wdXRhdGlvbiBpcyBpbXBvcnRhbnQgdG8gbWFueSBhcmVhcyBvZiBzY2llbmNlIGFuZCBlbmdpbmVlcmluZy4gIFdlIHdpbGxjb25jZW50cmF0ZSBvbiBhcHBsaWNhdGlvbnMgaW4gdGhlIGFyZWEgb2YgTmV3dG9uJ3MgbWVjaGFuaWNzIGFuZCwgbW9yZSBzcGVjaWZpY2FsbHksIHBhdGhzIG9mb2JqZWN0cyBtb3ZpbmcgaW4gc3BhY2UuQ3VydmVzIGFyZSBvZnRlbiBhcHByb3hpbWF0ZWQgaW4gYSBjb21wdXRlciBieSBtYW55IHNtYWxsIHN0cmFpZ2h0IHNlZ21lbnRzIGFuZCB0aGVpciBlbmQtcG9pbnRzIGFyZWdpdmVuIHdpdGggYSBmaXhlZCBwcmVjaXNpb24uICBJbiBzdWNoIGFuIGFwcHJvYWNoLCB0aGVyZSBpcyBtdWNoIHNjb3BlIGZvciBlcnJvcnMgZHVlIHRvIHRoZWRpZmZlcmVuY2UgYmV0d2VlbiB0aGUgcmVhbCBjdXJ2ZSBhbmQgdGhlIHNlZ21lbnRlZCBhcHByb3hpbWF0aW9uLiAgVGhpcyBwcm9qZWN0IGNvbnRyaWJ1dGVzIHRvIGFkaWZmZXJlbnQgYXBwcm9hY2ggdG8gY29tcHV0YXRpb24gd2l0aCBzbW9vdGggb2JqZWN0cy4gIEhlcmUsIGEgY29tcHV0YXRpb24gbmVlZHMgdG8gYmUgYWJsZSB0b2RlbGl2ZXIgaXRzIHJlc3VsdHMgd2l0aCBubyBwb3NpdGlvbmluZyBlcnJvcnMgYW5kIHRvIGFueSByZXF1aXJlZCBwcmVjaXNpb24uT3RoZXIgcmVzZWFyY2hlcnMgaGF2ZSBlc3RhYmxpc2hlZCB3YXlzIGluIHdoaWNoIGN1cnZlcyBhbmQgZ2VvbWV0cmljIHNoYXBlcyBjYW4gYmUgcmVwcmVzZW50ZWQgYnkgYW5ldmVyLWVuZGluZyBzZXF1ZW5jZSBvZiBtb3JlIGFuZCBtb3JlIHByZWNpc2Ugc2ltcGxlciBhcHByb3hpbWF0aW9ucy4gIFRoaXMgcmVzZW1ibGVzIHRoZSB3YXkgaW53aGljaCBhIHJlYWwgbnVtYmVyIGNhbiBiZSByZXByZXNlbnRlZCBieSBhIG5ldmVyLWVuZGluZyBzZXF1ZW5jZSBvZiBkaWdpdHMuICBTdWNoIHJlcHJlc2VudGF0aW9uc2FsbG93IHRoZSBnZW9tZXRyaWMgb2JqZWN0cyB0byBiZSBjb21tdW5pY2F0ZWQgZnJvbSBvbmUgcGFydCBvZiB0aGUgcHJvZ3JhbSB0byBhbm90aGVyIGFzIGFuaW5maW5pdGUgc3RyZWFtIG9mIHN5bWJvbHMuICBMZXQgdXMgY2FsbCB0aGlzIG1ldGhvZCBvZiBlcnJvci1mcmVlIGNvbW11bmljYXRpbmcgYG9uZS13YXknLkNvbXBsaWNhdGVkIG9iamVjdHMgY2FuIGJlIGFsc28gY29tbXVuaWNhdGVkIGB0d28td2F5JzogdGhlIHJlY2VpdmluZyBwYXJ0eSBhc2tzIGZvciBhcHByb3hpbWF0aW9uc29mIGEgc3BlY2lmaWMgc2hhcGUgYW5kIHByZWNpc2lvbi4gIEZvciBleGFtcGxlLCBpdCBjYW4gYXNrIGZvciBhbiBhcHByb3hpbWF0aW9uIG9mIHRoZSBwcm9qZWN0ZWRwYXRoIG9mIGEgZ2l2ZW4gcGxhbmV0IG9uIDV0aCBBcHJpbCAyMDA1IHdoaWNoIHdpbGwgYmUgYXQgbW9zdCAxIG5hbm9tZXRyZSB3cm9uZyBhdCBhbnkgdGltZSBkdXJpbmd0aGF0IGRheS5UaGlzIHByb2plY3QgYWltcyB0byBleGFtaW5lIHRoZSBmb2xsb3dpbmcgaHlwb3RoZXNpczogICAgSXQgaXMgbW9yZSBlZmZpY2llbnQgdG8gbWFuaXB1bGF0ZSBjb21wbGljYXRlZCBvYmplY3RzIGxpa2UgY3VydmVzIHVzaW5nIHR3by13YXkgY29tbXVuaWNhdGlvbiAgICB0aGFuIHVzaW5nIG9uZS13YXkgY29tbXVuaWNhdGlvbi5Gb3IgZXhhbXBsZSwgd2hlbiBjb21tdW5pY2F0aW5nIHNvbWUgY3VydmUsIHRoZSByZWNpcGllbnQgbWF5IG5lZWQgdG8gZmluZCBvdXQgbW9yZSBhYm91dCBvbmUgcGFydG9mIHRoZSBjdXJ2ZSB0aGFuIHRoZSBvdGhlciBwYXJ0cy4gIElmIHRoZSByZWNpcGllbnQgbGV0cyB0aGUgc2VuZGVyIGtub3cgd2hpY2ggcGFydCBvZiB0aGUgY3VydmV0aGV5IG5lZWQgdG8ga25vdyBhbmQgdG8gd2hhdCBwcmVjaXNpb24sIHRoZSBjb21tdW5pY2F0aW9uIHNob3VsZCB0YWtlIGxlc3MgdGltZSBhbmQgZWZmb3J0IGZvciBib3RocGFydGllcy4gIEl0IHJlbWFpbnMgdG8gYmUgZXN0YWJsaXNoZWQgaG93IGJpZyBhIGRpZmZlcmVuY2UgaXQgZG9lcyBtYWtlIGluIHByYWN0aWNlIGFuZCBob3cgbXVjaG1vcmUgd2lsbCBzdWNoIGFkdmFuY2VkIGNvbW11bmljYXRpb24gY29zdCBib3RoIHBhcnRpZXMuVGhpcyBwcm9qZWN0IHdpbGwsIHRoZXJlZm9yZSwgcHJlY2lzZWx5IGRlc2NyaWJlIHNldmVyYWwgbWV0aG9kcyBmb3Igc29sdmluZyBwcmFjdGljYWwgcHJvYmxlbXNyZWxhdGVkIHRvIGN1cnZlcy4gIFNvbWUgb2YgdGhlbSB3aWxsIGFsbG93IHR3by13YXkgY29tbXVuaWNhdGlvbiBvZiBjdXJ2ZXMgdG8gdmFyaW91cyBkZWdyZWVzLiAgSW50aGUgZW5kLCB0aGVzZSBtZXRob2RzIHdpbGwgYmUgY29tcGFyZWQgdG8gZWFjaCBvdGhlciBpbiB0ZXJtcyBvZiBob3cgbXVjaCB0aW1lIGFuZCBjb21wdXRlciBtZW1vcnlpcyByZXF1aXJlZCB0byBmb2xsb3cgdGhlbS5JdCBpcyBleHBlY3RlZCB0aGF0IHRoZSBuZXcgbWV0aG9kcyBvZiBjb21wdXRpbmcgd2l0aCBjdXJ2ZXMgZGV2ZWxvcGVkIGhlcmUgd2lsbCBiZSAgICBhKSBsZXNzIHByb25lIHRvIGVycm9ycyB0aGFuIG1ldGhvZHMgd2l0aCBmaXhlZCBwcmVjaXNpb24gYW5kICAgIGIpIG1vcmUgZWZmaWNpZW50IHRoYW4gc2ltaWxhciBtZXRob2RzIHdpdGggb25lLXdheSBjb21tdW5pY2F0aW9uLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuYXN0b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuYXN0b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DMDEwMzdYLzEMRVAvQzAxMDM3WC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQFRbY+paaXyZVFJ+OIHKo/YOhceg==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKOkqv+DALQvN++DAKT/OCVAzY/HAfVoVnX3bZ8TJjATC/spvml" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C01037X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Computing with arbitrary precision curves</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-17111'>Konecny, Dr M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering and Applied Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Aston University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme Pre-FEC</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 March 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="121,495.15" class="DetailValue">121,495</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> Logic &amp; Combinatorics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This project aims to contribute to the theory of computation with smooth objects such as curves orgeometric shapes.  Such computation is important to many areas of science and engineering.  We willconcentrate on applications in the area of Newton's mechanics and, more specifically, paths ofobjects moving in space.Curves are often approximated in a computer by many small straight segments and their end-points aregiven with a fixed precision.  In such an approach, there is much scope for errors due to thedifference between the real curve and the segmented approximation.  This project contributes to adifferent approach to computation with smooth objects.  Here, a computation needs to be able todeliver its results with no positioning errors and to any required precision.Other researchers have established ways in which curves and geometric shapes can be represented by anever-ending sequence of more and more precise simpler approximations.  This resembles the way inwhich a real number can be represented by a never-ending sequence of digits.  Such representationsallow the geometric objects to be communicated from one part of the program to another as aninfinite stream of symbols.  Let us call this method of error-free communicating `one-way'.Complicated objects can be also communicated `two-way': the receiving party asks for approximationsof a specific shape and precision.  For example, it can ask for an approximation of the projectedpath of a given planet on 5th April 2005 which will be at most 1 nanometre wrong at any time duringthat day.This project aims to examine the following hypothesis:    It is more efficient to manipulate complicated objects like curves using two-way communication    than using one-way communication.For example, when communicating some curve, the recipient may need to find out more about one partof the curve than the other parts.  If the recipient lets the sender know which part of the curvethey need to know and to what precision, the communication should take less time and effort for bothparties.  It remains to be established how big a difference it does make in practice and how muchmore will such advanced communication cost both parties.This project will, therefore, precisely describe several methods for solving practical problemsrelated to curves.  Some of them will allow two-way communication of curves to various degrees.  Inthe end, these methods will be compared to each other in terms of how much time and computer memoryis required to follow them.It is expected that the new methods of computing with curves developed here will be    a) less prone to errors than methods with fixed precision and    b) more efficient than similar methods with one-way communication.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.aston.ac.uk                                                                              '>http://www.aston.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Cell Method to Calculate Solution Free Energies from Computer Simulation
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE026222%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAyNjIyMi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVZPHN0cm9uZz5DZWxsIE1ldGhvZCB0byBDYWxjdWxhdGUgU29sdXRpb24gRnJlZSBFbmVyZ2llcyBmcm9tIENvbXB1dGVyIFNpbXVsYXRpb248L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUE8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS02MzQ1OSc+SGVuY2htYW4sIERyIFJIPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFCUNoZW1pc3RyeWRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFHVVuaXZlcnNpdHkgb2YgTWFuY2hlc3RlciwgVGhlZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUSRmlyc3QgR3JhbnQgU2NoZW1lZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUQMDEgTm92ZW1iZXIgMjAwNmRkAgMPZBYCAgEPDxYCHwQFDTMwIEFwcmlsIDIwMTBkZAIFD2QWAgIBDw8WBB8EBQcxNzQsMTY3HgdUb29sVGlwBQoxNzQsMTY2LjU5ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAiJHYXMgJmFtcDsgU29sdXRpb24gUGhhc2UgUmVhY3Rpb25zAGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAXsEENvbXB1dGVyIHNpbXVsYXRpb24gaXMgYSBwb3dlcmZ1bCB0b29sIHdpZGVseSB1c2VkIGluIG1hbnkgZmllbGRzIG9mIHJlc2VhcmNoLiBJbiB0aGlzIGFwcHJvYWNoLCBhIG1vZGVsIG9mIHRoZSBzeXN0ZW0gb2YgaW50ZXJlc3QgaXMgc2ltdWxhdGVkIG9uIGEgY29tcHV0ZXIgdG8gbWltaWMgaG93IHRoZSByZWFsIHN5c3RlbSBiZWhhdmVzIHdpdGhvdXQgdGhlIG5lZWQgdG8gbWFrZSB0aGUgc3lzdGVtIGluIHJlYWxpdHkuIFNpbXVsYXRpb24gY2FuIHByb2R1Y2UgaW5mb3JtYXRpb24gdGhhdCBpcyBkaWZmaWN1bHQgb3IgZXZlbiBpbXBvc3NpYmxlIHRvIG9idGFpbiBieSByZWFsIGV4cGVyaW1lbnQuVGhlIGludGVyYWN0aW9ucyBvZiBhdG9tcyBhbmQgb2YgdGhlIG1vbGVjdWxlcyB0aGV5IGZvcm0gY29udHJvbCBob3cgdGhlIHdvcmxkIGJlaGF2ZXMuIFRoZXJlZm9yZSwgYW4gdW5kZXJzdGFuZGluZyBvZiB0aGVpciBpbnRlcmFjdGlvbnMgbWF5IGhlbHAgZXhwbGFpbiBzdWNoIGJlaGF2aW91ci4gVGhlIG5hbm9zY2FsZSBvZiBtb2xlY3VsZXMgbWFrZXMgdGhlbSBkaWZmaWN1bHQgdG8gc3R1ZHkgZGlyZWN0bHksIGFuZCB0aGlzIHJlbmRlcnMgdGhlbSBhIHByaW1lIGNhbmRpZGF0ZSBmb3IgY29tcHV0ZXIgc2ltdWxhdGlvbi5PbmUgaW1wb3J0YW50IHF1YW50aXR5IGlzIHRoZSBmcmVlIGVuZXJneS4gVGhlIGZyZWUgZW5lcmd5IGRlc2NyaWJlcyBhIHN5c3RlbSdzIHN0YWJpbGl0eSBhbmQgZW5hYmxlcyBvbmUgdG8gcHJlZGljdCBob3cgdGhlIHN5c3RlbSB3aWxsIGJlaGF2ZSBlLmcuIHdpbGwgd2F0ZXIgZnJlZXplLCB3aWxsIG9pbCBhbmQgd2F0ZXIgbWl4LCB3aWxsIGEgZHJ1ZyBiaW5kIHRvIGEgdGFyZ2V0IGV0Yy4gVG8gYXBwbHkgY29tcHV0ZXIgc2ltdWxhdGlvbiB0byBpbnZlc3RpZ2F0ZSBtb2xlY3VsYXIgcHJvcGVydGllcywgb25lIG5lZWRzIGEgdGhlb3J5IHRvIHJlbGF0ZSB0aGUgaW50ZXJhY3Rpb25zIG9uIHRoZSBtb2xlY3VsYXIgc2NhbGUgdG8gdGhlaXIgYmVoYXZpb3VyIG9uIHRoZSBsYXJnZXIgc2NhbGUuIEN1cnJlbnQgbWV0aG9kcyBhcmUgc3RpbGwgaW5jYXBhYmxlIG9mIGNhbGN1bGF0aW5nIGFkZXF1YXRlbHkgdGhlIGZyZWUgZW5lcmd5IGZyb20gYSBjb21wdXRlciBzaW11bGF0aW9uIGZvciBtb3N0IHN5c3RlbXMgb2YgaW50ZXJlc3QuVGhpcyBwcm9wb3NhbCBhaW1zIHRvIGRldmVsb3AgYSBtZXRob2Qgd2l0aCB0aGUgcG90ZW50aWFsIHRvIGNhbGN1bGF0ZSB0aGUgZnJlZSBlbmVyZ3kgZm9yIGFueSBtb2xlY3VsYXIgY29tcHV0ZXIgc2ltdWxhdGlvbi4gVGhlIG1ldGhvZCBpcyBiYXNlZCBvbiBhIHJhdGhlciB2ZW5lcmFibGUgYXBwcm9hY2ggY2FsbGVkIGNlbGwgdGhlb3J5LiBJbnN0ZWFkIG9mIHRyeWluZyB0byBsb29rIGF0IGFsbCBtb2xlY3VsZXMgYXQgb25jZSwgY2VsbCB0aGVvcnkgdHJlYXRzIGVhY2ggbW9sZWN1bGUgc2VwYXJhdGVseSBpbiB0aGUgYXZlcmFnZSBlbnZpcm9ubWVudCBvZiBpdHMgbmVpZ2hib3Vycy4gRGV2ZWxvcGVkIGJlZm9yZSB0aGUgYWR2ZW50IG9mIGNvbXB1dGVycywgY2VsbCB0aGVvcnkgaGFkIGJlZW4gaW5jYXBhYmxlIG9mIGVmZmVjdGl2ZWx5IGNhbGN1bGF0aW5nIHRoaXMgYXZlcmFnZSBlbnZpcm9ubWVudCwgcmVuZGVyaW5nIGl0IG9mIGxpdHRsZSB1c2UuIEhvd2V2ZXIsIHdpdGggYSBjb21wdXRlciBzaW11bGF0aW9uIG5vdyBkb2luZyBhbGwgdGhlIGhhcmQgd29yayBvZiBjYWxjdWxhdGluZyB0aGlzIGF2ZXJhZ2UgZW52aXJvbm1lbnQsIEkgaGF2ZSBzaG93biBob3cgY2VsbCB0aGVvcnkgY2FuIGJlIHN1Y2Nlc3NmdWxseSBhcHBsaWVkIHRvIGNhbGN1bGF0ZSBhY2N1cmF0ZSBmcmVlIGVuZXJnaWVzIGZyb20gYSBzaW11bGF0aW9uIG9mIGEgc2ltcGxlIGxpcXVpZCBhcyBhIHRlc3QuIFRoZSBwcm9wb3NhbCBkZXNjcmliZXMgdGhlIGV4dGVuc2lvbiBvZiB0aGlzIHN0cmFpZ2h0Zm9yd2FyZCBhbmQgcHJhY3RpY2FsIGFwcHJvYWNoIHRvIHNpbXVsYXRpb25zIG9mIG1vcmUgY29tcGxleCBzeXN0ZW1zLiBJbiBhZGRpdGlvbiwgdGhlIG1ldGhvZCB3aWxsIGJlIHVzZWQgdG8gdW5kZXJzdGFuZCB0aGUgcHJvcGVydGllcyBvZiBsaXF1aWRzIGFuZCBob3cgbW9sZWN1bGVzIGRpc3NvbHZlIGluIHRoZW0uZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBXo8YSAgaHJlZj0naHR0cDovL3BlcnNvbmFscGFnZXMubWFuY2hlc3Rlci5hYy51ay9zdGFmZi9oZW5jaG1hbi8nPmh0dHA6Ly9wZXJzb25hbHBhZ2VzLm1hbmNoZXN0ZXIuYWMudWsvc3RhZmYvaGVuY2htYW4vPC9hPmQCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPScgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAyNjIyMi8xDEVQL0UwMjYyMjIvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkP0Rdaa1ie4RhP8IJR9V7NK2G8IA=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL6mNpzAtC8374MApP84JUDuX7w3AYwVzrPgdY567l4esCyrMk=" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E026222/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Cell Method to Calculate Solution Free Energies from Computer Simulation</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-63459'>Henchman, Dr RH</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Chemistry</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Manchester, The</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 November 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 April 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="174,166.59" class="DetailValue">174,167</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Gas &amp; Solution Phase Reactions</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Computer simulation is a powerful tool widely used in many fields of research. In this approach, a model of the system of interest is simulated on a computer to mimic how the real system behaves without the need to make the system in reality. Simulation can produce information that is difficult or even impossible to obtain by real experiment.The interactions of atoms and of the molecules they form control how the world behaves. Therefore, an understanding of their interactions may help explain such behaviour. The nanoscale of molecules makes them difficult to study directly, and this renders them a prime candidate for computer simulation.One important quantity is the free energy. The free energy describes a system's stability and enables one to predict how the system will behave e.g. will water freeze, will oil and water mix, will a drug bind to a target etc. To apply computer simulation to investigate molecular properties, one needs a theory to relate the interactions on the molecular scale to their behaviour on the larger scale. Current methods are still incapable of calculating adequately the free energy from a computer simulation for most systems of interest.This proposal aims to develop a method with the potential to calculate the free energy for any molecular computer simulation. The method is based on a rather venerable approach called cell theory. Instead of trying to look at all molecules at once, cell theory treats each molecule separately in the average environment of its neighbours. Developed before the advent of computers, cell theory had been incapable of effectively calculating this average environment, rendering it of little use. However, with a computer simulation now doing all the hard work of calculating this average environment, I have shown how cell theory can be successfully applied to calculate accurate free energies from a simulation of a simple liquid as a test. The proposal describes the extension of this straightforward and practical approach to simulations of more complex systems. In addition, the method will be used to understand the properties of liquids and how molecules dissolve in them.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<a  href='http://personalpages.manchester.ac.uk/staff/henchman/'>http://personalpages.manchester.ac.uk/staff/henchman/</a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

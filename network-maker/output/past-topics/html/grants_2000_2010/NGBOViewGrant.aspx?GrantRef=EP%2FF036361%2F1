@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Game semantics, recursion schemes and collapsible pushdown automata: a new approach to the algorithmics of infinite structures
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF036361%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAzNjM2MS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWPATxzdHJvbmc+R2FtZSBzZW1hbnRpY3MsIHJlY3Vyc2lvbiBzY2hlbWVzIGFuZCBjb2xsYXBzaWJsZSBwdXNoZG93biBhdXRvbWF0YTogYSBuZXcgYXBwcm9hY2ggdG8gdGhlIGFsZ29yaXRobWljcyBvZiBpbmZpbml0ZSBzdHJ1Y3R1cmVzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVDPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zNDIwMyc+T25nLCBQcm9mZXNzb3IgQ0hMPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFEENvbXB1dGVyIFNjaWVuY2VkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRRVbml2ZXJzaXR5IG9mIE94Zm9yZGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUMMTUgSnVseSAyMDA4ZGQCAw9kFgICAQ8PFgIfBAUNMTQgQXByaWwgMjAxM2RkAgUPZBYCAgEPDxYEHwQFBzUyMiw3NzgeB1Rvb2xUaXAFCjUyMiw3NzguMjhkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCGUZ1bmRhbWVudGFscyBvZiBDb21wdXRpbmcAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDYgRGVjIDIwMDdkZAIBD2QWBAIBDw8WAh8CaGRkAgMPDxYCHwQFJUlDVCBQcmlvcml0aXNhdGlvbiBQYW5lbCAoVGVjaG5vbG9neSlkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQF6RtEZXNwaXRlIGNvbnNpZGVyYWJsZSBwcm9ncmVzcyBvdmVyIHRoZSBwYXN0IGRlY2FkZSwgdGhlIGNvbXB1dGVyLWFpZGVkIHZlcmlmaWNhdGlvbiBvZiBzb2Z0d2FyZSByZW1haW5zIGEgaHVnZWx5IGNoYWxsZW5naW5nIHByb2JsZW0uIFRoZXJlIGFyZSB0d28gbWFpbiByZWFzb25zLiBGaXJzdCwgcHJvZ3JhbXMgYXJlIGluZmluaXRlLXN0YXRlIHN5c3RlbXMsIGJ1dCB2ZXJpZmljYXRpb24gdG9vbHMgb2YgaW5kdXN0cmlhbCBzY2FsZSBhcmUgZXNzZW50aWFsbHkgZmluaXRlLXN0YXRlIHRlY2hub2xvZ2llcy4gU2Vjb25kbHksIG1vZGVybiBwcm9ncmFtcyAtLSBpbiB3aGljaCB1bmJvdW5kZWQgZGF0YSB0eXBlcywgY29tcGxleCBtZW1vcnkgb3BlcmF0aW9ucywgbm9uLWxvY2FsIGNvbnRyb2wgZmxvdywgaGlnaGVyLW9yZGVyIGNvbnN0cnVjdHMsIGFuZCBuYW1lIGJpbmRpbmdzIG9mIHZhcmlvdXMga2luZHMgZXRjLiBhcmUga2V5IGZlYXR1cmVzIC0tIGNhbiBvbmx5IGJlIGFjY3VyYXRlbHkgbW9kZWxsZWQgdXNpbmcgaGlnaGx5LXN0cnVjdHVyZWQgbWF0aGVtYXRpY2FsIG1vZGVscywgYXMgc3R1ZGllZCBpbiBzZW1hbnRpY3MuIFJlbGF0aXZlbHkgbGl0dGxlIGlzIGtub3duIGFib3V0IHRoZSBhbGdvcml0aG1pYyBwcm9wZXJ0aWVzIG9mIHN1Y2ggcmljaCwgb2Z0ZW4gIGhpZ2hlci1vcmRlcicnLCBtYXRoZW1hdGljYWwgc3RydWN0dXJlcy5UaGlzIHByb2plY3QgY29uY2VybnMgYW4gYXBwcm9hY2ggdG8gc29mdHdhcmUgdmVyaWZpY2F0aW9uIGJ5IGRldmVsb3BpbmcgYXV0b21hdGljIHRlY2huaXF1ZXMgd2hpY2ggZGVhbCBkaXJlY3RseSB3aXRoIGluZmluaXRlLXN0YXRlIHN5c3RlbXMgdGhhdCBhcmUgaGlnaGx5IGFjY3VyYXRlIG1vZGVscyBvZiBwcm9ncmFtcy4gU3RyaWtpbmcgZXhhbXBsZXMgb2Ygc3VjaCBpbmZpbml0ZS1zdGF0ZSBtb2RlbHMgYXJlIGZ1bGx5IGFic3RyYWN0IGdhbWUgc2VtYW50aWNzIG9mIGhpZ2hlci1vcmRlciBwcm9jZWR1cmFsIHByb2dyYW1zOyB0aGVzZSBtb2RlbHMgY2FuIGJlIHJlcHJlc2VudGVkIGFzICh2YXJpYW50IGNsYXNzZXMgb2YgaGlnaGVyLW9yZGVyKSBwdXNoZG93biBhdXRvbWF0YS4gSW4gcmVjZW50IHllYXJzLCB0aGVyZSBoYXZlIGJlZW4gcmVtYXJrYWJsZSBhZHZhbmNlcyBpbiB0aGUgc3R1ZHkgb2YgYWxnb3JpdGhtaWMgcHJvcGVydGllcyBvZiBoaWVyYXJjaGllcyBvZiBnZW5lcmljYWxseS1kZWZpbmVkIGluZmluaXRlIHN0cnVjdHVyZXMuIEEgbm90YWJsZSByZXN1bHQgaXMgdGhhdCByYW5rZWQgdHJlZXMgdGhhdCBhcmUgZ2VuZXJhdGVkIGJ5IGhpZ2hlci1vcmRlciByZWN1cnNpb24gc2NoZW1lcyBoYXZlIGRlY2lkYWJsZSBtb25hZGljIHNlY29uZC1vcmRlciB0aGVvcmllcyAoT25nIExJQ1MnMDYpLiBGdXJ0aGVyIHRoZXJlIGlzIGEgbmV3IHZhcmlhbnQgaGllcmFyY2h5IG9mIGhpZ2hlci1vcmRlciBwdXNoZG93biBhdXRvbWF0YSwgY2FsbGVkIGNvbGxhcHNpYmxlIHB1c2hkb3duIGF1dG9tYXRhLCB0aGF0IGFyZSBlcXVpLWV4cHJlc3NpdmUgd2l0aCBoaWdoZXItb3JkZXIgcmVjdXJzaW9uIHNjaGVtZXMgKGluIHRoZSBzZW5zZSB0aGF0IHRoZXkgZ2VuZXJhdGUgdGhlIHNhbWUgY2xhc3Mgb2YgdHJlZXMpLCBzdWJzdW1pbmcgd2VsbC1rbm93biBzdHJ1Y3R1cmVzIGF0IGxvdyBvcmRlcnM6IHRyZWVzIGF0IG9yZGVyIDAgYW5kIDEgYXJlIHJlc3BlY3RpdmVseSB0aGUgcmVndWxhciAoUmFiaW4gMTk2OSkgYW5kIGFsZ2VicmFpYyAoQ291cmNlbGxlIDE5OTUpICB0cmVlcy4gVGhlIGRpc2NvdmVyeSBvZiB0aGlzIHJpY2gsIHVuaWZ5aW5nIGFuZCByb2J1c3QgaGllcmFyY2h5IG9mIHRyZWVzIHdpdGggZXhjZWxsZW50IG1vZGVsLWNoZWNraW5nIHByb3BlcnRpZXMgc3BhcmtlZCB0aGUgcHJlc2VudCByZXNlYXJjaCBwcm9wb3NhbC5XZSBoYXZlIHR3byBnZW5lcmFsIGdvYWxzOiAtIEZpcnN0IHdlIHBsYW4gdG8gc3R1ZHkgdGhlIGNvbm5leGlvbnMgYmV0d2VlbiB0aGUgdHdvIGNsb3NlbHktcmVsYXRlZCBoaWdoZXItb3JkZXIgZmFtaWxpZXMgb2YgZ2VuZXJhdG9ycyAoaS5lLiByZWN1cnNpb24gc2NoZW1lcyBhbmQgY29sbGFwc2libGUgcHVzaGRvd24gYXV0b21hdGEpLCB0byBleHBsb3JlIHRoZSBsb2dpY2FsLWFsZ29yaXRobWljIHRoZW9yeSBvZiAgaW5maW5pdGUgc3RydWN0dXJlcyBnZW5lcmF0ZWQgYnkgdGhlbSwgYW5kIHRvIGRlcml2ZSAobG9jYWwgYW5kIGdsb2JhbCkgbW9kZWwgY2hlY2tpbmcgYWxnb3JpdGhtcy4gLSBTZWNvbmRseSB3ZSBhaW0gdG8gZGV2ZWxvcCB2ZXJpZmljYXRpb24gdGVjaG5pcXVlcyBhbmQgY29uc3RydWN0IGVmZmljaWVudCBpbXBsZW1lbnRhdGlvbnMgb2Ygc3ltYm9saWMgbW9kZWwtY2hla2NlcnMgb2YgcmVhY2hhYmlsaXR5IGFuZCB0ZW1wb3JhbCBsb2dpY3MgZm9yIHRoZXNlIGluZmluaXRlIHN0cnVjdHVyZXMgb2YgbG93IG9yZGVycy4gV2h5IGlzIGl0IGltcG9ydGFudCB0byBwdXJzdWUgdGhlc2UgZ29hbHM/LSBGaXJzdCwgdGhlc2UgaGllcmFyY2hpZXMgb2YgaW5maW5pdGUgc3RydWN0dXJlcyBsaWUgYXQgdGhlIHZlcnkgZnJvbnRpZXIgb2YgaW5maW5pdGUtc3RhdGUgdmVyaWZpY2F0aW9uLiBUaGUgZmFtaWx5IG9mIHJhbmtlZCB0cmVlcyB0aHVzIGdlbmVyYXRlZCBpcywgdG8gZGF0ZSwgdGhlIGxhcmdlc3QgZ2VuZXJpY2FsbHktZGVmaW5lZCBmYW1pbHkgb2YgdHJlZXMga25vd24gdG8gaGF2ZSBkZWNpZGFibGUgbW9uYWRpYyBzZWNvbmQtb3JkZXIgKE1TTykgdGhlb3JpZXM7IHRoZSBmYW1pbHkgb2YgdHJhbnNpdGlvbiBncmFwaHMgdGh1cyBnZW5lcmF0ZWQgKGRvZXMgbm90IGhhdmUgZGVjaWRhYmxlIE1TTyB0aGVvcmllcyBidXQpIGlzLCB0byBkYXRlLCB0aGUgbGFyZ2VzdCB0aGF0IGlzIGtub3duIHRvIGhhdmUgZGVjaWRhYmxlIG1vZGFsIG11LWNhbGN1bHVzIHRoZW9yaWVzLiBUaGVzZSBhcmUgc2lnbmlmaWNhbnQgaW5kaWNhdG9ycyBvZiBvdXIgdW5kZXJzdGFuZGluZyBvZiB0aGUgc3ViamVjdCwgYXMgTVNPIGxvZ2ljIGlzIHRoZSBnb2xkIHN0YW5kYXJkIG9mIGxhbmd1YWdlcyBmb3IgZGVzY3JpYmluZyBtb2RlbC1jaGVja2luZyBwcm9wZXJ0aWVzIGluIGNvbXB1dGVyLWFpZGVkIHZlcmlmaWNhdGlvbi4gLSBTZWNvbmRseSwgdGhlc2UgaGllcmFyY2hpZXMgb2YgaW5maW5pdGUgc3RydWN0dXJlcyBhcmUgKHJlcHJlc2VudGF0aW9ucyBvZikgaGlnaGx5IGFjY3VyYXRlIG1vZGVscyBvZiBjb21wdXRhdGlvbiBmb3IgaGlnaGVyLW9yZGVyIHByb2NlZHVyYWwgcHJvZ3JhbXMgKHN1Y2ggYXMgT0NBTUwsIEhhc2tlbGwgYW5kIEYjKS4gUmVjZW50IHJlc3VsdHMgaW4gKGFsZ29yaXRobWljKSBnYW1lIHNlbWFudGljcyBoYXZlIHNob3duIHRoYXQgdGhleSB1bmRlcnBpbiB0aGUgY29tcHV0ZXItYWlkZWQgdmVyaWZpY2F0aW9uIG9mIHRoZXNlIHByb2dyYW1zLCBhbiBpbXBvcnRhbnQgYW5kIGNoYWxsZW5naW5nIGRpcmVjdGlvbiBmb3IgdGhlIG5leHQgZ2VuZXJhdGlvbiBvZiBzb2Z0d2FyZSBtb2RlbCBjaGVja2Vycy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3Lm94LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3Lm94LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjAzNjM2MS8xDEVQL0YwMzYzNjEvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk7Iwz2hK6ELWiJOvb35KjvSMW7pw=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKSyu+5DALQvN++DAKT/OCVA08BwQ+iXSozG7AfjQ9zETJFML0E" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F036361/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Game semantics, recursion schemes and collapsible pushdown automata: a new approach to the algorithmics of infinite structures</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=34203'>Ong, Professor CHL</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Oxford</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">15 July 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">14 April 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="522,778.28" class="DetailValue">522,778</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>06 Dec 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>ICT Prioritisation Panel (Technology)</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Despite considerable progress over the past decade, the computer-aided verification of software remains a hugely challenging problem. There are two main reasons. First, programs are infinite-state systems, but verification tools of industrial scale are essentially finite-state technologies. Secondly, modern programs -- in which unbounded data types, complex memory operations, non-local control flow, higher-order constructs, and name bindings of various kinds etc. are key features -- can only be accurately modelled using highly-structured mathematical models, as studied in semantics. Relatively little is known about the algorithmic properties of such rich, often  higher-order'', mathematical structures.This project concerns an approach to software verification by developing automatic techniques which deal directly with infinite-state systems that are highly accurate models of programs. Striking examples of such infinite-state models are fully abstract game semantics of higher-order procedural programs; these models can be represented as (variant classes of higher-order) pushdown automata. In recent years, there have been remarkable advances in the study of algorithmic properties of hierarchies of generically-defined infinite structures. A notable result is that ranked trees that are generated by higher-order recursion schemes have decidable monadic second-order theories (Ong LICS'06). Further there is a new variant hierarchy of higher-order pushdown automata, called collapsible pushdown automata, that are equi-expressive with higher-order recursion schemes (in the sense that they generate the same class of trees), subsuming well-known structures at low orders: trees at order 0 and 1 are respectively the regular (Rabin 1969) and algebraic (Courcelle 1995)  trees. The discovery of this rich, unifying and robust hierarchy of trees with excellent model-checking properties sparked the present research proposal.We have two general goals: - First we plan to study the connexions between the two closely-related higher-order families of generators (i.e. recursion schemes and collapsible pushdown automata), to explore the logical-algorithmic theory of  infinite structures generated by them, and to derive (local and global) model checking algorithms. - Secondly we aim to develop verification techniques and construct efficient implementations of symbolic model-chekcers of reachability and temporal logics for these infinite structures of low orders. Why is it important to pursue these goals?- First, these hierarchies of infinite structures lie at the very frontier of infinite-state verification. The family of ranked trees thus generated is, to date, the largest generically-defined family of trees known to have decidable monadic second-order (MSO) theories; the family of transition graphs thus generated (does not have decidable MSO theories but) is, to date, the largest that is known to have decidable modal mu-calculus theories. These are significant indicators of our understanding of the subject, as MSO logic is the gold standard of languages for describing model-checking properties in computer-aided verification. - Secondly, these hierarchies of infinite structures are (representations of) highly accurate models of computation for higher-order procedural programs (such as OCAML, Haskell and F#). Recent results in (algorithmic) game semantics have shown that they underpin the computer-aided verification of these programs, an important and challenging direction for the next generation of software model checkers.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.ox.ac.uk                                                                                 '>http://www.ox.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

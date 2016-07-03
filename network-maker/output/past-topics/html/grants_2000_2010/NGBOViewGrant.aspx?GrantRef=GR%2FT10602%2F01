@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Functions of Distributed Plasticity in a Biologically-Inspired Adaptive Control Algorithm:From Electrophysiology to Robotics
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fT10602%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvVDEwNjAyLzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWNATxzdHJvbmc+RnVuY3Rpb25zIG9mIERpc3RyaWJ1dGVkIFBsYXN0aWNpdHkgaW4gYSBCaW9sb2dpY2FsbHktSW5zcGlyZWQgQWRhcHRpdmUgQ29udHJvbCBBbGdvcml0aG06RnJvbSBFbGVjdHJvcGh5c2lvbG9neSB0byBSb2JvdGljczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFSjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NDA2Myc+RGVhbiwgRW1lcml0dXMgUHJvZmVzc29yIFA8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCAhYEAgEPZBYCZg8VA0I8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTEyNDk1Jz5QaXBlLCBQcm9mZXNzb3IgVDwvYT5DPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00NTgyJz5EdXRpYSwgUHJvZmVzc29yIE1CPC9hPkY8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTExNjYwOCc+UG9ycmlsbCwgUHJvZmVzc29yIEo8L2E+ZAICD2QWAmYPFQNGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD03MTQyMCc+TWVsaHVpc2gsIFByb2Zlc3NvciBDPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQpQc3ljaG9sb2d5ZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUXVW5pdmVyc2l0eSBvZiBTaGVmZmllbGRkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRtTdGFuZGFyZCBSZXNlYXJjaCAoUHJlLUZFQylkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wNSBKYW51YXJ5IDIwMDVkZAIDD2QWAgIBDw8WAh8EBQ0wNCBBcHJpbCAyMDA4ZGQCBQ9kFgICAQ8PFgQfBAUHNjczLDA1OB4HVG9vbFRpcAUKNjczLDA1OC40N2RkAgoPZBYCAgEPZBYCAgEPFgIfBwICFgQCAQ9kFgJmDxUCF0Jpb21lZGljYWwgbmV1cm9zY2llbmNlE0NvbnRyb2wgRW5naW5lZXJpbmdkAgIPZBYCZg8VAiJOZXcgJmFtcDsgRW1lcmdpbmcgQ29tcC4gUGFyYWRpZ21zF1JvYm90aWNzICZhbXA7IEF1dG9ub215ZAILD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VAhhJbmZvcm1hdGlvbiBUZWNobm9sb2dpZXMLRWxlY3Ryb25pY3NkAgIPZBYCZg8VAgpIZWFsdGhjYXJlAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAWCE0Jpb2xvZ2ljYWxseSBjb250cm9sbGVkIG1vdmVtZW50LCBhcyBkZW1vbnN0cmF0ZWQgYnkgYW5pbWFsIGFuZCBodW1hbiBhdGhsZXRlcywgaXMgc3VwZXJpb3IgaW4gY2VydGFpbiByZXNwZWN0cyB0byBpdHMgcm9ib3RpYyBjb3VudGVycGFydC4gQW4gaW1wb3J0YW50IHBvdGVudGlhbCBzb3VyY2Ugb2YgdGhpcyBzdXBlcmlvcml0eSBpcyB0aGUgYnJhaW4ncyBjb250cm9sIGFsZ29yaXRobXMsIGluIHBhcnRpY3VsYXIgdGhlIGFsZ29yaXRobSBpbXBsZW1lbnRlZCBieSB0aGUgbWljcm9jaXJjdWl0cnkgb2YgdGhlIGNlcmViZWxsdW0uIFdlIHByb3Bvc2UgdG8gZXN0YWJsaXNoIGEgbXVsdGktZGlzY2lwbGluYXJ5IGNvbGxhYm9yYXRpb24gdG8gZXZhbHVhdGUgY2VyZWJlbGxhci1pbnNwaXJlZCBjb250cm9sIGFyY2hpdGVjdHVyZXMgZm9yIHRoZSBhZGFwdGl2ZSBjb250cm9sIG9mIHJvYm90cy4gR2F6ZSBzdGFiaWxpc2F0aW9uIHdpbGwgYmUgdGhlIGV4ZW1wbGFyIHByb2JsZW0uIEV4dGVuc2l2ZSBpbnZlc3RpZ2F0aW9ucyBpbiBuZXVyb3NjaWVuY2UgaGF2ZSBzaG93biB0aGF0IHRoZSBjZXJlYmVsbHVtIGlzIGVzc2VudGlhbCBmb3IgdGhlIGFkYXB0aXZlIGNhbGlicmF0aW9uIG9mIHRoZSB2ZXN0aWJ1bG8tb2N1bGFyIHJlZmxleCAoVk9SKSwgd2hpY2ggYXNzaXN0cyBnYXplIHN0YWJpbGlzYXRpb24gYnkgY291bnRlci1yb3RhdGluZyB0aGUgZXllcyBpbiByZXNwb25zZSB0byBtb3ZlbWVudHMgb2YgdGhlIGhlYWQuIE1vcmVvdmVyLCBhIGNlbnRyYWwgZmVhdHVyZSBvZiB0aGUgcmVsZXZhbnQgY2VyZWJlbGxhciBjb250cm9sIG5ldHdvcmsgaXMgdGhhdCBpdCB1c2VzIHR3byBzaXRlcyBvZiBwbGFzdGljaXR5LCBvbmUgd2l0aGluIHRoZSBjZXJlYmVsbHVtIGl0c2VsZiwgYW5kIG9uZSBpbiB0aGUgYnJhaW5zdGVtIHJlbGF0ZWQgdG8gdGhlIG5ldXJvbnMgdG8gd2hpY2ggdGhlIGNlcmViZWxsdW0gcHJvamVjdHMuIFdlIHByb3Bvc2UgdG8gYXBwbHkgdGhpcyBub3ZlbCBmZWF0dXJlIG9mIGRpc3RyaWJ1dGVkIHBsYXN0aWNpdHkgdG8gYWRhcHRpdmUgY29udHJvbCBpbiByb2JvdHMsIHdpdGggdGhlIGZvbGxvd2luZyBnb2FscyBmb3IgdGhlIHRocmVlIGNvbGxhYm9yYXRpbmcgZ3JvdXBzLihpKSBDaGFyYWN0ZXJpc2F0aW9uIG9mIHRoZSBwcm9wZXJ0aWVzIG9mIHRoaXMgYnJhaW5zdGVtIHBsYXN0aWNpdHkgYnkgZWxlY3Ryb3BoeXNpb2xvZ2ljYWwgcmVjb3JkaW5nIChFZGluYnVyZ2gpOyhpaSkgQ29uc3RydWN0aW9uIG9mIG1vZGVscyBvZiBjZXJlYmVsbHVtIGFuZCBicmFpbnN0ZW0gdG8gaW52ZXN0aWdhdGUgdGhlIGNvbXB1dGF0aW9uYWwgcHJvcGVydGllcyBvZiBhbGdvcml0aG1zIHdpdGggZGlzdHJpYnV0ZWQgcGxhc3RpY2l0eSAoU2hlZmZpZWxkKTsgKGlpaSkgSW1wbGVtZW50YXRpb24gYW5kIGV2YWx1YXRpb24gb2Ygc2VsZWN0ZWQgYWxnb3JpdGhtcyBpbiB0aGUgYWRhcHRpdmUgY29udHJvbCBvZiBjYW1lcmEgc3RhYmlsaXR5IGluIGEgcm9ib3QtbW91bnRlZCBjYW1lcmEgKFVXRSkuVGhlc2UgY29tYmluZWQgc3R1ZGllcyB3aWxsIGhlbHAgdG8gaWRlbnRpZnkgYW5kIGltcGxlbWVudCBub3ZlbCBmZWF0dXJlcyBvZiBiaW9sb2dpY2FsIGNvbnRyb2wgdGhhdCBjb250cmlidXRlIHRvIGl0cyBzdGFiaWxpdHkgYW5kIHJvYnVzdG5lc3MuIFRoZSBmYWN0IHRoYXQgdGhlIGJhc2ljIGNlcmViZWxsYXIgbWljcm9jaXJjdWl0IGlzIHVzZWQgaW4gdGhvdXNhbmRzIG9mIGRpZmZlcmVudCBjb250ZXh0cyBpbiBuZXVyYWwgY29udHJvbCBzdWdnZXN0cyB0aGF0IHRoZSBjZXJlYmVsbGFyIGFsZ29yaXRobSB3aWxsIGhhdmUgd2lkZXNwcmVhZCBhcHBsaWNhdGlvbiB0byBwcm9ibGVtcyBpbiByb2JvdCBtb3ZlbWVudC4gRmluYWxseSwgdGhlIHByb3Bvc2VkIGNvbGxhYm9yYXRpb24gd2lsbCBhZGRyZXNzIGEgY3J1Y2lhbCBnYXAgaW4gVUsgY29tcHV0YXRpb25hbCBzY2llbmNlIGluZnJhc3RydWN0dXJlLiBBdCBwcmVzZW50IHRoZXJlIGlzIG5vIHJlYWRpbHkgYXZhaWxhYmxlIGluZnJhc3RydWN0dXJlIGZvciByb2JvdGljaXN0cyB0byBiZW5lZml0IGZyb20gY3VycmVudCBkaXNjb3ZlcmllcyBpbiBuZXVyb3NjaWVuY2UsIG5vciBmb3IgbmV1cm9zY2llbnRpc3RzIHRvIGxlYXJuIG9mIHJlbGV2YW50IGRldmVsb3BtZW50cyBpbiByb2JvdGljcyBhbmQgY29udHJvbCBlbmdpbmVlcmluZywgU2V0dGluZyB1cCBhIG5ldyBtdWx0aS1kaXNjaXBsaW5hcnkgbW9kZWxsaW5nIGNlbnRyZSB0byBmYWNpbGl0YXRlIHRoaXMgdHdvLXdheSBjb21tdW5pY2F0aW9uIGhhcyBsb25nLXRlcm0gcG90ZW50aWFsIGZvciBlbmhhbmNpbmcgYmFzaWMgYW5kIGFwcGxpZWQgcmVzZWFyY2ggYWNyb3NzIGEgd2lkZSBhcmVhIG9mIG5ldXJvY29tcHV0aW5nIGluIHRoZSBVSy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnNoZWYuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnNoZWYuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvVDEwNjAyLzAxDEdSL1QxMDYwMi8wMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkjotTKXCgztd3JJ7nmTBzqAonO18=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKr+NefCQLQvN++DAKT/OCVA1RONZKusOGUc0NM7+6aR9kmtAl5" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/T10602/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Functions of Distributed Plasticity in a Biologically-Inspired Adaptive Control Algorithm:From Electrophysiology to Robotics</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=4063'>Dean, Emeritus Professor P</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=12495'>Pipe, Professor T</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=4582'>Dutia, Professor MB</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=116608'>Porrill, Professor J</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=71420'>Melhuish, Professor C</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Psychology</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Sheffield</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">05 January 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">04 April 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="673,058.47" class="DetailValue">673,058</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Biomedical neuroscience</td>
+                                    <td class="DetailValue"> Control Engineering</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> New &amp; Emerging Comp. Paradigms</td>
+                                    <td class="DetailValueAlt"> Robotics &amp; Autonomy</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> Electronics</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAltAlt"> Healthcare</td>
+                                    <td class="DetailValueAltAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Biologically controlled movement, as demonstrated by animal and human athletes, is superior in certain respects to its robotic counterpart. An important potential source of this superiority is the brain's control algorithms, in particular the algorithm implemented by the microcircuitry of the cerebellum. We propose to establish a multi-disciplinary collaboration to evaluate cerebellar-inspired control architectures for the adaptive control of robots. Gaze stabilisation will be the exemplar problem. Extensive investigations in neuroscience have shown that the cerebellum is essential for the adaptive calibration of the vestibulo-ocular reflex (VOR), which assists gaze stabilisation by counter-rotating the eyes in response to movements of the head. Moreover, a central feature of the relevant cerebellar control network is that it uses two sites of plasticity, one within the cerebellum itself, and one in the brainstem related to the neurons to which the cerebellum projects. We propose to apply this novel feature of distributed plasticity to adaptive control in robots, with the following goals for the three collaborating groups.(i) Characterisation of the properties of this brainstem plasticity by electrophysiological recording (Edinburgh);(ii) Construction of models of cerebellum and brainstem to investigate the computational properties of algorithms with distributed plasticity (Sheffield); (iii) Implementation and evaluation of selected algorithms in the adaptive control of camera stability in a robot-mounted camera (UWE).These combined studies will help to identify and implement novel features of biological control that contribute to its stability and robustness. The fact that the basic cerebellar microcircuit is used in thousands of different contexts in neural control suggests that the cerebellar algorithm will have widespread application to problems in robot movement. Finally, the proposed collaboration will address a crucial gap in UK computational science infrastructure. At present there is no readily available infrastructure for roboticists to benefit from current discoveries in neuroscience, nor for neuroscientists to learn of relevant developments in robotics and control engineering, Setting up a new multi-disciplinary modelling centre to facilitate this two-way communication has long-term potential for enhancing basic and applied research across a wide area of neurocomputing in the UK.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.shef.ac.uk                                                                               '>http://www.shef.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

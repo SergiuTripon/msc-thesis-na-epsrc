@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Fast video coding: estimation-based control of video codec complexity
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE027024%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAyNzAyNC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVWPHN0cm9uZz5GYXN0IHZpZGVvIGNvZGluZzogZXN0aW1hdGlvbi1iYXNlZCBjb250cm9sIG9mIHZpZGVvIGNvZGVjIGNvbXBsZXhpdHk8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBTw8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTEyMTA0Nyc+WmhhbywgRHIgWTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDSTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MzUxNjYnPlJpY2hhcmRzb24sIFByb2Zlc3NvciBJRTwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQM8PGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDI2OCc+QlQ8L2E+AABkAgYPZBYCAgEPZBYCAgEPDxYCHwQFFVNjaG9vbCBvZiBFbmdpbmVlcmluZ2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFGFJvYmVydCBHb3Jkb24gVW5pdmVyc2l0eWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgSmFudWFyeSAyMDA3ZGQCAw9kFgICAQ8PFgIfBAUNMzAgQXByaWwgMjAxMGRkAgUPZBYCAgEPDxYEHwQFBzI5NSwyNjgeB1Rvb2xUaXAFCjI5NSwyNjguMDlkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhxJbWFnZSAmYW1wOyBWaXNpb24gQ29tcHV0aW5nCk11bHRpbWVkaWFkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCE0NyZWF0aXZlIEluZHVzdHJpZXMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBe0VV2Ugc2VlayBmdW5kaW5nIHRvIGFkZHJlc3MgdGhlIHByb2JsZW0gb2YgdmlkZW8gY29tcHJlc3Npb24gb24gZGV2aWNlcyB3aXRoIGxpbWl0ZWQgcHJvY2Vzc2luZyByZXNvdXJjZXMuIFRoaXMgaXMgYW4gaXNzdWUgZm9yIG1vYmlsZSBwbGF0Zm9ybXMsIHdoZXJlIGJhdHRlcnkgcG93ZXIgYW5kIHByb2Nlc3NpbmcgY2FwYWJpbGl0aWVzIGFyZSBsaW1pdGVkLCBhbmQgZm9yIHN5c3RlbXMgaW4gd2hpY2ggYSB2aWRlbyBjb2RlYyBjb21wZXRlcyB3aXRoIG90aGVyIGFwcGxpY2F0aW9ucyBmb3IgcHJvY2Vzc29yIHJlc291cmNlcy4gIFdpdGggdGhlIGFkb3B0aW9uIG9mIGNvbXBsZXggdmlkZW8gY29kaW5nIHN0YW5kYXJkcyAoc3VjaCBhcyBILjI2NC9BVkMpIGZvciBjb25zdW1lciBhbmQgbW9iaWxlIGFwcGxpY2F0aW9ucywgdGhlIHByb2JsZW0gb2YgY29tcHV0YXRpb25hbGx5LWVmZmljaWVudCB2aWRlbyBjb2RpbmcgaXMgYmVjb21pbmcgaW5jcmVhc2luZ2x5IGltcG9ydGFudC4gSXQgaXMgdml0YWwgdG8gcmVzZWFyY2ggYW5kIGRldmVsb3AgaGlnaCBxdWFsaXR5IHZpZGVvIGNvbXByZXNzaW9uIHdpdGggY29udHJvbGxlZCwgbG93IHByb2Nlc3NvciB1dGlsaXNhdGlvbi4gVGhpcyB3aWxsIG1ha2UgaXQgcG9zc2libGUgdG8gZXh0ZW5kIHRoZSBiYXR0ZXJ5IGxpZmUgb2YgbW9iaWxlIHZpZGVvIGRldmljZXMgKGJlY2F1c2UgYSBsb3dlci1wb3dlciBwcm9jZXNzb3IgY29uc3VtZXMgbGVzcyBiYXR0ZXJ5IHBvd2VyKSBhbmQgdG8gYWNjb21tb2RhdGUgbW9yZSBzb2Z0d2FyZSBhcHBsaWNhdGlvbnMgb24gYSBzaW5nbGUgcHJvY2Vzc29yLlRvIGRhdGUsIHRoZSB0eXBpY2FsIGFwcHJvYWNoIHRvIHRoZSBwcm9ibGVtIG9mIGxpbWl0ZWQgcHJvY2Vzc2luZyByZXNvdXJjZXMgaXMgdG8gcmVkdWNlIHZpZGVvIGZyYW1lIHJhdGUgYW5kL29yIHJlZHVjZSBjb21wcmVzc2lvbiBxdWFsaXR5IGluIG9yZGVyIHRvIG1lZXQgYSBjb21wdXRhdGlvbmFsIGNvbnN0cmFpbnQsIGxlYWRpbmcgdG8gcG9vciBxdWFsaXR5LCBqZXJreSB2aWRlbyBpbWFnZXMgYW5kIHVucHJlZGljdGFibGUgcGVyZm9ybWFuY2UuIFRoaXMgaXMgdW5wbGVhc2FudCBmb3IgdGhlIGdlbmVyYWwgY29uc3VtZXIgYW5kIHVuYWNjZXB0YWJsZSBmb3Igc3BlY2lhbGlzdCBhcHBsaWNhdGlvbiBzdWNoIGFzIHJlbW90ZSBzdXJ2ZWlsbGFuY2UgYW5kIHJlbW90ZSBtZWRpY2FsIGRpYWdub3Npcy4gSW4gY29udHJhc3QsIG91ciBzb2x1dGlvbiBvZmZlcnMgYSB3YXkgb2YgbWFuYWdpbmcgdmlkZW8gY29kaW5nIGNvbXBsZXhpdHksIG1haW50YWluaW5nIHNtb290aCB2aWRlbyB3aXRoIGdvb2QgaW1hZ2UgcXVhbGl0eS5UaGlzIHByb3Bvc2FsIGhhcyB0d28gdW5pcXVlIGFzcGVjdHMuIFRoZSBmaXJzdCBhc3BlY3QgaXMgYSBub3ZlbCBtZXRob2Qgb2YgcmVkdWNpbmcgdGhlIGNvbXBsZXhpdHkgb2YgdmlkZW8gY29kaW5nLiBUaGUgcHJvYmxlbSBvZiBldmFsdWF0aW5nIGFuZCBjaG9vc2luZyBjb2RpbmcgbW9kZXMgaXMgYW5hbHlzZWQgYW5kIHBsYWNlZCBpbiBhIEJheWVzaWFuIGZyYW1ld29yay4gQW4gYWRhcHRpdmUgYWxnb3JpdGhtIG1haW50YWlucyBleGNlbGxlbnQgdmlkZW8gcXVhbGl0eSB3aGlsc3Qgb2ZmZXJpbmcgYSBjb250cm9sbGFibGUgcmVkdWN0aW9uIGluIGNvbXB1dGF0aW9uLCBvdXQtcGVyZm9ybWluZyBleGlzdGluZyBoZXVyaXN0aWMgYXBwcm9hY2hlcy4gVGhlIHNlY29uZCBhc3BlY3QgaXMgYSBzeXN0ZW0gZm9yIGNvbnRyb2xsaW5nIGFuZCBtYW5hZ2luZyBjb2RpbmcgY29tcGxleGl0eSBiYXNlZCBvbiByZWFsLXRpbWUgbWVhc3VyZW1lbnRzIGFuZCB0YXJnZXRzLiBUaGlzIGVuYWJsZXMgYSBjb2RlYyB0byBtYWludGFpbiBzbW9vdGgsIGNsZWFyIHZpZGVvIGltYWdlcyBhbmQgdG8gYWRhcHQgdG8gY2hhbmdlcyBpbiBzY2VuZSBjb250ZW50IGFuZCBhdmFpbGFibGUgcHJvY2Vzc2luZyBjYXBhYmlsaXR5LiBXZSB3aWxsIGRldmVsb3AgYW5kIGludGVncmF0ZSB0aGVzZSB0d28gY29uY2VwdHMgaW50byBhIHN5c3RlbSB0aGF0IG9mZmVycywgZm9yIHRoZSBmaXJzdCB0aW1lLCBjb250cm9sIG9mIHZpZGVvIGNvZGVjIGNvbXBsZXhpdHkgaW4gYW4gYWRhcHRpdmUsIGFuYWx5dGljIGZyYW1ld29yay4gVGhlIG91dGNvbWVzIG9mIHRoaXMgd29yayB3aWxsIGJlIG9mIGRpcmVjdCBiZW5lZml0IHRvIGRldmVsb3BlcnMgYW5kIGludGVncmF0b3JzIG9mIG5leHQgZ2VuZXJhdGlvbiB2aWRlby1iYXNlZCBwbGF0Zm9ybXMuVGhlIHByb2plY3Qgd2lsbCBiZSBsZWQgYnkgRHIgSWFpbiBSaWNoYXJkc29uLCBpbnRlcm5hdGlvbmFsbHkgcmVjb2duaXNlZCBmb3IgaGlzIHdvcmsgb24gc3RhbmRhcmRzLWJhc2VkIHZpZGVvIGNvZGluZy4gRHIgUmljaGFyZHNvbiBhbmQgRHIgWmhhbyAoY28taW52ZXN0aWdhdG9yKSBhcmUgZXhwZXJ0cyBpbiB0aGUgZmllbGQgb2YgdmlkZW8gY29kZWMgY29tcGxleGl0eSBtYW5hZ2VtZW50LiBWaXNpdGluZyByZXNlYXJjaGVyIFByb2Zlc3NvciBNYWphIEJ5c3Ryb20gb2YgQm9zdG9uIFVuaXZlcnNpdHkgaGFzIGFscmVhZHkgY29sbGFib3JhdGVkIHdpdGggdGhlIHJlc2VhcmNoIHRlYW0gaW4gZGV2ZWxvcGluZyB0aGUgcmVzZWFyY2ggdG9vbHMgdGhhdCB3aWxsIGZvcm0gdGhlIGJhc2lzIG9mIHRoaXMgcHJvamVjdC4gQlQgUmVzZWFyY2ggKE11bHRpbWVkaWEgQ29kaW5nIEFuYWx5c2lzIEdyb3VwKSB3aWxsIHByb3ZpZGUgZXhwZXJ0IGFkdmljZSBmcm9tIGFuIGluZHVzdHJ5IHBlcnNwZWN0aXZlLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9JyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9FMDI3MDI0LzEMRVAvRTAyNzAyNC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGRrVlaAq+BIODoWCzN/X+RFYWr6cA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLslZ3VBQLQvN++DAKT/OCVA0r3W7Eu9nlnguQqzVUnnTXL+jIM" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E027024/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Fast video coding: estimation-based control of video codec complexity</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=121047'>Zhao, Dr Y</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=35166'>Richardson, Professor IE</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000268'>BT</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">School of Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Robert Gordon University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 April 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="295,268.09" class="DetailValue">295,268</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Image &amp; Vision Computing</td>
+                                    <td class="DetailValue"> Multimedia</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Creative Industries</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">We seek funding to address the problem of video compression on devices with limited processing resources. This is an issue for mobile platforms, where battery power and processing capabilities are limited, and for systems in which a video codec competes with other applications for processor resources.  With the adoption of complex video coding standards (such as H.264/AVC) for consumer and mobile applications, the problem of computationally-efficient video coding is becoming increasingly important. It is vital to research and develop high quality video compression with controlled, low processor utilisation. This will make it possible to extend the battery life of mobile video devices (because a lower-power processor consumes less battery power) and to accommodate more software applications on a single processor.To date, the typical approach to the problem of limited processing resources is to reduce video frame rate and/or reduce compression quality in order to meet a computational constraint, leading to poor quality, jerky video images and unpredictable performance. This is unpleasant for the general consumer and unacceptable for specialist application such as remote surveillance and remote medical diagnosis. In contrast, our solution offers a way of managing video coding complexity, maintaining smooth video with good image quality.This proposal has two unique aspects. The first aspect is a novel method of reducing the complexity of video coding. The problem of evaluating and choosing coding modes is analysed and placed in a Bayesian framework. An adaptive algorithm maintains excellent video quality whilst offering a controllable reduction in computation, out-performing existing heuristic approaches. The second aspect is a system for controlling and managing coding complexity based on real-time measurements and targets. This enables a codec to maintain smooth, clear video images and to adapt to changes in scene content and available processing capability. We will develop and integrate these two concepts into a system that offers, for the first time, control of video codec complexity in an adaptive, analytic framework. The outcomes of this work will be of direct benefit to developers and integrators of next generation video-based platforms.The project will be led by Dr Iain Richardson, internationally recognised for his work on standards-based video coding. Dr Richardson and Dr Zhao (co-investigator) are experts in the field of video codec complexity management. Visiting researcher Professor Maja Bystrom of Boston University has already collaborated with the research team in developing the research tools that will form the basis of this project. BT Research (Multimedia Coding Analysis Group) will provide expert advice from an industry perspective.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

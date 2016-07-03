@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Asymptotic properties of solutions to hyperbolic equations
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE062873%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTA2Mjg3My8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVLPHN0cm9uZz5Bc3ltcHRvdGljIHByb3BlcnRpZXMgb2Ygc29sdXRpb25zIHRvIGh5cGVyYm9saWMgZXF1YXRpb25zPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVHPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD05MzE0Myc+UnV6aGFuc2t5LCBQcm9mZXNzb3IgTTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRNEZXB0IG9mIE1hdGhlbWF0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUXSW1wZXJpYWwgQ29sbGVnZSBMb25kb25kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzAxIE9jdG9iZXIgMjAwN2RkAgMPZBYCAgEPDxYCHwQFETMwIFNlcHRlbWJlciAyMDEwZGQCBQ9kFgICAQ8PFgQfBAUHMzA5LDY4MB4HVG9vbFRpcAUKMzA5LDY3OS45OWRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIVTWF0aGVtYXRpY2FsIEFuYWx5c2lzAGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAXdGlRoZSBwcm9wb3NlZCByZXNlYXJjaCB3aWxsIGNvbmNlbnRyYXRlIG9uIHRoZSBhc3ltcHRvdGljIHByb3BlcnRpZXMgb2Ygc2NhbGFyIGFuZCBjb3VwbGVkIGh5cGVyYm9saWMgZXF1YXRpb25zIGFuZCBzeXN0ZW1zLiBUaGVyZSBhcmUgbWFueSBpbXBvcnRhbnQgZXhhbXBsZXMgbW90aXZhdGluZyB0aGUgZ3JlYXQgbmVlZCBpbiB0aGUgcHJvcG9zZWQgYW5hbHlzaXM6IHdhdmUgZXF1YXRpb25zLCBkaXNzaXBhdGl2ZSB3YXZlIGVxdWF0aW9ucywgS2xlaW4tR29yZG9uIGVxdWF0aW9ucywgS2lyY2hob2ZmIGVxdWF0aW9ucywgTWF4d2VsbCBzeXN0ZW1zLCBlbGFzdGljIGVxdWF0aW9ucywgYW5kIG90aGVycy4gVGhlcmUgYXJlIGFsc28gbWFueSBtb3RpdmF0aW5nIGV4YW1wbGVzIG9mIGxhcmdlIHN5c3RlbXMgYW5kIGhpZ2hlciBvcmRlciBlcXVhdGlvbnMuIEZvciBleGFtcGxlLCBHcmFkIHN5c3RlbXMgaW4gZ2FzIGR5bmFtaWNzIGRlcGVuZCBvbiBhIG51bWJlciBvZiBtb21lbnRzLCBhbmQgbGVhZCB0byBzeXN0ZW1zIG9mIG9yZGVyIDEzLCAyMCwgYW5kIGhpZ2hlci5BdCB0aGUgc2FtZSB0aW1lIHRoZSBzby1jYWxsZWQgSGVybWl0ZS1HcmFkIGFwcHJvYWNoIHRvIHRoZSBGb2trZXItUGxhbmNrIGVxdWF0aW9uIGxlYWRzIHRvIGFuIGluZmluaXRlIHN5c3RlbSBvZiBlcXVhdGlvbnMgZm9yIGNvZWZmaWNpZW50cy4gQ29uc2lkZXJpbmcgR2FsZXJraW4gYXBwcm94aW1hdGlvbnMgb2YgdGhpcyBzeXN0ZW0gcHJvZHVjZXMgYSBzZXF1ZW5jZSBvZiBoeXBlcmJvbGljIHN5c3RlbXMgb2YgdGhlIHNpemUgaW5jcmVhc2luZyB0byBpbmZpbml0eS5UaGUgbWFpbiBhaW0gb2YgdGhlIHByb2plY3QgaXMgdG8gYW5hbHlzZSB0aGUgYXN5bXB0b3RpYyBwcm9wZXJ0aWVzIG9mIHNvbHV0aW9ucyB0byB0aGUgbGluZWFyaXNlZCB2ZXJzaW9ucyBvZiB0aGVzZSBlcXVhdGlvbnMuIFRoZXNlIHByb3BlcnRpZXMgcGxheSBhIG1ham9yIHJvbGUgaW4gdGhlIGFuYWx5c2lzIG9mIHRoZSBsb2NhbCBhbmQgZ2xvYmFsIHRpbWUgd2VsbC1wb3NlZG5lc3Mgb2YgdGhlIGNvcnJlc3BvbmRpbmcgbm9ubGluZWFyIGVxdWF0aW9ucy4gSW4gZmFjdCwgdGhlc2UgYXN5bXB0b3RpYyBwcm9wZXJ0aWVzIHdpbGwgYmUgdXNlZCB0byBlc3RhYmxpc2ggdGhlIHNvLWNhbGxlZCBTdHJpY2hhcnR6IGVzdGltYXRlcyBmb3Igc29sdXRpb25zLCB3aGljaCBhcmUgdGhlIG1vc3QgZWZmZWN0aXZlIG1vZGVybiB0b29sIHRvIHRhY2tsZSB0aGUgbm9ubGluZWFyIHByb2JsZW1zLlRoZSBwcm9wb3NlZCBhcHByb2FjaCB3aWxsIGJlIGJhc2VkIG9uIHRoZSBnZW9tZXRyaWMgaW50ZXJwcmV0YXRpb24gb2YgdGhlIGFzeW1wdG90aWMgcHJvZmlsZXMuIEluZGVlZCwgaXQgdHVybnMgb3V0IHRvIGJlIGV4dHJlbWVseSBkaWZmaWN1bHQgdG8gdHJhY2UgYXN5bXB0b3RpYyBwcm9wZXJ0aWVzIHRvIGNvZWZmaWNpZW50cyBvZiB0aGUgb3JpZ2luYWwgZXF1YXRpb24uIFRoaXMgaXMgdGhlIG1haW4gcmVhc29uIHdoeSBvbmx5IHZlcnkgbGltaXRlZCByZXN1bHRzIGFyZSBjdXJyZW50bHkgYXZhaWxhYmxlIG9uIGh5cGVyYm9saWMgZXF1YXRpb25zIHdpdGggdmFyaWFibGUgY29lZmZpY2llbnRzLiBObyBnZW9tZXRyaWMgYXBwcm9hY2ggaGFzIGJlZW4gYXR0ZW1wdGVkIGJlZm9yZSBpbiB0aGUgYW5hbHlzaXMgb2Ygc3VjaCBwcm9ibGVtcyBhbmQgdGhhdCBpcyB3aGVyZSB3ZSBleHBlY3QgdG8gbWFrZSBhIG1ham9yIGNvbnRyaWJ1dGlvbi4gVGhlIHByb2JsZW0gd2lsbCBiZSBzcGxpdCBpbiB0d28gcGFydHMuIEZpcnN0LCBpbmZvcm1hdGlvbiBvbiBjb2VmZmljaWVudHMgYW5kIG9uIHRoZSBzdHJ1Y3R1cmUgb2YgdGhlIGVxdWF0aW9uIGF0IGhhbmQgd2lsbCBiZSB0cmFuc2xhdGVkIGludG8gZ2VvbWV0cmljIHByb3BlcnRpZXMgb2YgaXRzIGNoYXJhY3RlcmlzdGljcyBhbmQgdGhlIGNvcnJlc3BvbmRpbmcgSGFtaWx0b25pYW4gZmxvdy4gU2Vjb25kLCB0aGVzZSBnZW9tZXRyaWMgcXVhbnRpdGllcyB3aWxsIGJlIHVzZWQgdG8gY2Fycnkgb3V0IGFzeW1wdG90aWMgZXN0aW1hdGlvbiBvZiB0aGUgcHJvcGFnYXRvcnMuQSBzaW1pbGFyIGFwcHJvYWNoIHdhcyByZWNlbnRseSBzdWNjZXNzZnVsbHkgY2FycmllZCBvdXQgZm9yIHRoZSBhbmFseXNpcyBvZiBTY2hyb2RpbmdlciBlcXVhdGlvbnMuIEhvd2V2ZXIsIGZvciBoeXBlcmJvbGljIGVxdWF0aW9ucyB3ZSBoYXZlIHNldmVyYWwgYmlnIGFkdmFudGFnZXMgdGhhdCB3ZSBwbGFuIHRvIHVzZS4gIFByb3BhZ2F0b3JzIGZvciB0aGVzZSBlcXVhdGlvbnMgYXMgd2VsbCBhcyB0cmFuc2Zvcm1hdGlvbiBvcGVyYXRvcnMgdXNlZCBmb3IgdGhlaXIgcmVkdWN0aW9uIG9yIGNvbmp1Z2F0aW9uIGFyZSBlc3NlbnRpYWxseSBvZiB0aGUgc2FtZSBmb3JtLiBUaGlzIHdpbGwgYWxsb3cgdXMgdG8gZnVsbHkgdXNlIHRoZSBjYWxjdWx1cyBvZiB0aGVzZSBvcGVyYXRvcnMgdG8gYmUgYWJsZSB0byByZWR1Y2UgdGhlIHByb2JsZW0gb2YgYXN5bXB0b3RpYyBhbmFseXNpcyBmb3IgYSB2ZXJ5IHdpZGUgY2xhc3Mgb2YgZXF1YXRpb25zIHRvIGVzc2VudGlhbGx5IGEgc2luZ2xlIHNjYWxhciBmaXJzdCBvcmRlciBlcXVhdGlvbi4gU3VjaCBtb2RlbCBlcXVhdGlvbiB3aWxsIGJlIG9mIHRoZSBnZW5lcmFsIGZvcm0sIGJ1dCBpdHMgZ2xvYmFsIHByb3BhZ2F0b3JzIGluIGRpZmZlcmVudCBmb3JtIGhhdmUgYmVlbiBwYXJ0bHkgYW5hbHlzZWQgZnJvbSBzZXZlcmFsIHBvaW50cyBvZiB2aWV3LiBXZSB3aWxsIGNvbnNpZGVyYWJseSBkZXZlbG9wIGFuZCBjb21wbGVtZW50IHRoZSBleGlzdGluZyByZXN1bHRzIHdpdGggdGltZSBnbG9iYWwgYXN5bXB0b3RpYyBhbmFseXNpcyBsZWFkaW5nIHRvIHRoZSB1bmRlcnN0YW5kaW5nIG9mIHRoZSBkaXNwZXJzaXZlIHByb3BlcnRpZXMgb2Ygd2lkZSBjbGFzc2VzIG9mIGVxdWF0aW9ucy5UaGlzIHdpbGwgYWxsb3cgdXMgdG8gYnVpbGQgdGhlIG5ldyBhcHByb2FjaCBvbiB0aGUgYXZhaWxhYmxlIGV4dGVuc2l2ZSBhbmFseXNpcyBvZiBkaWZmZXJlbnQgbWF0aGVtYXRpY2FsIHRoZW9yaWVzIChtaWNyb2xvY2FsIGFuYWx5c2lzLCBzeW1wbGVjdGljIGdlb21ldHJ5LCBoYXJtb25pYyBhbmFseXNpcywgbm9ybWFsIGZvcm1zLCBldGMuKSB0byBhaW0gYXQgYSBtYWpvciBkZXZlbG9wbWVudCBvZiB0aGUgYXN5bXB0b3RpYyBhbmFseXNpcyBvZiBoeXBlcmJvbGljIGVxdWF0aW9ucy4gSXQgaXMgaW1wb3J0YW50LCBjaGFsbGVuZ2luZyBhbmQgdGltZWx5IHJlc2VhcmNoIHdpdGggZGVlcCBpbXBsaWNhdGlvbnMgaW4gdGhlb3JpZXMgb2YgbGluZWFyIGFuZCBub25saW5lYXIgaHlwZXJib2xpYyBlcXVhdGlvbnMgYW5kIHRoZWlyIHJlbGF0aW9uIHRvIGdlb21ldHJ5IGFuZCBvdGhlciBhcmVhcy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmltcGVyaWFsLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmltcGVyaWFsLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTA2Mjg3My8xDEVQL0UwNjI4NzMvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkNSoWhxGZSv+5OyIfwJRPmeKqQrI=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK09qeRBQLQvN++DAKT/OCVA/r+9y/7xVwvvAmpqmwCHT6WgGrl" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E062873/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Asymptotic properties of solutions to hyperbolic equations</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=93143'>Ruzhansky, Professor M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Dept of Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Imperial College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="309,679.99" class="DetailValue">309,680</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The proposed research will concentrate on the asymptotic properties of scalar and coupled hyperbolic equations and systems. There are many important examples motivating the great need in the proposed analysis: wave equations, dissipative wave equations, Klein-Gordon equations, Kirchhoff equations, Maxwell systems, elastic equations, and others. There are also many motivating examples of large systems and higher order equations. For example, Grad systems in gas dynamics depend on a number of moments, and lead to systems of order 13, 20, and higher.At the same time the so-called Hermite-Grad approach to the Fokker-Planck equation leads to an infinite system of equations for coefficients. Considering Galerkin approximations of this system produces a sequence of hyperbolic systems of the size increasing to infinity.The main aim of the project is to analyse the asymptotic properties of solutions to the linearised versions of these equations. These properties play a major role in the analysis of the local and global time well-posedness of the corresponding nonlinear equations. In fact, these asymptotic properties will be used to establish the so-called Strichartz estimates for solutions, which are the most effective modern tool to tackle the nonlinear problems.The proposed approach will be based on the geometric interpretation of the asymptotic profiles. Indeed, it turns out to be extremely difficult to trace asymptotic properties to coefficients of the original equation. This is the main reason why only very limited results are currently available on hyperbolic equations with variable coefficients. No geometric approach has been attempted before in the analysis of such problems and that is where we expect to make a major contribution. The problem will be split in two parts. First, information on coefficients and on the structure of the equation at hand will be translated into geometric properties of its characteristics and the corresponding Hamiltonian flow. Second, these geometric quantities will be used to carry out asymptotic estimation of the propagators.A similar approach was recently successfully carried out for the analysis of Schrodinger equations. However, for hyperbolic equations we have several big advantages that we plan to use.  Propagators for these equations as well as transformation operators used for their reduction or conjugation are essentially of the same form. This will allow us to fully use the calculus of these operators to be able to reduce the problem of asymptotic analysis for a very wide class of equations to essentially a single scalar first order equation. Such model equation will be of the general form, but its global propagators in different form have been partly analysed from several points of view. We will considerably develop and complement the existing results with time global asymptotic analysis leading to the understanding of the dispersive properties of wide classes of equations.This will allow us to build the new approach on the available extensive analysis of different mathematical theories (microlocal analysis, symplectic geometry, harmonic analysis, normal forms, etc.) to aim at a major development of the asymptotic analysis of hyperbolic equations. It is important, challenging and timely research with deep implications in theories of linear and nonlinear hyperbolic equations and their relation to geometry and other areas.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.imperial.ac.uk                                                                           '>http://www.imperial.ac.uk                                                                           </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

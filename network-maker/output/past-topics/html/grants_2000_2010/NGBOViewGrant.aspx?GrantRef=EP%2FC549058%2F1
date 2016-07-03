@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Dimension Reduction for Multivariate Time Series: Modelling and First and Second Conditional Moments
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fC549058%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvQzU0OTA1OC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAV1PHN0cm9uZz5EaW1lbnNpb24gUmVkdWN0aW9uIGZvciBNdWx0aXZhcmlhdGUgVGltZSBTZXJpZXM6IE1vZGVsbGluZyBhbmQgRmlyc3QgYW5kIFNlY29uZCBDb25kaXRpb25hbCBNb21lbnRzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVCPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xNTkzMCc+VG9uZywgUHJvZmVzc29yIEg8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAz48YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTk3MTI2Jz5QZW56ZXIsIERyIEpSPC9hPkE8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTM5NTY0Jz5ZYW8sIFByb2Zlc3NvciBRPC9hPgBkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFClN0YXRpc3RpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBShMb25kb24gU2Nob29sIG9mIEVjb25vbWljcyAmYW1wOyBQb2wgU2NpZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbU3RhbmRhcmQgUmVzZWFyY2ggKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMTggT2N0b2JlciAyMDA1ZGQCAw9kFgICAQ8PFgIfBAUQMTcgRmVicnVhcnkgMjAwOWRkAgUPZBYCAgEPDxYEHwQFBzE2Nyw1NzMeB1Rvb2xUaXAFCjE2Nyw1NzMuMjlkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiJTdGF0aXN0aWNzICZhbXA7IEFwcGwuIFByb2JhYmlsaXR5AGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAWxFFRoaXMgcHJvamVjdCB3aWxsIHN0dWR5IG1vZGVscyB0aGF0IGRlc2NyaWJlIGxpbmVhciBhbmQgbm9ubGluZWFyIHJlbGF0aW9uc2hpcHMgb3ZlciB0aW1lIGFuZCBhY3Jvc3Mgc2V2ZXJhbCB0aW1lIHNlcmllcywgdGhhdCBpcywgbW9kZWxzIHRoYXQgZGVzY3JpYmUgdGhlIGRlcGVuZGVuY2Ugc3RydWN0dXJlIGluIG11bHRpdmFyaWF0ZSB0aW1lIHNlcmllcyBkYXRhLiBNdWx0aXZhcmlhdGUgdGltZSBzZXJpZXMgY29uc2lzdCBvZiBzaW11bHRhbmVvdXMgb2JzZXJ2YXRpb25zIG9mIHNldmVyYWwgcmVsYXRlZCBxdWFudGl0eSdzIHRha2VuIG92ZXIgdGltZS4gVGhleSBhcmlzZSBpbiBhIHZhcmlldHkgb2YgZmllbGRzIGluY2x1ZGluZyBlbmdpbmVlcmluZywgcGh5c2ljYWwgc2NpZW5jZXMgKHN1Y2ggYXMgbWV0ZW9yb2xvZ3kgYW5kIGdlb3BoeXNpY3MpLCBmaW5hbmNlLCBlY29ub21pY3MgYW5kIGJ1c2luZXNzLiBGb3IgZXhhbXBsZSwgaW4gYW4gZW5naW5lZXJpbmcgc2V0dGluZywgb25lIG1heSBiZSBpbnRlcmVzdGVkIGluIHRoZSBzdHVkeSBvZiB0aGUgc2ltdWx0YW5lb3VzIGJlaGF2aW91ciBvdmVyIHRpbWUgb2YgY3VycmVudCBhbmQgdm9sdGFnZSwgb3Igb2YgcHJlc3N1cmUsIHRlbXBlcmF0dXJlLCBhbmQgdm9sdW1lLCB3aGVyZWFzIGluIGVjb25vbWljcywgd2UgbWF5IGJlIGludGVyZXN0ZWQgaW4gdmFyaWF0aW9ucyBvZiBpbnRlcmVzdCByYXRlcywgbW9uZXkgc3VwcGx5IGFuZCB1bmVtcGxveW1lbnQsIG9yIGluIHNheSdzIHZvbHVtZSwgcHJpY2UsIGFuZCBhZHZlcnRpc2luZyBleHBlbmRpdHVyZSBmb3IgYSBwYXJ0aWN1bGFyIGNvbW1vZGl0eSBpbiBhIGJ1c2luZXNzIGNvbnRleHQuQSBjb252ZW50aW9uYWwgYXBwcm9hY2ggdG8gbW9kZWwgbXVsdGl2YXJpYXRlIHRpbWUgc2VyaWVzIGlzIHRvIHVzZSB0aGUgdmVjdG9yIGF1dG9yZWdyZXNzaXZlIG1vdmluZyBhdmVyYWdlIChWQVJNQSkgY2xhc3Mgb2YgbW9kZWxzLiBUaGVzZSBtb2RlbHMgYXJlIGluaGVyZW50bHkgb3ZlcnBhcmFtZXRyaXNlZDsgbW9kZWxzIHdpdGggZGlmZmVyZW50IHBhcmFtZXRlcnMgbWF5IGhhdmUgaWRlbnRpY2FsIHByb3BlcnR5J3MuIFRoaXMgbGVhZHMgdG8gaWRlbnRpZmlhYmlsaXR5IHByb2JsZW1zLiBUaGUgYWJ1bmRhbmNlIG9mIHBhcmFtZXRlcnMgY2F1c2VzIGRpZmZpY3VsdHkncyBpbiBzdGF0aXN0aWNhbCBpbmZlcmVuY2UgZm9yIFZBUk1BIG1vZGVsczsgdGhlIGxpa2VsaWhvb2QgZnVuY3Rpb24gaXMgdHlwaWNhbGx5IGZsYXQuIFRoZXJlZm9yZSwgcmVkdWNpbmcgdGhlIG51bWJlciBvZiBwYXJhbWV0ZXJzIGlzIGEgY2VudHJhbCBwcm9ibGVtIGluIG1vZGVsbGluZyBtdWx0aXZhcmlhdGUgdGltZSBzZXJpZXMgZGF0YS5JbiBjb250cmFzdCB0byBlc3RhYmxpc2hlZCBtZXRob2RzLCB0aGUgYXBwcm9hY2hlcyBwcm9wb3NlZCBpbiB0aGlzIHByb2plY3QgdGFrZSBhZHZhbnRhZ2Ugb2YgbW9kZXJuIGNvbXB1dGluZyBwb3dlciB0byBzZWFyY2ggZm9yIHNpbXBsZSBkZWNvbXBvc2l0aW9uJ3MgdGhhdCByZXByZXNlbnQgbXVsdGlwbGUgZGVwZW5kZW5jZSBzdHJ1Y3R1cmUgdXNpbmcgYSBzbWFsbCBudW1iZXIgb2YgcGFyYW1ldGVycy4gVGhlIHN0YXJ0aW5nIHBvaW50IGZvciB0aGlzIHdvcmsgaXMgaW5kZXBlbmRlbnQgY29tcG9uZW50IGFuYWx5c2lzLCBhIG5ldyBhbmQgYWN0aXZlIHJlc2VhcmNoIGFyZWEgYXQgdGhlIGJvdW5kYXJ5IGJldHdlZW4gaW5mb3JtYXRpb24gc2NpZW5jZSBhbmQgc3RhdGlzdGljcy4gV2Ugd2lsbCBidWlsZCBvbiBpZGVhcyBmcm9tIHRoaXMgZmllbGQgdG8gcHJvdmlkZSBkZWNvbXBvc2l0aW9uJ3MgdGhhdCBhcmUgdGFpbG9yZWQgdG8gc2VydmUgc3BlY2lmaWMgcHJhY3RpY2FsIHB1cnBvc2VzLiBGb3IgZXhhbXBsZSwgb3VyIGNvbmRpdGlvbmFsbHkgdW5jb3JyZWxhdGVkIGNvbXBvbmVudC1iYXNlZCBhcHByb2FjaCBvZmZlcnMgYSBzaW1wbGUgYW5kIGludHVpdGl2ZWx5IGFwcGVhbGluZyByZXByZXNlbnRhdGlvbiBmb3IgdGhlIHZvbGF0aWxpdHkncyBvZiBzZXZlcmFsIGZpbmFuY2lhbCBpbnN0cnVtZW50cy4gU2ltcGxlIHJlcHJlc2VudGF0aW9ucyBvZiBtdWx0aXBsZSBkZXBlbmRlbmNlIHN0cnVjdHVyZSBjb21lIGF0IGEgY29zdDsgaW50ZW5zaXZlIGNvbXB1dGF0aW9uIGlzIHJlcXVpcmVkIHRvIGRlcml2ZSB0aGUgcmVsZXZhbnQga2V5IGNvbXBvbmVudHMsIGFuZCB0aGUgYXNzb2NpYXRlZCBzdGF0aXN0aWNhbCBpbmZlcmVuY2UgZGVtYW5kcyBzb3BoaXN0aWNhdGVkIGFzeW1wdG90aWMgdGhlb3J5LiAgV2Ugd2lsbCBhZG9wdCB0aGUgZm9sbG93aW5nIHN0cmF0ZWd5IHRocm91Z2hvdXQ6IChpKSBwcm9wb3NlIGFuZCBpbnZlc3RpZ2F0ZSBwcm9taXNpbmcgbmV3IHRoZW9yeSBhbmQgbWV0aG9kb2xvZ2ljYWwgdG9vbHMgYWx3YXlzIGd1aWRlZCBieSBwcmFjdGljYWwgbmVlZHMsIChpaSkgdGVzdCBvbiBzaW11bGF0ZWQgZGF0YSBhbmQgaWYgc2ltdWxhdGlvbiBpcyBzdWNjZXNzZnVsLCAoaWlpKSB0ZXN0IG9uIHJlYWwgZGF0YS4gIHRoZSBsb29wIGlzIGxpa2VseSB0byBiZSByZXBlYXRlZCBmb3IgZnVydGhlciByZWZpbmVtZW50ZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5sc2UuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5sc2UuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0M1NDkwNTgvMQxFUC9DNTQ5MDU4LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZMEH5NCHCH7ujNrbYMJfj0UrWyZp" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLL5euaAgLQvN++DAKT/OCVA3F33H0w/1/unU9CWYoeRMD+9k+t" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/C549058/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Dimension Reduction for Multivariate Time Series: Modelling and First and Second Conditional Moments</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=15930'>Tong, Professor H</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=97126'>Penzer, Dr JR</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=39564'>Yao, Professor Q</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Statistics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">London School of Economics &amp; Pol Sci</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">18 October 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">17 February 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="167,573.29" class="DetailValue">167,573</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Statistics &amp; Appl. Probability</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This project will study models that describe linear and nonlinear relationships over time and across several time series, that is, models that describe the dependence structure in multivariate time series data. Multivariate time series consist of simultaneous observations of several related quantity's taken over time. They arise in a variety of fields including engineering, physical sciences (such as meteorology and geophysics), finance, economics and business. For example, in an engineering setting, one may be interested in the study of the simultaneous behaviour over time of current and voltage, or of pressure, temperature, and volume, whereas in economics, we may be interested in variations of interest rates, money supply and unemployment, or in say's volume, price, and advertising expenditure for a particular commodity in a business context.A conventional approach to model multivariate time series is to use the vector autoregressive moving average (VARMA) class of models. These models are inherently overparametrised; models with different parameters may have identical property's. This leads to identifiability problems. The abundance of parameters causes difficulty's in statistical inference for VARMA models; the likelihood function is typically flat. Therefore, reducing the number of parameters is a central problem in modelling multivariate time series data.In contrast to established methods, the approaches proposed in this project take advantage of modern computing power to search for simple decomposition's that represent multiple dependence structure using a small number of parameters. The starting point for this work is independent component analysis, a new and active research area at the boundary between information science and statistics. We will build on ideas from this field to provide decomposition's that are tailored to serve specific practical purposes. For example, our conditionally uncorrelated component-based approach offers a simple and intuitively appealing representation for the volatility's of several financial instruments. Simple representations of multiple dependence structure come at a cost; intensive computation is required to derive the relevant key components, and the associated statistical inference demands sophisticated asymptotic theory.  We will adopt the following strategy throughout: (i) propose and investigate promising new theory and methodological tools always guided by practical needs, (ii) test on simulated data and if simulation is successful, (iii) test on real data.  the loop is likely to be repeated for further refinement</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.lse.ac.uk                                                                                '>http://www.lse.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Closed ideals of the Banach algebra of bounded operators on a Banach space
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF023537%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAyMzUzNy8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVbPHN0cm9uZz5DbG9zZWQgaWRlYWxzIG9mIHRoZSBCYW5hY2ggYWxnZWJyYSBvZiBib3VuZGVkIG9wZXJhdG9ycyBvbiBhIEJhbmFjaCBzcGFjZTwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFQjxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTEwODc2Myc+TGF1c3RzZW4sIERyIE5KPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFGk1hdGhlbWF0aWNzIGFuZCBTdGF0aXN0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUTGFuY2FzdGVyIFVuaXZlcnNpdHlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRJGaXJzdCBHcmFudCBTY2hlbWVkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBREwMSBTZXB0ZW1iZXIgMjAwOGRkAgMPZBYCAgEPDxYCHwQFDjMxIEF1Z3VzdCAyMDEwZGQCBQ9kFgICAQ8PFgQfBAUHMTU0LDYyMR4HVG9vbFRpcAUKMTU0LDYyMC42NmRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIVTWF0aGVtYXRpY2FsIEFuYWx5c2lzAGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA2IFNlcCAyMDA3ZGQCAQ9kFgQCAQ8PFgIfAmhkZAIDDw8WAh8EBSpNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCAoU2NpZW5jZSlkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFlx9XZSBjYXJyeSBvdXQgYmFzaWMgcmVzZWFyY2ggaW50byBhIG1hdGhlbWF0aWNhbCBvYmplY3QgY2FsbGVkIGEgQmFuYWNoIGFsZ2VicmEuIFRvIGV4cGxhaW4gd2hhdCB0aGlzIGlzLCB0aGluayBvZiB0aGUgc2V0IG9mIGludGVnZXJzIHsuLi4sLTIsLTEsMCwxLDIsLi4ufS4gWW91IGNhbiBhZGQsIHN1YnRyYWN0IGFuZCBtdWx0aXBseSB0d28gaW50ZWdlcnMsIGFuZCB5b3UgY2FuIG1lYXN1cmUgdGhlIGRpc3RhbmNlIGJldHdlZW4gdGhlbTsgZm9yIGluc3RhbmNlLCAyKzM9NSwgMi0zPS0xLCBhbmQgMngzPTYsIGFuZCB0aGUgZGlzdGFuY2UgYmV0d2VlbiAyIGFuZCAzIGlzIDEuIEEgQmFuYWNoIGFsZ2VicmEgc2hhcmVzIGFsbCB0aGVzZSBwcm9wZXJ0aWVzOiBpdHMgZWxlbWVudHMgY2FuIGJlIGFkZGVkLCBzdWJ0cmFjdGVkLCBhbmQgbXVsdGlwbGllZCB0b2dldGhlciwgYW5kIHlvdSBjYW4gbWVhc3VyZSB0aGUgZGlzdGFuY2UgYmV0d2VlbiB0aGVtLkEgZnVuZGFtZW50YWwgcHJvcGVydHkgb2YgdGhlIGludGVnZXJzIGlzIHRoYXQgZXZlcnkgaW50ZWdlciAoYXBhcnQgZnJvbSAwIGFuZCArLy0xKSBjYW4gYmUgd3JpdHRlbiBhcyBhIHByb2R1Y3Qgb2YgcHJpbWUgbnVtYmVycy4gKFJlY2FsbCB0aGF0IGEgbnVtYmVyIGlzIHByaW1lIGlmIGl0IGNhbiBvbmx5IGJlIGRpdmlkZWQgYnkgMSBhbmQgaXRzZWxmLikgQ29uc2VxdWVudGx5LCB3ZSB0aGluayBvZiB0aGUgcHJpbWUgbnVtYmVycyBhcyB0aGUgYnVpbGRpbmcgYmxvY2tzIG9mIHRoZSBpbnRlZ2VyczsgbWFueSBxdWVzdGlvbnMgYWJvdXQgaW50ZWdlcnMgY2FuIGJlIGFuc3dlcmVkIGJ5IGNvbnNpZGVyaW5nIHByaW1lIG51bWJlcnMgZmlyc3QgYW5kIHRoZW4gZ2VuZXJhbGl6aW5nIHRvIGFsbCBpbnRlZ2VycyBieSBleHRlbmRpbmcgdG8gcHJvZHVjdHMgb2YgcHJpbWVzLiBJbiBhIEJhbmFjaCBhbGdlYnJhLCB0aGUgb2JqZWN0cyBwbGF5aW5nIHRoZSByb2xlIG9mIGJ1aWxkaW5nIGJsb2NrcyBhcmUgY2FsbGVkIGlkZWFscy4gKEluIHRoaXMgY29udGV4dCB0aGUgd29yZCBpZGVhbCBoYXMgbm8gcmVsYXRpb24gdG8gaXRzIHN0YW5kYXJkIHVzYWdlLikgVGhlIHB1cnBvc2Ugb2YgdGhpcyBwcm9qZWN0IGlzIHRvIGRldGVybWluZSBhbGwgdGhlIGlkZWFscyBvZiBjZXJ0YWluIEJhbmFjaCBhbGdlYnJhcywgdGhhdCBpcywgZGVzY3JpYmUgdGhlaXIgYnVpbGRpbmcgYmxvY2tzOyB0aGlzIGtub3dsZWRnZSB3aWxsIGJlIHVzZWZ1bCBpbiBmdXR1cmUgcmVzZWFyY2gsIGp1c3QgYXMgcHJpbWUgbnVtYmVycyBhcmUgdXNlZnVsIHdoZW4gc3R1ZHlpbmcgdGhlIGludGVnZXJzLlRoZSBwcm9qZWN0IGZvY3VzZXMgb24gaWRlYWxzIGZvciBhIHBhcnRpY3VsYXIga2luZCBvZiBCYW5hY2ggYWxnZWJyYSwgbmFtZWx5IEJhbmFjaCBhbGdlYnJhcyBvZiBvcGVyYXRvcnMuIFlvdSBjYW4gdGhpbmsgb2YgYW4gb3BlcmF0b3IgYXMgYSBtYXRoZW1hdGljYWwgbWFjaGluZSB3aGljaCB0YWtlcyBzb21lIGlucHV0IGF0IG9uZSBlbmQsIHByb2Nlc3NlcyBpdCwgYW5kIHRoZW4gZGVsaXZlcnMgYW4gb3V0cHV0IGF0IHRoZSBvdGhlciBlbmQuIFlvdSBtdWx0aXBseSB0d28gc3VjaCBvcGVyYXRvcnMgYnkgdXNpbmcgdGhlIG91dHB1dCBvZiB0aGUgZmlyc3Qgb3BlcmF0b3IgYXMgaW5wdXQgZm9yIHRoZSBzZWNvbmQuIFRoaXMgbXVsdGlwbGljYXRpb24gaGFzIGEgdmVyeSBpbXBvcnRhbnQgc3BlY2lhbCBmZWF0dXJlOiB0aGUgb3JkZXIgaW4gd2hpY2ggeW91IG11bHRpcGx5IHR3byBvcGVyYXRvcnMgbWF0dGVycywgdGhhdCBpcywgd2hlbiBBIGFuZCBCIGFyZSBvcGVyYXRvcnMsIEEgdGltZXMgQiBtYXkgZ2l2ZSBhIGRpZmZlcmVudCByZXN1bHQgZnJvbSBCIHRpbWVzIEEuIFdlIHJlZmVyIHRvIHRoaXMgZmFjdCBieSBzYXlpbmcgdGhhdCBvcGVyYXRvcnMgZG8gbm90IGNvbW11dGUuIE9mIGNvdXJzZSwgdGhpcyBwaGVub21lbm9uIGhhcyBubyBjb3VudGVycGFydCBhbW9uZyB0aGUgaW50ZWdlcnM7IDIgdGltZXMgMyBhbmQgMyB0aW1lcyAyIGFyZSBhbHdheXMgZXF1YWwhIFRodXMgYXQgZmlyc3Qgc2lnaHQgaXQgbWF5IHNlZW0gcmF0aGVyIHN0cmFuZ2UgdGhhdCBvcGVyYXRvcnMgZG8gbm90IGNvbW11dGUsIGJ1dCBpdCBpcyBub3QgLSB3ZSBzZWUgc2ltaWxhciB0aGluZ3MgaGFwcGVuIGV2ZXJ5IGRheTsgZm9yIGluc3RhbmNlLCB3aGVuIHlvdSBwdXQgb24gc29ja3MgYW5kIHNob2VzLCB0aGUgb3JkZXIgaXMgZXNzZW50aWFsLlRoZSBmYWN0IHRoYXQgb3BlcmF0b3JzIGRvIG5vdCBjb21tdXRlIGhhcyBhIHByb2ZvdW5kIGluZmx1ZW5jZSBvbiB0aGUgQmFuYWNoIGFsZ2VicmFzIHdoaWNoIHdlIHN0dWR5IGFuZCBnaXZlcyB0aGUgc3ViamVjdCBhIHZlcnkgZGlmZmVyZW50IGZsYXZvdXIgZnJvbSB0aGF0IG9mIHRoZSBpbnRlZ2Vycy4gSW1wb3J0YW50bHksIHRoaXMgZGlmZmVyZW5jZSBpcyBhbHNvIHRoZSBkcml2aW5nIGZvcmNlIGJlaGluZCB0aGUgbW9zdCBzaWduaWZpY2FudCBhcHBsaWNhdGlvbiBvZiBvcGVyYXRvcnMgaW4gdGhlIHBoeXNpY2FsIHdvcmxkLiBXaGVuIHF1YW50dW0gbWVjaGFuaWNzIHdhcyBmb3VuZGVkIGluIHRoZSAxOTIwJ3MsIHRoZSBwaHlzaWNpc3QgSGVpc2VuYmVyZyBzdGF0ZWQgYXMgYSBiYXNpYyBwcmluY2lwbGUgdGhhdCwgYXQgYXRvbWljIGxldmVsLCB5b3UgY2Fubm90IHNpbXVsdGFuZW91c2x5IGtub3cgYm90aCB0aGUgcHJlY2lzZSBzcGVlZCBhbmQgcG9zaXRpb24gb2YgYSBwYXJ0aWNsZS4gVGhpcyBpcyBvZiBjb3Vyc2UgaW4gc3RhcmsgY29udHJhc3QgdG8gb3VyIGV2ZXJ5ZGF5IGV4cGVyaWVuY2UsIHdoZXJlIHdlIHVzdWFsbHkga25vdyBib3RoIHdoZXJlIHdlIGFyZSBhbmQgaG93IGZhc3Qgd2UgYXJlIGdvaW5nIHdoZW4gZHJpdmluZyBhIGNhciwgc2F5LiBIZWlzZW5iZXJnJ3MgY2xhaW0gbGVkIGhpbSB0byBwcm9wb3NlIHRoYXQgcGh5c2ljYWwgcXVhbnRpdGllcyBsaWtlIHBvc2l0aW9uIGFuZCBzcGVlZCBzaG91bGQgbm90IGJlIHJlcHJlc2VudGVkIGJ5IG51bWJlcnMgKG9yIGZ1bmN0aW9ucyksIGJ1dCBieSBvcGVyYXRvcnM7IHRoZSBmYWN0IHRoYXQgY2VydGFpbiBvcGVyYXRvcnMgZG8gbm90IGNvbW11dGUgZXhwbGFpbnMgd2h5IHRoZSBjb3JyZXNwb25kaW5nIHF1YW50aXRpZXMgY2Fubm90IGJlIGtub3duIHNpbXVsdGFuZW91c2x5LiBIZWlzZW5iZXJnJ3MgdXNlIG9mIG9wZXJhdG9ycyBpbiBxdWFudHVtIG1lY2hhbmljcyB3YXMgZWxhYm9yYXRlZCBvbiBieSB2b24gTmV1bWFubiBpbiB0aGUgMTkzMCdzLCBnaXZpbmcgdGhlIHN1YmplY3QgYSBzb2xpZCBtYXRoZW1hdGljYWwgZ3JvdW5kaW5nLiBUaGlzIHdvcmsgbGFpZCB0aGUgZm91bmRhdGlvbnMgb2YgYSBuZXcgcmVzZWFyY2ggYXJlYSwgb3BlcmF0b3IgYWxnZWJyYXMsIHdoaWNoIGhhcyBmbG91cmlzaGVkIGV2ZXIgc2luY2UuSW4gMTk0MCBDYWxraW4gKGEgc3R1ZGVudCBvZiB2b24gTmV1bWFubidzKSBnYXZlIHRoZSBmaXJzdCBjb21wbGV0ZSBkZXNjcmlwdGlvbiBvZiB0aGUgaWRlYWxzIG9mIGEgQmFuYWNoIGFsZ2VicmEgb2Ygb3BlcmF0b3JzLiBTaW1pbGFyIHJlc3VsdHMgZm9yIHR3byBvdGhlciBCYW5hY2ggYWxnZWJyYXMgb2Ygb3BlcmF0b3JzIHdlcmUgb2J0YWluZWQgaW4gdGhlIDE5NjAncywgYnV0IGl0IHRoZW4gdG9vayB1bnRpbCAyMDA0IGJlZm9yZSB0aGUgbmV4dCBzdWNoIGNvbXBsZXRlIGRlc2NyaXB0aW9uIGFwcGVhcmVkLCBpbiBqb2ludCB3b3JrIG9mIExveSwgUmVhZCBhbmQgbXlzZWxmLiBUaGlzIGRpc2NvdmVyeSBoYXMgc3BhcmtlZCBuZXcgYWN0aXZpdHkgaW4gdGhlIGFyZWEsIHdpdGggcmVjZW50IHJlc3VsdHMgYnkgRGF3cyBhbmQgYnkgU2NobHVtcHJlY2h0LCBac2FrIGFuZCBteXNlbGYgaW4gYSBjb2xsYWJvcmF0aW9uIHdoaWNoIHdlIHBsYW4gdG8gY29udGludWUgdGhyb3VnaCB0aGlzIHByb2plY3QuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5sYW5jcy5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5sYW5jcy5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMjM1MzcvMQxFUC9GMDIzNTM3LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZMpAJeFYWN5n1D9ifDLLwLkn936L" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKmq9b/BwLQvN++DAKT/OCVA7qOjhogBpimN/2a9Kb/VnPKhaQw" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F023537/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Closed ideals of the Banach algebra of bounded operators on a Banach space</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-108763'>Laustsen, Dr NJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics and Statistics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Lancaster University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="154,620.66" class="DetailValue">154,621</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Analysis</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>06 Sep 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Mathematics Prioritisation Panel (Science)</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">We carry out basic research into a mathematical object called a Banach algebra. To explain what this is, think of the set of integers {...,-2,-1,0,1,2,...}. You can add, subtract and multiply two integers, and you can measure the distance between them; for instance, 2+3=5, 2-3=-1, and 2x3=6, and the distance between 2 and 3 is 1. A Banach algebra shares all these properties: its elements can be added, subtracted, and multiplied together, and you can measure the distance between them.A fundamental property of the integers is that every integer (apart from 0 and +/-1) can be written as a product of prime numbers. (Recall that a number is prime if it can only be divided by 1 and itself.) Consequently, we think of the prime numbers as the building blocks of the integers; many questions about integers can be answered by considering prime numbers first and then generalizing to all integers by extending to products of primes. In a Banach algebra, the objects playing the role of building blocks are called ideals. (In this context the word ideal has no relation to its standard usage.) The purpose of this project is to determine all the ideals of certain Banach algebras, that is, describe their building blocks; this knowledge will be useful in future research, just as prime numbers are useful when studying the integers.The project focuses on ideals for a particular kind of Banach algebra, namely Banach algebras of operators. You can think of an operator as a mathematical machine which takes some input at one end, processes it, and then delivers an output at the other end. You multiply two such operators by using the output of the first operator as input for the second. This multiplication has a very important special feature: the order in which you multiply two operators matters, that is, when A and B are operators, A times B may give a different result from B times A. We refer to this fact by saying that operators do not commute. Of course, this phenomenon has no counterpart among the integers; 2 times 3 and 3 times 2 are always equal! Thus at first sight it may seem rather strange that operators do not commute, but it is not - we see similar things happen every day; for instance, when you put on socks and shoes, the order is essential.The fact that operators do not commute has a profound influence on the Banach algebras which we study and gives the subject a very different flavour from that of the integers. Importantly, this difference is also the driving force behind the most significant application of operators in the physical world. When quantum mechanics was founded in the 1920's, the physicist Heisenberg stated as a basic principle that, at atomic level, you cannot simultaneously know both the precise speed and position of a particle. This is of course in stark contrast to our everyday experience, where we usually know both where we are and how fast we are going when driving a car, say. Heisenberg's claim led him to propose that physical quantities like position and speed should not be represented by numbers (or functions), but by operators; the fact that certain operators do not commute explains why the corresponding quantities cannot be known simultaneously. Heisenberg's use of operators in quantum mechanics was elaborated on by von Neumann in the 1930's, giving the subject a solid mathematical grounding. This work laid the foundations of a new research area, operator algebras, which has flourished ever since.In 1940 Calkin (a student of von Neumann's) gave the first complete description of the ideals of a Banach algebra of operators. Similar results for two other Banach algebras of operators were obtained in the 1960's, but it then took until 2004 before the next such complete description appeared, in joint work of Loy, Read and myself. This discovery has sparked new activity in the area, with recent results by Daws and by Schlumprecht, Zsak and myself in a collaboration which we plan to continue through this project.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.lancs.ac.uk                                                                              '>http://www.lancs.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

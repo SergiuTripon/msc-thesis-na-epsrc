@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Investigating the Computational Capacity of Cultured Neuronal Networks Using Maching Learning
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD080134%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDA4MDEzNC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVuPHN0cm9uZz5JbnZlc3RpZ2F0aW5nIHRoZSBDb21wdXRhdGlvbmFsIENhcGFjaXR5IG9mIEN1bHR1cmVkIE5ldXJvbmFsIE5ldHdvcmtzIFVzaW5nIE1hY2hpbmcgTGVhcm5pbmc8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUU8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTE2NTg5Jz5XYXJ3aWNrLCBQcm9mZXNzb3IgSzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDRTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9ODg3MTEnPk5hc3V0bywgUHJvZmVzc29yIFNKPC9hPkY8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTkyNzEwJz5CZWNlcnJhLCBQcm9mZXNzb3IgVk08L2E+QTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTEwNzQxNCc+V2hhbGxleSwgRHIgQko8L2E+ZAIED2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAzw8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0zMDUyNCc+RHIgQkQgSHV0dDwvYT4AAGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAULQ3liZXJuZXRpY3NkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRVVbml2ZXJzaXR5IG9mIFJlYWRpbmdkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzAxIEphbnVhcnkgMjAwN2RkAgMPZBYCAgEPDxYCHwQFDDMwIEp1bmUgMjAxMGRkAgUPZBYCAgEPDxYEHwQFBzQzNSw4NTYeB1Rvb2xUaXAFCjQzNSw4NTYuMzJkZAIKD2QWAgIBD2QWAgIBDxYCHwcCAhYEAgEPZBYCZg8VAhdBcnRpZmljaWFsIEludGVsbGlnZW5jZRdCaW9tZWRpY2FsIG5ldXJvc2NpZW5jZWQCAg9kFgJmDxUCIk5ldyAmYW1wOyBFbWVyZ2luZyBDb21wLiBQYXJhZGlnbXMAZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBbMYVGhlIGJyYWluIGlzIGFyZ3VhYmx5IG9uZSBvZiB0aGUgbW9zdCBjb21wbGV4IGNvbXB1dGF0aW9uYWwgcGxhdGZvcm1zIGluIGV4aXN0ZW5jZS4gSXQgY2FuIHJhcGlkbHkgcHJvY2VzcyBpbmZvcm1hdGlvbiBhbmQgaXMgdG9sZXJhbnQgdG8gZmF1bHRzIGFuZCBub2lzZS4gU3R1ZHlpbmcgaG93IHRoZSBicmFpbiBwcm9jZXNzZXMgYW5kIGVuY29kZXMgaW5mb3JtYXRpb24gaW4gbGl2aW5nIGFuaW1hbHMgaXMgZXRoaWNhbGx5IHF1ZXN0aW9uYWJsZSBhbmQgaXMgdGVjaG5pY2FsbHkgY2hhbGxlbmdpbmcgYXMgYWNjZXNzIGlzIHJlc3RyaWN0ZWQgYnkgdGhlIHNraW4sIHNrdWxsIGFuZCBzaGVlciBudW1iZXIgb2YgbmV1cm9ucy4gUmVjZW50IHJlc2VhcmNoIGhhcyBjb25jZW50cmF0ZWQgb24gYXJ0aWZpY2lhbGx5IGN1bHR1cmluZyBiaW9sb2dpY2FsIG5ldXJvbnMgaW4gcGV0cmkgZGlzaGVzLiBPdmVyIGEgbWF0dGVyIG9mIHdlZWtzIHRoZXNlIG5ldXJvbnMgYmVnaW4gdG8gZ3JvdyBhbmQgYnJhbmNoIG91dCBhbmQgYmVnaW4gdG8gcmUtZXN0YWJsaXNoIGNvbm5lY3Rpb25zIHdpdGggbmVpZ2hib3VyaW5nIG5ldXJvbnMgYW5kIHN0YXJ0IHRvIGNvbW11bmljYXRlIHdpdGggZWFjaCBvdGhlciBib3RoIGNoZW1pY2FsbHkgYW5kIGVsZWN0cmljYWxseS4gVGhlIG5ldXJvbnMgYXJlIGdyb3duIG9uIGEgc3VyZmFjZSBjb21wb3NlZCBvZiBtdWx0aXBsZSBlbGVjdHJvZGVzIHRoYXQgcHJvdmlkZSBhbiBlbGVjdHJpY2FsIGNvbm5lY3Rpb24gdG8gdGhlIG5ldXJvbnMuIFRoaXMgZWxlY3RpY2FsIGNvbm5lY3Rpb24gZW5hYmxlcyB0aGUgZWxlY3RyaWNhbCBhY3Rpdml0eSBvZiB0aGUgbmV1cm9ucyBpbiB0aGUgY3VsdHVyZSB0byBiZSByZWNvcmRlZCB3aGlsc3QgYWxzbyBhbGxvd2luZyBuZXVyb25zIG5lYXIgZWFjaCBlbGVjdHJvZGUgdG8gYmUgYXJ0aWZpY2lhbGx5IHN0aW11bGF0ZWQuIFRoZSBuZXVyYWwgY3VsdHVyZSB0aGVyZWZvcmUgZm9ybXMgYW4gYXJ0aWZpY2lhbCAgYnJhaW4gIHRvIHdoaWNoIGV4dGVybmFsIGlucHV0cyBjYW4gYmUgYXBwbGllZCBieSBtZWFucyBvZiBzdGltdWxhdGlvbiBhbmQgZnJvbSB3aGljaCBvdXRwdXRzIGNhbiBiZSBvYnRhaW5lZCBieSBhbmFseXNpbmcgdGhlIHBhdHRlcm5zIG9mIGVsZWN0cmljYWwgYWN0aXZpdHkgdGhlICBicmFpbiAgcHJvZHVjZXMgaW4gcmVzcG9uc2UgdG8gc3RpbXVsYXRpb24uU3VjaCAgYnJhaW5zICBjYW4gYmUgY29uc2lkZXJlZCB0byBiZSBwZXJmb3JtaW5nIGEgdHlwZSBvZiBjb21wdXRhdGlvbiBvbiB0aGUgc2lnbmFscyB0aGF0IGFyZSBhcHBsaWVkIHRvIHRoZW0uIFdlIGtub3cgdGhhdCBuZXVyb25zIGluIHN1Y2ggY3VsdHVyZXMgaGF2ZSBhbiBpbmhlcmVudCBjYXBhY2l0eSB0byBuZXR3b3JrIGFuZCBiZWdpbiB0byBjb21tdW5pY2F0ZSB3aXRoIGVhY2ggb3RoZXIgaG93ZXZlciwgd2UgZG8gbm90IGhhdmUgYSBnb29kIHVuZGVyc3RhbmRpbmcgb2YgaG93IG11Y2ggY29tcHV0YXRpb24gc3VjaCAgYnJhaW5zICBhcmUgY2FwYWJsZSBvZiBwZXJmb3JtaW5nLkluIHRoaXMgcHJvamVjdCB0aGUgbmV1cmFsIGN1bHR1cmVzIHdpbGwgYmUgY3VsdHVyZWQgbG9jYWxseSBpbiB0aGUgVW5pdmVyc2l0eSBvZiBSZWFkaW5ncycgbmV3IEVsZWN0cm9waHlzaW9sb2dpY2FsIHJlc2VhcmNoIGxhYm9yYXRvcnkgYWxsb3dpbmcgcmVhbC10aW1lIGFjY2VzcyB0byB0aGUgcmVjb3JkaW5nIGFuZCBzdGltdWxhdGlvbiBoYXJkd2FyZSB2aWEgYW4gaW50cmFuZXQgbGluay11cC5JbiBvcmRlciB0byB0ZXN0IHRoZSBhYmlsaXRpZXMgb2Ygc3VjaCBjdWx0dXJlZCBuZXVyYWwgbmV0d29ya3Mgd2UgcHJvcG9zZSB1c2luZyB0aGVtIHRvIGNvbnRyb2wgc29tZSBvZiBvdXIgZXhpc3RpbmcgbW9iaWxlIHJvYm90cy4gVGhpcyBpcyB0byBiZSBhY2hpZXZlZCBieSBhcHBseWluZyBhIG51bWJlciBvZiBNYWNoaW5lIExlYXJuaW5nIGFuZCBBcnRpZmljaWFsIEludGVsbGlnZW5jZSB0ZWNobmlxdWVzIGluIG9yZGVyIHRvIGNvcnJlY3RseSB0cmFuc2xhdGUgcm9ib3Qgc2Vuc29yIGlucHV0cyBpbnRvIHN1aXRhYmxlIHBhdHRlcm5zIG9mIHN0aW11bGF0aW9uIGFuZCBpbnRlcnByZXQgdGhlIHJlc3VsdGluZyBwYXR0ZXJucyBvZiBuZXVyYWwgYWN0aXZpdHkgYXMgbW90b3IgYWN0aW9ucy4gSW4gb3JkZXIgdG8gbWVhc3VyZSB0aGUgYW1vdW50IG9mIGNvbXB1dGF0aW9uIHRoZSBjdWx0dXJlZCAgYnJhaW4gIGlzIHBlcmZvcm1pbmcgd2Ugd2lsbCB1c2UgYSBzdXJyb2dhdGUgKGFuIGFydGlmaWNpYWwgbmV1cmFsIG5ldHdvcmsgdGhhdCByZWRpc3RyaWJ1dGVzIHRoZSBpbnB1dCBzaWduYWwgdG8gdGhlIG91dHB1dCkgaW4gcGxhY2Ugb2YgdGhlIHRoZSBjdWx0dXJlZCAgYnJhaW4gLiAgQm90aCB0aGUgY3VsdHVyZWQgIGJyYWluICBhbmQgdGhlIHN1cnJvZ2F0ZSB3aWxsIGJlIGFwcGxpZWQgdG8gdmFyaW91cyBiZWhhdmlvdXJhbCB0YXNrcyAoc3VjaCBhcyBvYnN0YWNsZSBhdm9pZGFuY2UgYW5kIHdhbGwgZm9sbG93aW5nKSB0aGUgZGlmZmVyZW5jZSBpbiBwZXJmb3JtYW5jZSBiZXR3ZWVuIHRoZSBjdWx0dXJlZCAgYnJhaW4gIGFuZCB0aGUgc3Vycm9nYXRlIHdpbGwgZ2l2ZSB1cyBzb21lIG1lYXN1cmUgb2YgdGhlIHByb2Nlc3NpbmcgY2FwYWJpbGl0aWVzIG9mIGN1bHR1cmVkIG5ldXJhbCBuZXR3b3JrcyB3aGVuIHVzZWQgaW4gdGhpcyB3YXkuSW4gb3JkZXIgdG8gdGVzdCBvdXIgdW5kZXJzdGFuZGluZyBvZiB0aGUgcHJvY2Vzc2VzIG9jY3VycmluZyBpbiB0aGUgbmV1cmFsIGN1bHR1cmUgd2Ugd2lsbCBhbHNvIGJ1aWxkIGEgbW9kZWwgb2YgdGhlIGN1bHR1cmVkICBicmFpbiAgYW5kIGNvbXBhcmUgdGhlIHJlc3VsdHMgZnJvbSBvdXIgbW9kZWwgdG8gdGhlIHJlc3VsdHMgZnJvbSB0aGUgYWN0dWFsIG5ldXJhbCBjdWx0dXJlLiBXZSBhcmUgcGFydGljdWxhcmx5IGludGVyZXN0ZWQgaW4gaG93IHRoZSBpbnB1dC1vdXRwdXQgcmVzcG9uc2VzIG9mIGN1bHR1cmVkIG5ldXJhbCBuZXR3b3JrcyBjaGFuZ2Ugb3ZlciB0aW1lIGFuZCB3aGF0IGJlYXJpbmcgdGhpcyBoYXMgb24gdGhlIHJlc3VsdGFudCByb2JvdCBiZWhhdmlvdXIuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5yZGcuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5yZGcuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0QwODAxMzQvMQxFUC9EMDgwMTM0LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZC7/Vn7WwoZxWDjQ+3nZcDwon3pO" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKUhM/VBgLQvN++DAKT/OCVAyKR6MYJVS6yyAD3D/jNPNd5CDtY" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D080134/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Investigating the Computational Capacity of Cultured Neuronal Networks Using Maching Learning</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=16589'>Warwick, Professor K</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=88711'>Nasuto, Professor SJ</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=92710'>Becerra, Professor VM</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-107414'>Whalley, Dr BJ</a></td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPerson.aspx?PersonId=-30524'>Dr BD Hutt</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> </td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Cybernetics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Reading</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 June 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="435,856.32" class="DetailValue">435,856</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Biomedical neuroscience</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> New &amp; Emerging Comp. Paradigms</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The brain is arguably one of the most complex computational platforms in existence. It can rapidly process information and is tolerant to faults and noise. Studying how the brain processes and encodes information in living animals is ethically questionable and is technically challenging as access is restricted by the skin, skull and sheer number of neurons. Recent research has concentrated on artificially culturing biological neurons in petri dishes. Over a matter of weeks these neurons begin to grow and branch out and begin to re-establish connections with neighbouring neurons and start to communicate with each other both chemically and electrically. The neurons are grown on a surface composed of multiple electrodes that provide an electrical connection to the neurons. This electical connection enables the electrical activity of the neurons in the culture to be recorded whilst also allowing neurons near each electrode to be artificially stimulated. The neural culture therefore forms an artificial  brain  to which external inputs can be applied by means of stimulation and from which outputs can be obtained by analysing the patterns of electrical activity the  brain  produces in response to stimulation.Such  brains  can be considered to be performing a type of computation on the signals that are applied to them. We know that neurons in such cultures have an inherent capacity to network and begin to communicate with each other however, we do not have a good understanding of how much computation such  brains  are capable of performing.In this project the neural cultures will be cultured locally in the University of Readings' new Electrophysiological research laboratory allowing real-time access to the recording and stimulation hardware via an intranet link-up.In order to test the abilities of such cultured neural networks we propose using them to control some of our existing mobile robots. This is to be achieved by applying a number of Machine Learning and Artificial Intelligence techniques in order to correctly translate robot sensor inputs into suitable patterns of stimulation and interpret the resulting patterns of neural activity as motor actions. In order to measure the amount of computation the cultured  brain  is performing we will use a surrogate (an artificial neural network that redistributes the input signal to the output) in place of the the cultured  brain .  Both the cultured  brain  and the surrogate will be applied to various behavioural tasks (such as obstacle avoidance and wall following) the difference in performance between the cultured  brain  and the surrogate will give us some measure of the processing capabilities of cultured neural networks when used in this way.In order to test our understanding of the processes occurring in the neural culture we will also build a model of the cultured  brain  and compare the results from our model to the results from the actual neural culture. We are particularly interested in how the input-output responses of cultured neural networks change over time and what bearing this has on the resultant robot behaviour.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.rdg.ac.uk                                                                                '>http://www.rdg.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

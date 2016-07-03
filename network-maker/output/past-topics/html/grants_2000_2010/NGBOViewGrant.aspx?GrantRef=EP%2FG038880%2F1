@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Modelling the Fatigue and Creep of Weldments
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG038880%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzAzODg4MC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU9PHN0cm9uZz5Nb2RlbGxpbmcgdGhlIEZhdGlndWUgYW5kIENyZWVwIG9mIFdlbGRtZW50czwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTEwNzg2OSc+Q2hlbiwgRHIgSDwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSRNZWNoYW5pY2FsIGFuZCBBZXJvc3BhY2UgRW5naW5lZXJpbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRlVbml2ZXJzaXR5IG9mIFN0cmF0aGNseWRlZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUSRmlyc3QgR3JhbnQgU2NoZW1lZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAURMDEgU2VwdGVtYmVyIDIwMDlkZAIDD2QWAgIBDw8WAh8EBRAzMSBEZWNlbWJlciAyMDEyZGQCBQ9kFgICAQ8PFgQfBAUHMzA3LDI1Nx4HVG9vbFRpcAUKMzA3LDI1Ny40MGRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIdRW5nLiBEeW5hbWljcyAmYW1wOyBUcmlib2xvZ3kcTWF0ZXJpYWxzIHRlc3RpbmcgJmFtcDsgZW5nLmQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIGRW5lcmd5HUFlcm9zcGFjZSwgRGVmZW5jZSBhbmQgTWFyaW5lZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDMgRmViIDIwMDlkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFJkVuZ2luZWVyaW5nIFNjaWVuY2UgKENvbXBvbmVudHMpIFBhbmVsHwMFG1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9NDc4M2RkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBcEQTGlmZSBwcmVkaWN0aW9uIG9mIHdlbGRlZCBjb21wb25lbnRzIHRoYXQgYXJlIHN1YmplY3RlZCB0byBjcmVlcC1mYXRpZ3VlIGxvYWRpbmcgYXNzb2NpYXRlZCB3aXRoIHRoZSBzdGFydCB1cCBhbmQgc2h1dCBkb3duIG9mIHBvd2VyIHBsYW50IGlzIGEgY3JpdGljYWwgZGVzaWduIGlzc3VlLCBmcm9tIHRoZSBlY29ub21pY2FsLCBlbnZpcm9ubWVudGFsIGFuZCBzYWZldHkgdmlld3BvaW50cy4gSG93ZXZlciBkZXNpZ24gYW5kIGxpZmUgYXNzZXNzbWVudCBvZiB3ZWxkZWQgc3RlZWwgc3RydWN0dXJlcyB0aGF0IG9wZXJhdGUgYXQgaGlnaCB0ZW1wZXJhdHVyZXMgaXMgcGFydGljdWxhcmx5IGRpZmZpY3VsdCBhbmQgcHJvYmxlbWF0aWMuIFRoZSBjdXJyZW50IFVLIGRlc2lnbiBhbmQgYXNzZXNzbWVudCBhcHByb2FjaGVzIGZvciB3ZWxkbWVudHMgYXJlIHN0aWxsIGVtcGlyaWNhbCBhbmQgdGhlcmVmb3JlIHRlbmQgdG8gYmUgcmF0aGVyIGNvbnNlcnZhdGl2ZS4gVGhpcyBwcm9qZWN0IGZvY3VzZXMgb24gdGhlIGRldmVsb3BtZW50IG9mIGEgbmV3IHVuZGVyc3RhbmRpbmcgb2YgdGhlIGNvbXBsZXggZmF0aWd1ZSBhbmQgY3JlZXAgYmVoYXZpb3VyIG9mIHdlbGRtZW50cyBzdWJqZWN0ZWQgdG8gY3ljbGljIHRlbXBlcmF0dXJlIGFuZCBtZWNoYW5pY2FsIGxvYWRzLCBhbmQgdGhlIGZvcm11bGF0aW9uIG9mIG5vdmVsIHNpbXVsYXRpb24gYW5kIG1vZGVsaW5nIG1ldGhvZHMuIFByZWxpbWluYXJ5IHJlc2VhcmNoIGJ5IHRoZSBhcHBsaWNhbnQgc2hvd3MgdGhhdCB0aGUgY3VycmVudCBMaW5lYXIgTWF0Y2hpbmcgTWV0aG9kIChMTU0pIGZyYW1ld29yayBjYW4gYXNzZXNzIHdlbGRlZCBjb21wb25lbnRzIHdpdGggc2lnbmlmaWNhbnRseSBncmVhdGVyIGFjY3VyYWN5IHdoaWxlIHN0aWxsIHVzaW5nIHRoZSBzYW1lIGZ1bmRhbWVudGFsIGFzc3VtcHRpb25zIGFuZCBtYXRlcmlhbHMgZGF0YWJhc2UgYXMgdHlwaWNhbCBVSyBjb2Rlcy4gVGhpcyBwcm9qZWN0IHdpbGwgc3RyZW5ndGhlbiB0aGUgTE1NIGZyYW1ld29yayB0byBpbmNsdWRlIG5vdmVsIHNpbXVsYXRpb24gdGVjaG5pcXVlcyB3aGljaCBjYXB0dXJlIHRoZSBlZmZlY3RzIG9mIHdlbGRtZW50cyBvbiB0aGUgaW50ZWdyaXR5IG9mIGNvbXBvbmVudCB3aXRoIGZhdGlndWUgYW5kIGNyZWVwLWZhdGlndWUgbWVjaGFuaXNtcy5Gb3IgdGhlIGZpcnN0IHRpbWUsIHRoaXMgdW5pcXVlIG5leHQtZ2VuZXJhdGlvbiBudW1lcmljYWwgdGVjaG5pcXVlIGFuZCBhc3NvY2lhdGVkIHNlbWktYW5hbHl0aWMgbW9kZWxzIHdpbGwgYmUgZGV2ZWxvcGVkIHRvIGNvbXByZWhlbnNpdmVseSBpbnZlc3RpZ2F0ZSB0aGUgZmF0aWd1ZSBhbmQgY3JlZXAgYmVoYXZpb3VyIG9mIGhpZ2ggdGVtcGVyYXR1cmUgd2VsZG1lbnRzIGZvciBhIHdpZGUgcmFuZ2Ugb2YgZmFjdG9ycyAoZS5nLiBkaWZmZXJlbnQgd2VsZG1lbnQgdHlwZSwgbWF0ZXJpYWwgYW5kIGdlb21ldHJpYyBlZmZlY3RzLCB0ZW1wZXJhdHVyZSBhbmQgbG9hZCByYW5nZSksIHByb3ZpZGluZyBhIGRlZ3JlZSBvZiBhY2N1cmFjeSBvZiBwcmVkaWN0aW9uIGhpdGhlcnRvIHVuYXZhaWxhYmxlIGFuZCB3aXRob3V0IHRoZSByZXN0cmljdGlvbnMgaW5oZXJlbnQgaW4gb3RoZXIgbWV0aG9kb2xvZ2llcy4gVGhlIHJlc2VhcmNoIG91dHB1dHMgd2lsbCBzaWduaWZpY2FudGx5IGFkdmFuY2UgdGhlIGludGVybmF0aW9uYWxseS1sZWFkaW5nIHJvbGUgb2YgdGhlIFVLIGluIHRoZSBhc3Nlc3NtZW50IG9mIGluZHVzdHJpYWwgYW5kIGNvbW1lcmNpYWwgd2VsZGVkIHN0cnVjdHVyZXMsIGFuZCB1bmRlcnBpbiBtb3ZlcyB0byBoaWdoIHRlbXBlcmF0dXJlIHN0cnVjdHVyZXMgcmVxdWlyZWQgZm9yIGVtaXNzaW9ucyByZWR1Y3Rpb24gdGFyZ2V0cy5UaGlzIHByb2plY3Qgd2lsbCBhbHNvIHByb3ZpZGUgaW50ZXJkaXNjaXBsaW5hcnkgdHJhaW5pbmcgb3Bwb3J0dW5pdGllcyBmb3IgYm90aCBhIHBvc3Rkb2N0b3JhbCByZXNlYXJjaGVyIGFuZCBhIFBoRCBzdHVkZW50IGluIG1hdGVyaWFsIG1vZGVsaW5nLCBhcHBsaWVkIG1lY2hhbmljcywgRkVBLCBpbnRlZ3JpdHkgYXNzZXNzbWVudCwgYW5kIHNvZnR3YXJlIGVuZ2luZWVyaW5nLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc3RyYXRoLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc3RyYXRoLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDM4ODgwLzEMRVAvRzAzODg4MC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGR9OTDjEBosemnKTzqUv5CKwkJr8Q==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLcivnLCQLQvN++DAKT/OCVA59mkfd8inZaQBRhf3C3p+7WRkXd" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G038880/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Modelling the Fatigue and Creep of Weldments</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-107869'>Chen, Dr H</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mechanical and Aerospace Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Strathclyde</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 December 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="307,257.40" class="DetailValue">307,257</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Eng. Dynamics &amp; Tribology</td>
+                                    <td class="DetailValue"> Materials testing &amp; eng.</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Energy</td>
+                                    <td class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>03 Feb 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4783">Engineering Science (Components) Panel</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Life prediction of welded components that are subjected to creep-fatigue loading associated with the start up and shut down of power plant is a critical design issue, from the economical, environmental and safety viewpoints. However design and life assessment of welded steel structures that operate at high temperatures is particularly difficult and problematic. The current UK design and assessment approaches for weldments are still empirical and therefore tend to be rather conservative. This project focuses on the development of a new understanding of the complex fatigue and creep behaviour of weldments subjected to cyclic temperature and mechanical loads, and the formulation of novel simulation and modeling methods. Preliminary research by the applicant shows that the current Linear Matching Method (LMM) framework can assess welded components with significantly greater accuracy while still using the same fundamental assumptions and materials database as typical UK codes. This project will strengthen the LMM framework to include novel simulation techniques which capture the effects of weldments on the integrity of component with fatigue and creep-fatigue mechanisms.For the first time, this unique next-generation numerical technique and associated semi-analytic models will be developed to comprehensively investigate the fatigue and creep behaviour of high temperature weldments for a wide range of factors (e.g. different weldment type, material and geometric effects, temperature and load range), providing a degree of accuracy of prediction hitherto unavailable and without the restrictions inherent in other methodologies. The research outputs will significantly advance the internationally-leading role of the UK in the assessment of industrial and commercial welded structures, and underpin moves to high temperature structures required for emissions reduction targets.This project will also provide interdisciplinary training opportunities for both a postdoctoral researcher and a PhD student in material modeling, applied mechanics, FEA, integrity assessment, and software engineering.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.strath.ac.uk                                                                             '>http://www.strath.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

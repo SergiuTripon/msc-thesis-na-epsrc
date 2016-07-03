@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Improving 3d visualisation: Near-correct focus cues in 3d displays
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE065376%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTA2NTM3Ni8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVTPHN0cm9uZz5JbXByb3ZpbmcgM2QgdmlzdWFsaXNhdGlvbjogTmVhci1jb3JyZWN0IGZvY3VzIGN1ZXMgaW4gM2QgZGlzcGxheXM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xNzM1NSc+V2F0dCwgRHIgU0o8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAURU2NoIG9mIFBzeWNob2xvZ3lkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRFCYW5nb3IgVW5pdmVyc2l0eWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEkZpcnN0IEdyYW50IFNjaGVtZWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDAxIEZlYnJ1YXJ5IDIwMDhkZAIDD2QWAgIBDw8WAh8EBQ8zMSBKYW51YXJ5IDIwMTFkZAIFD2QWAgIBDw8WBB8EBQcyOTYsMzMzHgdUb29sVGlwBQoyOTYsMzMyLjU5ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAh9WaXNpb24gJmFtcDsgU2Vuc2VzIC0gSUNUIGFwcGwuAGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAWOGlN0ZXJlb3Njb3BpYyBkaXNwbGF5cyBlbmFibGUgb25lIHRvIGFydGlmaWNpYWxseSBjcmVhdGUgdGhyZWUtZGltZW5zaW9uYWwgKDNkKSBpbWFnZXMgYnkgcHJvdmlkaW5nIGVhY2ggZXllIHdpdGggYSBzbGlnaHRseSBkaWZmZXJlbnQgdmlldyBvZiBhIHNjZW5lICh0aGlzIGhhcHBlbnMgbmF0dXJhbGx5IGluIHRoZSByZWFsIHdvcmxkIGJlY2F1c2UgeW91ciBleWVzIGFyZSBzZXBhcmF0ZWQgbGF0ZXJhbGx5IGluIHlvdXIgaGVhZCkuIFN1Y2ggZGlzcGxheXMvcmVmZXJyZWQgdG8gaGVyZWFmdGVyIGFzIDNkIGRpc3BsYXlzL2FyZSBpbmNyZWFzaW5nbHkgdXNlZCBpbiBzb2NpZXR5LCBpbiBhIHdpZGUgcmFuZ2Ugb2YgYXBwbGljYXRpb25zIHRoYXQgaW5jbHVkZXMgb3BlcmF0aW9uIG9mIHJlbW90ZSBkZXZpY2VzLCBtZWRpY2FsIGltYWdpbmcsIHNjaWVudGlmaWMgdmlzdWFsaXphdGlvbiwgc3VyZ2ljYWwgdHJhaW5pbmcsIGRlc2lnbiwgdmlydHVhbCBwcm90b3R5cGluZywgYW5kIHZpc2lvbiByZXNlYXJjaC4gQSB1c2VmdWwgM2QgZGlzcGxheSBzaG91bGQgYmUgY29tZm9ydGFibGUgYW5kIG5hdHVyYWwgdG8gdXNlLCBhbmQgbXVzdCBjcmVhdGUgYSBmYWl0aGZ1bCBpbXByZXNzaW9uIG9mIHRoZSAzZCBzdHJ1Y3R1cmUgb2YgdGhlIG9iamVjdCBvciBzY2VuZSBiZWluZyBwb3J0cmF5ZWQuIFVuZm9ydHVuYXRlbHksIGN1cnJlbnQgM2QgZGlzcGxheXMgdHlwaWNhbGx5IGZhaWwgb24gYm90aCBjb3VudHMuIFRoZXkgb2Z0ZW4gaW5kdWNlIHNpZ25pZmljYW50IGRpc2NvbWZvcnQgYW5kIGZhdGlndWUsIGFuZCB0aGUgcmVzdWx0aW5nIHBlcmNlcHRpb24gb2YgZGVwdGggYXBwZWFycyB0byBiZSBmbGF0dGVuZWQsIGNvbXBhcmVkIHRvIGVxdWl2YWxlbnQgcmVhbCBzY2VuZXMuIEJvdGggdGhlc2UgcHJvYmxlbXMgYXJlIGNhdXNlZCBpbiBwYXJ0LCBpZiBub3QgY29tcGxldGVseSwgYnkgdGhlIGZhY3QgdGhhdCBhbG1vc3QgYWxsIGV4aXN0aW5nIDNkIGRpc3BsYXlzIHByZXNlbnQgZWFjaCBleWUncyBpbWFnZSBvbiBhIHNpbmdsZSBzdXJmYWNlLCBhdCBhIGZpeGVkIHZpZXdpbmcgZGlzdGFuY2UuIFRoaXMgbWVhbnMgdGhhdCB0aGUgZXllcyB0cnkgdG8gZm9jdXMgYXQgdGhlIGRpc3BsYXkgc3VyZmFjZSwgaXJyZXNwZWN0aXZlIG9mIHRoZSBkZXB0aCB2YXJpYXRpb25zIGluIHRoZSBwb3J0cmF5ZWQgc2NlbmUuIFRoaXMgYWZmZWN0cyBkZXB0aCBwZXJjZXB0aW9uIGJlY2F1c2UgdGhlIGV5ZSdzIGZvY3VzaW5nIHJlc3BvbnNlIGlzIGEgc2lnbmFsIHRvIGRlcHRoLiBJdCBjYXVzZXMgZmF0aWd1ZSBhbmQgZGlzY29tZm9ydCBiZWNhdXNlIHZpZXdlcnMgbXVzdCAgZGVjb3VwbGUgIHRoZSBuYXR1cmFsIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIHRoZWlyIGZvY3VzaW5nIHJlc3BvbnNlIGFuZCB0aGUgZXllIG1vdmVtZW50cyB0aGV5IG1ha2UgdG8gbG9vayBhdCBuZWFyIGFuZCBmYXIgb2JqZWN0czogdGhpcyBwcm9jZXNzIGlzIGVmZm9ydGZ1bCBhbmQgb2Z0ZW4gdW5wbGVhc2FudC4gIEkgYW0gcHJvcG9zaW5nIGEgcHJvZ3JhbW1lIG9mIGV4cGVyaW1lbnRzIHRvIGRldmVsb3AgYSBub3ZlbCAzZCBkaXNwbGF5IHRlY2huaXF1ZSB0aGF0IGhhcyBiZWVuIGRlc2lnbmVkIHRvIHJlY3RpZnkgdGhpcyBwcm9ibGVtLiBUaGUgZGlzcGxheSBwcmVzZW50cyBhIG5lYXItY29ycmVjdCBzdGltdWx1cyB0byB0aGUgZXllJ3MgZm9jdXNpbmcgcmVzcG9uc2UgYnkgcHJlc2VudGluZyBlYWNoIGV5ZSdzIGltYWdlIGFzIHRoZSBzdW0gb2YgbXVsdGlwbGUgcGxhbmFyIGltYWdlcyBhdCBkaWZmZXJlbnQgZGlzdGFuY2VzIGZyb20gdGhlIGV5ZS4gSSBjYWxsIHRoZXNlIG11bHRpLXBsYW5lIGltYWdlcy4gQWxsIHRoZSBvdGhlciB2aXN1YWwgaW5mb3JtYXRpb24gaXMgcHJlc2VudGVkIGNvcnJlY3RseSB0byBlYWNoIGV5ZS4gQSBkaWZmaWN1bHQgc2l0dWF0aW9uIHRvIHNpbXVsYXRlIGlzIHdoZW4gYW4gb2JqZWN0IGxpZXMgYXQgYSBkaXN0YW5jZSBpbi1iZXR3ZWVuIHR3byBpbWFnZSBwbGFuZXMuIFRvIGRvIHRoaXMsIHRoZSBvYmplY3QgaXMgcHJlc2VudGVkIGFzIGEgYmxlbmQgb2YgbGlnaHQgYXQgdGhlIHR3byBpbWFnZSBwbGFuZXMuIFRoZSBjb3JlIGV4cGVyaW1lbnRzIHdpbGwgZXZhbHVhdGUgd2hldGhlciB0aGlzIHRlY2huaXF1ZSBpcyBlZmZlY3RpdmUgaW4gc3RpbXVsYXRpbmcgdGhlIGV5ZSB0byBmb2N1cyBpbi1iZXR3ZWVuIGltYWdlIHBsYW5lcy4gSSB3aWxsIGFsc28gbWVhc3VyZSBleWUgbW92ZW1lbnRzIHRvIG11bHRpLXBsYW5lIGltYWdlcywgdG8gc2VlIHdoZXRoZXIgdGhleSBhcmUgZXF1aXZhbGVudCB0byB2aWV3aW5nIHJlYWwgd29ybGQgc2NlbmVzLiBGdXJ0aGVybW9yZSwgSSB3aWxsIGludmVzdGlnYXRlIHRoZSByZWxhdGlvbnNoaXAgYmV0d2VlbiBleWUgbW92ZW1lbnRzIGRpc2NvbWZvcnQgaW4gM2QgZGlzcGxheXMsIGFuZCBkZXRlcm1pbmUgd2hldGhlciBtdWx0aS1wbGFuZSBpbWFnZXMgY2FuIHJlZHVjZSB0aGlzIHByb2JsZW0uIFRoZSBkaXNwbGF5IHRlY2huaXF1ZSBhbmQgZXhwZXJpbWVudHMgYXJlIG1vdGl2YXRlZCBieSBhIHRoZW9yZXRpY2FsIG1vZGVsIG9mIGhvdyB0aGUgZXllJ3MgZm9jdXNpbmcgcmVzcG9uc2UgaXMgY29udHJvbGxlZC4gVGhpcyBlbXBoYXNpcyBvbiBiYXNpYyBzY2llbmNlIHdpbGwgYWxsb3cgbWUgdG8gZGV2ZWxvcCBhIGRpc3BsYXkgdGhhdCBpcyBiZXR0ZXIgc3VpdGVkIHRvIHRoZSBwcm9wZXJ0aWVzIG9mIHRoZSBodW1hbiB2aXN1YWwgc3lzdGVtLiBJbiB0dXJuLCB0aGUgdGhlb3JldGljYWwgbW9kZWwsIGluIGNvbmp1bmN0aW9uIHdpdGggdGhlIHVuaXF1ZSBwcm9wZXJ0aWVzIG9mIHRoZSBtdWx0aS1wbGFuZSBkaXNwbGF5LCB3aWxsIGFsbG93IG1lIHRvIGFkZHJlc3Mgc29tZSBsb25nLXN0YW5kaW5nIHJlc2VhcmNoIHF1ZXN0aW9ucyByZWdhcmRpbmcgaG93IHRoZSBleWUgZm9jdXNlcy4gSSB3aWxsIGNvbnRpbnVlIHRvIGRldmVsb3AgYW5kIHJlZmluZSB0aGUgbW9kZWwgdGhyb3VnaG91dCB0aGUgcmVzZWFyY2ggcHJvZ3JhbW1lLiBUaGUgcmVzZWFyY2ggZmluZGluZ3Mgd2lsbCBhaWQgdGhlIGRldmVsb3BtZW50IG9mIDNkIGRpc3BsYXlzIHRoYXQgYXJlIG1vcmUgY29tZm9ydGFibGUsIG5hdHVyYWwgdG8gdXNlLCBhbmQgcHJvZHVjZSBtb3JlIGFjY3VyYXRlIDNkIHBlcmNlcHRpb24gdGhhbiBjdXJyZW50IGRpc3BsYXlzLiBUaGlzIHNob3VsZCBiZSBvZiBzaWduaWZpY2FudCBiZW5lZml0IHRvIHRoZSBncm93aW5nIG51bWJlciBvZiB1c2VycyBvZiB0aGlzIGltcG9ydGFudCB0ZWNobm9sb2d5LmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuYmFuZ29yLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuYmFuZ29yLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9FMDY1Mzc2LzEMRVAvRTA2NTM3Ni8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSMa07L4ZFADF5tIzxN4KxOj3EJkw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL7+eOODwLQvN++DAKT/OCVA6eeazWrEA9/LXfOJdlNIukt84k9" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E065376/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Improving 3d visualisation: Near-correct focus cues in 3d displays</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-17355'>Watt, Dr SJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Psychology</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Bangor University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 February 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 January 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="296,332.59" class="DetailValue">296,333</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Vision &amp; Senses - ICT appl.</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Stereoscopic displays enable one to artificially create three-dimensional (3d) images by providing each eye with a slightly different view of a scene (this happens naturally in the real world because your eyes are separated laterally in your head). Such displays/referred to hereafter as 3d displays/are increasingly used in society, in a wide range of applications that includes operation of remote devices, medical imaging, scientific visualization, surgical training, design, virtual prototyping, and vision research. A useful 3d display should be comfortable and natural to use, and must create a faithful impression of the 3d structure of the object or scene being portrayed. Unfortunately, current 3d displays typically fail on both counts. They often induce significant discomfort and fatigue, and the resulting perception of depth appears to be flattened, compared to equivalent real scenes. Both these problems are caused in part, if not completely, by the fact that almost all existing 3d displays present each eye's image on a single surface, at a fixed viewing distance. This means that the eyes try to focus at the display surface, irrespective of the depth variations in the portrayed scene. This affects depth perception because the eye's focusing response is a signal to depth. It causes fatigue and discomfort because viewers must  decouple  the natural relationship between their focusing response and the eye movements they make to look at near and far objects: this process is effortful and often unpleasant.  I am proposing a programme of experiments to develop a novel 3d display technique that has been designed to rectify this problem. The display presents a near-correct stimulus to the eye's focusing response by presenting each eye's image as the sum of multiple planar images at different distances from the eye. I call these multi-plane images. All the other visual information is presented correctly to each eye. A difficult situation to simulate is when an object lies at a distance in-between two image planes. To do this, the object is presented as a blend of light at the two image planes. The core experiments will evaluate whether this technique is effective in stimulating the eye to focus in-between image planes. I will also measure eye movements to multi-plane images, to see whether they are equivalent to viewing real world scenes. Furthermore, I will investigate the relationship between eye movements discomfort in 3d displays, and determine whether multi-plane images can reduce this problem. The display technique and experiments are motivated by a theoretical model of how the eye's focusing response is controlled. This emphasis on basic science will allow me to develop a display that is better suited to the properties of the human visual system. In turn, the theoretical model, in conjunction with the unique properties of the multi-plane display, will allow me to address some long-standing research questions regarding how the eye focuses. I will continue to develop and refine the model throughout the research programme. The research findings will aid the development of 3d displays that are more comfortable, natural to use, and produce more accurate 3d perception than current displays. This should be of significant benefit to the growing number of users of this important technology.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bangor.ac.uk                                                                             '>http://www.bangor.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

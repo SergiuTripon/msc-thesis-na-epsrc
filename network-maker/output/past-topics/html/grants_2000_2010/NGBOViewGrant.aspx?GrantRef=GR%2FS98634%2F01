@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Hydraulic Modelling of Remote River Basins
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fS98634%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvUzk4NjM0LzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU7PHN0cm9uZz5IeWRyYXVsaWMgTW9kZWxsaW5nIG9mIFJlbW90ZSBSaXZlciBCYXNpbnM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUQ8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTUyNDU0Jz5CYXRlcywgUHJvZmVzc29yIFBEPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNcPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTcwOTAnPlVuaXZlcnNpdHkgb2YgQ2FsaWZvcm5pYSBMb3MgQW5nZWxlczwvYT4AAGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUVR2VvZ3JhcGhpY2FsIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUVVW5pdmVyc2l0eSBvZiBCcmlzdG9sZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUeT3ZlcnNlYXMgVHJhdmVsIEdyYW50cyBQcmUtRkVDZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUMMTEgSnVuZSAyMDA0ZGQCAw9kFgICAQ8PFgIfBAURMTAgU2VwdGVtYmVyIDIwMDVkZAIFD2QWAgIBDw8WBB8EBQU5LDA2NR4HVG9vbFRpcAUIOSwwNjUuMDBkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiJDb2FzdGFsICZhbXA7IFdhdGVyd2F5IEVuZ2luZWVyaW5nAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIFV2F0ZXIAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBboNSHlkcmF1bGljIG1vZGVsbGluZyBvZiBmbG93IGluIHJpdmVycyBpcyBhIGtleSByZXF1aXJlbWVudCBmb3Igcml2ZXIgYmFzaW4gbWFuYWdlbWVudCBwcm9qZWN0cyB3b3JsZHdpZGUuIEhvd2V2ZXIsIG1vc3QgaHlkcmF1bGljIG1vZGVscyBkZXBlbmQgb24gYWNjZXNzIHRvIHRvIGRldGFpbGVkIGFuZCBhY2N1cmF0ZSBkYXRhIHNldHMsIHBhcnRpY3VsYXJseSBmb3IgdG9wb2dyYXBoeSBhbmQgcml2ZXIgZmxvdyB0byBhY3QgYXMgbW9kZWwgYm91bmRhcnkgY29uZGl0aW9ucy4gU3VjaCBkYXRhIGF2YWlsYWJpbGl0eSBpcyBub3QgdGhlIGNhc2UgZm9yIG1hbnkgb3ZlcnNlYXMgY29uc3VsdGluZyBwcm9qZWN0cywgd2hpY2ggbWF5IHRha2UgcGxhY2UgaW4gcmVtb3RlIGJhc2lucyBvciBhcmVhcyB3aGVyZSB0aGVyZSBpcyBzcGFyc2UgZGF0YSBjb3ZlcmFnZS4gQW4gdW50cmllZCBzb2x1dGlvbiB0byB0aGlzIHByb2JsZW0gd291bGQgYmUgdG8gcGFyYW1ldGVyaXplIGh5ZHJhdWxpYyBtb2RlbHMgdXNpbmcgZ2xvYmFsIGRhdGEgc2V0cyBhdmFpbGFibGUgaW4gdGhlIHB1YmxpYyBkb21haW4uIFVudGlsIHJlY2VudGx5IHN1Y2ggZGF0YSBoYXMgYmVlbiBvZiBwb29yIHJlc29sdXRpb24gYW5kIHVuc3VpdGFibGUgZm9yIGh5ZHJhdWxpYyBtb2RlbGxpbmcsIGJ1dCBpbiAyMDAwIGEgU3BhY2UgU2h1dHRsZSBtaXNzaW9uICh0aGUgU1JUTSkgY29sbGVjdGVkIGEgbmV3IGdsb2JhbCBERU0gd2l0aCBzdWZmaWNpZW50IHJlc29sdXRpb24gKC0zMG0pIGFuZCB2ZXJ0aWNhbCBhY2N1cmFjeSAoLTVtIHJtcyBlcnJvcikgZm9yIGh5ZHJhdWxpYyBtb2RlbGxpbmcgaW4gbGFyZ2UgYmFzaW5zLiBIb3dldmVyIHN1YnN0YW50aXZlIHJlc2VhcmNoIGlzIHJlcXVpcmVkIHRvIGRldmVsb3AgbW9kZWxzIGNhcGFibGUgb2YgdXNpbmcgc3VjaCBkYXRhLCB0byBleGFtaW5lIHRoZSBhY2N1cmFjeSBvZiB0aGUgZGVyaXZlZCBkYXRhIHNldHMgYW5kIHRvIGRldmVsb3AgYXBwcm9wcmlhdGUgbW9kZWwtZGF0YSBhc3NpbWlsYXRpb24gdGVjaG5pcXVlcy4gTW9yZW92ZXIsIGV4cGVydGlzZSBpbiB0aGUgU1JUTSBkb2VzIG5vdCBjdXJyZW50bHkgZXhpc3QgaW4gdGhlIFVLLiBUaGlzIHByb3Bvc2FsIHRoZXJlZm9yZSBzZWVrcyBmdW5kcyB0byBjb2xsYWJvcmF0ZSB3aXRoIFNSVE0gZXhwZXJ0cyBhdCB0aGUgVW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhIExvcyBBbmdlbGVzIGluIG9yZGVyIHRvIGFjcXVpcmUgZXNzZW50aWFsIGtub3dsZWRnZSBvZiB0aGlzIG5ldyBkYXRhIHNldCBhbmQgdW5kZXJ0YWtlIGEgZmVhc2liaWxpdHkgc3R1ZHkgaW50byB0aGUgYWJvdmUgcmVzZWFyY2ggaXNzdWVzLiBTcGVjaWZpY2FsbHksIHRoZSBmZWFzaWJpbGl0eSBzdHVkeSB3aWxsIGV4dGVuZCB0aGUgTElTRkxPT0QtRlAgMkQgaHlkcmF1bGljIG1vZGVsIGZvciBvcGVyYXRpb24gaW4gZ2xvYmFsIHNjYWxlIGJhc2lucywgZGV2ZWxvcCB0ZWNobmlxdWVzIHRvIG9wdGltYWxseSBwYXJhbWV0ZXJpc2UgdGhlIExJU0ZMT09ELUZQIG1vZGVsIHVzaW5nIFNSVE0gZGF0YSBhdCBsYXJnZSBncmlkIHNjYWxlcyBhbmQgdmFsaWRhdGUgdGhlIHByb3RvdHlwZSBtb2RlbCBhZ2FpbnN0IGF2YWlsYWJsZSBncm91bmQgYW5kIHNwYWNlLWJvcm5lIGh5ZHJvbWV0cmljIG1lYXN1cmVtZW50cyBmb3IgYSBzaW5nbGUgdGVzdCBzaXRlIGluIHRoZSBBbWF6b24gYmFzaW4uZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5icmlzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5icmlzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1M5ODYzNC8wMQxHUi9TOTg2MzQvMDFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZJpefGRljU/tl0rhKGDJrfNyi1lK" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKW9cyQBQLQvN++DAKT/OCVA9kkfM/zRsHuxE0tqGfcPiJBQbwj" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/S98634/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Hydraulic Modelling of Remote River Basins</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=52454'>Bates, Professor PD</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=17090'>University of California Los Angeles</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Geographical Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bristol</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Overseas Travel Grants Pre-FEC</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">11 June 2004</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">10 September 2005</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="9,065.00" class="DetailValue">9,065</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Coastal &amp; Waterway Engineering</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Water</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Hydraulic modelling of flow in rivers is a key requirement for river basin management projects worldwide. However, most hydraulic models depend on access to to detailed and accurate data sets, particularly for topography and river flow to act as model boundary conditions. Such data availability is not the case for many overseas consulting projects, which may take place in remote basins or areas where there is sparse data coverage. An untried solution to this problem would be to parameterize hydraulic models using global data sets available in the public domain. Until recently such data has been of poor resolution and unsuitable for hydraulic modelling, but in 2000 a Space Shuttle mission (the SRTM) collected a new global DEM with sufficient resolution (-30m) and vertical accuracy (-5m rms error) for hydraulic modelling in large basins. However substantive research is required to develop models capable of using such data, to examine the accuracy of the derived data sets and to develop appropriate model-data assimilation techniques. Moreover, expertise in the SRTM does not currently exist in the UK. This proposal therefore seeks funds to collaborate with SRTM experts at the University of California Los Angeles in order to acquire essential knowledge of this new data set and undertake a feasibility study into the above research issues. Specifically, the feasibility study will extend the LISFLOOD-FP 2D hydraulic model for operation in global scale basins, develop techniques to optimally parameterise the LISFLOOD-FP model using SRTM data at large grid scales and validate the prototype model against available ground and space-borne hydrometric measurements for a single test site in the Amazon basin.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bris.ac.uk                                                                               '>http://www.bris.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

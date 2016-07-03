@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Modelling NOx Reduction by Selective Catalytic Reduction (SCR) appropriate for Light-Duty Vehicles under Steady State and Transient Conditions
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF036175%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAzNjE3NS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWfATxzdHJvbmc+TW9kZWxsaW5nIE5PeCBSZWR1Y3Rpb24gYnkgU2VsZWN0aXZlIENhdGFseXRpYyBSZWR1Y3Rpb24gKFNDUikgYXBwcm9wcmlhdGUgZm9yIExpZ2h0LUR1dHkgVmVoaWNsZXMgdW5kZXIgU3RlYWR5IFN0YXRlIGFuZCBUcmFuc2llbnQgQ29uZGl0aW9uczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTIyMyc+QmVuamFtaW4sIFByb2Zlc3NvciBTPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNBPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTQ5MzI3Jz5Sb2JlcnRzLCBEciBDQTwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNbPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTg4NjEnPkVNQ09OIFRlY2hub2xvZ2llcyBHZXJtYW55IEF1ZyBHbWJIPC9hPks8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAwODI3Jz5KYWd1YXIgTGFuZCBSb3ZlcjwvYT5JPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMDg0Mic+Sm9obnNvbiBNYXR0aGV5PC9hPmQCBg9kFgICAQ9kFgICAQ8PFgIfBAUZRW5naW5lZXJpbmcgYW5kIENvbXB1dGluZ2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFE0NvdmVudHJ5IFVuaXZlcnNpdHlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFETAxIFNlcHRlbWJlciAyMDA4ZGQCAw9kFgICAQ8PFgIfBAUQMjkgRmVicnVhcnkgMjAxMmRkAgUPZBYCAgEPDxYEHwQFBzMyMyw4ODIeB1Rvb2xUaXAFCjMyMyw4ODEuODVkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgpDb21idXN0aW9uAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIeVHJhbnNwb3J0IFN5c3RlbXMgYW5kIFZlaGljbGVzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfBwIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA3IEZlYiAyMDA4ZGQCAQ8PFgIfCAUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBSBFbmdpbmVlcmluZyBTY2llbmNlIChGbG93KSBQYW5lbB8DBRtWaWV3UGFuZWwuYXNweD9QYW5lbElkPTQ1ODNkZAIDDw8WAh8CaGRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWtFERpZXNlbCBlbmdpbmVzIG9mZmVyIHRoZSBwcm9zcGVjdCBvZiByZWR1Y2luZyBlbWlzc2lvbnMgb2YgY2FyYm9uIGRpb3hpZGUgYXMgdGhleSBhcmUgaW5oZXJlbnRseSBtb3JlIHRoZXJtb2R5bmFtaWNhbGx5IGVmZmljaWVudCB0aGFuIHBldHJvbCBlbmdpbmVzLiBIb3dldmVyIGRpZXNlbHMgcHJvZHVjZSBoaWdoZXIgZW1pc3Npb25zIG9mIG5pdHJvZ2VuIG94aWRlcyAoTk9YKSBhbmQgcGFydGljdWxhdGVzLiBXaGlsc3QgdGVjaG5vbG9naWVzIHRvIGRlYWwgd2l0aCB0aGUgbGF0dGVyIGFyZSB3ZWxsIGFkdmFuY2VkIChwYXJ0aWN1bGF0ZSB0cmFwcykgdGhlIHJlZHVjdGlvbiBvZiBOT3ggZW1pc3Npb25zIGlzIG1vcmUgY2hhbGxlbmdpbmcuIFdoaWxzdCBpbXByb3ZlbWVudHMgaW4gY29tYnVzdGlvbiBhbmQvb3IgYWx0ZXJuYXRpdmUgZnVlbHMgY2FuIGxlYWQgdG8gbG93ZXIgTk94IGVtaXNzaW9ucyBpdCBpcyB3aWRlbHkgYWNjZXB0ZWQgdGhhdCBpbiBvcmRlciB0byBtZWV0IEV1cm9WIGFuZCBWSSBlbWlzc2lvbiB0YXJnZXRzIHNvbWUgZm9ybSBvZiBhZnRlci10cmVhdG1lbnQgd2lsbCBiZSByZXF1aXJlZEN1cnJlbnRseSB0aGVyZSBhcmUgdHdvIG1ham9yIGFmdGVyLXRyZWF0bWVudCB0ZWNobm9sb2dpZXMgdW5kZXIgY29uc2lkZXJhdGlvbjogTk94IHRyYXBzIGFuZCBTZWxlY3RpdmUgQ2F0YWx5dGljIFJlZHVjdGlvbiAoU0NSKS4gU0NSIGluIHRoZSBhdXRvbW90aXZlIGNvbnRleHQgaW52b2x2ZXMgdGhlIGNhdGFseXRpYyByZWR1Y3Rpb24gb2YgTk94IHdpdGggdXJlYS9hbW1vbmlhIChOSDMpLiBBIHNvbHV0aW9uIG9mIHVyZWEgKEFkYmx1ZSkgaXMgaW5qZWN0ZWQgaW50byB0aGUgZXhoYXVzdCBzeXN0ZW0gd2hlcmUgaXQgaXMgZGVjb21wb3NlZCBpbiBOSDMgd2hpY2ggc2VsZWN0aXZlbHkgcmVkdWNlcyBOT3ggb3ZlciBhIGNhdGFseXN0LiAgU0NSIHdhcyBmaXJzdCBjb21tZXJjaWFsaXNlZCBvbiBhIGhlYXZ5LWR1dHkgZGllc2VsIHRydWNrIGFzIHJlY2VudGx5IGFzIDIwMDQgYnkgTmlzc2FuLiBTdHVkaWVzIGhhdmUgc2hvd24gdGhhdCBTQ1IgY2FuIGFjaGlldmUgOTAgJSBOT1ggY29udmVyc2lvbi4gSW4gRXVyb3BlLCBhIG51bWJlciBvZiBoZWF2eS1kdXR5IHZlaGljbGUgbWFudWZhY3R1cmVycyBoYXZlIGNob3NlbiB1cmVhLVNDUiBmb3IgbWVldGluZyBFdXJvIElWIGFuZCBWIHN0YW5kYXJkcyBhbmQgc2luY2UgMjAwMyB0aGUgaW5mcmFzdHJ1Y3R1cmUgZm9yIHVyZWEgb3V0bGV0cyB3aXRoaW4gRXVyb3BlIGhhcyBiZWVuIHN0ZWFkaWx5IGRldmVsb3BpbmcuIEhlbmNlIFNDUiBjb3VsZCBiZSB1c2VkIG9uIGxpZ2h0IGR1dHkgdmVoaWNsZXMgYW5kIHBhc3NlbmdlciBjYXJzIHdpdGhvdXQgbWFqb3IgaW52ZXN0bWVudHMgaW4gdGhlIHVyZWEgZGlzdHJpYnV0aW9uIHN5c3RlbS4gVGhlIGFwcGxpY2F0aW9uIHRvIGxpZ2h0LWR1dHkgdmVoaWNsZXMgYW5kIHBhc3NlbmdlciBjYXJzIHByZXNlbnRzIGFkZGl0aW9uYWwgY2hhbGxlbmdlcy4gVGhlaXIgb3BlcmF0aW9uYWwgY2hhcmFjdGVyaXN0aWNzIGFyZSBxdWl0ZSBkaWZmZXJlbnQgZnJvbSBoZWF2eSBkdXR5IHZlaGljbGVzIGFzIHRoZXkgdHlwaWNhbGx5IG9wZXJhdGUgYXQgaGlnaCBzcGVlZCBhbmQgbG93IGxvYWQgd2l0aCBsb3dlciBleGhhdXN0IHRlbXBlcmF0dXJlcy4gRnVydGhlciwgbGlnaHQgZHV0eSB2ZWhpY2xlIGhvbW9sb2dhdGlvbiByZXF1aXJlcyBlbWlzc2lvbnMgY29tcGxpYW5jZSBvdmVyIGRyaXZlIGN5Y2xlcyBmZWF0dXJpbmcgc2lnbmlmaWNhbnQgdHJhbnNpZW50cy4gVXJlYSBpbmplY3RvcnMgd2lsbCBiZSBxdWl0ZSBkaWZmZXJlbnQgb3BlcmF0aW5nIHdpdGggbXVjaCBsb3dlciBmbG93IHJhdGVzLiBBbW9uZ3N0IGEgbnVtYmVyIG9mIGltcG9ydGFudCBpc3N1ZXMgdG8gYmUgYWRkcmVzc2VkIHdpbGwgYmUgdGhlIHVyZWEgZG9zaW5nIHN0cmF0ZWd5LCB0aGUgcG9zaXRpb25pbmcgb2YgdGhlIGluamVjdG9yIGFuZCB0aGUgdHlwZSBvZiB0aGUgY2F0YWx5c3QuIEN1cnJlbnRseSBhbG1vc3QgYWxsIHByb3RvdHlwZSBkZXZlbG9wbWVudCB3b3JrIGlzIGNvbmR1Y3RlZCBvbiBlbmdpbmUgdGVzdCBzdGFuZHMgYW5kIGNoYXNzaXMgZHluYW1vbWV0ZXJzLiBBIG1hdGhlbWF0aWNhbCBtb2RlbCBvZiBhbiBTQ1Igc3lzdGVtIHdvdWxkIGZhY2lsaXRhdGUgdGhlIGRlc2lnbiBvZiB0aGVzZSBsaWdodCBkdXR5IHN5c3RlbXMuIEl0IHdvdWxkIGFsbG93IGRlc2lnbiBlbmdpbmVlcnMgdG8gdmFyeSBvcGVyYXRpbmcgcGFyYW1ldGVycyBhbmQgc3lzdGVtIGRlc2lnbiBmZWF0dXJlcyBwcmlvciB0byBwcm90b3R5cGUgdGVzdGluZy4gVGhpcyB3b3VsZCBwb3RlbnRpYWxseSBzYXZlIGRldmVsb3BtZW50IHRpbWUgYW5kIGNvc3RzIHdoaWxzdCBhbHNvIHByb3ZpZGluZyBzeXN0ZW1zIHdpdGggcmVkdWNlZCBlbWlzc2lvbnMgYW5kIGJldHRlciBmdWVsIGVjb25vbXkuIFRoZSBkZXZlbG9wbWVudCBhbmQgdmFsaWRhdGlvbiBvZiBhIGxpZ2h0LWR1dHkgU0NSIG1hdGhlbWF0aWNhbCBtb2RlbCBpcyB0aGUgbWFpbiBvYmplY3RpdmUgb2YgdGhpcyByZXNlYXJjaCBwcm9wb3NhbC5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmNvdi5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmNvdi5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjAzNjE3NS8xDEVQL0YwMzYxNzUvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkHyuJHDXkpZUEmzEu6fx6Cr+XevU=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLz172tAgLQvN++DAKT/OCVA5sMZk4fcsgMc0kCW4xEFfiCtbxE" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F036175/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Modelling NOx Reduction by Selective Catalytic Reduction (SCR) appropriate for Light-Duty Vehicles under Steady State and Transient Conditions</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=1223'>Benjamin, Professor S</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-149327'>Roberts, Dr CA</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-8861'>EMCON Technologies Germany Aug GmbH</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000827'>Jaguar Land Rover</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1000842'>Johnson Matthey</a></td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering and Computing</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Coventry University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">29 February 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="323,881.85" class="DetailValue">323,882</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Combustion</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Transport Systems and Vehicles</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>07 Feb 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4583">Engineering Science (Flow) Panel</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Diesel engines offer the prospect of reducing emissions of carbon dioxide as they are inherently more thermodynamically efficient than petrol engines. However diesels produce higher emissions of nitrogen oxides (NOX) and particulates. Whilst technologies to deal with the latter are well advanced (particulate traps) the reduction of NOx emissions is more challenging. Whilst improvements in combustion and/or alternative fuels can lead to lower NOx emissions it is widely accepted that in order to meet EuroV and VI emission targets some form of after-treatment will be requiredCurrently there are two major after-treatment technologies under consideration: NOx traps and Selective Catalytic Reduction (SCR). SCR in the automotive context involves the catalytic reduction of NOx with urea/ammonia (NH3). A solution of urea (Adblue) is injected into the exhaust system where it is decomposed in NH3 which selectively reduces NOx over a catalyst.  SCR was first commercialised on a heavy-duty diesel truck as recently as 2004 by Nissan. Studies have shown that SCR can achieve 90 % NOX conversion. In Europe, a number of heavy-duty vehicle manufacturers have chosen urea-SCR for meeting Euro IV and V standards and since 2003 the infrastructure for urea outlets within Europe has been steadily developing. Hence SCR could be used on light duty vehicles and passenger cars without major investments in the urea distribution system. The application to light-duty vehicles and passenger cars presents additional challenges. Their operational characteristics are quite different from heavy duty vehicles as they typically operate at high speed and low load with lower exhaust temperatures. Further, light duty vehicle homologation requires emissions compliance over drive cycles featuring significant transients. Urea injectors will be quite different operating with much lower flow rates. Amongst a number of important issues to be addressed will be the urea dosing strategy, the positioning of the injector and the type of the catalyst. Currently almost all prototype development work is conducted on engine test stands and chassis dynamometers. A mathematical model of an SCR system would facilitate the design of these light duty systems. It would allow design engineers to vary operating parameters and system design features prior to prototype testing. This would potentially save development time and costs whilst also providing systems with reduced emissions and better fuel economy. The development and validation of a light-duty SCR mathematical model is the main objective of this research proposal.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cov.ac.uk                                                                                '>http://www.cov.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

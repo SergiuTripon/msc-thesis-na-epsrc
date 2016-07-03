@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=15405" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRdQcm9mZXNzb3IgSiBTd2l0aGVuYmFua2RkAgMPDxYCHwIFF1VuaXZlcnNpdHkgb2YgU2hlZmZpZWxkZGQCBQ8PFgIfAgUlQ2hlbWljYWwgJmFtcDsgQmlvbG9naWNhbCBFbmdpbmVlcmluZ2RkAgcPDxYCHwIFDDQ0MTQzMzY1MDUxMmRkAgkPDxYCHwIFDDQ0MTE0MjIyNzUwMWRkAg0PDxYEHwIFZjEwNjEwNTEwOTA0NTA2NDExNTExOTEwNTExNjEwNDEwMTExMDA5ODA5NzExMDEwNzA1MDA1NDA0NjEwMjExNDEwMTEwMTExNTEwMTExNDExODEwMTA0NjA5OTExMTA0NjExNzEwNx4IUmVhZE9ubHlnFgweC29ubW91c2VvdmVyZR4Hb25mb2N1cwVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7Hgpvbm1vdXNlb3V0BV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzseBm9uYmx1cgVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HwAFPGphdmFzY3JpcHQ6c2VuZHRvKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJykudmFsdWUpOx8BBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJztkAg8PPCsACwBkAhEPZBYEAgEPZBYCZg9kFgRmDzwrAAsBAA8WAh4HVmlzaWJsZWhkZAIBDw8WAh8IZ2RkAgMPZBYCZg9kFgJmDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCIR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIhZBYCZg9kFkICAQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzA2MjM3NC8xJz5FUC9HMDYyMzc0LzE8L2E+IGRkAgEPDxYCHwIFLEpvaW50IFVLIC8gQ2hpbmEgSHlkcm9nZW4gcHJvZHVjdGlvbiBuZXR3b3JrZGQCAg8PFgIfAgUDKEMpZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzA1NzEzMy8xJz5FUC9HMDU3MTMzLzE8L2E+IGRkAgEPDxYCHwIFKlRoZXJtYWwgTWFuYWdlbWVudCBvZiBJbmR1c3RyaWFsIFByb2Nlc3Nlc2RkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMDcxMzIvMSc+RVAvRjAwNzEzMi8xPC9hPiBkZAIBDw8WAh8CBYQBUG9sbHV0YW50cyBpbiB0aGUgVXJiYW4gRW52aXJvbm1lbnQ6IEFuIEludGVncmF0ZWQgRnJhbWV3b3JrIGZvciBJbXByb3ZpbmcgU3VzdGFpbmFiaWxpdHkgb2YgdGhlIEluZG9vciBFbnZpcm9ubWVudCAoUFVyRSBJbnRyYXdpc2UpZGQCAg8PFgIfAgUDKEMpZGQCBA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAzOTk5NS8xJz5FUC9FMDM5OTk1LzE8L2E+IGRkAgEPDxYCHwIFMlNVUEVSR0VOIEJJT01BU1MgQklPRlVFTFMgQU5EIEVORVJHWSBDUk9QUyBJSSBDT1JFZGQCAg8PFgIfAgUDKEMpZGQCBQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvQzUzMjY1MS8yJz5FUC9DNTMyNjUxLzI8L2E+IGRkAgEPDxYCHwIFN1BvbGx1dGFudHMgaW4gdGhlIFVyYmFuIEVudmlyb25tZW50IChQVXJFKSAtIE1haW4gU3R1ZHlkZAICDw8WAh8CBQMoQylkZAIGD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DNTMyNjUxLzEnPkVQL0M1MzI2NTEvMTwvYT4gZGQCAQ8PFgIfAgU3UG9sbHV0YW50cyBpbiB0aGUgVXJiYW4gRW52aXJvbm1lbnQgKFBVckUpIC0gTWFpbiBTdHVkeWRkAgIPDxYCHwIFAyhDKWRkAgcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1M3OTYyNi8wMSc+R1IvUzc5NjI2LzAxPC9hPiBkZAIBDw8WAh8CBUJTdHJhdGVnaWVzIGFuZCBUZWNobm9sb2dpZXMgZm9yIFN1c3RhaW5hYmxlIFVyYmFuIFdhc3RlIE1hbmFnZW1lbnRkZAICDw8WAh8CBQMoQylkZAIID2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TMjgyMDQvMDEnPkdSL1MyODIwNC8wMTwvYT4gZGQCAQ8PFgIfAgU4U1VQRVJHRU4gLSBCaW9tYXNzLCBCaW9mdWVscyBhbmQgZW5lcmd5IGNyb3BzIGNvbnNvcnRpdW1kZAICDw8WAh8CBQMoQylkZAIJD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TMDg2OTUvMDEnPkdSL1MwODY5NS8wMTwvYT4gZGQCAQ8PFgIfAgU+Tm92ZWwgbWVyZ2luZyBzd2lybCBidXJuZXIgZGVzaWduIGNvbnRyb2xsZWQgYnkgaGVsaWNhbCBtaXhpbmdkZAICDw8WAh8CBQMoQylkZAIKD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TMDczMDgvMDEnPkdSL1MwNzMwOC8wMTwvYT4gZGQCAQ8PFgIfAgWQAVNVRSBUUkFWRUwgR1JBTlQ6IEluZnJhc3RydWN0dXJlICZhbXA7IEVudmlyb25tZW50IFByb2dyYW1tZSAtIFRvd2FyZHMgYSBTdXN0YWluYWJsZSBVcmJhbiBFbnZpcm9ubWVudCAoU3VzdGFpbmFibGUgV2FzdGUgTWFuYWdlbWVudCBDb25zb3J0aXVtKWRkAgIPDxYCHwIFAyhQKWRkAgsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1I0MTA0MC8wMSc+R1IvUjQxMDQwLzAxPC9hPiBkZAIBDw8WAh8CBWRBbiBJbm5vdmF0aXZlIENvYWwgR2FzaWZpZXIgVXRpbGlzaW5nIFN0ZWFtIEZyb20gV2FzdGUgSW5jaW5lcmF0aW9uIFJhaXNlZCB0byBVbHRyYS1IaWdoIFRlbXBlcmF0dXJlZGQCAg8PFgIfAgUDKEMpZGQCDA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTjA3NzA3LzAxJz5HUi9OMDc3MDcvMDE8L2E+IGRkAgEPDxYCHwIFcFNUUkFURUdJQyBFTkcnSU5HIFJFU0VBUkNIIElOVEVHUkFUSU5HIFdBU1RFIEVORVJHWSAmYW1wOyBQT0xMVVRJT04gQ09OVCdMIElORlJBU1RSVUNUVVJFIEZPUiBTVVNUQUlOQUJMRSBDSVRJRVNkZAICDw8WAh8CBQMoUClkZAIND2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNzM3NDMvMDEnPkdSL003Mzc0My8wMTwvYT4gZGQCAQ8PFgIfAgVHUE9TVC1DT01CVVNUSU9OIEZPUk1BVElPTiBPRiBESU9YSU5TL0ZVUkFOUyBJTiBXQVNURSBJTkNJTkVSQVRPUiBQTEFOVFNkZAICDw8WAh8CBQMoQylkZAIOD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNzI0NTYvMDEnPkdSL003MjQ1Ni8wMTwvYT4gZGQCAQ8PFgIfAgVeUFJPQ0VTUyBFTkdJTkVFUklORyBSRVNFQVJDSCBORVRXT1JLIEZPUiBESU9YSU5TL1BDQlMgTU9OSVRPUklORy9BTkFMWVNJUy9FTkdJTkVFUklORyBSRVNFQVJDSGRkAgIPDxYCHwIFAyhQKWRkAg8PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL000NzM0OC8wMSc+R1IvTTQ3MzQ4LzAxPC9hPiBkZAIBDw8WAh8CBWZERVZFTE9QTUVOVCBPRiBBIE5PVkVMICZhbXA7IEVGRklDSUVOVCBQUk9DRVNTIEZPUiBERVRPWElGSUNBVElPTiAmYW1wOyBSRS1VU0UgT0YgQ09OVEFNSU5BVEVEIEZMWS1BU0hkZAICDw8WAh8CBQMoQylkZAIQD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNDc3MjAvMDEnPkdSL000NzcyMC8wMTwvYT4gZGQCAQ8PFgIfAgVDTk9WRUwgTUVBU1VSSU5HIElOU1RSVU1FTlQgRk9SIEhPU1RJTEUgSElHSCBURU1QRVJBVFVSRSBFTlZJUk9OTUVOVGRkAgIPDxYCHwIFAyhQKWRkAhEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL00zNjUwMi8wMSc+R1IvTTM2NTAyLzAxPC9hPiBkZAIBDw8WAh8CBWRBIFRIRU9SRVRJQ0FMIEFORCBGSUVMRC1TQ0FMRSBFWFBFUklNRU5UQUwgU1RVRFkgT0YgVEhFIFNVUFBSRVNTSU9OIE9GIEdBUyBFWFBMT1NJT05TIEJZIFdBVEVSIEZJTE1TZGQCAg8PFgIfAgUDKEMpZGQCEg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTTE3MDgyLzAxJz5HUi9NMTcwODIvMDE8L2E+IGRkAgEPDxYCHwIFGUlOQ0lORVJBVE9SIEJFRCBNT0RFTExJTkdkZAICDw8WAh8CBQMoUClkZAITD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MOTAxOTQvMDEnPkdSL0w5MDE5NC8wMTwvYT4gZGQCAQ8PFgIfAgVsQ0hBUkFDVEVSSVNBVElPTiBVTFRSQS1UUkFDRSBNRUFTVVJFTUVOVCBESU9YSU5TRlVSQU5TIFRIRVJNQUxMWSBIT1NUSUxFIElOQ0lORVJBVE9SIEZMVUUgR0FTIENMRUFOIFBST0NFU1NFZGQCAg8PFgIfAgUDKFApZGQCFA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDc0NDYwLzAxJz5HUi9MNzQ0NjAvMDE8L2E+IGRkAgEPDxYCHwIFXURFVkVMT1BNRU5UICZhbXA7IEVWQUxVQVRJT04gT0YgQSBDT01QVVRBVElPTkFMIEZMVUlEIERZTkFNSUMgTU9ERUwgT0YgRUZGRVJWRVNDRU5UIEFUT01JU0VSU2RkAgIPDxYCHwIFAyhQKWRkAhUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0w2MDU5My8wMSc+R1IvTDYwNTkzLzAxPC9hPiBkZAIBDw8WAh8CBWNSRURVQ1RJT04gT0YgTk9YIEVNSVNTSU9OIElOIE1VTklDSVBBTCBTT0xJRCBXQVNURSBJTkNJTkVSQVRPUiBCWSBGVU5EQU1FTlRBTCBDT01CVVNUSU9OIFRFQ0hOSVFVRVNkZAICDw8WAh8CBQMoUClkZAIWD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MMjAzODIvMDEnPkdSL0wyMDM4Mi8wMTwvYT4gZGQCAQ8PFgIfAgVURlVOREFNRU5UQUwgREVTSUdOIEFORCBBUFBMSUNBVElPTiBPRiBBQ09VU1RJQ0FMTFkgQkFTRUQgVEVNUEVSQVRVUkUgU0VOU0lORyBTWVNURU1TZGQCAg8PFgIfAgUDKEMpZGQCFw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDIyNTM5LzAxJz5HUi9MMjI1MzkvMDE8L2E+IGRkAgEPDxYCHwIFHUlOQ0lORVJBVE9SIEJVUk5JTkcgQkVEIE1PREVMZGQCAg8PFgIfAgUDKFApZGQCGA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzg5NDgxLzAxJz5HUi9LODk0ODEvMDE8L2E+IGRkAgEPDxYCHwIFMUlOVEVOU0lGSUNBVElPTiBPRiBTRVdBR0UgU0xVREdFIERJU1BPU0FMIFBST0NFU1NkZAICDw8WAh8CBQMoUClkZAIZD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LMzY2NDUvMDEnPkdSL0szNjY0NS8wMTwvYT4gZGQCAQ8PFgIfAgVRUk9QQTogRVZBTFVBVElPTiBPRiBXQVNURSBDT01CVVNUSU9OIElOIEEgVFVNQkxJTkcgUk9UQVRJTkcgRkxVSURJU0VEIElOQ0lORVJBVE9SZGQCAg8PFgIfAgUDKFApZGQCGg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjc1MzI2LzAxJz5HUi9KNzUzMjYvMDE8L2E+IGRkAgEPDxYCHwIFQVRIRSBTVFVEWSBPRiBGTFVJRCBJTkpFQ1RJT04gRk9SIE1JVElHQVRJT04gT0YgR0FTRU9VUyBFWFBMT1NJT05TZGQCAg8PFgIfAgUDKFApZGQCGw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjEwMDA2LzAxJz5HUi9KMTAwMDYvMDE8L2E+IGRkAgEPDxYCHwIFJlBFQUsgU0VFS0VSIENPTlRST0wgT0YgRlVFTDogQUlSIFJBVElPZGQCAg8PFgIfAgUDKFApZGQCHA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjE1Njc0LzAxJz5HUi9KMTU2NzQvMDE8L2E+IGRkAgEPDxYCHwIFa0RFU0lHTiBPRiBISUdIIFRFTVBFUkFUVVJFIENFUkFNSUMgU1RFQU0gSEVBVCBFWENIQU5HRVJTIEZPUiBVU0UgSU4gUE9XRVIgR0VORVJBVElPTiBXSVRIIFJFRFVDRUQgRU1JU1NJT05TZGQCAg8PFgIfAgUDKEMpZGQCHQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjEzNjg3LzAxJz5HUi9KMTM2ODcvMDE8L2E+IGRkAgEPDxYCHwIFLkEgRkxVSURJQyBTTFVHIFJFVEFSREVSIEFORCBTRVBBUkFUT1IgKFBJUCAzMSlkZAICDw8WAh8CBQMoUClkZAIeD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9KMDk5OTQvMDEnPkdSL0owOTk5NC8wMTwvYT4gZGQCAQ8PFgIfAgUpR0FTIFBIQVNFIFJFU0lERU5DRSBUSU1FUyBJTiBJTkNJTkVSQVRPUlNkZAICDw8WAh8CBQMoUClkZAIfD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9IMzc0MDIvMDEnPkdSL0gzNzQwMi8wMTwvYT4gZGQCAQ8PFgIfAgUyRVhQTE9TSU9OIFBIRU5PTUVOQSBJTiBDT01QTEVYIEdFT01FVFJJRVMgKFRPUCA0MilkZAICDw8WAh8CBQMoUClkZAIgD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9IMjkwNjMvMDEnPkdSL0gyOTA2My8wMTwvYT4gZGQCAQ8PFgIfAgU7UEhPVE9DSEVNSUNBTCBSRURVQ1RJT04gT0YgTk9YIExFVkVMUyBJTiBDT01CVVNUSU9OIFNZU1RFTVNkZAICDw8WAh8CBQMoUClkZAIhD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9GNzcyMjcvMDEnPkdSL0Y3NzIyNy8wMTwvYT4gZGQCAQ8PFgIfAgU1SU5WRVNUSUdBVElPTiBPRiBNVUxUSS1QT0lOVCBMQVNFUiBET1BQTEVSIEFORU1PTUVUUllkZAICDw8WAh8CBQMoUClkZAITD2QWBGYPZBYCZg9kFgICAQ8PFgIfCGdkZAICD2QWAmYPZBYCAgEPDxYGHgpSZXBvcnROYW1lBQpWaWV3UGVyc29uHg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcwhQZXJzb25JRB4OUGFyYW1ldGVyVmFsdWUVAjlodHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTU0MDUFMTU0MDVkFgJmD2QWAmYPZBYEAgMPEGRkFgFmZAIFDw9kFgIfAWVkAgcPDxYCHwhoZGRkrthXGFKss8/AFFqnlj6QN7ZgKH8=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKV9sHcBQLQvN++DAKT/OCVAwLKoMrZDwxQrRpK0rSsXnFEmqxr4LzN/PjC" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor J Swithenbank</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">University of Sheffield</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Chemical &amp; Biological Engineering</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">441433650512</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">441142227501</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="106105109045064115119105116104101110098097110107050054046102114101101115101114118101046099111046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><span id="lblNoCurrentSupport">There is no current EPSRC Support</span></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G062374/1'>EP/G062374/1</a> </b></td><td align="left">Joint UK / China Hydrogen production network</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G057133/1'>EP/G057133/1</a> </b></td><td align="left">Thermal Management of Industrial Processes</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F007132/1'>EP/F007132/1</a> </b></td><td align="left">Pollutants in the Urban Environment: An Integrated Framework for Improving Sustainability of the Indoor Environment (PUrE Intrawise)</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E039995/1'>EP/E039995/1</a> </b></td><td align="left">SUPERGEN BIOMASS BIOFUELS AND ENERGY CROPS II CORE</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C532651/2'>EP/C532651/2</a> </b></td><td align="left">Pollutants in the Urban Environment (PUrE) - Main Study</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C532651/1'>EP/C532651/1</a> </b></td><td align="left">Pollutants in the Urban Environment (PUrE) - Main Study</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S79626/01'>GR/S79626/01</a> </b></td><td align="left">Strategies and Technologies for Sustainable Urban Waste Management</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S28204/01'>GR/S28204/01</a> </b></td><td align="left">SUPERGEN - Biomass, Biofuels and energy crops consortium</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S08695/01'>GR/S08695/01</a> </b></td><td align="left">Novel merging swirl burner design controlled by helical mixing</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S07308/01'>GR/S07308/01</a> </b></td><td align="left">SUE TRAVEL GRANT: Infrastructure &amp; Environment Programme - Towards a Sustainable Urban Environment (Sustainable Waste Management Consortium)</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R41040/01'>GR/R41040/01</a> </b></td><td align="left">An Innovative Coal Gasifier Utilising Steam From Waste Incineration Raised to Ultra-High Temperature</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N07707/01'>GR/N07707/01</a> </b></td><td align="left">STRATEGIC ENG'ING RESEARCH INTEGRATING WASTE ENERGY &amp; POLLUTION CONT'L INFRASTRUCTURE FOR SUSTAINABLE CITIES</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M73743/01'>GR/M73743/01</a> </b></td><td align="left">POST-COMBUSTION FORMATION OF DIOXINS/FURANS IN WASTE INCINERATOR PLANTS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M72456/01'>GR/M72456/01</a> </b></td><td align="left">PROCESS ENGINEERING RESEARCH NETWORK FOR DIOXINS/PCBS MONITORING/ANALYSIS/ENGINEERING RESEARCH</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M47348/01'>GR/M47348/01</a> </b></td><td align="left">DEVELOPMENT OF A NOVEL &amp; EFFICIENT PROCESS FOR DETOXIFICATION &amp; RE-USE OF CONTAMINATED FLY-ASH</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M47720/01'>GR/M47720/01</a> </b></td><td align="left">NOVEL MEASURING INSTRUMENT FOR HOSTILE HIGH TEMPERATURE ENVIRONMENT</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M36502/01'>GR/M36502/01</a> </b></td><td align="left">A THEORETICAL AND FIELD-SCALE EXPERIMENTAL STUDY OF THE SUPPRESSION OF GAS EXPLOSIONS BY WATER FILMS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M17082/01'>GR/M17082/01</a> </b></td><td align="left">INCINERATOR BED MODELLING</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L90194/01'>GR/L90194/01</a> </b></td><td align="left">CHARACTERISATION ULTRA-TRACE MEASUREMENT DIOXINSFURANS THERMALLY HOSTILE INCINERATOR FLUE GAS CLEAN PROCESSE</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L74460/01'>GR/L74460/01</a> </b></td><td align="left">DEVELOPMENT &amp; EVALUATION OF A COMPUTATIONAL FLUID DYNAMIC MODEL OF EFFERVESCENT ATOMISERS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L60593/01'>GR/L60593/01</a> </b></td><td align="left">REDUCTION OF NOX EMISSION IN MUNICIPAL SOLID WASTE INCINERATOR BY FUNDAMENTAL COMBUSTION TECHNIQUES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L20382/01'>GR/L20382/01</a> </b></td><td align="left">FUNDAMENTAL DESIGN AND APPLICATION OF ACOUSTICALLY BASED TEMPERATURE SENSING SYSTEMS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L22539/01'>GR/L22539/01</a> </b></td><td align="left">INCINERATOR BURNING BED MODEL</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K89481/01'>GR/K89481/01</a> </b></td><td align="left">INTENSIFICATION OF SEWAGE SLUDGE DISPOSAL PROCESS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K36645/01'>GR/K36645/01</a> </b></td><td align="left">ROPA: EVALUATION OF WASTE COMBUSTION IN A TUMBLING ROTATING FLUIDISED INCINERATOR</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J75326/01'>GR/J75326/01</a> </b></td><td align="left">THE STUDY OF FLUID INJECTION FOR MITIGATION OF GASEOUS EXPLOSIONS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J10006/01'>GR/J10006/01</a> </b></td><td align="left">PEAK SEEKER CONTROL OF FUEL: AIR RATIO</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J15674/01'>GR/J15674/01</a> </b></td><td align="left">DESIGN OF HIGH TEMPERATURE CERAMIC STEAM HEAT EXCHANGERS FOR USE IN POWER GENERATION WITH REDUCED EMISSIONS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J13687/01'>GR/J13687/01</a> </b></td><td align="left">A FLUIDIC SLUG RETARDER AND SEPARATOR (PIP 31)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J09994/01'>GR/J09994/01</a> </b></td><td align="left">GAS PHASE RESIDENCE TIMES IN INCINERATORS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H37402/01'>GR/H37402/01</a> </b></td><td align="left">EXPLOSION PHENOMENA IN COMPLEX GEOMETRIES (TOP 42)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H29063/01'>GR/H29063/01</a> </b></td><td align="left">PHOTOCHEMICAL REDUCTION OF NOX LEVELS IN COMBUSTION SYSTEMS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F77227/01'>GR/F77227/01</a> </b></td><td align="left">INVESTIGATION OF MULTI-POINT LASER DOPPLER ANEMOMETRY</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

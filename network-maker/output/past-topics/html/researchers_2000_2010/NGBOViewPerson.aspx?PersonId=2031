@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=2031" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRJQcm9mZXNzb3IgQk0gQnJvd25kZAIDDw8WAh8CBRJDYXJkaWZmIFVuaXZlcnNpdHlkZAIFDw8WAh8CBRBDb21wdXRlciBTY2llbmNlZGQCBw8PFgIfAgUNMDI5IDIwODcgNTUzOGRkAgkPDxYCHwIFDTAyOSAyMDg3IDQ1OThkZAINDw8WBB8CBVoxMDkwOTcxMDgwOTkxMTExMDgxMDkwNDYwOTgxMTQxMTExMTkxMTAwNjQwOTkxMTUwNDYwOTkwOTcxMTQxMDAxMDUxMDIxMDIwNDYwOTcwOTkwNDYxMTcxMDceCFJlYWRPbmx5ZxYMHgtvbm1vdXNlb3ZlcmUeB29uZm9jdXMFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx4Kb25tb3VzZW91dAVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HgZvbmJsdXIFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx8ABTxqYXZhc2NyaXB0OnNlbmR0byhkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpLnZhbHVlKTsfAQVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7ZAIPDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCAh4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAICZBYCZg9kFgQCAQ9kFgRmD2QWAgIBDw8WAh8CBQ9NZWRpY2FsIEltYWdpbmdkZAIBD2QWAgIBDw8WAh8CBR5Ob24tbGluZWFyIFN5c3RlbXMgTWF0aGVtYXRpY3NkZAICD2QWBGYPZBYCAgEPDxYCHwIFEk51bWVyaWNhbCBBbmFseXNpc2RkAgEPZBYCAgEPDxYCHwJlZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAgEfCgIBHwsCAWQWAmYPZBYCAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMjQwNzgvMSc+RVAvSzAyNDA3OC8xPC9hPiBkZAIBDw8WAh8CBTJJbnZlcnNlIFByb2JsZW1zIGZvciBNYWduZXRpYyBJbmR1Y3Rpb24gVG9tb2dyYXBoeWRkAgIPDxYCHwIFAyhQKWRkAgMPZBYCZg9kFgJmDzwrAAsBAA8WCB8IFgAfCQIaHwoCAR8LAhpkFgJmD2QWNAIBD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDI0Mjk5LzEnPkVQL0swMjQyOTkvMTwvYT4gZGQCAQ8PFgIfAgU2R3JlZ3lub2cgd29ya3Nob3Agb24gIFNocmlua2luZyBkb21haW5zIFJlbGF0ZWQgVG9waWNzZGQCAg8PFgIfAgUDKFApZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSTAzODIxNy8xJz5FUC9JMDM4MjE3LzE8L2E+IGRkAgEPDxYCHwIFJFJlc2VhcmNoIE5ldHdvcms6IEFuYWx5c2lzIG9uIEdyYXBoc2RkAgIPDxYCHwIFAyhQKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0gwMzIyNzQvMSc+RVAvSDAzMjI3NC8xPC9hPiBkZAIBDw8WAh8CBVdXb3Jrc2hvcCBvbiBBbmFseXRpYyBhbmQgQ29tcHV0YXRpb25hbCBUZWNobmlxdWVzIGluIFNwZWN0cmFsIFRoZW9yeSBhbmQgUmVsYXRlZCBUb3BpY3NkZAICDw8WAh8CBQMoUClkZAIED2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDY4NTQxLzEnPkVQL0QwNjg1NDEvMTwvYT4gZGQCAQ8PFgIfAgVqU2l4dGggR3JlZ3lub2cgd29ya3Nob3Agb24gICBBbmFseXRpYyBhbmQgQ29tcHV0YXRpb25hbCBUZWNobmlxdWVzICAgaW4gU3BlY3RyYWwgVGhlb3J5IGFuZCBSZWxhdGVkIFRvcGljc2RkAgIPDxYCHwIFAyhQKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0QwMzA5NlgvMSc+RVAvRDAzMDk2WC8xPC9hPiBkZAIBDw8WAh8CBT5JbnZlc3RpZ2F0aW9uIG9mIHNwZWN0cmFsIHByb3BlcnRpZXMgb2YgcS1kaWZmZXJlbmNlIG9wZXJhdG9yc2RkAgIPDxYCHwIFAyhQKWRkAgYPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0MwMDgzMjQvMSc+RVAvQzAwODMyNC8xPC9hPiBkZAIBDw8WAh8CBUFTcGVjdHJhbCBQcm9ibGVtcyBvbiBGYW1pbGllcyBvZiBEb21haW5zIGFuZCBPcGVyYXRvciBNLWZ1bmN0aW9uc2RkAgIPDxYCHwIFAyhDKWRkAgcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1M2MjQ5OS8wMSc+R1IvUzYyNDk5LzAxPC9hPiBkZAIBDw8WAh8CBU1HcmVneW5vZyBXb3Jrc2hvcCBvbiBjb21wdXRhdGlvbmFsICZhbXA7IGFuYWx5dGljIHByb2JsZW1zIGluIHNwZWN0cmFsIHRoZW9yeWRkAgIPDxYCHwIFAyhQKWRkAggPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1MxMjA1MC8wMSc+R1IvUzEyMDUwLzAxPC9hPiBkZAIBDw8WAh8CBUFBIENPTkZFUkVOQ0UgT04gVEhFIFRJVENITUFSU0ggV0VZTCBNIEZVTkNUSU9OIEFORCBSRUxBVEVEIFRPUElDU2RkAgIPDxYCHwIFAyhQKWRkAgkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1M0NzIyOS8wMSc+R1IvUzQ3MjI5LzAxPC9hPiBkZAIBDw8WAh8CBSpTcGVjdHJhbCB0aGVvcnkgb2YgQmxvY2sgb3BlcmF0b3IgbWF0cmljZXNkZAICDw8WAh8CBQMoUClkZAIKD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TNjI1NzQvMDEnPkdSL1M2MjU3NC8wMTwvYT4gZGQCAQ8PFgIfAgUhVHJhdmVsIEdyYW50IHRvIEF0dGVuZCBBIFdvcmtzaG9wZGQCAg8PFgIfAgUDKFApZGQCCw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTjE3MzYyLzAxJz5HUi9OMTczNjIvMDE8L2E+IGRkAgEPDxYCHwIFUkZPVVJUSCBHUkVHWU5PRyBXT1JLU0hPUCBPTiBDT01QVVRBVElPTkFMIEFORCBBTkFMWVRJQyBQUk9CTEVNUyBJTiBTUEVDVFJBTCBUSEVPUllkZAICDw8WAh8CBQMoUClkZAIMD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SNDY0MTAvMDEnPkdSL1I0NjQxMC8wMTwvYT4gZGQCAQ8PFgIfAgUyUmVzb25hbmNlcyBhbmQgdGhlIGludmVyc2UgU3R1cm0tTGlvdXZpbGxlIHByb2JsZW1kZAICDw8WAh8CBQMoUClkZAIND2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SMjA4ODUvMDEnPkdSL1IyMDg4NS8wMTwvYT4gZGQCAQ8PFgIfAgVSQSBNYXRoZW1hdGljYWxseSBSaWdvcm91cyBJbnZlc3RpZ2F0aW9uIG9mIE5vbi1TZWxmLUFkam9pbnQgRGlmZmVyZW50aWFsIEVxdWF0aW9uc2RkAgIPDxYCHwIFAyhQKWRkAg4PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1IzNzExMS8wMSc+R1IvUjM3MTExLzAxPC9hPiBkZAIBDw8WAh8CBSNSZXNlYXJjaCBOZXR3b3JrIGluIFNwZWN0cmFsIFRoZW9yeWRkAgIPDxYCHwIFAyhQKWRkAg8PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL04yMjQ1OC8wMSc+R1IvTjIyNDU4LzAxPC9hPiBkZAIBDw8WAh8CBSZJTlZFU0UgUFJPQkxFTVMgQU5EIExBTkRNSU5FIERFVEVDVElPTmRkAgIPDxYCHwIFAyhQKWRkAhAPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL005MzM0NS8wMSc+R1IvTTkzMzQ1LzAxPC9hPiBkZAIBDw8WAh8CBSlSRVNPTkFOQ0VTIE9GIFRIRSBTVFVSTSBMSU9VVklMTEUgUFJPQkxFTWRkAgIPDxYCHwIFAyhQKWRkAhEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0w0OTAzMS8wMSc+R1IvTDQ5MDMxLzAxPC9hPiBkZAIBDw8WAh8CBVZUSElSRCBHUkVHWU5PRyBXT1JLU0hPUCBPTiBDT01QVVRBVElPTkFMIEFORCBBTkFMWVRJQyBQUk9CTEVNUyBJTiBTUEVDVFJBTCBUSEVPUlkgMTk5OWRkAgIPDxYCHwIFAyhQKWRkAhIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL00yODA0MC8wMSc+R1IvTTI4MDQwLzAxPC9hPiBkZAIBDw8WAh8CBTFTVFVSTS1MSU9VVklMTEUtVFlQRSBQUk9CTEVNUyBGT1IgVEhFIFAtTEFQTEFDSUFOZGQCAg8PFgIfAgUDKFApZGQCEw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTTAxMDUwLzAxJz5HUi9NMDEwNTAvMDE8L2E+IGRkAgEPDxYCHwIFVEEgUVVBTElUQVRJVkUgQU5EIFFVQU5USVRBVElWRSBTVFVEWSBPRiBOT04tU0VMRi0gQURKT0lOSU5HIFNUVVJNLUxJT1VWSUxMRSBQUk9CTEVNU2RkAgIPDxYCHwIFAyhQKWRkAhQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0s4NDc0NS8wMSc+R1IvSzg0NzQ1LzAxPC9hPiBkZAIBDw8WAh8CBUpUSEUgRVNUQUJMSVNITUVOVCBPRiBBIENFTlRSRSBGT1IgQ09NUFVUQVRJT05BTCBTUEVDVFJBTCBUSEVPUlkgQVQgQ0FSRElGRmRkAgIPDxYCHwIFAyhDKWRkAhUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0s3MTQwMC8wMSc+R1IvSzcxNDAwLzAxPC9hPiBkZAIBDw8WAh8CBUBXT1JLU0hPUCBPTiBDT01QVVRBVElPTiBBTkQgQU5BTFlUSUMgUFJPQkxFTVMgSU4gU1BFQ1RSQUwgVEhFT1JZZGQCAg8PFgIfAgUDKFApZGQCFg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzM4ODIzLzAxJz5HUi9LMzg4MjMvMDE8L2E+IGRkAgEPDxYCHwIFQkNPTVBVVEFUSU9OIE9GIFBST1ZBQkxFIEJPVU5EUyBGT1IgVEhFIFRJVENITUFSU0ggV0VZIDEgTS1GVU5DVElPTmRkAgIPDxYCHwIFAyhQKWRkAhcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0o2MTQ0Mi8wMSc+R1IvSjYxNDQyLzAxPC9hPiBkZAIBDw8WAh8CBVFBTkFMWVRJQ0FMIEFORCBDT01QVVRBVElPTkFMTUVUSE9EUyBJTiBUSEUgU1BFQ1RSQUwgVEhFT1JZIE9GIEhBTUlMVE9OSUFOIFNZU1RFTVNkZAICDw8WAh8CBQMoQylkZAIYD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9KNTQ2MDQvMDEnPkdSL0o1NDYwNC8wMTwvYT4gZGQCAQ8PFgIfAgVIQU5BTFlUSUMgQU5EIENPTVBVVEFUSU9OQUwgUFJPQkxFTVMgQVNTT0NJQVRFRCBXSVRIIERJRkZFUkVOQ0UgRVFVQVRJT05TZGQCAg8PFgIfAgUDKFApZGQCGQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSDU2NjE4LzAxJz5HUi9INTY2MTgvMDE8L2E+IGRkAgEPDxYCHwIFSldPUktTSE9QIE9OIENPTVBVVEFUSU9OQUwgVEVDSE5JUVVFUyBJTiBTUEVDVFJBTCBUSEVPUlkgQU5EIFJFTEFURUQgVE9QSUNTZGQCAg8PFgIfAgUDKEMpZGQCGg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRzA2MzY3LzAxJz5HUi9HMDYzNjcvMDE8L2E+IGRkAgEPDxYCHwIFblRIRU9SRVRJQ0FMICZhbXA7IE5VTUVSSUNBTCBTVFVEWSBPRiBTUEVDVFJBTCBQUk9CTEVNUyBBU1NPQ0lBVEVEIFdJVEggRElGRkVSRU5USUFMICZhbXA7IERJRkZFUkVOQ0UgT1BFUkFUT1JTZGQCAg8PFgIfAgUDKEMpZGQCEw9kFgRmD2QWAmYPZBYCAgEPDxYCHgdWaXNpYmxlZ2RkAgIPZBYCZg9kFgICAQ8PFgYeClJlcG9ydE5hbWUFClZpZXdQZXJzb24eDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzCFBlcnNvbklEHg5QYXJhbWV0ZXJWYWx1ZRUCOGh0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0yMDMxBDIwMzFkFgJmD2QWAmYPZBYEAgMPEGRkFgFmZAIFDw9kFgIfAWVkAgcPDxYCHwxoZGRkAS005zLU2/iwsZF9zo0V/40+lr8=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKAu/q7AwLQvN++DAKT/OCVAwLKoMrZD8DTv6zgni6Gbz5GUxHZ3BImXq3D" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor BM Brown</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">Cardiff University</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">029 2087 5538</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">029 2087 4598</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="109097108099111108109046098114111119110064099115046099097114100105102102046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Medical Imaging</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Non-linear Systems Mathematics</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Numerical Analysis</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2"></span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K024078/1'>EP/K024078/1</a> </b></td><td align="left">Inverse Problems for Magnetic Induction Tomography</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K024299/1'>EP/K024299/1</a> </b></td><td align="left">Gregynog workshop on  Shrinking domains Related Topics</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I038217/1'>EP/I038217/1</a> </b></td><td align="left">Research Network: Analysis on Graphs</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H032274/1'>EP/H032274/1</a> </b></td><td align="left">Workshop on Analytic and Computational Techniques in Spectral Theory and Related Topics</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D068541/1'>EP/D068541/1</a> </b></td><td align="left">Sixth Gregynog workshop on   Analytic and Computational Techniques   in Spectral Theory and Related Topics</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D03096X/1'>EP/D03096X/1</a> </b></td><td align="left">Investigation of spectral properties of q-difference operators</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C008324/1'>EP/C008324/1</a> </b></td><td align="left">Spectral Problems on Families of Domains and Operator M-functions</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S62499/01'>GR/S62499/01</a> </b></td><td align="left">Gregynog Workshop on computational &amp; analytic problems in spectral theory</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S12050/01'>GR/S12050/01</a> </b></td><td align="left">A CONFERENCE ON THE TITCHMARSH WEYL M FUNCTION AND RELATED TOPICS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S47229/01'>GR/S47229/01</a> </b></td><td align="left">Spectral theory of Block operator matrices</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S62574/01'>GR/S62574/01</a> </b></td><td align="left">Travel Grant to Attend A Workshop</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N17362/01'>GR/N17362/01</a> </b></td><td align="left">FOURTH GREGYNOG WORKSHOP ON COMPUTATIONAL AND ANALYTIC PROBLEMS IN SPECTRAL THEORY</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R46410/01'>GR/R46410/01</a> </b></td><td align="left">Resonances and the inverse Sturm-Liouville problem</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R20885/01'>GR/R20885/01</a> </b></td><td align="left">A Mathematically Rigorous Investigation of Non-Self-Adjoint Differential Equations</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R37111/01'>GR/R37111/01</a> </b></td><td align="left">Research Network in Spectral Theory</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N22458/01'>GR/N22458/01</a> </b></td><td align="left">INVESE PROBLEMS AND LANDMINE DETECTION</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M93345/01'>GR/M93345/01</a> </b></td><td align="left">RESONANCES OF THE STURM LIOUVILLE PROBLEM</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L49031/01'>GR/L49031/01</a> </b></td><td align="left">THIRD GREGYNOG WORKSHOP ON COMPUTATIONAL AND ANALYTIC PROBLEMS IN SPECTRAL THEORY 1999</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M28040/01'>GR/M28040/01</a> </b></td><td align="left">STURM-LIOUVILLE-TYPE PROBLEMS FOR THE P-LAPLACIAN</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M01050/01'>GR/M01050/01</a> </b></td><td align="left">A QUALITATIVE AND QUANTITATIVE STUDY OF NON-SELF- ADJOINING STURM-LIOUVILLE PROBLEMS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K84745/01'>GR/K84745/01</a> </b></td><td align="left">THE ESTABLISHMENT OF A CENTRE FOR COMPUTATIONAL SPECTRAL THEORY AT CARDIFF</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K71400/01'>GR/K71400/01</a> </b></td><td align="left">WORKSHOP ON COMPUTATION AND ANALYTIC PROBLEMS IN SPECTRAL THEORY</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K38823/01'>GR/K38823/01</a> </b></td><td align="left">COMPUTATION OF PROVABLE BOUNDS FOR THE TITCHMARSH WEY 1 M-FUNCTION</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J61442/01'>GR/J61442/01</a> </b></td><td align="left">ANALYTICAL AND COMPUTATIONALMETHODS IN THE SPECTRAL THEORY OF HAMILTONIAN SYSTEMS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J54604/01'>GR/J54604/01</a> </b></td><td align="left">ANALYTIC AND COMPUTATIONAL PROBLEMS ASSOCIATED WITH DIFFERENCE EQUATIONS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H56618/01'>GR/H56618/01</a> </b></td><td align="left">WORKSHOP ON COMPUTATIONAL TECHNIQUES IN SPECTRAL THEORY AND RELATED TOPICS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G06367/01'>GR/G06367/01</a> </b></td><td align="left">THEORETICAL &amp; NUMERICAL STUDY OF SPECTRAL PROBLEMS ASSOCIATED WITH DIFFERENTIAL &amp; DIFFERENCE OPERATORS</td><td align="left" width="5%">(C)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

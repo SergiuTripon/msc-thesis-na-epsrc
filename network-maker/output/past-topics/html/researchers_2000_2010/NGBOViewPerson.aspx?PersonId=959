@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=959" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRNQcm9mZXNzb3IgUCBCYXJyZXR0ZGQCAw8PFgIfAgUVVW5pdmVyc2l0eSBvZiBTYWxmb3JkZGQCBQ8PFgIfAgUcU2NoIG9mIHRoZSBCdWlsdCBFbnZpcm9ubWVudGRkAgcPDxYCHwIFDDAxNjEgMjk1NTU4OGRkAgkPDxYCHwJlZGQCDQ8PFgQfAgVLMTEyMDQ2MTE1MDQ2MDk4MDk3MTE0MTE0MTAxMTE2MTE2MDY0MTE1MDk3MTA4MTAyMTExMTE0MTAwMDQ2MDk3MDk5MDQ2MTE3MTA3HghSZWFkT25seWcWDB4Lb25tb3VzZW92ZXJlHgdvbmZvY3VzBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzseCm9ubW91c2VvdXQFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx4Gb25ibHVyBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzsfAAU8amF2YXNjcmlwdDpzZW5kdG8oZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKS52YWx1ZSk7HwEFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnO2QCDw88KwALAGQCEQ9kFgQCAQ9kFgJmD2QWBGYPPCsACwEADxYCHgdWaXNpYmxlaGRkAgEPDxYCHwhnZGQCAw9kFgJmD2QWAmYPPCsACwEADxYIHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudAIUHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AhRkFgJmD2QWKAIBD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9KMDE1NzA5LzEnPkVQL0owMTU3MDkvMTwvYT4gZGQCAQ8PFgIfAgVISG9saXN0aWMgRXZpZGVuY2UgYW5kIERlc2lnbjogU2Vuc29yeSBJbXBhY3RzLCBQcmFjdGljYWwgT3V0Y29tZXMgKEhFQUQpZGQCAg8PFgIfAgUDKFApZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSDAwMzczOC8xJz5FUC9IMDAzNzM4LzE8L2E+IGRkAgEPDxYCHwIFO0ZyYW1ld29yayBmb3IgUmVzZWFyY2ggYW5kIElubm92YXRpb24gaW4gTWVkaWFDaXR5VUsgKEZJUk0pZGQCAg8PFgIfAgUDKFApZGQCAw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAwMTg4Mi8xJz5FUC9FMDAxODgyLzE8L2E+IGRkAgEPDxYCHwIFFFNhbGZvcmQgSU1SQyBSZW5ld2FsZGQCAg8PFgIfAgUDKEMpZGQCBA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvVDIxODIwLzAxJz5HUi9UMjE4MjAvMDE8L2E+IGRkAgEPDxYCHwIFTFN1c3RhaW5lZCBDb21wZXRpdGl2ZW5lc3MgaW4gdGhlIFVLIENvbnN0cnVjdGlvbiBTZWN0b3I6IGEgRnJlc2ggUGVyc3BlY3RpdmVkZAICDw8WAh8CBQMoQylkZAIFD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TODI5MTYvMDEnPkdSL1M4MjkxNi8wMTwvYT4gZGQCAQ8PFgIfAgWIAUEgU3RhciBSZWNydWl0IHByb3Bvc2FsIHRvIGRldmVsb3AgYSB3b3JsZC1jbGFzcyBib2R5IG9mIHRoZW9yeS1iYXNlZCBsZWFuIHByb2plY3QgYW5kIHByb2R1Y3Rpb24gbWFuYWdlbWVudCBmb3IgdGhlIFNhbGZvcmQgSU1SQyAoU0NSSSlkZAICDw8WAh8CBQMoQylkZAIGD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SNjQ1NzUvMDEnPkdSL1I2NDU3NS8wMTwvYT4gZGQCAQ8PFgIfAgUwc2FsZm9yZCBpbm5vdmF0aXZlIG1hbnVmYWN0dXJpbmcgcmVzZWFyY2ggY2VudHJlZGQCAg8PFgIfAgUDKEMpZGQCBw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUjgwNTIwLzAxJz5HUi9SODA1MjAvMDE8L2E+IGRkAgEPDxYCHwIFcUJyaWRnaW5nIEZ1bmQgZm9yIGEgc2VuaW9yIHJlc2VhcmNoZXIgd2hvIHdpbGwgYmUgd29ya2luZyBpbiB0aGUgU2FsZm9yZCBJbm5vdmF0aXZlIE1hbnVmYWN0dXJpbmcgUmVzZWFyY2ggQ2VudHJlZGQCAg8PFgIfAgUDKEMpZGQCCA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUjI4NTA4LzAxJz5HUi9SMjg1MDgvMDE8L2E+IGRkAgEPDxYCHwIFgwFQbGF0Zm9ybTogRnJvbSAzRCBUbyBOZCBNb2RlbGxpbmcgSW4gU3VwcG9ydCBvZiBBbiBJbnRlZ3JhdGVkIEJ1aWxkYWJsZSwgU3VzdGFpbmFibGUsIE1haW50YWluYWJsZSBhbmQgQWNjZXNzaWJsZSBCdWlsdCBFbnZpcm9ubWVudGRkAgIPDxYCHwIFAyhDKWRkAgkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL004MzQ0NS8wMSc+R1IvTTgzNDQ1LzAxPC9hPiBkZAIBDw8WAh8CBVZERVZFTE9QSU5HIEFORCBJTlRFR1JBVEVEIERBVEFCQVNFIEZPUiBXSE9MRSBMSUZFIENPU1RJTkcgQVBQTElDQVRJT05TIElOIENPTlNUUlVDVElPTmRkAgIPDxYCHwIFAyhDKWRkAgoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL04wMjE5MS8wMSc+R1IvTjAyMTkxLzAxPC9hPiBkZAIBDw8WAh8CBS1NT1JFIFBST0RVQ1RJVkUgTUlOT1IgQ09OU1RSVUNUSU9OIFRIUk9VR0ggSVRkZAICDw8WAh8CBQMoUClkZAILD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NODA0MTMvMDEnPkdSL004MDQxMy8wMTwvYT4gZGQCAQ8PFgIfAgVsTVRQOTk6IFRSQUlOSU5HIEZPUiBQRVJGT1JNQU5DRSBJTVBST1ZFTUVOVCBJTiBDT05TVFJVQ1RJT04uIElNUFJPVklORyBDT05TVFJVQ1RJT04gUVVBTElUWSBBTkQgUFJPRFVDVElWSVRZZGQCAg8PFgIfAgUDKEMpZGQCDA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTTg2MTI1LzAxJz5HUi9NODYxMjUvMDE8L2E+IGRkAgEPDxYCHwIFWFNUQU5EQVJESVNBVElPTiBQUk9DRVNTIElNUFJPVkVNRU5UIEZPUiBDT05TVFJVQ1RJT04gRU5URVJQUklTRVMgLSBGQUNJTElUSUVTIE1BTkFHRU1FTlRkZAICDw8WAh8CBQMoQylkZAIND2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNDIxMDcvMDEnPkdSL000MjEwNy8wMTwvYT4gZGQCAQ8PFgIfAgUmSU5OT1ZBVElPTiBJTiBTTUFMTCBDT05TVFJVQ1RJT04gRklSTVNkZAICDw8WAh8CBQMoUClkZAIOD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNjkxOTcvMDEnPkdSL002OTE5Ny8wMTwvYT4gZGQCAQ8PFgIfAgVfQlJJREdJTkcgVEhFIEdBUCBCRVRXRUVOIFRIRU9SWSAmYW1wOyBJTVBMRU1FTlRBVElPTiBJTiBBQ0NFU1NJQkxJVFkgLSBBIEJFU1QgUFJBQ1RJQ0UgQVBQUk9BQ0hkZAICDw8WAh8CBQMoQylkZAIPD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMzU5MDEvMDEnPkdSL00zNTkwMS8wMTwvYT4gZGQCAQ8PFgIfAgUqSVQgVE9PTFMgQU5EIFNVUFBPUlQgRk9SIElNUFJPVkVEIEJSSUVGSU5HZGQCAg8PFgIfAgUDKFApZGQCEA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTTA1MjcwLzAxJz5HUi9NMDUyNzAvMDE8L2E+IGRkAgEPDxYCHwIFVUEgRkVBU0lCSUxJVFkgU1RVRFkgSU5UTyBDUkVBVElORyBBQ0NFU1NJQkxFIEVOVklST05NRU5UUyBXSVRISU4gVEhFIEJSSUVGSU5HIFBST0NFU1NkZAICDw8WAh8CBQMoUClkZAIRD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LNTcwNjAvMDEnPkdSL0s1NzA2MC8wMTwvYT4gZGQCAQ8PFgIfAgUtTUFOQUdJTkcgVEhFIEJSSUVGIEFTIEEgUFJPQ0VTUyBPRiBJTk5PVkFUSU9OZGQCAg8PFgIfAgUDKFApZGQCEg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzYxMDQzLzAxJz5HUi9LNjEwNDMvMDE8L2E+IGRkAgEPDxYCHwIFIUJSSURHSU5HIEdSQU5UOiBDQVRIRVJJTkUgU1RBTkxFWWRkAgIPDxYCHwIFAyhQKWRkAhMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0g4MzkwNC8wMSc+R1IvSDgzOTA0LzAxPC9hPiBkZAIBDw8WAh8CBS9GQUNJTElUSUVTIE1BTkFHRU1FTlQ7IFRIRSBHT09EIFBSQUNUSUNFIFJFUE9SVGRkAgIPDxYCHwIFAyhQKWRkAhQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0c1OTU2MS8wMSc+R1IvRzU5NTYxLzAxPC9hPiBkZAIBDw8WAh8CBTZNQUtJTkcgUUEgV09SSyBJTiBUSEUgQ09OU1RSVUNUSU9OIFJFTEFURUQgUFJPRkVTU0lPTlNkZAICDw8WAh8CBQMoUClkZAITD2QWBGYPZBYCZg9kFgICAQ8PFgIfCGdkZAICD2QWAmYPZBYCAgEPDxYGHgpSZXBvcnROYW1lBQpWaWV3UGVyc29uHg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcwhQZXJzb25JRB4OUGFyYW1ldGVyVmFsdWUVAjdodHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9OTU5Azk1OWQWAmYPZBYCZg9kFgQCAw8QZGQWAWZkAgUPD2QWAh8BZWQCBw8PFgIfCGhkZGQxe3mlqXWCVgMSNKAGVRDMYiGj7A==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKXuqPMDgLQvN++DAKT/OCVAwLKoMrZD0+Vj18uZ+9cCneK9FWvzTeRHTeu" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor P Barrett</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">University of Salford</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Sch of the Built Environment</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">0161 2955588</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt"></span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="112046115046098097114114101116116064115097108102111114100046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><span id="lblNoCurrentSupport">There is no current EPSRC Support</span></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J015709/1'>EP/J015709/1</a> </b></td><td align="left">Holistic Evidence and Design: Sensory Impacts, Practical Outcomes (HEAD)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H003738/1'>EP/H003738/1</a> </b></td><td align="left">Framework for Research and Innovation in MediaCityUK (FIRM)</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E001882/1'>EP/E001882/1</a> </b></td><td align="left">Salford IMRC Renewal</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/T21820/01'>GR/T21820/01</a> </b></td><td align="left">Sustained Competitiveness in the UK Construction Sector: a Fresh Perspective</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S82916/01'>GR/S82916/01</a> </b></td><td align="left">A Star Recruit proposal to develop a world-class body of theory-based lean project and production management for the Salford IMRC (SCRI)</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R64575/01'>GR/R64575/01</a> </b></td><td align="left">salford innovative manufacturing research centre</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R80520/01'>GR/R80520/01</a> </b></td><td align="left">Bridging Fund for a senior researcher who will be working in the Salford Innovative Manufacturing Research Centre</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R28508/01'>GR/R28508/01</a> </b></td><td align="left">Platform: From 3D To Nd Modelling In Support of An Integrated Buildable, Sustainable, Maintainable and Accessible Built Environment</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M83445/01'>GR/M83445/01</a> </b></td><td align="left">DEVELOPING AND INTEGRATED DATABASE FOR WHOLE LIFE COSTING APPLICATIONS IN CONSTRUCTION</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N02191/01'>GR/N02191/01</a> </b></td><td align="left">MORE PRODUCTIVE MINOR CONSTRUCTION THROUGH IT</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M80413/01'>GR/M80413/01</a> </b></td><td align="left">MTP99: TRAINING FOR PERFORMANCE IMPROVEMENT IN CONSTRUCTION. IMPROVING CONSTRUCTION QUALITY AND PRODUCTIVITY</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M86125/01'>GR/M86125/01</a> </b></td><td align="left">STANDARDISATION PROCESS IMPROVEMENT FOR CONSTRUCTION ENTERPRISES - FACILITIES MANAGEMENT</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M42107/01'>GR/M42107/01</a> </b></td><td align="left">INNOVATION IN SMALL CONSTRUCTION FIRMS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M69197/01'>GR/M69197/01</a> </b></td><td align="left">BRIDGING THE GAP BETWEEN THEORY &amp; IMPLEMENTATION IN ACCESSIBLITY - A BEST PRACTICE APPROACH</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M35901/01'>GR/M35901/01</a> </b></td><td align="left">IT TOOLS AND SUPPORT FOR IMPROVED BRIEFING</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M05270/01'>GR/M05270/01</a> </b></td><td align="left">A FEASIBILITY STUDY INTO CREATING ACCESSIBLE ENVIRONMENTS WITHIN THE BRIEFING PROCESS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K57060/01'>GR/K57060/01</a> </b></td><td align="left">MANAGING THE BRIEF AS A PROCESS OF INNOVATION</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K61043/01'>GR/K61043/01</a> </b></td><td align="left">BRIDGING GRANT: CATHERINE STANLEY</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H83904/01'>GR/H83904/01</a> </b></td><td align="left">FACILITIES MANAGEMENT; THE GOOD PRACTICE REPORT</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G59561/01'>GR/G59561/01</a> </b></td><td align="left">MAKING QA WORK IN THE CONSTRUCTION RELATED PROFESSIONS</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

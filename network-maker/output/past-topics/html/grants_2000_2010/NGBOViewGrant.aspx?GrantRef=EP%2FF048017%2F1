@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Numerical investigation of aerofoil noise
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF048017%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjA0ODAxNy8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU6PHN0cm9uZz5OdW1lcmljYWwgaW52ZXN0aWdhdGlvbiBvZiBhZXJvZm9pbCBub2lzZTwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFSTxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTE2MzcxMCc+U2FuZGJlcmcsIFByb2Zlc3NvciBSRDwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSxGYWN1bHR5IG9mIEVuZ2luZWVyaW5nICZhbXA7IHRoZSBFbnZpcm9ubWVudGRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFGVVuaXZlcnNpdHkgb2YgU291dGhhbXB0b25kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRJGaXJzdCBHcmFudCBTY2hlbWVkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ0xNSBBcHJpbCAyMDA4ZGQCAw9kFgICAQ8PFgIfBAUNMTQgQXByaWwgMjAxMGRkAgUPZBYCAgEPDxYEHwQFBzE3Myw4MTgeB1Rvb2xUaXAFCjE3Myw4MTcuNzFkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAICFgQCAQ9kFgJmDxUCCUFjb3VzdGljcw5GbHVpZCBEeW5hbWljc2QCAg9kFgJmDxUCGkhpZ2ggUGVyZm9ybWFuY2UgQ29tcHV0aW5nAGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIdQWVyb3NwYWNlLCBEZWZlbmNlIGFuZCBNYXJpbmUAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDcgRmViIDIwMDhkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFIEVuZ2luZWVyaW5nIFNjaWVuY2UgKEZsb3cpIFBhbmVsHwMFG1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9NDU4M2RkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBaoQV2l0aCB0aGUgc3VzdGFpbmVkIGluY3JlYXNlIGluIGFpciB0cmF2ZWwsIG5vaXNlIGZyb20gYWVyb3BsYW5lcyByZW1haW5zIGEgc2lnbmlmaWNhbnQgZW52aXJvbm1lbnRhbCBwcm9ibGVtLiAgRHVlIHRvIHRoZSBjb25zaWRlcmFibGUgcmVkdWN0aW9uIGluIGpldCBub2lzZSB0aGF0IGhhcyBiZWVuIGFjaGlldmVkIGJ5IGRlc2lnbmluZyB0dXJib2ZhbiBqZXQgZW5naW5lcyB3aXRoIGluY3JlYXNpbmdseSBsYXJnZSBieXBhc3MgcmF0aW9zLCBmb3IgbW9kZXJuIGFpcmNyYWZ0IGluIGFwcHJvYWNoLCBmYW4gbm9pc2UgYW5kIGFpcmZyYW1lIG5vaXNlIGFyZSBhbW9uZyB0aGUgbW9zdCBpbXBvcnRhbnQgY29udHJpYnV0b3JzIHRvIHRoZSBwZXJjZWl2ZWQgc291bmQgb24gdGhlIGdyb3VuZC4gIEF0IHRoZSBzYW1lIHRpbWUsIGFlcm9mb2lsIG5vaXNlIGZyb20gb25zaG9yZSB3aW5kIHR1cmJpbmVzIGNvbnNpZGVyYWJseSBsaW1pdHMgdGhlaXIgcHVibGljIGFjY2VwdGFuY2UgZGVzcGl0ZSB0aGUgZWNvbm9taWNhbCBhbmQgcG9saXRpY2FsIG5lZWQgZm9yIHJlbmV3YWJsZSBlbmVyZ3kgcHJvZHVjdGlvbi4gIFRoZXJlZm9yZSwgYSBkZXRhaWxlZCB1bmRlcnN0YW5kaW5nIG9mIHRoZSBwaHlzaWNhbCBtZWNoYW5pc21zIHJlc3BvbnNpYmxlIGZvciBhZXJvZm9pbCBub2lzZSBhbmQgYWNjdXJhdGUgcHJlZGljdGlvbiBtZXRob2RzIHdvdWxkIGJlIGhpZ2hseSBiZW5lZmljaWFsIGZvciBhIHdpZGUgcmFuZ2Ugb2YgYXBwbGljYXRpb25zLiBBIGxhcmdlIHBlcmNlbnRhZ2Ugb2YgdGhlIG92ZXJhbGwgYWVyb2ZvaWwgbm9pc2UgY2FuIGJlIGF0dHJpYnV0ZWQgdG8gYWVyb2ZvaWwgc2VsZi1ub2lzZSwgaS5lLiBub2lzZSBwcm9kdWNlZCBieSB0aGUgaW50ZXJhY3Rpb24gYmV0d2VlbiB0aGUgYWVyb2ZvaWwgd2l0aCBpdHMgb3duIGJvdW5kYXJ5IGxheWVycyBhbmQgd2FrZSwgd2l0aCB0cmFpbGluZyBlZGdlIG5vaXNlIGJlaW5nIHRoZSBkb21pbmFudCBub2lzZSBzb3VyY2UuICBGb3IgdGhhdCByZWFzb24sIG1vc3QgY3VycmVudGx5IHVzZWQgbm9pc2UgcHJlZGljdGlvbiBtb2RlbHMgY29uc2lkZXIgdHJhaWxpbmcgZWRnZSBub2lzZSBvbmx5LkEgcHJlbGltaW5hcnkgZnVuZGFtZW50YWwgc3R1ZHkgaGFzIHNob3duIHRoYXQgZm9yIGNhc2VzIHdoZXJlIHNlcGFyYXRpb24gZXZlbnRzIG9jY3VyIG9uIGFlcm9mb2lscywgdGhlIGN1cnJlbnQgbm9pc2UgcHJlZGljdGlvbiBtb2RlbHMgYXJlIG5vdCBhZGVxdWF0ZSBiZWNhdXNlIG5vaXNlIHNvdXJjZXMgb3RoZXIgdGhhbiB0cmFpbGluZyBlZGdlIG5vaXNlIGV4aXN0LiAgVGhlcmVmb3JlLCB0aGVyZSBjbGVhcmx5IGlzIGEgbmVlZCBmb3IgYSBkZXRhaWxlZCBpbnZlc3RpZ2F0aW9uIG9mIG5vaXNlIGdlbmVyYXRpb24gbWVjaGFuaXNtcyBvbiBhZXJvZm9pbHMgYXQgbW9kZXJhdGUgUmV5bm9sZHMgbnVtYmVyLiAgRm9yIHRoaXMgdHlwZSBvZiByZXNlYXJjaCwgaXQgaXMgcGFyYW1vdW50IHRvIHBlcmZvcm0gRGlyZWN0IE51bWVyaWNhbCBTaW11bGF0aW9ucyAoRE5TKSB0byBlbGltaW5hdGUgdGhlIGRpc2FkdmFudGFnZXMgZW5jb3VudGVyZWQgd2hlbiB1c2luZyBMYXJnZSBFZGR5IFNpbXVsYXRpb25zLCBzdWNoIGFzIHVuY2VydGFpbnRpZXMgd2l0aCBtb2RlbGxpbmcgc21hbGwgc2NhbGUgdHVyYnVsZW5jZSwgYW5kIHByb2JsZW1zIHdpdGggcHJlZGljdGluZyBsYW1pbmFyLXR1cmJ1bGVudCB0cmFuc2l0aW9uLiAgVW50aWwgcmVjZW50bHksIEROUyBvZiBmbG93IHNlcGFyYXRpb24gZXZlbnRzIHdlcmUgb25seSBwb3NzaWJsZSBmb3Igc2ltcGxpZmllZCBnZW9tZXRyaWVzLCBzdWNoIGFzIGZsYXQgcGxhdGVzLCBhbmQgY291bGQgbm90IGluY2x1ZGUgYSB0cmFpbGluZyBlZGdlIG9yIHRoZSBpbnRlcmFjdGlvbiBvZiB0aGUgc2VwYXJhdGlvbiB3aXRoIHRoZSBwb3RlbnRpYWwgZmxvdy4gIEhvd2V2ZXIsIHdpdGggdGhlIGN1cnJlbnQgYW5kIGZ1dHVyZSBnZW5lcmF0aW9ucyBvZiBzdXBlcmNvbXB1dGVycywgRE5TIGNhbiBub3cgYmUgcGVyZm9ybWVkIG9mIGVudGlyZSBhZXJvZm9pbCBjb25maWd1cmF0aW9ucy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnNvdG9uLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnNvdG9uLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjA0ODAxNy8xDEVQL0YwNDgwMTcvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkLJ6g9TFBaGkVIC2OHjD8U8JGlgg=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKG1JaNDQLQvN++DAKT/OCVAzZFvVY9/WNN3BE8Ebj98nuYllUT" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F048017/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Numerical investigation of aerofoil noise</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-163710'>Sandberg, Professor RD</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Faculty of Engineering &amp; the Environment</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Southampton</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">15 April 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">14 April 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="173,817.71" class="DetailValue">173,818</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Acoustics</td>
+                                    <td class="DetailValue"> Fluid Dynamics</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> High Performance Computing</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Aerospace, Defence and Marine</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>07 Feb 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4583">Engineering Science (Flow) Panel</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">With the sustained increase in air travel, noise from aeroplanes remains a significant environmental problem.  Due to the considerable reduction in jet noise that has been achieved by designing turbofan jet engines with increasingly large bypass ratios, for modern aircraft in approach, fan noise and airframe noise are among the most important contributors to the perceived sound on the ground.  At the same time, aerofoil noise from onshore wind turbines considerably limits their public acceptance despite the economical and political need for renewable energy production.  Therefore, a detailed understanding of the physical mechanisms responsible for aerofoil noise and accurate prediction methods would be highly beneficial for a wide range of applications. A large percentage of the overall aerofoil noise can be attributed to aerofoil self-noise, i.e. noise produced by the interaction between the aerofoil with its own boundary layers and wake, with trailing edge noise being the dominant noise source.  For that reason, most currently used noise prediction models consider trailing edge noise only.A preliminary fundamental study has shown that for cases where separation events occur on aerofoils, the current noise prediction models are not adequate because noise sources other than trailing edge noise exist.  Therefore, there clearly is a need for a detailed investigation of noise generation mechanisms on aerofoils at moderate Reynolds number.  For this type of research, it is paramount to perform Direct Numerical Simulations (DNS) to eliminate the disadvantages encountered when using Large Eddy Simulations, such as uncertainties with modelling small scale turbulence, and problems with predicting laminar-turbulent transition.  Until recently, DNS of flow separation events were only possible for simplified geometries, such as flat plates, and could not include a trailing edge or the interaction of the separation with the potential flow.  However, with the current and future generations of supercomputers, DNS can now be performed of entire aerofoil configurations.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.soton.ac.uk                                                                              '>http://www.soton.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

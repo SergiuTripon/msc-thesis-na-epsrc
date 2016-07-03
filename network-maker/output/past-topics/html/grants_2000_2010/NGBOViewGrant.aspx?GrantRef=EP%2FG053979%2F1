@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Output Feedback Control for Uncertain Variable Structure Systems with Resets
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG053979%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzA1Mzk3OS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVdPHN0cm9uZz5PdXRwdXQgRmVlZGJhY2sgQ29udHJvbCBmb3IgVW5jZXJ0YWluIFZhcmlhYmxlIFN0cnVjdHVyZSBTeXN0ZW1zIHdpdGggUmVzZXRzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xNDkzMSc+U3B1cmdlb24sIFByb2Zlc3NvciBTPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNHPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTExNzE0Jz5Qb3JrIEZhcm1zIEx0ZDwvYT4AAGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUlU2NoIG9mIEVuZ2luZWVyaW5nICZhbXA7IERpZ2l0YWwgQXJ0c2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFElVuaXZlcnNpdHkgb2YgS2VudGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAURMDEgU2VwdGVtYmVyIDIwMDlkZAIDD2QWAgIBDw8WAh8EBQ4zMSBBdWd1c3QgMjAxMmRkAgUPZBYCAgEPDxYEHwQFBzIwNCwyNDAeB1Rvb2xUaXAFCjIwNCwyNDAuMTBkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhNDb250cm9sIEVuZ2luZWVyaW5nAGQCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfBwIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA0IEZlYiAyMDA5ZGQCAQ8PFgIfCAUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBRlFbmdpbmVlcmluZyBTeXN0ZW1zIFBhbmVsHwMFG1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9NDc3MGRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBdAPRGlzY29udGludW91cyBzeXN0ZW1zIGFyZSBzdHVkaWVkIGluIHZlcnkgZGlmZmVyZW50IHJlc2VhcmNoIGZpZWxkcyBzdWNoIGFzIGVjb25vbWljcywgZWxlY3RyaWNhbCBjaXJjdWl0IHRoZW9yeSwgbWVjaGFuaWNhbCBlbmdpbmVlcmluZyAoaW1wYWN0IHRoZW9yeSwgcGxhc3RpY2l0eSB0aGVvcnkpLCBiaW9zY2llbmNlcywgc3lzdGVtcyBhbmQgY29udHJvbCB0aGVvcnkuIFN1Y2ggc3lzdGVtcyBhcmUgdHlwaWNhbGx5IHZpZXdlZCBhcyBhIHNpbXBsZSBtb2RlbCBvZiBoeWJyaWQgc3lzdGVtcywgY29uc2lzdGluZyBvZiBhIGZpbml0ZSBmYW1pbHkgb2Ygc3Vic3lzdGVtcywgZXF1aXBwZWQgd2l0aCBydWxlcyBkZXRlcm1pbmluZyBob3cgdG8gc3dpdGNoIGJldHdlZW4gdGhlbS4gVGhlIGxpdGVyYXR1cmUgb24gcm9idXN0IGNvbnRyb2wgb2YgY29tcGxleCBub25saW5lYXIgc3lzdGVtcyB3aXRoIHNldC12YWx1ZWQgZXF1aWxpYnJpdW0gc3VjaCBhcyBkaXNjb250aW51b3VzIHN5c3RlbXMgdXNpbmcgb3V0cHV0IGluZm9ybWF0aW9uIGlzIHZlcnkgc3BhcnNlLiBUaGlzIHByb2plY3Qgc2Vla3MgdG8gZXh0ZW5kIGEgZnJhbWV3b3JrIHRoYXQgaGFzIGJlZW4gZGV2ZWxvcGVkIGZvciBvdXRwdXQgZmVlZGJhY2sgY29udHJvbCBvZiBjb250aW51b3VzIHN5c3RlbXMgIHRvIHJvYnVzdCBjb250cm9sIG9mIGNvbXBsZXggZGlzY29udGludW91cyBzeXN0ZW1zIHVzaW5nIG9ubHkgbWVhc3VyZWQgb3V0cHV0IGluZm9ybWF0aW9uLiBUaGUgcHJhY3RpY2FsIG5lZWQgZm9yIHN1Y2ggYSBmcmFtZXdvcmsgaGFzIGJlZW4gZGVtb25zdHJhdGVkIGJ5IHJlY2VudCBhcHBsaWNhdGlvbnMgdG8gYmlwZWQgcm9ib3RzLCBmb3IgZXhhbXBsZSwgZnJvbSBDaGV2YWxsZXJlYXUgZXQgYWwuICgyMDAzKSBhbmQgV2VzdGVydmVsdCBldCBhbC4gKDIwMDcpIGFuZCAgaXMgYWxzbyBzdXBwb3J0ZWQgYnkgdGhlIG5lZWRzIG9mIGluZHVzdHJ5IHdoZXJlIHRpZ2h0ZXIgY29udHJvbHMgb24gZWZmaWNpZW5jeSBhcmUgcHJvZHVjaW5nIGluY3JlYXNpbmcgbGV2ZWxzIG9mIG1vbml0b3JpbmcuIEluY29ycG9yYXRpbmcgdGhpcyBpbmZvcm1hdGlvbiBpbiB0aGUgY29udHJvbCBsb29wIGlzIGEgbmF0dXJhbCBuZXh0IHN0ZXAgYW5kIGRpc2NvbnRpbnVvdXMgc3lzdGVtcyBvZnRlbiByZXN1bHQuIFRoZW9yZXRpY2FsIGRldmVsb3BtZW50cyB3aWxsIGJlIGZhY2lsaXRhdGVkIGJ5IGludGVyYWN0aW9uIGJldHdlZW4gdGhlIHByb3Bvc2VkIFZpc2l0aW5nIFJlc2VhcmNoZXIsIFByb2Zlc3NvciBPcmxvdiwgd2hvIGlzIGEgcmVjb2duaXNlZCBleHBlcnQgb24gc3RhYmlsaXR5IGFuYWx5c2lzIGFuZCByb2J1c3QgY29udHJvbCBzeW50aGVzaXMgb2YgdW5jZXJ0YWluIGRpc2NvbnRpbnVvdXMgc3lzdGVtcyB3aXRoaW4gdGhlIGZyYW1ld29yayBvZiBtZXRob2RzIG9mIG5vbnNtb290aCBMeWFwdW5vdiBmdW5jdGlvbnMgYW5kIHRoZSBQSSwgd2hvIGlzIHJlY29nbmlzZWQgZm9yIGhlciB3b3JrIG9uIHJvYnVzdCBzbGlkaW5nIG1vZGUgY29udHJvbCBhbmQgb2JzZXJ2YXRpb24uIFRoZSBhcHBsaWVkIHJlc2VhcmNoIHdpbGwgZm9jdXMgb24gdGhlIHByb2R1Y3Rpb24gb2Ygc2lnbmlmaWNhbnQgaW1wbGVtZW50YXRpb24gc3R1ZGllcyByZWxhdGluZyB0byBjb250cm9sIG9mIGltcGFjdCBtZWNoYW5pY2FsIHN5c3RlbXMgYW5kIHRoZSBjb250cm9sIG9mIGluZHVzdHJpYWwgcHJvZHVjdGlvbiBwcm9jZXNzZXMgdG8gZGVtb25zdHJhdGUgdGhlIGVmZmljYWN5IG9mIHRoZSB1bmRlcmx5aW5nIHBoaWxvc29waHkgYW5kIHRoZSBuZXcgZGVzaWduIGFsZ29yaXRobXMuIFRoZXNlIGFyZSBwZXJ0aW5lbnQgZGVzaWduIHN0dWRpZXMgdG8gaW5mb3JtIHRoZSBkZXZlbG9wbWVudCBvZiB0aGUgdGhlb3JldGljYWwgcmVzZWFyY2ggcHJvZ3JhbW1lIGFzIHdlbGwgYXMgYmVpbmcgdXNlZCB0byBpbGx1c3RyYXRlIHRoZSByZXNlYXJjaCBvdXRjb21lcy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmtlbnQuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmtlbnQuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzA1Mzk3OS8xDEVQL0cwNTM5NzkvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk1ALznEviaCpSqCXQLii85PPQFgA=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLC86u3DwLQvN++DAKT/OCVA8Vm6ZsRTu0WvdKeF9qKga3zmktK" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G053979/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Output Feedback Control for Uncertain Variable Structure Systems with Resets</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=14931'>Spurgeon, Professor S</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-11714'>Pork Farms Ltd</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering &amp; Digital Arts</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Kent</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 September 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="204,240.10" class="DetailValue">204,240</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Control Engineering</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>04 Feb 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4770">Engineering Systems Panel</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Discontinuous systems are studied in very different research fields such as economics, electrical circuit theory, mechanical engineering (impact theory, plasticity theory), biosciences, systems and control theory. Such systems are typically viewed as a simple model of hybrid systems, consisting of a finite family of subsystems, equipped with rules determining how to switch between them. The literature on robust control of complex nonlinear systems with set-valued equilibrium such as discontinuous systems using output information is very sparse. This project seeks to extend a framework that has been developed for output feedback control of continuous systems  to robust control of complex discontinuous systems using only measured output information. The practical need for such a framework has been demonstrated by recent applications to biped robots, for example, from Chevallereau et al. (2003) and Westervelt et al. (2007) and  is also supported by the needs of industry where tighter controls on efficiency are producing increasing levels of monitoring. Incorporating this information in the control loop is a natural next step and discontinuous systems often result. Theoretical developments will be facilitated by interaction between the proposed Visiting Researcher, Professor Orlov, who is a recognised expert on stability analysis and robust control synthesis of uncertain discontinuous systems within the framework of methods of nonsmooth Lyapunov functions and the PI, who is recognised for her work on robust sliding mode control and observation. The applied research will focus on the production of significant implementation studies relating to control of impact mechanical systems and the control of industrial production processes to demonstrate the efficacy of the underlying philosophy and the new design algorithms. These are pertinent design studies to inform the development of the theoretical research programme as well as being used to illustrate the research outcomes.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.kent.ac.uk                                                                               '>http://www.kent.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

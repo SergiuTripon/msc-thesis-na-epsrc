@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Markov Chain Algorithms for Sampling Stable Matchings, Tilings, and Euler Tours
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF020651%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAyMDY1MS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVgPHN0cm9uZz5NYXJrb3YgQ2hhaW4gQWxnb3JpdGhtcyBmb3IgU2FtcGxpbmcgU3RhYmxlIE1hdGNoaW5ncywgVGlsaW5ncywgYW5kIEV1bGVyIFRvdXJzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVAPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTcxNTE5Jz5NYXJ0aW4sIERyIFJBPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFEENvbXB1dGVyIFNjaWVuY2VkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdVbml2ZXJzaXR5IG9mIExpdmVycG9vbGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEkZpcnN0IEdyYW50IFNjaGVtZWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzAxIE9jdG9iZXIgMjAwOGRkAgMPZBYCAgEPDxYCHwQFEDMxIERlY2VtYmVyIDIwMTBkZAIFD2QWAgIBDw8WBB8EBQcxODMsMzEyHgdUb29sVGlwBQoxODMsMzEyLjM5ZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhlGdW5kYW1lbnRhbHMgb2YgQ29tcHV0aW5nIlN0YXRpc3RpY3MgJmFtcDsgQXBwbC4gUHJvYmFiaWxpdHlkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwgCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQsxOCBPY3QgMjAwN2RkAgEPZBYEAgEPDxYCHwJoZGQCAw8PFgIfBAUlSUNUIFByaW9yaXRpc2F0aW9uIFBhbmVsIChUZWNobm9sb2d5KWRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWKH091ciBwcm9wb3NlZCByZXNlYXJjaCBsaWVzIGluIHRoZSBhcmVhIG9mIHJhbmRvbWl6ZWQgYWxnb3JpdGhtcy4gIFRoZXNlIGFyZSBhbGdvcml0aG1zIHRoYXQgdXNlIHJhbmRvbSBiaXRzIHRvIG1ha2UgZGVjaXNpb25zIGR1cmluZyB0aGVpciBleGVjdXRpb24uICBUaGUgcHJvYmxlbXMgdGhhdCB3ZSBwcm9wb3NlIGV4YW1pbmluZyBhcmUgYXQgdGhlIGludGVyc2VjdGlvbiBvZiB0aGVvcmV0aWNhbCBjb21wdXRlciBzY2llbmNlIGFuZCBkaXNjcmV0ZSBtYXRoZW1hdGljcywgd2l0aCBzb21lIGNvbm5lY3Rpb25zIHRvIHN0YXRpc3RpY2FsIHBoeXNpY3MuTWFya292IGNoYWluIE1vbnRlIENhcmxvIChNQ01DKSBtZXRob2RzIGFyZSBhIHBhcnRpY3VsYXIgdHlwZSBvZiByYW5kb21pemVkIGFsZ29yaXRobXMsIGFuZCBjYW4gYmUgdXNlZCB0byBzYW1wbGUgZnJvbSwgYW5kIGNvdW50IHRoZSBudW1iZXIgb2YsIHNvbWUgY29tYmluYXRvcmlhbCBzdHJ1Y3R1cmVzLiAgT25lIHN1Y2ggY29tYmluYXRvcmlhbCBzdHJ1Y3R1cmUgdGhhdCB3ZSBwcm9wb3NlIGV4YW1pbmluZyBhcmUgc3RhYmxlIG1hdGNoaW5ncywgYW5kIGluIHBhcnRpY3VsYXIgbWF0Y2hpbmdzIHRoYXQgYXJpc2UgZnJvbSB0aGUgbWFycmlhZ2UgcHJvYmxlbSwgd2hpY2ggY2FuIGJlIHN0YXRlZCBhcyBmb2xsb3dzOiAgU3VwcG9zZSB0aGF0IHdlIGhhdmUgYSBzZXQgb2YgbiBtZW4gYW5kIG4gd29tZW4uICBXZSBhc3N1bWUgdGhhdCBlYWNoIG1hbiBoYXMgYSBzdHJpY3QgcHJlZmVyZW5jZSBvcmRlcmluZyBmb3IgdGhlIHdvbWVuLCBhbmQgc2ltaWxhcmx5IGVhY2ggd29tYW4gaGFzIG9uZSBmb3IgdGhlIG1lbi4gIEFzIG9uZSB3b3VsZCBleHBlY3QsIGEgIG1hcnJpYWdlICBpcyBhIHBhaXJpbmcgb2YgdGhlIG1lbiBhbmQgd29tZW4gc28gdGhhdCBlYWNoIGlzIHBhaXJlZCB3aXRoIGEgbWVtYmVyIG9mIHRoZSBvcHBvc2l0ZSBzZXguICBUaGUgbWFycmlhZ2UgaXMgc2FpZCB0byBiZSAgc3RhYmxlICAgaWYgdGhlcmUgZG9lcyBub3QgZXhpc3RzIGEgbWFuIE0gYW5kIGEgd29tYW4gVyB3aG8gcHJlZmVyIGVhY2ggb3RoZXIgb3ZlciB0aGVpciBjdXJyZW50IHBhcnRuZXJzIChpZiB0aGlzIHdlcmUgdGhlIGNhc2UsIHRoZW4gTSBhbmQgVyB3b3VsZCBkcm9wIHRoZWlyIGN1cnJlbnQgcGFydG5lcnMgZm9yIGVhY2ggb3RoZXIpLlRoZSBzdGFibGUgbWFycmlhZ2UgcHJvYmxlbSB3YXMgaW50cm9kdWNlZCBpbiAxOTYyIGJ5IERhdmlkIEdhbGUgYW5kIExsb3lkIFNoYXBsZXkuICBUaGV5IGRlbW9uc3RyYXRlZCB0aGF0IGFueSBzZXQgb2YgcHJlZmVyZW5jZSBsaXN0cyBmb3IgdGhlIG1lbiBhbmQgd29tZW4gYWRtaXRzIGF0IGxlYXN0IG9uZSBzdGFibGUgbWFycmlhZ2UgYW5kIGdhdmUgYW4gYWxnb3JpdGhtIGZvciBmaW5kaW5nIG9uZS4gIFRoZSBzdGFibGUgbWFycmlhZ2UgcHJvYmxlbSwgYW5kIHZhcmlhdGlvbnMgb2YgaXQsIGhhdmUgYmVlbiB0aGUgc3ViamVjdCBvZiBvdmVyIDEwMCBhY2FkZW1pYyBwYXBlcnMgYW5kIGF0IGxlYXN0IHRocmVlIGJvb2tzLiAgVGhlc2Ugc3RhYmxlIG1hdGNoaW5nIHByb2JsZW1zIGFyZSBpbXBvcnRhbnQgZm9yIHN0dWR5aW5nIGF1Y3Rpb25zLCAgcG9seWdhbW91cyAgdmVyc2lvbnMgYXJlIHVzZWQgdG8gYXNzaWduIG1lZGljYWwgcmVzaWRlbnRzIHRvIGhvc3BpdGFscyBhbmQgdW5pdmVyc2l0eSBzdHVkZW50cyB0byBwcm9qZWN0cyBwcm9wb3NlZCBieSAgbGVjdHVyZXJzLCBhbmQgdGhlcmUgaXMgYW4gYWxnb3JpdGhtIGZvciBmaW5kaW5nIGEgc3RhYmxlIHJvb21tYXRlIGFzc2lnbm1lbnQgKHdoaWNoIGlzIHNpbWlsYXIgdG8gdGhlIG1hcnJpYWdlIHByb2JsZW0sIGJ1dCBpbiB0aGlzIGNhc2UgYSBzdGFibGUgbWF0Y2hpbmcgbmVlZCBub3QgYWx3YXlzIGV4aXN0KS4gIE1hdGhlbWF0aWNpYW5zLCBjb21wdXRlciBzY2llbnRpc3RzLCBlY29ub21pc3RzLCBnYW1lIHRoZW9yaXN0cywgYW5kIGV2ZW4gcGh5c2ljaXN0cyBoYXZlIHN0dWRpZWQgdGhlc2Ugc3RhYmxlIG1hdGNoaW5nIHByb2JsZW1zLlRoZSBVSyBpcyBhbHJlYWR5IGEgd29ybGQgbGVhZGVyIGluIHJlc2VhcmNoIG9uIHN0YWJsZSBtYXRjaGluZyBhbGdvcml0aG1zLiAgV2Ugd2lzaCB0byBicmluZyB0b2dldGhlciBleHBlcnRzIGhlcmUgaW4gdGhlIFVLIHRvZ2V0aGVyIHdpdGggb3VyIGV4cGVydGlzZSBvbiBNQ01DIG1ldGhvZHMuICBUbyBkYXRlIGFsbW9zdCBubyByZXNlYXJjaCBoYXMgYmVlbiBwZXJmb3JtZWQgb24gdGhlIHByb2JsZW0gb2Ygc2FtcGxpbmcgYSByYW5kb20gc3RhYmxlIG1hdGNoaW5nIChmb3IgdGhlIG1hcnJpYWdlIHByb2JsZW0gb3IgaXRzIG1hbnkgdmFyaWF0aW9ucykgb3IgaW4gY291bnRpbmcgdGhlIG51bWJlciBvZiBtYXRjaGluZ3MgZm9yIGEgZ2l2ZW4gcGFpciBvZiBwcmVmZXJlbmNlIGxpc3RzLiAgUHJlbGltaW5hcnkgaW52ZXN0aWdhdGlvbnMgaGF2ZSBiZWVuIHBlcmZvcm1lZCBieSByZXNlYXJjaGVycyBpbiB0aGUgVVMsIGJ1dCB3ZSB3aXNoIHRvIGdyZWF0bHkgZXhwYW5kIHRoaXMgd29yayBhbmQgdW5pdGUgZXhwZXJ0cyBpbiB0aGUgY29tYmluYXRvcmlhbCBzdHJ1Y3R1cmUgb2Ygc3RhYmxlIG1hdGNoaW5ncyAoc3VjaCBhcyBEci4gUm9iIElydmluZyBhbmQgRHIuIERhdmlkIE1hbmxvdmUgYXQgdGhlIFVuaXZlcnNpdHkgb2YgR2xhc2dvdykgd2l0aCBvdXIgZXhwZXJ0aXNlIG9uIHJhbmRvbSBzYW1wbGluZyB1c2luZyBNQ01DIG1ldGhvZHMuICBFc3RhYmxpc2hpbmcgY29sbGFib3JhdGlvbiBiZXR3ZWVuIHRoZXNlIHBhcnRpZXMgb2YgZXhwZXJ0cyBpcyBvbmUgb2YgdGhlIHNpZ25pZmljYW50IGFzcGVjdHMgb2YgdGhlIHJlc2VhcmNoIHByb3Bvc2VkIGluIHRoaXMgZ3JhbnQuQW5vdGhlciBwcm9ibGVtIHdlIHByb3Bvc2Ugc3R1ZHlpbmcgaGFzIGxpbmtzIHdpdGggc3RhdGlzdGljYWwgcGh5c2ljcy4gIEFtb25nIG90aGVyIHRoaW5ncywgcGh5c2ljaXN0cyBzdHVkeSB0aGUgc3RydWN0dXJlIG9mIG1hdHRlciwgYW5kIHRpbGluZ3MgYXJlIHVzZWQgdG8gbW9kZWwgY3J5c3RhbHMsIHF1YXNpY3J5c3RhbHMsIGFuZCBvdGhlciAgbW9sZWN1bGFyIHN0cnVjdHVyZXMuICBSZXNlYXJjaCBoYXMgYmVlbiBwZXJmb3JtZWQgZm9yIGRvbWlubyB0aWxpbmdzIG9mIHJlZ2lvbnMgb2YgdGhlIHNxdWFyZSBsYXR0aWNlIGFuZCBsb3plbmdlIHRpbGluZ3Mgb2YgdGhlIGhleGFnb25hbCBsYXR0aWNlLiAgV2UgcHJvcG9zZSBleGFtaW5pbmcgdGhlIGNsYXNzIG9mIHJob21iaWMgdGlsaW5ncyBvZiBhIHJlZ3VsYXIgcG9seWdvbiAod2l0aCBhbiBldmVuIG51bWJlciBvZiBzaWRlcykuICBUaGVzZSB0aWxpbmdzIGhhdmUgY29ubmVjdGlvbnMgdG8gb3RoZXIgY29tYmluYXRvcmlhbCBzdHJ1Y3R1cmVzLCBidXQgb3V0c2lkZSBvZiB0aGUgY2FzZSBvZiBhIDYtc2lkZWQgZmlndXJlLCB0aGVyZSBoYXZlIG9ubHkgYmVlbiBudW1lcmljYWwgcmVzdWx0cyBnaXZlbi4gIFdlIHdpc2ggdG8gb2J0YWluIHJpZ29yb3VzIHRoZW9yZXRpY2FsIGJvdW5kcyBvbiB0aGUgbWl4aW5nIHRpbWUgb2YgTWFya292IGNoYWlucyBmb3Igc2FtcGxpbmcgdGhpcyB0eXBlcyBvZiB0aWxpbmdzLldlIGFsc28gcHJvcG9zZSBmaW5kaW5nIGJvdW5kcyBvbiB0aGUgbWl4aW5nIHRpbWUgZm9yIE1hcmtvdiBjaGFpbnMgdXNlZCB0byBzYW1wbGUgZXVsZXIgdG91cnMgaW4gZXVsZXJpYW4gZ3JhcGhzIHdpdGggYm91bmRlZCBkZWdyZWUuICBBIGdyYXBoIGlzIGV1bGVyaWFuIGlmIHRoZXJlIGlzIGEgY2xvc2VkIGNpcmN1aXQgdGhhdCB0cmF2ZXJzZXMgZWFjaCBlZGdlIGV4YWN0bHkgb25jZS4gIFRoZSBvbmx5IGtub3duIHB1Ymxpc2hlZCByZXN1bHRzIG9uIHRoaXMgcHJvYmxlbSBjb250YWluIGFuIGVycm9yLCBhbmQsIGhlbmNlLCB0aGUgcHJvYmxlbSBpcyBjb21wbGV0ZWx5IG9wZW4gYXQgdGhpcyB0aW1lLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cubGl2LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cubGl2LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDIwNjUxLzEMRVAvRjAyMDY1MS8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGTG+rKTjBXBRau/KiL/G/iEjxb5XA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLxsKfiAgLQvN++DAKT/OCVA7M7KBuC9exIg+BBxWelHv+hEPUM" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F020651/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Markov Chain Algorithms for Sampling Stable Matchings, Tilings, and Euler Tours</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-171519'>Martin, Dr RA</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Liverpool</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 December 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="183,312.39" class="DetailValue">183,312</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> Statistics &amp; Appl. Probability</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>18 Oct 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>ICT Prioritisation Panel (Technology)</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Our proposed research lies in the area of randomized algorithms.  These are algorithms that use random bits to make decisions during their execution.  The problems that we propose examining are at the intersection of theoretical computer science and discrete mathematics, with some connections to statistical physics.Markov chain Monte Carlo (MCMC) methods are a particular type of randomized algorithms, and can be used to sample from, and count the number of, some combinatorial structures.  One such combinatorial structure that we propose examining are stable matchings, and in particular matchings that arise from the marriage problem, which can be stated as follows:  Suppose that we have a set of n men and n women.  We assume that each man has a strict preference ordering for the women, and similarly each woman has one for the men.  As one would expect, a  marriage  is a pairing of the men and women so that each is paired with a member of the opposite sex.  The marriage is said to be  stable   if there does not exists a man M and a woman W who prefer each other over their current partners (if this were the case, then M and W would drop their current partners for each other).The stable marriage problem was introduced in 1962 by David Gale and Lloyd Shapley.  They demonstrated that any set of preference lists for the men and women admits at least one stable marriage and gave an algorithm for finding one.  The stable marriage problem, and variations of it, have been the subject of over 100 academic papers and at least three books.  These stable matching problems are important for studying auctions,  polygamous  versions are used to assign medical residents to hospitals and university students to projects proposed by  lecturers, and there is an algorithm for finding a stable roommate assignment (which is similar to the marriage problem, but in this case a stable matching need not always exist).  Mathematicians, computer scientists, economists, game theorists, and even physicists have studied these stable matching problems.The UK is already a world leader in research on stable matching algorithms.  We wish to bring together experts here in the UK together with our expertise on MCMC methods.  To date almost no research has been performed on the problem of sampling a random stable matching (for the marriage problem or its many variations) or in counting the number of matchings for a given pair of preference lists.  Preliminary investigations have been performed by researchers in the US, but we wish to greatly expand this work and unite experts in the combinatorial structure of stable matchings (such as Dr. Rob Irving and Dr. David Manlove at the University of Glasgow) with our expertise on random sampling using MCMC methods.  Establishing collaboration between these parties of experts is one of the significant aspects of the research proposed in this grant.Another problem we propose studying has links with statistical physics.  Among other things, physicists study the structure of matter, and tilings are used to model crystals, quasicrystals, and other  molecular structures.  Research has been performed for domino tilings of regions of the square lattice and lozenge tilings of the hexagonal lattice.  We propose examining the class of rhombic tilings of a regular polygon (with an even number of sides).  These tilings have connections to other combinatorial structures, but outside of the case of a 6-sided figure, there have only been numerical results given.  We wish to obtain rigorous theoretical bounds on the mixing time of Markov chains for sampling this types of tilings.We also propose finding bounds on the mixing time for Markov chains used to sample euler tours in eulerian graphs with bounded degree.  A graph is eulerian if there is a closed circuit that traverses each edge exactly once.  The only known published results on this problem contain an error, and, hence, the problem is completely open at this time.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.liv.ac.uk                                                                                '>http://www.liv.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

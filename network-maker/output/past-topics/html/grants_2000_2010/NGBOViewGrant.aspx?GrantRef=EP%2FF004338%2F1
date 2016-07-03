@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Response of Steel Beam-to-Column Connections to Dynamic Loading
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF004338%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAwNDMzOC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVQPHN0cm9uZz5SZXNwb25zZSBvZiBTdGVlbCBCZWFtLXRvLUNvbHVtbiBDb25uZWN0aW9ucyB0byBEeW5hbWljIExvYWRpbmc8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBTs8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTc3OTY1Jz5UeWFzLCBEciBBPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNGPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0zMDA3NCc+RGF2aXNvbiwgUHJvZmVzc29yIEpCPC9hPgAAZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSBDaXZpbCBhbmQgU3RydWN0dXJhbCBFbmdpbmVlcmluZ2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF1VuaXZlcnNpdHkgb2YgU2hlZmZpZWxkZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBKYW51YXJ5IDIwMDhkZAIDD2QWAgIBDw8WAh8EBQwzMCBKdW5lIDIwMTFkZAIFD2QWAgIBDw8WBB8EBQczNDQsNjAxHgdUb29sVGlwBQozNDQsNjAwLjY3ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIbQ2l2aWwgRW5naW5lZXJpbmcgTWF0ZXJpYWxzFlN0cnVjdHVyYWwgRW5naW5lZXJpbmdkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCDENvbnN0cnVjdGlvbgBkAgwPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUEQzxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDAyNTk5LzEnPkVQL0YwMDI1OTkvMTwvYT4AAABkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwcCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQsxNyBBcHIgMjAwN2RkAgEPZBYEAgEPDxYCHwJoZGQCAw8PFgIfBAUmRW5naW5lZXJpbmcgU2NpZW5jZSAoQ29tcG9uZW50cykgUGFuZWxkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFxhxUaGUgYWZ0ZXItZWZmZWN0cyBvZiB0aGUgZXZlbnRzIG9mIDExIFNlcHRlbWJlciAyMDAxIGFyZSBzdGlsbCByZXZlcmJlcmF0aW5nIGFyb3VuZCB0aGUgd29ybGQuIFRoZSBjb2xsYXBzZSBvZiBidWlsZGluZ3MgYXQgdGhlIFdvcmxkIFRyYWRlIENlbnRyZSAoV1RDKSBoYXMgdGhyb3duIHRoZSBmaWVsZCBvZiBzdHJ1Y3R1cmFsIGVuZ2luZWVyaW5nIGludG8gdGhlIHNwb3RsaWdodCBhbmQgcHJvZmVzc2lvbmFscyBhbmQgdGhlIHB1YmxpYyBhbGlrZSBoYXZlIGEgaGVpZ2h0ZW5lZCBhd2FyZW5lc3Mgb2YgdGhlIGRhbmdlcnMgcG9zZWQgYnkgdGhlIGNvbGxhcHNlIG9mIGJ1aWxkaW5ncy4gVGhlIHBvc3QtV1RDIGRlbGliZXJhdGlvbnMgaGF2ZSBoaWdobGlnaHRlZCBhbmQgYnJvdWdodCBpbnRvIHNoYXJwIGZvY3VzIGEgcHJldmlvdXNseSBsaW1pdGVkIGRlYmF0ZSBvbiB0aGUgc2hvcnRjb21pbmdzIGluIG91ciBrbm93bGVkZ2Ugb2YgdGhlIHJlc3BvbnNlIG9mIGZyYW1lZCBidWlsZGluZ3MgdG8gYWNjaWRlbnRhbCBvciBtYWxpY2lvdXMgZGFtYWdlLiAgRXZlbiBiZWZvcmUgdGhlIFNlcHRlbWJlciAxMSBhdHRhY2tzLCBhbiBBbWVyaWNhbiBnb3Zlcm5tZW50IHdvcmtpbmcgcGFydHkgIHN0YXRlZCB0aGF0ICBQcm9ncmVzc2l2ZSBzdHJ1Y3R1cmFsIGNvbGxhcHNlIGlzIGEgcHJpbWFyeSwgaWYgbm90IHRoZSBsZWFkaW5nLCBjYXVzZSBvZiBpbmp1cnkgYW5kIGRlYXRoIGluIGJ1aWxkaW5nIGZhaWx1cmVzLCByZWdhcmRsZXNzIG9mIHRoZSBzb3VyY2Ugb2YgbG9hZGluZy4uLkZvciB0aGlzIHJlYXNvbiwgcHJlZGljdGluZyBhbmQgZGVzaWduaW5nIHRvIHByZXZlbnQgcHJvZ3Jlc3NpdmUgY29sbGFwc2Ugb2YgYSBidWlsZGluZyB1bmRlciBhIHNwZWNpZmllZCBhdHRhY2sgc2NlbmFyaW8gaXMgKGFuZCBzaG91bGQgYmUpIGEgcHJpbWFyeSBvYmplY3RpdmUuLi4gIFRoZSBzYW1lIHJlcG9ydCBub3RlZCB0aGF0ICAuLi5ndWlkYW5jZSBvbiBidWlsZGluZyBjb2xsYXBzZSBhbmQgYnVpbGRpbmcgY29kZSByZXF1aXJlbWVudHMgd291bGQgYmUgdmFsdWFibGUuIFRoZSBwaGVub21lbm9uIG9mIHByb2dyZXNzaXZlIGNvbGxhcHNlIGlzIG5vdCB3ZWxsIHVuZGVyc3Rvb2QsIGRlc3BpdGUgdGhlIHdpZGVzcHJlYWQgcmVjb2duaXRpb24gdGhhdCBtb3N0IGJ1aWxkaW5nIGZhaWx1cmVzIGluY2x1ZGUgYnVpbGRpbmcgY29sbGFwc2UuIEFsdGhvdWdoIGJ1aWxkaW5nIGNvZGVzIGFkbW9uaXNoIGRlc2lnbmVycyB0byBlbnN1cmUgdGhhdCBjb2xsYXBzZSBkb2VzIG5vdCBvY2N1ciwgdGhleSBkbyBub3QgcHJvdmlkZSBndWlkYW5jZSBvbiBob3cgdGhpcyBjYW4gb3Igc2hvdWxkIGJlIGFjY29tcGxpc2hlZC4gIEFtb25nIHRoZWlyIHJlY29tbWVuZGF0aW9ucyBpcyAgVGhlIG5hdHVyZSBhbmQgbWVjaGFuaXNtIG9mIHByb2dyZXNzaXZlIGNvbGxhcHNlIGlzIGEgc3ViamVjdCB0aGF0IG1lcml0cyBmdXJ0aGVyIHN0dWR5IGJ5IHRoZSBhY2FkZW1pYyBjb21tdW5pdHkuIFRoaXMgdG9waWMsIHdoaWNoIGhhcyBub3QgYmVlbiBhZGRyZXNzZWQgYXQgYSBtZWFuaW5nZnVsIGxldmVsIGZvciBhbG1vc3QgYSBxdWFydGVyIG9mIGEgY2VudHVyeSwgY291bGQgaGF2ZSBiZW5lZml0cyBpbiBtaXRpZ2F0aW5nIHJpc2tzIGZyb20gbWFueSBoYXphcmRzLiBUaGUgc2l0dWF0aW9uIGluIHRoZSBVbml0ZWQgS2luZ2RvbSBpcyBzaW1pbGFyLiBBIHByZS1TZXB0ZW1iZXIgMTEgcmVwb3J0ICBhY2tub3dsZWRnZWQgdGhhdCwgd2hpbHN0IHRoZSByZXF1aXJlbWVudCBmb3Igc3RydWN0dXJlcyB0byBiZSByb2J1c3QgYWdhaW5zdCBhY2NpZGVudGFsIGRhbWFnZSBpcyBub3QgZGlzcHV0ZWQsIHRoZXJlIGlzIHByZXNlbnRseSBubyBlc3RhYmxpc2hlZCBiYXNpcyBmb3IgZGV0ZXJtaW5pbmcgaG93IG11Y2ggcmVkdW5kYW5jeSBpcyByZXF1aXJlZCBpbiBvcmRlciB0byBwcm92aWRlIGFuIGFjY2VwdGFibGUgbGV2ZWwgb2Ygc2FmZXR5IGluIHRoZSBldmVudCBvZiBkYW1hZ2UsIG9yIHRvIGVzdGltYXRlIGhvdyB0aGUgZm9yY2VzIGluIGEgZGFtYWdlZCBzdHJ1Y3R1cmUgYXJlIHJlZGlzdHJpYnV0ZWQuIFRoZSBzYW1lIHJlcG9ydCBwb2ludGVkIG91dCB0aGF0LCBpbmhlcmVudCByb2J1c3RuZXNzIG9mIGJ1aWxkaW5ncyBtYXkgaGF2ZSBiZWVuIGNvbXByb21pc2VkIGJ5IGFkdmFuY2VzIGluIHN0cnVjdHVyYWwgYW5hbHlzaXMgYW5kIGRlc2lnbiwgd2hpY2ggaGF2ZSBlbmFibGVkIHRoZSBkZXNpZ25lciB0byBtb2RlbCBhIHN0cnVjdHVyZSBtb3JlIGFjY3VyYXRlbHkuIFRoaXMsIGl0IGFyZ3VlZCwgaGFzIHJlZHVjZWQgdGhlIHVzdWFsIG92ZXItZGVzaWduIG9mIHN0cnVjdHVyYWwgZnJhbWVzIGluIHRoZSBwdXJzdWl0IG9mIGVjb25vbXkgb2YgY29uc3RydWN0aW9uLCBhbmQgbWF5IGhhdmUgcmVzdWx0ZWQgaW4gYnVpbGRpbmdzIHdpdGggcmVkdWNlZCByb2J1c3RuZXNzLiAgQWx0aG91Z2ggY3VycmVudCBVSyBkZXNpZ24gZ3VpZGVsaW5lcyBlbXBoYXNpc2UgdGhlIGltcG9ydGFuY2Ugb2YgY2F0ZW5hcnkgYWN0aW9uIGluIHByb3ZpZGluZyByb2J1c3RuZXNzIGFnYWluc3QgZGFtYWdlIGluIGZyYW1lZCBidWlsZGluZ3MsIGFuZCB0aGUgY29uc2VxdWVudCByZXF1aXJlbWVudCBmb3IgdGVuc2lsZSBjYXBhY2l0eSBvZiBtZW1iZXJzIGFuZCBjb25uZWN0aW9ucywgaW4gcHJhY3RpY2UsIGl0IGlzIGxpa2VseSB0aGF0IGJvdGggbW9tZW50IHJlc2lzdGFuY2UgKGluIFZpcmVuZGVlbCBicmlkZ2luZyBhY3Rpb24pIGFuZCBzaGVhciByZXNpc3RhbmNlICh0byBkZWJyaXMgbG9hZGluZykgb2YgY29ubmVjdGlvbnMgd2lsbCBiZSBlcXVhbGx5IGltcG9ydGFudC4gUmVjZW50IGF1dGhvcml0YXRpdmUgcHVibGljYXRpb25zIGluIGJvdGggdGhlIFVLIGFuZCBVU0EgaGF2ZSBoaWdobGlnaHRlZCB0aGUgY3VycmVudCBsYWNrIG9mIGtub3dsZWRnZSBvZiB0aGUgZHluYW1pYyByZXNwb25zZSBvZiBib2x0ZWQgc3RlZWwgY29ubmVjdGlvbnMgYW5kIHRoZXJlIGlzIGEgcHJlc3NpbmcgbmVlZCBmb3IgYXV0aG9yaXRhdGl2ZSBkYXRhIG9uIGJvdGggdGhlIHJlc3BvbnNlIG9mIGRpZmZlcmVudCB0eXBlcyBvZiBmcmFtZWQgc3RydWN0dXJlcyB0byBkYW1hZ2UgKGEgdG9waWMgYWxyZWFkeSB1bmRlciBpbnZlc3RpZ2F0aW9uIGJ5IHRoZSBwcm9wb3NlcnMgYW5kIHRoZSBzdWJqZWN0IG9mIGFuIGVhcmxpZXIgcmVzZWFyY2ggcHJvcG9zYWwpLCBhbmQgdGhlIGR5bmFtaWMgYmVoYXZpb3VyIG9mIHN0ZWVsIGNvbm5lY3Rpb25zLlRoZSBvdmVyYWxsIGFpbSBvZiB0aGlzIHByb2plY3QgaXMgdG8gY29uZHVjdCBhbiBleHBlcmltZW50YWwgc3R1ZHkgb2YgdGhlIHJlc3BvbnNlIG9mIHN0ZWVsIGNvbm5lY3Rpb25zIHRvIGR5bmFtaWMgbG9hZGluZyBhbmQgY29tcGFyZSB0aGUgcmVzdWx0cyB3aXRoIGV4aXN0aW5nIGRlc2lnbiByZWNvbW1lbmRhdGlvbnMuIEEgcmFuZ2Ugb2YgY29ubmVjdGlvbnMgdHlwaWNhbCBvZiB0aG9zZSB1c2VkIGluIFVLIGNvbnN0cnVjdGlvbiB3aWxsIGJlIGV4YW1pbmVkLCBpbmNsdWRpbmcgd2ViIGNsZWF0cywgZmluIHBsYXRlcywgcGFydGlhbCBkZXB0aC0gLCBmbHVzaC0gYW5kIGV4dGVuZGVkIGVuZHBsYXRlcy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LnNoZWYuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LnNoZWYuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjAwNDMzOC8xDEVQL0YwMDQzMzgvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkg4T2Ev+GAUmcfR/TLVzgA/5OA/c=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLj7rT0CQLQvN++DAKT/OCVA3wvNEUkbSSnuehjk1g4b8/kzB+z" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F004338/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Response of Steel Beam-to-Column Connections to Dynamic Loading</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=77965'>Tyas, Dr A</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=30074'>Davison, Professor JB</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Civil and Structural Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Sheffield</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 June 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="344,600.67" class="DetailValue">344,601</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Civil Engineering Materials</td>
+                                    <td class="DetailValue"> Structural Engineering</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Construction</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/F002599/1'>EP/F002599/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>17 Apr 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Engineering Science (Components) Panel</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The after-effects of the events of 11 September 2001 are still reverberating around the world. The collapse of buildings at the World Trade Centre (WTC) has thrown the field of structural engineering into the spotlight and professionals and the public alike have a heightened awareness of the dangers posed by the collapse of buildings. The post-WTC deliberations have highlighted and brought into sharp focus a previously limited debate on the shortcomings in our knowledge of the response of framed buildings to accidental or malicious damage.  Even before the September 11 attacks, an American government working party  stated that  Progressive structural collapse is a primary, if not the leading, cause of injury and death in building failures, regardless of the source of loading...For this reason, predicting and designing to prevent progressive collapse of a building under a specified attack scenario is (and should be) a primary objective...  The same report noted that  ...guidance on building collapse and building code requirements would be valuable. The phenomenon of progressive collapse is not well understood, despite the widespread recognition that most building failures include building collapse. Although building codes admonish designers to ensure that collapse does not occur, they do not provide guidance on how this can or should be accomplished.  Among their recommendations is  The nature and mechanism of progressive collapse is a subject that merits further study by the academic community. This topic, which has not been addressed at a meaningful level for almost a quarter of a century, could have benefits in mitigating risks from many hazards. The situation in the United Kingdom is similar. A pre-September 11 report  acknowledged that, whilst the requirement for structures to be robust against accidental damage is not disputed, there is presently no established basis for determining how much redundancy is required in order to provide an acceptable level of safety in the event of damage, or to estimate how the forces in a damaged structure are redistributed. The same report pointed out that, inherent robustness of buildings may have been compromised by advances in structural analysis and design, which have enabled the designer to model a structure more accurately. This, it argued, has reduced the usual over-design of structural frames in the pursuit of economy of construction, and may have resulted in buildings with reduced robustness.  Although current UK design guidelines emphasise the importance of catenary action in providing robustness against damage in framed buildings, and the consequent requirement for tensile capacity of members and connections, in practice, it is likely that both moment resistance (in Virendeel bridging action) and shear resistance (to debris loading) of connections will be equally important. Recent authoritative publications in both the UK and USA have highlighted the current lack of knowledge of the dynamic response of bolted steel connections and there is a pressing need for authoritative data on both the response of different types of framed structures to damage (a topic already under investigation by the proposers and the subject of an earlier research proposal), and the dynamic behaviour of steel connections.The overall aim of this project is to conduct an experimental study of the response of steel connections to dynamic loading and compare the results with existing design recommendations. A range of connections typical of those used in UK construction will be examined, including web cleats, fin plates, partial depth- , flush- and extended endplates.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.shef.ac.uk                                                                               '>http://www.shef.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

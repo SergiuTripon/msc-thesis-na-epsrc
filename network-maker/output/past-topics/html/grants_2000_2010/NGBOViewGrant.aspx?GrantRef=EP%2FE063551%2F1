@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Unipotent and nilpotent classes in characteristic two
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE063551%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTA2MzU1MS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVGPHN0cm9uZz5Vbmlwb3RlbnQgYW5kIG5pbHBvdGVudCBjbGFzc2VzIGluIGNoYXJhY3RlcmlzdGljIHR3bzwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9OTQ5Nyc+TGllYmVjaywgUHJvZmVzc29yIE08L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUTRGVwdCBvZiBNYXRoZW1hdGljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF0ltcGVyaWFsIENvbGxlZ2UgTG9uZG9uZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ4xNCBBdWd1c3QgMjAwN2RkAgMPZBYCAgEPDxYCHwQFDjEzIEF1Z3VzdCAyMDEwZGQCBQ9kFgICAQ8PFgQfBAUGMTYsNjM1HgdUb29sVGlwBQkxNiw2MzQuNTBkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCFkFsZ2VicmEgJmFtcDsgR2VvbWV0cnkAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBYQOT3VyIHByb3Bvc2FsIGNvbmNlcm5zIHRoZSB1bmlwb3RlbnQgYW5kIG5pbHBvdGVudCBjbGFzc2VzIGluIHNpbXBsZSBhbGdlYnJhaWMgZ3JvdXBzIGFuZCBMaWUgYWxnZWJyYXMuIFVuaXBvdGVudCBlbGVtZW50cyBhcmUgZnVuZGFtZW50YWwgdG8gdGhlIHRoZW9yeSBvZmFsZ2VicmFpYyBncm91cHMgYW5kIGZpbml0ZSBncm91cHMgb2YgTGllIHR5cGUsIGFuZCAgcGxheSBhbiBpbXBvcnRhbnQgcm9sZSBpbmJvdGggIHRoZSBzdHJ1Y3R1cmUgYW5kIHJlcHJlc2VudGF0aW9uIHRoZW9yeS4gIFNvbWUgcGFydHMgb2YgdGhlIGdlbmVyYWx0aGVvcnkgb2YgdW5pcG90ZW50IGVsZW1lbnRzIChlLmcuIHJlc3VsdHMgb2YgICBTdGVpbmJlcmcsIFNwcmluZ2VyLCBSaWNoYXJkc29uLCBDYXJ0ZXIsIGFuZCBTcGFsdGVuc3RlaW4pICBhcmUgcXVpdGUgYmVhdXRpZnVsLCB3aGlsZSBvdGhlciBwYXJ0cyBhcmUgaW4gYW51bnNhdGlzZmFjdG9yeSBzdGF0ZS4gRm9yIGV4YW1wbGUsIGJhc2ljIGxpc3RzIG9mIGNvbmp1Z2FjeSBjbGFzc2VzYW5kIGNlbnRyYWxpemVyIG9yZGVycyBvZiB1bmlwb3RlbnQgZWxlbWVudHMgb2YgZ3JvdXBzIG9mIGV4Y2VwdGlvbmFsIExpZSB0eXBlIGRvIGV4aXN0IGluIHRoZSBsaXRlcmF0dXJlLCAgYnV0IHRoZSByZXN1bHRzIGFyZSBzcHJlYWQgb3Zlcm1hbnkgcGFwZXJzIHVzaW5nIGEgdmFyaWV0eSBvZiB0ZWNobmlxdWVzIGFuZCBub3RhdGlvbnMsIG1vc3RseSBiYXNlZCBvbiBhIG1hc3NpdmUgY2FzZS1ieS1jYXNlIGFuYWx5c2lzIGFuZCBvZmZlcmluZyBsaXR0bGUgb3ZlcmFsbCBjb25jZXB0dWFsIHVuZGVyc3RhbmRpbmcuIE1vcmVvdmVyLCB0aGUgY2xhc3NpZmljYXRpb24gb2YgbmlscG90ZW50IGNsYXNzZXMgaW4gYmFkIGNoYXJhY3RlcmlzdGljcyBjYXJyaWVkIG91dCBieSBIb2x0IGFuZCBTcGFsdGVuc3RlaW4gdXNpbmcgaGVhdnkgbWFjaGluZSBjb21wdXRhdGlvbiwgbGVhdmVzIHNvbWUgYmFzaWMgcXVlc3Rpb25zIHVuYW5zd2VyZWQsIHN1Y2ggYXMgdGhlIGZ1bGwgc3RydWN0dXJlIG9mIHRoZSBjZW50cmFsaXplcnMuIFRoaXMgaXMgYW4gYXJlYSB0aGF0IGlzIGluIG5lZWQgb2YgbWFqb3IgcmV2aXNpb24gYW5kIGRldmVsb3BtZW50LCBhbmQgaXQgaXMgb3VyIGdvYWwgdG8gY2Fycnl0aGlzIG91dC4gSW4gYSBzZXJpZXMgb2YgdmlzaXRzIGluIDIwMDQtNiwgZnVuZGVkIGJ5IG91ciBwcmV2aW91cyBncmFudCwgU2VpdHogYW5kIEkgZGV2ZWxvcGVkIGEgbmV3IGFuZCB1bmlmaWVkIGFwcHJvYWNoIHRvIHRoZSB1bmlwb3RlbnQgYW5kIG5pbHBvdGVudCBjbGFzc2VzIGluIHNpbXBsZSBhbGdlYnJhaWMgZ3JvdXBzIGFuZCBMaWUgYWxnZWJyYXMsIGFzc3VtaW5nIHRoYXQgdGhlIHVuZGVybHlpbmcgY2hhcmFjdGVyaXN0aWMgaXMgbm90IDIuIE91ciBtYWluIGdvYWwgaW4gdGhpcyBwcm9qZWN0IGlzIHRvIGNhcnJ5IG91dCBvdXIgbmV3IHVuaWZpZWQgYXBwcm9hY2ggd2hlbnRoZSB1bmRlcmx5aW5nIGNoYXJhY3RlcmlzdGljIGlzIDIuIFRoaXMgd2lsbCByZXF1aXJlIHN1YnN0YW50aWFsIG5ldyBpZGVhcyBvbiB0b3Agb2Ygb3VyIHByZXZpb3VzIHdvcmsgZm9yIG9kZCBjaGFyYWN0ZXJpc3RpY3MuIEZvciBleGFtcGxlLCBldmVuIGZvciBjbGFzc2ljYWwgTGllIGFsZ2VicmFzIHRoZXJlIGFyZSBzdGlsbCBiYXNpYyB1bmFuc3dlcmVkIHF1ZXN0aW9ucyBpbiBjaGFyYWN0ZXJpc3RpYyAyLCBzdWNoIGFzIHRoZSBwcmVjaXNlIHN0cnVjdHVyZSBvZiB0aGUgY2VudHJhbGl6ZXJzIG9mIG5pbHBvdGVudCBlbGVtZW50cy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmltcGVyaWFsLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmltcGVyaWFsLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTA2MzU1MS8xDEVQL0UwNjM1NTEvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkMKL1qEPlDUAJIRjoepOEjaWynlA=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLUytykDALQvN++DAKT/OCVA8GYiYc4ZGMIQ7OvhN4AO23quKik" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E063551/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Unipotent and nilpotent classes in characteristic two</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=9497'>Liebeck, Professor M</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Dept of Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Imperial College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">14 August 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">13 August 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="16,634.50" class="DetailValue">16,635</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Our proposal concerns the unipotent and nilpotent classes in simple algebraic groups and Lie algebras. Unipotent elements are fundamental to the theory ofalgebraic groups and finite groups of Lie type, and  play an important role inboth  the structure and representation theory.  Some parts of the generaltheory of unipotent elements (e.g. results of   Steinberg, Springer, Richardson, Carter, and Spaltenstein)  are quite beautiful, while other parts are in anunsatisfactory state. For example, basic lists of conjugacy classesand centralizer orders of unipotent elements of groups of exceptional Lie type do exist in the literature,  but the results are spread overmany papers using a variety of techniques and notations, mostly based on a massive case-by-case analysis and offering little overall conceptual understanding. Moreover, the classification of nilpotent classes in bad characteristics carried out by Holt and Spaltenstein using heavy machine computation, leaves some basic questions unanswered, such as the full structure of the centralizers. This is an area that is in need of major revision and development, and it is our goal to carrythis out. In a series of visits in 2004-6, funded by our previous grant, Seitz and I developed a new and unified approach to the unipotent and nilpotent classes in simple algebraic groups and Lie algebras, assuming that the underlying characteristic is not 2. Our main goal in this project is to carry out our new unified approach whenthe underlying characteristic is 2. This will require substantial new ideas on top of our previous work for odd characteristics. For example, even for classical Lie algebras there are still basic unanswered questions in characteristic 2, such as the precise structure of the centralizers of nilpotent elements.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.imperial.ac.uk                                                                           '>http://www.imperial.ac.uk                                                                           </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Copy of Development of methods for characterising and testing clinical High Intensity Focused Ultrasound (HIFU) systems
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF01564X%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjAxNTY0WC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAWIATxzdHJvbmc+Q29weSBvZiBEZXZlbG9wbWVudCBvZiBtZXRob2RzIGZvciBjaGFyYWN0ZXJpc2luZyBhbmQgdGVzdGluZyBjbGluaWNhbCBIaWdoIEludGVuc2l0eSBGb2N1c2VkIFVsdHJhc291bmQgKEhJRlUpIHN5c3RlbXM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUc8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xNzI0NCc+Q291c3Npb3MsIFByb2Zlc3NvciBDPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgIWBAIBD2QWAmYPFQNKPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTQwNzgnPkNodXJjaGlsbCBIb3NwaXRhbDwvYT5JPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9LTc2NDYnPkVEQVAgVGVjaG5vbWVkIFNBPC9hPkU8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xNzI0Myc+SW1hc29uaWMgUy5BLjwvYT5kAgIPZBYCZg8VA0w8YSBocmVmPSdOR0JPVmlld1BhcnRuZXIuYXNweD9PcmdhbmlzYXRpb25JZD0xMDAxNDM5Jz5TdCBNYXJ5J3MgSG9zcGl0YWw8L2E+SjxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPS03NjQ3Jz5UaGVydXMgQ29ycG9yYXRpb248L2E+AGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUTRW5naW5lZXJpbmcgU2NpZW5jZWRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFFVuaXZlcnNpdHkgb2YgT3hmb3JkZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQwwMSBKdWx5IDIwMDhkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAxMWRkAgUPZBYCAgEPDxYEHwQFBzExOCwwNjUeB1Rvb2xUaXAFCjExOCwwNjUuMzhkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAglBY291c3RpY3MhTWVkLkluc3RydW1lbnQuRGV2aWNlJmFtcDsgRXF1aXAuZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAgpIZWFsdGhjYXJlAGQCDA9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQRDPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMTY4MTYvMSc+RVAvRjAxNjgxNi8xPC9hPgAAAGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfBwIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzE5IFNlcCAyMDA3ZGQCAQ9kFgQCAQ8PFgIfAmhkZAIDDw8WAh8EBSJIZWFsdGhjYXJlIEVuZ2luZWVyaW5nIFBhbmVsIChFTkcpZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBdURVGhlIGNsaW5pY2FsIGFwcGxpY2F0aW9uIG9mIGhpZ2ggaW50ZW5zaXR5IGZvY3VzZWQgdWx0cmFzb3VuZCAoSElGVSkgdG8gdGhlIHRyZWF0bWVudCBvZiBzb2Z0IHRpc3N1ZSBjYW5jZXJzIG9mLCBmb3IgZXhhbXBsZSwgdGhlIGxpdmVyLCBraWRuZXkgYW5kIHByb3N0YXRlLCBpcyBhIHlvdW5nIGFuZCByYXBpZGx5IGV4cGFuZGluZyBmaWVsZC4gVG8gZGF0ZSBtb3JlIHRoYW4gMzAsMDAwIHBhdGllbnRzIGhhdmUgYmVlbiB0cmVhdGVkIHdvcmxkIHdpZGUuIFN1Y2Nlc3NmdWwgdHJlYXRtZW50IGlzIGFjaGlldmVkIHdoZW4gdGhlIHRlbXBlcmF0dXJlIG9mIHRoZSB0dW1vdXIgaXMgcmFpc2VkIHRvIGxldmVscyBhdCB3aGljaCBpbnN0YW50YW5lb3VzIGNlbGwgZGVhdGggb2NjdXJzLiBUaGUgZm9jdXNlZCBiZWFtIGVuc3VyZXMgdGhhdCBvbmx5IHRoZSB0aXNzdWUgYmVpbmcgdGFyZ2V0ZWQgaXMgaGVhdGVkLCB3aGlsc3Qgc3Vycm91bmRpbmcgdGlzc3VlIHJlbWFpbnMgdW5oYXJtZWQuICBTYWZlIGFuZCBlZmZlY3RpdmUgdXNlIG9mIEhJRlUgcmVxdWlyZXMgdGhhdCB2YWxpZGF0ZWQgbWV0aG9kcyBmb3IgbWVhc3VyZW1lbnQgYW5kIHRlc3Rpbmcgb2YgY2xpbmljYWwgZGV2aWNlcyBzaG91bGQgYmUgbWFkZSBhdmFpbGFibGUgYXMgc29vbiBhcyBwb3NzaWJsZS4gVGhlc2UgaXNzdWVzIGhhdmUgbm90IGJlZW4gYWRkcmVzc2VkIHRvIGRhdGUgaW4gYW55IHN5c3RlbWF0aWMgZmFzaGlvbi4gQ2xpbmljYWwgSElGVSBzeXN0ZW1zIGFyZSBjdXJyZW50bHkgYXNzZXNzZWQgb24gYW4gYWQgaG9jIGJhc2lzIGJ5IGluZGl2aWR1YWwgY2xpbmljYWwgZGVwYXJ0bWVudHMgYW5kIG1hbnVmYWN0dXJlcnMsIHVzaW5nIG1ldGhvZHMsIG1hbnkgb2Ygd2hpY2ggYXJlIHVucHVibGlzaGVkLiBUaGVyZSBpcywgdGhlcmVmb3JlLCBhbiB1cmdlbnQgbmVlZCB0byBwcm9kdWNlIHN0YW5kYXJkIHJlZ2lzdHJhdGlvbiBhbmQgdGVzdGluZyBlcXVpcG1lbnQgYW5kIG1ldGhvZG9sb2d5IHRoYXQgYWxsb3dzIHVzZXJzIHRvIGNoYXJhY3Rlcml6ZSBjbGluaWNhbCBISUZVIHN5c3RlbXMgZm9yIHRoZSBwdXJwb3NlcyBvZiBjaGVja2luZyBzYWZldHkgYW5kIHJlcHJvZHVjaWJpbGl0eSBvZiBhIG1hY2hpbmUncyBvdXRwdXQsIGNvbXBhcmluZyBkaWZmZXJlbnQgZGV2aWNlcyBvciBjb21taXNzaW9uaW5nIG5ldyBzeXN0ZW1zLiBUaGUgcHJvZ3JhbW1lIG9mIHdvcmsgcHJvcG9zZWQgaXMgYSBtaXh0dXJlIG9mIGFkYXB0YXRpb24gYW5kIGV4dGVuc2lvbiBvZiBleGlzdGluZyBhbmQgZW1lcmdpbmcgdGVjaG5pcXVlcyB0byBtZWV0IHRoZSByZXF1aXJlbWVudHMgb2YgdGhpcyBuZXcgbWVkaWNhbCB0ZWNobm9sb2d5LCBhbmQgdGhlIGRldmVsb3BtZW50IG9mIG5vdmVsIG1ldGhvZHMgc3BlY2lmaWNhbGx5IGZvciB0aGlzIGFwcGxpY2F0aW9uLlRoZSBvdmVyYWxsIGFpbSBvZiB0aGlzIHByb2plY3QgaXMgdG8gaW1wcm92ZSB0aGUgZWZmaWNhY3ksIHNhZmV0eSBhbmQgcmFuZ2Ugb2YgYXBwbGljYWJpbGl0eSBvZiBjbGluaWNhbCBISUZVIHRyZWF0bWVudHMgYnk6QS4gcHJvdmlkaW5nIHZhbGlkYXRlZCBtZXRob2RzIGZvcjogICogIHVsdHJhc29uaWMgZmllbGQgY2hhcmFjdGVyaXNhdGlvbiB1c2luZyBwcmVzc3VyZSBmaWVsZCBtYXBwaW5nIGFuZCBhY291c3RpYyBwb3dlciBtZWFzdXJlbWVudCB0ZWNobmlxdWVzOyAgKiAgSElGVSBzeXN0ZW0gcGVyZm9ybWFuY2UgdGVzdGluZyBhbmQgcXVhbGl0eSBhc3N1cmFuY2UgdXNpbmcgbm92ZWwgdGhlcm1hbCBhbmQgY2F2aXRhdGlvbiBtYXBwaW5nIG1ldGhvZHMgICAqICBwYXRpZW50IGV4cG9zdXJlIG1vbml0b3JpbmcgYnkgbWVhbnMgb2YgZWxlY3RyaWNhbCBpbXBlZGFuY2UgbWVhc3VyZW1lbnRzIGFuZCByZWFsIHRpbWUgYWNvdXN0aWMgcG93ZXIgbWVhc3VyZW1lbnQ7Qi4gZXN0YWJsaXNoaW5nIGEgd29ybGQgbGVhZGluZyBISUZVIGNoYXJhY3RlcmlzYXRpb24gZmFjaWxpdHkgYXQgdGhlIEluc3RpdHV0ZSBvZiBDYW5jZXIgUmVzZWFyY2ggKElDUik7Qy4gZGlzc2VtaW5hdGluZyB0aGUgc3VjY2Vzc2Z1bCBtZXRob2RzLCBwcm90b2NvbHMgYW5kIGVxdWlwbWVudCB0byBhIHdpZGVyIHVzZXIgYmFzZSB0aHJvdWdoOiAgKiAgc2NpZW50aWZpYyBwdWJsaWNhdGlvbjsgICAqICBjb250cmlidXRpb24gdG8gd3JpdHRlbiBOYXRpb25hbCBhbmQgSW50ZXJuYXRpb25hbCBTdGFuZGFyZHM7ICAqICBjb21tZXJjaWFsIGV4cGxvaXRhdGlvbi5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3Lm94LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3Lm94LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjAxNTY0WC8xDEVQL0YwMTU2NFgvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk4urw9J/ZuyiIuQAK0ldBxVzuqzs=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLD6fGJCgLQvN++DAKT/OCVA1pDDsGvtLrDcb0WO9z9RGx4Jvv3" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F01564X/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Copy of Development of methods for characterising and testing clinical High Intensity Focused Ultrasound (HIFU) systems</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-17244'>Coussios, Professor C</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-4078'>Churchill Hospital</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=-7646'>EDAP Technomed SA</a></td>
+                                    <td class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=17243'>Imasonic S.A.</a></td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=1001439'>St Mary's Hospital</a></td>
+                                    <td style="width:33%" class="DetailValueAlt"> <a href='NGBOViewPartner.aspx?OrganisationId=-7647'>Therus Corporation</a></td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Oxford</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 July 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="118,065.38" class="DetailValue">118,065</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Acoustics</td>
+                                    <td class="DetailValue"> Med.Instrument.Device&amp; Equip.</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Healthcare</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="related grants"> 
+                                
+                                  <tr>
+                                    <td style="width:25%;" class="DetailValue"> <a href='NGBOViewGrant.aspx?GrantRef=EP/F016816/1'>EP/F016816/1</a></td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td style="width:25%;" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>19 Sep 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Healthcare Engineering Panel (ENG)</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The clinical application of high intensity focused ultrasound (HIFU) to the treatment of soft tissue cancers of, for example, the liver, kidney and prostate, is a young and rapidly expanding field. To date more than 30,000 patients have been treated world wide. Successful treatment is achieved when the temperature of the tumour is raised to levels at which instantaneous cell death occurs. The focused beam ensures that only the tissue being targeted is heated, whilst surrounding tissue remains unharmed.  Safe and effective use of HIFU requires that validated methods for measurement and testing of clinical devices should be made available as soon as possible. These issues have not been addressed to date in any systematic fashion. Clinical HIFU systems are currently assessed on an ad hoc basis by individual clinical departments and manufacturers, using methods, many of which are unpublished. There is, therefore, an urgent need to produce standard registration and testing equipment and methodology that allows users to characterize clinical HIFU systems for the purposes of checking safety and reproducibility of a machine's output, comparing different devices or commissioning new systems. The programme of work proposed is a mixture of adaptation and extension of existing and emerging techniques to meet the requirements of this new medical technology, and the development of novel methods specifically for this application.The overall aim of this project is to improve the efficacy, safety and range of applicability of clinical HIFU treatments by:A. providing validated methods for:  *  ultrasonic field characterisation using pressure field mapping and acoustic power measurement techniques;  *  HIFU system performance testing and quality assurance using novel thermal and cavitation mapping methods   *  patient exposure monitoring by means of electrical impedance measurements and real time acoustic power measurement;B. establishing a world leading HIFU characterisation facility at the Institute of Cancer Research (ICR);C. disseminating the successful methods, protocols and equipment to a wider user base through:  *  scientific publication;   *  contribution to written National and International Standards;  *  commercial exploitation.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.ox.ac.uk                                                                                 '>http://www.ox.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

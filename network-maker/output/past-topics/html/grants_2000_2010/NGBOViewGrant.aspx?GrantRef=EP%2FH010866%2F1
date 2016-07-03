@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Sequential Monte Carlo Smoothing with Finite Set Statistics
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fH010866%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvSDAxMDg2Ni8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVMPHN0cm9uZz5TZXF1ZW50aWFsIE1vbnRlIENhcmxvIFNtb290aGluZyB3aXRoIEZpbml0ZSBTZXQgU3RhdGlzdGljczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTE2MjEzMCc+Q2xhcmssIERyIERFPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFJ1NjaCBvZiBFbmdpbmVlcmluZyBhbmQgUGh5c2ljYWwgU2NpZW5jZWRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFkhlcmlvdC1XYXR0IFVuaXZlcnNpdHlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRpGaXJzdCBHcmFudCAtIFJldmlzZWQgMjAwOWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDIzIEZlYnJ1YXJ5IDIwMTBkZAIDD2QWAgIBDw8WAh8EBRAyMiBGZWJydWFyeSAyMDEyZGQCBQ9kFgICAQ8PFgQfBAUHMTAxLDYyMh4HVG9vbFRpcAUKMTAxLDYyMS45OWRkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIZRGlnaXRhbCBTaWduYWwgUHJvY2Vzc2luZyJTdGF0aXN0aWNzICZhbXA7IEFwcGwuIFByb2JhYmlsaXR5ZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8IAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMTQgSnVsIDIwMDlkZAIBDw8WAh8HBQ1MaW5rIHRvIHBhbmVsZBYEAgEPDxYEHwQFIklDVCBQcmlvcml0aXNhdGlvbiBQYW5lbCAoSnVseSAwOSkfAwUbVmlld1BhbmVsLmFzcHg/UGFuZWxJZD00ODU0ZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFgx9UaGVyZSBoYXMgYmVlbiBjb25zaWRlcmFibGUgaW50ZXJlc3QgaW4gc3RvY2hhc3RpYyBmaWx0ZXJpbmcgYW5kIHNtb290aGluZyBpbiB0aGUgbGFzdCBoYWxmLWNlbnR1cnksIG1vdGl2YXRlZCBieSB0aGUgZGlzY292ZXJ5IGluIDE5NjAgb2YgdGhlIHNvbHV0aW9uIHRvIHRoZSBsaW5lYXIgZmlsdGVyaW5nIHByb2JsZW1ieSBLYWxtYW4uIEFwcGxpY2F0aW9ucyBvZiB0aGlzIHdvcmsgd2VyZSBmb3VuZCBhbG1vc3QgaW1tZWRpYXRlbHkgdGhyb3VnaCB0aGUgaW5jb3Jwb3JhdGlvbiBpbnRvIE5BU0EncyBBcG9sbG8gbmF2aWdhdGlvbiBjb21wdXRlciBmb3IgdHJhamVjdG9yeSBlc3RpbWF0aW9uLiBUaGUgaW1wb3J0YW5jZSBvZiBLYWxtYW4ncyBkaXNjb3ZlcnkgaXMgaWxsdXN0cmF0ZWQgYnkgdGhlIHRoZSBpbXBhY3QgaXQgaGFzIGhhZCBpbiBjb250cm9sIHRoZW9yeSwgcHJvYmFiaWxpdHkgdGhlb3J5LCBmaW5hbmNpYWwgbWF0aGVtYXRpY3MsIGFuZCBzaWduYWwgcHJvY2Vzc2luZy4gU2luY2UgdGhlIDE5NjAncywgc29vbiBhZnRlciB0aGUgc29sdXRpb25zIHRvIHZhcmlvdXMgZmlsdGVyaW5nIHByb2JsZW1zIGNhbWUgY29ycmVzcG9uZGluZyBzb2x1dGlvbnMgdG8gdGhlIHNtb290aGluZyBwcm9ibGVtcy4gTW9yZSByZWNlbnQgd29yayBvbiBub24tbGluZWFyIGZpbHRlcmluZyBhbmQgc21vb3RoaW5nIGhhcyBiZWVuIGluc3BpcmVkIGJ5IHNlcXVlbnRpYWwgTW9udGUgQ2FybG8gdGhlb3J5LlN0b2NoYXN0aWMgZmlsdGVyaW5nLCBwcmVkaWN0aW9uLCBhbmQgc21vb3RoaW5nIGFyZSBmdW5kYW1lbnRhbCBjb25jZXB0cyBpbiB0aGUgdGhlb3J5IG9mIGVzdGltYXRpb24gb2YgZHluYW1pYyBzeXN0ZW1zLiBUaGUgc3lzdGVtIGlzIGEgcGFydGlhbGx5IG9ic2VydmVkIHBoeXNpY2FsIG9iamVjdCB3aG9zZSBiZWhhdmlvdXIgb3ZlciB0aW1lIGlzIGdvdmVybmVkIGJ5IGEgc2V0IG9mIGVxdWF0aW9ucyBtb2RlbGxpbmcgdGhlIGR5bmFtaWNzIGFuZCB0aGUgcmVsYXRpb25zaGlwIGJldHdlZW4gdGhlIG9ic2VydmF0aW9ucyBhbmQgdGhlIG9iamVjdCBzdGF0ZS4gVW5jZXJ0YWludHkgaW4gdGhlIHN5c3RlbSBpcyBkdWUgdG8gdGhlIG5vaXN5IG5hdHVyZSBvZiB0aGUgcHJvYmxlbSwgZWl0aGVyIGZyb20gdW5rbm93biBhbmQgdW5wcmVkaWN0YWJsZSBtb3Rpb24gb2YgdGhlIHN5c3RlbSwgb3IgZnJvbSBpbmFjY3VyYWN5IGluIG9ic2VydmluZyBtZWFzdXJlbWVudHMgb2YgdGhlIHN5c3RlbSB0aHJvdWdoIGEgbm9pc3kgc2Vuc29yLiBGaWx0ZXJpbmcsIHByZWRpY3Rpb24gYW5kIHNtb290aGluZyBhcmUgcHJlY2lzZSBtYXRoZW1hdGljYWwgZGVzY3JpcHRpb25zb2YgdGhlIHByb2JsZW0gb2YgZXN0aW1hdGluZyB0aGUgc3RhdGUgb2YgdGhlIHN5c3RlbSBiYXNlZCBvbiBub2lzeSBvYnNlcnZhdGlvbnMgb2YgaXRzIGJlaGF2aW91ciBvdmVyIHRpbWU6IFByZWRpY3Rpb24gaXMgdGhlIGZvcmVjYXN0aW5nIG9mIHRoZSBzdGF0ZSBvZiB0aGUgc3lzdGVtIGF0IHNvbWUgZnV0dXJlIHBvaW50IGluIHRpbWUgYmFzZWQgb24gbWVhc3VyZW1lbnRzIHVwIHRvIHRoZSBjdXJyZW50IHRpbWUuIEZpbHRlcmluZyBpcyB0aGUgZXN0aW1hdGlvbiBhdCBlYWNoIHBvaW50IGluIHRpbWUgb2YgdGhlIHN0YXRlIG9mIHRoZSBzeXN0ZW0gYmFzZWQgb24gYWxsIG9mIHRoZSBtZWFzdXJlbWVudHMgdXAgdG8gdGhhdCBwb2ludC4gVHlwaWNhbGx5IHByZWRpY3Rpb24gYW5kIGZpbHRlcmluZyBhcmUgdXNlZCB0b2dldGhlciB0byBmb3JtIGEgc2V0IG9mIHJlY3Vyc2l2ZSBlcXVhdGlvbnMgZm9yIHByZWRpY3RpbmcgYW5kIHVwZGF0aW5nIHRoZSBlc3RpbWF0ZSBvZiB0aGUgc3RhdGUgb2YgYSBzeXN0ZW0uIFNtb290aGluZyBkaWZmZXJzIGZyb20gcHJlZGljdGlvbiBhbmQgZmlsdGVyaW5nIGluIHRoYXQgdGhlIGVzdGltYXRlIG9mIHRoZSBzdGF0ZSBvZiB0aGUgc3lzdGVtIGF0IGEgc3BlY2lmaWMgcG9pbnQgaW4gdGltZSBjYW4gYmUgZGV0ZXJtaW5lZCBmcm9tIGEgYmF0Y2ggb2YgbWVhc3VyZW1lbnRzLCBzb21lIG9mIHdoaWNoIG1heSBiZSBjb2xsZWN0ZWQgbGF0ZXIgdGhhbiB0aGUgdGltZSB0aGF0IHdlIGFyZSBpbnRlcmVzdGVkIGluLiBUaGlzIG1lYW5zIHRoYXQgdGhlcmUgaXMgaW5ldml0YWJseSBhIGRlbGF5IGluIHByb2R1Y2luZyB0aGUgZXN0aW1hdGUgb2YgdGhlIHN0YXRlIGF0IHRoYXQgdGltZSwgdGhvdWdoIG1vcmUgYWNjdXJhdGUgZXN0aW1hdGVzIGNhbiBiZSBvYnRhaW5lZCBzaW5jZSBtb3JlIGluZm9ybWF0aW9uIGlzIGF2YWlsYWJsZSBhYm91dCB0aGUgc3lzdGVtLkRlc3BpdGUgdGhlIHdlYWx0aCBvZiByZXNlYXJjaCBpbiBzaW5nbGUtb2JqZWN0IGZpbHRlcmluZywgYSBtYXRoZW1hdGljYWxseSBwcmluY2lwbGVkIGdlbmVyYWxpc2F0aW9uIG9mIGZpbHRlcmluZyBjb25jZXB0cyB0byBtdWx0aS1vYmplY3Qgc3lzdGVtcyBpcyBhIHJlY2VudCBkZXZlbG9wbWVudCwgZm9ybXVsYXRlZCBpbiB0aGUgZnJhbWV3b3JrIG9mIEZpbml0ZSBTZXQgU3RhdGlzdGljcyAoRklTU1QpIG1vdGl2YXRlZCBieSB0aGUgcHJvYmxlbSBvZiBtdWx0aXBsZS10YXJnZXQgdHJhY2tpbmcgaW4gYWVyb3NwYWNlIGFwcGxpY2F0aW9ucy4gVGhlIHB1cnBvc2Ugb2YgbXVsdGlwbGUgdGFyZ2V0IHRyYWNraW5nIGFsZ29yaXRobXMgaXMgdG8gZGV0ZWN0LCB0cmFjayBhbmQgaWRlbnRpZnkgdGFyZ2V0cyBmcm9tIHNlcXVlbmNlcyBvZiBub2lzeSBvYnNlcnZhdGlvbnMgb2YgdGhlIHRhcmdldHMgcHJvdmlkZWQgYnkgb25lIG9yIG1vcmUgc2Vuc29ycy4gVGhpcyBwcm9ibGVtIGlzIGNvbXBsaWNhdGVkIGJ5IHRoZSBmYWN0IHRoYXQgdGhlc2Ugb2JzZXJ2YXRpb25zIHRlbmQgdG8gaGF2ZSBtYW55IGZhbHNlIGFsYXJtcyBhbmQgdGFyZ2V0cyBtYXkgbm90IGFsd2F5cyBnaXZlIHJpc2UgdG8gb2JzZXJ2YXRpb25zLiBUaGUgZXh0ZW5zaW9uIGZyb20gYSBzaW5nbGUtdGFyZ2V0IHNjZW5hcmlvIHRvIGEgbXVsdGlwbGUtdGFyZ2V0IGVudmlyb25tZW50IGlzIG5vbi10cml2aWFsIHNpbmNlIHRoZSBudW1iZXIgb2YgdGFyZ2V0cyBtYXkgbm90IGJlIGtub3duIGFuZCB2YXJpZXMgd2l0aCB0aW1lLCB0aGVyZSBhcmUgbWlzc2VkIGRldGVjdGlvbnMgd2hlcmUgdGhlIHRhcmdldCBpcyBub3Qgb2JzZXJ2ZWQgYW5kIG9ic2VydmF0aW9ucyBtYXkgYmUgZmFsc2UgYWxhcm1zIGR1ZSB0byBjbHV0dGVyLiBJbiBhZGRpdGlvbiwgdGhlIGlkZW50aXRpZXMgb2YgdGhlIHRhcmdldHMgbWF5IG5lZWQgdG8gYmUga25vd24gdG8gZGV0ZXJtaW5lIHRoZWlyIHRyYWplY3Rvcmllcy4gVGhpcyB3b3JrIHdpbGwgZGV2ZWxvcCBuZXcgbWV0aG9kb2xvZ2llcyBmb3Igc21vb3RoaW5nIG9mIG11bHRpLW9iamVjdCBzeXN0ZW1zLiBUaGlzIHdvcmsgcHJvcG9zZWQgaGVyZSBhaW1zIHRvIGludmVzdGlnYXRlIG11bHRpLW9iamVjdCBzbW9vdGhlcnMgZm9yIGpvaW50bHkgZXN0aW1hdGluZyB0aGUgbnVtYmVyIG9mIG9iamVjdHMgYW5kIHRoZWlyIHN0YXRlIHZlY3RvcnMgaW4gZW52aXJvbm1lbnRzIHdoZXJlIHRoZXJlIGNhbiBiZSBtYW55IGZhbHNlIGFsYXJtcyBhbmQgdGhlIHRhcmdldHMgYXJlIG5vdCBhbHdheXMgb2JzZXJ2ZWQuIFNvbHV0aW9ucyB0byB0aGlzIHByb2JsZW0gY291bGQgbGVhZCB0aGUgd2F5IHRvIHByYWN0aWNhbCBpbXBsZW1lbnRhdGlvbnMgdXNpbmcgc2VxdWVudGlhbCBNb250ZSBDYXJsbyBhcHByb3hpbWF0aW9ucy4gVGhlIHN1Y2Nlc3NmdWwgc29sdXRpb24gdG8gdGhpcyBwcm9ibGVtIHdvdWxkIGJlIGRpcmVjdGx5IGFwcGxpY2FibGUgdG8gYSByYW5nZSBvZiBpbmR1c3RyaWFsIG11bHRpLXNlbnNvciBtdWx0aS10YXJnZXQgdHJhY2tpbmcgcHJvYmxlbXMgaW4gbWFueSBzZW5zb3IgYXBwbGljYXRpb25zIGluY2x1ZGluZyByYWRhciwgZWxlY3Ryby1vcHRpY3MgYW5kIHNvbmFyLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuaHcuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuaHcuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9IMDEwODY2LzEMRVAvSDAxMDg2Ni8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGSraI4XHPFE5ZfCOM+paTC605G5TA==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKnpfCUCgLQvN++DAKT/OCVAzRXmIa275d/dTYqVXNjDQI/x3up" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/H010866/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Sequential Monte Carlo Smoothing with Finite Set Statistics</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-162130'>Clark, Dr DE</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering and Physical Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Heriot-Watt University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant - Revised 2009</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">23 February 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">22 February 2012</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="101,621.99" class="DetailValue">101,622</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Digital Signal Processing</td>
+                                    <td class="DetailValue"> Statistics &amp; Appl. Probability</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>14 Jul 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4854">ICT Prioritisation Panel (July 09)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">There has been considerable interest in stochastic filtering and smoothing in the last half-century, motivated by the discovery in 1960 of the solution to the linear filtering problemby Kalman. Applications of this work were found almost immediately through the incorporation into NASA's Apollo navigation computer for trajectory estimation. The importance of Kalman's discovery is illustrated by the the impact it has had in control theory, probability theory, financial mathematics, and signal processing. Since the 1960's, soon after the solutions to various filtering problems came corresponding solutions to the smoothing problems. More recent work on non-linear filtering and smoothing has been inspired by sequential Monte Carlo theory.Stochastic filtering, prediction, and smoothing are fundamental concepts in the theory of estimation of dynamic systems. The system is a partially observed physical object whose behaviour over time is governed by a set of equations modelling the dynamics and the relationship between the observations and the object state. Uncertainty in the system is due to the noisy nature of the problem, either from unknown and unpredictable motion of the system, or from inaccuracy in observing measurements of the system through a noisy sensor. Filtering, prediction and smoothing are precise mathematical descriptionsof the problem of estimating the state of the system based on noisy observations of its behaviour over time: Prediction is the forecasting of the state of the system at some future point in time based on measurements up to the current time. Filtering is the estimation at each point in time of the state of the system based on all of the measurements up to that point. Typically prediction and filtering are used together to form a set of recursive equations for predicting and updating the estimate of the state of a system. Smoothing differs from prediction and filtering in that the estimate of the state of the system at a specific point in time can be determined from a batch of measurements, some of which may be collected later than the time that we are interested in. This means that there is inevitably a delay in producing the estimate of the state at that time, though more accurate estimates can be obtained since more information is available about the system.Despite the wealth of research in single-object filtering, a mathematically principled generalisation of filtering concepts to multi-object systems is a recent development, formulated in the framework of Finite Set Statistics (FISST) motivated by the problem of multiple-target tracking in aerospace applications. The purpose of multiple target tracking algorithms is to detect, track and identify targets from sequences of noisy observations of the targets provided by one or more sensors. This problem is complicated by the fact that these observations tend to have many false alarms and targets may not always give rise to observations. The extension from a single-target scenario to a multiple-target environment is non-trivial since the number of targets may not be known and varies with time, there are missed detections where the target is not observed and observations may be false alarms due to clutter. In addition, the identities of the targets may need to be known to determine their trajectories. This work will develop new methodologies for smoothing of multi-object systems. This work proposed here aims to investigate multi-object smoothers for jointly estimating the number of objects and their state vectors in environments where there can be many false alarms and the targets are not always observed. Solutions to this problem could lead the way to practical implementations using sequential Monte Carlo approximations. The successful solution to this problem would be directly applicable to a range of industrial multi-sensor multi-target tracking problems in many sensor applications including radar, electro-optics and sonar.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.hw.ac.uk                                                                                 '>http://www.hw.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

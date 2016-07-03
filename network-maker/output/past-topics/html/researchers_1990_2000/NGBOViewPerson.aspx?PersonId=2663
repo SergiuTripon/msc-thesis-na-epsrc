@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=2663" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRJQcm9mZXNzb3IgUiBDYXRsb3dkZAIDDw8WAh8CBRJDYXJkaWZmIFVuaXZlcnNpdHlkZAIFDw8WAh8CBQlDaGVtaXN0cnlkZAIHDw8WAh8CBRArNDQoMCkyMDc2NzkwNjUwZGQCCQ8PFgIfAgULMDIwNzkxNjQ2NTNkZAINDw8WBB8CBUIwOTkwNDYxMTQwNDYwOTcwNDYwOTkwOTcxMTYxMDgxMTExMTkwNjQxMTcwOTkxMDgwNDYwOTcwOTkwNDYxMTcxMDceCFJlYWRPbmx5ZxYMHgtvbm1vdXNlb3ZlcmUeB29uZm9jdXMFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx4Kb25tb3VzZW91dAVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HgZvbmJsdXIFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx8ABTxqYXZhc2NyaXB0OnNlbmR0byhkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpLnZhbHVlKTsfAQVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7ZAIPDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCCx4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAILZBYCZg9kFhYCAQ9kFgRmD2QWAgIBDw8WAh8CBRdCaW9jaGVtaWNhbCBlbmdpbmVlcmluZ2RkAgEPZBYCAgEPDxYCHwIFDEJpb21hdGVyaWFsc2RkAgIPZBYEZg9kFgICAQ8PFgIfAgUdQnVpbGRpbmcgT3BzICZhbXA7IE1hbmFnZW1lbnRkZAIBD2QWAgIBDw8WAh8CBRxDYXJib24gQ2FwdHVyZSAmYW1wOyBTdG9yYWdlZGQCAw9kFgRmD2QWAgIBDw8WAh8CBSFDYXRhbHlzaXMgJmFtcDsgQXBwbGllZCBDYXRhbHlzaXNkZAIBD2QWAgIBDw8WAh8CBRlEZXNpZ24gb2YgUHJvY2VzcyBzeXN0ZW1zZGQCBA9kFgRmD2QWAgIBDw8WAh8CBSJFbGVjdHJvY2hlbWljYWwgU2NpZW5jZSAmYW1wOyBFbmcuZGQCAQ9kFgICAQ8PFgIfAgUWRnVlbCBDZWxsIFRlY2hub2xvZ2llc2RkAgUPZBYEZg9kFgICAQ8PFgIfAgUiR2FzICZhbXA7IFNvbHV0aW9uIFBoYXNlIFJlYWN0aW9uc2RkAgEPZBYCAgEPDxYCHwIFGEhlYXQgJmFtcDsgTWFzcyBUcmFuc2ZlcmRkAgYPZBYEZg9kFgICAQ8PFgIfAgUaSGlnaCBQZXJmb3JtYW5jZSBDb21wdXRpbmdkZAIBD2QWAgIBDw8WAh8CBRpNYXRlcmlhbHMgQ2hhcmFjdGVyaXNhdGlvbmRkAgcPZBYEZg9kFgICAQ8PFgIfAgUgTWF0ZXJpYWxzIFN5bnRoZXNpcyAmYW1wOyBHcm93dGhkZAIBD2QWAgIBDw8WAh8CBQxNaWNyb3N5c3RlbXNkZAIID2QWBGYPZBYCAgEPDxYCHwIFD011bHRpcGhhc2UgRmxvd2RkAgEPZBYCAgEPDxYCHwIFGlBoeXNpY2FsIE9yZ2FuaWMgQ2hlbWlzdHJ5ZGQCCQ9kFgRmD2QWAgIBDw8WAh8CBRNSZWFjdG9yIEVuZ2luZWVyaW5nZGQCAQ9kFgICAQ8PFgIfAgUUU2VwYXJhdGlvbiBQcm9jZXNzZXNkZAIKD2QWBGYPZBYCAgEPDxYCHwIFEFNvbGFyIFRlY2hub2xvZ3lkZAIBD2QWAgIBDw8WAh8CBRlTdXJmYWNlcyAmYW1wOyBJbnRlcmZhY2VzZGQCCw9kFgRmD2QWAgIBDw8WAh8CBRpTdXN0YWluYWJsZSBFbmVyZ3kgVmVjdG9yc2RkAgEPZBYCAgEPDxYCHwIFEVdhdGVyIEVuZ2luZWVyaW5nZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAg0fCgIBHwsCDWQWAmYPZBYaAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMDk1MzMvMSc+RVAvTjAwOTUzMy8xPC9hPiBkZAIBDw8WAh8CBXZVdGlsaXNhdGlvbiBvZiBTb2xhciBFbmVyZ3kgYW5kIEVsZWN0cm9jYXRhbHl0aWMgUHJvY2Vzc2VzIGZvciB0aGUgTG93IEVuZXJneSBDb252ZXJzaW9uIG9mIENPMiB0byBGdWVscyBhbmQgQ2hlbWljYWxzZGQCAg8PFgIfAgUDKFApZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAwOTU2Ny8yJz5FUC9LMDA5NTY3LzI8L2E+IGRkAgEPDxYCHwIFMEludGVncmF0ZWQgQ29tcHV0YXRpb25hbCBTb2x1dGlvbnMgZm9yIENhdGFseXNpc2RkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMzUzNTUvMic+RVAvSzAzNTM1NS8yPC9hPiBkZAIBDw8WAh8CBU1CaW8taW5zcGlyZWQgc3VsZmlkZSBuYW5vY2F0YWx5c3RzOiBGcm9tIHByb29mIG9mIGNvbmNlcHQgdG8gJ3JlYWwnIGNhdGFseXNpc2RkAgIPDxYCHwIFAyhDKWRkAgQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMTA1MzgvMSc+RVAvTTAxMDUzOC8xPC9hPiBkZAIBDw8WAh8CBS1FUFNSQyBJbXBhY3QgQWNjZWxlcmF0aW9uIEZlbGxvd3NoaXBzIGF0IFJDYUhkZAICDw8WAh8CBQMoUClkZAIFD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9MMDI2MzE3LzEnPkVQL0wwMjYzMTcvMTwvYT4gZGQCAQ8PFgIfAgU8Rmlyc3QgcHJpbmNpcGxlcyBkZXNpZ24gb2Ygbm92ZWwgYW1tb25pYSBzeW50aGVzaXMgY2F0YWx5c3RzZGQCAg8PFgIfAgUDKFApZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAzODQxOS8xJz5FUC9LMDM4NDE5LzE8L2E+IGRkAgEPDxYCHwIFOlNjYWxhYmxlIFF1YW50dW0gQ2hlbWlzdHJ5IHdpdGggRmxleGlibGUgRW1iZWRkaW5nIFN0YWdlIDJkZAICDw8WAh8CBQMoQylkZAIHD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDM4NjU2LzEnPkVQL0swMzg2NTYvMTwvYT4gZGQCAQ8PFgIfAgVxQ2VudHJlIGZvciBOYXR1cmUgSW5zcGlyZWQgRW5naW5lZXJpbmcgKENOSUUpOiBBZGRyZXNzaW5nIENoYWxsZW5nZXMgaW4gU3VzdGFpbmFiaWxpdHkgYW5kIFNjYWxhYmxlIE1hbnVmYWN0dXJpbmdkZAICDw8WAh8CBQMoQylkZAIID2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9MMDAwMjAyLzEnPkVQL0wwMDAyMDIvMTwvYT4gZGQCAQ8PFgIfAgUxTUFURVJJQUxTIENIRU1JU1RSWSBISUdIIEVORCBDT01QVVRJTkcgQ09OU09SVElVTWRkAgIPDxYCHwIFAyhQKWRkAgkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMTQ3MTQvMSc+RVAvSzAxNDcxNC8xPC9hPiBkZAIBDw8WAh8CBRRUaGUgVUsgQ2F0YWx5c2lzIEh1YmRkAgIPDxYCHwIFAyhQKWRkAgoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMTYyODgvMSc+RVAvSzAxNjI4OC8xPC9hPiBkZAIBDw8WAh8CBSlFbmVyZ3kgTWF0ZXJpYWxzOiBDb21wdXRhdGlvbmFsIFNvbHV0aW9uc2RkAgIPDxYCHwIFAyhDKWRkAgsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMTQzMjMvMSc+RVAvSzAxNDMyMy8xPC9hPiBkZAIBDw8WAh8CBRFUZWNobmljYWwgc3VwcG9ydGRkAgIPDxYCHwIFAyhQKWRkAgwPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMDEzMjkvMSc+RVAvSzAwMTMyOS8xPC9hPiBkZAIBDw8WAh8CBUdBIENvb3JkaW5hdGVkLCBDb21wcmVoZW5zaXZlIGFwcHJvYWNoIHRvIENhcmJvbiBDYXB0dXJlIGFuZCBVdGlsaXNhdGlvbmRkAgIPDxYCHwIFAyhDKWRkAg0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0kwMTk2OTMvMSc+RVAvSTAxOTY5My8xPC9hPiBkZAIBDw8WAh8CBTBDYXRhbHl0aWMgU2NpZW5jZSBpbiB0aGUgSGFyd2VsbCBSZXNlYXJjaCBDZW50cmVkZAICDw8WAh8CBQMoUClkZAIDD2QWAmYPZBYCZg88KwALAQAPFggfCBYAHwkCTR8KAgEfCwJNZBYCZg9kFpoBAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMzUzNTUvMSc+RVAvSzAzNTM1NS8xPC9hPiBkZAIBDw8WAh8CBU1CaW8taW5zcGlyZWQgc3VsZmlkZSBuYW5vY2F0YWx5c3RzOiBGcm9tIHByb29mIG9mIGNvbmNlcHQgdG8gJ3JlYWwnIGNhdGFseXNpc2RkAgIPDxYCHwIFAyhDKWRkAgIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMDk1NjcvMSc+RVAvSzAwOTU2Ny8xPC9hPiBkZAIBDw8WAh8CBTBJbnRlZ3JhdGVkIENvbXB1dGF0aW9uYWwgU29sdXRpb25zIGZvciBDYXRhbHlzaXNkZAICDw8WAh8CBQMoQylkZAIDD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDMxNDgxLzEnPkVQL0swMzE0ODEvMTwvYT4gZGQCAQ8PFgIfAgUoU21hbGwgaXRlbXMgb2YgcmVzZWFyY2ggZXF1aXBtZW50IGF0IFVDTGRkAgIPDxYCHwIFAyhDKWRkAgQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMDAxNDQvMSc+RVAvSzAwMDE0NC8xPC9hPiBkZAIBDw8WAh8CBTllLUluZnJhc3RydWN0dXJlIFNvdXRoIENvbnNvcnRpdW0gLSBDZW50cmUgZm9yIElubm92YXRpb25kZAICDw8WAh8CBQMoQylkZAIFD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDAwMTM2LzEnPkVQL0swMDAxMzYvMTwvYT4gZGQCAQ8PFgIfAgU5ZS1JbmZyYXN0cnVjdHVyZSBTb3V0aCBDb25zb3J0aXVtIC0gQ2VudHJlIGZvciBJbm5vdmF0aW9uZGQCAg8PFgIfAgUDKEMpZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSTAzMDE0WC8xJz5FUC9JMDMwMTRYLzE8L2E+IGRkAgEPDxYCHwIFTkhQQyBzaW11bGF0aW9ucyBvZiBjb21wbGV4IHNvbGlkcyBhbmQgY2x1c3RlcnMgdXNpbmcgc3RhdGljIGxhdHRpY2UgdGVjaG5pcXVlc2RkAgIPDxYCHwIFAyhDKWRkAgcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0kwMzA2NjIvMSc+RVAvSTAzMDY2Mi8xPC9hPiBkZAIBDw8WAh8CBTJTY2FsYWJsZSBRdWFudHVtIENoZW1pc3RyeSB3aXRoIEZsZXhpYmxlIEVtYmVkZGluZ2RkAgIPDxYCHwIFAyhDKWRkAggPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0kwMTMzMFgvMSc+RVAvSTAxMzMwWC8xPC9hPiBkZAIBDw8WAh8CBVRTZW1pY29uZHVjdG9yIG5hbm9jcnlzdGFscyBmb3Igc29sYXIgY2VsbHM6IFR1bmluZyBzaGFwZSwgc2l6ZSBhbmQgaW50ZXJmYWNlIGVmZmVjdHNkZAICDw8WAh8CBQMoUClkZAIJD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9IMDQ2MzEzLzEnPkVQL0gwNDYzMTMvMTwvYT4gZGQCAQ8PFgIfAgU3QmlvLWluc3BpcmVkIChGZSxOaSlTIG5hbm8tY2F0YWx5c3RzIGZvciBDTzIgY29udmVyc2lvbmRkAgIPDxYCHwIFAyhDKWRkAgoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMjE0OTYvMSc+RVAvRjAyMTQ5Ni8xPC9hPiBkZAIBDw8WAh8CBWhOdWNsZWF0aW9uIGFuZCBncm93dGggc3R1ZGllcyBvZiBuYW5vcG9yb3VzIG1hdGVyaWFscyB1c2luZyBzeW5jaHJvdHJvbiBhbmQgbmV1dHJvbiByYWRpYXRpb24gdGVjaG5pcXVlc2RkAgIPDxYCHwIFAyhDKWRkAgsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwNjc0OTYvMSc+RVAvRjA2NzQ5Ni8xPC9hPiBkZAIBDw8WAh8CBURNb2RlbGxpbmcgb2YgQWR2YW5jZWQgRnVuY3Rpb25hbCBNYXRlcmlhbHMgdXNpbmcgVGVyYXNjYWxlIENvbXB1dGluZ2RkAgIPDxYCHwIFAyhQKWRkAgwPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMTM2MTIvMSc+RVAvRjAxMzYxMi8xPC9hPiBkZAIBDw8WAh8CBVFUaGUgVGhvbWFzIFlvdW5nIENlbnRyZTogVG93YXJkcyBhIFNoYXJlZCBWaXNpb24gb2YgTWF0ZXJpYWxzIE1vZGVsbGluZyBpbiBMb25kb25kZAICDw8WAh8CBQMoQylkZAIND2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DNTMyNjAwLzInPkVQL0M1MzI2MDAvMjwvYT4gZGQCAQ8PFgIfAgViSGlnaCBFbmQgQ29tcHV0aW5nIGZvciB0aGUgQ2hhcmFjdGVyaXNhdGlvbiBvZiBTdHJ1Y3R1cmUgYW5kIFJlYWN0aXZpdHkgb2YgQ29tcGxleCBPeGlkZSBDYXRhbHlzdHNkZAICDw8WAh8CBQMoUClkZAIOD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9ENTA0ODcyLzInPkVQL0Q1MDQ4NzIvMjwvYT4gZGQCAQ8PFgIfAgU5U3ludGhlc2lzLCBEZXNpZ24gYW5kIEZ1bmN0aW9uIGluIE5ldyBNYXRlcmlhbHMgQ2hlbWlzdHJ5ZGQCAg8PFgIfAgUDKFApZGQCDw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvUDUwMjcxMy8xJz5FUC9QNTAyNzEzLzE8L2E+IGRkAgEPDxYCHwIFLERUQSAtIFRoZSBSb3lhbCBJbnN0aXR1dGlvbiBvZiBHcmVhdCBCcml0YWluZGQCAg8PFgIfAgUDKFApZGQCEA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvUDUwMjkwWC8xJz5FUC9QNTAyOTBYLzE8L2E+IGRkAgEPDxYCHwIFLElEUyAtIFRoZSBSb3lhbCBJbnN0aXR1dGlvbiBvZiBHcmVhdCBCcml0YWluZGQCAg8PFgIfAgUDKFApZGQCEQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvQzUxNzQ0WC8xJz5FUC9DNTE3NDRYLzE8L2E+IGRkAgEPDxYCHwIFSU1ldGFsL094aWRlIEludGVyZmFjZXMgQXQgVGhlIEF0b21pYyBMZXZlbDogTGlua2luZyBUaGVvcnkgYW5kIEV4cGVyaW1lbnRkZAICDw8WAh8CBQMoQylkZAISD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9QNTAxNjYwLzEnPkVQL1A1MDE2NjAvMTwvYT4gZGQCAQ8PFgIfAgUsRFRBIC0gVGhlIFJveWFsIEluc3RpdHV0aW9uIG9mIEdyZWF0IEJyaXRhaW5kZAICDw8WAh8CBQMoUClkZAITD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DNTMyNjAwLzEnPkVQL0M1MzI2MDAvMTwvYT4gZGQCAQ8PFgIfAgViSGlnaCBFbmQgQ29tcHV0aW5nIGZvciB0aGUgQ2hhcmFjdGVyaXNhdGlvbiBvZiBTdHJ1Y3R1cmUgYW5kIFJlYWN0aXZpdHkgb2YgQ29tcGxleCBPeGlkZSBDYXRhbHlzdHNkZAICDw8WAh8CBQMoUClkZAIUD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9ENTAwNTI0LzEnPkVQL0Q1MDA1MjQvMTwvYT4gZGQCAQ8PFgIfAgU4VGhlb3JldGljYWwgSW52ZXN0aWdhdGlvbnMgb2Ygc3VyZmFjZSBjaGVtaXN0cnkgaW4gc3BhY2VkZAICDw8WAh8CBQMoQylkZAIVD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9ENTA0ODcyLzEnPkVQL0Q1MDQ4NzIvMTwvYT4gZGQCAQ8PFgIfAgU5U3ludGhlc2lzLCBEZXNpZ24gYW5kIEZ1bmN0aW9uIGluIE5ldyBNYXRlcmlhbHMgQ2hlbWlzdHJ5ZGQCAg8PFgIfAgUDKFApZGQCFg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDUwNDU2Mi8xJz5FUC9ENTA0NTYyLzE8L2E+IGRkAgEPDxYCHwIFQkNvbGxhYm9yYXRpdmUgVHJhaW5pbmcgQWNjb3VudDogUm95YWwgSW5zdGl0dXRpb24gb2YgR3JlYXQgQnJpdGFpbmRkAgIPDxYCHwIFAyhQKWRkAhcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1M4NDQ0Ni8wMSc+R1IvUzg0NDQ2LzAxPC9hPiBkZAIBDw8WAh8CBUtBbiBJbnRlcm1lZGlhdGUgQ29tcHV0aW5nIFJlc291cmNlIGZvciB0aGUgRGF2eSBGYXJhZGF5IFJlc2VhcmNoIGxhYm9yYXRvcnlkZAICDw8WAh8CBQMoUClkZAIYD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TMjQxMTQvMDEnPkdSL1MyNDExNC8wMTwvYT4gZGQCAQ8PFgIfAgVDQmFzaWMgVGVjaG5vbG9neTogQ29udHJvbCBhbmQgUHJlZGljdGlvbiBvZiB0aGUgT3JnYW5pYyBTb2xpZCBTdGF0ZWRkAgIPDxYCHwIFAyhDKWRkAhkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1AwMzEzMS8wMSc+R1IvUDAzMTMxLzAxPC9hPiBkZAIBDw8WAh8CBR9EVEEgLSBSb3lhbCBJbnN0aXR1dGlvbiBvZiBHLkIuZGQCAg8PFgIfAgUDKFApZGQCGg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUzEzNDIyLzAxJz5HUi9TMTM0MjIvMDE8L2E+IGRkAgEPDxYCHwIFLU1hdGVyaWFscyBDaGVtaXN0cnkgVXNpbmcgVGVyYXNjYWxlIENvbXB1dGluZ2RkAgIPDxYCHwIFAyhQKWRkAhsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1MwMTk4Ni8wMSc+R1IvUzAxOTg2LzAxPC9hPiBkZAIBDw8WAh8CBTZBIGNvbXB1dGF0aW9uYWwgc3R1ZHkgb2Ygc2VsZWN0aXZlIG94aWRhdGlvbiBjYXRhbHlzaXNkZAICDw8WAh8CBQMoQylkZAIcD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TMDE1MzUvMDEnPkdSL1MwMTUzNS8wMTwvYT4gZGQCAQ8PFgIfAgVzSW4gU2l0dSBTdHVkeSBvZiB0aGUgU3ludGhlc2lzIGFuZCBQZXJmb3JtYW5jZSBvZiBGdW5jdGlvbmFsIENlcmFtaWNzIFVzaW5nIHRoZSBOZXcgTVBXNi4yK1JhcGlkIFN5Y2hyb3Ryb24gU3RhdGlvbmRkAgIPDxYCHwIFAyhSKWRkAh0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1AwMTcyNC8wMSc+R1IvUDAxNzI0LzAxPC9hPiBkZAIBDw8WAh8CBR9EVEEgLSBSb3lhbCBJbnN0aXR1dGlvbiBvZiBHLkIuZGQCAg8PFgIfAgUDKFApZGQCHg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUDAxODc4LzAxJz5HUi9QMDE4NzgvMDE8L2E+IGRkAgEPDxYCHwIFJUluZC4gQ0FTRSAtIFJveWFsIEluc3RpdHV0aW9uIG9mIEcuQi5kZAICDw8WAh8CBQMoUClkZAIfD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SOTcyMDcvMDEnPkdSL1I5NzIwNy8wMTwvYT4gZGQCAQ8PFgIfAgU9ZS1TY2llbmNlIFRlY2hub2xvZ2llcyBpbiB0aGUgU2ltdWxhdGlvbiBvZiBDb21wbGV4IE1hdGVyaWFsc2RkAgIPDxYCHwIFAyhQKWRkAiAPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1I4NTgzOS8wMSc+R1IvUjg1ODM5LzAxPC9hPiBkZAIBDw8WAh8CBTJNQVRFUklBTFMgQ0hFTUlTVFJZIElOIFRIRSBEQVZZIEZBUkFEQVkgTEFCT1JBVE9SWWRkAgIPDxYCHwIFAyhQKWRkAiEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1AwMDYzNS8wMSc+R1IvUDAwNjM1LzAxPC9hPiBkZAIBDw8WAh8CBR9EVEEgLSBSb3lhbCBJbnN0aXR1dGlvbiBvZiBHLkIuZGQCAg8PFgIfAgUDKFApZGQCIg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTjIwNjA3LzAxJz5HUi9OMjA2MDcvMDE8L2E+IGRkAgEPDxYCHwIFPkhJR0ggUEVSRk9STUFOQ0UgQ09NUFVUSU5HIEFQUExJQ0FUSU9OUyBJTiBNQVRFUklBTFMgQ0hFTUlTVFJZZGQCAg8PFgIfAgUDKFApZGQCIw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTjE0NTY5LzAxJz5HUi9OMTQ1NjkvMDE8L2E+IGRkAgEPDxYCHwIFTlBSRURJQ1RJVkUgTU9ERUxMSU5HIE9GIFRIRSBTVFJVQ1RVUkVTIEFORCBQUk9QRVJUSUVTIE9GIENSWVNUQUxMSU5FIE1BVEVSSUFMU2RkAgIPDxYCHwIFAyhQKWRkAiQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL001MzUwOS8wMSc+R1IvTTUzNTA5LzAxPC9hPiBkZAIBDw8WAh8CBVFBIENPTVBVVEFUSU9OQUwgRkFDSUxJVFkgRk9SIFNPTElEIFNUQVRFIENIRU1JU1RSWSBBTkQgTUFURVJJQUxTIFNDSUVOQ0UgUkVTRUFSQ0hkZAICDw8WAh8CBQMoUClkZAIlD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNjYxNzIvMDEnPkdSL002NjE3Mi8wMTwvYT4gZGQCAQ8PFgIfAgUyVEhFIEFSQ0hJVEVDVFVSRSBPRiBORVcgRU5HSU5FRVJFRCBTT0xJRCBDQVRBTFlTVFNkZAICDw8WAh8CBQMoQylkZAImD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMjkwMjMvMDEnPkdSL00yOTAyMy8wMTwvYT4gZGQCAQ8PFgIfAgVdTU9ERUxMSU5HIChERSlIWURSQVRJT04sIElPTi1FWENIQU5HRSAmYW1wOyBJTU1PQklMSVNBVElPTiBJTiBOQU5PLVBPUk9VUyBBTkQgT1RIRVIgTUFURVJJQUxTZGQCAg8PFgIfAgUDKEMpZGQCJw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTTE1MTk0LzAxJz5HUi9NMTUxOTQvMDE8L2E+IGRkAgEPDxYCHwIFREVMRUNUUk9OSUMgU1RSVUNUVVJFIEFORCBQUk9QRVJUSUVTIE9GIEVBUkxZIFRSQU5TSVRJT04gTUVUQUwgT1hJREVTZGQCAg8PFgIfAgUDKFApZGQCKA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDgxNjY2LzAxJz5HUi9MODE2NjYvMDE8L2E+IGRkAgEPDxYCHwIFNFNZTkNIUk9UUk9OIFJBRElBVElPTiBTVFVESUVTIE9GIENBVEFMWVRJQyBNQVRFUklBTFNkZAICDw8WAh8CBQMoUClkZAIpD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MNzI1MjcvMDEnPkdSL0w3MjUyNy8wMTwvYT4gZGQCAQ8PFgIfAgViUk9QQTogUFJPQklORyBUSEUgUFJPUEVSVElFUyBPRiBESVNDUkVURSBCSU1FVEFMTElDIE5BTk9QQVJUSUNMRVMgQU5DSE9SRUQgV0lUSElOIE1FU09QT1JPVVMgSE9TVFNkZAICDw8WAh8CBQMoUClkZAIqD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MNTU4NDEvMDEnPkdSL0w1NTg0MS8wMTwvYT4gZGQCAQ8PFgIfAgVqQSBISUdITFkgQ09NUEFDVCAmYW1wOyBGQVNUIFNPTElEIFNUQVRFIEZMVU9SRVNDRU5DRSBERVRFQ1RPUiBGT1IgVEhFIEhJR0ggUEhPVE9OIFNFTlNJVFkgWEFGUyBTVEFUSU9OIDcuMWRkAgIPDxYCHwIFAyhDKWRkAisPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0w1MDY4Ni8wMSc+R1IvTDUwNjg2LzAxPC9hPiBkZAIBDw8WAh8CBT1BIEhJR0hMWSBDT01QQUNUICZhbXA7IEZBU1QgU09MSUQgU1RBVEUgRkxVT1JFU0NFTkNFIERFVEVDVE9SZGQCAg8PFgIfAgUDKEMpZGQCLA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjg2OTY0LzAyJz5HUi9KODY5NjQvMDI8L2E+IGRkAgEPDxYCHwIFRVBSRURJQ1RJVkUgTU9ERUxMSU5HIE9GIENBVEFMWVNUIFBSRVBBUkFUSU9OIEFORCBDQVRBTFlUSUMgUkVBQ1RJVklUWWRkAgIPDxYCHwIFAyhDKWRkAi0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0wzMTAzNi8wMSc+R1IvTDMxMDM2LzAxPC9hPiBkZAIBDw8WAh8CBSdSRUFDVElWSVRZIE9OIFNVUkZBQ0VTIE9GIE9YSURFIFNFTlNPUlNkZAICDw8WAh8CBQMoQylkZAIuD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MMDQ5MzEvMDEnPkdSL0wwNDkzMS8wMTwvYT4gZGQCAQ8PFgIfAgU6QSBDT05TT1JUSVVNIEZPUiBNUFAgU1VQRVJDT01QVVRJTkcgSU4gTUFURVJJQUxTIENIRU1JU1RSWWRkAgIPDxYCHwIFAyhQKWRkAi8PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0s4NTIxNi8wMSc+R1IvSzg1MjE2LzAxPC9hPiBkZAIBDw8WAh8CBUpDT01QVVRFUiBNT0RFTExJTkcgT0YgVEhFIFNUUlVDVFVSRVMgQU5EIFBST1BFUlRJRVMgT0YgSU5PUkdBTklDIE1BVEVSSUFMU2RkAgIPDxYCHwIFAyhQKWRkAjAPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0wxMzY4MS8wMSc+R1IvTDEzNjgxLzAxPC9hPiBkZAIBDw8WAh8CBU1USEUgQUNUSVZFIFNVUkZBQ0UgSU4gUFJPUEVORS9BTkUgQU1NT1hJREFUSU9OIE9OIE1JWEVEIE1FVEFMIE9YSURFIENBVEFMWVNUU2RkAgIPDxYCHwIFAyhDKWRkAjEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0wxMzgzNC8wMSc+R1IvTDEzODM0LzAxPC9hPiBkZAIBDw8WAh8CBVhJTiBTSVRVIE5FVVRST04gU0NBVFRFUklORyBGQUNJTElUSUVTIEZPUiBUSEUgU1RVRFkgT0YgQ0FUQUxZU0lTIEFORCBDQVRBTFlUSUMgUFJPQ0VTU0VTZGQCAg8PFgIfAgUDKFApZGQCMg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDI3NjY0LzAxJz5HUi9MMjc2NjQvMDE8L2E+IGRkAgEPDxYCHwIFYk5FVyBGQU1JTFkgQ0hJUkFMIE1FU09QT1JPVVMgQ0FUQUxZU1RTLVNFTEVDVElWSVRZIEVOSEFOQ0VNRU5UIFRIUk9VR0ggU1VCU1RSQVRFL1BPUkUgSU5URVJBQ1RJT05TZGQCAg8PFgIfAgUDKEMpZGQCMw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzU2NDY5LzAxJz5HUi9LNTY0NjkvMDE8L2E+IGRkAgEPDxYCHwIFaVNUUlVDVFVSRSBBTkQgUkVBQ1RJVklUWSBPRiBNSUNST1BPUk9VUyBTT0xJRFMgQ09OVEFJTklORyBNRVRBTCBBVE9NUy9JT05TLFNUVURJRUQgQlkgVEhFT1JZICZhbXA7IEVYUEVSSWRkAgIPDxYCHwIFAyhQKWRkAjQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0s2NTU5MS8wMSc+R1IvSzY1NTkxLzAxPC9hPiBkZAIBDw8WAh8CBUBTSU1VTEFUSU9OIE9GIENSWVNUQUwgTU9SUEhPTE9HSUVTIEFORCBDUllTVEFMIEdST1dUSCBJTkhJQklUSU9OZGQCAg8PFgIfAgUDKFApZGQCNQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzM3MzA3LzAxJz5HUi9LMzczMDcvMDE8L2E+IGRkAgEPDxYCHwIFaVJPUEE6IFJFQUNUSU9OIE1FQ0hBTklTTVMgSU4gSEVURVJHRU5FT1VTIENBVEFMWVNJUyBJTlZFU1RJR0FURUQgVVNJTkcgTUFTU0lWRUxZIFBBUkFMTEVMIENPTVAgVEVDSE5JUVVFU2RkAgIPDxYCHwIFAyhQKWRkAjYPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0swODg0MC8wMSc+R1IvSzA4ODQwLzAxPC9hPiBkZAIBDw8WAh8CBUNDT01QVVRFUiBNT0RFTExJTkcgT0YgU1VSRkFDRSBUSVAgSU5URVJBQ1RJT05TIE9OIElOU1VMQVRJTkcgU09MSURTZGQCAg8PFgIfAgUDKFApZGQCNw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzQxNjI1LzAxJz5HUi9LNDE2MjUvMDE8L2E+IGRkAgEPDxYCHwIFOkEgQ09OU09SVElVTSBGT1IgTVBQIFNVUEVSQ09NUFVUSU5HIElOIE1BVEVSSUFMUyBDSEVNSVNUUllkZAICDw8WAh8CBQMoUClkZAI4D2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9KODY5NjQvMDEnPkdSL0o4Njk2NC8wMTwvYT4gZGQCAQ8PFgIfAgVFUFJFRElDVElWRSBNT0RFTExJTkcgT0YgQ0FUQUxZU1QgUFJFUEFSQVRJT04gQU5EIENBVEFMWVRJQyBSRUFDVElWSVRZZGQCAg8PFgIfAgUDKEMpZGQCOQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjczMzE1LzAxJz5HUi9KNzMzMTUvMDE8L2E+IGRkAgEPDxYCHwIFPkEgSElHSC1GTFVYIFNZTkNIUk9UUk9OIFNUQVRJT04gRk9SIFNJTkdMRS1DUllTVEFMIERJRkZSQUNUSU9OZGQCAg8PFgIfAgUDKEMpZGQCOg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjMxODY1LzAxJz5HUi9KMzE4NjUvMDE8L2E+IGRkAgEPDxYCHwIFM0NPTVBVVEFUSU9OQUwgU1RVRElFUyBPRiBQT0xBUiBBTkQgTU9MRUNVTEFSIFNPTElEU2RkAgIPDxYCHwIFAyhQKWRkAjsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0ozMTkzMy8wMSc+R1IvSjMxOTMzLzAxPC9hPiBkZAIBDw8WAh8CBTtUSEVPUkVUSUNBTCBTVFVESUVTIE9GIExPQ0FMSVNFRCBTVEFURVMgT04gQ1JZU1RBTCBTVVJGQUNFU2RkAgIPDxYCHwIFAyhQKWRkAjwPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0owMjg3Mi8wMSc+R1IvSjAyODcyLzAxPC9hPiBkZAIBDw8WAh8CBVxQUkVESUNUSU9OIE9GIFRIRSBDUllTVEFMIFNUUlVDVFVSRVMgT0YgUE9MQVIgTU9MRUNVTEVTIFVTSU5HIFJFQUxJU1RJQyBFTEVDVFJPU1RBVElDIE1PREVMU2RkAgIPDxYCHwIFAyhDKWRkAj0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0owMjg0MS8wMSc+R1IvSjAyODQxLzAxPC9hPiBkZAIBDw8WAh8CBWZTWU5DSFJPVFJPTiBSQURJQVRJT04gU1RVRElFUyBPRiBTVFJVQ1RVUkVTIEFORCBSRUFDVElWSVRJRVMgSU4gSEVURVJPR0VORU9VUyBDQVRBTFlTVFMgJmFtcDsgQ0VSQU1JQ1NkZAICDw8WAh8CBQMoUClkZAI+D2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9IMzYxOTEvMDEnPkdSL0gzNjE5MS8wMTwvYT4gZGQCAQ8PFgIfAgU7Q09NUFVUQVRJT05BTCBTVFVESUVTIE9GIERJRkZVU0lPTiBBTkQgU09SUFRJT04gSU4gWkVPTElURVNkZAICDw8WAh8CBQMoQylkZAI/D2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9HMTE2ODIvMDEnPkdSL0cxMTY4Mi8wMTwvYT4gZGQCAQ8PFgIfAgU5Q09NUFVUQVRJT05BTCAmYW1wOyBTWU5USEVUSUMgU1RVRElFUyBPRiBJTk9SR0FOSUMgT1hJREVTZGQCAg8PFgIfAgUDKFApZGQCQA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSDA5Mjk0LzAxJz5HUi9IMDkyOTQvMDE8L2E+IGRkAgEPDxYCHwIFLFNVUEVSQ09NUFVURVIgU1RVRElFUyBPRiBJTk9SR0FOSUMgTUFURVJJQUxTZGQCAg8PFgIfAgUDKFApZGQCQQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRzE0OTczLzAxJz5HUi9HMTQ5NzMvMDE8L2E+IGRkAgEPDxYCHwIFNk1PTEVDVUxBUiBTSU1VTEFUSU9OIE9GIFBPTFlNRVJTIE9OIElOT1JHQU5JQyBTVVJGQUNFU2RkAgIPDxYCHwIFAyhQKWRkAkIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0c1MTI3NS8wMSc+R1IvRzUxMjc1LzAxPC9hPiBkZAIBDw8WAh8CBR5DRVJBTUlDUyBGT1IgVE9YSUMgR0FTIFNFTlNPUlNkZAICDw8WAh8CBQMoUClkZAJDD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9IMjE3MzkvMDEnPkdSL0gyMTczOS8wMTwvYT4gZGQCAQ8PFgIfAgUeQ0VSQU1JQ1MgRk9SIFRPWElDIEdBUyBTRU5TT1JTZGQCAg8PFgIfAgUDKFApZGQCRA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRzE0OTExLzAxJz5HUi9HMTQ5MTEvMDE8L2E+IGRkAgEPDxYCHwIFKENPTVBVVEFUSU9OQUwgU1RVRElFUyBPRiBPWElERSBDQVRBTFlTSVNkZAICDw8WAh8CBQMoUClkZAJFD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9HMTE2NjgvMDEnPkdSL0cxMTY2OC8wMTwvYT4gZGQCAQ8PFgIfAgVKQSBTVVBFUiBNSU5JIENPTVBVVEVSIEZPUiBDT01QVVRBVElPTkFMIENIRU1JU1RSWSAmYW1wOyBNQVRFUklBTFMgUkVTRUFSQ0hkZAICDw8WAh8CBQMoUClkZAJGD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9GNzY3MTgvMDEnPkdSL0Y3NjcxOC8wMTwvYT4gZGQCAQ8PFgIfAgVgVEhFIFBSRURJQ1RJT04gT0YgTU9MRUNVTEFSIEVMRUNUUk9OSUMgQ1JZU1RBTFMgQlkgQURWQU5DRUQgQ09NUFVURVIgTU9ERUxMSU5HIE9GIFBBQ0tJTkcgRk9SQ0VTZGQCAg8PFgIfAgUDKEMpZGQCRw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRjQ1NDQ4LzAxJz5HUi9GNDU0NDgvMDE8L2E+IGRkAgEPDxYCHwIFQUdSQVBISUNTIEVOSEFOQ0VNRU5UIEFORCBQUk9HUkFNTUlORyBTVVBQT1JUIEZPUiBUUkFOU1BVVEVSIEFSUkFZZGQCAg8PFgIfAgUDKFApZGQCSA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRjQ5MjE3LzAxJz5HUi9GNDkyMTcvMDE8L2E+IGRkAgEPDxYCHwIFQVNZTkNIUk9UUk9OIFJBRElBVElPTiBTVFVESUVTIE9GIElOT1JHQU5JQyBDQVRBTFlTVFMgQU5EIFNPUkJFTlRTZGQCAg8PFgIfAgUDKFApZGQCSQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRjg2MzQyLzAxJz5HUi9GODYzNDIvMDE8L2E+IGRkAgEPDxYCHwIFNkNPTVBVVEVSIFNJTVVMQVRJT04gU1RVRElFUyBPRiBTVVBFUkNPTkRVQ1RJTkcgT1hJREVTLmRkAgIPDxYCHwIFAyhQKWRkAkoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0U5NjM0NC8wMSc+R1IvRTk2MzQ0LzAxPC9hPiBkZAIBDw8WAh8CBUhBIFRSQU5TUFVURVIgQVJSQVkgRk9SIE1BVEVSSUFMUyBTSU1VTEFUSU9OIEFORCBDT01QVVRBVElPTkFMIEJJT1BIWVNJQ1NkZAICDw8WAh8CBQMoUClkZAJLD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9FNTg4NjEvMDEnPkdSL0U1ODg2MS8wMTwvYT4gZGQCAQ8PFgIfAgVKQ09NUFVURVIgTU9ERUxMSU5HIE9GIFNUQUJJTElUWSBBTkQgU09SUFRJT04gSU4gQUxVTUlOTy1TSUxJQ0FURSBDQVRBTFlTVFNkZAICDw8WAh8CBQMoQylkZAJMD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9FNjQ2MzMvMDEnPkdSL0U2NDYzMy8wMTwvYT4gZGQCAQ8PFgIfAgVvU1RVRElFUyBPTiBUSEUgS0lORVRJQ1MgJmFtcDsgU1RSVUNUVVJBTCBQUk9QRVJUSUVTIE9GIE1BVEVSSUFMUyBVU0lORyBFTkVSR1ktRElTUEVSU0lWRSBESUZGUkFDVElPTiBPTiBUSEUgU1JTZGQCAg8PFgIfAgUDKEMpZGQCTQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRDk5MzkzLzAxJz5HUi9EOTkzOTMvMDE8L2E+IGRkAgEPDxYCHwIFMERFRkVDVCBBTkQgRE9QQU5UIFNUUlVDVFVSRSBJTiBJTk9SR0FOSUMgU0VOU09SU2RkAgIPDxYCHwIFAyhQKWRkAhMPZBYEZg9kFgJmD2QWAgIBDw8WAh4HVmlzaWJsZWdkZAICD2QWAmYPZBYCAgEPDxYGHgpSZXBvcnROYW1lBQpWaWV3UGVyc29uHg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcwhQZXJzb25JRB4OUGFyYW1ldGVyVmFsdWUVAjhodHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MjY2MwQyNjYzZBYCZg9kFgJmD2QWBAIDDxBkZBYBZmQCBQ8PZBYCHwFlZAIHDw8WAh8MaGRkZC5o1RAobXF1WeMBh1bAacVavM7E" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALBnsL7BQLQvN++DAKT/OCVAwLKoMrZDzNgWhK5riCzT06awkl4OjRKiHme" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor R Catlow</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">Cardiff University</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Chemistry</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">+44(0)2076790650</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">02079164653</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="099046114046097046099097116108111119064117099108046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Biochemical engineering</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Biomaterials</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Building Ops &amp; Management</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2">Carbon Capture &amp; Storage</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label1">Catalysis &amp; Applied Catalysis</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label2">Design of Process systems</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label1">Electrochemical Science &amp; Eng.</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label2">Fuel Cell Technologies</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label1">Gas &amp; Solution Phase Reactions</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label2">Heat &amp; Mass Transfer</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label1">High Performance Computing</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label2">Materials Characterisation</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl08_Label1">Materials Synthesis &amp; Growth</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl08_Label2">Microsystems</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl09_Label1">Multiphase Flow</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl09_Label2">Physical Organic Chemistry</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl10_Label1">Reactor Engineering</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl10_Label2">Separation Processes</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl11_Label1">Solar Technology</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl11_Label2">Surfaces &amp; Interfaces</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl12_Label1">Sustainable Energy Vectors</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl12_Label2">Water Engineering</span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/N009533/1'>EP/N009533/1</a> </b></td><td align="left">Utilisation of Solar Energy and Electrocatalytic Processes for the Low Energy Conversion of CO2 to Fuels and Chemicals</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K009567/2'>EP/K009567/2</a> </b></td><td align="left">Integrated Computational Solutions for Catalysis</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K035355/2'>EP/K035355/2</a> </b></td><td align="left">Bio-inspired sulfide nanocatalysts: From proof of concept to 'real' catalysis</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M010538/1'>EP/M010538/1</a> </b></td><td align="left">EPSRC Impact Acceleration Fellowships at RCaH</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L026317/1'>EP/L026317/1</a> </b></td><td align="left">First principles design of novel ammonia synthesis catalysts</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K038419/1'>EP/K038419/1</a> </b></td><td align="left">Scalable Quantum Chemistry with Flexible Embedding Stage 2</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K038656/1'>EP/K038656/1</a> </b></td><td align="left">Centre for Nature Inspired Engineering (CNIE): Addressing Challenges in Sustainability and Scalable Manufacturing</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L000202/1'>EP/L000202/1</a> </b></td><td align="left">MATERIALS CHEMISTRY HIGH END COMPUTING CONSORTIUM</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K014714/1'>EP/K014714/1</a> </b></td><td align="left">The UK Catalysis Hub</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K016288/1'>EP/K016288/1</a> </b></td><td align="left">Energy Materials: Computational Solutions</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K014323/1'>EP/K014323/1</a> </b></td><td align="left">Technical support</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K001329/1'>EP/K001329/1</a> </b></td><td align="left">A Coordinated, Comprehensive approach to Carbon Capture and Utilisation</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I019693/1'>EP/I019693/1</a> </b></td><td align="left">Catalytic Science in the Harwell Research Centre</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K035355/1'>EP/K035355/1</a> </b></td><td align="left">Bio-inspired sulfide nanocatalysts: From proof of concept to 'real' catalysis</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K009567/1'>EP/K009567/1</a> </b></td><td align="left">Integrated Computational Solutions for Catalysis</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K031481/1'>EP/K031481/1</a> </b></td><td align="left">Small items of research equipment at UCL</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K000144/1'>EP/K000144/1</a> </b></td><td align="left">e-Infrastructure South Consortium - Centre for Innovation</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K000136/1'>EP/K000136/1</a> </b></td><td align="left">e-Infrastructure South Consortium - Centre for Innovation</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I03014X/1'>EP/I03014X/1</a> </b></td><td align="left">HPC simulations of complex solids and clusters using static lattice techniques</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I030662/1'>EP/I030662/1</a> </b></td><td align="left">Scalable Quantum Chemistry with Flexible Embedding</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I01330X/1'>EP/I01330X/1</a> </b></td><td align="left">Semiconductor nanocrystals for solar cells: Tuning shape, size and interface effects</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H046313/1'>EP/H046313/1</a> </b></td><td align="left">Bio-inspired (Fe,Ni)S nano-catalysts for CO2 conversion</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F021496/1'>EP/F021496/1</a> </b></td><td align="left">Nucleation and growth studies of nanoporous materials using synchrotron and neutron radiation techniques</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F067496/1'>EP/F067496/1</a> </b></td><td align="left">Modelling of Advanced Functional Materials using Terascale Computing</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F013612/1'>EP/F013612/1</a> </b></td><td align="left">The Thomas Young Centre: Towards a Shared Vision of Materials Modelling in London</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C532600/2'>EP/C532600/2</a> </b></td><td align="left">High End Computing for the Characterisation of Structure and Reactivity of Complex Oxide Catalysts</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D504872/2'>EP/D504872/2</a> </b></td><td align="left">Synthesis, Design and Function in New Materials Chemistry</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/P502713/1'>EP/P502713/1</a> </b></td><td align="left">DTA - The Royal Institution of Great Britain</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/P50290X/1'>EP/P50290X/1</a> </b></td><td align="left">IDS - The Royal Institution of Great Britain</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C51744X/1'>EP/C51744X/1</a> </b></td><td align="left">Metal/Oxide Interfaces At The Atomic Level: Linking Theory and Experiment</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/P501660/1'>EP/P501660/1</a> </b></td><td align="left">DTA - The Royal Institution of Great Britain</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C532600/1'>EP/C532600/1</a> </b></td><td align="left">High End Computing for the Characterisation of Structure and Reactivity of Complex Oxide Catalysts</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D500524/1'>EP/D500524/1</a> </b></td><td align="left">Theoretical Investigations of surface chemistry in space</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D504872/1'>EP/D504872/1</a> </b></td><td align="left">Synthesis, Design and Function in New Materials Chemistry</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D504562/1'>EP/D504562/1</a> </b></td><td align="left">Collaborative Training Account: Royal Institution of Great Britain</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S84446/01'>GR/S84446/01</a> </b></td><td align="left">An Intermediate Computing Resource for the Davy Faraday Research laboratory</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S24114/01'>GR/S24114/01</a> </b></td><td align="left">Basic Technology: Control and Prediction of the Organic Solid State</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/P03131/01'>GR/P03131/01</a> </b></td><td align="left">DTA - Royal Institution of G.B.</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S13422/01'>GR/S13422/01</a> </b></td><td align="left">Materials Chemistry Using Terascale Computing</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S01986/01'>GR/S01986/01</a> </b></td><td align="left">A computational study of selective oxidation catalysis</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S01535/01'>GR/S01535/01</a> </b></td><td align="left">In Situ Study of the Synthesis and Performance of Functional Ceramics Using the New MPW6.2+Rapid Sychrotron Station</td><td align="left" width="5%">(R)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/P01724/01'>GR/P01724/01</a> </b></td><td align="left">DTA - Royal Institution of G.B.</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/P01878/01'>GR/P01878/01</a> </b></td><td align="left">Ind. CASE - Royal Institution of G.B.</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R97207/01'>GR/R97207/01</a> </b></td><td align="left">e-Science Technologies in the Simulation of Complex Materials</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R85839/01'>GR/R85839/01</a> </b></td><td align="left">MATERIALS CHEMISTRY IN THE DAVY FARADAY LABORATORY</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/P00635/01'>GR/P00635/01</a> </b></td><td align="left">DTA - Royal Institution of G.B.</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N20607/01'>GR/N20607/01</a> </b></td><td align="left">HIGH PERFORMANCE COMPUTING APPLICATIONS IN MATERIALS CHEMISTRY</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N14569/01'>GR/N14569/01</a> </b></td><td align="left">PREDICTIVE MODELLING OF THE STRUCTURES AND PROPERTIES OF CRYSTALLINE MATERIALS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M53509/01'>GR/M53509/01</a> </b></td><td align="left">A COMPUTATIONAL FACILITY FOR SOLID STATE CHEMISTRY AND MATERIALS SCIENCE RESEARCH</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M66172/01'>GR/M66172/01</a> </b></td><td align="left">THE ARCHITECTURE OF NEW ENGINEERED SOLID CATALYSTS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M29023/01'>GR/M29023/01</a> </b></td><td align="left">MODELLING (DE)HYDRATION, ION-EXCHANGE &amp; IMMOBILISATION IN NANO-POROUS AND OTHER MATERIALS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M15194/01'>GR/M15194/01</a> </b></td><td align="left">ELECTRONIC STRUCTURE AND PROPERTIES OF EARLY TRANSITION METAL OXIDES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L81666/01'>GR/L81666/01</a> </b></td><td align="left">SYNCHROTRON RADIATION STUDIES OF CATALYTIC MATERIALS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L72527/01'>GR/L72527/01</a> </b></td><td align="left">ROPA: PROBING THE PROPERTIES OF DISCRETE BIMETALLIC NANOPARTICLES ANCHORED WITHIN MESOPOROUS HOSTS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L55841/01'>GR/L55841/01</a> </b></td><td align="left">A HIGHLY COMPACT &amp; FAST SOLID STATE FLUORESCENCE DETECTOR FOR THE HIGH PHOTON SENSITY XAFS STATION 7.1</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L50686/01'>GR/L50686/01</a> </b></td><td align="left">A HIGHLY COMPACT &amp; FAST SOLID STATE FLUORESCENCE DETECTOR</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J86964/02'>GR/J86964/02</a> </b></td><td align="left">PREDICTIVE MODELLING OF CATALYST PREPARATION AND CATALYTIC REACTIVITY</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L31036/01'>GR/L31036/01</a> </b></td><td align="left">REACTIVITY ON SURFACES OF OXIDE SENSORS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L04931/01'>GR/L04931/01</a> </b></td><td align="left">A CONSORTIUM FOR MPP SUPERCOMPUTING IN MATERIALS CHEMISTRY</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K85216/01'>GR/K85216/01</a> </b></td><td align="left">COMPUTER MODELLING OF THE STRUCTURES AND PROPERTIES OF INORGANIC MATERIALS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L13681/01'>GR/L13681/01</a> </b></td><td align="left">THE ACTIVE SURFACE IN PROPENE/ANE AMMOXIDATION ON MIXED METAL OXIDE CATALYSTS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L13834/01'>GR/L13834/01</a> </b></td><td align="left">IN SITU NEUTRON SCATTERING FACILITIES FOR THE STUDY OF CATALYSIS AND CATALYTIC PROCESSES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L27664/01'>GR/L27664/01</a> </b></td><td align="left">NEW FAMILY CHIRAL MESOPOROUS CATALYSTS-SELECTIVITY ENHANCEMENT THROUGH SUBSTRATE/PORE INTERACTIONS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K56469/01'>GR/K56469/01</a> </b></td><td align="left">STRUCTURE AND REACTIVITY OF MICROPOROUS SOLIDS CONTAINING METAL ATOMS/IONS,STUDIED BY THEORY &amp; EXPERI</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K65591/01'>GR/K65591/01</a> </b></td><td align="left">SIMULATION OF CRYSTAL MORPHOLOGIES AND CRYSTAL GROWTH INHIBITION</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K37307/01'>GR/K37307/01</a> </b></td><td align="left">ROPA: REACTION MECHANISMS IN HETERGENEOUS CATALYSIS INVESTIGATED USING MASSIVELY PARALLEL COMP TECHNIQUES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K08840/01'>GR/K08840/01</a> </b></td><td align="left">COMPUTER MODELLING OF SURFACE TIP INTERACTIONS ON INSULATING SOLIDS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K41625/01'>GR/K41625/01</a> </b></td><td align="left">A CONSORTIUM FOR MPP SUPERCOMPUTING IN MATERIALS CHEMISTRY</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J86964/01'>GR/J86964/01</a> </b></td><td align="left">PREDICTIVE MODELLING OF CATALYST PREPARATION AND CATALYTIC REACTIVITY</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J73315/01'>GR/J73315/01</a> </b></td><td align="left">A HIGH-FLUX SYNCHROTRON STATION FOR SINGLE-CRYSTAL DIFFRACTION</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J31865/01'>GR/J31865/01</a> </b></td><td align="left">COMPUTATIONAL STUDIES OF POLAR AND MOLECULAR SOLIDS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J31933/01'>GR/J31933/01</a> </b></td><td align="left">THEORETICAL STUDIES OF LOCALISED STATES ON CRYSTAL SURFACES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J02872/01'>GR/J02872/01</a> </b></td><td align="left">PREDICTION OF THE CRYSTAL STRUCTURES OF POLAR MOLECULES USING REALISTIC ELECTROSTATIC MODELS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J02841/01'>GR/J02841/01</a> </b></td><td align="left">SYNCHROTRON RADIATION STUDIES OF STRUCTURES AND REACTIVITIES IN HETEROGENEOUS CATALYSTS &amp; CERAMICS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H36191/01'>GR/H36191/01</a> </b></td><td align="left">COMPUTATIONAL STUDIES OF DIFFUSION AND SORPTION IN ZEOLITES</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G11682/01'>GR/G11682/01</a> </b></td><td align="left">COMPUTATIONAL &amp; SYNTHETIC STUDIES OF INORGANIC OXIDES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H09294/01'>GR/H09294/01</a> </b></td><td align="left">SUPERCOMPUTER STUDIES OF INORGANIC MATERIALS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G14973/01'>GR/G14973/01</a> </b></td><td align="left">MOLECULAR SIMULATION OF POLYMERS ON INORGANIC SURFACES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G51275/01'>GR/G51275/01</a> </b></td><td align="left">CERAMICS FOR TOXIC GAS SENSORS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H21739/01'>GR/H21739/01</a> </b></td><td align="left">CERAMICS FOR TOXIC GAS SENSORS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G14911/01'>GR/G14911/01</a> </b></td><td align="left">COMPUTATIONAL STUDIES OF OXIDE CATALYSIS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G11668/01'>GR/G11668/01</a> </b></td><td align="left">A SUPER MINI COMPUTER FOR COMPUTATIONAL CHEMISTRY &amp; MATERIALS RESEARCH</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F76718/01'>GR/F76718/01</a> </b></td><td align="left">THE PREDICTION OF MOLECULAR ELECTRONIC CRYSTALS BY ADVANCED COMPUTER MODELLING OF PACKING FORCES</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F45448/01'>GR/F45448/01</a> </b></td><td align="left">GRAPHICS ENHANCEMENT AND PROGRAMMING SUPPORT FOR TRANSPUTER ARRAY</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F49217/01'>GR/F49217/01</a> </b></td><td align="left">SYNCHROTRON RADIATION STUDIES OF INORGANIC CATALYSTS AND SORBENTS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/F86342/01'>GR/F86342/01</a> </b></td><td align="left">COMPUTER SIMULATION STUDIES OF SUPERCONDUCTING OXIDES.</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/E96344/01'>GR/E96344/01</a> </b></td><td align="left">A TRANSPUTER ARRAY FOR MATERIALS SIMULATION AND COMPUTATIONAL BIOPHYSICS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/E58861/01'>GR/E58861/01</a> </b></td><td align="left">COMPUTER MODELLING OF STABILITY AND SORPTION IN ALUMINO-SILICATE CATALYSTS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/E64633/01'>GR/E64633/01</a> </b></td><td align="left">STUDIES ON THE KINETICS &amp; STRUCTURAL PROPERTIES OF MATERIALS USING ENERGY-DISPERSIVE DIFFRACTION ON THE SRS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/D99393/01'>GR/D99393/01</a> </b></td><td align="left">DEFECT AND DOPANT STRUCTURE IN INORGANIC SENSORS</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

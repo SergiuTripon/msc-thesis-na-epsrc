@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Foliations: solenoids, regularity and ends
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG006377%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzAwNjM3Ny8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU7PHN0cm9uZz5Gb2xpYXRpb25zOiBzb2xlbm9pZHMsIHJlZ3VsYXJpdHkgYW5kIGVuZHM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT88YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPS0xOTIzODcnPkNsYXJrLCBEciBBRDwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQtNYXRoZW1hdGljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF1VuaXZlcnNpdHkgb2YgTGVpY2VzdGVyZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUSRmlyc3QgR3JhbnQgU2NoZW1lZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUQMDYgTm92ZW1iZXIgMjAwOGRkAgMPZBYCAgEPDxYCHwQFEDA1IE5vdmVtYmVyIDIwMTFkZAIFD2QWAgIBDw8WBB8EBQcyNjUsMjkxHgdUb29sVGlwBQoyNjUsMjkwLjkwZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhZBbGdlYnJhICZhbXA7IEdlb21ldHJ5FU1hdGhlbWF0aWNhbCBBbmFseXNpc2QCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzA0IEp1biAyMDA4ZGQCAQ8PFgIfBwUNTGluayB0byBwYW5lbGQWBAIBDw8WBB8EBSpNYXRoZW1hdGljcyBQcmlvcml0aXNhdGlvbiBQYW5lbCAoU2NpZW5jZSkfAwUbVmlld1BhbmVsLmFzcHg/UGFuZWxJZD00NjMwZGQCAw8PFgIfAmhkZAICD2QWAgIBDw8WAh8EBQlBbm5vdW5jZWRkZAIPD2QWAmYPZBYCAgEPDxYCHwQFwxNGb2xpYXRpb25zIGFyZSBleHRyZW1lbHkgaW1wb3J0YW50IG1hdGhlbWF0aWNhbCBvYmplY3RzIHRvIHVuZGVyc3RhbmQsIGFzIHRoZXkgYXJpc2UgbmF0dXJhbGx5IGluIHRoZSB0aGUgc29sdXRpb25zIHRvIGRpZmZlcmVudGlhbCBlcXVhdGlvbnMsICBsZXZlbCBzZXRzIG9mIHNtb290aCBmdW5jdGlvbnMgYW5kIGluIHRoZSBnZW9tZXRyaWMgc3R1ZHkgb2YgZmxvd3Mgb24gbWFuaWZvbGRzLk1hbnkgb2YgdGhlIGxlYWRpbmcgdG9wb2xvZ2lzdHMgb2YgdGhlIHBhc3QgZmlmdHkgeWVhcnMsIGluY2x1ZGluZyBUaHVyc3RvbiwgTm92aWtvdiBhbmQgTWlsbm9yLCBoZWxwZWQgZGV2ZWxvcCB0aGUgdGhlb3J5IG9mIGZvbGlhdGlvbnMgdG8gdGhlIHBvaW50IHRoYXQgaXQgbm93IGlzIGluZXh0cmljYWJseSBsaW5rZWQgd2l0aCBnZW9tZXRyaWMgdG9wb2xvZ3kuIEZvbGlhdGlvbnMgaGF2ZSBwbGF5ZWQgYSBzaWduaWZpY2FudCByb2xlIGluIHRoZSBkZXZlbG9wbWVudCBvZiBub24tY29tbXV0YXRpdmUgZ2VvbWV0cnksIGFuZCBmb2xpYXRpb25zIGNvbnRpbnVlIHRvIGJlIGFuIGVzc2VudGlhbCBlbGVtZW50IGluIHRoZSBtb2Rlcm4gdGhlb3JpZXMgb2YgZ3JvdXBvaWRzIGFuZCBtb2R1bGkgc3BhY2VzLiBXZSBhaW0gdG8gc2lnbmlmaWNhbnRseSBpbmNyZWFzZSBvdXIgdW5kZXJzdGFuZGluZyBvZiBmb2xpYXRpb25zIGJ5IGRldmVsb3BpbmcgdGVjaG5pcXVlcyB0byB1bmRlcnN0YW5kIHRoZSB3YXkgdGhlIGxlYXZlcyBvZiBmb2xpYXRpb25zIGJlaGF2ZSBhcyBvbmUgIGFwcHJvYWNoZXMgaW5maW5pdHkgLiBXZSBzaGFsbCBmb2N1cyBpbiBwYXJ0aWN1bGFyIG9uIHRoZSBiZWhhdmlvdXIgaW4gbGVhdmVzIG9mIG1pbmltYWwgc2V0cywgd2hpY2ggY2FuIGJlIHRob3VnaHQgb2YgYXMgdGhlIG1vc3QgYmFzaWMgYnVpbGRpbmcgYmxvY2tzIG9mIGEgZm9saWF0aW9uLkVuZHMgcHJvdmlkZSBhIG1lYW5zIHRvIHN0dWR5IHRoZSBhc3ltcHRvdGljIGJlaGF2aW91ciBvZiBtaW5pbWFsIHNldHMgb2YgZm9saWF0aW9ucywgYnV0IHRoZXJlIGFyZSB2ZXJ5IGZldyB0ZWNobmlxdWVzIGZvciBmaW5kaW5nIHRoZSBlbmRzIG9mIG1pbmltYWwgc2V0cy4gQXMgYW4gaW1wb3J0YW50IGFuZCBoaWdobHkgc3RydWN0dXJlZCBjbGFzcyBvZiBtaW5pbWFsIHNldHMsIHNvbGVub2lkcyBhcmUgYSBuYXR1cmFsIGNhbmRpZGF0ZSBmb3IganVzdCBzdWNoIGFuIGFuYWx5c2lzLiBBIHNvbGVub2lkIGlzIGEgIGJ1bmRsZSB3aXRoIGEgcHJvZmluaXRlIHN0cnVjdHVyZSBncm91cCB0aGF0IHByb3ZpZGVkIHRoZSBrZXkgd2UgaGF2ZSBwcmV2aW91c2x5IHVzZWQgdG8gdW5sb2NrIG1hbnkgb2YgaXRzIGltcG9ydGFudCBwcm9wZXJ0aWVzLldlIGFpbSB0byBzaG93IHRoYXQgc29sZW5vaWRzIGFyZSBwcmV2YWxlbnQgd2l0aGluIGZvbGlhdGlvbnMgYW5kIHRodXMgYXJlIG9mc2lnbmlmaWNhbmNlIGZvciB0aGUgZ2VuZXJhbCB1bmRlcnN0YW5kaW5nIG9mIHRoZSBhc3ltcHRvdGljcyBvZiBmb2xpYXRpb25zLiBBdCB0aGUgc2FtZSB0aW1lLCB3ZSBzaGFsbCBkZXZlbG9wIGFuIHVuZGVyc3RhbmRpbmcgb2YgdGhlIGFzeW1wdG90aWNzIG9mIHNvbGVub2lkcyBieSBkZXZlbG9waW5nIHRvb2xzIGZvciBjYWxjdWxhdGluZyB0aGVpciBlbmRzIHVzaW5nIHRoZSBvcmlnaW5hbCB0ZWNobmlxdWUgb2YgcHJvZmluaXRlIENheWxleSBncmFwaHMuIEJ5IGJyb2FkZW5pbmcgdGhlIHNjb3BlIG9mIHRoZXNlIHRlY2huaXF1ZXMgdG8gYSB3aWRlciBjbGFzcyBvZnNvbGVub2lkcyB0aGFuIGZpcnN0IGNvbnNpZGVyZWQsIHdlIGhvcGUgdG8gc29sdmUgdGhlIGltcG9ydGFudCBvcGVuIHF1ZXN0aW9uIG9mIGRldGVybWluaW5nIHRoZSBlbmRzIGZvciB0aGUgZ2VuZXJhbCBjb2RpbWVuc2lvbiBvbmUgbWluaW1hbCBzZXQuIEluIHBhcmFsbGVsLCB3ZSBzaGFsbCB1bmRlcnRha2UgYSBzdHVkeSBvZiB0aGUgcmVndWxhcml0eSBvZiBzb2xlbm9pZHMgYXMgdGhleSBvY2N1ciB3aXRoaW4gZm9saWF0aW9ucywgc2hvd2luZyB0aGF0IHRoZSBob2xvbm9teSBwc2V1ZG9ncm91cCBvZiBhIGZvbGlhdGlvbiByZXN0cmljdGVkIHRvc29sZW5vaWRhbCBtaW5pbWFsIHNldCBtdXN0IGJlIGVxdWljb250aW51b3VzLiBGaW5hbGx5LCB3ZSBleHBlY3QgdG8gZGV2ZWxvcCB0aGVzZSB0ZWNobmlxdWVzIGluIGVub3VnaCBnZW5lcmFsaXR5IHRoYXQgdGhleSBjb3VsZCBiZSBhcHBsaWVkIHRvIGEgbXVjaCB3aWRlciBjbGFzcyBvZiBjb2Fyc2UgcXVhc2ktaXNvbWV0cnkgaW52YXJpYW50cy4gVGhpcyBwcm9qZWN0IHdpbGwgYmUgY2FycmllZCBvdXQgYXQgdGhlIFVuaXZlcnNpdHkgb2YgTGVpY2VzdGVyLiBEdWUgdG8gaXRzIGJyb2FkIHNjb3BlLCBhc3Npc3RhbmNlIG9mIGEgcG9zdC1kb2N0b3JhbCBmZWxsb3cgYW5kIGV4cGVydHMgZnJvbSBvdGhlciB1bml2ZXJzaXRpZXMgaW4gdGhlIFVLIGFuZCBhYnJvYWQgd2lsbCBiZSByZXF1aXJlZC5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmxlLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmxlLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzAwNjM3Ny8xDEVQL0cwMDYzNzcvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRk0SQtsDLKR0CuHxneDTHOgfBxedI=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLUhs7TDgLQvN++DAKT/OCVA7aQyrVc5EZh1b7xx5xPAFgm7VeY" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G006377/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Foliations: solenoids, regularity and ends</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-192387'>Clark, Dr AD</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Leicester</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">06 November 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">05 November 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="265,290.90" class="DetailValue">265,291</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Mathematical Analysis</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>04 Jun 2008</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4630">Mathematics Prioritisation Panel (Science)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Foliations are extremely important mathematical objects to understand, as they arise naturally in the the solutions to differential equations,  level sets of smooth functions and in the geometric study of flows on manifolds.Many of the leading topologists of the past fifty years, including Thurston, Novikov and Milnor, helped develop the theory of foliations to the point that it now is inextricably linked with geometric topology. Foliations have played a significant role in the development of non-commutative geometry, and foliations continue to be an essential element in the modern theories of groupoids and moduli spaces. We aim to significantly increase our understanding of foliations by developing techniques to understand the way the leaves of foliations behave as one  approaches infinity . We shall focus in particular on the behaviour in leaves of minimal sets, which can be thought of as the most basic building blocks of a foliation.Ends provide a means to study the asymptotic behaviour of minimal sets of foliations, but there are very few techniques for finding the ends of minimal sets. As an important and highly structured class of minimal sets, solenoids are a natural candidate for just such an analysis. A solenoid is a  bundle with a profinite structure group that provided the key we have previously used to unlock many of its important properties.We aim to show that solenoids are prevalent within foliations and thus are ofsignificance for the general understanding of the asymptotics of foliations. At the same time, we shall develop an understanding of the asymptotics of solenoids by developing tools for calculating their ends using the original technique of profinite Cayley graphs. By broadening the scope of these techniques to a wider class ofsolenoids than first considered, we hope to solve the important open question of determining the ends for the general codimension one minimal set. In parallel, we shall undertake a study of the regularity of solenoids as they occur within foliations, showing that the holonomy pseudogroup of a foliation restricted tosolenoidal minimal set must be equicontinuous. Finally, we expect to develop these techniques in enough generality that they could be applied to a much wider class of coarse quasi-isometry invariants. This project will be carried out at the University of Leicester. Due to its broad scope, assistance of a post-doctoral fellow and experts from other universities in the UK and abroad will be required.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.le.ac.uk                                                                                 '>http://www.le.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

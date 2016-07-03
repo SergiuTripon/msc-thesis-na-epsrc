@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Stochastic Local Search Algorithms for Structural Proteomics
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD062012%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDA2MjAxMi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVNPHN0cm9uZz5TdG9jaGFzdGljIExvY2FsIFNlYXJjaCBBbGdvcml0aG1zIGZvciBTdHJ1Y3R1cmFsIFByb3Rlb21pY3M8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUI8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTExOTg3MCc+U3RlaW5ob2ZlbCwgRHIgSzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRBDb21wdXRlciBTY2llbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUS2luZ3MgQ29sbGVnZSBMb25kb25kZAIID2QWAgIBD2QWAgIBDw8WAh8EBRJGaXJzdCBHcmFudCBTY2hlbWVkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBPY3RvYmVyIDIwMDZkZAIDD2QWAgIBDw8WAh8EBREzMCBTZXB0ZW1iZXIgMjAwOWRkAgUPZBYCAgEPDxYEHwQFBzIxOSw3NTEeB1Rvb2xUaXAFCjIxOSw3NTEuMTBkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAICFgQCAQ9kFgJmDxUCF0FydGlmaWNpYWwgSW50ZWxsaWdlbmNlEENoZW1pY2FsIEJpb2xvZ3lkAgIPZBYCZg8VAghHZW5vbWljcxpNYXRoZW1hdGljYWwgQXNwZWN0cyBvZiBPUmQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAXWHlByb3RlaW5zIGFyZSBrZXkgZWxlbWVudHMgb2YgdmlydHVhbGx5IGFsbCBjZWxsdWxhciBmdW5jdGlvbnMuIFRoZXkgYXJlIGNvbXBsZXggYmlvbG9naWNhbCBtYWNyb21vbGVjdWxlcyB0aGF0IGFyZSBjb21wb3NlZCBvZiBhIHNlcXVlbmNlIG9mIGFtaW5vIGFjaWRzLCB3aGljaCBpcyBlbmNvZGVkIGJ5IGEgZ2VuZSBpbiBhIGdlbm9tZS4gQW1pbm8gYWNpZHMgYXJlIGpvaW5lZCBlbmQtdG8tZW5kIGR1cmluZyBwcm90ZWluIHN5bnRoZXNpcyBieSB0aGUgZm9ybWF0aW9uIG9mIHBlcHRpZGUgYm9uZHMuIFRoZSBzZXF1ZW5jZSBvZiBwZXB0aWRlIGJvbmRzIGZvcm1zIGEgIG1haW4gY2hhaW4gIG9yICBiYWNrYm9uZSAgZm9yIHRoZSBwcm90ZWluLiBUaGUgZnVuY3Rpb25hbCBwcm9wZXJ0aWVzIG9mIHByb3RlaW5zIGRlcGVuZCB1cG9uIHRoZWlyIHRocmVlLWRpbWVuc2lvbmFsIHN0cnVjdHVyZXMuIEtub3dpbmcgdGhlIHN0cnVjdHVyZSBvZiBhIHByb3RlaW4gcHJvdmlkZXMgYSBiYXNpcyBmb3IgaWRlbnRpZnlpbmcgdGhlIHByb3RlaW4ncyBmdW5jdGlvbiwgYW5kIHByb3RlaW4gc3RydWN0dXJlcyBhcmUgbmVjZXNzYXJ5IGZvciBtYW55IGNvbXB1dGF0aW9uYWwgZHJ1ZyBkb2NraW5nIHRlY2huaXF1ZXMuIFVubGlrZSB0aGUgc3RydWN0dXJlIG9mIG90aGVyIGJpb2xvZ2ljYWwgbWFjcm9tb2xlY3VsZXMgKGUuZy4sIEROQSksIHByb3RlaW5zIGhhdmUgY29tcGxleCwgaXJyZWd1bGFyIHN0cnVjdHVyZXMgdGhhdCBhcmUgZGlmZmljdWx0IHRvIHByZWRpY3QuIFRvIHVuZGVyc3RhbmQgdGhlIGVudGlyZSBmb2xkaW5nIHBhdGh3YXksIGkuZS4sIHRoZSBjb21wbGV0ZSBkeW5hbWljcyBhbmQgY2hlbWljYWwgY2hhbmdlcyBpbnZvbHZlZCBpbiBnb2luZyBmcm9tIGFuIHVuZm9sZGVkIGxpbmVhciBzdGF0ZSBpbnRvIGEgY29tcGFjdCBmb2xkZWQgc3RhdGUgaXMgb25lIG9mIHRoZSBtb3N0IGNoYWxsZW5naW5nIHByb2JsZW1zIGluIGN1cnJlbnQgYmlvY2hlbWlzdHJ5LnByb3Bvc2VkIHByb2plY3QgZm9jdXNlcyBvbiB0aGUgZGVzaWduIGFuZCBhbmFseXNpcyBvZiBicmFuZCBuZXcgY2xhc3NlcyBvZiBzdG9jaGFzdGljIGxvY2FsIHNlYXJjaC1iYXNlZCBhbGdvcml0aG1zIGZvciBzdHJ1Y3R1cmFsIHByb3Rlb21pY3MsIGkuZS4gZm9yIHByb3RlaW4gZm9sZGluZyBhcyB3ZWxsIGFzIGZvciByZWxhdGVkIHByb2JsZW1zIGxpa2UgcHJvdGVpbiBzdHJ1Y3R1cmUgYWxpZ25tZW50cyBhbmQgcHJvdGVpbiBzZXF1ZW5jZSBkZXNpZ24gKGludmVyc2UgdG8gZm9sZGluZykuIEFsbCB0aGVzZSBwcm9ibGVtcyBjYW4gYmUgZm9ybXVsYXRlZCBhcyBvcHRpbWlzYXRpb24gcHJvYmxlbXMuIEZvciBpbnN0YW5jZSwgb25lIG9mIHRoZSBiYXNpYyBwYXJhZGlnbXMgaW4gc3RydWN0dXJhbCBwcm90ZW9taWNzIGlzIGdpdmVuIGJ5IEFuZmluc2VuJ3MgdGhlcm1vZHluYW1pYyBoeXBvdGhlc2lzOiBQcm90ZWlucyBmb2xkIHRvIGEgbWluaW11bSBlbmVyZ3kgc3RhdGUsIGFuZCB0aGUgaW5mb3JtYXRpb24gZGV0ZXJtaW5pbmcgdGhlIHRocmVlLWRpbWVuc2lvbmFsIHN0cnVjdHVyZSAodGVydGlhcnkgc3RydWN0dXJlKSBvZiBhIHByb3RlaW4gcmVzaWRlcyBpbiB0aGUgY2hlbWlzdHJ5IG9mIGl0cyBwcmltYXJ5IHN0cnVjdHVyZS4gVGhlcmVmb3JlLCB0aGUgaW52ZXN0aWdhdGlvbiBvZiBzdG9jaGFzdGljIGxvY2FsIHNlYXJjaCBhbGdvcml0aG1zIChTTFNBKSBpcyBhIG5hdHVyYWwgY2hvaWNlIHRvIHRhY2tsZSB0aGVzZSB2ZXJ5IGNvbXBsZXggKE5QLWhhcmQpIHByb2JsZW1zLiBTTFNBcyBzdWNoIGFzIFNpbXVsYXRlZCBBbm5lYWxpbmcgYW5kIEdlbmV0aWMgQWxnb3JpdGhtcyBoYXZlIGJlZW4gc3VjY2Vzc2Z1bGx5IGFwcGxpZWQgdG8gYSB3aWRlIHZhcmlldHkgb2YgY29tYmluYXRvcmlhbCBvcHRpbWlzYXRpb24gcHJvYmxlbXMuIFNpbmNlIGl0IGlzIHByYWN0aWNhbGx5IGltcG9zc2libGUgZm9yIHByb3RlaW4gZm9sZGluZyB0byBldmFsdWF0ZSBldmVyeSBmZWFzaWJsZSBjb25mb3JtYXRpb24sIGxvY2FsIHNlYXJjaCBhbGdvcml0aG1zIHRyeSB0byBmaW5kIGFuIGVmZmljaWVudCB3YWxrIHRocm91Z2ggYW4gKGVuZXJneSkgbGFuZHNjYXBlIHRoYXQgaXMgaW5kdWNlZCBieSBhbGwgcG9zc2libGUgc29sdXRpb25zLCB3aGVyZSBuZWlnaGJvdXJpbmcgc29sdXRpb25zIGFyZSBldmFsdWF0ZWQgd2l0aCByZXNwZWN0IHRvIHRoZSB2YWx1ZSBvZiB0aGUgb2JqZWN0aXZlIGZ1bmN0aW9uLiBJbiBvdXIgYXBwcm9hY2ggd2UgaW52ZXN0aWdhdGUgdGhlIGFwcGxpY2FiaWxpdHkgb2YgaW5ob21vZ2VuZW91cyBNYXJrb3YgY2hhaW5zIGluIG9yZGVyIHRvIGNvbnRyb2wgdGhlc2Ugd2Fsa3MgdGhyb3VnaCBsYW5kc2NhcGVzLCB3aGVyZSB3ZSBmb2N1cyBvbiBkaWZmZXJlbnQgbW9kZWxzIG9mIHByb3RlaW4gZm9sZGluZyB0b2dldGhlciB3aXRoIGEgdmFyaWV0eSBvZiBwb3RlbnRpYWwgb2JqZWN0aXZlIGZ1bmN0aW9ucy4gVGhlIGNob2ljZSBvZiBpbmhvbW9nZW5lb3VzIE1hcmtvdiBjaGFpbnMgd2lsbCBlbmFibGUgdXMgdG8gbWF0aGVtYXRpY2FsbHkgcHJvdmUgcHJvcGVydGllcyBzdWNoIGFzIGNvbnZlcmdlbmNlIHRvIG9wdGltdW0gc29sdXRpb25zIGFuZCB0aW1lIGVzdGltYXRlcyBmb3IgdGhlIGNvbmZpZGVuY2UgdG8gYmUgaW4gYW4gb3B0aW11bSBzb2x1dGlvbiwgZS5nLiwgYWZ0ZXIgVCgxXGQpIGNvbXB1dGF0aW9uIHN0ZXBzLCB0aGUgcHJvYmFiaWxpdHkgb2YgaGF2aW5nIGZvdW5kICBhbiBvcHRpbXVtIHNvbHV0aW9uIGlzIGdyZWF0ZXIgdGhhbiAoMS1kKS4ga2V5IGFzcGVjdCBvZiBvdXIgcHJvcG9zZWQgcmVzZWFyY2ggaXMgYSB0aGVvcmV0aWNhbCBhbmQgZXhwZXJpbWVudGFsIGFuYWx5c2lzIG9mIGtleSBzdHJ1Y3R1cmFsIHBhcmFtZXRlcnMgb2YgdGhlIGVuZXJneSBsYW5kc2NhcGUgdGhhdCBhZmZlY3QgdGhlIGNvbnZlcmdlbmNlIHRvIG9wdGltdW0gc29sdXRpb25zLiBCYXNlZCBvbiBrbm93bGVkZ2UgYWJvdXQgcGFyYW1ldGVycyBzdWNoIGFzIGRpc3RyaWJ1dGlvbiBhbmQgZGVwdGggb2YgbG9jYWwgbWluaW1hLCB3ZSBjYW4gYW5hbHlzZSBhbmQgY2hhcmFjdGVyaXNlIHRoZSBiZWhhdmlvdXIgb2Ygb3RoZXIgcG9wdWxhciBsb2NhbCBzZWFyY2ggbWV0aG9kcyBzdWNoIGFzIGdlbmV0aWMgYWxnb3JpdGhtcywgdGFidSBzZWFyY2gsIGFuZCBtZW1ldGljIGFsZ29yaXRobXMuIE1vcmVvdmVyLCB0aGVyZSBpcyBhIGNvbmplY3R1cmUgdGhhdCBsb2NhbCBtaW5pbWEgcmVwcmVzZW50ICBtaXNmb2xkZWQgY29uZm9ybWF0aW9ucyAsIGkuZS4sIHN0YWJsZSBjb25mb3JtYXRpb25zIHRoYXQgaGF2ZSBhIGxvY2FsbHkgb3B0aW11bSBlbmVyZ3kgc3RhdGUuIFRoZXNlIG1pc2ZvbGRzIHBsYXkgYW4gaW1wb3J0YW50IHJvbGUgaW4gdGhlIGN1cnJlbnQgZGlzY3Vzc2lvbiBhYm91dCBjYXVzYXRpdmUgZmFjdG9ycyBpbiBkaXNlYXNlcy4gU28sIG91ciByZXN1bHRzIHdpbGwgZ2l2ZSBuZXcgaW5zaWdodHMgaW50byBhIG1vcmUgZGV0YWlsZWQgY29tcGxleGl0eSBjaGFyYWN0ZXJpc2F0aW9uIG9mIGZvbGRpbmcgcHJvYmxlbXMgYW5kIHRoZSBwZXJmb3JtYW5jZSBvZiBzdG9jaGFzdGljIGxvY2FsIHNlYXJjaC4gT3VyIGFwcHJvYWNoIHdpbGwgYWxzbyBjb250cmlidXRlIHRvIHRoZSBjbGFzc2lmaWNhdGlvbiBvZiBtaXNmb2xkcyBpbiB0ZXJtcyBvZiB0aGVpciBzdHJ1Y3R1cmFsIGNoYXJhY3RlcmlzYXRpb24gYXMgbG9jYWwgbWluaW1hIHdpdGggcmVzcGVjdCB0byBkaWZmZXJlbnQgZW5lcmd5IGZ1bmN0aW9ucywgd2hpY2ggd2lsbCBiZSBpbiB0aGUgbG9uZyB0ZXJtIGNydWNpYWwgZm9yIHBlcnNvbmFsaXNlZCBkcnVnIGRlc2lnbiBhbmQgbGlmZSBzY2llbmNlIGluIGdlbmVyYWwuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0QwNjIwMTIvMQxFUC9EMDYyMDEyLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZF1xlAZ/2GKQlihLRa17kUO5fC6x" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKY/Z2pDgLQvN++DAKT/OCVAyYELugArK2mF/9D/Kic+wxh/GM1" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D062012/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Stochastic Local Search Algorithms for Structural Proteomics</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=119870'>Steinhofel, Dr K</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Kings College London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">First Grant Scheme</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="219,751.10" class="DetailValue">219,751</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Chemical Biology</td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValueAlt"> Genomics</td>
+                                    <td class="DetailValueAlt"> Mathematical Aspects of OR</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Proteins are key elements of virtually all cellular functions. They are complex biological macromolecules that are composed of a sequence of amino acids, which is encoded by a gene in a genome. Amino acids are joined end-to-end during protein synthesis by the formation of peptide bonds. The sequence of peptide bonds forms a  main chain  or  backbone  for the protein. The functional properties of proteins depend upon their three-dimensional structures. Knowing the structure of a protein provides a basis for identifying the protein's function, and protein structures are necessary for many computational drug docking techniques. Unlike the structure of other biological macromolecules (e.g., DNA), proteins have complex, irregular structures that are difficult to predict. To understand the entire folding pathway, i.e., the complete dynamics and chemical changes involved in going from an unfolded linear state into a compact folded state is one of the most challenging problems in current biochemistry.proposed project focuses on the design and analysis of brand new classes of stochastic local search-based algorithms for structural proteomics, i.e. for protein folding as well as for related problems like protein structure alignments and protein sequence design (inverse to folding). All these problems can be formulated as optimisation problems. For instance, one of the basic paradigms in structural proteomics is given by Anfinsen's thermodynamic hypothesis: Proteins fold to a minimum energy state, and the information determining the three-dimensional structure (tertiary structure) of a protein resides in the chemistry of its primary structure. Therefore, the investigation of stochastic local search algorithms (SLSA) is a natural choice to tackle these very complex (NP-hard) problems. SLSAs such as Simulated Annealing and Genetic Algorithms have been successfully applied to a wide variety of combinatorial optimisation problems. Since it is practically impossible for protein folding to evaluate every feasible conformation, local search algorithms try to find an efficient walk through an (energy) landscape that is induced by all possible solutions, where neighbouring solutions are evaluated with respect to the value of the objective function. In our approach we investigate the applicability of inhomogeneous Markov chains in order to control these walks through landscapes, where we focus on different models of protein folding together with a variety of potential objective functions. The choice of inhomogeneous Markov chains will enable us to mathematically prove properties such as convergence to optimum solutions and time estimates for the confidence to be in an optimum solution, e.g., after T(1\d) computation steps, the probability of having found  an optimum solution is greater than (1-d). key aspect of our proposed research is a theoretical and experimental analysis of key structural parameters of the energy landscape that affect the convergence to optimum solutions. Based on knowledge about parameters such as distribution and depth of local minima, we can analyse and characterise the behaviour of other popular local search methods such as genetic algorithms, tabu search, and memetic algorithms. Moreover, there is a conjecture that local minima represent  misfolded conformations , i.e., stable conformations that have a locally optimum energy state. These misfolds play an important role in the current discussion about causative factors in diseases. So, our results will give new insights into a more detailed complexity characterisation of folding problems and the performance of stochastic local search. Our approach will also contribute to the classification of misfolds in terms of their structural characterisation as local minima with respect to different energy functions, which will be in the long term crucial for personalised drug design and life science in general.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

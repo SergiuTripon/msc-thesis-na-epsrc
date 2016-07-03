@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Ensemble Classifier Design applied to face expression classification
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE061664%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTA2MTY2NC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVVPHN0cm9uZz5FbnNlbWJsZSBDbGFzc2lmaWVyIERlc2lnbiBhcHBsaWVkIHRvIGZhY2UgZXhwcmVzc2lvbiBjbGFzc2lmaWNhdGlvbjwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFPzxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTczMzAnPldpbmRlYXR0LCBEciBUPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNEPGEgaHJlZj0nTkdCT1ZpZXdQYXJ0bmVyLmFzcHg/T3JnYW5pc2F0aW9uSWQ9MTAwMTAwMSc+TWl0c3ViaXNoaTwvYT4AAGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUjVmlzaW9uIFNwZWVjaCBhbmQgU2lnbmFsIFByb2MgQ1ZTU1BkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRRVbml2ZXJzaXR5IG9mIFN1cnJleWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFEVN0YW5kYXJkIFJlc2VhcmNoZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUNMjEgQXByaWwgMjAwOGRkAgMPZBYCAgEPDxYCHwQFDTIwIEFwcmlsIDIwMTFkZAIFD2QWAgIBDw8WBB8EBQcyODEsMjg4HgdUb29sVGlwBQoyODEsMjg3Ljc5ZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIXQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UcSW1hZ2UgJmFtcDsgVmlzaW9uIENvbXB1dGluZ2QCCw9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIYSW5mb3JtYXRpb24gVGVjaG5vbG9naWVzC0VsZWN0cm9uaWNzZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBcMeUGF0dGVybiBjbGFzc2lmaWNhdGlvbiBpbnZvbHZlcyBhc3NpZ25tZW50IG9mIGFuIG9iamVjdCB0byBvbmUgb2Ygc2V2ZXJhbCBwcmUtc3BlY2lmaWVkIGNhdGVnb3JpZXMgb3IgY2xhc3NlcywgYW5kIGlzIGEga2V5IGNvbXBvbmVudCBpbiBtYW55IGRhdGEgaW50ZXJwcmV0YXRpb24gYWN0aXZpdGllcy4gIFRoZSBwcm9wb3NlZCBhcHByb2FjaCBmb2N1c2VzIG9uIGNsYXNzaWZpZXJzIHRoYXQgbGVhcm4gZnJvbSBleGFtcGxlcywgYW5kIGl0IGlzIGFzc3VtZWQgdGhhdCBlYWNoIGV4YW1wbGUgcGF0dGVybiBpcyByZXByZXNlbnRlZCBieSBhIHNldCBvZiBudW1iZXJzLCB3aGljaCBhcmUga25vd24gYXMgdGhlIHBhdHRlcm4gZmVhdHVyZXMuIEluIHRoZSBjYXNlIG9mIGZhY2UgZXhwcmVzc2lvbiBjbGFzc2lmaWNhdGlvbiAoZm9yIGV4YW1wbGUgZGlzdGluZ3Vpc2ggYmV0d2VlbiBhIHNtaWxpbmcgYW5kIGZyb3duaW5nIGZhY2UpLCB0aGVzZSBmZWF0dXJlcyBjb3VsZCBjb25zaXN0IG9mIG51bWJlcnMgcmVwcmVzZW50aW5nIGRpZmZlcmVudCBhc3BlY3RzIG9mIGZhY2lhbCBmZWF0dXJlcy4gIEluIG9yZGVyIHRvIGRlc2lnbiBhIHN5c3RlbSBpdCBpcyBjdXN0b21hcnkgdG8gZGl2aWRlIHRoZSBleGFtcGxlIHBhdHRlcm5zIGludG8gdHdvIHNldHMsIGEgdHJhaW5pbmcgc2V0IHRvIGRlc2lnbiB0aGUgY2xhc3NpZmllciBhbmQgYSB0ZXN0IHNldCB3aGljaCBpcyBzdWJzZXF1ZW50bHkgdXNlZCB0byBwcmVkaWN0IHRoZSBwZXJmb3JtYW5jZSB3aGVuIHByZXZpb3VzbHkgdW5zZWVuIGV4YW1wbGVzIGFyZSBhcHBsaWVkLiBBIHByb2JsZW0gYXJpc2VzIHdoZW4gdGhlcmUgYXJlIG1hbnkgZmVhdHVyZXMgYW5kIHJlbGF0aXZlbHkgZmV3IGV4YW1wbGVzLCBhbmQgdGhlIGNsYXNzaWZpZXIgY2FuIGxlYXJuIHRoZSB0cmFpbmluZyBzZXQgdG9vIHdlbGwsIGtub3duIGFzIG92ZXItZml0dGluZyBzbyB0aGF0IHBlcmZvcm1hbmNlIG9uIHRoZSB0ZXN0IHNldCBkZWNyZWFzZXMuIFRoZSBmaWVsZCBvZiBlbnNlbWJsZSBjbGFzc2lmaWVycyBoYXMgYmVlbiBkZXZlbG9wZWQgdG8gYWRkcmVzcyB0aGUgcHJvYmxlbSBvZiBhY2hpZXZpbmcgdGhlIGJlc3QgcGF0dGVybiBjbGFzc2lmaWNhdGlvbiBwZXJmb3JtYW5jZSB1c2luZyBhIGNvbWJpbmF0aW9uIG9mIHJlbGF0aXZlbHkgc2ltcGxlIGNsYXNzaWZpZXJzLiBJdCBoYXMgYmVlbiBmb3VuZCB0aGF0IHRoZSBjb21iaW5hdGlvbiBoYXMgdGhlIGFkdmFudGFnZSB0aGF0IGl0IGlzIGxlc3MgbGlrZWx5IHRvIG92ZXItZml0LiBIb3dldmVyLCB0aGVyZSBpcyBzdGlsbCB0aGUgZGlmZmljdWx0eSBvZiB0dW5pbmcgdGhlIGluZGl2aWR1YWwgY2xhc3NpZmllcnMsIGEgcHJvY2VzcyB0aGF0IGlzIG5vcm1hbGx5IHBlcmZvcm1lZCB1c2luZyBjbGFzc2lmaWVyIHBhcmFtZXRlcnMgKGZvciBleGFtcGxlIGNvbXBsZXhpdHkgb2YgYSBuZXVyYWwgbmV0d29yayBjbGFzc2lmaWVyKS4gVGhlIGNvbW1vbiBhcHByb2FjaCBpcyB0byBmdXJ0aGVyIGRpdmlkZSB0aGUgdHJhaW5pbmcgc2V0IHRvIHByb2R1Y2UgYSB2YWxpZGF0aW9uIHNldCB0aGF0IGNhbiBiZSB1c2VkIHRvIGFkanVzdCBhcHByb3ByaWF0ZSBwYXJhbWV0ZXJzLiBIb3dldmVyLCB3aGVuIHRoZSBudW1iZXIgb2YgZXhhbXBsZXMgaXMgaW4gc2hvcnQgc3VwcGx5IHRoZXNlcyB0ZWNobmlxdWVzIGFyZSBlaXRoZXIgaW5hcHByb3ByaWF0ZSBvciB2ZXJ5IHRpbWUtY29uc3VtaW5nLkluIHJlY2VudCB3b3JrLCB0aGUgUHJpbmNpcGFsIEludmVzdGlnYXRvciBoYXMgZGV2ZWxvcGVkIGFuIGVuc2VtYmxlIGNsYXNzIHNlcGFyYWJpbGl0eSBtZWFzdXJlIHRoYXQgaXMgY29tcHV0ZWQgb24gdGhlIHRyYWluaW5nIHNldCBhbmQgdGhhdCBjYW4gZGV0ZWN0IG92ZXItZml0dGluZy4gVGhlcmVmb3JlIHRoZXJlIGlzIG5vIG5lZWQgZm9yIGEgdmFsaWRhdGlvbiBzZXQsIHRoZXJlYnkgbWFraW5nIG1vcmUgZGF0YSBhdmFpbGFibGUgZm9yIHRyYWluaW5nLiBUaGUgcHJvamVjdCBwcm9wb3NhbCBpcyB0byB0ZXN0IHRoZSBtZXRob2Qgb24gcmVhbCBkYXRhIGFuZCBjb25maXJtIHRoZSByZXN1bHRzIHRoYXQgaGF2ZSBiZWVuIG9idGFpbmVkIHByZXZpb3VzbHkgb24gYmVuY2htYXJrIGRhdGEuVGhlIHRlY2huaXF1ZSB3YXMgcHJvcG9zZWQgZm9yIHR3by1jbGFzcyBwcm9ibGVtcywgYW5kIHRoZSBwcm9wb3NhbCBpcyB0byBkZXZlbG9wIHRoZSBtZXRob2QgZm9yIG11bHRpLWNsYXNzIHByb2JsZW1zIHVzaW5nIEVycm9yLUNvcnJlY3RpbmctT3V0cHV0LUNvZGluZyAoRUNPQykuIEVDT0MgaXMgYW4gZW5zZW1ibGUgdGVjaG5pcXVlIHRoYXQgd29ya3MgYnkgZGVjb21wb3NpbmcgYSBtdWx0aWNsYXNzIHByb2JsZW0gaW50byB0d28tY2xhc3Mgc3ViLXByb2JsZW1zLiBJbiB0aGlzIHByb3Bvc2FsIHRoZSBhaW0gaXMgdG8gdW5kZXJzdGFuZCB3aHkgdGhlIHRlY2huaXF1ZSB3b3JrcyB3ZWxsLCBhbmQgdG8gcHJvcG9zZSBhIGRlc2lnbiBtZXRob2RvbG9neSB3aXRoIHRoZSBhaW0gb2YgYXBwbHlpbmcgaXQgdG8gcHJvYmxlbXMgaW4gZmFjZSBleHByZXNzaW9uIGNsYXNzaWZpY2F0aW9uLiBBIGZ1cnRoZXIgb2JqZWN0aXZlIGlzIHRvIGFwcGx5IHRoZSBtZXRob2QgdG8gcHJlZGljdGluZyB0aGUgb3B0aW1hbCBudW1iZXIgb2YgZmVhdHVyZXMgaW4gZmVhdHVyZSBzZWxlY3Rpb24gdXNpbmcgb25seSB0aGUgdHJhaW5pbmcgc2V0LiBUaGVyZSBoYXMgYmVlbiBmb3IgbWFueSB5ZWFycyBhIGdyZWF0IGRlYWwgb2YgZWZmb3J0IGluIGRpc2NvdmVyaW5nIHRoZSBtb3N0IHJlbGV2YW50IGZlYXR1cmVzLCBzaW5jZSB0aGUgcmVzdWx0IGhhcyBiZWVuIHNob3duIHRvIGJlIG1vcmUgYWNjdXJhdGUgYW5kIGVmZmljaWVudCBjbGFzc2lmZXJzLiBTb21lIGVhcmx5IHJlc2VhcmNoIGluZGljYXRlcyB0aGF0IHVzaW5nIGNsYXNzIHNlcGFyYWJpbGl0eSBtZWFzdXJlLCB0aGlzIGlzIGEgZmVhc2libGUgYXBwcm9hY2guIFRoZSBwcm9ibGVtIGlzIHBhcnRpY3VsYXJ5IGNoYWxsZW5naW5nIHdoZW4gdGhlcmUgYXJlIGh1ZHJlZHMgb3IgdGhvdXNhbmRzIG9mIGZlYXR1cmVzLGFzIHRoZXJlIGFyZSBpbiBjZXJ0YWluIGJpb21ldHJpYywgYmlvLWluZm9ybWF0aWNzIGFuZCBkYXRhIG1pbmluZyBhcHBsaWNhdGlvbnMuSXQgaXMga25vd24gdGhhdCBldmVuIGEgc21hbGwgaW1wcm92ZW1lbnQgaW4gcGVyZm9ybWFuY2Ugb2YgYSBwYXR0ZXJuIGNsYXNzaWZpY2F0aW9uIHN5c3RlbSBjYW4gYWZmZWN0IGNvbW1lcmNpYWwgdmlhYmlsaXR5LCBhbmQgdGhlIHN1Y2Nlc3NmdWwgb3V0Y29tZSBvZiB0aGUgcHJvamVjdCBzaG91bGQgaW1wYWN0IG90aGVyIGJpb21ldHJpYywgYmlvLWluZm9ybWF0aWNzIGFuZCBkYXRhIG1pbmluZyBhcHBsaWNhdGlvbnMuICBUaGUgcHJvcG9zZWQgcmVzZWFyY2ggaXMgcmVsZXZhbnQgdG8gdGhlIEVQU1JDIG1pc3Npb24gc2luY2UgIGl0IGlzIGFpbWVkIGF0IGFkdmFuY2luZyBrbm93bGVkZ2UgYW5kIHRlY2hub2xvZ3kgd2l0aCBwcmFjdGljYWwgYXBwbGljYXRpb24gcmVsZXZhbmNlLiAgSXQgaXMgYW50aWNpcGF0ZWQgdGhhdCB0aGUgbGlrZWx5IHJlc3VsdCBvZiB0aGlzIHJlc2VhcmNoIHdpbGwgYmUgdGhlIGVuaGFuY2VtZW50IG9mIFVLIGNvbXBldGl0aXZlbmVzcyB0aHJvdWdoIGV4cGxvaXRhdGlvbiBvZiB0aGUgdGVjaG5vbG9neS5XaXRoIHRoZSBoZWxwIG9mIHByb2plY3QgcGFydG5lciBNaXRzdWJpc2hpIEVsZWN0cmljLCB0aGUgZGV2ZWxvcGVkIHRlY2huaXF1ZXMgd2lsbCBiZSBhcHBsaWVkIHRvIHN0cmVzcyBhbmFseXNpcyBmb3IgcGh5c2ljYWwgc2VjdXJpdHkgc3lzdGVtcyBhbmQgZHJpdmVyIGZhdGlndWUgZm9yIGF1dG9tb3RpdmUgYXBwbGljYXRpb25zLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuc3VycmV5LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuc3VycmV5LmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9FMDYxNjY0LzEMRVAvRTA2MTY2NC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQfW7OVYIBczMk+VA2d73eZ2utSwg==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLPkeLACgLQvN++DAKT/OCVA/bBDAldQB4Kkjbz9enqb1eAeJIv" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E061664/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Ensemble Classifier Design applied to face expression classification</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=17330'>Windeatt, Dr T</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001001'>Mitsubishi</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Vision Speech and Signal Proc CVSSP</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Surrey</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">21 April 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">20 April 2011</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="281,287.79" class="DetailValue">281,288</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Artificial Intelligence</td>
+                                    <td class="DetailValue"> Image &amp; Vision Computing</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> Information Technologies</td>
+                                    <td class="DetailValueAlt"> Electronics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Pattern classification involves assignment of an object to one of several pre-specified categories or classes, and is a key component in many data interpretation activities.  The proposed approach focuses on classifiers that learn from examples, and it is assumed that each example pattern is represented by a set of numbers, which are known as the pattern features. In the case of face expression classification (for example distinguish between a smiling and frowning face), these features could consist of numbers representing different aspects of facial features.  In order to design a system it is customary to divide the example patterns into two sets, a training set to design the classifier and a test set which is subsequently used to predict the performance when previously unseen examples are applied. A problem arises when there are many features and relatively few examples, and the classifier can learn the training set too well, known as over-fitting so that performance on the test set decreases. The field of ensemble classifiers has been developed to address the problem of achieving the best pattern classification performance using a combination of relatively simple classifiers. It has been found that the combination has the advantage that it is less likely to over-fit. However, there is still the difficulty of tuning the individual classifiers, a process that is normally performed using classifier parameters (for example complexity of a neural network classifier). The common approach is to further divide the training set to produce a validation set that can be used to adjust appropriate parameters. However, when the number of examples is in short supply theses techniques are either inappropriate or very time-consuming.In recent work, the Principal Investigator has developed an ensemble class separability measure that is computed on the training set and that can detect over-fitting. Therefore there is no need for a validation set, thereby making more data available for training. The project proposal is to test the method on real data and confirm the results that have been obtained previously on benchmark data.The technique was proposed for two-class problems, and the proposal is to develop the method for multi-class problems using Error-Correcting-Output-Coding (ECOC). ECOC is an ensemble technique that works by decomposing a multiclass problem into two-class sub-problems. In this proposal the aim is to understand why the technique works well, and to propose a design methodology with the aim of applying it to problems in face expression classification. A further objective is to apply the method to predicting the optimal number of features in feature selection using only the training set. There has been for many years a great deal of effort in discovering the most relevant features, since the result has been shown to be more accurate and efficient classifers. Some early research indicates that using class separability measure, this is a feasible approach. The problem is particulary challenging when there are hudreds or thousands of features,as there are in certain biometric, bio-informatics and data mining applications.It is known that even a small improvement in performance of a pattern classification system can affect commercial viability, and the successful outcome of the project should impact other biometric, bio-informatics and data mining applications.  The proposed research is relevant to the EPSRC mission since  it is aimed at advancing knowledge and technology with practical application relevance.  It is anticipated that the likely result of this research will be the enhancement of UK competitiveness through exploitation of the technology.With the help of project partner Mitsubishi Electric, the developed techniques will be applied to stress analysis for physical security systems and driver fatigue for automotive applications.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.surrey.ac.uk                                                                             '>http://www.surrey.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

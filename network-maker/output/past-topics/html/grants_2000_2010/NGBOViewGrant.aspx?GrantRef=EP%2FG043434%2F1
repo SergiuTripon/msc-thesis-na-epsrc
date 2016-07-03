@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Algorithmic Aspects of Graph Coloring
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fG043434%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRzA0MzQzNC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU2PHN0cm9uZz5BbGdvcml0aG1pYyBBc3BlY3RzIG9mIEdyYXBoIENvbG9yaW5nPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVAPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMjYyNjknPlBhdWx1c21hLCBEciBEPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNBPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tNDAzNDQyJz5NZXJ0emlvcywgRHIgRzwvYT5HPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMjYyNTknPkJyb2Vyc21hLCBQcm9mZXNzb3IgSDwvYT4AZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBSJFbmdpbmVlcmluZyBhbmQgQ29tcHV0aW5nIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUVRHVyaGFtLCBVbml2ZXJzaXR5IG9mZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBPY3RvYmVyIDIwMDlkZAIDD2QWAgIBDw8WAh8EBQ8zMSBPY3RvYmVyIDIwMTNkZAIFD2QWAgIBDw8WBB8EBQc0MzcsNTE0HgdUb29sVGlwBQo0MzcsNTEzLjkwZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIZRnVuZGFtZW50YWxzIG9mIENvbXB1dGluZwBkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwcCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgZmD2QWAgIBDw8WAh8EBQsyOSBKYW4gMjAwOWRkAgEPDxYCHwgFDUxpbmsgdG8gcGFuZWxkFgQCAQ8PFgQfBAUnSUNUIFByaW9yaXRpc2F0aW9uIFBhbmVsIChKYW51YXJ5IDIwMDkpHwMFG1ZpZXdQYW5lbC5hc3B4P1BhbmVsSWQ9NDc0MmRkAgMPDxYCHwJoZGQCAg9kFgICAQ8PFgIfBAUJQW5ub3VuY2VkZGQCDw9kFgJmD2QWAgIBDw8WAh8EBZEfV2UgY29uc2lkZXIgYSB2YXJpZXR5IG9mIHByYWN0aWNhbCBzaXR1YXRpb25zIGluIHdoaWNoIGF0dHJpYnV0ZXMgKHdhdmVsZW5ndGhzLCBmcmVxdWVuY2llcywgdGltZSBzbG90cywgbWFjaGluZXMpIGhhdmUgdG8gYmUgYWxsb2NhdGVkIHRvIGNvbmZsaWN0aW5nIG9iamVjdHMgKG9wdGljYWwgZGF0YSBzdHJlYW1zLCB0cmFuc21pdHRlcnMsIHRyYWZmaWMgc3RyZWFtcywgam9icykgaW4gc3VjaCBhIHdheSB0aGF0IG5vIHBhaXIgb2YgY29uZmxpY3Rpbmcgb2JqZWN0cyByZWNlaXZlcyB0aGUgc2FtZSBhdHRyaWJ1dGUuIFdlIG1vZGVsIHN1Y2ggc2l0dWF0aW9ucyBhcyBncmFwaCBjb2xvcmluZyBwcm9ibGVtcy4gQSBncmFwaCBpcyBnaXZlbiBieSBhIHNldCBvZiB2ZXJ0aWNlcyB0aGF0IHJlcHJlc2VudCB0aGUgb2JqZWN0cyBhbmQgYSBzZXQgb2YgdW5vcmRlcmVkIHBhaXJzIG9mIHZlcnRpY2VzLCBjYWxsZWQgZWRnZXMsIHJlcHJlc2VudGluZyB0aGUgY29uZmxpY3RzIGJldHdlZW4gcGFpcnMgb2Ygb2JqZWN0cy4gR3JhcGggY29sb3JpbmcgaW52b2x2ZXMgdGhlIGxhYmVsaW5nIG9mIHRoZSB2ZXJ0aWNlcyBvZiBzb21lIGdpdmVuIGdyYXBoIGJ5IGludGVnZXJzIGNhbGxlZCBjb2xvcnMgc3VjaCB0aGF0IG5vIHR3byBhZGphY2VudCB2ZXJ0aWNlcyByZWNlaXZlIHRoZSBzYW1lIGNvbG9yLiBJbiBtYW55IGFwcGxpY2F0aW9ucyB0aGUgb2JqZWN0aXZlIGlzIHRvIG1pbmltaXplIHRoZSBudW1iZXIgb2YgY29sb3JzLiBHcmFwaCBjb2xvcmluZyBoYXMgYmVlbiBhIHBvcHVsYXIgcmVzZWFyY2ggdG9waWMgc2luY2UgaXRzIGludHJvZHVjdGlvbiBhcyBhIG1hcCBjb2xvcmluZyBwcm9ibGVtIG1vcmUgdGhhbiAxNTAgeWVhcnMgYWdvLiBTb21lIHJlYXNvbnMgZm9yIHRoaXMgYXJlIGl0cyBhcHBlYWxpbmdseSBzaW1wbGUgZGVmaW5pdGlvbiwgaXRzIGxhcmdlIHZhcmlldHkgb2Ygb3BlbiBwcm9ibGVtcywgYW5kIGl0cyBtYW55IGFwcGxpY2F0aW9uIGFyZWFzLiBXaGVuZXZlciBjb25mbGljdGluZyBzaXR1YXRpb25zIGJldHdlZW4gcGFpcnMgb2Ygb2JqZWN0cyBjYW4gYmUgbW9kZWxlZCBieSBncmFwaHMsIGFuZCBvbmUgaXMgbG9va2luZyBmb3IgYSBwYXJ0aXRpb24gb2YgdGhlIHNldCBvZiBvYmplY3RzIGluIHN1YnNldHMgb2YgbXV0dWFsbHkgbm9uLWNvbmZsaWN0aW5nIG9iamVjdHMsIHRoaXMgY2FuIGJlIHZpZXdlZCBhcyBhIGdyYXBoIGNvbG9yaW5nIHByb2JsZW0uIFRoaXMgaG9sZHMgZm9yIGNsYXNzaWNhbCBzZXR0aW5ncyBzdWNoIGFzIG5laWdoYm9yaW5nIGNvdW50cmllcyAobWFwIGNvbG9yaW5nKSBvciBpbnRlcmZlcmluZyBqb2JzIG9uIG1hY2hpbmVzIChqb2Igc2NoZWR1bGluZyksIGFzIHdlbGwgYXMgZm9yIG1vcmUgcmVjZW50IHNldHRpbmdzIGxpa2UgY29sbGlkaW5nIGRhdGEgc3RyZWFtcyBpbiBvcHRpY2FsIG5ldHdvcmtzICh3YXZlbGVuZ3RoIGFzc2lnbm1lbnQpLCBjb2xsaWRpbmcgdHJhZmZpYyBzdHJlYW1zICh0aW1lIHNsb3QgYWxsb2NhdGlvbikgb3IgaW50ZXJmZXJpbmcgdHJhbnNtaXR0ZXJzIGFuZCByZWNlaXZlcnMgZm9yIGJyb2FkY2FzdGluZywgbW9iaWxlIHBob25lcyBhbmQgc2Vuc29ycyAoZnJlcXVlbmN5IGFzc2lnbm1lbnQpLCB0byBuYW1lIGp1c3QgYSBmZXcuIE5vdGUgdGhhdCBldmVuIHRoZSBub3dhZGF5cyBzbyBpbW1lbnNlbHkgcG9wdWxhciBwYXNzLXRpbWUgb2YgU3Vkb2t1cyBjb21lcyBkb3duIHRvIGNvbG9yaW5nIGEgKHBhcnRpYWxseSBwcmVjb2xvcmVkKSBncmFwaCBvbiA4MSB2ZXJ0aWNlcyAocmVwcmVzZW50aW5nIHRoZSA4MSBzcXVhcmVzIG9mIHRoZSBTdWRva3UpIHdpdGggOSBjb2xvcnMgKHRoZSBpbnRlZ2VycyAxIHRvIDkpLkluIHRoZSBjbGFzc2ljYWwgc2V0dGluZyB0aGUgY29sb3JpbmcgaXMgZG9uZSBvZmYtbGluZSBpbiB0aGUgc2Vuc2UgdGhhdCB0aGUgd2hvbGUgZ3JhcGggaXMga25vd24gYW5kIGl0IGRvZXMgbm90IGNoYW5nZSBvdmVyIHRpbWUuIE1hbnkgdmFyaWFudHMgb24gdGhpcyBzaW1wbGUgb2ZmLWxpbmUgZ3JhcGggY29sb3JpbmcgY29uY2VwdCBoYXZlIGJlZW4gZGVmaW5lZCBhbmQgc3R1ZGllZCwgbWFpbmx5IGR1ZSB0byBhZGRpdGlvbmFsIHJlc3RyaWN0aW9ucyBvbiB0aGUgY29sb3JpbmcuIFdlIGlsbHVzdHJhdGUgdGhpcyBieSBjb25zaWRlcmluZyB0aGUgZ2VuZXJhbCBmcmFtZXdvcmsgZm9yIGNvbG9yaW5nIHByb2JsZW1zIHJlbGF0ZWQgdG8gZnJlcXVlbmN5IGFzc2lnbm1lbnQuIEluIHRoaXMgYXBwbGljYXRpb24gYXJlYSBncmFwaHMgYXJlIHVzZWQgdG8gbW9kZWwgdGhlIHRvcG9sb2d5IGFuZCBtdXR1YWwgaW50ZXJmZXJlbmNlIGJldHdlZW4gdHJhbnNtaXR0ZXJzIChyZWNlaXZlcnMsIGJhc2Ugc3RhdGlvbnMpOiB0aGUgdmVydGljZXMgb2YgdGhlIGdyYXBoIHJlcHJlc2VudCB0aGUgdHJhbnNtaXR0ZXJzOyB0d28gdmVydGljZXMgYXJlIGFkamFjZW50IGluIHRoZSBncmFwaCBpZiB0aGUgY29ycmVzcG9uZGluZyB0cmFuc21pdHRlcnMgYXJlIHNvIGNsb3NlIChvciBzbyBzdHJvbmcpIHRoYXQgdGhleSBhcmUgbGlrZWx5IHRvIGludGVyZmVyZSBpZiB0aGV5IGJyb2FkY2FzdCBvbiB0aGUgc2FtZSBvciBgc2ltaWxhcicgZnJlcXVlbmN5IGNoYW5uZWxzLiBUaGUgcHJvYmxlbSBpbiBwcmFjdGljZSBpcyB0byBhc3NpZ24gdGhlIGZyZXF1ZW5jeSBjaGFubmVscyB0byB0aGUgdHJhbnNtaXR0ZXJzIGluIHN1Y2ggYSB3YXkgdGhhdCBpbnRlcmZlcmVuY2UgaXMga2VwdCBhdCBhbiBgYWNjZXB0YWJsZSBsZXZlbCcuIEluIG1hbnkgdGVjaG5vbG9naWNhbCBhcHBsaWNhdGlvbnMgb2ZmLWxpbmUgY29sb3JpbmcgaXMgbm90IGEgc3VpdGFibGUgY29uY2VwdCBiZWNhdXNlIGNvbXBsZXRlIGluZm9ybWF0aW9uIG9uIHRoZSBncmFwaCBvbmUgaGFzIHRvIGNvbG9yIGlzIG5vdCBrbm93biBiZWZvcmVoYW5kLCBlLmcuIGlmIGpvYnMgY29tZSBpbiBvbmUtYnktb25lIGFuZCBoYXZlIHRvIGJlIHNjaGVkdWxlZCBvbiBtYWNoaW5lcyByaWdodCBhd2F5IGFuZCByZXNjaGVkdWxpbmcgaXMgbm90IHBvc3NpYmxlLiBJbiB0aGlzIGNhc2Ugb25lIGhhcyB0byBjb25zaWRlciBhbm90aGVyIHZhcmlhbnQgb2YgY29sb3JpbmcsIG5hbWVseSBvbi1saW5lIGdyYXBoIGNvbG9yaW5nLiBJbiB0aGlzIHNldHRpbmcgdGhlIGdyYXBoIGlzIHByZXNlbnRlZCB2ZXJ0ZXggYnkgdmVydGV4LCBhbmQgYSB2ZXJ0ZXggbXVzdCBpcnJldm9jYWJseSBiZSBhc3NpZ25lZCBhIGNvbG9yIGFzIGl0IGNvbWVzIGluLCBpLmUuIHRoZSBjaG9pY2Ugb2YgY29sb3IgaXMgb25seSBiYXNlZCBvbiB0aGUga25vd2xlZGdlIG9mIHRoZSBzdWJncmFwaCB0aGF0IGhhcyBiZWVuIHJldmVhbGVkIHNvIGZhci4gIEluIGdlbmVyYWwsIG1pbmltaXppbmcgdGhlIG51bWJlciBvZiBjb2xvcnMgaXMgYW4gTlAtaGFyZCBwcm9ibGVtIChpdCBpcyBldmVuIG1vcmUgcHJvYmxlbWF0aWMgaW4gdGhlIG9uLWxpbmUgc2V0dGluZykgLiBUaGlzIG1lYW5zIHRoYXQgbW9zdCBsaWtlbHkgdGhlcmUgaXMgbm8gcG9seW5vbWlhbCB0aW1lICggZmFzdCApIGFsZ29yaXRobSBmb3IgdGhpcyBwcm9ibGVtIChhbiBhbGdvcml0aG0gY2FuIGJlIHNlZW4gYXMgYSBzZXQgb2YgaW5zdHJ1Y3Rpb25zIGZvciBzb2x2aW5nIGEgcHJvYmxlbSkuICBIb3dldmVyLCBjb2xvcmluZyBwcm9ibGVtcyBvY2N1cmluZyBpbiBzcGVjaWZpYyBzaXR1YXRpb25zIHdpdGggZXh0cmEgcmVzdHJpY3Rpb25zIG1pZ2h0IGhhdmUgYSBkaWZmZXJlbnQgdGltZSBjb21wbGV4aXR5LiBUaGVyZWZvcmUsIHdlIHRyeSB0byBkZXNpZ24gYW5kIGFuYWx5c2UgYWxnb3JpdGhtcyB0aGF0IHNvbHZlIGdyYXBoIGNvbG9yaW5nIHByb2JsZW1zIGJvdGggaW4gdGhlIG9uLSBhbmQgb2ZmLWxpbmUgc2V0dGluZyBmb3Igc2V2ZXJhbCB2YXJpYW50cyBhcyBkZXNjcmliZWQgaW4gb3VyIHByb3Bvc2FsLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9JyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDQzNDM0LzEMRVAvRzA0MzQzNC8xZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGQBlsZ6DMRxhr2Y8ikinYuxambLtQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLluonZDALQvN++DAKT/OCVA3sFtb2RohFGd8jr2Z6B6xVhmezj" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/G043434/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Algorithmic Aspects of Graph Coloring</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-26269'>Paulusma, Dr D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-403442'>Mertzios, Dr G</a></td>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=-26259'>Broersma, Professor H</a></td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering and Computing Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Durham, University of</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2009</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 October 2013</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="437,513.90" class="DetailValue">437,514</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>29 Jan 2009</b></span>
+                                                </td><td title="Link to panel" align="left" valign="middle" width="70%">
+																	<a id="dgPanelHistory_ctl02_lnkPanelName" href="ViewPanel.aspx?PanelId=4742">ICT Prioritisation Panel (January 2009)</a>
+																	
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">We consider a variety of practical situations in which attributes (wavelengths, frequencies, time slots, machines) have to be allocated to conflicting objects (optical data streams, transmitters, traffic streams, jobs) in such a way that no pair of conflicting objects receives the same attribute. We model such situations as graph coloring problems. A graph is given by a set of vertices that represent the objects and a set of unordered pairs of vertices, called edges, representing the conflicts between pairs of objects. Graph coloring involves the labeling of the vertices of some given graph by integers called colors such that no two adjacent vertices receive the same color. In many applications the objective is to minimize the number of colors. Graph coloring has been a popular research topic since its introduction as a map coloring problem more than 150 years ago. Some reasons for this are its appealingly simple definition, its large variety of open problems, and its many application areas. Whenever conflicting situations between pairs of objects can be modeled by graphs, and one is looking for a partition of the set of objects in subsets of mutually non-conflicting objects, this can be viewed as a graph coloring problem. This holds for classical settings such as neighboring countries (map coloring) or interfering jobs on machines (job scheduling), as well as for more recent settings like colliding data streams in optical networks (wavelength assignment), colliding traffic streams (time slot allocation) or interfering transmitters and receivers for broadcasting, mobile phones and sensors (frequency assignment), to name just a few. Note that even the nowadays so immensely popular pass-time of Sudokus comes down to coloring a (partially precolored) graph on 81 vertices (representing the 81 squares of the Sudoku) with 9 colors (the integers 1 to 9).In the classical setting the coloring is done off-line in the sense that the whole graph is known and it does not change over time. Many variants on this simple off-line graph coloring concept have been defined and studied, mainly due to additional restrictions on the coloring. We illustrate this by considering the general framework for coloring problems related to frequency assignment. In this application area graphs are used to model the topology and mutual interference between transmitters (receivers, base stations): the vertices of the graph represent the transmitters; two vertices are adjacent in the graph if the corresponding transmitters are so close (or so strong) that they are likely to interfere if they broadcast on the same or `similar' frequency channels. The problem in practice is to assign the frequency channels to the transmitters in such a way that interference is kept at an `acceptable level'. In many technological applications off-line coloring is not a suitable concept because complete information on the graph one has to color is not known beforehand, e.g. if jobs come in one-by-one and have to be scheduled on machines right away and rescheduling is not possible. In this case one has to consider another variant of coloring, namely on-line graph coloring. In this setting the graph is presented vertex by vertex, and a vertex must irrevocably be assigned a color as it comes in, i.e. the choice of color is only based on the knowledge of the subgraph that has been revealed so far.  In general, minimizing the number of colors is an NP-hard problem (it is even more problematic in the on-line setting) . This means that most likely there is no polynomial time ( fast ) algorithm for this problem (an algorithm can be seen as a set of instructions for solving a problem).  However, coloring problems occuring in specific situations with extra restrictions might have a different time complexity. Therefore, we try to design and analyse algorithms that solve graph coloring problems both in the on- and off-line setting for several variants as described in our proposal.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Random Matrix Theory and Number Theory: Distribution of  Primes and Higher Order Vanishing L-Functions
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fT00825%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvVDAwODI1LzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAV3PHN0cm9uZz5SYW5kb20gTWF0cml4IFRoZW9yeSBhbmQgTnVtYmVyIFRoZW9yeTogRGlzdHJpYnV0aW9uIG9mICBQcmltZXMgYW5kIEhpZ2hlciBPcmRlciBWYW5pc2hpbmcgTC1GdW5jdGlvbnM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT88YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTExNjk4Nic+U25haXRoLCBEciBOQzwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBQtNYXRoZW1hdGljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFVVuaXZlcnNpdHkgb2YgQnJpc3RvbGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFHUFkdmFuY2VkIEZlbGxvd3NoaXAgKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMDEgT2N0b2JlciAyMDA0ZGQCAw9kFgICAQ8PFgIfBAUNMzEgTWFyY2ggMjAxMGRkAgUPZBYCAgEPDxYEHwQFBzE5OCwyMDceB1Rvb2xUaXAFCjE5OCwyMDcuNDNkZAIKD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUCFkFsZ2VicmEgJmFtcDsgR2VvbWV0cnkUTWF0aGVtYXRpY2FsIFBoeXNpY3NkAgsPZBYCAgEPZBYCAgEPFgIfCAIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYCAgEPPCsACwEADxYIHghEYXRhS2V5cxYAHwgCAh4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAICZBYCZg9kFgQCAQ9kFgZmD2QWAgIBDw8WAh8EBQsyMiBBcHIgMjAwNGRkAgEPZBYEAgEPDxYCHwJoZGQCAw8PFgIfBAUwTWF0aGVtYXRpY3MgQWR2YW5jZWQgRmVsbG93c2hpcHMgSW50ZXJ2aWV3IHBhbmVsZGQCAg9kFgICAQ8PFgIfBAUIRGVmZXJyZWRkZAICD2QWBmYPZBYCAgEPDxYCHwQFCzEyIE1hciAyMDA0ZGQCAQ9kFgQCAQ8PFgIfAmhkZAIDDw8WAh8EBSRNYXRocyBGZWxsb3dzaGlwcyBTaWZ0aW5nIFBhbmVsIDIwMDRkZAICD2QWAgIBDw8WAh8EBQhEZWZlcnJlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWVDlJhbmRvbSBtYXRyaXggdGhlb3J5IGlzIGEgZmllbGQgZGV2ZWxvcGVkIGluIHRoZSAxOTUwcyBhbmQgNjBzIHRvIHByZWRpY3Qgc3RhdGlzdGljcyBvZiB0aGUgZW5lcmd5IGxldmVscyBvZiBjb21wbGljYXRlZCBhdG9taWMgbnVjbGVpLCBhbmQgaGFzIHNpbmNlIGZvdW5kIGFwcGxpY2F0aW9ucyBpbiBtYXkgYXNwZWN0cyBvZiBwaHlzaWNzOiBxdWFudHVtIGNoYW9zLCBtZXNvc2NvcGljIHBoeXNpY3MgYW5kIGRpc29yZGVyZWQgc3lzdGVtcywgc3RhdGlzdGljYWwgbWVjaGFuaWNzIGFuZCBxdWFudHVtIGluZm9ybWF0aW9uIHRoZW9yeS4gQXMgaXQgdHVybnMgb3V0LCB0aG91Z2gsIGl0IGFsc28gaGFzIGl0cyB1c2VzIGluIG51bWJlciB0aGVvcnkuIFRoaXMgaW52b2x2ZXMgdGhlIFJpZW1hbm4gemV0YSBmdW5jdGlvbiwgbXVjaC1zdHVkaWVkIGJ5IG51bWJlciB0aGVvcmlzdHMgYW5kIHRoZSBzdWJqZWN0IG9mIGEgbWlsbGlvbiBkb2xsYXIgQ2xheSBJbnN0aXR1dGUgcHJpemUgb2ZmZXJlZCBmb3IgdGhlIHByb29mIG9mIHRoZSBSaWVtYW5ubGluZSwgYnV0IGZvciBmb3J0eSB5ZWFycyBpdCBhcyBiZWVuIGNvbmplY3R1cmVkIHRoYXQgdGhpcyB2ZXJ0aWNhbCBkaXN0cmlidXRpb24gaXMgaW4gZmFjdCBwcmVkaWN0ZWQgYnkgdGhlIHN0YXRpc3RpYyB0aGUgZWlnZ252YWx1ZXMgb2YgcmFuZG9tIG1hdHJpY2VzLnRoaXMgY29ubmVjdGlvbiBtZWFucyB0aGF0IHJhbmRvbSBtYXRyaXggdGhlb3J5IGNhbiBiZSB2ZXJ5IHVzZWZ1bCBpbiBwcmVkaWN0aW5nIGFuc3dlcnMgdG8gaW1wb3J0YW50IHF1ZXN0aW9ucyBpbiBudW1iZXIgdGhlb3J5LiBJbiB0aGUgcmVzZWFyY2ggcHJvcG9zZWQgaGVyZSBvbmUgb2YgdGhlIGFpbXMgaXMgdG8gZXhhbWluZSB0aGUgZGlzdHJpYnV0aW9uIG9mIHByaW1lIG51bWJlcnMgdXNpbmcgcmFuZG9tIG1hdHJpeCB0aGVvcnkuIFRoZSBSaWVtYW5uIHpldGEgZnVuY3Rpb24gaXMgY2xvc2VseSBjb25uZWN0ZWQgdG8gcHJpbWUgbnVtIGluIGZhY3QgdGhpcyBmdW5jdGlvbiB3YXMgdXNlZCBieSBFdWxlciB0byBwcm92ZSB0aGF0IHRoZXJlIGFyZSBpbmZpbml0ZWx5IG1hbnkgcHJpbWUgbnVtYmVycy4gUXVlc3Rpb25zIGFiaSB0aGUgZGlzdHJpYnV0aW9uIG9mIHByaW1lIG51bWJlcnMgYW1vbmdzdCB0aGUgaW50ZWdlcnMgaGF2ZSBiZWVuIHRoZSBzdWJqZWN0IG9mIHdvcmsgYnkgbWFueSBncmVhdCBtYXRoZW1hdGljaWFucyBvdmVyIHRoZSB5ZWFycyBhbmQgaGF2ZSB5aWVsZGVkIG1hbnkgZGlmZmljdWx0IGFuZCBpbXBvcnRhbnQgcXVlc3Rpb25zLiBBIHZlcnkgZmFtb3VzIGV4YSBpcyB0aGUgdHdpbi1wcmltZSBjb25qZWN0dXJlIHdoaWNoIGNsYWltcyB0aGF0IHRoZXJlIGFyZSBhbiBpbmZpbml0ZSBudW1iZXIgb2YgcGFpcnMgb2YgcHJpbWVzIHRoYXQgZGlmZmVyIGJ5IHQpIEl0IGlzIHN0aWxsIG5vdCBwcm92ZW4gdGhhdCB0aGlzIGlzIHRydWUsIGRlc3BpdGUgdGhpcyBwcm9ibGVtIGJlaW5nIHdvcmtlZCBvbiBieSB0aGUgZ3JlYXRlc3QgbWluZHMgaW4gbnVtYmVyIHRoZW9yeS4gUmFuZG9tIG1hdHJpeCB0aGVvcnkgaGFzIHJlYWNoZWQgYSBwb2ludCB3aGVyZSBpdCBpcyBpZGVhbGx5IHBvc2l0aW9uZWQgdG8gYXR0YWNrIHRoZXNlIHF1ZXN0aW9ucyBvIHByaW1lIGRpc3RyaWJ1dGlvbiBhbmQgb3RoZXIgc2lnbmlmaWNhbnQgb3BlbiBxdWVzdGlvbnMgdG91Y2hpbmcgdGhlIFJpZW1hbm4gemV0YSBmdW5jdGlvbiBhbmQgb3RoZXIgTGZ1bmN0aW9ucy4gVGhpcyB3aWxsIGJlIHRoZSBzdWJqZWN0IG9mIHRoZSBwcm9wb3NlZCByZXNlYXJjaC5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmJyaXMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmJyaXMuYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvVDAwODI1LzAxDEdSL1QwMDgyNS8wMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkV/LiHUm9wn1lyR4aoMSRn3q/6+4=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLE6c3SBQLQvN++DAKT/OCVA3cqBUBIHEMM0yKqFFoIE3BKzi3U" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/T00825/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Random Matrix Theory and Number Theory: Distribution of  Primes and Higher Order Vanishing L-Functions</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=116986'>Snaith, Dr NC</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Bristol</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Advanced Fellowship (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2004</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 March 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="198,207.43" class="DetailValue">198,207</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Algebra &amp; Geometry</td>
+                                    <td class="DetailValue"> Mathematical Physics</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>22 Apr 2004</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Mathematics Advanced Fellowships Interview panel</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Deferred</b></span>
+												</td>
+				</tr><tr class="DetailValueAlt">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl03_Label1"><b>12 Mar 2004</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl03_Label1"><b>Maths Fellowships Sifting Panel 2004</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl03_Label3"><b>Deferred</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Random matrix theory is a field developed in the 1950s and 60s to predict statistics of the energy levels of complicated atomic nuclei, and has since found applications in may aspects of physics: quantum chaos, mesoscopic physics and disordered systems, statistical mechanics and quantum information theory. As it turns out, though, it also has its uses in number theory. This involves the Riemann zeta function, much-studied by number theorists and the subject of a million dollar Clay Institute prize offered for the proof of the Riemannline, but for forty years it as been conjectured that this vertical distribution is in fact predicted by the statistic the eiggnvalues of random matrices.this connection means that random matrix theory can be very useful in predicting answers to important questions in number theory. In the research proposed here one of the aims is to examine the distribution of prime numbers using random matrix theory. The Riemann zeta function is closely connected to prime num in fact this function was used by Euler to prove that there are infinitely many prime numbers. Questions abi the distribution of prime numbers amongst the integers have been the subject of work by many great mathematicians over the years and have yielded many difficult and important questions. A very famous exa is the twin-prime conjecture which claims that there are an infinite number of pairs of primes that differ by t) It is still not proven that this is true, despite this problem being worked on by the greatest minds in number theory. Random matrix theory has reached a point where it is ideally positioned to attack these questions o prime distribution and other significant open questions touching the Riemann zeta function and other Lfunctions. This will be the subject of the proposed research.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.bris.ac.uk                                                                               '>http://www.bris.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

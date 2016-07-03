@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	The temperature of the Earth's core from quantum Monte Carlo Calculations
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fF048750%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRjA0ODc1MC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVaPHN0cm9uZz5UaGUgdGVtcGVyYXR1cmUgb2YgdGhlIEVhcnRoJ3MgY29yZSBmcm9tIHF1YW50dW0gTW9udGUgQ2FybG8gQ2FsY3VsYXRpb25zPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVCPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTA2OSc+QWxmZSwgUHJvZmVzc29yIEQ8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VA0M8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTU5MTYnPkdpbGxhbiwgUHJvZmVzc29yIE08L2E+AABkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFDkVhcnRoIFNjaWVuY2VzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUDVUNMZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAURU3RhbmRhcmQgUmVzZWFyY2hkZAIJD2QWBgIBD2QWAgIBDw8WAh8EBQ8wMSBKYW51YXJ5IDIwMDhkZAIDD2QWAgIBDw8WAh8EBQ4zMSBBdWd1c3QgMjAwOGRkAgUPZBYCAgEPDxYEHwQFBjEwLDE4Mx4HVG9vbFRpcAUJMTAsMTgyLjcyZGQCCg9kFgICAQ9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQIYQ29uZGVuc2VkIE1hdHRlciBQaHlzaWNzGkhpZ2ggUGVyZm9ybWFuY2UgQ29tcHV0aW5nZAILD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWAgIBDzwrAAsBAA8WCB4IRGF0YUtleXMWAB8HAgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYGZg9kFgICAQ8PFgIfBAULMDMgRGVjIDIwMDdkZAIBD2QWBAIBDw8WAh8CaGRkAgMPDxYCHwQFG0hFQ1RvUiBDYXBhYmlsaXR5IENoYWxsZW5nZWRkAgIPZBYCAgEPDxYCHwQFCUFubm91bmNlZGRkAg8PZBYCZg9kFgICAQ8PFgIfBAWyFVRoZSB0ZW1wZXJhdHVyZSBvZiB0aGUgRWFydGgncyBjb3JlIGlzIG9uZSBvZiB0aGUgZnVuZGFtZW50YWwgcGFyYW1ldGVycyBpbiBFYXJ0aCBTY2llbmNlcy4gSXRza25vd2xlZGdlIHdvdWxkIGFsbG93IHRoZSBjb25zdHJ1Y3Rpb24gb2YgbW9kZWxzIGZvciB0aGUgdGhlcm1hbCBzdHJ1Y3R1cmUgb2YgdGhlIGludGVyaW9yIG9mIHRoZSBFYXJ0aCx3aGljaCBjb3VsZCB0aGVuIGJlIHVzZWQgdG8gdW5kZXJzdGFuZCB0aGUgZHluYW1pY3Mgb2Ygb3VyIHBsYW5ldCwgaW5jbHVkaW5nIHRoZSBnZW5lcmF0aW9uIG9mIHRoZSBFYXJ0aCdzIG1hZ25ldGljIGZpZWxkIHdoaWNoIHNoaWVsZCB1cyBmcm9tIHRoZSBkZWFkbHkgc29sYXIgd2luZCwgbWFudGxlIGNvbnZlY3Rpb24gYW5kIHBsYXRlIHRlY3RvbmljcyB3aGljaCBhcmUgZXZlbnR1YWxseSByZXNwb25zaWJsZSBmb3IgZWFydGhxdWFrZXMgYW5kIHZvbGNhbmljIGVydXB0aW9ucy5UaGUgRWFydGgncyBjb3JlIGlzIG1haW5seSBtYWRlIGJ5IGlyb24sIGFuZCBhcyBpdCBoYXBwZW5zIHRoZSB2ZXJ5IGludGVyaW9yIG9mIHRoZSBjb3JlIGlzIHNvbGlkLCBzdXJyb3VuZGVkIGJ5IGEgc2hlbGwgb2YgbGlxdWlkIGlyb24gd2hpY2ggZXh0ZW5kcyByb3VnaGx5IGhhbGYgd2F5IHVwIHRvd2FyZHMgdGhlIHN1cmZhY2Ugb2YgdGhlIHBsYW5ldC5UbyBtZWFzdXJlIHRoZSB0ZW1wZXJhdHVyZSBvZiB0aGUgY29yZSBkaXJlY3RseSBoYXMgYmVlbiBpbXBvc3NpYmxlIHRvIGRhdGUsIGFuZCBpdCBpcyBsaWtlbHkgdG8gcmVtYWluIGltcG9zc2libGUgaW4gdGhlIGZvcmVzZWVhYmxlIGZ1dHVyZS4gSG93ZXZlciwgb25lIHBvc3NpYmxlIHN0cmF0ZWd5IHRvIGNvbnN0cmFpbiB0aGUgY29yZSB0ZW1wZXJhdHVyZSBpcyAgdG8gZXhwbG9pdCB0aGUgcHJlc2VuY2Ugb2YgIHRoZSBib3VuZGFyeSBiZXR3ZWVuIHRoZSBzb2xpZCBhbmQgdGhlIGxpcXVpZCAodGhlIElDQiksIHdoaWNoIGltcGxpZXMgdGhhdCB0aGUgY29yZSBtYXRlcmlhbCBtdXN0IGJlIGF0IHRoZSBtZWx0aW5nIHRlbXBlcmF0dXJlIGF0IHRoYXQgYm91bmRhcnkuIFRoZXJlZm9yZSwgaWYgb25lIGlzIGFibGUgdG8gbWVhc3VyZSBvciBjYWxjdWxhdGUgdGhlIG1lbHRpbmcgdGVtcGVyYXR1cmUgb2YgaXJvbiBhdCB0aGUgcHJlc3N1cmUgb2YgdGhlIElDQiwgb25lIGFsc28gaGFzIGEgY2xvc2Vlc3RpbWF0ZSBvZiB0aGUgdGVtcGVyYXR1cmUgb2YgdGhlIGNvcmUuIEEgbnVtYmVyIG9mIGV4cGVyaW1lbnRzIGhhdmUgYmVlbiBwZXJmb3JtZWQgdG8gYWRkcmVzcyB0aGlzIHByb2JsZW0sIGJ1dCB0aGUgb2JqZWN0aXZlIGhhcyBwcm92ZW4gZWx1c2l2ZSB0byBkYXRlLCBiZWNhdXNlIHRoZSBjb25kaXRpb25zIGFyZSBleHRyZW1lIGFuZCB0aGVyZWZvcmUgdGhlIGRpZmZpY3VsdGllcyB2ZXJ5IGhpZ2guIFRoZSByZXN1bHQgaXMgYSBiaWcgc2NhdHRlciBvZiBkYXRhIGluIHRoZSBsaXRlcmF0dXJlLiBUaGVvcmV0aWNhbCBjYWxjdWxhdGlvbnMgaGF2ZSBhbHNvIGJlZW4gdXNlZCwgc29tZSBvZiB0aGVtIGJhc2VkIG9uIHRoZSBpbXBsZW1lbnRhdGlvbiBvZiBxdWFudHVtIG1lY2hhbmljcyBrbm93biBhcyBkZW5zaXR5IGZ1bmN0aW9uYWwgdGhlb3J5IChERlQpLiBUaGUgc3RhdGVneSBvZiBvdXIgb3duIGdyb3VwIGhhcyBiZWVuIHRvIGFwcGx5IERGVCB0byB0aGUgY2FsY3VsYXRpb24gb2YgdGhlIGZyZWUgZW5lcmdpZXMgb2Ygc29saWQgYW5kIGxpcXVpZCBpcm9uLCBhbmQgdGhlbiBvYnRhaW4gdGhlIG1lbHRpbmcgdGVtcGVyYXR1cmUgYnkgdGhlIGNvbmRpdGlvbiBvZiBjb250aW51aXR5IG9mIHRoZSBmcmVlIGVuZXJneS4gQWx0aG91Z2ggd2UgYmVsaWV2ZSB0aGF0IHRoZXNlIGNhbGN1bGF0aW9ucyBhcmUgdmVyeSBhY2N1cmF0ZSwgd2UgcmVjb2duaXNlIHRoYXQgYXQgcHJlc2VudCB3ZSBjYW5ub3QgZGVmaW5pdGVseSBhZGRyZXNzIHRoZSBxdWVzdGlvbiBvZiB0aGUgYWNjdXJhY3kgb2YgREZUIGl0c2VsZiAob3IgcmF0aGVyIHRoZSBleGNoYW5nZS1jb3JyZWxhdGlvbiBmdW5jdGlvbmFsIGVtcGxveWVkKS5UaGUgbWFpbiBvYmplY3RpdmUgb2YgdGhpcyBwcm9wb3NhbCBpcyB0byB1c2UgcXVhbnR1bSBNb250ZSBDYXJsbyB0ZWNobmlxdWVzIHRvIGFkZHJlc3MgdGhpcyBwcm9ibGVtLiBUaGVzZSBhcmUgdGVjaG5pcXVlcyB3aGljaCBhcmUgYmVsaWV2ZWQgdG8gYmUgbXVjaCBtb3JlIGFjY3VyYXRlIHRoYW4gREZULCBhbmQgdGhlcmVmb3JlIHNob3VsZCBwcm92aWRlIHRoZSBzb2x1dGlvbiBvZiB0aGUgcHJvYmxlbSB3aXRoIGEgaGlnaGVyIGRlZ3JlZSBvZiBjb25maWRlbmNlLiBRdWFudHVtIE1vbnRlIENhcmxvIHRlY2huaXF1ZXMgYXJlIHZhcmlvdXMgb3JkZXIgb2YgbWFnbml0dWRlcyBtb3JlIGV4cGVuc2l2ZSB0aGFuIERGVCwgYW5kIGZvciB0aGlzIHJlYXNvbiBoYXZlIGJlZW4gZXNzZW50aWFsbHkgb3V0IG9mIHJlYWNoIG9mIGNvbXB1dGVycyBmb3IgbWFueSBwcm9ibGVtcy4gVGhlIGFycml2YWwgb2YgSEVDVG9SIGlzIHRoZSBpZGVhbCBvcHBvcnR1bml0eSB0byBhcHBseSBRTUMgdG8gYSAgcmVhbCBsaWZlICBwcm9ibGVtLiBXZSBzaG91bGQgYWxzbyBtZW50aW9uIHRoYXQgUU1DIGFkYXB0cyB2ZXJ5IHdlbGwgdG8gbWFzc2l2ZWx5IHBhcmFsbGVsIGNvbXB1dGVycywgYW5kIHRoZXJlZm9yZSBjYW4gZXhwbG9pdCB0aGUgY2FwYWJpbGl0eSBvZiBIRUNUb1IgdG8gdGhlIGZ1bGwuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwNDg3NTAvMQxFUC9GMDQ4NzUwLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZKUWYTko/IM9rwPWnZyn0juZjiN+" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL61NgQAtC8374MApP84JUDhyEQlIcj0GS2hLbcEH1xEvhvy1Y=" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/F048750/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>The temperature of the Earth's core from quantum Monte Carlo Calculations</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-1069'>Alfe, Professor D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=5916'>Gillan, Professor M</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Earth Sciences</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">UCL</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 January 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 August 2008</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="10,182.72" class="DetailValue">10,183</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Condensed Matter Physics</td>
+                                    <td class="DetailValue"> High Performance Computing</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>03 Dec 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>HECToR Capability Challenge</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>Announced</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The temperature of the Earth's core is one of the fundamental parameters in Earth Sciences. Itsknowledge would allow the construction of models for the thermal structure of the interior of the Earth,which could then be used to understand the dynamics of our planet, including the generation of the Earth's magnetic field which shield us from the deadly solar wind, mantle convection and plate tectonics which are eventually responsible for earthquakes and volcanic eruptions.The Earth's core is mainly made by iron, and as it happens the very interior of the core is solid, surrounded by a shell of liquid iron which extends roughly half way up towards the surface of the planet.To measure the temperature of the core directly has been impossible to date, and it is likely to remain impossible in the foreseeable future. However, one possible strategy to constrain the core temperature is  to exploit the presence of  the boundary between the solid and the liquid (the ICB), which implies that the core material must be at the melting temperature at that boundary. Therefore, if one is able to measure or calculate the melting temperature of iron at the pressure of the ICB, one also has a closeestimate of the temperature of the core. A number of experiments have been performed to address this problem, but the objective has proven elusive to date, because the conditions are extreme and therefore the difficulties very high. The result is a big scatter of data in the literature. Theoretical calculations have also been used, some of them based on the implementation of quantum mechanics known as density functional theory (DFT). The stategy of our own group has been to apply DFT to the calculation of the free energies of solid and liquid iron, and then obtain the melting temperature by the condition of continuity of the free energy. Although we believe that these calculations are very accurate, we recognise that at present we cannot definitely address the question of the accuracy of DFT itself (or rather the exchange-correlation functional employed).The main objective of this proposal is to use quantum Monte Carlo techniques to address this problem. These are techniques which are believed to be much more accurate than DFT, and therefore should provide the solution of the problem with a higher degree of confidence. Quantum Monte Carlo techniques are various order of magnitudes more expensive than DFT, and for this reason have been essentially out of reach of computers for many problems. The arrival of HECToR is the ideal opportunity to apply QMC to a  real life  problem. We should also mention that QMC adapts very well to massively parallel computers, and therefore can exploit the capability of HECToR to the full.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

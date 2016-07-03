@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Bandits and beyond: Index heuristics for dynamic resource allocation
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE049265%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTA0OTI2NS8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVVPHN0cm9uZz5CYW5kaXRzIGFuZCBiZXlvbmQ6IEluZGV4IGhldXJpc3RpY3MgZm9yIGR5bmFtaWMgcmVzb3VyY2UgYWxsb2NhdGlvbjwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFSDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9NTk3NSc+R2xhemVicm9vaywgUHJvZmVzc29yIEtEPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIfAmhkAgQPZBYCAgEPZBYCAgEPFgIfAmhkAgUPZBYCAgEPZBYCAgEPFgIfAmhkAgYPZBYCAgEPZBYCAgEPDxYCHwQFGk1hdGhlbWF0aWNzIGFuZCBTdGF0aXN0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUUTGFuY2FzdGVyIFVuaXZlcnNpdHlkZAIID2QWAgIBD2QWAgIBDw8WAh8EBRFTdGFuZGFyZCBSZXNlYXJjaGRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDzAxIE9jdG9iZXIgMjAwN2RkAgMPZBYCAgEPDxYCHwQFETMwIFNlcHRlbWJlciAyMDEwZGQCBQ9kFgICAQ8PFgQfBAUHMjU3LDI2MR4HVG9vbFRpcAUKMjU3LDI2MS4yM2RkAgoPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQIaTWF0aGVtYXRpY2FsIEFzcGVjdHMgb2YgT1IAZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBcsWVGhlIHJlc2VhcmNoIHByb2dyYW1tZSBpcyBjb25jZXJuZWQgd2l0aCB0aGUgZGV2ZWxvcG1lbnQgb2Ygc2ltcGxlLCB5ZXQgZWZmZWN0aXZlIG1ldGhvZHMgZm9yIGRldGVybWluaW5nIGhvdyBzb21lIGtleSByZXNvdXJjZSBzaG91bGQgYmUgZGlzdHJpYnV0ZWQgb3ZlciB0aW1lIGFtb25nIGEgY29sbGVjdGlvbiBvZiBlbnRpdGllcyB3aGljaCByZXF1aXJlIGl0LiBUbyBmaXggc29tZSBpZGVhcywgY29uc2lkZXIgdGhlIGV4YW1wbGUgZGVzY3JpYmVkIGluIHRoZSBmb2xsb3dpbmcgaW1hZ2luZWQgc2NlbmFyaW8sIHJlZmVycmVkIHRvIGluIHRoZSBsaXRlcmF0dXJlIGFzIHRoZSAnc3RvY2hhc3RpYyBtdWx0aXByb2R1Y3QgYmF0Y2ggZGlzcGF0Y2ggcHJvYmxlbScgOkRpZmZlcmVudCB0eXBlcyBvZiBwcm9kdWN0cyBhcnJpdmUgYXQgYSBob2xkaW5nIHN0YXRpb24gYWNjb3JkaW5nIHRvIHNvbWUgcmFuZG9tIHByb2Nlc3MuIFRoZXkgYXJlIGtlcHQgdGhlcmUgdW50aWwgZGlzcGF0Y2hlZCBvbndhcmQgKHRvIGEgcmV0YWlsZXIsIHNheSkgYnkgb25lIG9mIGEgZmxlZXQgb2YgdmVoaWNsZXMuIENvc3RzIGFyZSBpbmN1cnJlZCBieSB0aGUgaXRlbXMga2VwdCBpbiBzdG9yYWdlIGF0IHRoZSBzdGF0aW9uLiBUaGUgbmF0dXJlIG9mIHRoZXNlIGhvbGRpbmcgY29zdHMgbWF5IGRpZmZlciBtYXJrZWRseSBiZXR3ZWVuIHByb2R1Y3QgdHlwZXMuIFByb2R1Y3RzIG1heSBhbHNvIGRpZmZlciB3aXRoIHJlZ2FyZCB0byB0aGVpciBzcGFjZSByZXF1aXJlbWVudHMgZm9yIHRyYW5zcG9ydGF0aW9uLiBBdCB0aGUgYmVnaW5uaW5nIG9mIGVhY2ggdGltZSBwZXJpb2QgKHRoZSBzdGFydCBvZiBlYWNoIGRheSwgc2F5KSwgYSBkZWNpc2lvbiBoYXMgdG8gYmUgbWFkZSByZWdhcmRpbmcgaG93IG1hbnkgdmVoaWNsZXMgc2hvdWxkIGJlIGRpc3BhdGNoZWQgYW5kIHdoYXQgdGhlIGNvbXBvc2l0aW9uIG9mIHRoZWlyIGxvYWRzIHNob3VsZCBiZS4gU3VjaCBkZWNpc2lvbnMgbWF5IGJlIGJhc2VkIGluIHBhcnQsIHNheSwgb24gdGhlIG51bWJlciBvZiB1bml0cyBvZiBlYWNoIHByb2R1Y3QgdHlwZSBhdCB0aGUgc3RhdGlvbiBhdCB0aGUgdGltZS4gVGhlIGdvYWwgaXMgdG8gdGFrZSBzdWNoIGRlY2lzaW9ucyBpbiBhIHdheSB0aGF0IG1pbmltaXNlcyB0aGUgb3ZlcmFsbCBjb3N0cyBpbmN1cnJlZCBpbiBob2xkaW5nIHRoZSBwcm9kdWN0cyBhbmQgaW4gZGlzcGF0Y2hpbmcgdGhlIHZlaGljbGVzLiBUbyB1c2Ugc29tZSBtYXRoZW1hdGljYWwgamFyZ29uLCB0aGUgZGVjaXNpb24tbWFrZXIgaXMgbG9va2luZyBmb3IgYSBkeW5hbWljIHBvbGljeSBmb3IgdGhlIGFsbG9jYXRpb24gb2YgaGVyIGtleSByZXNvdXJjZSAoaWUsIGEgcnVsZSBmb3IgdGhlIGRlcGxveW1lbnQgb2YgdGhlIGZsZWV0IG9mIHZlaGljbGVzKSBhbW9uZyBhIHNldCBvZiBlbnRpdGllcyAoaGVyZSB0aGUgcHJvZHVjdCB0eXBlcykgaW4gYSBzaXR1YXRpb24gd2hpY2ggaXMgYm90aCBzdG9jaGFzdGljIChldm9sdmVzIHJhbmRvbWx5KSBhbmQgY29tcGxleC4gSG93IHRvIGRldmVsb3Agc3VjaCBhIHBvbGljeSBpcyBleHRyZW1lbHkgZGlmZmljdWx0LCBub3QgbGVhc3QgYmVjYXVzZSBkZWNpc2lvbnMgbXVzdCBiZSBhc3Nlc3NlZCBub3Qgb25seSBpbiB0ZXJtcyBvZiB0aGVpciBpbW1lZGlhdGUgaW1wYWN0IG9uIGNvc3RzIGJ1dCBhbHNvIHdpdGggcmVnYXJkIHRvIHRoZWlyIGluZmx1ZW5jZSBvbiB0aGUgY29zdHMgd2hpY2ggd2lsbCBiZSBpbmN1cnJlZCBpbiB0aGUgZnV0dXJlLiBUaGUgY29udmVudGlvbmFsIGFwcHJvYWNoIHRvIHN1Y2ggcHJvYmxlbXMsIGNhbGxlZCBzdG9jaGFzdGljIGR5bmFtaWMgcHJvZ3JhbW1pbmcsIGlzIHVubGlrZWx5IHRvIGJlIGFibGUgdG8gY29wZSB3ZWxsIHdpdGggcHJvYmxlbXMgb2YgcmVhbGlzdGljIHNpemUgLiBXaGF0IHdvdWxkIGJlIGludmFsdWFibGUgdG8gdGhlIGRlY2lzaW9uLW1ha2VyIHdvdWxkIGJlIHNvbWUgZWZmZWN0aXZlLCB5ZXQgcmVhc29uYWJseSBzaW1wbGUgYW5kIGNvbXB1dGF0aW9uYWxseSB0cmFjdGFibGUsIHdheSBvZiBjYWxpYnJhdGluZyB0aGUgdmFsdWUgdG8gdGhlIHJlc3BlY3RpdmUgcHJvZHVjdCB0eXBlcyBvZiAoZGlmZmVyaW5nIGFtb3VudHMgb2YpIHNwYWNlIG9uIHRoZSB2ZWhpY2xlcy4gU3VjaCBjYWxpYnJhdGlvbnMgY291bGQgdGhlbiBiZSB1c2VkIHRvIGluZm9ybSBkZWNpc2lvbi1tYWtpbmcuIFNpbXBsZSBzby1jYWxsZWQgaW5kZXgtYmFzZWQgc29sdXRpb25zIGRvIGluZGVlZCBleGlzdCAoYW5kIGFyZSB2ZXJ5IGVmZmVjdGl2ZSksIGJ1dCBtYWlubHkgZm9yIChiYW5kaXQtdHlwZSkgcHJvYmxlbXMgd2hpY2ggaW1wb3NlIHNlcmlvdXMgbGltaXRhdGlvbnMgb24gaG93IHRoZSBrZXkgcmVzb3VyY2UgbWF5IGJlIGRpc3RyaWJ1dGVkIGFtb25nIHRoZSBlbnRpdGllcy4gVGhlIGdvYWwgb2YgdGhlIHJlc2VhcmNoIHByb2plY3QgaXMgdG8gZXh0ZW5kIHRoZSBzY29wZSBvZiBzdWNoIHNpbXBsZSBpbmRleC1iYXNlZCBzb2x1dGlvbiBhcHByb2FjaGVzIHRvIG1vcmUgZ2VuZXJhbCBhbGxvY2F0aW9uIHByb2JsZW1zIHdoaWNoIGFyZSBmcmVlZCBvZiBzdWNoIHJlc3RyaWN0aW9ucyAuIFRoZXJlIGlzIGEgcmljaCB2YXJpZXR5IG9mIHByYWN0aWNhbCBzaXR1YXRpb25zIHdoaWNoIHNoYXJlIHRoZSBicm9hZCBmZWF0dXJlcyBvZiB0aGUgYWJvdmUgZXhhbXBsZS4gVGhlIG1ldGhvZG9sb2dpZXMgZGV2ZWxvcGVkIGR1cmluZyB0aGUgcmVzZWFyY2ggcHJvZ3JhbW1lIHdpbGwgeWllbGQgc2ltcGxlIGFuZCBlZmZlY3RpdmUgaW5kZXgtYmFzZWQgYXBwcm9hY2hlcyB0byByZXNvdXJjZSBhbGxvY2F0aW9uIGluIG1hbnkgc3VjaCBzZXR0aW5ncy5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGQ9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhoPZBYCAgEPZBYCAgEPFgIfBAXYATxhICBocmVmPSdodHRwOi8vd3d3LmxhbmNzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJz5odHRwOi8vd3d3LmxhbmNzLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPmQCBw8PFgYeClJlcG9ydE5hbWUFCVZpZXdHcmFudB4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MOR3JhbnRSZWZOdW1iZXIeDlBhcmFtZXRlclZhbHVlFQI/aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTA0OTI2NS8xDEVQL0UwNDkyNjUvMWQWAmYPZBYCZg9kFgQCAw8QZA8WAQIGFgEQZGRoFgFmZAIFDw9kFgIfAWVkAgUPDxYCHwJoZGRkJgAt2z8p0Np30zY52iwVXBMnnPE=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKGxKLdDQLQvN++DAKT/OCVA1bW+LBpedybhIfEsRh0qMq1TO84" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E049265/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Bandits and beyond: Index heuristics for dynamic resource allocation</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=5975'>Glazebrook, Professor KD</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Mathematics and Statistics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Lancaster University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 October 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 September 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="257,261.23" class="DetailValue">257,261</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Mathematical Aspects of OR</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The research programme is concerned with the development of simple, yet effective methods for determining how some key resource should be distributed over time among a collection of entities which require it. To fix some ideas, consider the example described in the following imagined scenario, referred to in the literature as the 'stochastic multiproduct batch dispatch problem' :Different types of products arrive at a holding station according to some random process. They are kept there until dispatched onward (to a retailer, say) by one of a fleet of vehicles. Costs are incurred by the items kept in storage at the station. The nature of these holding costs may differ markedly between product types. Products may also differ with regard to their space requirements for transportation. At the beginning of each time period (the start of each day, say), a decision has to be made regarding how many vehicles should be dispatched and what the composition of their loads should be. Such decisions may be based in part, say, on the number of units of each product type at the station at the time. The goal is to take such decisions in a way that minimises the overall costs incurred in holding the products and in dispatching the vehicles. To use some mathematical jargon, the decision-maker is looking for a dynamic policy for the allocation of her key resource (ie, a rule for the deployment of the fleet of vehicles) among a set of entities (here the product types) in a situation which is both stochastic (evolves randomly) and complex. How to develop such a policy is extremely difficult, not least because decisions must be assessed not only in terms of their immediate impact on costs but also with regard to their influence on the costs which will be incurred in the future. The conventional approach to such problems, called stochastic dynamic programming, is unlikely to be able to cope well with problems of realistic size . What would be invaluable to the decision-maker would be some effective, yet reasonably simple and computationally tractable, way of calibrating the value to the respective product types of (differing amounts of) space on the vehicles. Such calibrations could then be used to inform decision-making. Simple so-called index-based solutions do indeed exist (and are very effective), but mainly for (bandit-type) problems which impose serious limitations on how the key resource may be distributed among the entities. The goal of the research project is to extend the scope of such simple index-based solution approaches to more general allocation problems which are freed of such restrictions . There is a rich variety of practical situations which share the broad features of the above example. The methodologies developed during the research programme will yield simple and effective index-based approaches to resource allocation in many such settings.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.lancs.ac.uk                                                                              '>http://www.lancs.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Mathematical Operational Semantics for Data-Passing Processes
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE042414%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTA0MjQxNC8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVOPHN0cm9uZz5NYXRoZW1hdGljYWwgT3BlcmF0aW9uYWwgU2VtYW50aWNzIGZvciBEYXRhLVBhc3NpbmcgUHJvY2Vzc2VzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAU/PGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0tMTAwMDk4Jz5TdGF0b24sIERyIFM8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUTQ29tcHV0ZXIgTGFib3JhdG9yeWRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFF1VuaXZlcnNpdHkgb2YgQ2FtYnJpZGdlZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbUG9zdGRvYyBSZXNlYXJjaCBGZWxsb3dzaGlwZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUMMDEgSnVuZSAyMDA3ZGQCAw9kFgICAQ8PFgIfBAULMzEgTWF5IDIwMTBkZAIFD2QWAgIBDw8WBB8EBQcyMDksMjAyHgdUb29sVGlwBQoyMDksMjAxLjgxZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhlGdW5kYW1lbnRhbHMgb2YgQ29tcHV0aW5nAGQCCw9kFgICAQ9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQIkTm8gcmVsZXZhbmNlIHRvIFVuZGVycGlubmluZyBTZWN0b3JzAGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgICAQ88KwALAQAPFggeCERhdGFLZXlzFgAfCAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkFgJmD2QWAgIBD2QWBmYPZBYCAgEPDxYCHwQFCzEzIEZlYiAyMDA3ZGQCAQ9kFgQCAQ8PFgIfAmhkZAIDDw8WAh8EBTFQb3N0ZG9jIEZlbGxvd3NoaXBzIFNpZnQgUGFuZWwgLSBDb21wdXRlciBTY2llbmNlZGQCAg9kFgICAQ8PFgIfBAUTSW52aXRlZEZvckludGVydmlld2RkAg8PZBYCZg9kFgICAQ8PFgIfBAWNHk9wZXJhdGlvbmFsIHNlbWFudGljcyBpcyBjb25jZXJuZWQgd2l0aCBhc2NyaWJpbmcgbWVhbmluZyB0byBjb21wdXRlciBwcm9ncmFtcyBieSBmb3JtYWxseSBkZXNjcmliaW5nIHRoZWlyIGV2b2x1dGlvbi4gQSBmb3JtYWwgZGVzY3JpcHRpb24gb2YgYSBwcm9ncmFtbWluZyBsYW5ndWFnZSBpcyBjcnVjaWFsIGlmIG9uZSBpcyB0byBwcm92ZSBwcm9wZXJ0aWVzIG9mIHByb2dyYW1zLiBPbmUgbWF5IHdpc2ggdG8gcHJvdmUgdGhhdCBhIHByb2dyYW0gbWVldHMgYSBzcGVjaWZpY2F0aW9uOiBmb3IgaW5zdGFuY2UsIHRoYXQgaXQgaGFzIG5vIHNlY3VyaXR5IGZsYXdzOyB0aGF0IGl0IGludGVyYWN0cyBjb3JyZWN0bHkgd2l0aCBvdGhlciBzeXN0ZW1zOyBvciB0aGF0IHRoZSB2YWx1ZXMgaXQgY29tcHV0ZXMgYXJlIGNvcnJlY3QuIFdoZW4gb25lIHNwZWNpZmllcyBhbiBvcGVyYXRpb25hbCBzZW1hbnRpY3MgZm9yIGEgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2UsIGl0IGlzIHVzdWFsbHkgbmVjZXNzYXJ5IHRvIHByb3ZlIHNvbWUgYmFzaWMgcHJvcGVydGllcyBpbiBvcmRlciB0byBlbnN1cmUgdGhlIHZhbGlkaXR5IG9mIHJlYXNvbmluZyB0ZWNobmlxdWVzLiBUaGVzZSBwcm9wZXJ0aWVzIGhhdmUgdG8gYmUgZXN0YWJsaXNoZWQgZm9yIGV2ZXJ5IG5ldyBsYW5ndWFnZSB0aGF0IGlzIGNvbnNpZGVyZWQsIGFuZCB3aGVuZXZlciBhbiBleGlzdGluZyBsYW5ndWFnZSBpcyBjaGFuZ2VkLldlIHVzZSB0aGUgdGVybSAnTWF0aGVtYXRpY2FsIE9wZXJhdGlvbmFsIFNlbWFudGljcycgKE1PUykgdG8gZGVzY3JpYmUgdGhlIHByb2Nlc3Mgb2YgdW5kZXJzdGFuZGluZyB0ZWNobmlxdWVzIGZyb20gb3BlcmF0aW9uYWwgc2VtYW50aWNzIGF0IGFuIGFic3RyYWN0IGxldmVsLiAgQSBwcmltYXJ5IG1vdGl2YXRpb24gZm9yIHRoaXMgbGluZSBvZiByZXNlYXJjaCBpcyB0aGF0IHByb2NlZHVyZXMgZnJvbSBvcGVyYXRpb25hbCBzZW1hbnRpY3MsIGF0IHRpbWVzIGxlbmd0aHkgYW5kIGFkIGhvYywgY2FuIGJlIHVuZGVyc3Rvb2QgZnJvbSBhIGJhc2ljIHN0cnVjdHVyYWxpc3Qgdmlld3BvaW50LiBBIHNlY29uZCwgbW9yZSBwcmFnbWF0aWMgbW90aXZhdGlvbiBpcyB0aGF0IHRoZW9yZW1zIHRoYXQgYXJlIGVzdGFibGlzaGVkIGF0IHRoaXMgYWJzdHJhY3QgbGV2ZWwgaGF2ZSB0aGUgY2hhbmNlIG9mIHdpZGVyIGFwcGxpY2F0aW9uIGluIHF1aXRlIGdlbmVyYWwgY29udGV4dHMuIFdpdGggdGhpcyBzZWNvbmQgbW90aXZhdGlvbiBpbiBtaW5kLCBpdCBpcyBoZWxwZnVsIHRvIHNlZSB3b3JrIGluIE1PUyBhcyBvY2N1cmluZyBhdCB0aHJlZSBsZXZlbHMuIFRoZSBoaWdoZXN0LCBtb3N0IGFic3RyYWN0IGFuZCBnZW5lcmFsIGxldmVsLCBpcyBjb25jZXJuZWQgd2l0aCB0aGVvcmVtcyBvZiBjYXRlZ29yeSB0aGVvcnksIHdoaWNoIGlzIGEgcG93ZXJmdWwgZnJhbWV3b3JrIGZvciBzdHVkeWluZyBtYXRoZW1hdGljYWwgY29uY2VwdHMgYW5kIHN0cnVjdHVyZXMgaW4gYW4gYWJzdHJhY3QgYW5kIGdlbmVyYWwgd2F5LiBUaGUgaW50ZXJtZWRpYXRlIGxldmVsIGludm9sdmVzIGRldmlzaW5nIGNhdGVnb3J5LXRoZW9yZXRpYyBtb2RlbHMgZm9yIHBhcnRpY3VsYXIga2luZHMgb2Ygc3lzdGVtLiBUaGUgbG93ZXN0IGxldmVsIGlzIHRoZSBsZXZlbCBhdCB3aGljaCBtb3N0IG9wZXJhdGlvbmFsIHNlbWFudGljaXN0cyB3b3JrLCBhbmQgaW52b2x2ZXMgcGFydGljdWxhciBsb2dpY2FsIGZyYW1ld29ya3MgZm9yIHJlYXNvbmluZyBhYm91dCBwYXJ0aWN1bGFyIHN5c3RlbXMuTXkgcHJvcG9zYWwgaXMgdG8gbWFrZSBwcm9ncmVzcyBhdCBhbGwgdGhyZWUgb2YgdGhlc2UgbGV2ZWxzLiBJIHdpbGwgdGFrZSwgYXMgYSBjYXNlIHN0dWR5LCB0aGUgZGF0YS1wYXNzaW5nIHByb2Nlc3MgY2FsY3VsaS4gVGhlc2UgY2FsY3VsaSBhcmUgYmFzaWMgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2VzIGZvciBzeXN0ZW1zIHRoYXQgaW52b2x2ZSBjb25jdXJyZW5jeSBhbmQgY29tbXVuaWNhdGlvbiBvZiBzdHJ1Y3R1cmVkIGRhdGEuIEZvciBpbnN0YW5jZSwgaWYgb25lIGFsbG93cyB0aGUgbmFtZXMgb2YgY29tbXVuaWNhdGlvbiBjaGFubmVscyB0byB0aGVtc2VsdmVzIGJlIGNvbW11bmljYXRlZCwgdGhlbiBhIGtpbmQgb2YgbW9iaWxpdHkgYXJpc2VzLiBBbm90aGVyIGtpbmQgb2Ygc3RydWN0dXJlZCBkYXRhIGludm9sdmVzIGVuY3J5cHRpb247IHByb2Nlc3MgY2FsY3VsaSBpbnZvbHZpbmcgdGhpcyBraW5kIG9mIGRhdGEgaGF2ZSBiZWVuIHVzZWQgdG8gbW9kZWwgc2VjdXJpdHkgYXNwZWN0cyBvZiBzeXN0ZW1zLkF0IHRoZSBsb3dlc3QsIGNvbmNyZXRlIGxldmVsLCB0aGUgcHJvcG9zZWQgd29yayBpbnZvbHZlcyBkZXJpdmluZyBuZXcgdGhlb3JlbXMgYWJvdXQgZGF0YS1wYXNzaW5nIHN5c3RlbXMgZnJvbSB0aGUgZ2VuZXJhbCByZXN1bHRzLiBUbyBkbyB0aGlzIGl0IHdpbGwgYmUgbmVjZXNzYXJ5IHRvIGludmVzdGlnYXRlIGxvZ2ljYWwgZnJhbWV3b3JrcyB0aGF0IGFyZSBzdWl0YWJsZSBmb3IgcmVhc29uaW5nIGFib3V0IGRhdGEtcGFzc2luZyBzeXN0ZW1zLiBGcmFtZXdvcmtzIG9mIHRoaXMgc29ydCBhcmUgb2YgaW50ZXJlc3QgdG8gcmVzZWFyY2hlcnMgaW4gb3RoZXIgZmllbGRzLCBzdWNoIGFzIHRob3NlIGludGVyZXN0ZWQgaW4gdGhlIGZvcm1hbGlzYXRpb24gb2YgbGFyZ2Ugc2NhbGUgcHJvZ3JhbW1pbmcgc3lzdGVtcy4gVGhlb3JlbXMgdGhhdCB3aWxsIGJlIGV4dHJhY3RlZCB3aWxsIGJlIG9mIHRoZSBmb3JtOiAgaWYgYSBkYXRhLXBhc3Npbmcgc3lzdGVtIGlzIHNwZWNpZmllZCBpbiBhIGNlcnRhaW4gd2F5LCB0aGVuIGNlcnRhaW4gcHJvcGVydGllcyB3aWxsIGhvbGQgLiBUaGUgcmVzdWx0cyB3aWxsIGhvbGQgZm9yIGRhdGEtcGFzc2luZyBzeXN0ZW1zIGluIGdlbmVyYWwuIFRoZXkgd2lsbCBiZSB0ZXN0ZWQgYWdhaW5zdCB2YXJpb3VzIHNlbWFudGljcyB0aGF0IGhhdmUgYmVlbiBwcm9wb3NlZCBpbiB0aGUgbGl0ZXJhdHVyZS5SZXNlYXJjaCBhdCB0aGUgaW50ZXJtZWRpYXRlIGxldmVsIHdpbGwgaW52b2x2ZSBjYXRlZ29yeS10aGVvcmV0aWMgbW9kZWxzIG9mIGRhdGEtcGFzc2luZy4gSSB3aWxsIGludmVzdGlnYXRlIHRoZSBleHRlbnQgdG8gd2hpY2ggZXhpc3RpbmcgbW9kZWxzIGFuZCByZXN1bHRzIGNhbiBiZSBjb25zaWRlcmVkIGluIHRoZSBjYXRlZ29yeS10aGVvcmV0aWMgZG9tYWluLiBJbiB0aGlzIHdheSB0aGUgZmllbGQgb2YgZGF0YS1wYXNzaW5nIHdpbGwgYmUgZ2l2ZW4gYSBtb3JlIHVuaWZpZWQgdGhlb3J5LkF0IHRoZSBoaWdoZXN0IGxldmVsIG9mIGFic3RyYWN0aW9uLCBteSBwcm9wb3NlZCB3b3JrIHdpbGwgaW52b2x2ZSBkZXZpc2luZyBhYnN0cmFjdCBmb3JtcyBvZiBzb21lIGNvbXBsZXggcHJvb2YgcHJpbmNpcGxlcy4gSSB3aWxsIGZvY3VzIG9uIHR3byB0b3BpY3M6IGZpcnN0bHksIHRlY2huaXF1ZXMgZm9yIGhpZ2hlci1vcmRlciBzeXN0ZW1zIC0tIHRoZXNlIGFyZSBzeXN0ZW1zIHRoYXQgY2FuIHJlY2VpdmUgcHJvZ3JhbXMgYXMgZGF0YTsgc2Vjb25kbHksIEkgd2lsbCBpbnZlc3RpZ2F0ZSB3YXlzIG9mIGNvbWJpbmluZyBwcm9vZiB0ZWNobmlxdWVzLiBUaGlzIHJlc2VhcmNoIHdpbGwgZ2l2ZSByaXNlIHRvIGEgYmV0dGVyLCBtb3JlIHByaW5jaXBsZWQgdW5kZXJzdGFuZGluZyBvZiB0aGUgcHJvY2Vzc2VzIGludm9sdmVkIGluIHRoZXNlIHByb29mIG1ldGhvZHMsIGFuZCB3aWxsIGdpdmUgcmlzZSB0byBuZXcsIGNvbmNyZXRlIHRlY2huaXF1ZXMgb2YgaW1tZWRpYXRlIHJlbGV2YW5jZSB0byB0aGUgb3BlcmF0aW9uYWwgc2VtYW50aWNzIGNvbW11bml0eS5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VA1RUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWsAAGQCFw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIYD2QWAgIBD2QWAgIBDxYCHwQFTDxhICBocmVmPSdodHRwOi8vd3d3LmNsLmNhbS5hYy51ay9+c3MzNjgnPmh0dHA6Ly93d3cuY2wuY2FtLmFjLnVrL35zczM2ODwvYT5kAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwNDI0MTQvMQxFUC9FMDQyNDE0LzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZNBoxUQkGVsa9ZYArL1zoMKc0+zg" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLX7JjrBALQvN++DAKT/OCVA5MVk+Kgy1s341vqyGgoTDUd/PXZ" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E042414/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Mathematical Operational Semantics for Data-Passing Processes</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-100098'>Staton, Dr S</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Laboratory</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Cambridge</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Postdoc Research Fellowship</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 June 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 2010</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="209,201.81" class="DetailValue">209,202</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							<table class="bordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPanelHistory" width="100%">
+				<tr class="DetailTitle">
+					<td>Panel Date</td><td>Panel Name</td><td>Outcome</td>
+				</tr><tr class="DetailValue">
+					<td nowrap="nowrap">
+                                                     <span id="dgPanelHistory_ctl02_Label1"><b>13 Feb 2007</b></span>
+                                                </td><td align="left" valign="middle" width="70%">
+																	
+																	<span id="dgPanelHistory_ctl02_Label1"><b>Postdoc Fellowships Sift Panel - Computer Science</b></span>
+												</td><td valign="middle">
+																	<span id="dgPanelHistory_ctl02_Label3"><b>InvitedForInterview</b></span>
+												</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">Operational semantics is concerned with ascribing meaning to computer programs by formally describing their evolution. A formal description of a programming language is crucial if one is to prove properties of programs. One may wish to prove that a program meets a specification: for instance, that it has no security flaws; that it interacts correctly with other systems; or that the values it computes are correct. When one specifies an operational semantics for a programming language, it is usually necessary to prove some basic properties in order to ensure the validity of reasoning techniques. These properties have to be established for every new language that is considered, and whenever an existing language is changed.We use the term 'Mathematical Operational Semantics' (MOS) to describe the process of understanding techniques from operational semantics at an abstract level.  A primary motivation for this line of research is that procedures from operational semantics, at times lengthy and ad hoc, can be understood from a basic structuralist viewpoint. A second, more pragmatic motivation is that theorems that are established at this abstract level have the chance of wider application in quite general contexts. With this second motivation in mind, it is helpful to see work in MOS as occuring at three levels. The highest, most abstract and general level, is concerned with theorems of category theory, which is a powerful framework for studying mathematical concepts and structures in an abstract and general way. The intermediate level involves devising category-theoretic models for particular kinds of system. The lowest level is the level at which most operational semanticists work, and involves particular logical frameworks for reasoning about particular systems.My proposal is to make progress at all three of these levels. I will take, as a case study, the data-passing process calculi. These calculi are basic programming languages for systems that involve concurrency and communication of structured data. For instance, if one allows the names of communication channels to themselves be communicated, then a kind of mobility arises. Another kind of structured data involves encryption; process calculi involving this kind of data have been used to model security aspects of systems.At the lowest, concrete level, the proposed work involves deriving new theorems about data-passing systems from the general results. To do this it will be necessary to investigate logical frameworks that are suitable for reasoning about data-passing systems. Frameworks of this sort are of interest to researchers in other fields, such as those interested in the formalisation of large scale programming systems. Theorems that will be extracted will be of the form:  if a data-passing system is specified in a certain way, then certain properties will hold . The results will hold for data-passing systems in general. They will be tested against various semantics that have been proposed in the literature.Research at the intermediate level will involve category-theoretic models of data-passing. I will investigate the extent to which existing models and results can be considered in the category-theoretic domain. In this way the field of data-passing will be given a more unified theory.At the highest level of abstraction, my proposed work will involve devising abstract forms of some complex proof principles. I will focus on two topics: firstly, techniques for higher-order systems -- these are systems that can receive programs as data; secondly, I will investigate ways of combining proof techniques. This research will give rise to a better, more principled understanding of the processes involved in these proof methods, and will give rise to new, concrete techniques of immediate relevance to the operational semantics community.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<a  href='http://www.cl.cam.ac.uk/~ss368'>http://www.cl.cam.ac.uk/~ss368</a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cam.ac.uk                                                                                '>http://www.cam.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

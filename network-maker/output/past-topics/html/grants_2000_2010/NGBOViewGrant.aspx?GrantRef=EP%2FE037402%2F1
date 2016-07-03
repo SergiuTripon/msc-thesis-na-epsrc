@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Dimensionality Reduction for Efficient Similarity Search in High Dimensional Spaces
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fE037402%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRTAzNzQwMi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVkPHN0cm9uZz5EaW1lbnNpb25hbGl0eSBSZWR1Y3Rpb24gZm9yIEVmZmljaWVudCBTaW1pbGFyaXR5IFNlYXJjaCBpbiBIaWdoIERpbWVuc2lvbmFsIFNwYWNlczwvc3Ryb25nPmRkAgIPZBYCAgEPZBYCAgEPDxYGHwQFRDxhIGhyZWY9J05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9LTEwNzkxNic+U29uZywgUHJvZmVzc29yIEQ8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUZS25vd2xlZGdlIE1lZGlhIEluc3RpdHV0ZWRkAgcPZBYCAgEPZBYCAgEPDxYCHwQFD09wZW4gVW5pdmVyc2l0eWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFHU92ZXJzZWFzIFRyYXZlbCBHcmFudHMgKE9UR1MpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUPMjIgSmFudWFyeSAyMDA3ZGQCAw9kFgICAQ8PFgIfBAUNMjEgTWFyY2ggMjAwN2RkAgUPZBYCAgEPDxYEHwQFBjE2LDQ1OR4HVG9vbFRpcAUJMTYsNDU5LjIwZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAiBJbmZvcm1hdGlvbiAmYW1wOyBLbm93bGVkZ2UgTWdtdApNdWx0aW1lZGlhZAILD2QWAgIBD2QWAgIBDxYCHwgCARYCAgEPZBYCZg8VAiRObyByZWxldmFuY2UgdG8gVW5kZXJwaW5uaW5nIFNlY3RvcnMAZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBeMeVGhpcyBvdmVyc2VhcyB0cmF2ZWwgZ3JhbnQgcHJvcG9zYWwgcmVxdWVzdHMgRVBTUkMncyBzdXBwb3J0IGZvciBhIHR3by1tb250aCB2aXNpdCAoSmFudWFyeS1GZWJydWFyeSAyMDA3KSB0byBteSByZXNlYXJjaCBjb2xsYWJvcmF0b3JzIFByb2YuIFhpYW9mYW5nIFpob3UgYW5kIERyLiBIZW5nIFRhbyBTaGVuIGF0IFNjaG9vbCBvZiBJbmZvcm1hdGlvbiBUZWNobm9sb2d5IGFuZCBFbGVjdHJpY2FsIEVuZ2luZWVyaW5nIChJVEVFKSwgdGhlIFVuaXZlcnNpdHkgb2YgUXVlZW5zbGFuZCwgYW5kICBQcm9mLiBQZXRlciBCcnV6YSBhdCBTY2hvb2wgb2YgSW5mb3JtYXRpb24gU3lzdGVtcywgUXVlZW5zbGFuZCBVbml2ZXJzaXR5IG9mIFRlY2hub2xvZ3ksIGJvdGggaW4gQnJpc2JhbmUsIEF1c3RyYWxpYSwgdG8gY29uZHVjdCBqb2ludCByZXNlYXJjaCBpbiBkaW1lbnNpb25hbGl0eSByZWR1Y3Rpb24gZm9yIGVmZmljaWVudCBzaW1pbGFyaXR5IHNlYXJjaCBpbiBoaWdoIGRpbWVuc2lvbmFsIHNwYWNlcy4gVGhlcmUgaGFzIGJlZW4gYSBwcmVzc2luZyBuZWVkIG9mIGRlYWxpbmcgd2l0aCBsYXJnZSBzY2FsZSBtdWx0aW1lZGlhIGFuZCBjb21wbGV4IGRhdGEgdG8gZmluZCByZXF1aXJlZCBpbmZvcm1hdGlvbiBlZmZpY2llbnRseSBhbmQgZWZmZWN0aXZlbHkuIERhdGEgb2JqZWN0cyBhcmUgcmVwcmVzZW50ZWQgYnkgYXV0b21hdGljYWxseSBleHRyYWN0ZWQgZmVhdHVyZXMgKGUuZy4sIGNvbG91ciwgdGV4dHVyZSwgYW5kIGdlb21ldHJ5IHByb3BlcnRpZXMgZm9yIGltYWdlcykgYXMgZmVhdHVyZSB2ZWN0b3JzLCB3aGljaCBhcmUgcG9pbnRzIGluIGhpZ2ggZGltZW5zaW9uYWwgc3BhY2UuIFNpbWlsYXJpdHkgcXVlcnkgcHJvY2Vzc2luZyBpcyB0byBmaW5kIHRoZSBkYXRhIG9iamVjdHMgc2ltaWxhciB0byBhIHF1ZXJ5LCBpLmUuLCB0aGUgbmVhcmVzdCBLIG5laWdoYm9yaW5nIChLLU5OKSBwb2ludHMgb2YgdGhlIHF1ZXJ5IG9iamVjdCBpbiB0aGUgaGlnaCBkaW1lbnNpb25hbCBzcGFjZSwgdHlwaWNhbGx5IGJ5IG1lYXN1cmluZyBkaXN0YW5jZXMgYmV0d2VlbiB0aGUgcG9pbnRzLiBUaGUgc2ltaWxhcml0eSBzZWFyY2ggaXMgYSBjb21tb24gcHJvYmxlbSBmdW5kYW1lbnRhbCB0byBhIHdpZGUgcmFuZ2Ugb2YgYXBwbGljYXRpb25zLCBzdWNoIGFzIG11bHRpbWVkaWEgc2VhcmNoLCBtb2xlY3VsYXIgYmlvbG9neSwgZGlnaXRhbCBsaWJyYXJpZXMsIG1lZGljYWwgaW1hZ2luZywgdmlkZW8gc3VydmVpbGxhbmNlLCBhbmQgc28gb24uIE1ham9yIGNoYWxsZW5nZXMgaW4gdGhpcyBhcmVhIGFyZSByb290ZWQgb24gdGhlICBjdXJzZSBvZiBkaW1lbnNpb25hbGl0eSAsIHdoaWNoIGlzIHN0aWxsIGFuIG9wZW4gcHJvYmxlbSByZW1haW5pbmcgbGFyZ2VseSB1bnNvbHZlZC4gVGhlIEstTk4gcHJvYmxlbSBpbiBhIGhpZ2ggZGltZW5zaW9uYWwgc3BhY2UgYmVjb21lcyBtZWFuaW5nbGVzcyB3aXRoIHRoZSBpbmNyZWFzZSBvZiB0aGUgbnVtYmVyIG9mIGRpbWVuc2lvbnMsIGFzIHRoZSBkaWZmZXJlbmNlIGJldHdlZW4gdGhlIGRpc3RhbmNlcyBmb3IgYSBwb2ludCBpbiB0aGUgc3BhY2UgdG8gaXRzIG5lYXJlc3QgbmVpZ2hib3IgYW5kIGl0cyBmYXJ0aGVzdCBuZWlnaGJvciBhcHByb2FjaGVzIHRvIHplcm8gd2hlbiB0aGUgbnVtYmVyIG9mIGRpbWVuc2lvbnMgYXBwcm9hY2hpbmcgaW5maW5pdHkuICBEaW1lbnNpb25hbGl0eSByZWR1Y3Rpb24gYWltcyB0byByZWR1Y2UgdGhlIGltcGFjdCBvZiAgY3Vyc2Ugb2YgZGltZW5zaW9uYWxpdHkgIGJ5IGV4cGxvcmluZyBlZmZlY3RpdmUgZGltZW5zaW9uYWxpdHkgcmVkdWN0aW9uIHRlY2huaXF1ZXMuIEluIHRoZSBsaXRlcmF0dXJlLCBhIG51bWJlciBvZiBkaW1lbnNpb25hbGl0eSByZWR1Y3Rpb24gbWV0aG9kcyBoYXZlIGJlZW4gaW52ZXN0aWdhdGVkLiBIb3dldmVyLCB0aGUgc3VpdGFiaWxpdHkgb2YgYW4gZXhpc3RpbmcgYWxnb3JpdGhtIHdpbGwgbGFyZ2VseSBkZXBlbmQgb24gYW5kIGhhdmUgdG8gYmUgYWRhcHRlZCB0byB0aGUgdHlwZSBvZiBkYXRhLCBzaW1pbGFyaXR5IG1lYXN1cmUgYW5kIHF1ZXJ5IHByb2Nlc3Npbmcgc3RyYXRlZ3kuIEluIHRoaXMgcmVzZWFyY2gsIHdlIHdpbGwgY29uZHVjdCBhIHN5c3RlbWF0aWMgaW52ZXN0aWdhdGlvbiBpbnRvIGhvdyB0byBhZGFwdCBzdGF0ZS1vZi10aGUtYXJ0IGxpbmVhciBhbmQgbm9uLWxpbmVhciBkaW1lbnNpb25hbGl0eSByZWR1Y3Rpb24gdGVjaG5pcXVlcyB0byB0aGVzZSBhc3BlY3RzLiBXZSBhaW0gYXQgc2lnbmlmaWNhbnRseSBpbXByb3ZpbmcgcGVyZm9ybWFuY2Ugb2Ygc2ltaWxhcml0eSBxdWVyeSBwcm9jZXNzaW5nLiBXZSBoYXZlIGFscmVhZHkgZG9uZSBleHRlbnNpdmUgZ3JvdW5kaW5nIHdvcmsgcmVsYXRlZCB0byB0aGlzIHJlc2VhcmNoLiBTb21lIGV4aXN0aW5nIGRpbWVuc2lvbmFsaXR5IHJlZHVjdGlvbiBtZXRob2RzIGhhdmUgYmVlbiB0ZXN0ZWQgb24gbGFyZ2Ugc2NhbGUgcHJvdGVpbiBzdHJ1Y3R1cmUgZGF0YS4gSW4gYWRkaXRpb24sIGluaXRpYWwgd29yayBpbiB2aWRlbyBzZXF1ZW5jZSBzZWFyY2ggaXMgb24tZ29pbmcuIFdlIGhhdmUgbm93IHJlYWNoZWQgdGhlIGhhcmQgY29yZSBvZiB0aGUgcmVzZWFyY2guIEEgbGFyZ2UgYW1vdW50IG9mIG11bHRpbWVkaWEgZGF0YWJhc2UgYXNwZWN0cyAoc3VjaCBhcyBpbmRleGluZywgcXVlcnkgcHJvY2Vzc2luZywgZXRjLikgdGhhdCBJIGFtIGN1cnJlbnRseSB1bmZhbWlsaWFyIHdpdGgsIHdpbGwgZ2V0IGludm9sdmVkLiBBcyBhIGNvbnNlcXVlbmNlLCBpbnRlbnNpdmUgZmFjZS10by1mYWNlIGludGVyYWN0aW9ucyB3aXRoIG15IGNvbGxhYm9yYXRvcnMsIHdobyBhcmUgdG9wIG11bHRpbWVkaWEgZGF0YWJhc2UgcmVzZWFyY2hlcnMsIGFyZSBlc3NlbnRpYWwuIEl0IGlzIGltcG9ydGFudCB0byBtZWV0IGFuZCBwaHlzaWNhbGx5IHdvcmsgdG9nZXRoZXIgd2l0aCB0aGVtLiBUaGlzIHdpbGwgaGVscCB0aGUgcmVzZWFyY2ggY2FycmllZCBvdXQgYXQgdGhlIEtub3dsZWRnZSBNZWRpYSBJbnN0aXR1dGUgb2YgdGhlIE9wZW4gVW5pdmVyc2l0eS5UaGlzIG92ZXJzZWFzIHRyYXZlbCBncmFudCB3aWxsIGJlIGhpZ2hseSBjb3N0LWVmZmVjdGl2ZS4gVGhlIGNvbmNyZXRlIG91dGNvbWVzIHdpbGwgaW5jbHVkZSBwYXBlcnMsIGluaXRpYWwgZXhwZXJpbWVudGFsIHJlc3VsdHMgYXMgcHJvb2Ytb2YtY29uY2VwdCBmb3IgYW4gRVBTUkMgcHJvcG9zYWwgSSBhbSBwcmVwYXJpbmcsIGFuZCBhIGZvbGxvd2luZy1vbiByZWd1bGFyIHN0dWRlbnQgZXhjaGFuZ2UgcHJvZ3JhbSBmb3IgbXkgUGhEIHN0dWRlbnRzIHRvIHZpc2l0IHRoZSBtdWx0aW1lZGlhIGRhdGFiYXNlIGdyb3VwIG9mIHRoZSBVbml2ZXJzaXR5IG9mIFF1ZWVuc2xhbmQgKGZ1bGx5IHN1cHBvcnRlZCBieSB0aGUgaG9zdCB1bml2ZXJzaXR5KS4gSXQgd2lsbCBnZW5lcmF0ZSBzaWduaWZpY2FudCBiZW5lZml0cyB0byB0aGUgVUsgaW4gdGVybXMgb2Yga25vd2xlZGdlIHRyYW5zZmVyLCB0cmFpbmluZyBvZiBoaWdoLXF1YWxpdHkgcGVyc29ubmVsLCBhbmQgaW50ZXJuYXRpb25hbCBjb2xsYWJvcmF0aW9uLiBJdCB3aWxsIHN0cmVuZ3RoZW4gbXkgZXhpc3RpbmcgbGluayB3aXRoIHRoZXNlIGludGVybmF0aW9uYWxseSByZWNvZ25pemVkIHJlc2VhcmNoZXJzLiBUaHJvdWdoIHRoZSBqb2ludCByZXNlYXJjaCwgSSB3aWxsIGxlYXJuIGFkdmFuY2VkIHRlY2hub2xvZ2llcyBvbiBtdWx0aW1lZGlhIGRhdGFiYXNlcywgd2hpY2ggd2lsbCBicm9hZGVuIG15IHZpc2lvbiBhbmQgZXhwZXJ0aXNlIGFzIGFuIGluZm9ybWF0aW9uIHJldHJpZXZhbCByZXNlYXJjaGVyLiBUaGlzIHdpbGwgZnVydGhlciBlbmhhbmNlIG15IGRlcGFydG1lbnQncyBhbmQgdG8gbXkgb3duIHJlc2VhcmNoIHByb2ZpbGUuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5vcGVuLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5vcGVuLmFjLnVrICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwMzc0MDIvMQxFUC9FMDM3NDAyLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZAsWFlTstKbTsVL2S7o+O6azrku4" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK6npbpCgLQvN++DAKT/OCVA+oW8QLVvjMztYtH4npShLw7cESh" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/E037402/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>Dimensionality Reduction for Efficient Similarity Search in High Dimensional Spaces</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=-107916'>Song, Professor D</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Knowledge Media Institute</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Open University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Overseas Travel Grants (OTGS)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">22 January 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">21 March 2007</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="16,459.20" class="DetailValue">16,459</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Information &amp; Knowledge Mgmt</td>
+                                    <td class="DetailValue"> Multimedia</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This overseas travel grant proposal requests EPSRC's support for a two-month visit (January-February 2007) to my research collaborators Prof. Xiaofang Zhou and Dr. Heng Tao Shen at School of Information Technology and Electrical Engineering (ITEE), the University of Queensland, and  Prof. Peter Bruza at School of Information Systems, Queensland University of Technology, both in Brisbane, Australia, to conduct joint research in dimensionality reduction for efficient similarity search in high dimensional spaces. There has been a pressing need of dealing with large scale multimedia and complex data to find required information efficiently and effectively. Data objects are represented by automatically extracted features (e.g., colour, texture, and geometry properties for images) as feature vectors, which are points in high dimensional space. Similarity query processing is to find the data objects similar to a query, i.e., the nearest K neighboring (K-NN) points of the query object in the high dimensional space, typically by measuring distances between the points. The similarity search is a common problem fundamental to a wide range of applications, such as multimedia search, molecular biology, digital libraries, medical imaging, video surveillance, and so on. Major challenges in this area are rooted on the  curse of dimensionality , which is still an open problem remaining largely unsolved. The K-NN problem in a high dimensional space becomes meaningless with the increase of the number of dimensions, as the difference between the distances for a point in the space to its nearest neighbor and its farthest neighbor approaches to zero when the number of dimensions approaching infinity.  Dimensionality reduction aims to reduce the impact of  curse of dimensionality  by exploring effective dimensionality reduction techniques. In the literature, a number of dimensionality reduction methods have been investigated. However, the suitability of an existing algorithm will largely depend on and have to be adapted to the type of data, similarity measure and query processing strategy. In this research, we will conduct a systematic investigation into how to adapt state-of-the-art linear and non-linear dimensionality reduction techniques to these aspects. We aim at significantly improving performance of similarity query processing. We have already done extensive grounding work related to this research. Some existing dimensionality reduction methods have been tested on large scale protein structure data. In addition, initial work in video sequence search is on-going. We have now reached the hard core of the research. A large amount of multimedia database aspects (such as indexing, query processing, etc.) that I am currently unfamiliar with, will get involved. As a consequence, intensive face-to-face interactions with my collaborators, who are top multimedia database researchers, are essential. It is important to meet and physically work together with them. This will help the research carried out at the Knowledge Media Institute of the Open University.This overseas travel grant will be highly cost-effective. The concrete outcomes will include papers, initial experimental results as proof-of-concept for an EPSRC proposal I am preparing, and a following-on regular student exchange program for my PhD students to visit the multimedia database group of the University of Queensland (fully supported by the host university). It will generate significant benefits to the UK in terms of knowledge transfer, training of high-quality personnel, and international collaboration. It will strengthen my existing link with these internationally recognized researchers. Through the joint research, I will learn advanced technologies on multimedia databases, which will broaden my vision and expertise as an information retrieval researcher. This will further enhance my department's and to my own research profile.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.open.ac.uk                                                                               '>http://www.open.ac.uk                                                                               </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

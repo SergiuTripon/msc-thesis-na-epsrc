@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	An investigation into routing algorithms for optical networks
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=EP%2fD052092%2f1" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMRVAvRDA1MjA5Mi8xZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVOPHN0cm9uZz5BbiBpbnZlc3RpZ2F0aW9uIGludG8gcm91dGluZyBhbGdvcml0aG1zIGZvciBvcHRpY2FsIG5ldHdvcmtzPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVEPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD03NDM3NCc+R2xhc3MsIFByb2Zlc3NvciBDQTwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDWjxhIGhyZWY9J05HQk9WaWV3UGFydG5lci5hc3B4P09yZ2FuaXNhdGlvbklkPTEwMDEyMzgnPlF1ZWVuIE1hcnksIFVuaXZlcnNpdHkgb2YgTG9uZG9uPC9hPgAAZAIGD2QWAgIBD2QWAgIBDw8WAh8EBR9BY3R1YXJpYWwgU2NpZW5jZSBhbmQgSW5zdXJhbmNlZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUWQ2l0eSBVbml2ZXJzaXR5IExvbmRvbmRkAggPZBYCAgEPZBYCAgEPDxYCHwQFGkRpc2NpcGxpbmUgSG9wcGluZyBQcmUtRkVDZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUNMDEgTWFyY2ggMjAwNmRkAgMPZBYCAgEPDxYCHwQFEDMwIE5vdmVtYmVyIDIwMDZkZAIFD2QWAgIBDw8WBB8EBQYzNCw0NjEeB1Rvb2xUaXAFCTM0LDQ2MS40MWRkAgoPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCGUZ1bmRhbWVudGFscyBvZiBDb21wdXRpbmcaTWF0aGVtYXRpY2FsIEFzcGVjdHMgb2YgT1JkAgsPZBYCAgEPZBYCAgEPFgIfBwIBFgICAQ9kFgJmDxUCJE5vIHJlbGV2YW5jZSB0byBVbmRlcnBpbm5pbmcgU2VjdG9ycwBkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQF3A1UaGUgYmFja2JvbmUgb2YgdGhlIGludGVybmV0IGlzIG5vdyBhbiBvcHRpY2FsIG5ldHdvcmsuIEl0IG5vIGxvbmdlciBoYXMgdG8gcmVseSBvbiBtb3JlIGNvc3RseSBlbGVjdHJvbmljLW9wdGljYWwgY29udmVyc2lvbiB3aGljaCB0eXBpY2FsbHkgbGVkIHRvIGJvdHRsZW5lY2tzIGF0IHRoZSBub2Rlcy4gSG93ZXZlciwgdGhlIGRyYXdiYWNrIG9mIG9wdGljYWwgbmV0d29ya3MgaXMgdGhhdCAgdGhleSByZWx5IG9uIHdhdmVsZW5ndGgtZGl2aXNpb24gbXVsdGlwbGV4aW5nIHRyYW5zbWlzc2lvbiBpbiB3aGljaCBhIGNvbW1vbiB3YXZlbGVuZ3RoIG5lZWRzIHRvIGJlIGFzc3VyZWQgb24gYWxsIGxpbmtzIG9mIGEgcm91dGUgZm9yIHRoZSBjb25uZWN0aW9uIG5vdCB0byBiZSBibG9ja2VkLiBFZmZpY2llbnQgdXNlIG9mIHRoZSBuZXR3b3JrIGlzIHRoZXJlZm9yZSBoaWdobHkgZGVwZW5kZW50IHVwb24gZ29vZCB3YXZlbGVuZ3RoLWFzc2lnbm1lbnQgYW5kIHJvdXRpbmcgYWxnb3JpdGhtcy4gQW4gT3B0aW1pc2F0aW9uIHRlY2huaXF1ZSwgb2YgSW50ZWdlciBMaW5lYXIgUHJvZ3JhbW1pbmcsIGhhcyBhbHJlYWR5IHByb3ZlZCBpdHMgd29ydGggaW4gdGhpcyBjb250ZXh0LiBIb3dldmVyLCBpdCByZXF1aXJlcyBhIGZpeGVkIHNldCBvZiBjb25uZWN0aW9ucyBhbmQgaXMgdG9vIHNsb3cgdG8gYWRhcHQgdG8gbW9yZSBhIGR5bmFtaWMgbWFya2V0LiBNb3Jlb3ZlciwgYXMgbmV3IHRlY2hub2xvZ2llcyBlbWVyZ2UsICB0aGUgc3VjaCBhcyBvcHRpY2FsIHN3aXRjaGluZywgYW5kIGRlbWFuZCBiZWNvbWVzIG1vcmUgZHluYW1pYywgZm9yIGV4YW1wbGUgd2l0aCB0aGUgaW50cm9kdWN0aW9uIG9mIEJyb2FkYmFuZC1vbi1kZW1hbmQsIGFsdGVybmF0aXZlIGFwcHJvYWNoZXMgd2lsbCBiZSByZXF1aXJlZC4gTWF0aGVtYXRpY2FsIGV4cGVydGlzZSB3aWxsIGJlIG5lZWRlZCB0byBkZXJpdmUgc3VpdGFibGUgbWF0aGVtYXRpY2FsIGZvcm11bGF0aW9ucyBhbmQgdG8gZGV2ZWxvcCBvcHRpbWlzYXRpb24gd2F2ZWxlbmd0aCBhc3NpZ25tZW50IGFuZCByb3V0aW5nIGFsZ29yaXRobXMuQnkgcHJvdmlkaW5nIHRoZSBvcHBvcnR1bml0eSBmb3Igc29tZW9uZSB3aXRoIGJyb2FkIGV4cGVyaWVuY2Ugb2Ygb3B0aW1pc2F0aW9uIG1ldGhvZHMgaW4gb3RoZXIgY29udGV4dHMsIHRvIGZhbWlsaWFyaXNlIHRoZW1zZWx2ZXMgd2l0aCB0aGlzIHRvcGljLCB3ZSBob3BlIHRvIGRlcml2ZSBzb21lIG5vdmVsIGFwcHJvYWNoZXMuIEluc3BpcmF0aW9uIG1heSBiZSBkcmF3biBmcm9tIG9wdGltaXNhdGlvbiBhcHByb2FjaGVzIGluIG90aGVyIGRvbWFpbnMsIHN1Y2ggYXMgR3JhcGggQ29sb3VyaW5nLCBhbmQgZ2FwcyBpbiBzb2x1dGlvbiBtZXRob2Qgd2lsbCBwcm92aWRlIGZ1cnRoZXIgY2hhbGxlbmdlcyB0byB0aGUgTWF0aGVtYXRpY3MgY29tbXVuaXR5LiBJbiBhZGRpdGlvbiwgdGhlIGNvbGxhYm9yYXRpb24gYnVpbHQgdXAgYnkgd29ya2luZyB0b2dldGhlciBzaG91bGQgZW5hYmxlIHVzIHRvIGRldmVsb3Agc3VpdGFibGUgcm91dGluZyBtZXRob2RzIGluIGFudGljaXBhdGlvbiBvZiBlbWVyZ2luZyB0ZWNobm9sb2dpZXMuIEl0IGlzIGhvcGVkIHRoYXQgdGhpcyB3aWxsIHByb3ZpZGUgVUsgdW5pdmVyc2l0aWVzIGFuZCBpbmR1c3RyeSB3aXRoIGEgY29tcGV0aXRpdmUgZWRnZSBmcm9tIGNoYW5nZXMgaW4gdGVjaG5vbG9neSBhbmQgbW9kZXMgb2YgdXNlIG9mIG9wdGljYWwgbmV0d29ya3MuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0QwNTIwOTIvMQxFUC9EMDUyMDkyLzFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZKdjbZqtOiFPACu2aUFoA4X2V8WE" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKTm6KdDALQvN++DAKT/OCVA13Hy09gMyMWCM3dHK3kZ5g9JrwW" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">EP/D052092/1</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>An investigation into routing algorithms for optical networks</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=74374'>Glass, Professor CA</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+                                    <table width="100%" class="notbordered" cellspacing="0" cellpadding="0" summary="partners"> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPartner.aspx?OrganisationId=1001238'>Queen Mary, University of London</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Actuarial Science and Insurance</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">City University London</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Discipline Hopping Pre-FEC</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 March 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">30 November 2006</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="34,461.41" class="DetailValue">34,461</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Fundamentals of Computing</td>
+                                    <td class="DetailValue"> Mathematical Aspects of OR</td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+                                  <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="sector classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%;" class="DetailValueAlt"> No relevance to Underpinning Sectors</td>
+                                    <td class="DetailValueAlt"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">The backbone of the internet is now an optical network. It no longer has to rely on more costly electronic-optical conversion which typically led to bottlenecks at the nodes. However, the drawback of optical networks is that  they rely on wavelength-division multiplexing transmission in which a common wavelength needs to be assured on all links of a route for the connection not to be blocked. Efficient use of the network is therefore highly dependent upon good wavelength-assignment and routing algorithms. An Optimisation technique, of Integer Linear Programming, has already proved its worth in this context. However, it requires a fixed set of connections and is too slow to adapt to more a dynamic market. Moreover, as new technologies emerge,  the such as optical switching, and demand becomes more dynamic, for example with the introduction of Broadband-on-demand, alternative approaches will be required. Mathematical expertise will be needed to derive suitable mathematical formulations and to develop optimisation wavelength assignment and routing algorithms.By providing the opportunity for someone with broad experience of optimisation methods in other contexts, to familiarise themselves with this topic, we hope to derive some novel approaches. Inspiration may be drawn from optimisation approaches in other domains, such as Graph Colouring, and gaps in solution method will provide further challenges to the Mathematics community. In addition, the collaboration built up by working together should enable us to develop suitable routing methods in anticipation of emerging technologies. It is hoped that this will provide UK universities and industry with a competitive edge from changes in technology and modes of use of optical networks.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='                                                                                                    '>                                                                                                    </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>
