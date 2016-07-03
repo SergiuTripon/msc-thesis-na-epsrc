@@ -2,60 +2,151 @@
 
 ########################################################################################################################
 
-# if topics folder does not exist
-if [ ! -d ../output/topics/html/topics/ ]; then
-    # variable to hold start date and time
-    start=$(date "+%d-%m-%Y %H:%M:%S")
-    # print start
-    echo "> Start date and time: ${start}"
+# downloads topics
+function download_topics {
+    # if topics folder does not exist
+    if [ ! -d ../output/topics/html/topics/ ]; then
+        # variable to hold start date and time
+        start=$(date "+%d-%m-%Y %H:%M:%S")
+        # print start
+        echo "> Start date and time: ${start}"
 
-    # download pages at the topic urls in the file
-    xargs -P 20 -n 1 wget -q --directory-prefix=../output/topics/html/topics/ < ../output/topics/urls/topics.txt
+        # variable to hold source
+        source=../output/topics/html/topics/
+        # variable to hold target
+        target=../output/topics/urls/topics.txt
+        # download pages at the topic urls in the file
+        xargs -P 20 -n 1 wget -q --directory-prefix=${source} < ${target}
 
-    # variable to hold end date and time
-    end=$(date "+%d-%m-%Y %H:%M:%S")
-    # print end
-    echo "> End date and time: ${end}"
-# close if statement
-fi
-
-########################################################################################################################
-
-# if grants folder does not exist
-if [ ! -d ../output/topics/html/grants/ ]; then
-    # variable to hold start date and time
-    start=$(date "+%d-%m-%Y %H:%M:%S")
-    # print start
-    echo "> Start date and time: ${start}"
-
-    # download pages at the grant urls in the file
-    xargs -P 20 -n 1 wget -q --directory-prefix=../output/topics/html/grants/ < ../output/topics/urls/grants.txt
-
-    # variable to hold end date and time
-    end=$(date "+%d-%m-%Y %H:%M:%S")
-    # print end
-    echo "> End date and time: ${end}"
-# close if statement
-fi
+        # variable to hold end date and time
+        end=$(date "+%d-%m-%Y %H:%M:%S")
+        # print end
+        echo "> End date and time: ${end}"
+    # close if statement
+    fi
+}
 
 ########################################################################################################################
 
-# if grants folder does not exist
-if [ ! -d ../output/past-topics/html/grants/ ]; then
-    # variable to hold start date and time
-    start=$(date "+%d-%m-%Y %H:%M:%S")
-    # print start
-    echo "> Start date and time: ${start}"
+# downloads grants
+function download_grants {
+    # if grants folder does not exist
+    if [ ! -d ../output/topics/html/grants/ ]; then
+        # variable to hold start date and time
+        start=$(date "+%d-%m-%Y %H:%M:%S")
+        # print start
+        echo "> Start date and time: ${start}"
 
-    # download pages at the grant urls in the file
-    xargs -P 20 -n 1 wget -q --directory-prefix=../output/past-topics/html/grants/ < ../output/past-topics/urls/grants.txt
+        # variable to hold source
+        source=../output/topics/html/grants/
+        # variable to hold target
+        target=../output/topics/urls/grants.txt
+        # download pages at the grant urls in the file
+        xargs -P 20 -n 1 wget -q --directory-prefix=${source} < ${target}
 
-    # variable to hold end date and time
-    end=$(date "+%d-%m-%Y %H:%M:%S")
-    # print end
-    echo "> End date and time: ${end}"
-# close if statement
-fi
+        # variable to hold end date and time
+        end=$(date "+%d-%m-%Y %H:%M:%S")
+        # print end
+        echo "> End date and time: ${end}"
+    # close if statement
+    fi
+}
+
+########################################################################################################################
+
+# downloads researchers
+function download_researchers() {
+    # if researchers folder does not exist
+    if [ ! -d ../output/topics/html/researchers/ ]; then
+        # variable to hold start date and time
+        start=$(date "+%d-%m-%Y %H:%M:%S")
+        # print start
+        echo "> Start date and time: ${start}"
+
+        # variable to hold source
+        source=../output/topics/html/researchers/
+        # variable to hold target
+        target=../output/topics/urls/researchers.txt
+        # download pages at the researcher urls in the file
+        xargs -P 20 -n 1 wget -q --directory-prefix=${source} < ${target}
+
+        # variable to hold end date and time
+        end=$(date "+%d-%m-%Y %H:%M:%S")
+        # print end
+        echo "> End date and time: ${end}"
+    # close if statement
+    fi
+}
+
+########################################################################################################################
+
+# downloads past grants
+function download_past_grants() {
+    # if grants folder does not exist
+    if [ ! -d ../output/past-topics/html/grants$1/ ]; then
+        # variable to hold start date and time
+        start=$(date "+%d-%m-%Y %H:%M:%S")
+        # print start
+        echo "> Start date and time: ${start}"
+
+        # variable to hold source
+        source=../output/past-topics/html/grants$1/
+        # variable to hold target
+        target=../output/past-topics/urls/grants$1.txt
+        # download pages at the grant urls in the file
+        xargs -P 20 -n 1 wget -q --directory-prefix=${source} < ${target}
+
+        # variable to hold end date and time
+        end=$(date "+%d-%m-%Y %H:%M:%S")
+        # print end
+        echo "> End date and time: ${end}"
+    # close if statement
+    fi
+}
+
+########################################################################################################################
+
+# downloads past researchers
+function download_past_researchers() {
+    # if researchers folder does not exist
+    if [ ! -d ../output/past-topics/html/researchers$1/ ]; then
+        # variable to hold start date and time
+        start=$(date "+%d-%m-%Y %H:%M:%S")
+        # print start
+        echo "> Start date and time: ${start}"
+
+        # variable to hold source
+        source=../output/past-topics/html/researchers$1/
+        # variable to hold target
+        target=../output/past-topics/urls/researchers$1.txt
+        # download pages at the researcher urls in the file
+        xargs -P 20 -n 1 wget -q --directory-prefix=${source} < ${target}
+
+        # variable to hold end date and time
+        end=$(date "+%d-%m-%Y %H:%M:%S")
+        # print end
+        echo "> End date and time: ${end}"
+    # close if statement
+    fi
+}
+
+########################################################################################################################
+
+# run functions
+
+# download topics
+download_topics
+# download grants
+download_grants
+# download researchers
+download_researchers
+
+# years='_1990_2000'
+years='_2000_2010'
+# download past grants
+download_past_grants ${years}
+# download past researchers
+download_past_researchers ${years}
 
 ########################################################################################################################
 

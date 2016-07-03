@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=110493" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRVQcm9mZXNzb3IgTiBLcmFzbm9nb3JkZAIDDw8WAh8CBRROZXdjYXN0bGUgVW5pdmVyc2l0eWRkAgUPDxYCHwIFEkNvbXB1dGluZyBTY2llbmNlc2RkAgcPDxYCHwIFCzA3ODI1NzUzODg1ZGQCCQ8PFgIfAgUNMDE5MS0yMjItODIzMmRkAg0PDxYEHwIFYzExMDA5NzExNjA5NzEwODEwNTExMTA0NjEwNzExNDA5NzExNTExMDExMTEwMzExMTExNDA2NDExMDEwMTExOTA5OTA5NzExNTExNjEwODEwMTA0NjA5NzA5OTA0NjExNzEwNx4IUmVhZE9ubHlnFgweC29ubW91c2VvdmVyZR4Hb25mb2N1cwVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7Hgpvbm1vdXNlb3V0BV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzseBm9uYmx1cgVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HwAFPGphdmFzY3JpcHQ6c2VuZHRvKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJykudmFsdWUpOx8BBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJztkAg8PPCsACwEADxYIHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudAIIHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AghkFgJmD2QWEAIBD2QWBGYPZBYCAgEPDxYCHwJlZGQCAQ9kFgICAQ8PFgIfAgUXQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2VkZAICD2QWBGYPZBYCAgEPDxYCHwIFDkJpb2luZm9ybWF0aWNzZGQCAQ9kFgICAQ8PFgIfAgUSQ29tcGxleGl0eSBTY2llbmNlZGQCAw9kFgRmD2QWAgIBDw8WAh8CBRNDb250cm9sIEVuZ2luZWVyaW5nZGQCAQ9kFgICAQ8PFgIfAgUSRGVzaWduIEVuZ2luZWVyaW5nZGQCBA9kFgRmD2QWAgIBDw8WAh8CBRlGdW5kYW1lbnRhbHMgb2YgQ29tcHV0aW5nZGQCAQ9kFgICAQ8PFgIfAgUgSW5mb3JtYXRpb24gJmFtcDsgS25vd2xlZGdlIE1nbXRkZAIFD2QWBGYPZBYCAgEPDxYCHwIFIk1hbnVmYWN0LiBFbnRlcnByaXNlIE9wcyZhbXA7IE1nbXRkZAIBD2QWAgIBDw8WAh8CBSFNYW51ZmFjdHVyaW5nIE1hY2hpbmUgJmFtcDsgUGxhbnRkZAIGD2QWBGYPZBYCAgEPDxYCHwIFIU1vZGVsbGluZyAmYW1wOyBzaW11bC4gb2YgSVQgc3lzLmRkAgEPZBYCAgEPDxYCHwIFIk5ldHdvcmtzICZhbXA7IERpc3RyaWJ1dGVkIFN5c3RlbXNkZAIHD2QWBGYPZBYCAgEPDxYCHwIFIk5ldyAmYW1wOyBFbWVyZ2luZyBDb21wLiBQYXJhZGlnbXNkZAIBD2QWAgIBDw8WAh8CBRNSZXNlYXJjaCBhcHByb2FjaGVzZGQCCA9kFgRmD2QWAgIBDw8WAh8CBRFTeW50aGV0aWMgYmlvbG9neWRkAgEPZBYCAgEPDxYCHwJlZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAgYfCgIBHwsCBmQWAmYPZBYMAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL04wMzE5NjIvMSc+RVAvTjAzMTk2Mi8xPC9hPiBkZAIBDw8WAh8CBV9TeW50aGV0aWMgUG9ydGFib2xvbWljczogTGVhZGluZyB0aGUgd2F5IGF0IHRoZSBjcm9zc3JvYWRzIG9mIHRoZSBEaWdpdGFsIGFuZCB0aGUgQmlvIEVjb25vbWllc2RkAgIPDxYCHwIFAyhQKWRkAgIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0kwMzE2NDIvMic+RVAvSTAzMTY0Mi8yPC9hPiBkZAIBDw8WAh8CBUhST0FEQkxPQ0s6IFRvd2FyZHMgUHJvZ3JhbW1hYmxlIERlZmVuc2l2ZSBCYWN0ZXJpYWwgQ29hdGluZ3MgJmFtcDsgU2tpbnNkZAICDw8WAh8CBQMoUClkZAIDD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9KMDA0MTExLzInPkVQL0owMDQxMTEvMjwvYT4gZGQCAQ8PFgIfAgVAVG93YXJkcyBhIFVuaXZlcnNhbCBCaW9sb2dpY2FsLUNlbGwgT3BlcmF0aW5nIFN5c3RlbSAoQVVkQUNpT3VTKWRkAgIPDxYCHwIFAyhQKWRkAgQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0wwMDE0ODkvMic+RVAvTDAwMTQ4OS8yPC9hPiBkZAIBDw8WAh8CBTJUQVVSVVM6IFRvd2FyZHMgYW4gQXVkYWNpb3VzIFVuaXZlcnNhbCBDb25zdHJ1Y3RvcmRkAgIPDxYCHwIFAyhQKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMTgyMDUvMSc+RVAvSzAxODIwNS8xPC9hPiBkZAIBDw8WAh8CBVxFVk9MVkFCTEUgQVNTRU1CTFkgU1lTVEVNUyAtIFRPV0FSRFMgT1BFTiwgQURBUFRBQkxFIEFORCBDT05URVhULUFXQVJFIEVRVUlQTUVOVCBBTkQgU1lTVEVNU2RkAgIPDxYCHwIFAyhDKWRkAgYPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMTQxNjEvMSc+RVAvSzAxNDE2MS8xPC9hPiBkZAIBDw8WAh8CBU1DTE9VRCBNQU5VRkFDVFVSSU5HIC0gVE9XQVJEUyBSRVNJTElFTlQgQU5EIFNDQUxBQkxFIEhJR0ggVkFMVUUgTUFOVUZBQ1RVUklOR2RkAgIPDxYCHwIFAyhDKWRkAgMPZBYCZg9kFgJmDzwrAAsBAA8WCB8IFgAfCQIYHwoCAR8LAhhkFgJmD2QWMAIBD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9MMDAxNDg5LzEnPkVQL0wwMDE0ODkvMTwvYT4gZGQCAQ8PFgIfAgUyVEFVUlVTOiBUb3dhcmRzIGFuIEF1ZGFjaW91cyBVbml2ZXJzYWwgQ29uc3RydWN0b3JkZAICDw8WAh8CBQMoUClkZAICD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9JMDMxNjQyLzEnPkVQL0kwMzE2NDIvMTwvYT4gZGQCAQ8PFgIfAgVIUk9BREJMT0NLOiBUb3dhcmRzIFByb2dyYW1tYWJsZSBEZWZlbnNpdmUgQmFjdGVyaWFsIENvYXRpbmdzICZhbXA7IFNraW5zZGQCAg8PFgIfAgUDKFApZGQCAw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSjAwNDExMS8xJz5FUC9KMDA0MTExLzE8L2E+IGRkAgEPDxYCHwIFQFRvd2FyZHMgYSBVbml2ZXJzYWwgQmlvbG9naWNhbC1DZWxsIE9wZXJhdGluZyBTeXN0ZW0gKEFVZEFDaU91UylkZAICDw8WAh8CBQMoUClkZAIED2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9KMDE0MjY1LzEnPkVQL0owMTQyNjUvMTwvYT4gZGQCAQ8PFgIfAgVkQWRhcHRpdmUgQ29sbGVjdGl2ZSBWYXJpYWJsZXM6IEF1dG9tYXRpYyBJZGVudGlmaWNhdGlvbiBhbmQgQXBwbGljYXRpb24gb2YgTXVsdGlyZXNvbHV0aW9uIE1vZGVsbGluZ2RkAgIPDxYCHwIFAyhDKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0owMTQxMzMvMSc+RVAvSjAxNDEzMy8xPC9hPiBkZAIBDw8WAh8CBUtQb3RlbnRpYWwgRW5lcmd5IFN1cmZhY2VzIG9mIFZhcmlvdXMgQWNjdXJhY3kgZm9yIEJpby1tb2xlY3VsYXIgU2ltdWxhdGlvbnNkZAICDw8WAh8CBQMoQylkZAIGD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9IMDEwNDMyLzEnPkVQL0gwMTA0MzIvMTwvYT4gZGQCAQ8PFgIfAgVFRXZvbHV0aW9uYXJ5IE9wdGltaXNhdGlvbiBvZiBTZWxmIEFzc2VtYmxpbmcgTmFuby1EZXNpZ25zIChFeElTdEVOY0UpZGQCAg8PFgIfAgUDKFApZGQCBw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSDAyNDkwNS8xJz5FUC9IMDI0OTA1LzE8L2E+IGRkAgEPDxYCHwIFR1RoZSBMb2dpc3RpY3Mgb2YgU21hbGwgVGhpbmdzIC0gQSBDcm9zc2Rpc2NpcGxpbmFyeSBGZWFzaWJpbGl0eSBBY2NvdW50ZGQCAg8PFgIfAgUDKFApZGQCCA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzA0MjQ2Mi8xJz5FUC9HMDQyNDYyLzE8L2E+IGRkAgEPDxYCHwIFV1RoZSBDSEVMTCA6IEEgQm90dG9tLVVwIGFwcHJvYWNoIHRvIGluIHZpdHJvIGFuZCBpbiBzaWxpY28gTWluaW1hbCBMaWZlLWxpa2UgQ29uc3RydWN0c2RkAgIPDxYCHwIFAyhDKWRkAgkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwMTcyMTUvMSc+RVAvRTAxNzIxNS8xPC9hPiBkZAIBDw8WAh8CBXMoU2VtaSlGb3JtYWwgQXJ0aWZpY2lhbCBMaWZlIFRocm91Z2ggUC1zeXN0ZW1zICZhbXA7IExlYXJuaW5nIENsYXNzaWZpZXIgU3lzdGVtczogQW4gSW52ZXN0aWdhdGlvbiBpbnRvIEluZm9CaW90aWNzZGQCAg8PFgIfAgUDKFApZGQCCg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDA2MTU3MS8xJz5FUC9EMDYxNTcxLzE8L2E+IGRkAgEPDxYCHwIFSU5leHQgR2VuZXJhdGlvbiBEZWNpc2lvbiBTdXBwb3J0OiBBdXRvbWF0aW5nIHRoZSBIZXVyaXN0aWMgRGVzaWduIFByb2Nlc3NkZAICDw8WAh8CBQMoQylkZAILD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDIzNzc3LzEnPkVQL0QwMjM3NzcvMTwvYT4gZGQCAQ8PFgIfAgVZSURFQVMgRmFjdG9yeSAtIENoZW1pY2FsIENyYWZ0d29yazogRGlyZWN0ZWQgQXNzZW1ibHkgb2YgRnVuY3Rpb25hbCBQYXR0ZXJucyAoQnJpYW5jaGVsbClkZAICDw8WAh8CBQMoQylkZAIMD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDIyMzA0LzEnPkVQL0QwMjIzMDQvMTwvYT4gZGQCAQ8PFgIfAgVnSURFQVMgRmFjdG9yeSAtIENoZW1pY2FsIENyYWZ0d29yazogUmVhbGlzaW5nIHRoZSBDb25jZXB0IG9mIHRoZSBBcnRpZmljaWFsIGNoZW1pY2FsIGNlbGwgd2l0aCBWZXNpY2xlc2RkAgIPDxYCHwIFAyhDKWRkAg0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0M1MjMzODUvMSc+RVAvQzUyMzM4NS8xPC9hPiBkZAIBDw8WAh8CBVJBbiBpbnZlc3RpZ2F0aW9uIG9mIHRoZSByb2xlIG9mIEdlbmV0aWMgUHJvZ3JhbW1pbmcgaW4gYSBIeXBlci1IZXVyaXN0aWMgRnJhbWV3b3JrZGQCAg8PFgIfAgUDKEMpZGQCDg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDAyMzY0NS8xJz5FUC9EMDIzNjQ1LzE8L2E+IGRkAgEPDxYCHwIFWUlERUFTIEZhY3RvcnkgLSBDaGVtaWNhbCBDcmFmdHdvcms6IERpcmVjdGVkIEFzc2VtYmx5IG9mIEZ1bmN0aW9uYWwgUGF0dGVybnMgKEJyaWFuY2hlbGwpZGQCAg8PFgIfAgUDKEMpZGQCDw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDAyMTg0Ny8xJz5FUC9EMDIxODQ3LzE8L2E+IGRkAgEPDxYCHwIFN0lERUFTIEZhY3RvcnkgLSBDaGVtaWNhbCBDcmFmdHdvcms6IEV2b2x2YWJsZSBDSEVMTHdhcmVkZAICDw8WAh8CBQMoUClkZAIQD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDIzMzc4LzEnPkVQL0QwMjMzNzgvMTwvYT4gZGQCAQ8PFgIfAgU3SURFQVMgRmFjdG9yeSAtIENoZW1pY2FsIENyYWZ0d29yazogRXZvbHZhYmxlIENIRUxMd2FyZWRkAgIPDxYCHwIFAyhDKWRkAhEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0QwMjIzNDcvMSc+RVAvRDAyMjM0Ny8xPC9hPiBkZAIBDw8WAh8CBWdJREVBUyBGYWN0b3J5IC0gQ2hlbWljYWwgQ3JhZnR3b3JrOiBSZWFsaXNpbmcgdGhlIENvbmNlcHQgb2YgdGhlIEFydGlmaWNpYWwgY2hlbWljYWwgY2VsbCB3aXRoIFZlc2ljbGVzZGQCAg8PFgIfAgUDKEMpZGQCEg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDAyMzMyNy8xJz5FUC9EMDIzMzI3LzE8L2E+IGRkAgEPDxYCHwIFZ0lERUFTIEZhY3RvcnkgLSBDaGVtaWNhbCBDcmFmdHdvcms6IFJlYWxpc2luZyB0aGUgQ29uY2VwdCBvZiB0aGUgQXJ0aWZpY2lhbCBjaGVtaWNhbCBjZWxsIHdpdGggVmVzaWNsZXNkZAICDw8WAh8CBQMoQylkZAITD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDIzOTA0LzEnPkVQL0QwMjM5MDQvMTwvYT4gZGQCAQ8PFgIfAgVZSURFQVMgRmFjdG9yeSAtIENoZW1pY2FsIENyYWZ0d29yazogRGlyZWN0ZWQgQXNzZW1ibHkgb2YgRnVuY3Rpb25hbCBQYXR0ZXJucyAoQnJpYW5jaGVsbClkZAICDw8WAh8CBQMoQylkZAIUD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDIzODA3LzEnPkVQL0QwMjM4MDcvMTwvYT4gZGQCAQ8PFgIfAgWKAUlERUFTIEZhY3RvcnkgLSBDaGVtaWNhbCBDcmFmdHdvcms6IFRoZSAnV2VsbENoZWxsJzogQSBQdWJsaWMtZG9tYWluIFByb3RvLXBsYXRmb3JtIGZvciByZXZvbHV0aW9uYXJ5IGRpc2NvdmVyeSBvZiBDb21wbGV4IENoZW1pY2FsIFN5c3Rlc2RkAgIPDxYCHwIFAyhDKWRkAhUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0QwMjMzNDMvMSc+RVAvRDAyMzM0My8xPC9hPiBkZAIBDw8WAh8CBW1JREVBUyBGYWN0b3J5IC0gQ2hlbWljYWwgQ3JhZnR3b3JrOiBDSEVMTG5ldDogVW5pZnlpbmcgSW52ZXN0aWdhdGlvbiBpbiBBcnRpZmljaWFsIENlbGx1bGFyaXR5IGFuZCBDb21wbGV4aXR5ZGQCAg8PFgIfAgUDKEMpZGQCFg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvVDA3NTM0LzAxJz5HUi9UMDc1MzQvMDE8L2E+IGRkAgEPDxYCHwIFXlJvYnVzdCBQcmVkaWN0aW9uIHdpdGggRXhwbGFuYXRvcnkgUG93ZXIgZm9yIFByb3RlaW4gU3RydWN0dXJlIGFuZCBSZWxhdGVkIFByZWRpY3Rpb24gUHJvYmxlbXNkZAICDw8WAh8CBQMoUClkZAIXD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TNzAxOTcvMDEnPkdSL1M3MDE5Ny8wMTwvYT4gZGQCAQ8PFgIfAgU6UExBVEZPUk06IFRvd2FyZHMgTW9yZSBHZW5lcmFsIE9wdGltaXNhdGlvbi9TZWFyY2ggU3lzdGVtc2RkAgIPDxYCHwIFAyhDKWRkAhgPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1M2NDUzMC8wMSc+R1IvUzY0NTMwLzAxPC9hPiBkZAIBDw8WAh8CBUFETkEgTWFwcGluZyBieSBDb21iaW5hdG9yaWFsIE9wdGltaXNhdGlvbiAtIEEgVmlzaXRpbmcgRmVsbG93c2hpcGRkAgIPDxYCHwIFAyhDKWRkAhMPZBYEZg9kFgJmD2QWAgIBDw8WAh4HVmlzaWJsZWdkZAICD2QWAmYPZBYCAgEPDxYGHgpSZXBvcnROYW1lBQpWaWV3UGVyc29uHg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcwhQZXJzb25JRB4OUGFyYW1ldGVyVmFsdWUVAjpodHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3UGVyc29uLmFzcHg/UGVyc29uSWQ9MTEwNDkzBjExMDQ5M2QWAmYPZBYCZg9kFgQCAw8QZGQWAWZkAgUPD2QWAh8BZWQCBw8PFgIfDGhkZGS/n+dvjAhLz+VTyjsO0v5lGhEyPg==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKP8L7gDALQvN++DAKT/OCVAwLKoMrZDxZr6DfLBzAXxrpHskpn5e6vk2+O" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor N Krasnogor</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">Newcastle University</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Computing Sciences</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">07825753885</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">0191-222-8232</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="110097116097108105111046107114097115110111103111114064110101119099097115116108101046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1"></span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Artificial Intelligence</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Bioinformatics</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2">Complexity Science</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label1">Control Engineering</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label2">Design Engineering</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label1">Fundamentals of Computing</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label2">Information &amp; Knowledge Mgmt</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label1">Manufact. Enterprise Ops&amp; Mgmt</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label2">Manufacturing Machine &amp; Plant</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label1">Modelling &amp; simul. of IT sys.</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label2">Networks &amp; Distributed Systems</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl08_Label1">New &amp; Emerging Comp. Paradigms</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl08_Label2">Research approaches</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl09_Label1">Synthetic biology</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl09_Label2"></span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/N031962/1'>EP/N031962/1</a> </b></td><td align="left">Synthetic Portabolomics: Leading the way at the crossroads of the Digital and the Bio Economies</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I031642/2'>EP/I031642/2</a> </b></td><td align="left">ROADBLOCK: Towards Programmable Defensive Bacterial Coatings &amp; Skins</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J004111/2'>EP/J004111/2</a> </b></td><td align="left">Towards a Universal Biological-Cell Operating System (AUdACiOuS)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L001489/2'>EP/L001489/2</a> </b></td><td align="left">TAURUS: Towards an Audacious Universal Constructor</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K018205/1'>EP/K018205/1</a> </b></td><td align="left">EVOLVABLE ASSEMBLY SYSTEMS - TOWARDS OPEN, ADAPTABLE AND CONTEXT-AWARE EQUIPMENT AND SYSTEMS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K014161/1'>EP/K014161/1</a> </b></td><td align="left">CLOUD MANUFACTURING - TOWARDS RESILIENT AND SCALABLE HIGH VALUE MANUFACTURING</td><td align="left" width="5%">(C)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L001489/1'>EP/L001489/1</a> </b></td><td align="left">TAURUS: Towards an Audacious Universal Constructor</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I031642/1'>EP/I031642/1</a> </b></td><td align="left">ROADBLOCK: Towards Programmable Defensive Bacterial Coatings &amp; Skins</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J004111/1'>EP/J004111/1</a> </b></td><td align="left">Towards a Universal Biological-Cell Operating System (AUdACiOuS)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J014265/1'>EP/J014265/1</a> </b></td><td align="left">Adaptive Collective Variables: Automatic Identification and Application of Multiresolution Modelling</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J014133/1'>EP/J014133/1</a> </b></td><td align="left">Potential Energy Surfaces of Various Accuracy for Bio-molecular Simulations</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H010432/1'>EP/H010432/1</a> </b></td><td align="left">Evolutionary Optimisation of Self Assembling Nano-Designs (ExIStENcE)</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H024905/1'>EP/H024905/1</a> </b></td><td align="left">The Logistics of Small Things - A Crossdisciplinary Feasibility Account</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G042462/1'>EP/G042462/1</a> </b></td><td align="left">The CHELL : A Bottom-Up approach to in vitro and in silico Minimal Life-like Constructs</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E017215/1'>EP/E017215/1</a> </b></td><td align="left">(Semi)Formal Artificial Life Through P-systems &amp; Learning Classifier Systems: An Investigation into InfoBiotics</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D061571/1'>EP/D061571/1</a> </b></td><td align="left">Next Generation Decision Support: Automating the Heuristic Design Process</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D023777/1'>EP/D023777/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Directed Assembly of Functional Patterns (Brianchell)</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D022304/1'>EP/D022304/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Realising the Concept of the Artificial chemical cell with Vesicles</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C523385/1'>EP/C523385/1</a> </b></td><td align="left">An investigation of the role of Genetic Programming in a Hyper-Heuristic Framework</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D023645/1'>EP/D023645/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Directed Assembly of Functional Patterns (Brianchell)</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D021847/1'>EP/D021847/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Evolvable CHELLware</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D023378/1'>EP/D023378/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Evolvable CHELLware</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D022347/1'>EP/D022347/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Realising the Concept of the Artificial chemical cell with Vesicles</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D023327/1'>EP/D023327/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Realising the Concept of the Artificial chemical cell with Vesicles</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D023904/1'>EP/D023904/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: Directed Assembly of Functional Patterns (Brianchell)</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D023807/1'>EP/D023807/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: The 'WellChell': A Public-domain Proto-platform for revolutionary discovery of Complex Chemical Systes</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D023343/1'>EP/D023343/1</a> </b></td><td align="left">IDEAS Factory - Chemical Craftwork: CHELLnet: Unifying Investigation in Artificial Cellularity and Complexity</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/T07534/01'>GR/T07534/01</a> </b></td><td align="left">Robust Prediction with Explanatory Power for Protein Structure and Related Prediction Problems</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S70197/01'>GR/S70197/01</a> </b></td><td align="left">PLATFORM: Towards More General Optimisation/Search Systems</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S64530/01'>GR/S64530/01</a> </b></td><td align="left">DNA Mapping by Combinatorial Optimisation - A Visiting Fellowship</td><td align="left" width="5%">(C)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

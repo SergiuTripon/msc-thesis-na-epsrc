@@ -196,6 +196,8 @@ class ExtractTopics:
         ExtractTopics.extract_topic_urls()
         # extract grant urls
         ExtractTopics.extract_grant_urls()
+        # extract researcher urls
+        ExtractTopics.extract_researcher_urls()
         # extract topic information
         ExtractTopics.extract_topic_info()
         # extract grant information
@@ -308,6 +310,68 @@ class ExtractTopics:
 
             # print progress
             print('> Extraction of grant urls completed ({} grant urls extracted)'.format(len(full_urls)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts research urls
+    def extract_researcher_urls():
+
+        # if researchers file does not exist
+        if not os.path.isfile('../output/topics/urls/researchers.txt'):
+
+            # variable to hold input file
+            input_file = open(r'../output/topics/urls/grants.pkl', 'rb')
+            # load data structure from file
+            grant_urls = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold urls
+            urls = []
+
+            # for grant url in grant urls
+            for grant_url in grant_urls:
+
+                # variable to hold page
+                page = open(r'../output/topics/html/grants/{}'.format(grant_url.replace('/', '%2F')), "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold main url xpath
+                main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
+                # variable to hold other url xpath
+                other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
+
+                # add main urls to urls
+                urls += tree.xpath(main_url_xpath)
+                # add other urls to urls
+                urls += tree.xpath(other_url_xpath)
+
+            # variable to hold full urls
+            full_urls = []
+
+            # variable to hold output file
+            output_file = open('../output/topics/urls/researchers.txt', mode='w')
+
+            # for url in urls
+            for url in urls:
+                # if url is not in full urls
+                if url not in full_urls:
+                    # add url to full urls
+                    full_urls += [url]
+                    # write url to file
+                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
+
+            # variable to hold output file
+            output_file = open(r'../output/topics/urls/researchers.pkl', 'wb')
+            # write data structure to file
+            dump(full_urls, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher urls completed ({} researcher urls extracted)'.format(len(full_urls)))
 
     ####################################################################################################################
 
@@ -530,24 +594,90 @@ class ExtractPastTopics:
     @staticmethod
     # runs other functions
     def run():
-        # extract detailed grant information
-        ExtractPastTopics.extract_detailed_grant_info()
+        # extract researcher urls from 1990 to 2000
+        ExtractPastTopics.extract_researcher_urls('_1990_2000')
+        # extract researcher urls from 2000 to 2010
+        # ExtractTopics.extract_researcher_urls('_2000_2010')
+        # extract detailed grant information from 1990 to 2000
+        ExtractPastTopics.extract_detailed_grant_info('_1990_2000')
+        # extract detailed grant information from 2000 to 2010
+        # ExtractPastTopics.extract_detailed_grant_info('_2000_2010')
 
     ####################################################################################################################
 
     @staticmethod
-    # extracts detailed grant information
-    def extract_detailed_grant_info():
+    # extracts researcher urls
+    def extract_researcher_urls(years):
+
+        # if researchers file does not exist
+        if not os.path.isfile('../output/past-topics/urls/researchers{}.txt'.format(years)):
+
+            # variable to hold grant urls
+            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url
+                          in open(r'../output/past-topics/urls/grants{}.txt'.format(years), "r").read().splitlines()]
+
+            # variable to hold urls
+            urls = []
+
+            # for grant url in grant urls
+            for grant_url in grant_urls:
+
+                # variable to hold page
+                page = open(r'../output/past-topics/html/grants{}/{}'.format(years, grant_url.replace('/', '%2F')),
+                            "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold main url xpath
+                main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
+                # variable to hold other url xpath
+                other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
+
+                # add main urls to urls
+                urls += tree.xpath(main_url_xpath)
+                # add other urls to urls
+                urls += tree.xpath(other_url_xpath)
+
+            # variable to hold full urls
+            full_urls = []
+
+            # variable to hold output file
+            output_file = open('../output/past-topics/urls/researchers{}.txt'.format(years), mode='w')
+
+            # for url in urls
+            for url in urls:
+                # if url is not in full urls
+                if url not in full_urls:
+                    # add url to full urls
+                    full_urls += [url]
+                    # write url to file
+                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
+
+            # variable to hold output file
+            output_file = open(r'../output/past-topics/urls/researchers{}.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(full_urls, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher urls completed ({} researcher urls extracted)'.format(len(full_urls)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts detailed grant information from 1990/2000 to 2000/2010
+    def extract_detailed_grant_info(years):
 
         # if detailed grant info file does not exist
-        if not os.path.isfile('../output/past-topics/info/detailed_grant_info.csv'):
+        if not os.path.isfile('../output/past-topics/info/detailed_grant_info{}.csv'.format(years)):
 
             # print progress
             print('> Extraction of detailed grants started')
 
             # variable to hold grant urls
-            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/')
-                          for grant_url in open(r'../output/past-topics/urls/grants.txt', "r").read().splitlines()]
+            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url
+                          in open(r'../output/past-topics/urls/grants{}.txt'.format(years), "r").read().splitlines()]
 
             # variable to hold detailed grants list
             detailed_grants = OrderedDict()
@@ -559,7 +689,8 @@ class ExtractPastTopics:
             for grant_url in grant_urls:
 
                 # variable to hold page
-                page = open(r'../output/past-topics/html/grants/{}'.format(grant_url.replace('/', '%2F')), "r").read()
+                page = open(r'../output/past-topics/html/grants{}/{}'.format(years, grant_url.replace('/', '%2F')),
+                            "r").read()
                 # variable to hold tree
                 tree = html.fromstring(page)
 
@@ -583,14 +714,14 @@ class ExtractPastTopics:
                 extraction_count += 1
 
             # variable to hold output file
-            output_file = open('../output/past-topics/info/detailed_grant_info.csv', mode='w')
+            output_file = open('../output/past-topics/info/detailed_grant_info{}.csv'.format(years), mode='w')
 
             for ref, clean_topics in detailed_grants.items():
                 # write name and attributes to file
                 output_file.write('"{}","{}"\n'.format(ref, clean_topics))
 
             # variable to hold output file
-            output_file = open(r'../output/past-topics/info/detailed_grant_info.pkl', 'wb')
+            output_file = open(r'../output/past-topics/info/detailed_grant_info{}.pkl'.format(years), 'wb')
             # write data structure to file
             dump(detailed_grants, output_file)
             # close output file

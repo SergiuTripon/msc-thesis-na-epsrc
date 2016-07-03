@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=7223" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRNQcm9mZXNzb3IgR0YgSGV3aXR0ZGQCAw8PFgIfAgUXSW1wZXJpYWwgQ29sbGVnZSBMb25kb25kZAIFDw8WAh8CBSJEZXBhcnRtZW50IG9mIENoZW1pY2FsIEVuZ2luZWVyaW5nZGQCBw8PFgIfAgUNMDIwIDc1OTQgNTU2MmRkAgkPDxYCHwIFDTAyMCA3NTk0IDU1NjRkZAINDw8WBB8CBUUxMDMwNDYxMDQxMDExMTkxMDUxMTYxMTYwNjQxMDUxMDkxMTIxMDExMTQxMDUwOTcxMDgwNDYwOTcwOTkwNDYxMTcxMDceCFJlYWRPbmx5ZxYMHgtvbm1vdXNlb3ZlcmUeB29uZm9jdXMFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx4Kb25tb3VzZW91dAVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HgZvbmJsdXIFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx8ABTxqYXZhc2NyaXB0OnNlbmR0byhkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpLnZhbHVlKTsfAQVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7ZAIPDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCAx4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIDZBYCZg9kFgYCAQ9kFgRmD2QWAgIBDw8WAh8CBSBDb21wbGV4IGZsdWlkcyAmYW1wOyBzb2Z0IHNvbGlkc2RkAgEPZBYCAgEPDxYCHwIFE0NvbnRpbnV1bSBNZWNoYW5pY3NkZAICD2QWBGYPZBYCAgEPDxYCHwIFEEVuZXJneSAtIE51Y2xlYXJkZAIBD2QWAgIBDw8WAh8CBQ5GbHVpZCBEeW5hbWljc2RkAgMPZBYEZg9kFgICAQ8PFgIfAgUMTWljcm9zeXN0ZW1zZGQCAQ9kFgICAQ8PFgIfAgUPTXVsdGlwaGFzZSBGbG93ZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAgQfCgIBHwsCBGQWAmYPZBYIAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMTgyNjEvMSc+RVAvTTAxODI2MS8xPC9hPiBkZAIBDw8WAh8CBVpJbmRvIC0gVUs6IFByZW1hdHVyZSwgT3NjaWxsYXRpb24tSW5kdWNlZCBDcml0aWNhbCBIZWF0IEZsdXggKCZxdW90O1ByZW1hdHVyZSBPSUNIRiZxdW90OylkZAICDw8WAh8CBQMoQylkZAICD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9NMDE4NzMzLzEnPkVQL00wMTg3MzMvMTwvYT4gZGQCAQ8PFgIfAgUKR3JhY2UgVGltZWRkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0wwMjA1NjQvMSc+RVAvTDAyMDU2NC8xPC9hPiBkZAIBDw8WAh8CBYcBTXVsdGlzY2FsZSBBbmFseXNpcyBvZiBDb21wbGV4IEludGVyZmFjaWFsIFBoZW5vbWVuYSAoTUFDSVBoKTogQ29hcnNlIGdyYWluaW5nLCBNb2xlY3VsYXIgbW9kZWxsaW5nLCBzdG9jaGFzdGljaXR5LCBhbmQgZXhwZXJpbWVudGF0aW9uZGQCAg8PFgIfAgUDKEMpZGQCBA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAwMzk3Ni8xJz5FUC9LMDAzOTc2LzE8L2E+IGRkAgEPDxYCHwIFQE11bHRpLXNjYWxlIEV4cGxvcmF0aW9uIG9mIE11bHRpUGhhc2UgUGh5c2ljcyBJbiBGbG93UyAoTUVNUEhJUylkZAICDw8WAh8CBQMoQylkZAIDD2QWAmYPZBYCZg88KwALAQAPFggfCBYAHwkCHx8KAgEfCwIfZBYCZg9kFj4CAQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAwNzc3Ny8xJz5FUC9LMDA3Nzc3LzE8L2E+IGRkAgEPDxYCHwIFMlRoZXJtYWwgSHlkcmF1bGljcyBmb3IgQm9pbGluZyBhbmQgUGFzc2l2ZSBTeXN0ZW1zZGQCAg8PFgIfAgUDKEMpZGQCAg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSTAxMjQyNy8xJz5FUC9JMDEyNDI3LzE8L2E+IGRkAgEPDxYCHwIFPFZhbGlkYXRpb24gJmFtcDsgVmVyaWZpY2F0aW9uIGZvciBDcml0aWNhbCBIZWF0IEZsdXggYW5kIENGRGRkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0kwMDMwMTAvMSc+RVAvSTAwMzAxMC8xPC9hPiBkZAIBDw8WAh8CBTlDT01QVVRBVElPTkFMIE1PREVMTElORyBGT1IgQURWQU5DRUQgTlVDTEVBUiBQT1dFUiBQTEFOVFNkZAICDw8WAh8CBQMoQylkZAIED2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDE3NDQ4LzEnPkVQL0YwMTc0NDgvMTwvYT4gZGQCAQ8PFgIfAgUuTVVMVElQSEFTRSBGTE9XIElOIFZFUlRJQ0FMIEFORCBERVZJQVRFRCBQSVBFU2RkAgIPDxYCHwIFAyhDKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMDkxOTQvMSc+RVAvRjAwOTE5NC8xPC9hPiBkZAIBDw8WAh8CBWFBZHZhbmNlZCBleHBlcmltZW50YWwgYW5kIG51bWVyaWNhbCBtZXRob2RzIGZvciB0ZSBwcmVkaWN0aW9uIG9mIGNvbXBsZXggZ2FzIGxpcXVpZCBhbm51bGFyIGZsb3dzZGQCAg8PFgIfAgUDKEMpZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTA0NjAyOS8xJz5FUC9FMDQ2MDI5LzE8L2E+IGRkAgEPDxYCHwIFOFByZWRpY3RpdmUgQW5hbHlzaXMgb2YgQ29tcGxleCBJbnRlcmZhY2lhbCBGbG93cyAoUEFDSUYpZGQCAg8PFgIfAgUDKEMpZGQCBw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAyMTQ2OC8xJz5FUC9FMDIxNDY4LzE8L2E+IGRkAgEPDxYCHwIFQUludGVyZmFjaWFsIGJlaGF2aW91ciBpbiBzdHJhdGlmaWVkIGFuZCBzdHJhdGlmeWluZyBhbm51bGFyIGZsb3dzZGQCAg8PFgIfAgUDKEMpZGQCCA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRDUwMzA1MS8xJz5FUC9ENTAzMDUxLzE8L2E+IGRkAgEPDxYCHwIFNkZvdWxpbmcgaW4gaGVhdCBleGNoYW5nZXJzIG9mIGNydWRlIGRpc3RpbGxhdGlvbiB1bml0c2RkAgIPDxYCHwIFAyhQKWRkAgkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0Q1MDM3MVgvMSc+RVAvRDUwMzcxWC8xPC9hPiBkZAIBDw8WAh8CBSxOb25saW5lYXIgQnViYmxlLVNvdW5kIEludGVyYWN0aW9uIFBoZW5vbWVuYWRkAgIPDxYCHwIFAyhDKWRkAgoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0M1NDk0NjUvMSc+RVAvQzU0OTQ2NS8xPC9hPiBkZAIBDw8WAh8CBR9LZWVwaW5nIHRoZSBOdWNsZWFyIE9wdGlvbiBPcGVuZGQCAg8PFgIfAgUDKEMpZGQCCw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUzE3NzY1LzAxJz5HUi9TMTc3NjUvMDE8L2E+IGRkAgEPDxYCHwIFMkpvaW50IFByb2plY3Qgb24gVHJhbnNpZW50IE11bHRpcGhhc2UgRmxvd3MgKFRNRjMpZGQCAg8PFgIfAgUDKFApZGQCDA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUjYzMjk1LzAxJz5HUi9SNjMyOTUvMDE8L2E+IGRkAgEPDxYCHwIFVU11bHRpc2NhbGUgSW52ZXN0aWdhdGlvbiBvZiBwaGFzZSBpbnZlcnNpb24gaW4gY29uY2VudHJhdGVkIGxpcXVpZC1saXF1aWQgZGlzcGVyc2lvbnNkZAICDw8WAh8CBQMoUilkZAIND2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SNTYwNDQvMDEnPkdSL1I1NjA0NC8wMTwvYT4gZGQCAQ8PFgIfAgVXTXVsdGktU2NhbGUgSW52ZXN0aWdhdGlvbiBvZiBQaGFzZSBJbnZlcnNpb24gaW4gY29uY2VudHJhdGVkIGxpcXVpZC1saXF1aWQgZGlzcGVyc2lvbnMuZGQCAg8PFgIfAgUDKFIpZGQCDg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUjU0Njk5LzAxJz5HUi9SNTQ2OTkvMDE8L2E+IGRkAgEPDxYCHwIFV011bHRpLXNjYWxlIEludmVzdGlnYXRpb24gb2YgcGhhc2UgaW52ZXJzaW9uIGluIGNvbmNlbnRyYXRlZCBsaXF1aWQtbGlxdWlkIGRpc3BlcnNpb25zLmRkAgIPDxYCHwIFAyhQKWRkAg8PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL04zNDU3NC8wMSc+R1IvTjM0NTc0LzAxPC9hPiBkZAIBDw8WAh8CBSBBTk5VTEFSIEZMT1cgQVQgSElHSCBNQVNTIEZMVVhFU2RkAgIPDxYCHwIFAyhDKWRkAhAPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL002MTg3MC8wMSc+R1IvTTYxODcwLzAxPC9hPiBkZAIBDw8WAh8CBTJDTy1PUkRJTkFURUQgUFJPSkVDVCBPTiBUUkFOU0lFTlQgTVVMVElQSEFTRSBGTE9XU2RkAgIPDxYCHwIFAyhQKWRkAhEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL000MTAwMS8wMSc+R1IvTTQxMDAxLzAxPC9hPiBkZAIBDw8WAh8CBVBGT1JDRUQgQ09OVkVDVElWRSBCT0lMSU5HIE9GIFNJTkdMRSAmYW1wOyBNVUxUSUNPTVBPTkVOVCBGTFVJRFMgQVQgSElHSCBQUkVTU1VSRWRkAgIPDxYCHwIFAyhQKWRkAhIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0w4NTA1My8wMSc+R1IvTDg1MDUzLzAxPC9hPiBkZAIBDw8WAh8CBUNKUkVJOiBERVNJR04gQU5EIE9QRVJBQklMSVRZIE9GIExPVyBQUkVTU1VSRSBUSEVSTU9TWVBIT04gUkVCT0lMRVJTZGQCAg8PFgIfAgUDKEMpZGQCEw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDg0MjE2LzAxJz5HUi9MODQyMTYvMDE8L2E+IGRkAgEPDxYCHwIFa0pSRUk6IFRPIFNUVURZIERST1AgQU5EIEZMVUlEIE1PVElPTiBJTiBMSVFVSUQvIExJUVVJRCBFTVVMU0lPTlMgVVNJTkcgQSBQSE9UT0NIUk9NSUMgRFlFIFRSQUNJTkcgVEVDSE5JUVVFZGQCAg8PFgIfAgUDKFApZGQCFA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzk5MDYwLzAxJz5HUi9LOTkwNjAvMDE8L2E+IGRkAgEPDxYCHwIFJFRSQU5TSUVOVCBUSFJFRS1QSEFTRSBGTE9XUyAoUEVUIDQzKWRkAgIPDxYCHwIFAyhQKWRkAhUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0s5OTA5MS8wMSc+R1IvSzk5MDkxLzAxPC9hPiBkZAIBDw8WAh8CBVFTTFVHIEdST1dUSCBBTkQgQ09MTEFQU0UgSU4gVEhFIEZMT1cgT0YgR0FTLUxJUVVJRCBNSVhUVVJFUyBJTiBQSVBFTElORVMgKFBFVCAzMSlkZAICDw8WAh8CBQMoUClkZAIWD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LOTkwODQvMDEnPkdSL0s5OTA4NC8wMTwvYT4gZGQCAQ8PFgIfAgU4UEhBU0UgSU5URVJBQ1RJT05TIElOIFRSQU5TSUVOVCBTVFJBVElGSUVEIEZMT1cgKFBFVCAzMClkZAICDw8WAh8CBQMoUClkZAIXD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LMjExMzkvMDEnPkdSL0syMTEzOS8wMTwvYT4gZGQCAQ8PFgIfAgU/U1RVRElFUyBPRiBTSU5HTEUgJmFtcDsgTVVMVElDT01QT05FTlQgQk9JTElORyBBVCBISUdIIFBSRVNTVVJFZGQCAg8PFgIfAgUDKFApZGQCGA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSjUyNDI2LzAxJz5HUi9KNTI0MjYvMDE8L2E+IGRkAgEPDxYCHwIFPVNUVURJRVMgT0YgRkxPVyBQQVRURVJOUyBJTiBHQVMtTElRVUlEIEZMT1cgSU4gVkVSVElDQUwgUElQRVNkZAICDw8WAh8CBQMoUClkZAIZD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9IODcxMjQvMDEnPkdSL0g4NzEyNC8wMTwvYT4gZGQCAQ8PFgIfAgUnSElHSCBQUkVTU1VSRSBTRVBBUkFURUQgVFdPLVBIQVNFIEZMT1cuZGQCAg8PFgIfAgUDKFApZGQCGg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSDE4ODM4LzAxJz5HUi9IMTg4MzgvMDE8L2E+IGRkAgEPDxYCHwIFLUhZRFJPRFlOQU1JQ1MgT0YgVEhSRUUgUEhBU0UgQUlSTElGVCBSRUFDVE9SU2RkAgIPDxYCHwIFAyhDKWRkAhsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0gxODk4Mi8wMSc+R1IvSDE4OTgyLzAxPC9hPiBkZAIBDw8WAh8CBUZFWFBFUklNRU5UQUwgU1RVRFkgT0YgSU5URVJGQUNJQUwgUFJPQ0VTU0VTIElOIEdBUyBMSVFVSUQgQU5OVUxBUiBGTE9XZGQCAg8PFgIfAgUDKFApZGQCHA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSDE4OTM3LzAxJz5HUi9IMTg5MzcvMDE8L2E+IGRkAgEPDxYCHwIFIUJBU0lDIFNUVURJRVMgT0YgTVVMVElQSEFTRSBGTE9XU2RkAgIPDxYCHwIFAyhQKWRkAh0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0c1NzA1NS8wMSc+R1IvRzU3MDU1LzAxPC9hPiBkZAIBDw8WAh8CBTBJTlRFUkZBQ0lBTCBQUk9DRVNTRVMgSU4gR0FTLUxJUVVJRCBBTk5VTEFSIEZMT1dkZAICDw8WAh8CBQMoUClkZAIeD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9HMjQ1ODMvMDEnPkdSL0cyNDU4My8wMTwvYT4gZGQCAQ8PFgIfAgVASElHSCBSRVNPTFVUSU9OIFZJREVPIFJFQ09SRElORyBBTkQgQU5BTFlTSVMgT0YgUkFQSUQgVFJBTlNJRU5UU2RkAgIPDxYCHwIFAyhDKWRkAh8PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0UxMjkxNy8wMSc+R1IvRTEyOTE3LzAxPC9hPiBkZAIBDw8WAh8CBTdISUdIIFBSRVNTVVJFIEZBQ0lMSVRZIEZPUiBSRVNFQVJDSCBJTiBNVUxUSVBIQVNFIEZMT1dTZGQCAg8PFgIfAgUDKFApZGQCEw9kFgRmD2QWAmYPZBYCAgEPDxYCHgdWaXNpYmxlZ2RkAgIPZBYCZg9kFgICAQ8PFgYeClJlcG9ydE5hbWUFClZpZXdQZXJzb24eDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzCFBlcnNvbklEHg5QYXJhbWV0ZXJWYWx1ZRUCOGh0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD03MjIzBDcyMjNkFgJmD2QWAmYPZBYEAgMPEGRkFgFmZAIFDw9kFgIfAWVkAgcPDxYCHwxoZGRkKEWD75ssyjDJ+scQTRMzbTGjLK0=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALT1a+RAwLQvN++DAKT/OCVAwLKoMrZD2pQHrXiAfiv0A6eJZT9xou+tETb" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor GF Hewitt</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">Imperial College London</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Department of Chemical Engineering</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">020 7594 5562</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">020 7594 5564</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="103046104101119105116116064105109112101114105097108046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Complex fluids &amp; soft solids</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Continuum Mechanics</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Energy - Nuclear</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2">Fluid Dynamics</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label1">Microsystems</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label2">Multiphase Flow</span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M018261/1'>EP/M018261/1</a> </b></td><td align="left">Indo - UK: Premature, Oscillation-Induced Critical Heat Flux (&quot;Premature OICHF&quot;)</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M018733/1'>EP/M018733/1</a> </b></td><td align="left">Grace Time</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L020564/1'>EP/L020564/1</a> </b></td><td align="left">Multiscale Analysis of Complex Interfacial Phenomena (MACIPh): Coarse graining, Molecular modelling, stochasticity, and experimentation</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K003976/1'>EP/K003976/1</a> </b></td><td align="left">Multi-scale Exploration of MultiPhase Physics In FlowS (MEMPHIS)</td><td align="left" width="5%">(C)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K007777/1'>EP/K007777/1</a> </b></td><td align="left">Thermal Hydraulics for Boiling and Passive Systems</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I012427/1'>EP/I012427/1</a> </b></td><td align="left">Validation &amp; Verification for Critical Heat Flux and CFD</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I003010/1'>EP/I003010/1</a> </b></td><td align="left">COMPUTATIONAL MODELLING FOR ADVANCED NUCLEAR POWER PLANTS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F017448/1'>EP/F017448/1</a> </b></td><td align="left">MULTIPHASE FLOW IN VERTICAL AND DEVIATED PIPES</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F009194/1'>EP/F009194/1</a> </b></td><td align="left">Advanced experimental and numerical methods for te prediction of complex gas liquid annular flows</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E046029/1'>EP/E046029/1</a> </b></td><td align="left">Predictive Analysis of Complex Interfacial Flows (PACIF)</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E021468/1'>EP/E021468/1</a> </b></td><td align="left">Interfacial behaviour in stratified and stratifying annular flows</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D503051/1'>EP/D503051/1</a> </b></td><td align="left">Fouling in heat exchangers of crude distillation units</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D50371X/1'>EP/D50371X/1</a> </b></td><td align="left">Nonlinear Bubble-Sound Interaction Phenomena</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C549465/1'>EP/C549465/1</a> </b></td><td align="left">Keeping the Nuclear Option Open</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S17765/01'>GR/S17765/01</a> </b></td><td align="left">Joint Project on Transient Multiphase Flows (TMF3)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R63295/01'>GR/R63295/01</a> </b></td><td align="left">Multiscale Investigation of phase inversion in concentrated liquid-liquid dispersions</td><td align="left" width="5%">(R)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R56044/01'>GR/R56044/01</a> </b></td><td align="left">Multi-Scale Investigation of Phase Inversion in concentrated liquid-liquid dispersions.</td><td align="left" width="5%">(R)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R54699/01'>GR/R54699/01</a> </b></td><td align="left">Multi-scale Investigation of phase inversion in concentrated liquid-liquid dispersions.</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N34574/01'>GR/N34574/01</a> </b></td><td align="left">ANNULAR FLOW AT HIGH MASS FLUXES</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M61870/01'>GR/M61870/01</a> </b></td><td align="left">CO-ORDINATED PROJECT ON TRANSIENT MULTIPHASE FLOWS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M41001/01'>GR/M41001/01</a> </b></td><td align="left">FORCED CONVECTIVE BOILING OF SINGLE &amp; MULTICOMPONENT FLUIDS AT HIGH PRESSURE</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L85053/01'>GR/L85053/01</a> </b></td><td align="left">JREI: DESIGN AND OPERABILITY OF LOW PRESSURE THERMOSYPHON REBOILERS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L84216/01'>GR/L84216/01</a> </b></td><td align="left">JREI: TO STUDY DROP AND FLUID MOTION IN LIQUID/ LIQUID EMULSIONS USING A PHOTOCHROMIC DYE TRACING TECHNIQUE</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K99060/01'>GR/K99060/01</a> </b></td><td align="left">TRANSIENT THREE-PHASE FLOWS (PET 43)</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K99091/01'>GR/K99091/01</a> </b></td><td align="left">SLUG GROWTH AND COLLAPSE IN THE FLOW OF GAS-LIQUID MIXTURES IN PIPELINES (PET 31)</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K99084/01'>GR/K99084/01</a> </b></td><td align="left">PHASE INTERACTIONS IN TRANSIENT STRATIFIED FLOW (PET 30)</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K21139/01'>GR/K21139/01</a> </b></td><td align="left">STUDIES OF SINGLE &amp; MULTICOMPONENT BOILING AT HIGH PRESSURE</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J52426/01'>GR/J52426/01</a> </b></td><td align="left">STUDIES OF FLOW PATTERNS IN GAS-LIQUID FLOW IN VERTICAL PIPES</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H87124/01'>GR/H87124/01</a> </b></td><td align="left">HIGH PRESSURE SEPARATED TWO-PHASE FLOW.</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H18838/01'>GR/H18838/01</a> </b></td><td align="left">HYDRODYNAMICS OF THREE PHASE AIRLIFT REACTORS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H18982/01'>GR/H18982/01</a> </b></td><td align="left">EXPERIMENTAL STUDY OF INTERFACIAL PROCESSES IN GAS LIQUID ANNULAR FLOW</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H18937/01'>GR/H18937/01</a> </b></td><td align="left">BASIC STUDIES OF MULTIPHASE FLOWS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G57055/01'>GR/G57055/01</a> </b></td><td align="left">INTERFACIAL PROCESSES IN GAS-LIQUID ANNULAR FLOW</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G24583/01'>GR/G24583/01</a> </b></td><td align="left">HIGH RESOLUTION VIDEO RECORDING AND ANALYSIS OF RAPID TRANSIENTS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/E12917/01'>GR/E12917/01</a> </b></td><td align="left">HIGH PRESSURE FACILITY FOR RESEARCH IN MULTIPHASE FLOWS</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

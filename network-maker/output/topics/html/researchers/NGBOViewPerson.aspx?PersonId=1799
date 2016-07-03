@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=1799" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRVQcm9mZXNzb3IgRERDIEJyYWRsZXlkZAIDDw8WAh8CBRRVbml2ZXJzaXR5IG9mIE94Zm9yZGRkAgUPDxYCHwIFLE1hdGhlbWF0aWNhbCwgUGh5c2ljYWwmYW1wO0xpZmUgU2NpZW5jZXMgRGl2ZGQCBw8PFgIfAgULMDE4NjUyODI1NzJkZAIJDw8WAh8CZWRkAg0PDxYEHwIFUTEwMDExMTExMDA5NzEwODA0NjA5ODExNDA5NzEwMDEwODEwMTEyMTA2NDEwOTExMjEwODExNTA0NjExMTEyMDA0NjA5NzA5OTA0NjExNzEwNx4IUmVhZE9ubHlnFgweC29ubW91c2VvdmVyZR4Hb25mb2N1cwVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7Hgpvbm1vdXNlb3V0BV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzseBm9uYmx1cgVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HwAFPGphdmFzY3JpcHQ6c2VuZHRvKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJykudmFsdWUpOx8BBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJztkAg8PPCsACwEADxYIHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudAIGHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgZkFgJmD2QWDAIBD2QWBGYPZBYCAgEPDxYCHwIFFkJpb3Byb2Nlc3MgRW5naW5lZXJpbmdkZAIBD2QWAgIBDw8WAh8CBSBFbGVjdHJvbmljIERldmljZXMgJmFtcDsgU3Vic3lzLmRkAgIPZBYEZg9kFgICAQ8PFgIfAgUhTWFudWZhY3R1cmluZyBNYWNoaW5lICZhbXA7IFBsYW50ZGQCAQ9kFgICAQ8PFgIfAgUaTWF0ZXJpYWxzIENoYXJhY3RlcmlzYXRpb25kZAIDD2QWBGYPZBYCAgEPDxYCHwIFIE1hdGVyaWFscyBTeW50aGVzaXMgJmFtcDsgR3Jvd3RoZGQCAQ9kFgICAQ8PFgIfAgUgTWF0ZXJpYWxzIFN5bnRoZXNpcyAmYW1wOyBHcm93dGhkZAIED2QWBGYPZBYCAgEPDxYCHwIFDE1pY3Jvc3lzdGVtc2RkAgEPZBYCAgEPDxYCHwIFIE9wdGljYWwgRGV2aWNlcyAmYW1wOyBTdWJzeXN0ZW1zZGQCBQ9kFgRmD2QWAgIBDw8WAh8CBSFPcHRvZWxlY3QuIERldmljZXMgJmFtcDsgQ2lyY3VpdHNkZAIBD2QWAgIBDw8WAh8CBRBTb2xhciBUZWNobm9sb2d5ZGQCBg9kFgRmD2QWAgIBDw8WAh8CBRFTeW50aGV0aWMgYmlvbG9neWRkAgEPZBYCAgEPDxYCHwJlZGQCEQ9kFgQCAQ9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAggfCgIBHwsCCGQWAmYPZBYQAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMjI5MDAvMSc+RVAvTTAyMjkwMC8xPC9hPiBkZAIBDw8WAh8CBUdBIE5hdGlvbmFsIFRoaW4tRmlsbSBDbHVzdGVyIEZhY2lsaXR5IGZvciBBZHZhbmNlZCBGdW5jdGlvbmFsIE1hdGVyaWFsc2RkAgIPDxYCHwIFAyhDKWRkAgIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMDAwNDQvMSc+RVAvTTAwMDA0NC8xPC9hPiBkZAIBDw8WAh8CBX1PcHRpY2FsIEZhYnJpY2F0aW9uIGFuZCBJbWFnaW5nIEZhY2lsaXR5IGZvciB0aHJlZS1kaW1lbnNpb25hbCBzdWItbWljcm9uIGRlc2lnbmVyIG1hdGVyaWFscyBmb3IgYmlvZW5naW5lZXJpbmcgYW5kIHBob3Rvbmljc2RkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMzg2NDgvMSc+RVAvSzAzODY0OC8xPC9hPiBkZAIBDw8WAh8CBTVGcm9udGllciBNYW51ZmFjdHVyaW5nOiAgU2NhbGluZyB1cCBzeW50aGV0aWMgYmlvbG9neWRkAgIPDxYCHwIFAyhQKWRkAgQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMjk4NDMvMSc+RVAvSzAyOTg0My8xPC9hPiBkZAIBDw8WAh8CBUpNaWNyb3N0cnVjdHVyZSBvZiBPcmdhbmljIFNlbWljb25kdWN0b3JzIENvbnRyb2xsZWQgYnkgU29sdXRpb24gUHJvY2Vzc2luZ2RkAgIPDxYCHwIFAyhDKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMzA5OVgvMSc+RVAvSzAzMDk5WC8xPC9hPiBkZAIBDw8WAh8CBUNFUFNSQyBDZW50cmUgZm9yIElubm92YXRpdmUgTWFudWZhY3R1cmluZyBpbiBMYXJnZSBBcmVhIEVsZWN0cm9uaWNzZGQCAg8PFgIfAgUDKEMpZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAyNDQ5My8xJz5FUC9LMDI0NDkzLzE8L2E+IGRkAgEPDxYCHwIFNU1hbnVmYWN0dXJpbmcgUiZhbXA7RCBGYWNpbGl0eTogRWxlY3Ryb24gQmVhbSBFcGl0YXh5ZGQCAg8PFgIfAgUDKEMpZGQCBw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzUwMzczMy8xJz5FUC9LNTAzNzMzLzE8L2E+IGRkAgEPDxYCHwIFOkltcGFjdCBBY2NlbGVyYXRpb24gQWNjb3VudCAtIEltcGVyaWFsIENvbGxlZ2UgTG9uZG9uIDIwMTJkZAICDw8WAh8CBQMoUClkZAIID2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9KMDIxMTk5LzEnPkVQL0owMjExOTkvMTwvYT4gZGQCAQ8PFgIfAgUrSW1wZXJpYWwgQ29sbGVnZSBMb25kb24gLSBFcXVpcG1lbnQgQWNjb3VudGRkAgIPDxYCHwIFAyhQKWRkAgMPZBYCZg9kFgJmDzwrAAsBAA8WCB8IFgAfCQI+HwoCAR8LAj5kFgJmD2QWfAIBD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9ONTA4NjlYLzEnPkVQL041MDg2OVgvMTwvYT4gZGQCAQ8PFgIfAgU3SW5zdGl0dXRpb25hbCBTcG9uc29yc2hpcCAyMDE1LSBJbXBlcmlhbCBDb2xsZWdlIExvbmRvbmRkAgIPDxYCHwIFAyhQKWRkAgIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL00wMjgyOTEvMSc+RVAvTTAyODI5MS8xPC9hPiBkZAIBDw8WAh8CBTdFeHBlcmltZW50YWwgRXF1aXBtZW50IENhbGwgZm9yIEltcGVyaWFsIENvbGxlZ2UgTG9uZG9uZGQCAg8PFgIfAgUDKFApZGQCAw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTUwNjkwNC8xJz5FUC9NNTA2OTA0LzE8L2E+IGRkAgEPDxYCHwIFUEluc3RpdHV0aW9uYWwgU3BvbnNvcnNoaXAgZm9yIFF1YW50dW0gVGVjaG5vbG9naWVzIDIwMTQtIEltcGVyaWFsIENvbGxlZ2UgTG9uZG9uZGQCAg8PFgIfAgUDKFApZGQCBA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSzAzMDc2MC8xJz5FUC9LMDMwNzYwLzE8L2E+IGRkAgEPDxYCHwIFPFNtYWxsIEl0ZW1zIG9mIFJlc2VhcmNoIEVxdWlwbWVudCBhdCBJbXBlcmlhbCBDb2xsZWdlIExvbmRvbmRkAgIPDxYCHwIFAyhQKWRkAgUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0s1MDMzODEvMSc+RVAvSzUwMzM4MS8xPC9hPiBkZAIBDw8WAh8CBTdJbnN0aXR1dGlvbmFsIFNwb25zb3JzaGlwIDIwMTItIEltcGVyaWFsIENvbGxlZ2UgTG9uZG9uZGQCAg8PFgIfAgUDKFApZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSjAxODIwMS8xJz5FUC9KMDE4MjAxLzE8L2E+IGRkAgEPDxYCHwIFKjIwMTAgZ3JhbnQgYmFsYW5jZSBJbXBlcmlhbCBDb2xsZWdlIExvbmRvbmRkAgIPDxYCHwIFAyhQKWRkAgcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0o1MDAwMjEvMSc+RVAvSjUwMDAyMS8xPC9hPiBkZAIBDw8WAh8CBS5TY2FsYWJsZSBsb3ctY29zdCBvcmdhbmljIHBob3Rvdm9sdGFpYyBkZXZpY2VzZGQCAg8PFgIfAgUDKEMpZGQCCA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSDAwMDkxNy8yJz5FUC9IMDAwOTE3LzI8L2E+IGRkAgEPDxYCHwIFYkFjdGl2ZSBQbGFzbW9uaWNzOiBFbGVjdHJvbmljIGFuZCBBbGwtb3B0aWNhbCBDb250cm9sIG9mIFBob3RvbmljIFNpZ25hbHMgb24gU3ViLXdhdmVsZW5ndGggU2NhbGVzZGQCAg8PFgIfAgUDKEMpZGQCCQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvSDAwMDkxNy8xJz5FUC9IMDAwOTE3LzE8L2E+IGRkAgEPDxYCHwIFYkFjdGl2ZSBQbGFzbW9uaWNzOiBFbGVjdHJvbmljIGFuZCBBbGwtb3B0aWNhbCBDb250cm9sIG9mIFBob3RvbmljIFNpZ25hbHMgb24gU3ViLXdhdmVsZW5ndGggU2NhbGVzZGQCAg8PFgIfAgUDKEMpZGQCCg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzAzMTA4OC8xJz5FUC9HMDMxMDg4LzE8L2E+IGRkAgEPDxYCHwIFNFNVUEVSR0VOIEV4Y2l0b25pYyBTb2xhciBDZWxsIENvbnNvcnRpdW0gLSBNQUlOIENPUkVkZAICDw8WAh8CBQMoQylkZAILD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9HMDYyMDU2LzEnPkVQL0cwNjIwNTYvMTwvYT4gZGQCAQ8PFgIfAgVYU3RydWN0dXJlLVByb3BlcnR5LVBlcmZvcm1hbmNlIFJlbGF0aW9uc2hpcHMgZm9yIE9yZ2FuaWMgQnVsayBIZXRlcm9qdW5jdGlvbiBTb2xhciBDZWxsc2RkAgIPDxYCHwIFAyhDKWRkAgwPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwNjE2MDkvMSc+RVAvRjA2MTYwOS8xPC9hPiBkZAIBDw8WAh8CBURIeWJyaWQgb3JnYW5pYyBzZW1pY29uZHVjdG9yL2dhbGxpdW0gbml0cmlkZS9DTU9TIHNtYXJ0IHBpeGVsIGFycmF5c2RkAgIPDxYCHwIFAyhQKWRkAg0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwNjE3NTcvMSc+RVAvRjA2MTc1Ny8xPC9hPiBkZAIBDw8WAh8CBWJIaWdoIHN0YWJpbGl0eSBhbmQgaGlnaCBlZmZpY2llbmN5IHByaW50YWJsZSBwaG90b3ZvbHRhaWNzIChPUFYpIGZvciBsYXJnZS1zY2FsZSBlbmVyZ3kgcHJvZHVjdGlvbmRkAgIPDxYCHwIFAyhQKWRkAg4PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0YwMjMyMDAvMSc+RVAvRjAyMzIwMC8xPC9hPiBkZAIBDw8WAh8CBWdEZXZlbG9wbWVudCBvZiBsaWdodC1zZW5zaW5nIG9yZ2FuaWMgdHJhbnNpc3RvcnMgZm9yIG9wdG9lbGVjdHJvbmljIGFuZCBpbWFnZSBzZW5zb3IgYXJyYXkgYXBwbGljYXRpb25zZGQCAg8PFgIfAgUDKEMpZGQCDw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjA1NjcxMC8xJz5FUC9GMDU2NzEwLzE8L2E+IGRkAgEPDxYCHwIFd1NlbGYtb3JnYW5pemVkIG5hbm9zdHJ1Y3R1cmVzIGFuZCB0cmFuc3BhcmVudCBjb25kdWN0aW5nIGVsZWN0cm9kZXMgZm9yIGxvdyBjb3N0IHNjYWxlYWJsZSBvcmdhbmljIHBob3Rvdm9sdGFpYyBkZXZpY2VzZGQCAg8PFgIfAgUDKEMpZGQCEA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAzNjExMi8xJz5FUC9FMDM2MTEyLzE8L2E+IGRkAgEPDxYCHwIFVFF1YW50dW0gQ29oZXJlbmNlOiBKb2ludCBQcm9wb3NhbCBmb3IgT3B0aW1pc2luZyBVSyBSZXNlYXJjaCBDYXBhY2l0eSBhbmQgQ2FwYWJpbGl0eWRkAgIPDxYCHwIFAyhDKWRkAhEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwNjQ1NFgvMSc+RVAvRTA2NDU0WC8xPC9hPiBkZAIBDw8WAh8CBWtEZXZlbG9wbWVudCBvZiBhaXItc3RhYmxlIG4tY2hhbm5lbCBvcmdhbmljIGZpZWxkLWVmZmVjdCB0cmFuc2lzdG9ycyBiYXNlZCBvbiBzb2x1YmxlIGZ1bGxlcmVuZSBkZXJpdmF0aXZlc2RkAgIPDxYCHwIFAyhDKWRkAhIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwMjczMFgvMSc+RVAvRTAyNzMwWC8xPC9hPiBkZAIBDw8WAh8CBV5TZWxmLWFzc2VtYmxpbmcgY29uanVnYXRlZCBtYWNyb21vbGVjdWxlcyBmb3Igb3JnYW5pYyBmaWVsZCBlZmZlY3QgdHJhbnNpc3RvcnMgYW5kIHNvbGFyIGNlbGxzZGQCAg8PFgIfAgUDKEMpZGQCEw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTA0NTQ3Mi8xJz5FUC9FMDQ1NDcyLzE8L2E+IGRkAgEPDxYCHwIFT1JldmVyc2UgRW5naW5lZXJpbmcgdGhlIEh1bWFuIFN5c3RlbSBOZXh0IGdlbmVyYXRpb24gYXJ0aWZpY2lhbCB2aXNpb24gc3lzdGVtcy5kZAICDw8WAh8CBQMoQylkZAIUD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9DNTQwMzM2LzEnPkVQL0M1NDAzMzYvMTwvYT4gZGQCAQ8PFgIfAgUxUG9seW1lciBlbGVjdHJvcGhvdG9uaWMgZGV2aWNlcyBmb3IgWC1yYXkgaW1hZ2luZ2RkAgIPDxYCHwIFAyhDKWRkAhUPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1QyNjU1OS8wMSc+R1IvVDI2NTU5LzAxPC9hPiBkZAIBDw8WAh8CBS1UaGUgU1VQRVJHRU4gRXhjaXRvbmljIFNvbGFyIENlbGxzIENvbnNvcnRpdW1kZAICDw8WAh8CBQMoQylkZAIWD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9UMDYxMjQvMDEnPkdSL1QwNjEyNC8wMTwvYT4gZGQCAQ8PFgIfAgVAVW5kZXJzdGFuZGluZyAmYW1wOyBVdGlsaXR5IG9mIFN1cmZhY2UgRW5oYW5jZWQgUmFtYW4gU2NhdHRlcmluZ2RkAgIPDxYCHwIFAyhDKWRkAhcPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1M5Njc5MS8wMSc+R1IvUzk2NzkxLzAxPC9hPiBkZAIBDw8WAh8CBUhFbGVjdHJpYyBGaWVsZCBSZWRpc3RyaWJ1dGlvbiBpbiBUcmFwLVJpY2ggUG9seW1lciBMaWdodC1FbWl0dGluZyBEaW9kZXNkZAICDw8WAh8CBQMoQylkZAIYD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TNzkyMjAvMDEnPkdSL1M3OTIyMC8wMTwvYT4gZGQCAQ8PFgIfAgUqSGlnaCBFZmZpY2llbmN5IE9yZ2FuaWMgRGV2aWNlIFNpbXVsYXRpb25zZGQCAg8PFgIfAgUDKEMpZGQCGQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUzg1NzY0LzAxJz5HUi9TODU3NjQvMDE8L2E+IGRkAgEPDxYCHwIFckJhc2ljIFRlY2hub2xvZ3k6IEEgVGhvdXNhbmQgTWljcm8tZW1pdHRlcnMgUGVyIFNxdWFyZSBNaWxsaW1ldHJlOiBOZXcgTGlnaHQgT24gT3JnYW5pYyBNYXRlcmlhbHMgJmFtcDsgU3RydWN0dXJlc2RkAgIPDxYCHwIFAyhDKWRkAhoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1MyODE2Ny8wMSc+R1IvUzI4MTY3LzAxPC9hPiBkZAIBDw8WAh8CBT5SZWFjdGl2ZSwgUG9seW1lcmlzYWJsZSBPcmdhbmljIExpZ2h0IEVtaXR0aW5nIERpb2RlcyAoUlBPTEVEKWRkAgIPDxYCHwIFAyhDKWRkAhsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1I5NzA4NS8wMSc+R1IvUjk3MDg1LzAxPC9hPiBkZAIBDw8WAh8CBS9DYXJib24gQmFzZWQgRWxlY3Ryb25pY3M6IEEgTmF0aW9uYWwgQ29uc29ydGl1bWRkAgIPDxYCHwIFAyhQKWRkAhwPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1I1ODk0OS8wMSc+R1IvUjU4OTQ5LzAxPC9hPiBkZAIBDw8WAh8CBS5Qb2x5bWVyaWMgRGV0ZWN0aW9uIFN5c3RlbXMgZm9yIE1pY3JvIEFuYWx5c2lzZGQCAg8PFgIfAgUDKEMpZGQCHQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUjI2NjQxLzAxJz5HUi9SMjY2NDEvMDE8L2E+IGRkAgEPDxYCHwIFXnBvbHltZXIgYmxlbmQgc2VtaWNvbmR1Y3RvciBkZXZpY2VzOnRoZSBpbnRlcnBsYXkgb2YgcG9seW1lciBwaHlzaWNzIGFuZCBzZW1pY29uZHVjdG9yIHBoeXNpY3NkZAICDw8WAh8CBQMoUClkZAIeD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMjEyMDEvMDInPkdSL00yMTIwMS8wMjwvYT4gZGQCAQ8PFgIfAgVHRUxFQ1RST05JQyBTVFJVQ1RVUkUgT0YgUEhFTllMLUJBU0VEIC1DT05KVUdBVEVEIE9MSUdPTUVSUyBBTkQgUE9MWU1FUlNkZAICDw8WAh8CBQMoUClkZAIfD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNDUxMTUvMDInPkdSL000NTExNS8wMjwvYT4gZGQCAQ8PFgIfAgViRVhQRVJJTUVOVEFMIEFORCBUSEVPUkVUSUNBTCBTVFVESUVTIE9GIEVMRUNUUklDQUwgVFJBTlNQT1JUIElOIE9SR0FOSUMgRUxFQ1RST0xVTUlORVNDRU5UIERFVklDRVNkZAICDw8WAh8CBQMoUClkZAIgD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMDgwMTEvMDInPkdSL00wODAxMS8wMjwvYT4gZGQCAQ8PFgIfAgVRTElRVUlEIENSWVNUQUxMSU5FIE1BSU5DSEFJTiBDT05KVUdBVEVEIFBPTFlNRVJTIEZPUiBQT0xBUklaRUQgRUxFQ1RST0xVTUlORVNFTkNFZGQCAg8PFgIfAgUDKFApZGQCIQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvUjU1MDc4LzAxJz5HUi9SNTUwNzgvMDE8L2E+IGRkAgEPDxYCHwIFQVVsdHJhZmFzdCBQaG90b25pY3MgZm9yIERhdGFjb21tcyBhYm92ZSBUZXJhYml0cyBTcGVlZHMgLSBVUERBVEVTZGQCAg8PFgIfAgUDKEMpZGQCIg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTTgwMTMwLzAxJz5HUi9NODAxMzAvMDE8L2E+IGRkAgEPDxYCHwIFJ01UUDk5OiBOQU5PU0NBTEUgU0NJRU5DRSBBTkQgVEVDSE5PTE9HWWRkAgIPDxYCHwIFAyhDKWRkAiMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL04xNDA0MC8wMSc+R1IvTjE0MDQwLzAxPC9hPiBkZAIBDw8WAh8CBUFVTFRSQUZBU1QgUEhPVE9OSUNTIEZPUiBEQVRBQ09NTVMgQUJPVkUgVEVSQUJJVFMgU1BFRURTIC0gVVBEQVRFU2RkAgIPDxYCHwIFAyhDKWRkAiQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL00yMjUyOS8wMSc+R1IvTTIyNTI5LzAxPC9hPiBkZAIBDw8WAh8CBUJGRU1UT1NFQ09ORCBEWU5BTUlDUyBJTiBOT1ZFTCBPUkdBTklDIEFORCBJTk9SR0FOSUMgU0VNSUNPTkRVQ1RPUlNkZAICDw8WAh8CBQMoQylkZAIlD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMjEyMDEvMDEnPkdSL00yMTIwMS8wMTwvYT4gZGQCAQ8PFgIfAgVHRUxFQ1RST05JQyBTVFJVQ1RVUkUgT0YgUEhFTllMLUJBU0VEIC1DT05KVUdBVEVEIE9MSUdPTUVSUyBBTkQgUE9MWU1FUlNkZAICDw8WAh8CBQMoUClkZAImD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMzQ2NDUvMDEnPkdSL00zNDY0NS8wMTwvYT4gZGQCAQ8PFgIfAgV0Q0hBUkFDVEVSSVNBVElPTiBPRiBUSElOIEZJTE1TICZhbXA7IElOVEVSRkFDRVMgQlkgQ09NUExFTSBFTlRBUlkgVVNFIE9GIFgtUkFZIFJFRkxFQ1RJVklUWSAmYW1wOyBBVE9NSUMgRk9SQ0UgTUlDUk9kZAICDw8WAh8CBQMoQylkZAInD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NNDUxMTUvMDEnPkdSL000NTExNS8wMTwvYT4gZGQCAQ8PFgIfAgViRVhQRVJJTUVOVEFMIEFORCBUSEVPUkVUSUNBTCBTVFVESUVTIE9GIEVMRUNUUklDQUwgVFJBTlNQT1JUIElOIE9SR0FOSUMgRUxFQ1RST0xVTUlORVNDRU5UIERFVklDRVNkZAICDw8WAh8CBQMoUClkZAIoD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MODQyMDkvMDEnPkdSL0w4NDIwOS8wMTwvYT4gZGQCAQ8PFgIfAgVDRUxFQ1RST05JQ0FMTFkgQVNZTU1FVFJJQyBQT0xZTUVSUyBGT1IgRUxFQ1RSTyAtIE9QVElDIEFQUExJQ0FUSU9OU2RkAgIPDxYCHwIFAyhQKWRkAikPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL00wODAxMS8wMSc+R1IvTTA4MDExLzAxPC9hPiBkZAIBDw8WAh8CBVFMSVFVSUQgQ1JZU1RBTExJTkUgTUFJTkNIQUlOIENPTkpVR0FURUQgUE9MWU1FUlMgRk9SIFBPTEFSSVpFRCBFTEVDVFJPTFVNSU5FU0VOQ0VkZAICDw8WAh8CBQMoUClkZAIqD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MODUwNDYvMDEnPkdSL0w4NTA0Ni8wMTwvYT4gZGQCAQ8PFgIfAgVDRUxFQ1RST05JQ0FMTFkgQVNZTU1FVFJJQyBQT0xZTUVSUyBGT1IgRUxFQ1RSTyAtIE9QVElDIEFQUExJQ0FUSU9OU2RkAgIPDxYCHwIFAyhDKWRkAisPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0w0MTE1OC8wMSc+R1IvTDQxMTU4LzAxPC9hPiBkZAIBDw8WAh8CBStBRFZBTkNFRCBQT0xZTUVSUyBGT1IgTElHSFQtRU1JVFRJTkcgRElPREVTZGQCAg8PFgIfAgUDKEMpZGQCLA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDQxNzUyLzAxJz5HUi9MNDE3NTIvMDE8L2E+IGRkAgEPDxYCHwIFK0FEVkFOQ0VEIFBPTFlNRVJTIEZPUiBMSUdIVC1FTUlUVElORyBESU9ERVNkZAICDw8WAh8CBQMoUClkZAItD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MNzA2NDYvMDEnPkdSL0w3MDY0Ni8wMTwvYT4gZGQCAQ8PFgIfAgU+Uk9QQTogRUxFQ1RST01PRFVMQVRJT04gU1BFQ1RST1NDT1BZIE9GIFBPTFlNRVIgU0VNSUNPTkRVQ1RPUlNkZAICDw8WAh8CBQMoUClkZAIuD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LODYzNDMvMDEnPkdSL0s4NjM0My8wMTwvYT4gZGQCAQ8PFgIfAgUsT1BUSUNBTCBQUk9QRVJUSUVTIE9GIE9SR0FOSUMgU0VNSUNPTkRVQ1RPUlNkZAICDw8WAh8CBQMoQylkZAIvD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LNzA1OTUvMDEnPkdSL0s3MDU5NS8wMTwvYT4gZGQCAQ8PFgIfAgU0QVBQUk9BQ0hFUyBUTyBFRkZJQ0lFTlQgQkxVRSBMSUdIVC1FTUlUVElORyBQT0xZTUVSU2RkAgIPDxYCHwIFAyhDKWRkAjAPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0wwMTkxNi8wMSc+R1IvTDAxOTE2LzAxPC9hPiBkZAIBDw8WAh8CBUdDT05KVUdBVEVEIFBPTFlNRVIgTUlDUk9DQVZJVElFUzogTElHSFQgRU1JVFRJTkcgRElPREVTIEFORCBORVcgUEhZU0lDU2RkAgIPDxYCHwIFAyhQKWRkAjEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0s2MjgzNS8wMSc+R1IvSzYyODM1LzAxPC9hPiBkZAIBDw8WAh8CBUtQSE9UT05JQyBNT0xFQ1VMQVIgTUFURVJJQUxTIEZPUiBPUFRJQ0FMIFBST0NFU1NJTkcgQU5EIElORk9STUFUSU9OIFNUT1JBR0VkZAICDw8WAh8CBQMoUClkZAIyD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9LNzA2MTgvMDEnPkdSL0s3MDYxOC8wMTwvYT4gZGQCAQ8PFgIfAgU0QVBQUk9BQ0hFUyBUTyBFRkZJQ0lFTlQgQkxVRSBMSUdIVC1FTUlUVElORyBQT0xZTUVSU2RkAgIPDxYCHwIFAyhQKWRkAjMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0s1NzQyOC8wMSc+R1IvSzU3NDI4LzAxPC9hPiBkZAIBDw8WAh8CBVlDSEFSQUNURVJJU0FUSU9OIE9GIERFRkVDVCBTVEFURVMgSU4gRUxFQ1RST0xVTUlORVNDRU5UIENPTkpVR0FURUQgUE9MWU1FUlMgQU5EIE9MSUdPTUVSU2RkAgIPDxYCHwIFAyhQKWRkAjQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0szMTM1MC8wMSc+R1IvSzMxMzUwLzAxPC9hPiBkZAIBDw8WAh8CBSJFTEVDVFJPTFVNSU5FU0NFTlQgUE9MWU1FUiBERVZJQ0VTZGQCAg8PFgIfAgUDKFApZGQCNQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSzA0NjQ0LzAxJz5HUi9LMDQ2NDQvMDE8L2E+IGRkAgEPDxYCHwIFNFJFRlJBQ1RJVkUgTk9OTElORUFSSVRZIE9GIE5PVkVMIE1PTEVDVUxBUiBNQVRFUklBTFNkZAICDw8WAh8CBQMoUClkZAI2D2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9KNzY5NDEvMDEnPkdSL0o3Njk0MS8wMTwvYT4gZGQCAQ8PFgIfAgU+Q09OSlVHQVRJT04gTE9DS0VELCBISUdIIFRFTVBFUkFUVVJFIE5PTi1MSU5FQVIgT1BUSUMgUE9MWU1FUlNkZAICDw8WAh8CBQMoQylkZAI3D2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9KNDM5MTIvMDEnPkdSL0o0MzkxMi8wMTwvYT4gZGQCAQ8PFgIfAgUzRkFCUklDQVRJT04gT0YgUE9MWU1FUi1CQVNFRCBPUFRPRUxFQ1RST05JQyBERVZJQ0VTZGQCAg8PFgIfAgUDKEMpZGQCOA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSDI3NTU3LzAxJz5HUi9IMjc1NTcvMDE8L2E+IGRkAgEPDxYCHwIFSFNUUlVDVFVSRSBBTkQgRFlOQU1JQ1MgT0YgUE9MWSBCRU5aWUwgR0xVVEFNQVRFIEdFTFMgQU5EIElUUyBERVJJVkFUSVZFU2RkAgIPDxYCHwIFAyhDKWRkAjkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0g3MTgyNi8wMSc+R1IvSDcxODI2LzAxPC9hPiBkZAIBDw8WAh8CBTxPUFRJQ0FMIFNQRUNUUk9TQ09QWSBPRiBDT05KVUdBVEVEIFBPTFlNRVJTIEFUIEhJR0ggUFJFU1NVUkVkZAICDw8WAh8CBQMoQylkZAI6D2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9IMzE3NDUvMDEnPkdSL0gzMTc0NS8wMTwvYT4gZGQCAQ8PFgIfAgVgTkVXIFgoMykgTUFURVJJQUxTIEZPUiBFTEVDVFJPIE9QVElDUyBBTkQgQUxMIE9QVElDQUwgU0lHTkFMIFBST0NFU1NJTkcgQkFTRUQgT04gTUVUQUwgQ09NUExFWEVTZGQCAg8PFgIfAgUDKEMpZGQCOw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvSDMxNzUyLzAxJz5HUi9IMzE3NTIvMDE8L2E+IGRkAgEPDxYCHwIFWFNQRUNUUk9TQ09QSUMgSU5WRVNUSUdBVElPTiBPRiBUSElSRCBPUkRFUiBPUFRJQ0FMIE5PTkxJTkVBUklUSUVTIElOIENPTkpVR0FURUQgUE9MWU1FUlNkZAICDw8WAh8CBQMoUClkZAI8D2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9HNTE4NzkvMDEnPkdSL0c1MTg3OS8wMTwvYT4gZGQCAQ8PFgIfAgVkU1lOVEhFU0lTIEFORCBDSEFSQUNURVJJU0FUSU9OIE9GIENPTkpVR0FURUQgUE9MWU1FUlMgRk9SIEVMRUNUUk9OSUMgQU5EIE9QVE9FTEVDVFJJQyBJTlZFU1RJR0FUSU9OU2RkAgIPDxYCHwIFAyhDKWRkAj0PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0c1MTk0Ny8wMSc+R1IvRzUxOTQ3LzAxPC9hPiBkZAIBDw8WAh8CBUNFTEVDVFJPTklDIEFORCBPUFRPRUxFQ1RST05JQyBERVZJQ0UgUEhZU0lDUyBPRiBDT05KVUdBVEVEIFBPTFlNRVJTZGQCAg8PFgIfAgUDKEMpZGQCPg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvRzE1MDAwLzAxJz5HUi9HMTUwMDAvMDE8L2E+IGRkAgEPDxYCHwIFOlBIT1RPRVhDSVRBVElPTlMgSU4gT1JHQU5JQyAmYW1wOyBPUkdBTklPTUVUQUxMSUMgUE9MWU1FUlNkZAICDw8WAh8CBQMoUClkZAITD2QWBGYPZBYCZg9kFgICAQ8PFgIeB1Zpc2libGVnZGQCAg9kFgJmD2QWAgIBDw8WBh4KUmVwb3J0TmFtZQUKVmlld1BlcnNvbh4NUGFyYW1ldGVyTmFtZRUCCldlYkFkZHJlc3MIUGVyc29uSUQeDlBhcmFtZXRlclZhbHVlFQI4aHR0cDovL2dvdy5lcHNyYy5hYy51ay9OR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTE3OTkEMTc5OWQWAmYPZBYCZg9kFgQCAw8QZGQWAWZkAgUPD2QWAh8BZWQCBw8PFgIfDGhkZGTJumEmNKFd/LhJAZPz/uxlJEZQ6g==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKb/KD5CQLQvN++DAKT/OCVAwLKoMrZD9Vr5V6FGqb+SHVNAEYXR6P/Fzi3" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor DDC Bradley</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">University of Oxford</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Mathematical, Physical&amp;Life Sciences Div</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">01865282572</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt"></span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="100111110097108046098114097100108101121064109112108115046111120046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Bioprocess Engineering</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Electronic Devices &amp; Subsys.</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label1">Manufacturing Machine &amp; Plant</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl03_Label2">Materials Characterisation</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label1">Materials Synthesis &amp; Growth</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl04_Label2">Materials Synthesis &amp; Growth</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label1">Microsystems</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl05_Label2">Optical Devices &amp; Subsystems</span>
+                                                            </b></td>
+		</tr><tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label1">Optoelect. Devices &amp; Circuits</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl06_Label2">Solar Technology</span>
+                                                            </b></td>
+		</tr><tr class="GridItemRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label1">Synthetic biology</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl07_Label2"></span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M022900/1'>EP/M022900/1</a> </b></td><td align="left">A National Thin-Film Cluster Facility for Advanced Functional Materials</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M000044/1'>EP/M000044/1</a> </b></td><td align="left">Optical Fabrication and Imaging Facility for three-dimensional sub-micron designer materials for bioengineering and photonics</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K038648/1'>EP/K038648/1</a> </b></td><td align="left">Frontier Manufacturing:  Scaling up synthetic biology</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K029843/1'>EP/K029843/1</a> </b></td><td align="left">Microstructure of Organic Semiconductors Controlled by Solution Processing</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K03099X/1'>EP/K03099X/1</a> </b></td><td align="left">EPSRC Centre for Innovative Manufacturing in Large Area Electronics</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K024493/1'>EP/K024493/1</a> </b></td><td align="left">Manufacturing R&amp;D Facility: Electron Beam Epitaxy</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K503733/1'>EP/K503733/1</a> </b></td><td align="left">Impact Acceleration Account - Imperial College London 2012</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J021199/1'>EP/J021199/1</a> </b></td><td align="left">Imperial College London - Equipment Account</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/N50869X/1'>EP/N50869X/1</a> </b></td><td align="left">Institutional Sponsorship 2015- Imperial College London</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M028291/1'>EP/M028291/1</a> </b></td><td align="left">Experimental Equipment Call for Imperial College London</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M506904/1'>EP/M506904/1</a> </b></td><td align="left">Institutional Sponsorship for Quantum Technologies 2014- Imperial College London</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K030760/1'>EP/K030760/1</a> </b></td><td align="left">Small Items of Research Equipment at Imperial College London</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K503381/1'>EP/K503381/1</a> </b></td><td align="left">Institutional Sponsorship 2012- Imperial College London</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J018201/1'>EP/J018201/1</a> </b></td><td align="left">2010 grant balance Imperial College London</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J500021/1'>EP/J500021/1</a> </b></td><td align="left">Scalable low-cost organic photovoltaic devices</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H000917/2'>EP/H000917/2</a> </b></td><td align="left">Active Plasmonics: Electronic and All-optical Control of Photonic Signals on Sub-wavelength Scales</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H000917/1'>EP/H000917/1</a> </b></td><td align="left">Active Plasmonics: Electronic and All-optical Control of Photonic Signals on Sub-wavelength Scales</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G031088/1'>EP/G031088/1</a> </b></td><td align="left">SUPERGEN Excitonic Solar Cell Consortium - MAIN CORE</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G062056/1'>EP/G062056/1</a> </b></td><td align="left">Structure-Property-Performance Relationships for Organic Bulk Heterojunction Solar Cells</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F061609/1'>EP/F061609/1</a> </b></td><td align="left">Hybrid organic semiconductor/gallium nitride/CMOS smart pixel arrays</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F061757/1'>EP/F061757/1</a> </b></td><td align="left">High stability and high efficiency printable photovoltaics (OPV) for large-scale energy production</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F023200/1'>EP/F023200/1</a> </b></td><td align="left">Development of light-sensing organic transistors for optoelectronic and image sensor array applications</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F056710/1'>EP/F056710/1</a> </b></td><td align="left">Self-organized nanostructures and transparent conducting electrodes for low cost scaleable organic photovoltaic devices</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E036112/1'>EP/E036112/1</a> </b></td><td align="left">Quantum Coherence: Joint Proposal for Optimising UK Research Capacity and Capability</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E06454X/1'>EP/E06454X/1</a> </b></td><td align="left">Development of air-stable n-channel organic field-effect transistors based on soluble fullerene derivatives</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E02730X/1'>EP/E02730X/1</a> </b></td><td align="left">Self-assembling conjugated macromolecules for organic field effect transistors and solar cells</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E045472/1'>EP/E045472/1</a> </b></td><td align="left">Reverse Engineering the Human System Next generation artificial vision systems.</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C540336/1'>EP/C540336/1</a> </b></td><td align="left">Polymer electrophotonic devices for X-ray imaging</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/T26559/01'>GR/T26559/01</a> </b></td><td align="left">The SUPERGEN Excitonic Solar Cells Consortium</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/T06124/01'>GR/T06124/01</a> </b></td><td align="left">Understanding &amp; Utility of Surface Enhanced Raman Scattering</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S96791/01'>GR/S96791/01</a> </b></td><td align="left">Electric Field Redistribution in Trap-Rich Polymer Light-Emitting Diodes</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S79220/01'>GR/S79220/01</a> </b></td><td align="left">High Efficiency Organic Device Simulations</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S85764/01'>GR/S85764/01</a> </b></td><td align="left">Basic Technology: A Thousand Micro-emitters Per Square Millimetre: New Light On Organic Materials &amp; Structures</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S28167/01'>GR/S28167/01</a> </b></td><td align="left">Reactive, Polymerisable Organic Light Emitting Diodes (RPOLED)</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R97085/01'>GR/R97085/01</a> </b></td><td align="left">Carbon Based Electronics: A National Consortium</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R58949/01'>GR/R58949/01</a> </b></td><td align="left">Polymeric Detection Systems for Micro Analysis</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R26641/01'>GR/R26641/01</a> </b></td><td align="left">polymer blend semiconductor devices:the interplay of polymer physics and semiconductor physics</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M21201/02'>GR/M21201/02</a> </b></td><td align="left">ELECTRONIC STRUCTURE OF PHENYL-BASED -CONJUGATED OLIGOMERS AND POLYMERS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M45115/02'>GR/M45115/02</a> </b></td><td align="left">EXPERIMENTAL AND THEORETICAL STUDIES OF ELECTRICAL TRANSPORT IN ORGANIC ELECTROLUMINESCENT DEVICES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M08011/02'>GR/M08011/02</a> </b></td><td align="left">LIQUID CRYSTALLINE MAINCHAIN CONJUGATED POLYMERS FOR POLARIZED ELECTROLUMINESENCE</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R55078/01'>GR/R55078/01</a> </b></td><td align="left">Ultrafast Photonics for Datacomms above Terabits Speeds - UPDATES</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M80130/01'>GR/M80130/01</a> </b></td><td align="left">MTP99: NANOSCALE SCIENCE AND TECHNOLOGY</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/N14040/01'>GR/N14040/01</a> </b></td><td align="left">ULTRAFAST PHOTONICS FOR DATACOMMS ABOVE TERABITS SPEEDS - UPDATES</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M22529/01'>GR/M22529/01</a> </b></td><td align="left">FEMTOSECOND DYNAMICS IN NOVEL ORGANIC AND INORGANIC SEMICONDUCTORS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M21201/01'>GR/M21201/01</a> </b></td><td align="left">ELECTRONIC STRUCTURE OF PHENYL-BASED -CONJUGATED OLIGOMERS AND POLYMERS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M34645/01'>GR/M34645/01</a> </b></td><td align="left">CHARACTERISATION OF THIN FILMS &amp; INTERFACES BY COMPLEM ENTARY USE OF X-RAY REFLECTIVITY &amp; ATOMIC FORCE MICRO</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M45115/01'>GR/M45115/01</a> </b></td><td align="left">EXPERIMENTAL AND THEORETICAL STUDIES OF ELECTRICAL TRANSPORT IN ORGANIC ELECTROLUMINESCENT DEVICES</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L84209/01'>GR/L84209/01</a> </b></td><td align="left">ELECTRONICALLY ASYMMETRIC POLYMERS FOR ELECTRO - OPTIC APPLICATIONS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M08011/01'>GR/M08011/01</a> </b></td><td align="left">LIQUID CRYSTALLINE MAINCHAIN CONJUGATED POLYMERS FOR POLARIZED ELECTROLUMINESENCE</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L85046/01'>GR/L85046/01</a> </b></td><td align="left">ELECTRONICALLY ASYMMETRIC POLYMERS FOR ELECTRO - OPTIC APPLICATIONS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L41158/01'>GR/L41158/01</a> </b></td><td align="left">ADVANCED POLYMERS FOR LIGHT-EMITTING DIODES</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L41752/01'>GR/L41752/01</a> </b></td><td align="left">ADVANCED POLYMERS FOR LIGHT-EMITTING DIODES</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L70646/01'>GR/L70646/01</a> </b></td><td align="left">ROPA: ELECTROMODULATION SPECTROSCOPY OF POLYMER SEMICONDUCTORS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K86343/01'>GR/K86343/01</a> </b></td><td align="left">OPTICAL PROPERTIES OF ORGANIC SEMICONDUCTORS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K70595/01'>GR/K70595/01</a> </b></td><td align="left">APPROACHES TO EFFICIENT BLUE LIGHT-EMITTING POLYMERS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L01916/01'>GR/L01916/01</a> </b></td><td align="left">CONJUGATED POLYMER MICROCAVITIES: LIGHT EMITTING DIODES AND NEW PHYSICS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K62835/01'>GR/K62835/01</a> </b></td><td align="left">PHOTONIC MOLECULAR MATERIALS FOR OPTICAL PROCESSING AND INFORMATION STORAGE</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K70618/01'>GR/K70618/01</a> </b></td><td align="left">APPROACHES TO EFFICIENT BLUE LIGHT-EMITTING POLYMERS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K57428/01'>GR/K57428/01</a> </b></td><td align="left">CHARACTERISATION OF DEFECT STATES IN ELECTROLUMINESCENT CONJUGATED POLYMERS AND OLIGOMERS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K31350/01'>GR/K31350/01</a> </b></td><td align="left">ELECTROLUMINESCENT POLYMER DEVICES</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/K04644/01'>GR/K04644/01</a> </b></td><td align="left">REFRACTIVE NONLINEARITY OF NOVEL MOLECULAR MATERIALS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J76941/01'>GR/J76941/01</a> </b></td><td align="left">CONJUGATION LOCKED, HIGH TEMPERATURE NON-LINEAR OPTIC POLYMERS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/J43912/01'>GR/J43912/01</a> </b></td><td align="left">FABRICATION OF POLYMER-BASED OPTOELECTRONIC DEVICES</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H27557/01'>GR/H27557/01</a> </b></td><td align="left">STRUCTURE AND DYNAMICS OF POLY BENZYL GLUTAMATE GELS AND ITS DERIVATIVES</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H71826/01'>GR/H71826/01</a> </b></td><td align="left">OPTICAL SPECTROSCOPY OF CONJUGATED POLYMERS AT HIGH PRESSURE</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H31745/01'>GR/H31745/01</a> </b></td><td align="left">NEW X(3) MATERIALS FOR ELECTRO OPTICS AND ALL OPTICAL SIGNAL PROCESSING BASED ON METAL COMPLEXES</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/H31752/01'>GR/H31752/01</a> </b></td><td align="left">SPECTROSCOPIC INVESTIGATION OF THIRD ORDER OPTICAL NONLINEARITIES IN CONJUGATED POLYMERS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G51879/01'>GR/G51879/01</a> </b></td><td align="left">SYNTHESIS AND CHARACTERISATION OF CONJUGATED POLYMERS FOR ELECTRONIC AND OPTOELECTRIC INVESTIGATIONS</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G51947/01'>GR/G51947/01</a> </b></td><td align="left">ELECTRONIC AND OPTOELECTRONIC DEVICE PHYSICS OF CONJUGATED POLYMERS</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/G15000/01'>GR/G15000/01</a> </b></td><td align="left">PHOTOEXCITATIONS IN ORGANIC &amp; ORGANIOMETALLIC POLYMERS</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

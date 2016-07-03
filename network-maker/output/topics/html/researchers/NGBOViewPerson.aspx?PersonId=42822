@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=42822" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRNQcm9mZXNzb3IgUkUgTW9ycmlzZGQCAw8PFgIfAgUYVW5pdmVyc2l0eSBvZiBTdCBBbmRyZXdzZGQCBQ8PFgIfAgUJQ2hlbWlzdHJ5ZGQCBw8PFgIfAgUMMDEzMzQgNDYzODE4ZGQCCQ8PFgIfAgUMMDEzMzQgNDYzODA4ZGQCDQ8PFgQfAgUzMTE0MTAxMTA5MDQ5MDY0MTE1MTE2MDQ1MDk3MTEwMTAwMDQ2MDk3MDk5MDQ2MTE3MTA3HghSZWFkT25seWcWDB4Lb25tb3VzZW92ZXJlHgdvbmZvY3VzBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzseCm9ubW91c2VvdXQFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx4Gb25ibHVyBV1qYXZhc2NyaXB0OnZhciBvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKTtvLmNsYXNzTmFtZT0ndHh0TGluayc7d2luZG93LnN0YXR1cz0nJzsfAAU8amF2YXNjcmlwdDpzZW5kdG8oZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3R4dExpbmsnKS52YWx1ZSk7HwEFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnO2QCDw88KwALAQAPFggeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYEZg9kFgICAQ8PFgIfAgUaTWF0ZXJpYWxzIENoYXJhY3RlcmlzYXRpb25kZAIBD2QWAgIBDw8WAh8CBSBNYXRlcmlhbHMgU3ludGhlc2lzICZhbXA7IEdyb3d0aGRkAhEPZBYEAgEPZBYCZg9kFgJmDzwrAAsBAA8WCB8IFgAfCQIBHwoCAR8LAgFkFgJmD2QWAgIBD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDI1MTEyLzEnPkVQL0swMjUxMTIvMTwvYT4gZGQCAQ8PFgIfAgVXQXNzZW1ibHksIGRpc2Fzc2VtYmx5LCByZWFzc2VtYmx5ICAtIE5ldyBSb3V0ZXMgdG8gRXh0ZW5kZWQgU3RydWN0dXJlcyBhbmQgVGhlaXIgSW1wYWN0ZGQCAg8PFgIfAgUDKFApZGQCAw9kFgJmD2QWAmYPPCsACwEADxYIHwgWAB8JAhQfCgIBHwsCFGQWAmYPZBYoAgEPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0wwMTQ0NzUvMSc+RVAvTDAxNDQ3NS8xPC9hPiBkZAIBDw8WAh8CBS1OYW5vcGFydGljbGUgQXBwcm9hY2hlcyB0byBaZW9saXRpYyBDYXRhbHlzdHNkZAICDw8WAh8CBQMoUClkZAICD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDA1NDk5LzEnPkVQL0swMDU0OTkvMTwvYT4gZGQCAQ8PFgIfAgUySGVtaWxhYmlsZSBhbmQgU3dpdGNoYWJsZSBNZXRhbC1PcmdhbmljIEZyYW1ld29ya3NkZAICDw8WAh8CBQMoUClkZAIDD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9LMDM5MjEwLzEnPkVQL0swMzkyMTAvMTwvYT4gZGQCAQ8PFgIfAgVtU3RydWN0dXJpbmcgdGhlIEZ1dHVyZSAtIFVuZGVycGlubmluZyB3b3JsZC1sZWFkaW5nIHNjaWVuY2UgaW4gRWFTdENIRU0gdGhyb3VnaCBjdXR0aW5nIGVkZ2UgY2hhcmFjdGVyaXNhdGlvbmRkAgIPDxYCHwIFAyhDKWRkAgQPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0kwMjgwODAvMSc+RVAvSTAyODA4MC8xPC9hPiBkZAIBDw8WAh8CBTFBbnRpLUJpb2ZpbG0gTWF0ZXJpYWxzIFVzaW5nIE11bHRpZnVuY3Rpb25hbCBNT0ZzZGQCAg8PFgIfAgUDKFApZGQCBQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRzA2MjEyOS8xJz5FUC9HMDYyMTI5LzE8L2E+IGRkAgEPDxYCHwIFLUlubm92YXRpdmUgR2FzIFNlcGFyYXRpb25zIGZvciBDYXJib24gQ2FwdHVyZWRkAgIPDxYCHwIFAyhDKWRkAgYPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0UwNDE4MjUvMSc+RVAvRTA0MTgyNS8xPC9hPiBkZAIBDw8WAh8CBUtIaWdoLVJlc29sdXRpb24gU29saWQtU3RhdGUgTk1SIGluIFN0IEFuZHJld3M6IERldmVsb3BtZW50IGFuZCBBcHBsaWNhdGlvbnNkZAICDw8WAh8CBQMoQylkZAIHD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDA4Mzg0LzEnPkVQL0YwMDgzODQvMTwvYT4gZGQCAQ8PFgIfAgV3T3B0aW1pc2luZyBuYW5vcG9yb3VzIGFkc29yYmVudHMgZm9yIGh5ZHJvZ2VuIHB1cmlmaWNhdGlvbjogZGV2ZWxvcG1lbnQgb2YgYSBjaGVtaXN0cnkvY2hlbWljYWwgZW5naW5lZXJpbmcgc2tpbGxzIGJhc2VkZAICDw8WAh8CBQMoQylkZAIID2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9GMDIxOTI1LzEnPkVQL0YwMjE5MjUvMTwvYT4gZGQCAQ8PFgIfAgUfRXh0ZW5kaW5nIElvbm90aGVybWFsIFN5bnRoZXNpc2RkAgIPDxYCHwIFAyhQKWRkAgkPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0MwMDY1MjYvMSc+RVAvQzAwNjUyNi8xPC9hPiBkZAIBDw8WAh8CBTtUaGUgaW9ub3RoZXJtYWwgc3ludGhlc2lzIG9mIHplb2xpdGVzIGFuZCB6ZW9saXRlIGFuYWxvZ3Vlc2RkAgIPDxYCHwIFAyhQKWRkAgoPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1QwOTcwNS8wMSc+R1IvVDA5NzA1LzAxPC9hPiBkZAIBDw8WAh8CBVxEZXNpZ25pbmcgUG9yb3VzIE1ldGFsLU9yZ2FuaWMgRnJhbWV3b3JrcyB0byBTdG9yZSBhbmQgRGVsaXZlciBMYXJnZSBBbW91bnRzIG9mIE5pdHJpYyBPeGlkZWRkAgIPDxYCHwIFAyhQKWRkAgsPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL1MzMTI3My8wMSc+R1IvUzMxMjczLzAxPC9hPiBkZAIBDw8WAh8CBVpIaWdoIEludGVuc2l0eSBTaW5nbGUgQ3J5c3RhbCBYLVJheSBEaWZmcmFjdGlvbiBTdHVkaWVzIG9mIElub3JnYW5pYyBhbmQgT3JnYW5pYyBNYXRlcmlhbHNkZAICDw8WAh8CBQMoQylkZAIMD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SNDY1NTcvMDEnPkdSL1I0NjU1Ny8wMTwvYT4gZGQCAQ8PFgIfAgVBTW9kdWxhciBwb3JvdXMgc29saWRzIGZyb20gemVvbGl0ZS1saWtlIG1vbGVjdWxhciBidWlsZGluZyBibG9ja3NkZAICDw8WAh8CBQMoUClkZAIND2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NODY0NjAvMDEnPkdSL004NjQ2MC8wMTwvYT4gZGQCAQ8PFgIfAgU4RlVOQ1RJT05BTElTRUQgUE9ST1VTIElOT1JHQU5JQy1PUkdBTklDIE5FVFdPUksgUE9MWU1FUlNkZAICDw8WAh8CBQMoUClkZAIOD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9NMzMwMzcvMDEnPkdSL00zMzAzNy8wMTwvYT4gZGQCAQ8PFgIfAgU9U1lOVEhFU0lTIE9GIE1JQ1JPUE9ST1VTIE1BVEVSSUFMUyBVU0lORyBNQUNST0NZQ0xFIFRFTVBMQVRFU2RkAgIPDxYCHwIFAyhQKWRkAg8PZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL001OTgyMi8wMSc+R1IvTTU5ODIyLzAxPC9hPiBkZAIBDw8WAh8CBUZWQVJJQUJMRSBURU1QRVJBVFVSRSBNSUNST0NSWVNUQUwgRElGRlJBQ1RJT04gT0YgTUlDUk9QT1JPVVMgTUFURVJJQUxTZGQCAg8PFgIfAgUDKFApZGQCEA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTTE3NzQ3LzAxJz5HUi9NMTc3NDcvMDE8L2E+IGRkAgEPDxYCHwIFPk1JQ1JPQ1JZU1RBTCAmYW1wOyBQT1dERVIgRElGRlJBQ1RJT04gT0YgTUlDUk9QT1JPVVMgTUFURVJJQUxTZGQCAg8PFgIfAgUDKFApZGQCEQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9R1IvTDQwMTA2LzAxJz5HUi9MNDAxMDYvMDE8L2E+IGRkAgEPDxYCHwIFMU5FVyBNSUNST1BPUlVTIENBVEFMWVNUUyBGUk9NIENSWVNUQUwgRU5HSU5FRVJJTkdkZAICDw8WAh8CBQMoUClkZAISD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MNjY1NTcvMDEnPkdSL0w2NjU1Ny8wMTwvYT4gZGQCAQ8PFgIfAgU7VEhFIFRBUkdFVEVEIERFU0lHTiBPRiBBIE5FVyBDTEFTUyBPRiBNSUNST1BPUk9VUyBDQVRBTFlTVFNkZAICDw8WAh8CBQMoUClkZAITD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MNDgwNTgvMDEnPkdSL0w0ODA1OC8wMTwvYT4gZGQCAQ8PFgIfAgU7VEVNUExBVElORyBPRiBNSUNST1BPUk9VUyBNQVRFUklBTFMgSU4gTk9OLUFRVUVPVVMgU09MVkVOVFNkZAICDw8WAh8CBQMoUClkZAIUD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9MMzI4ODAvMDEnPkdSL0wzMjg4MC8wMTwvYT4gZGQCAQ8PFgIfAgUqQSBORVcgQ0xBU1MgT0YgREVORFJJVElDIFBPTFlNRVIgQ0FUQUxZU1RTZGQCAg8PFgIfAgUDKFApZGQCEw9kFgRmD2QWAmYPZBYCAgEPDxYCHgdWaXNpYmxlZ2RkAgIPZBYCZg9kFgICAQ8PFgYeClJlcG9ydE5hbWUFClZpZXdQZXJzb24eDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzCFBlcnNvbklEHg5QYXJhbWV0ZXJWYWx1ZRUCOWh0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD00MjgyMgU0MjgyMmQWAmYPZBYCZg9kFgQCAw8QZGQWAWZkAgUPD2QWAh8BZWQCBw8PFgIfDGhkZGQgLLtjPCOoSwK/iDOcZIL0ohk9ZQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALymcSdCwLQvN++DAKT/OCVAwLKoMrZDwBjgdqUuWgEOvGj36eMkw2q2/Z3" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor RE Morris</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">University of St Andrews</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Chemistry</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">01334 463818</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">01334 463808</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="114101109049064115116045097110100046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Materials Characterisation</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Materials Synthesis &amp; Growth</span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K025112/1'>EP/K025112/1</a> </b></td><td align="left">Assembly, disassembly, reassembly  - New Routes to Extended Structures and Their Impact</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/L014475/1'>EP/L014475/1</a> </b></td><td align="left">Nanoparticle Approaches to Zeolitic Catalysts</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K005499/1'>EP/K005499/1</a> </b></td><td align="left">Hemilabile and Switchable Metal-Organic Frameworks</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K039210/1'>EP/K039210/1</a> </b></td><td align="left">Structuring the Future - Underpinning world-leading science in EaStCHEM through cutting edge characterisation</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/I028080/1'>EP/I028080/1</a> </b></td><td align="left">Anti-Biofilm Materials Using Multifunctional MOFs</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/G062129/1'>EP/G062129/1</a> </b></td><td align="left">Innovative Gas Separations for Carbon Capture</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E041825/1'>EP/E041825/1</a> </b></td><td align="left">High-Resolution Solid-State NMR in St Andrews: Development and Applications</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F008384/1'>EP/F008384/1</a> </b></td><td align="left">Optimising nanoporous adsorbents for hydrogen purification: development of a chemistry/chemical engineering skills base</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F021925/1'>EP/F021925/1</a> </b></td><td align="left">Extending Ionothermal Synthesis</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C006526/1'>EP/C006526/1</a> </b></td><td align="left">The ionothermal synthesis of zeolites and zeolite analogues</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/T09705/01'>GR/T09705/01</a> </b></td><td align="left">Designing Porous Metal-Organic Frameworks to Store and Deliver Large Amounts of Nitric Oxide</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S31273/01'>GR/S31273/01</a> </b></td><td align="left">High Intensity Single Crystal X-Ray Diffraction Studies of Inorganic and Organic Materials</td><td align="left" width="5%">(C)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R46557/01'>GR/R46557/01</a> </b></td><td align="left">Modular porous solids from zeolite-like molecular building blocks</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M86460/01'>GR/M86460/01</a> </b></td><td align="left">FUNCTIONALISED POROUS INORGANIC-ORGANIC NETWORK POLYMERS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M33037/01'>GR/M33037/01</a> </b></td><td align="left">SYNTHESIS OF MICROPOROUS MATERIALS USING MACROCYCLE TEMPLATES</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M59822/01'>GR/M59822/01</a> </b></td><td align="left">VARIABLE TEMPERATURE MICROCRYSTAL DIFFRACTION OF MICROPOROUS MATERIALS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/M17747/01'>GR/M17747/01</a> </b></td><td align="left">MICROCRYSTAL &amp; POWDER DIFFRACTION OF MICROPOROUS MATERIALS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L40106/01'>GR/L40106/01</a> </b></td><td align="left">NEW MICROPORUS CATALYSTS FROM CRYSTAL ENGINEERING</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L66557/01'>GR/L66557/01</a> </b></td><td align="left">THE TARGETED DESIGN OF A NEW CLASS OF MICROPOROUS CATALYSTS</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L48058/01'>GR/L48058/01</a> </b></td><td align="left">TEMPLATING OF MICROPOROUS MATERIALS IN NON-AQUEOUS SOLVENTS</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/L32880/01'>GR/L32880/01</a> </b></td><td align="left">A NEW CLASS OF DENDRITIC POLYMER CATALYSTS</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

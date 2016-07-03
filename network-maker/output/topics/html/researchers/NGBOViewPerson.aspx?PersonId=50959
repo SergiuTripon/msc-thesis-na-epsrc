@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Person Search
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"> </script>
+	</head>
+	<body onload="javascript:decrypttxt(document.getElementById('txtLink'));" >
+		<form name="Form1" method="post" action="NGBOViewPerson.aspx?PersonId=50959" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MzkzOTAwMzIPZBYCAgQPZBYIAgEPZBYEAgEPD2QWBB4Hb25jbGljawWAAWphdmFzY3JpcHQ6ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ0dPV0dQSGVhZGVyMV90eHRTZWFyY2gnKS5zZWxlY3QoKTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLmZvY3VzKCk7HgpvbmtleXByZXNzBQxvPXRoaXMubmFtZTtkAgMPD2QWAh8BZWQCAw8PFgIeBFRleHQFE1Jlc2VhcmNoZXIgRGV0YWlscyBkZAIFD2QWEgIBDw8WAh8CBRJQcm9mZXNzb3IgUyBTYXpoaW5kZAIDDw8WAh8CBRZVbml2ZXJzaXR5IG9mIEJyaWdodG9uZGQCBQ8PFgIfAgUpU2NoIG9mIENvbXB1dGluZywgRW5naW5lZXJpbmcgJmFtcDsgTWF0aHNkZAIHDw8WAh8CBQwwMTI3MyA2NDI2NzdkZAIJDw8WAh8CBQwwMTI3MyA2NDIzMDlkZAINDw8WBB8CBUUxMTUwNDYxMTUwOTcxMjIxMDQxMDUxMTAwNjQwOTgxMTQxMDUxMDMxMDQxMTYxMTExMTAwNDYwOTcwOTkwNDYxMTcxMDceCFJlYWRPbmx5ZxYMHgtvbm1vdXNlb3ZlcmUeB29uZm9jdXMFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx4Kb25tb3VzZW91dAVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7HgZvbmJsdXIFXWphdmFzY3JpcHQ6dmFyIG8gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpO28uY2xhc3NOYW1lPSd0eHRMaW5rJzt3aW5kb3cuc3RhdHVzPScnOx8ABTxqYXZhc2NyaXB0OnNlbmR0byhkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndHh0TGluaycpLnZhbHVlKTsfAQVdamF2YXNjcmlwdDp2YXIgbyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0eHRMaW5rJyk7by5jbGFzc05hbWU9J3R4dExpbmsnO3dpbmRvdy5zdGF0dXM9Jyc7ZAIPDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCAR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIBZBYCZg9kFgICAQ9kFgRmD2QWAgIBDw8WAh8CBQpDb21idXN0aW9uZGQCAQ9kFgICAQ8PFgIfAgUORmx1aWQgRHluYW1pY3NkZAIRD2QWBAIBD2QWAmYPZBYCZg88KwALAQAPFggfCBYAHwkCAx8KAgEfCwIDZBYCZg9kFgYCAQ9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvTTAwMjYwOC8xJz5FUC9NMDAyNjA4LzE8L2E+IGRkAgEPDxYCHwIFgAFJbnZlc3RpZ2F0aW9uIG9mIHZvcnRleCByaW5nLWxpa2Ugc3RydWN0dXJlcyBpbiBpbnRlcm5hbCBjb21idXN0aW9uIGVuZ2luZXMsIHRha2luZyBpbnRvIGFjY291bnQgdGhlcm1hbCBhbmQgY29uZmluZW1lbnQgZWZmZWN0c2RkAgIPDxYCHwIFAyhQKWRkAgIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMjA1MjgvMSc+RVAvSzAyMDUyOC8xPC9hPiBkZAIBDw8WAh8CBURJbnZlc3RpZ2F0aW9uIG9mIE5vbi1TcGhlcmljYWwgRHJvcGxldHMgaW4gSGlnaC1QcmVzc3VyZSBGdWVsIFNwcmF5c2RkAgIPDxYCHwIFAyhDKWRkAgMPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0swMDU3NTgvMSc+RVAvSzAwNTc1OC8xPC9hPiBkZAIBDw8WAh8CBY4BRGV2ZWxvcG1lbnQgb2YgdGhlIGZ1bGwgTGFncmFuZ2lhbiBhcHByb2FjaCBmb3IgdGhlIGFuYWx5c2lzIG9mIHZvcnRleCByaW5nLWxpa2Ugc3RydWN0dXJlcyBpbiBkaXNwZXJzZSBtZWRpYTogYXBwbGljYXRpb24gdG8gZ2Fzb2xpbmUgZW5naW5lc2RkAgIPDxYCHwIFAyhQKWRkAgMPZBYCZg9kFgJmDzwrAAsBAA8WCB8IFgAfCQIKHwoCAR8LAgpkFgJmD2QWFAIBD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9KMDA2NzkzLzEnPkVQL0owMDY3OTMvMTwvYT4gZGQCAQ8PFgIfAgV8TW9sZWN1bGFyIGR5bmFtaWNzIHNpbXVsYXRpb24gb2YgY29tcGxleCBtb2xlY3VsZXMgdXNpbmcgcXVhbnR1bS1jaGVtaWNhbCBwb3RlbnRpYWxzOiBhcHBsaWNhdGlvbiB0byBtb2RlbGxpbmcgZnVlbCBkcm9wbGV0c2RkAgIPDxYCHwIFAyhQKWRkAgIPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0gwMDE2MDMvMSc+RVAvSDAwMTYwMy8xPC9hPiBkZAIBDw8WAh8CBYoBRGV2ZWxvcG1lbnQgb2YgYSBuZXcgcXVhbnRpdGF0aXZlIGtpbmV0aWMgbW9kZWwgZm9yIHRoZSBhbmFseXNpcyBvZiBoZWF0aW5nIGFuZCBldmFwb3JhdGlvbiBwcm9jZXNzZXMgaW4gY29tcGxleCBoeWRyb2NhcmJvbiBmdWVsIGRyb3BsZXRzZGQCAg8PFgIfAgUDKFApZGQCAw9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjA2OTg1NS8xJz5FUC9GMDY5ODU1LzE8L2E+IGRkAgEPDxYCHwIFPk1vZGVsbGluZyBvZiBicmVha3VwIHByb2Nlc3NlcyBpbiB0cmFuc2llbnQgRGllc2VsIGZ1ZWwgc3ByYXlzZGQCAg8PFgIfAgUDKFApZGQCBA9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRjA1ODI3Ni8xJz5FUC9GMDU4Mjc2LzE8L2E+IGRkAgEPDxYCHwIFXkEgRnVuZGFtZW50YWwgU3R1ZHkgb2YgdGhlIE5vdmVsIFBvcHBldCBWYWx2ZSAyLVN0cm9rZSBBdXRvLWlnbml0aW9uIENvbWJ1c3Rpb24gRW5naW5lICgyLUFDRSlkZAICDw8WAh8CBQMoQylkZAIFD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9FMDQ3OTEyLzEnPkVQL0UwNDc5MTIvMTwvYT4gZGQCAQ8PFgIfAgUkVm9ydGV4IHJpbmdzIGluIGdhc29saW5lIGZ1ZWwgc3ByYXlzZGQCAg8PFgIfAgUDKFApZGQCBg9kFgZmDw8WAh8CBUQ8YSBocmVmPSdOR0JPVmlld0dyYW50LmFzcHg/R3JhbnRSZWY9RVAvRTAyMjQzWC8xJz5FUC9FMDIyNDNYLzE8L2E+IGRkAgEPDxYCHwIFc0Ega2luZXRpYyBhbGdvcml0aG0gZm9yIG1vZGVsbGluZyB0aGUgZHJvcGxldCBldmFwb3JhdGlvbiBwcm9jZXNzIGluIHRoZSBwcmVzZW5jZSBvZiBhIGhlYXQgZmx1eCBhbmQgYmFja2dyb3VuZCBnYXNkZAICDw8WAh8CBQMoUClkZAIHD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1FUC9EMDAyMDQ0LzEnPkVQL0QwMDIwNDQvMTwvYT4gZGQCAQ8PFgIfAgUiQSBuZXcgbW9kZWwgZm9yIGRyb3BsZXQgY2x1c3RlcmluZ2RkAgIPDxYCHwIFAyhQKWRkAggPZBYGZg8PFgIfAgVEPGEgaHJlZj0nTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUVQL0M1MjcwODkvMSc+RVAvQzUyNzA4OS8xPC9hPiBkZAIBDw8WAh8CBVpBcHBsaWNhdGlvbiBvZiBhIGtpbmV0aWMgbnVtZXJpY2FsIGFsZ29yeXRobSB0byBtb2RlbGxpbmcgZGllc2VsIGZ1ZWwgZHJvcGxldHMgZXZhcG9yYXRpb25kZAICDw8WAh8CBQMoUClkZAIJD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9TOTgzNjgvMDEnPkdSL1M5ODM2OC8wMTwvYT4gZGQCAQ8PFgIfAgVoRmVhc2liaWxpdHkgc3R1ZHkgb2YgYSBjb21iaW5lZCBhc3ltcHRvdGljYWwvbnVtZXJpY2FsIGFwcHJvYWNoIHRvIG1vZGVsbGluZyBvZiBzcHJheSBpZ25pdGlvbiBwcm9jZXNzZXNkZAICDw8WAh8CBQMoUClkZAIKD2QWBmYPDxYCHwIFRDxhIGhyZWY9J05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9SNTE3MTEvMDEnPkdSL1I1MTcxMS8wMTwvYT4gZGQCAQ8PFgIfAgVsQSBzcGVjdHJhbCBtb2RlbCBvZiBpbmZyYXJlZCByYWRpYXRpdmUgcHJvcGVydGllcyBvZiBmdWVsIGRyb3BsZXRzIGFuZCBjb21idXN0aW9uIHByb2R1Y3RzIGluIGRpZXNlbCBlbmdpbmVzZGQCAg8PFgIfAgUDKFApZGQCEw9kFgRmD2QWAmYPZBYCAgEPDxYCHgdWaXNpYmxlZ2RkAgIPZBYCZg9kFgICAQ8PFgYeClJlcG9ydE5hbWUFClZpZXdQZXJzb24eDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzCFBlcnNvbklEHg5QYXJhbWV0ZXJWYWx1ZRUCOWh0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD01MDk1OQU1MDk1OWQWAmYPZBYCZg9kFgQCAw8QZGQWAWZkAgUPD2QWAh8BZWQCBw8PFgIfDGhkZGTgXUd1TrdMEuliV8oGnkJt8XLLvw==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALL4r2FDgLQvN++DAKT/OCVAwLKoMrZD5tD86GQvgyfEXfHlEC8K/WGUk7S" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div></td>
+				</tr>
+			</table>
+			<table style="width:960px; text-align:left;" id="tblMain" >
+				<tr>
+					<td style="width:10px;"></td>
+					<td>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tr valign="top">
+								<td class="Heading" valign="top"><span id="lblHeader">Researcher Details </span></td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</table>
+						<div id="pnlFound">
+	
+							<table cellspacing="0" cellpadding="0" width="100%" style=" text-align:left;" class="bordered"  >
+								<tr valign="top" >
+									<td class="DetailName" style="width:140px" >Name:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblName" class="DetailValueAlt">Professor S Sazhin</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"   style="width:140px" >Organisation:</td>
+									<td class="DetailValue" >
+										<span id="lblOrganisation" class="DetailValue">University of Brighton</span></td>
+								</tr>
+								<tr valign="top">
+									<td class="DetailName"  style="width:140px" >Department:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblDepartment" class="DetailValueAlt">Sch of Computing, Engineering &amp; Maths</span></td>
+								</tr>
+								<!-- tr valign="top" >
+									<td class="DetailName"    style="width:140px" >Telephone:</td>
+									<td class="DetailValue" >
+										<span id="lblTel" class="DetailValue">01273 642677</span></td>
+								</tr -->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" >Fax:</td>
+									<td class="DetailValueAlt" > 
+										<span id="lblFax" class="DetailValueAlt">01273 642309</span></td>
+								</tr-->
+								<!-- tr valign="top">
+									<td class="DetailName"  style="width:140px" ><label for="txtLink" id="lblEmail">Email:</label> </td>
+									<td class="DetailValue" style="padding-left:3px;" >
+										<input name="txtLink" type="text" value="115046115097122104105110064098114105103104116111110046097099046117107" readonly="readonly" id="txtLink" class="txtLink" onmouseover="" onfocus="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onmouseout="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onblur="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" onclick="javascript:sendto(document.getElementById('txtLink').value);" onkeypress="javascript:var o = document.getElementById('txtLink');o.className='txtLink';window.status='';" /></td>
+								</tr -->
+								<tr >
+									<td class="DetailName"   style="width:140px">Current EPSRC-Supported Research 
+                                        Topics:</td>
+									<td valign="top" style="background-color:#f7fafd; padding-left:3px;" >
+									<table class="notbordered" cellspacing="0" rules="all" border="1" id="dgResearchTopics" width="100%">
+		<tr class="GridAlternatingRow">
+			<td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label1">Combustion</span>
+                                                            </b></td><td><b>
+                                                                <span id="dgResearchTopics_ctl02_Label2">Fluid Dynamics</span>
+                                                            </b></td>
+		</tr>
+	</table>
+									</td>
+								</tr>
+							</table>
+                            <br />
+                			<table id="tblEPSRCSupport" cellspacing="0" cellpadding="0" width="100%" style=" text-align:center" class="bordered">
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Current EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgCurrentSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/M002608/1'>EP/M002608/1</a> </b></td><td align="left">Investigation of vortex ring-like structures in internal combustion engines, taking into account thermal and confinement effects</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K020528/1'>EP/K020528/1</a> </b></td><td align="left">Investigation of Non-Spherical Droplets in High-Pressure Fuel Sprays</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/K005758/1'>EP/K005758/1</a> </b></td><td align="left">Development of the full Lagrangian approach for the analysis of vortex ring-like structures in disperse media: application to gasoline engines</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="DetailTitle" style="text-align:left;">Previous EPSRC Support</td>
+		</tr>
+		<tr>
+			<td valign="top" style="padding:1px;"><table class="notbordered" cellspacing="0" cellpadding="1" rules="all" border="1" id="dgPreviousSupport" width="100%">
+				<tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/J006793/1'>EP/J006793/1</a> </b></td><td align="left">Molecular dynamics simulation of complex molecules using quantum-chemical potentials: application to modelling fuel droplets</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/H001603/1'>EP/H001603/1</a> </b></td><td align="left">Development of a new quantitative kinetic model for the analysis of heating and evaporation processes in complex hydrocarbon fuel droplets</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F069855/1'>EP/F069855/1</a> </b></td><td align="left">Modelling of breakup processes in transient Diesel fuel sprays</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/F058276/1'>EP/F058276/1</a> </b></td><td align="left">A Fundamental Study of the Novel Poppet Valve 2-Stroke Auto-ignition Combustion Engine (2-ACE)</td><td align="left" width="5%">(C)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E047912/1'>EP/E047912/1</a> </b></td><td align="left">Vortex rings in gasoline fuel sprays</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/E02243X/1'>EP/E02243X/1</a> </b></td><td align="left">A kinetic algorithm for modelling the droplet evaporation process in the presence of a heat flux and background gas</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/D002044/1'>EP/D002044/1</a> </b></td><td align="left">A new model for droplet clustering</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=EP/C527089/1'>EP/C527089/1</a> </b></td><td align="left">Application of a kinetic numerical algorythm to modelling diesel fuel droplets evaporation</td><td align="left" width="5%">(P)</td>
+				</tr><tr>
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/S98368/01'>GR/S98368/01</a> </b></td><td align="left">Feasibility study of a combined asymptotical/numerical approach to modelling of spray ignition processes</td><td align="left" width="5%">(P)</td>
+				</tr><tr class="GridAlternatingRow">
+					<td align="left" width="15%"><b><a href='NGBOViewGrant.aspx?GrantRef=GR/R51711/01'>GR/R51711/01</a> </b></td><td align="left">A spectral model of infrared radiative properties of fuel droplets and combustion products in diesel engines</td><td align="left" width="5%">(P)</td>
+				</tr>
+			</table>
+												</td>
+		</tr>
+	</table>
+	
+
+						<table id="tblExport" cellspacing="1" cellpadding="0" width="100%" border="0">
+		<tr>
+			<td style="text-align:right;">
+            						<span id="lblEPSRCSupportKey">Key: (P)<em>=Principal Investigator, </em>(C)<em>=Co-Investigator, </em>(R)<em>=Researcher Co-Investigator</em></span> 
+						        </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">
+							        
+						        </td>
+		</tr>
+	</table>
+	
+						
+						
+</div>
+						
+
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
