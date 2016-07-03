@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	IMPROVING OF PHONETIC DISCRIMINATION OF HIDDEN MARKOV MODEL BASED SPEECH RECOGNISERS
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fJ10204%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvSjEwMjA0LzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVlPHN0cm9uZz5JTVBST1ZJTkcgT0YgUEhPTkVUSUMgRElTQ1JJTUlOQVRJT04gT0YgSElEREVOIE1BUktPViBNT0RFTCBCQVNFRCBTUEVFQ0ggUkVDT0dOSVNFUlM8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUQ8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTE3NzEyJz5Zb3VuZywgUHJvZmVzc29yIFNKPC9hPh4JQmFja0NvbG9yChseBF8hU0ICCGRkAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNHPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0xNzQ3Myc+V29vZGxhbmQsIFByb2Zlc3NvciBQQzwvYT4AAGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAULRW5naW5lZXJpbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdVbml2ZXJzaXR5IG9mIENhbWJyaWRnZWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFG1N0YW5kYXJkIFJlc2VhcmNoIChQcmUtRkVDKWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDAxIERlY2VtYmVyIDE5OTJkZAIDD2QWAgIBDw8WAh8EBQszMSBNYXkgMTk5NmRkAgUPZBYCAgEPDxYEHwQFBzE3NCwyMjceB1Rvb2xUaXAFCjE3NCwyMjcuMDBkZAIKD2QWAgIBD2QWAgIBDxYCHwcCARYCAgEPZBYCZg8VAhpIdW1hbiBDb21tdW5pY2F0aW9uIGluIElDVABkAgsPZBYCAgEPZBYCAgEPFgIfAmhkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFnxJUbyBpbXByb3ZlIHRoZSBwaG9uZXRpYyBkaXNjcmltaW5hdGlvbiBvZiBITU0tYmFzZWQgc3lzdGVtcyBieTogIHRoZSB1c2Ugb2YgaGlnaC1hY2N1cmFjeSBzdWItcGhvbmUgbW9kZWxzICAgIGlucHV0IHRyYW5zZm9ybWF0aW9ucyBhbmQgZGlzY3JpbWluYXRpdmUgdHJhaW5pbmcgIGFuZCB0byBkZW1vbnN0cmF0ZSB0aGVpciBlZmZlY3RpdmVuZXNzIGluIGEgd29ya2luZyBsYWJvcmF0b3J5IHN5c3RlbS4gIFByb2dyZXNzOlRoZSBmaXJzdCBwaGFzZSBvZiB0aGUgd29yayBpbiB0aGlzIHByb2plY3QgYWRkcmVzc2VkIHRoZSBpc3N1ZSBvZiBob3cgdG8gYnVpbGQgYWNjdXJhdGUgc3ViLXBob25lIG1vZGVscy4gVGhlIGFwcHJvYWNoIGhhcyBiZWVuIHRvIHN0YXJ0IGZyb20gY29udmVudGlvbmFsIGNvbnRleHQtZGVwZW5kZW50IDMgc3RhdGUgSGlkZGVuIE1hcmtvdiBNb2RlbHMgKEhNTXMpIGFuZCB0aGVuIHRvIHBvb2wgdGhlIHN0YXRlcyB0byBmb3JtIHN1Yi1waG9uZXMuIEluaXRpYWxseSwgd2UgaW52ZXN0aWdhdGVkIGRhdGEtZHJpdmVuIGNsdXN0ZXJpbmcgaW4gd2hpY2ggc3RhdGVzIHdlcmUgcG9vbGVkIHRvIGZvcm0gYSBzdWItcGhvbmUgYmFzZWQgZW50aXJlbHkgb24gYWNvdXN0aWMgc2ltaWxhcml0eSBbMV0uIE1vcmUgcmVjZW50bHksIHdlIGhhdmUgZGV2ZWxvcGVkIGEgbWV0aG9kIGJhc2VkIG9uIHBob25ldGljIGRlY2lzaW9uIHRyZWVzIFsyXS4gQm90aCBtZXRob2RzIHdvcmsgd2VsbCBidXQgdGhlIGRlY2lzaW9uIHRyZWUgYXBwcm9hY2ggaGFzIHRoZSBhZHZhbnRhZ2UgdGhhdCB3aWRlciBwaG9uZXRpYyBjb250ZXh0cyBjYW4gYmUgaW5jbHVkZWQgYW5kIG1vZGVscyBjYW4gYmUgYnVpbHQgZm9yIGNvbnRleHRzIHRoYXQgaGF2ZSBub3QgYmVlbiBzZWVuIGluIHRoZSB0cmFpbmluZyBkYXRhLk1vcmUgcmVjZW50bHkgdGhlIHdvcmsgaGFzIGZvY3VzZWQgb24gdGhlIHByb2JsZW0gb2YgYXBwbHlpbmcgdHJhbnNmb3JtYXRpb25zIGFuZCBkaXNjcmltaW5hdGl2ZSB0cmFpbmluZyB0byB2ZXJ5IGxhcmdlIHZvY2FidWxhcnkgc3lzdGVtcy4gVG8gZmFjaWxpdGF0ZSB0aGlzLCB3ZSBoYXZlIGRldmVsb3BlZCBhIG1ldGhvZCBvZiBnZW5lcmF0aW5nIGxhdHRpY2VzIGZyb20gYSBzdGFuZGFyZCBITU0gcmVjb2duaXNlci4gVGhlc2UgY2FuIHRoZW4gYmUgdXNlZCB0byBydW4gcmVjb2duaXRpb24gZXhwZXJpbWVudHMgcXVpY2tseSBieSByZXNjb3JpbmcgcmF0aGVyIHRoYW4gcmVwZWF0aW5nIGEgY29tcHV0YXRpb25hbGx5IGV4cGVuc2l2ZSBmdWxsIHNlYXJjaC4gVGhleSBjYW4gYWxzbyBiZSB1c2VkIHRvIGdlbmVyYXRlIGFsdGVybmF0aXZlIHN0YXRlIGFsaWdubWVudHMgZm9yIGEgZGlzY3JpbWluYXRpdmUgdHJhaW5pbmcgc2NoZW1lLldoZW4gdGhlIHByb2plY3Qgc3RhcnRlZCwgb3VyIGZvY3VzIHRhc2sgd2FzIG1lZGl1bSAoMTAwMCB3b3JkKSB2b2NhYnVsYXJ5IHJlY29nbml0aW9uIGFzIGV4ZW1wbGlmaWVkIGJ5IHRoZSBBUlBBIFJlc291cmNlIE1hbmFnZW1lbnQgVGFzay4gTW9yZSByZWNlbnRseSwgd2UgaGF2ZSB0cmFuc2ZlcnJlZCBvdXIgYXR0ZW50aW9uIHRvIGxhcmdlIHZvY2FidWxhcnkgZGljdGF0aW9uLiBXb3JrIGZyb20gdGhpcyBwcm9qZWN0IGFuZCBFUFNSQyBQcm9qZWN0IEdSL0syNTM4MCBoYXZlIGNvbnRyaWJ1dGVkIHRvIHRoZSBidWlsZGluZyBvZiB0aGUgSFRLIExhcmdlIFZvY2FidWxhcnkgRGljdGF0aW9uIFN5c3RlbS4gVGhpcyBzeXN0ZW0gcmV0dXJuZWQgdGhlIGJlc3QgcGVyZm9ybWFuY2Ugb2YgYW55IHN5c3RlbSBpbiB0aGUgQVJQQSAxOTk0IENTUiBFdmFsdWF0aW9uWzNdLiAgWzFdIFlvdW5nIFMuSi4sIFdvb2RsYW5kIFAuQy4sIFN0YXRlIENsdXN0ZXJpbmcgaW4gSE1NLWJhc2VkIENvbnRpbnVvdXMgU3BlZWNoIFJlY29nbml0aW9uLiBDb21wdXRlciBTcGVlY2ggYW5kIExhbmd1YWdlLCBWb2wgOCwgcHAuMzY5LTM4NCwgMTk5NC4gIFsyXSBZb3VuZyBTLkouLCBPZGVsbCBKLkouLCBXb29kbGFuZCBQLkMuLCBUcmVlLUJhc2VkIFN0YXRlIFR5aW5nIGZvciBIaWdoIEFjY3VyYWN5IEFjb3VzdGljIE1vZGVsbGluZy4gUHJvYy4gSHVtYW4gTGFuZ3VhZ2UgVGVjaG5vbG9neSBXb3Jrc2hvcCwgTW9yZ2FuIEthdWZtYW5uIFB1Ymxpc2hlcnMgSW5jLCBNYXJjaCAxOTk0LiAgWzNdIFdvb2RsYW5kIFAuQy4sIExlZ2dldHRlciBDLkouLCBPZGVsbCBKLiwgVmFsdGNoZXYgVi4sIFlvdW5nIFMuSi4gVGhlIDE5OTQgSFRLIExhcmdlIFZvY2FidWxhcnkgU3BlZWNoIFJlY29nbml0aW9uIFN5c3RlbS4gUHJvYyBJQ0FTU1AsIERldHJvaXQsIDE5OTUuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8HAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5jYW0uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0oxMDIwNC8wMQxHUi9KMTAyMDQvMDFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZJbCMGnTCCA/xxuF5g/DETbfxicA" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKw0qjhDALQvN++DAKT/OCVA/FEuNNvpCxha/jAI8qHo4kHSSs3" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/J10204/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>IMPROVING OF PHONETIC DISCRIMINATION OF HIDDEN MARKOV MODEL BASED SPEECH RECOGNISERS</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=17712'>Young, Professor SJ</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                                    <table width='100%' class="notbordered" cellspacing='0' cellpadding='0'> 
+                                
+                                  <tr>
+                                    <td style="width:33%" class="DetailValue"> <a href='NGBOViewPerson.aspx?PersonId=17473'>Woodland, Professor PC</a></td>
+                                    <td style="width:33%" class="DetailValue"> </td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Cambridge</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 December 1992</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">31 May 1996</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="174,227.00" class="DetailValue">174,227</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Human Communication in ICT</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">To improve the phonetic discrimination of HMM-based systems by:  the use of high-accuracy sub-phone models    input transformations and discriminative training  and to demonstrate their effectiveness in a working laboratory system.  Progress:The first phase of the work in this project addressed the issue of how to build accurate sub-phone models. The approach has been to start from conventional context-dependent 3 state Hidden Markov Models (HMMs) and then to pool the states to form sub-phones. Initially, we investigated data-driven clustering in which states were pooled to form a sub-phone based entirely on acoustic similarity [1]. More recently, we have developed a method based on phonetic decision trees [2]. Both methods work well but the decision tree approach has the advantage that wider phonetic contexts can be included and models can be built for contexts that have not been seen in the training data.More recently the work has focused on the problem of applying transformations and discriminative training to very large vocabulary systems. To facilitate this, we have developed a method of generating lattices from a standard HMM recogniser. These can then be used to run recognition experiments quickly by rescoring rather than repeating a computationally expensive full search. They can also be used to generate alternative state alignments for a discriminative training scheme.When the project started, our focus task was medium (1000 word) vocabulary recognition as exemplified by the ARPA Resource Management Task. More recently, we have transferred our attention to large vocabulary dictation. Work from this project and EPSRC Project GR/K25380 have contributed to the building of the HTK Large Vocabulary Dictation System. This system returned the best performance of any system in the ARPA 1994 CSR Evaluation[3].  [1] Young S.J., Woodland P.C., State Clustering in HMM-based Continuous Speech Recognition. Computer Speech and Language, Vol 8, pp.369-384, 1994.  [2] Young S.J., Odell J.J., Woodland P.C., Tree-Based State Tying for High Accuracy Acoustic Modelling. Proc. Human Language Technology Workshop, Morgan Kaufmann Publishers Inc, March 1994.  [3] Woodland P.C., Leggetter C.J., Odell J., Valtchev V., Young S.J. The 1994 HTK Large Vocabulary Speech Recognition System. Proc ICASSP, Detroit, 1995.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.cam.ac.uk                                                                                '>http://www.cam.ac.uk                                                                                </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

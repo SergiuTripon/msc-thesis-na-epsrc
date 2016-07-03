@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	A FULL NATURAL-LANGUAGE ANNEALING PARSER
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fJ06108%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvSjA2MTA4LzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU5PHN0cm9uZz5BIEZVTEwgTkFUVVJBTC1MQU5HVUFHRSBBTk5FQUxJTkcgUEFSU0VSPC9zdHJvbmc+ZGQCAg9kFgICAQ9kFgICAQ8PFgYfBAVFPGEgaHJlZj0nTkdCT1ZpZXdQZXJzb24uYXNweD9QZXJzb25JZD0yMTMxOCc+U2FtcHNvbiwgUHJvZmVzc29yIEc8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUiU2NoIG9mIEVuZ2luZWVyaW5nIGFuZCBJbmZvcm1hdGljc2RkAgcPZBYCAgEPZBYCAgEPDxYCHwQFFFVuaXZlcnNpdHkgb2YgU3Vzc2V4ZGQCCA9kFgICAQ9kFgICAQ8PFgIfBAUbU3RhbmRhcmQgUmVzZWFyY2ggKFByZS1GRUMpZGQCCQ9kFgYCAQ9kFgICAQ8PFgIfBAUQMDEgRGVjZW1iZXIgMTk5MmRkAgMPZBYCAgEPDxYCHwQFEDI5IEZlYnJ1YXJ5IDE5OTZkZAIFD2QWAgIBDw8WBB8EBQcyMTQsMzA1HgdUb29sVGlwBQoyMTQsMzA1LjAwZGQCCg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VAhpIdW1hbiBDb21tdW5pY2F0aW9uIGluIElDVABkAgsPZBYCAgEPZBYCAgEPFgIfAmhkAgwPZBYCAgEPZBYCAgEPFgIfAmhkAg0PZBYCAgEPZBYEAgEPPCsACwBkAgIPFgIfBAUGJm5ic3A7ZAIPD2QWAmYPZBYCAgEPDxYCHwQFjRhUaGlzIHByb2plY3QgaXMgaW1wbGVtZW50aW5nIGEgc3lzdGVtLCAgQVBSSUwzICwgd2hpY2ggdXNlcyB0aGUgc3RvY2hhc3RpYyBvcHRpbWlzYXRpb24gdGVjaG5pcXVlIG9mIHNpbXVsYXRlZCBhbm5lYWxpbmcgdG8gZGVsaXZlciBncmFtbWF0aWNhbCBhbmFseXNlcyAocGFyc2VzKSBvZiByZWFsLWxpZmUgRW5nbGlzaCB0ZXh0LiBUaGUgc3lzdGVtIGlzIGRlc2lnbmVkIHRvIGJlIHN1ZmZpY2llbnRseSByb2J1c3QsIHNlbGYtY29udGFpbmVkLCBhbmQgZnVsbHkgZG9jdW1lbnRlZCB0byBwZXJtaXQgYXNzZXNzbWVudCBhbmQgZnVydGhlciBkZXZlbG9wbWVudCBvZiB0aGUgYW5uZWFsaW5nLXBhcnNlciB0ZWNobmlxdWUgYXQgb3RoZXIgc2l0ZXMuUHJvZ3Jlc3M6VGhlIEFQUklMMyBwYXJzaW5nIHN5c3RlbSBoYXMgdGhlIGZvbGxvd2luZyBjaGFyYWN0ZXJpc3RpY3M6ICBBUFJJTDMgYWNjZXB0cyByYXcgRW5nbGlzaC1sYW5ndWFnZSBpbnB1dDogaXQgZG9lcyB0aGUgd2hvbGUgdGFzayBvZiBtb3ZpbmcgZnJvbSBvcmRpbmFyeSBFbmdsaXNoIHRleHQgdG8gYSBncmFtbWF0aWNhbCBhbmFseXNpcywgdXNpbmcgYSBjb21wcmVoZW5zaXZlIGVsZWN0cm9uaWMgZGljdGlvbmFyeS4gIEFsdGhvdWdoIEFQUklMMyBpcyBjdXJyZW50bHkgZ2VhcmVkIHRvIHdyaXR0ZW4tRW5nbGlzaCBpbnB1dHMsIGl0cyB0ZXh0LXNlZ21lbnRhdGlvbiBhbmQgcGFyc2luZyByb3V0aW5lcyBhcmUgYmFzZWQgb24gdGhlIHdvcmQtaHlwb3RoZXNpcyBsYXR0aWNlIGNvbmNlcHQgdGhhdCBpcyBjZW50cmFsIHRvIGF1dG9tYXRpYyBzcGVlY2ggcmVjb2duaXRpb24sIHdoaWNoIHNob3VsZCBtYWtlIGl0IHBvc3NpYmxlIHRvIGFkYXB0IHRoZSBzeXN0ZW0gdG8gc3BlZWNoIGlucHV0cyB3aGVuIGFkZXF1YXRlIGRhdGEgYmVjb21lIGF2YWlsYWJsZS4gIFRoZSBvdXRwdXQgYW5hbHlzZXMgcHJvZHVjZWQgYnkgQVBSSUwzIGFyZSBleHByZXNzZWQgaW4gdGVybXMgb2YgYSBwcmVjaXNlbHktZGVmaW5lZCBwdWJsaXNoZWQgc3RhbmRhcmQgKHRoZSBTVVNBTk5FIGFuYWx5dGljIHNjaGVtZSwgc2VlIEcuUi4gU2FtcHNvbiwgRW5nbGlzaCBmb3IgdGhlIENvbXB1dGVyLCBDbGFyZW5kb24gUHJlc3MsIE94Zm9yZCwgMTk5NSkgd2hpY2ggaXMgYmVpbmcgZHJhd24gb24gYnkgdGhlIEVVLXNwb25zb3JlZCBFQUdMRVMgc3RhbmRhcmQtc2V0dGluZyBpbml0aWF0aXZlLiAgICBUaGUgc3RhdGlzdGljYWwgbW9kZWwgb2YgRW5nbGlzaCB1c2VkIGJ5IHRoZSBwYXJzZXIgdG8gZXZhbHVhdGUgY2FuZGlkYXRlIGFuYWx5c2VzIGlzIGdlbmVyYXRlZCBhdXRvbWF0aWNhbGx5LiAgVGhlIHdvcmsgb2YgZGV2ZWxvcGluZyBBUFJJTDMgaXMgYmVpbmcgZXhlY3V0ZWQgaW4gY29uZm9ybWl0eSB3aXRoIHRoZSBwcmluY2lwbGVzIG9mIG1vZGVybiBzb2Z0d2FyZSBlbmdpbmVlcmluZyBwcmFjdGljZSwgaW4gb3JkZXIgdG8gYWNoaWV2ZSBhIHN5c3RlbSB0aGF0IGlzIHJvYnVzdCwgbWFpbnRhaW5hYmxlLCBhbmQgdXNhYmxlIGJ5IHJlc2VhcmNoZXJzIG90aGVyIHRoYW4gaXRzIGRldmVsb3BlcnMuVGhlIHN0YXRlIG9mIHRoZSBwcm9qZWN0IGF0IEZlYnJ1YXJ5IDE5OTUgaXMgYXMgZm9sbG93czogICAgQW1vbmcgdGhlIHZhcmlvdXMgY2F0ZWdvcmllcyBvZiBmb3JtYWwgZG9jdW1lbnRhdGlvbiwgdGhlIFJlcXVpcmVtZW50cyBEZWZpbml0aW9uLCBSZXF1aXJlbWVudHMgU3BlY2lmaWNhdGlvbiwgU29mdHdhcmUgU3BlY2lmaWNhdGlvbiwgUXVhbGl0eSBQbGFuLCBhbmQgQ29kaW5nIEd1aWRlbGluZXMgYXJlIGNvbXBsZXRlLiAgICBBbiBlbGVjdHJvbmljIGRpY3Rpb25hcnkgaW5jb3Jwb3JhdGluZyB0aGUgY2F0ZWdvcmllcyBvZiBzdGF0aXN0aWNhbCBhbmQgb3RoZXIgaW5mb3JtYXRpb24gbmVlZGVkIGJ5IHRoZSBBUFJJTDMgc3lzdGVtIGhhcyBiZWVuIGRldmVsb3BlZCBmcm9tIFJvZ2VyIE1pdHRvbnMgY29tcHV0ZXItdXNhYmxlIHZlcnNpb24gb2YgdGhlT3hmb3JkIEFkdmFuY2VkIExlYXJuZXJzIERpY3Rpb25hcnkuICBTb2Z0d2FyZSB0byBkZXJpdmUgYSBzdGF0aXN0aWNhbCBsYW5ndWFnZSBtb2RlbCBmcm9tIGFuIGFuYWx5c2VkIGNvcnB1cyBoYXMgYmVlbiBkZXZlbG9wZWQsIGFuZCBhIGRlbGl2ZXJhYmxlIHByb2JhYmlsaXN0aWMgbGFuZ3VhZ2UgbW9kZWwgZm9yIEVuZ2xpc2ggaGFzIGJlZW4gY29tcGxldGVkIHVzaW5nIHRoaXMgc29mdHdhcmUgKHdoaWNoIGlzIG5vdCBpdHNlbGYgYSBwcm9qZWN0IGRlbGl2ZXJhYmxlKS4gIE1vc3QgbW9kdWxlcyBvZiB0aGUgcGFyc2VyIHNvZnR3YXJlIGhhdmUgYmVlbiBjb2RlZCAodG8gZGF0ZSAxMiwwMDAgbGluZXMgb2YgZGVsaXZlcmFibGUgY29kZSBoYXZlIGJlZW4gd3JpdHRlbiBhbmQgdGVzdGVkKS5CeSBsYXRlIE1hcmNoIHdlIGV4cGVjdCB0byByZWFjaCB0aGUgcG9pbnQgb2YgdGVzdGluZyB0aGUgcGFyc2VyIG92ZXIgbWFudWFsbHkgdGFnZ2VkIGlucHV0cy4gSW50ZWdyYXRpb24gb2YgdGhlIGZyb250IGVuZCwgd2hlcmVieSB0aGUgcGFyc2VyIHNlbGVjdHMgd29yZHRhZ3MgZnJvbSBhIHdvcmRoeXBvdGhlc2lzIGxhdHRpY2UgY3JlYXRlZCBieSBhdXRvbWF0aWMgZGljdGlvbmFyeSBsb29rdXAsIHdpbGwgb2NjdXIgaW4gdGhlIGZvbGxvd2luZyBtb250aHMuVGhlIGRldGFpbCBwcm9ncmVzcyBvZiB0aGUgcHJvamVjdCBpcyBkb2N1bWVudGVkIGluIGhhbGYteWVhcmx5IHJlcG9ydHMgc3VibWl0dGVkIHRvIHRoZSBqb2ludCBzcG9uc29ycy4gVGhlIHJlc2VhcmNoIHByb2dyYW1tZSBvZiB3aGljaCB0aGlzIHByb2plY3QgZm9ybXMgcGFydCBpcyBkZXNjcmliZWQgaW4gYSBib29rIHByb3Zpc2lvbmFsbHkgZW50aXRsZWQgRXZvbHV0aW9uYXJ5IExhbmd1YWdlIFVuZGVyc3RhbmRpbmcsIHdoaWNoIHdhcyBjb21wbGV0ZWQgYnkgdGhlIFByaW5jaXBhbCBJbnZlc3RpZ2F0b3IgaW4gRGVjZW1iZXIgMTk5NCBhbmQgaXMgdG8gYmUgcHVibGlzaGVkIGJ5IE1JVCBQcmVzcy4gVGhlIHByb2plY3QgaXMgYWxzbyBnZW5lcmF0aW5nIHBhcGVycyBpbiBhY2FkZW1pYyBqb3VybmFscyBhbmQgY29sbGVjdGlvbnMuZGQCEQ9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAITD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhUPZBYCZg9kFgICAQ8WAh8IAgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5zdXNzZXguYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5zdXNzZXguYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0owNjEwOC8wMQxHUi9KMDYxMDgvMDFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZFRvJ7C6HrokulXxd1DIF81hxJ00" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwL57I3VAwLQvN++DAKT/OCVA+43o/pvSCWHctRzuSAOweTlSq2N" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/J06108/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>A FULL NATURAL-LANGUAGE ANNEALING PARSER</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=21318'>Sampson, Professor G</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering and Informatics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Sussex</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">01 December 1992</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">29 February 1996</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="214,305.00" class="DetailValue">214,305</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+                                    <table width="100%" class="bordered" cellspacing="0" cellpadding="0" summary="topic classifications"> 
+                                
+                                  <tr>
+                                    <td style="width:50%" class="DetailValue"> Human Communication in ICT</td>
+                                    <td class="DetailValue"> </td>
+                                  </tr>
+                                
+                                    </table>
+                                
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">This project is implementing a system,  APRIL3 , which uses the stochastic optimisation technique of simulated annealing to deliver grammatical analyses (parses) of real-life English text. The system is designed to be sufficiently robust, self-contained, and fully documented to permit assessment and further development of the annealing-parser technique at other sites.Progress:The APRIL3 parsing system has the following characteristics:  APRIL3 accepts raw English-language input: it does the whole task of moving from ordinary English text to a grammatical analysis, using a comprehensive electronic dictionary.  Although APRIL3 is currently geared to written-English inputs, its text-segmentation and parsing routines are based on the word-hypothesis lattice concept that is central to automatic speech recognition, which should make it possible to adapt the system to speech inputs when adequate data become available.  The output analyses produced by APRIL3 are expressed in terms of a precisely-defined published standard (the SUSANNE analytic scheme, see G.R. Sampson, English for the Computer, Clarendon Press, Oxford, 1995) which is being drawn on by the EU-sponsored EAGLES standard-setting initiative.    The statistical model of English used by the parser to evaluate candidate analyses is generated automatically.  The work of developing APRIL3 is being executed in conformity with the principles of modern software engineering practice, in order to achieve a system that is robust, maintainable, and usable by researchers other than its developers.The state of the project at February 1995 is as follows:    Among the various categories of formal documentation, the Requirements Definition, Requirements Specification, Software Specification, Quality Plan, and Coding Guidelines are complete.    An electronic dictionary incorporating the categories of statistical and other information needed by the APRIL3 system has been developed from Roger Mittons computer-usable version of theOxford Advanced Learners Dictionary.  Software to derive a statistical language model from an analysed corpus has been developed, and a deliverable probabilistic language model for English has been completed using this software (which is not itself a project deliverable).  Most modules of the parser software have been coded (to date 12,000 lines of deliverable code have been written and tested).By late March we expect to reach the point of testing the parser over manually tagged inputs. Integration of the front end, whereby the parser selects wordtags from a wordhypothesis lattice created by automatic dictionary lookup, will occur in the following months.The detail progress of the project is documented in half-yearly reports submitted to the joint sponsors. The research programme of which this project forms part is described in a book provisionally entitled Evolutionary Language Understanding, which was completed by the Principal Investigator in December 1994 and is to be published by MIT Press. The project is also generating papers in academic journals and collections.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.sussex.ac.uk                                                                             '>http://www.sussex.ac.uk                                                                             </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

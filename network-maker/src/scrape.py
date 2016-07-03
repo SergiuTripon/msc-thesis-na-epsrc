@@ -546,11 +546,8 @@ class ExtractPastTopics:
             print('> Extraction of detailed grants started')
 
             # variable to hold grant urls
-            grant_urls = open(r'../output/past-topics/urls/grants.txt', "r").readlines()
-
-            # strip http and new line and replace slashes
-            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/').strip('\n').replace('/', '%2F')
-                          for grant_url in grant_urls]
+            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/')
+                          for grant_url in open(r'../output/past-topics/urls/grants.txt', "r").read().splitlines()]
 
             # variable to hold detailed grants list
             detailed_grants = OrderedDict()
@@ -562,7 +559,7 @@ class ExtractPastTopics:
             for grant_url in grant_urls:
 
                 # variable to hold page
-                page = open(r'../output/past-topics/html/grants/{}'.format(grant_url), "r").read()
+                page = open(r'../output/past-topics/html/grants/{}'.format(grant_url.replace('/', '%2F')), "r").read()
                 # variable to hold tree
                 tree = html.fromstring(page)
 
@@ -576,7 +573,7 @@ class ExtractPastTopics:
                 clean_topics = [topic.strip() for topic in topics if topic.strip()]
 
                 # add detailed grant to detailed grants dictionary
-                detailed_grants[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = clean_topics
+                detailed_grants[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = clean_topics
 
                 # print progress
                 print('> Extraction of detailed grants in progress'

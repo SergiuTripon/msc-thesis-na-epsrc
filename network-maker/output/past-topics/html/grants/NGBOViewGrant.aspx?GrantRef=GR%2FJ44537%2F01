@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	UNDERSTANDING AND USING NOISY SYNAPTIC WEIGHTS IN NEURAL LEARNING.
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fJ44537%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvSjQ0NTM3LzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAVTPHN0cm9uZz5VTkRFUlNUQU5ESU5HIEFORCBVU0lORyBOT0lTWSBTWU5BUFRJQyBXRUlHSFRTIElOIE5FVVJBTCBMRUFSTklORy48L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBUU8YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTExMzY5Jz5NdXJyYXksIFByb2Zlc3NvciBBRjwvYT4eCUJhY2tDb2xvcgobHgRfIVNCAghkZAIDD2QWAgIBD2QWAgIBDxYCHwJoZAIED2QWAgIBD2QWAgIBDxYCHwJoZAIFD2QWAgIBD2QWAgIBDxYCHwJoZAIGD2QWAgIBD2QWAgIBDw8WAh8EBRJTY2ggb2YgRW5naW5lZXJpbmdkZAIHD2QWAgIBD2QWAgIBDw8WAh8EBRdVbml2ZXJzaXR5IG9mIEVkaW5idXJnaGRkAggPZBYCAgEPZBYCAgEPDxYCHwQFG1N0YW5kYXJkIFJlc2VhcmNoIChQcmUtRkVDKWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFDDA2IEp1bmUgMTk5NGRkAgMPZBYCAgEPDxYCHwQFDzA1IE9jdG9iZXIgMTk5N2RkAgUPZBYCAgEPDxYEHwQFBzExMSw0NDkeB1Rvb2xUaXAFCjExMSw0NDkuMDBkZAIKD2QWAgIBD2QWAgIBDxYCHwJoZAILD2QWAgIBD2QWAgIBDxYCHwJoZAIMD2QWAgIBD2QWAgIBDxYCHwJoZAIND2QWAgIBD2QWBAIBDzwrAAsAZAICDxYCHwQFBiZuYnNwO2QCDw9kFgJmD2QWAgIBDw8WAh8EBdMNMS4gVG8gYnVpbGQgYSBtYXRoZW1hdGljYWwgbW9kZWwgb2Ygc3luYXB0aWMgd2VpZ2h0IG5vaXNlLjIuIFRvIGFuYWx5c2UgdmFyaW91cyBub2lzZSBkaXN0cmlidXRpb25zLjMuIFRvIHN0dWR5IHRoZSBtZWFzdXJlcyBvZiB3ZWlnaHQgcmVsZXZhbmNlLCBlLmcuIHdlaWdodCBkaXN0cmlidXRpb25zLjQuIFRvIGRldGVybWluZSB0aGUgcmFuZ2Ugb2YgYXBwbGljYXRpb25zIHdoZXJlIG5vaXNlIHdpbGwgYmUgYmVuZWZpY2lhbC4gUHJvZ3Jlc3M6SW5jb3Jwb3JhdGluZyB3ZWlnaHQgbm9pc2UgaW50byBsZWFybmluZyBzY2hlbWVzIGlzIGJlY29taW5nIGEgcmVjb2duaXNlZCB0ZWNobmlxdWUgZm9yIGltcHJvdmluZyB0aGUgcGVyZm9ybWFuY2Ugb2YgTXVsdGktTGF5ZXJlZCBQZXJjZXB0cm9ucy4gQmFzZWQgb24gb3VyIHByZXBhcmF0b3J5IHdvcmssIHRoYXQgdW5kZXJwaW5zIHRoaXMgcHJvamVjdCwgc2V2ZXJhbCBncm91cHMgYXJlIHVzaW5nIHdlaWdodCBub2lzZSBmb3IgbGVhcm5pbmcgZW5oYW5jZW1lbnQgaW4gYSB2YXJpZXR5IG9mIGFwcGxpY2F0aW9ucyBhbmQgbmV1cmFsIGFyY2hpdGVjdHVyZXMuICBTaW5jZSB0aGUgc3RhcnQgb2YgdGhlIHByZXNlbnQgc2VjdGlvbiBvZiBmdW5kZWQgd29yayBpbiBPY3RvYmVyIDE5OTQsIHdlIGhhdmUgcHJvZ3Jlc3NlZCBpbiBvdXIgc3R1ZHkgb2YgdGhlIHVuZGVybHlpbmcgbWVjaGFuaXNtcyBvZiB0aGUgbm9pc2UgYnkgYnVpbGRpbmcgYSBtYXRoZW1hdGljYWwgbW9kZWwuIEluIGFkZGl0aW9uLCB3ZSBoYXZlIGV4YW1pbmVkIGV4aXN0aW5nIHRlY2huaXF1ZXMgZm9yIG1lYXN1cmluZyB0aGUgaW1wb3J0YW5jZSBvZiBpbmRpdmlkdWFsIHdlaWdodHMgdG8gaW52ZXN0aWdhdGUgaG93IHRoZSBub2lzZSBpbmZsdWVuY2VzIHRoZSBuZXR3b3JrIHN0b3JhZ2UgbWVjaGFuaXNtcy4gSW4gb3VyIHdvcmsgd2UgaGF2ZSBzaG93biB0aGF0IHRoZSBub2lzZSBhcHByb3hpbWF0ZXMgYSBzaW1wbGUgZm9ybSBvZiByZWd1bGFyaXNlciB3aGljaCBnaXZlcyBhIG5ldHdvcmsgc29sdXRpb24gdGhhdCBpcyBzbW9vdGggdG8gd2VpZ2h0IHBlcnR1cmJhdGlvbnMuIFByZXZpb3VzbHkgd2UgaGF2ZSBzaG93biB0aGF0IHN1Y2ggYSBuZXR3b3JrIHByb3BlcnR5IGdpdmVzIGFuIGluY3JlYXNlZCB0b2xlcmFuY2UgdG8gd2VpZ2h0IGZhdWx0cyBhbmQgaW4gYWRkaXRpb24sIGJ5IGNvbnN0cmFpbmluZyB0aGUgbmV0d29yayBzb2x1dGlvbiwgY2FuIGdpdmUgZ2VuZXJhbGlzYXRpb24gZW5oYW5jZW1lbnRzLiBEZXRhaWxlZCBhbmFseXNpcyBvZiBvdXIgbm9pc2UgbW9kZWwgaXMgcHJvdmlkaW5nIGEgY2xlYXJlciB2aWV3IG9mIHRoZSBtZWNoYW5pc21zIGFuZCB3aWxsIGRldGVybWluZSB3aGljaCBvZiB0aGUgbW9kZWxzIGNvbXBvbmVudHMgYXJlIG1vc3QgaW5mbHVlbnRpYWwuICBUaGVyZWZvcmUsIHdlIGFyZSBwcm9ncmVzc2luZyB0b3dhcmRzIG9idGFpbmluZyBhIGZ1bGwgdW5kZXJzdGFuZGluZyBvZiB0aGUgbm9pc2UgdGhhdCB3aWxsIGFsbG93IHVzIHRvIGp1ZGdlIGhvdyBiZXN0IHRvIGV4cGxvaXQgaXRzIGJlbmVmaWNpYWwgcHJvcGVydGllcyBpbiBhbnkgZ2l2ZW4gYXBwbGljYXRpb24uIEF0IHRoaXMgZWFybHkgc3RhZ2UgaW4gdGhlIHRocmVlIHllYXIgcHJvamVjdCB3ZSBhcmUgYWxyZWFkeSBtYWtpbmcgc2lnbmlmaWNhbnQgaW5yb2FkcyBpbnRvIGZ1bGZpbGxpbmcgdGhlIG9iamVjdGl2ZXMgc3RhdGVkIGFib3ZlLmRkAhEPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCEw9kFgJmD2QWAgIBDw8WAh8EBVRUaGlzIGluZm9ybWF0aW9uIGNhbiBub3cgYmUgZm91bmQgb24gR2F0ZXdheSB0byBSZXNlYXJjaCAoR3RSKSBodHRwOi8vZ3RyLnJjdWsuYWMudWtkZAIVD2QWAmYPZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAgIBD2QWAmYPFQNUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrAABkAhcPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCGA9kFgICAQ9kFgICAQ8WAh8EBQYmbmJzcDtkAhkPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIaD2QWAgIBD2QWAgIBDxYCHwQF2AE8YSAgaHJlZj0naHR0cDovL3d3dy5lZC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc+aHR0cDovL3d3dy5lZC5hYy51ayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5kAgcPDxYGHgpSZXBvcnROYW1lBQlWaWV3R3JhbnQeDVBhcmFtZXRlck5hbWUVAgpXZWJBZGRyZXNzDkdyYW50UmVmTnVtYmVyHg5QYXJhbWV0ZXJWYWx1ZRUCP2h0dHA6Ly9nb3cuZXBzcmMuYWMudWsvTkdCT1ZpZXdHcmFudC5hc3B4P0dyYW50UmVmPUdSL0o0NDUzNy8wMQxHUi9KNDQ1MzcvMDFkFgJmD2QWAmYPZBYEAgMPEGQPFgECBhYBEGRkaBYBZmQCBQ8PZBYCHwFlZAIFDw8WAh8CaGRkZFUtFrmxg1zkWyVYARNErk4d3edz" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK/89pEAtC8374MApP84JUDga1XNDTYez6xRD5Oxm38NUrPxdQ=" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/J44537/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>UNDERSTANDING AND USING NOISY SYNAPTIC WEIGHTS IN NEURAL LEARNING.</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=11369'>Murray, Professor AF</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Sch of Engineering</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">University of Edinburgh</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">06 June 1994</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">05 October 1997</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="111,449.00" class="DetailValue">111,449</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">1. To build a mathematical model of synaptic weight noise.2. To analyse various noise distributions.3. To study the measures of weight relevance, e.g. weight distributions.4. To determine the range of applications where noise will be beneficial. Progress:Incorporating weight noise into learning schemes is becoming a recognised technique for improving the performance of Multi-Layered Perceptrons. Based on our preparatory work, that underpins this project, several groups are using weight noise for learning enhancement in a variety of applications and neural architectures.  Since the start of the present section of funded work in October 1994, we have progressed in our study of the underlying mechanisms of the noise by building a mathematical model. In addition, we have examined existing techniques for measuring the importance of individual weights to investigate how the noise influences the network storage mechanisms. In our work we have shown that the noise approximates a simple form of regulariser which gives a network solution that is smooth to weight perturbations. Previously we have shown that such a network property gives an increased tolerance to weight faults and in addition, by constraining the network solution, can give generalisation enhancements. Detailed analysis of our noise model is providing a clearer view of the mechanisms and will determine which of the models components are most influential.  Therefore, we are progressing towards obtaining a full understanding of the noise that will allow us to judge how best to exploit its beneficial properties in any given application. At this early stage in the three year project we are already making significant inroads into fulfilling the objectives stated above.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.ed.ac.uk                                                                                 '>http://www.ed.ac.uk                                                                                 </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>

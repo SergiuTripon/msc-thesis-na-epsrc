@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="Html1" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head id="Head1"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	TRAINING ALGORITHMS BASED ON ADAPTIVE CRITICS
+</title>
+<!--dc/egms metadata start-->
+<meta name="DC.description" content="Grants on the web" />
+<meta name="DC.title" content="Grants on the web"/>
+<meta name="DC.creator" content="EPSRC author"/>
+<meta name="DC.publisher" content="Engineering and Physical Sciences Research Council, Polaris House, North Star Avenue, Swindon, SN2 1ET"/>
+<meta name="DC.language" content="en" />
+<meta name="eGMS.subject.category" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<meta name="eGMS.subject.keyword" content="epsrc, research council, grant, grants, funds, funding, physical science, engineering, engineer, engineers, graduate, postgraduate, college, university, universities, education, academic, student, students, support, training, proposal, proposals, polaris house, swindon, uk, government, research, counsel, counsil, councils, science, sciences, scientist, scientists" />
+<!--dc/egms metadata end-->
+<link href="GOW2.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="gowweb.js"></script>
+	</head>
+	<body>
+		<form name="Form1" method="post" action="NGBOViewGrant.aspx?GrantRef=GR%2fJ17814%2f01" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEwMzM3OTA5OA9kFgICAQ9kFgICAw9kFgYCAQ9kFgQCAQ8PZBYEHgdvbmNsaWNrBYABamF2YXNjcmlwdDpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnR09XR1BIZWFkZXIxX3R4dFNlYXJjaCcpLnNlbGVjdCgpO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdHT1dHUEhlYWRlcjFfdHh0U2VhcmNoJykuZm9jdXMoKTseCm9ua2V5cHJlc3MFDG89dGhpcy5uYW1lO2QCAw8PZBYCHwFlZAIDDw8WAh4HVmlzaWJsZWdkFgYCAw8PFgQeC05hdmlnYXRlVXJsBWlodHRwOi8vd3d3LmVwc3JjLmFjLnVrL3Jlc2VhcmNoL291cnBvcnRmb2xpby90aGVtZXMvcmVzZWFyY2hpbmZyYXN0cnVjdHVyZS9zdWJ0aGVtZXMvZXF1aXBtZW50L3N1cHBvcnRlZC8eBFRleHQFaWh0dHA6Ly93d3cuZXBzcmMuYWMudWsvcmVzZWFyY2gvb3VycG9ydGZvbGlvL3RoZW1lcy9yZXNlYXJjaGluZnJhc3RydWN0dXJlL3N1YnRoZW1lcy9lcXVpcG1lbnQvc3VwcG9ydGVkL2RkAgUPZBYsZg9kFgICAQ9kFgICAQ8PFgIfBAUMR1IvSjE3ODE0LzAxZGQCAQ9kFgICAQ9kFgICAQ8PFgIfBAU+PHN0cm9uZz5UUkFJTklORyBBTEdPUklUSE1TIEJBU0VEIE9OIEFEQVBUSVZFIENSSVRJQ1M8L3N0cm9uZz5kZAICD2QWAgIBD2QWAgIBDw8WBh8EBT08YSBocmVmPSdOR0JPVmlld1BlcnNvbi5hc3B4P1BlcnNvbklkPTI3OTM1Jz5Sb2h3ZXIsIERyIFI8L2E+HglCYWNrQ29sb3IKGx4EXyFTQgIIZGQCAw9kFgICAQ9kFgICAQ8WAh8CaGQCBA9kFgICAQ9kFgICAQ8WAh8CaGQCBQ9kFgICAQ9kFgICAQ8WAh8CaGQCBg9kFgICAQ9kFgICAQ8PFgIfBAUqQ29tcHV0ZXIgU2NpZW5jZSAmYW1wOyBBcHBsaWVkIE1hdGhlbWF0aWNzZGQCBw9kFgICAQ9kFgICAQ8PFgIfBAUQQXN0b24gVW5pdmVyc2l0eWRkAggPZBYCAgEPZBYCAgEPDxYCHwQFG1N0YW5kYXJkIFJlc2VhcmNoIChQcmUtRkVDKWRkAgkPZBYGAgEPZBYCAgEPDxYCHwQFEDA5IE5vdmVtYmVyIDE5OTNkZAIDD2QWAgIBDw8WAh8EBQswOCBNYXkgMTk5NmRkAgUPZBYCAgEPDxYEHwQFBjY3LDMyNB4HVG9vbFRpcAUJNjcsMzI0LjAwZGQCCg9kFgICAQ9kFgICAQ8WAh8CaGQCCw9kFgICAQ9kFgICAQ8WAh8CaGQCDA9kFgICAQ9kFgICAQ8WAh8CaGQCDQ9kFgICAQ9kFgQCAQ88KwALAGQCAg8WAh8EBQYmbmJzcDtkAg8PZBYCZg9kFgICAQ8PFgIfBAW3FTEuIERlbW9uc3RyYXRlIHRoYXQgQWRhcHRpdmUgQ3JpdGljIFRlY2huaXF1ZXMgY2FuIHJlcGxhY2UgYW5kL29yIGF1Z21lbnQgQmFjayBQcm9wYWdhdGlvbiBmb3IgdHJhaW5pbmcgbmV1cmFsIG5ldHdvcmsgbW9kZWxzLjIuIEV2YWx1YXRlIHN1Y2ggc3lzdGVtcy4zLiBEZXZlbG9wIGFuZCByZWZpbmUgdGhlIGFzc29jaWF0ZWQgZm9ybWFsaXNtLlByb2dyZXNzOlRoZSBwcm9qZWN0IGJlZ2FuIGluIGVhcm5lc3QgaW4gTWF5IDE5OTQsIGZvbGxvd2luZyBsZW5ndGh5IGRlbGF5cyBpbiBvYnRhaW5pbmcgYSB3b3JrIHBlcm1pdCBmb3IgSHVhaXl1IFpodSwgdGhlIHJlc2VhcmNoIGFzc2lzdGFudCBzZWxlY3RlZCBmb3IgdGhlIHByb2plY3QgaW4gSnVseSAxOTkzLiBTb21lIHByb2dyZXNzIHJlbGV2YW50IHRvIHRoZSBwcm9qZWN0IHdhcyBtYWRlIGJlZm9yZSBEciBaaHVzIGFycml2YWwsIHdpdGggdGhlIGFzc2lzdGFuY2Ugb2YgTXIgTWlrZSBUaXBwaW5nOiBBIHNpbXBsZSBkZW1vbnN0cmF0aW9uIG9mIHRoZSB1c2Ugb2YgYW4gYWRhcHRpdmUgY3JpdGljIHRvIHRyYWluIGEgZGVlcCBmZWVkIC1mb3J3YXJkIG5ldHdvcmsgd2FzIGFjY29tcGxpc2hlZCwgYnV0IHdpdGggY29uc2lkZXJhYmxlIGRpZmZpY3VsdHksIGFuZCB0aGUgYmFzaWMgY29uY2VwdCB3YXMgbW9yZSBjbGVhcmx5IGRlbGluZWF0ZWQgaW4gdGhlIGNvbnRleHQgb2YgaW1wb3J0YW50IHJlbGF0ZWQgcHJvYmxlbXMuIFR3byBtYWpvciB2YXJpYXRpb25zIG9mIHRoZSBjb25jZXB0IGhhdmUgZW1lcmdlZCB3aGljaCB3ZSBjYWxsICB3ZWlnaHQgY3JpdGljcyAgYW5kICBzdGF0ZSBjcml0aWNzICwgYWNjb3JkaW5nIHRvIHdoZXRoZXIgdGhlIGFkYXB0aXZlIGNyaXRpYyBtb2R1bGUgZXN0aW1hdGVzIGV2YWx1YXRpb25zIGZvciB0aGUgd2VpZ2h0IG1hdHJpeCBvciB0aGUgaGlkZGVuIHN0YXRlcyBvZiBhIG5ldHdvcmsuIEl0IHdhcyByZWFsaXNlZCB0aGF0IGEgcG9zc2libGUgYWR2YW50YWdlIG9mIGEgd2VpZ2h0IGNyaXRpYyBpcyBzbW9vdGhpbmcgb2YgdGhlIGV2YWx1YXRpb24gZnVuY3Rpb24sIHdoaWNoIG1heSBlbGltaW5hdGUgc29tZSBsb2NhbCBtaW5pbWEuIEEgcHJvYmFiaWxpc3RpYyBmb3JtYWxpc20gZXhwcmVzc2luZyB0aGUgZXhwbG9yYXRpb24tZXhwbG9pdGF0aW9uIHRyYWRlb2ZmIGluIHNlYXJjaCBwcm9ibGVtcyB3YXMgZGV2ZWxvcGVkIGZyb20gdGhlIHdlaWdodCBjcml0aWMgY29uY2VwdC4gIERyIFpodSB0aGVuIG1hZGUgY29uc2lkZXJhYmxlIHByb2dyZXNzIGluIHJlbGF0aW5nIHRoZSBpZGVhIG9mIGFkYXB0aXZlLWNyaXRpYy1hc3Npc3RlZCB0cmFpbmluZyB0byBvdGhlciBpbXBvcnRhbnQgbWV0aG9kcyBhbmQgcHJvYmxlbXMuIFdpdGggYSBzdHJvbmcgYmFja2dyb3VuZCBpbiBzdG9jaGFzdGljIG5ldHdvcmtzIGFuZCBwcm9iYWJpbGl0eSB0aGVvcnksIGhlIHdhcyBxdWljayB0byBzdHJlc3MgdGhlIGltcG9ydGFuY2Ugb2YgaGF2aW5nIGFuIGFwcHJvcHJpYXRlIHNhbXBsaW5nIHByb2Nlc3MgdG8gY29tcGxlbWVudCB0aGUgY3JpdGljcyBldmFsdWF0aW9uIGVzdGltYXRpb24uIFRoaXMgbGVhZCB0byBhIHRoZW9yZXRpY2FsIGludGVycHJldGF0aW9uIG9mIHN0b2NoYXN0aWMgbmV0d29yayBtZXRob2RzIGJhc2VkIG9uIHNpbXVsYXRlZCBhbm5lYWxpbmcgaW4gdGhlIGFkYXB0aXZlIGNyaXRpYyBmcmFtZXdvcmssIGFuZCBwb3NzaWJpbGl0aWVzIGZvciBpbXByb3ZlZCBtZXRob2RzIHdoaWNoIGFyZSBub3cgdW5kZXIgaW52ZXN0aWdhdGlvbi4gVGhpcyBsaW5lIG9mIHJlYXNvbmluZyBoYXMgYWxzbyBsZWQgdXMgdG8gYW4gaW1wcm92ZWQgdW5kZXJzdGFuZGluZyBvZiAgY29udGludWF0aW9uIG1ldGhvZHMgIGZvciB0cmFpbmluZyBkZXRlcm1pbmlzdGljIG5ldHdvcmtzLiAgU3RhbmRhcmQgZ3JhZGllbnQtIGFuZCBIZXNzaWFuLWJhc2VkIG1pbmltaXNhdGlvbiBtZXRob2RzIGFyZSByZWFkaWx5IGV4cHJlc3NpYmxlIGluIHRoZSB3ZWlnaHQgY3JpdGljIGZyYW1ld29yay4gVGhpcyBvYnNlcnZhdGlvbiBoYXMgbGVkIHVzIHRvIGEgcHJvbWlzaW5nIGFwcHJvYWNoIHRvIG9uLWxpbmUgdHJhaW5pbmcgb2YgZGV0ZXJtaW5pc3RpYyBuZXR3b3JrcyB3aXRoIGFkYXB0aXZlIGNyaXRpY3MsIHdoaWNoIHR1cm5zIG91dCB0byBiZSByZWxhdGVkIHRvIEthbG1hbiBmaWx0ZXJpbmcuIEludmVzdGlnYXRpb24gaXMgY29udGludWluZyBpbiB0aGlzIGFyZWEuICBEciBaaHUgaGFzIHByb2R1Y2VkIHN0cm9uZyB0aGVvcmV0aWNhbCBhcmd1bWVudHMgY29uY2x1ZGluZyB0aGF0IHN0YXRlIGNyaXRpY3MgY2Fubm90IHByb3ZpZGUgYSBjb21wdXRhdGlvbmFsbHkgZWZmaWNpZW50IGFwcHJvYWNoIHRvIHRyYWluaW5nIGZlZWQgZm9yd2FyZCBuZXR3b3JrcywgYnV0IHNob3cgY29uc2lkZXJhYmxlIHByb21pc2UgZm9yIHJlY3VycmVudCBuZXR3b3Jrcy4gSW4gdGhlIGxhdHRlciBjYXNlLCB0aGV5IGNhbiBiZSBwdXQgaW50byB0aGUgY29udGV4dCBvZiBNYXJrb3YgcHJvY2Vzc2VzLCBhbmQgdGVjaG5pcXVlcyBzdWNoIGFzIGR5bmFtaWMgcHJvZ3JhbW1pbmcgY2FuIGJlIGFwcGxpZWQgaW4gd2F5cyB3aGljaCBhcmUgcmVhc29uYWJseSB3ZWxsLXVuZGVyc3Rvb2QgYWxyZWFkeSBpbiB0aGUgYWRhcHRpdmUgY3JpdGljIGNvbnRleHQuIFRoaXMgaXMgYW5vdGhlciBtYWpvciBhcmVhIG9mIGNvbnRpbnVpbmcgaW52ZXN0aWdhdGlvbi5kZAIRD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhMPZBYCZg9kFgICAQ8PFgIfBAVUVGhpcyBpbmZvcm1hdGlvbiBjYW4gbm93IGJlIGZvdW5kIG9uIEdhdGV3YXkgdG8gUmVzZWFyY2ggKEd0UikgaHR0cDovL2d0ci5yY3VrLmFjLnVrZGQCFQ9kFgJmD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgICAQ9kFgJmDxUDVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51awAAZAIXD2QWAmYPZBYCAgEPDxYCHwQFVFRoaXMgaW5mb3JtYXRpb24gY2FuIG5vdyBiZSBmb3VuZCBvbiBHYXRld2F5IHRvIFJlc2VhcmNoIChHdFIpIGh0dHA6Ly9ndHIucmN1ay5hYy51a2RkAhgPZBYCAgEPZBYCAgEPFgIfBAUGJm5ic3A7ZAIZD2QWAgIBD2QWAgIBDxYCHwQFBiZuYnNwO2QCGg9kFgICAQ9kFgICAQ8WAh8EBdgBPGEgIGhyZWY9J2h0dHA6Ly93d3cuYXN0b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnPmh0dHA6Ly93d3cuYXN0b24uYWMudWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+ZAIHDw8WBh4KUmVwb3J0TmFtZQUJVmlld0dyYW50Hg1QYXJhbWV0ZXJOYW1lFQIKV2ViQWRkcmVzcw5HcmFudFJlZk51bWJlch4OUGFyYW1ldGVyVmFsdWUVAj9odHRwOi8vZ293LmVwc3JjLmFjLnVrL05HQk9WaWV3R3JhbnQuYXNweD9HcmFudFJlZj1HUi9KMTc4MTQvMDEMR1IvSjE3ODE0LzAxZBYCZg9kFgJmD2QWBAIDDxBkDxYBAgYWARBkZGgWAWZkAgUPD2QWAh8BZWQCBQ8PFgIfAmhkZGTn9/jpt42pKj0v9UKaImpgBYXYMQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKLoMWkAgLQvN++DAKT/OCVA0RAzm8SreWSirAhhRk6o+s7kxrM" />
+			
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12650009-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="header"><a href="http://www.epsrc.ac.uk"><img src="http://gow.epsrc.ac.uk//images/epsrclogo.png" alt="EPSRC logo" style="margin-top: 10px;" /></a>
+<div class="searchboxposition"><label for="GOWGPHeader1_txtSearch" id="GOWGPHeader1_lblSearch" class="HiddenLabel">Search this site</label>
+<input name="GOWGPHeader1$txtSearch" type="text" value="GoW Search" id="GOWGPHeader1_txtSearch" class="SearchText" onclick="javascript:document.getElementById('GOWGPHeader1_txtSearch').select();document.getElementById('GOWGPHeader1_txtSearch').focus();" onkeypress="o=this.name;" />
+<label for="GOWGPHeader1_btnSearch" id="GOWGPHeader1_Label1" class="HiddenLabel">Search this site</label>
+<input type="submit" name="GOWGPHeader1$btnSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GOWGPHeader1$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="GOWGPHeader1_btnSearch" class="SearchButton" onkeypress="" /></div>
+</div>
+<ul id="topnav">
+	<li><a id="aHome" class="menubox1off" href="http://www.epsrc.ac.uk">Home</a></li>
+	<li><a id="aGoWHome" class="menubox1off" href="http://gow.epsrc.ac.uk/NGBODefault.aspx">GoW Home</a></li>
+	<li><a id="aBack" class="menubox1off" href="javascript:history.go(-1)">Back</a></li>
+	<li class="menuboxspacer">&nbsp;</li>
+	
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListResearchAreas.aspx">Research Areas</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListTopics.aspx">Topic</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSectors.aspx">Sector</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListSchemes.aspx">Scheme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOChooseRegion.aspx">Region</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListThemes.aspx">Theme</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListOrganisations.aspx">Organisation</a></li>
+	<li><a class="menubox1off" href="http://gow.epsrc.ac.uk/NGBOListPartners.aspx">Partners</a></li>
+</ul>
+<div class="clearfloat"></div>
+			<div id="pnlFound">
+	
+				<h1>Details of Grant&nbsp;</h1> 
+				<p>
+                    
+                    
+                </p>
+				<table id="tblFound" cellspacing="0" cellpadding="0" width="100%" class="bordered" summary="grant details">
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Reference:</td>
+			<td class="DetailValueAlt" colspan="5"> 
+							<span id="lblGrantReference" class="DetailValueAlt">GR/J17814/01</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName">Title:</td>
+			<td colspan="5">
+							<span id="lblTitle" class="DetailValue"><strong>TRAINING ALGORITHMS BASED ON ADAPTIVE CRITICS</strong></span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Principal Investigator:</td>
+			<td colspan="5" class="borderedAlt">
+							<a id="hlPrincipalInvestigator"><a href='NGBOViewPerson.aspx?PersonId=27935'>Rohwer, Dr R</a></a></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Other Investigators:</td>
+			<td class="bordered" colspan="5" style="padding-left: 3px">
+                            
+                           </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Researcher Co-Investigators:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Project Partners:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+                            
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Department:</td>
+			<td class="DetailValueAlt" colspan="5">
+							<span id="lblDepartment" class="DetailValueAlt">Computer Science &amp; Applied Mathematics</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Organisation:</td>
+			<td class="DetailValue" colspan="5">
+							<span id="lblOrganisation" class="DetailValue">Aston University</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Scheme:</td>
+			<td colspan="5" class="DetailValueAlt">
+							<span id="lblAwardType" class="DetailValueAlt">Standard Research (Pre-FEC)</span></td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">Starts:</td>
+			<td class="DetailValue">
+							<span id="lblStarts" class="DetailValue">09 November 1993</span></td>
+			<td class="DetailName" style="text-align:center;">Ends:</td>
+			<td class="DetailValue">
+							<span id="lblEnds" class="DetailValue">08 May 1996</span></td>
+			<td class="DetailName" style="text-align:center;">Value (£):</td>
+			<td class="DetailValue">
+							<span id="lblValue" title="67,324.00" class="DetailValue">67,324</span>
+							</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%">EPSRC Research Topic Classifications:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">EPSRC Industrial Sector Classifications:</td>
+			<td colspan="5" class="bordered" style="padding-left: 3px">
+						     
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;"> Related Grants:</td>
+			<td colspan="5" class="borderedAlt" style="padding-left: 3px">
+                            
+							
+							
+						</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Panel History:</td>
+			<td colspan="5" class="bordered">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Summary on Grant Application Form</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblAbstract">1. Demonstrate that Adaptive Critic Techniques can replace and/or augment Back Propagation for training neural network models.2. Evaluate such systems.3. Develop and refine the associated formalism.Progress:The project began in earnest in May 1994, following lengthy delays in obtaining a work permit for Huaiyu Zhu, the research assistant selected for the project in July 1993. Some progress relevant to the project was made before Dr Zhus arrival, with the assistance of Mr Mike Tipping: A simple demonstration of the use of an adaptive critic to train a deep feed -forward network was accomplished, but with considerable difficulty, and the basic concept was more clearly delineated in the context of important related problems. Two major variations of the concept have emerged which we call  weight critics  and  state critics , according to whether the adaptive critic module estimates evaluations for the weight matrix or the hidden states of a network. It was realised that a possible advantage of a weight critic is smoothing of the evaluation function, which may eliminate some local minima. A probabilistic formalism expressing the exploration-exploitation tradeoff in search problems was developed from the weight critic concept.  Dr Zhu then made considerable progress in relating the idea of adaptive-critic-assisted training to other important methods and problems. With a strong background in stochastic networks and probability theory, he was quick to stress the importance of having an appropriate sampling process to complement the critics evaluation estimation. This lead to a theoretical interpretation of stochastic network methods based on simulated annealing in the adaptive critic framework, and possibilities for improved methods which are now under investigation. This line of reasoning has also led us to an improved understanding of  continuation methods  for training deterministic networks.  Standard gradient- and Hessian-based minimisation methods are readily expressible in the weight critic framework. This observation has led us to a promising approach to on-line training of deterministic networks with adaptive critics, which turns out to be related to Kalman filtering. Investigation is continuing in this area.  Dr Zhu has produced strong theoretical arguments concluding that state critics cannot provide a computationally efficient approach to training feed forward networks, but show considerable promise for recurrent networks. In the latter case, they can be put into the context of Markov processes, and techniques such as dynamic programming can be applied in ways which are reasonably well-understood already in the adaptive critic context. This is another major area of continuing investigation.</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Key Findings</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblKeyFindings">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Potential use in non-academic contexts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblNonAcademicUses">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Impacts</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" class="bordered" summary="Impacts"> 
+                                
+                                  <tr style="margin-top: 2px; border-top: double 3px;"></tr>
+                                  
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold; ">Description</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal; " > This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Summary</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="DetailName" style="font-weight: bold;">Date Materialised</td>
+                                    <td style="width:90%;FONT-WEIGHT: normal;" > </td>
+                                  </tr>
+                                  <tr style="margin-top: 2px; border-top: double 4px;"></tr>
+                                
+                                    </table>
+                                   
+                                
+                           
+                           
+						</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailTitle" style="text-align:center;">
+                            Sectors submitted by the Researcher</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="DetailValue" style="padding:5px;">
+                        <span id="lblResearchSectors">This information can now be found on Gateway to Research (GtR) http://gtr.rcuk.ac.uk</span>
+                        </td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Project URL:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Further Information:</td>
+			<td colspan="5" class="DetailValueAlt">
+							&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="DetailName" style="width:20%;">Organisation Website:</td>
+			<td colspan="5" class="DetailValue">
+							<a  href='http://www.aston.ac.uk                                                                              '>http://www.aston.ac.uk                                                                              </a></td>
+		</tr>
+	</table>
+	
+				
+   		        <div class="rightfloat"></div>
+                <div class="clearfloat"></div>
+    	
+			
+</div>
+				
+			
+		</form>
+	</body>
+</html>
