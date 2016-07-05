@@ -134,7 +134,7 @@ class CreateNetwork:
     # creates topic network a
     def create_topic_network_a():
 
-        # if  file does not exist
+        # if topic nodes in gephi format file does not exist
         if not os.path.isfile('../../data/networks/topics/nodes_gephi.tsv'):
 
             # variable to hold input file
@@ -151,10 +151,8 @@ class CreateNetwork:
             # close input file
             input_file.close()
 
-            # variable to hold topic ids
-            topic_ids = OrderedDict()
-            # variable to hold identifier set to 1
-            identifier = 1
+            # variables to hold topic ids and identifier set to 1
+            topic_ids, identifier = OrderedDict(), 1
             # for topic name in topics
             for topic_name in topics.keys():
                 # add identifier to topic ids
@@ -168,12 +166,10 @@ class CreateNetwork:
             output_file.write('Id\tLabel\tNum\t\tVal\n')
             # for topic name and id in topic ids
             for topic_name, topic_id in topic_ids.items():
-                # variable to hold topic number
-                topic_num = topics.get(topic_name)[0]
-                # variable to hold topic value
-                topic_val = topics.get(topic_name)[1]
+                # variables to hold number and value
+                number, value = topics.get(topic_name)[0], topics.get(topic_name)[1]
                 # write topic to file
-                output_file.write('{}\t{}\t{}\t{}\t\n'.format(topic_id, topic_name, topic_num, topic_val))
+                output_file.write('{}\t{}\t{}\t{}\t\n'.format(topic_id, topic_name, number, value))
 
             # variable to hold output file
             output_file = open('../../data/networks/topics/edges_gephi.tsv', 'w')
@@ -190,8 +186,8 @@ class CreateNetwork:
                 # variable to hold target id
                 target_id = topic_ids.get(target)
                 # write topic link to file
-                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(source_id, target_id, 'Undirected',
-                                                                    topic_link[2], topic_link[3]))
+                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(source_id, target_id, 'Undirected', topic_link[2],
+                                                                    topic_link[3]))
 
             # print progress
             print('> Creation of Topic Network A in Gephi format completed')
