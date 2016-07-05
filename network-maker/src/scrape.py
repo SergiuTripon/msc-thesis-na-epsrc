@@ -315,8 +315,8 @@ class ExtractTopics:
                 urls += tree.xpath(url_xpath)
 
                 # print progress
-                print('> Extraction of grant urls in progress'
-                      ' (grant urls for {} topic(s) extracted)'.format(extraction_count))
+                print('> Extraction of grant urls in progress (grant urls for {} topic(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -393,8 +393,8 @@ class ExtractTopics:
                 urls += tree.xpath(other_url_xpath)
 
                 # print progress
-                print('> Extraction of researcher urls in progress'
-                      ' (researcher urls for {} grant(s) extracted)'.format(extraction_count))
+                print('> Extraction of researcher urls in progress (researcher urls for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -437,7 +437,7 @@ class ExtractTopics:
         if not os.path.isfile('../output/topics/info/topics/topic_info.csv'):
 
             # print progress
-            print('> Extraction of topics started')
+            print('> Extraction of topic information started')
 
             # variable to hold page
             page = open(r'../output/topics/html/topics/NGBOListTopics.aspx', "r").read()
@@ -483,7 +483,8 @@ class ExtractTopics:
                 output_file.write('"{}","{}","{}","{}"\n'.format(name, attr[0], attr[1],
                                                                  currency(attr[2], grouping=True)))
                 # print progress
-                print('> Extraction of topics in progress ({} topics extracted)'.format(extraction_count))
+                print('> Extraction of topic information in progress (information for {} topic(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -499,7 +500,8 @@ class ExtractTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of topics completed ({} topics extracted)'.format(len(topics)))
+            print('> Extraction of topic information completed (information for {} topics'
+                  ' extracted)'.format(len(topics)))
 
     ####################################################################################################################
 
@@ -511,7 +513,7 @@ class ExtractTopics:
         if not os.path.isfile('../output/topics/info/grants/grant_info.csv'):
 
             # print progress
-            print('> Extraction of grants started')
+            print('> Extraction of grant information started')
 
             # variable to hold input file
             input_file = open(r'../output/topics/urls/topics/topics.pkl', 'rb')
@@ -579,7 +581,8 @@ class ExtractTopics:
                 output_file.write('"{}","{}","{}"\n'.format(ref, attr[0], currency(attr[1], grouping=True)))
 
                 # print progress
-                print('> Extraction of grants in progress ({} grants extracted)'.format(extraction_count))
+                print('> Extraction of grant information in progress (information for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -595,7 +598,8 @@ class ExtractTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grants completed ({} grants extracted)'.format(len(grants)))
+            print('> Extraction of grant information completed (information for {} grants'
+                  ' extracted)'.format(len(grants)))
 
     ####################################################################################################################
 
@@ -630,9 +634,13 @@ class ExtractTopics:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold value xpath
+                value_xpath = "//table[@id='tblFound']/tr[position()=10]/td[position()=6]/span/text()"
                 # variable to hold topics xpath
                 topics_xpath = "//table[@id='tblFound']/tr[position()=11]/td[position()=2]/table/tr/td/text()"
 
+                # variable to hold values
+                values = tree.xpath(value_xpath)
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
 
@@ -642,18 +650,21 @@ class ExtractTopics:
                 # for topic in topics
                 for topic in topics:
                     # remove spaces
-                    topic = topic.strip()
+                    topic = topic.strip().lower()
                     # if topic is not empty and is not in clean topics
                     if topic and topic not in clean_topics:
                         # add topic to clean topics
                         clean_topics += [topic]
 
+                # set locale to Great Britain
+                setlocale(LC_ALL, 'en_GB.utf8')
+
                 # add grant topics to grant topics
-                grants_topics[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = clean_topics
+                grants_topics[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = [clean_topics, atoi(values[0])]
 
                 # print progress
-                print('> Extraction of grant topics in progress'
-                      ' (topics for {} grant(s) extracted)'.format(extraction_count))
+                print('> Extraction of grant topics in progress (topics for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -661,10 +672,10 @@ class ExtractTopics:
             # variable to hold output file
             output_file = open('../output/topics/info/grants/grant_topics.csv', mode='w')
 
-            # for reference and topics in grant topics
-            for ref, topics in grants_topics.items():
-                # write reference and topics to file
-                output_file.write('"{}","{}"\n'.format(ref, topics))
+            # for reference and attributes in grant topics
+            for ref, attr in grants_topics.items():
+                # write reference and attributes to file
+                output_file.write('"{}","{}","{}"\n'.format(ref, attr[0], currency(attr[1], grouping=True)))
 
             # close input file
             output_file.close()
@@ -677,8 +688,8 @@ class ExtractTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant topics completed'
-                  ' (topics for {} grants extracted)'.format(len(grants_topics)))
+            print('> Extraction of grant topics completed (topics for {} grants'
+                  ' extracted)'.format(len(grants_topics)))
 
     ####################################################################################################################
 
@@ -730,8 +741,8 @@ class ExtractTopics:
                 grant_researchers[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = all_urls
 
                 # print progress
-                print('> Extraction of grant researchers in progress'
-                      ' (researchers for {} grant(s) extracted)'.format(extraction_count))
+                print('> Extraction of grant researchers in progress (researchers for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -755,8 +766,8 @@ class ExtractTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant researchers completed'
-                  ' (researchers for {} grants extracted)'.format(len(grant_researchers)))
+            print('> Extraction of grant researchers completed (researchers for {} grants'
+                  ' extracted)'.format(len(grant_researchers)))
 
     ####################################################################################################################
 
@@ -810,8 +821,8 @@ class ExtractTopics:
                 researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = clean_topics
 
                 # print progress
-                print('> Extraction of researcher topics in progress'
-                      ' (topics for {} researcher(s) extracted)'.format(extraction_count))
+                print('> Extraction of researcher topics in progress (topics for {} researcher(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -835,8 +846,8 @@ class ExtractTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher topics completed'
-                  ' (topics for {} researchers extracted)'.format(len(researcher_topics)))
+            print('> Extraction of researcher topics completed (topics for {} researchers'
+                  ' extracted)'.format(len(researcher_topics)))
 
 ########################################################################################################################
 
@@ -911,8 +922,8 @@ class ExtractPastTopics:
                 urls += tree.xpath(other_url_xpath)
 
                 # print progress
-                print('> Extraction of researcher urls in progress'
-                      ' (researcher urls for {} grant(s) extracted)'.format(extraction_count))
+                print('> Extraction of researcher urls in progress (researcher urls for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -999,8 +1010,8 @@ class ExtractPastTopics:
                 grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = clean_topics
 
                 # print progress
-                print('> Extraction of grant topics in progress'
-                      ' (topics for {} grant(s) extracted)'.format(extraction_count))
+                print('> Extraction of grant topics in progress (topics for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1024,8 +1035,8 @@ class ExtractPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant topics completed'
-                  ' (topics for {} grants extracted)'.format(len(grant_topics)))
+            print('> Extraction of grant topics completed (topics for {} grants'
+                  ' extracted)'.format(len(grant_topics)))
 
     ####################################################################################################################
 
@@ -1076,8 +1087,8 @@ class ExtractPastTopics:
                 grant_researchers[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = all_urls
 
                 # print progress
-                print('> Extraction of grant researchers in progress'
-                      ' (researchers for {} grant(s) extracted)'.format(extraction_count))
+                print('> Extraction of grant researchers in progress (researchers for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1101,8 +1112,8 @@ class ExtractPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant researchers completed'
-                  ' (researchers for {} grants extracted)'.format(len(grant_researchers)))
+            print('> Extraction of grant researchers completed (researchers for {} grants'
+                  ' extracted)'.format(len(grant_researchers)))
 
     ####################################################################################################################
 
@@ -1157,8 +1168,8 @@ class ExtractPastTopics:
                 researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = clean_topics
 
                 # print progress
-                print('> Extraction of researcher topics in progress'
-                      ' (topics for {} researcher(s) extracted)'.format(extraction_count))
+                print('> Extraction of researcher topics in progress (topics for {} researcher(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1182,8 +1193,8 @@ class ExtractPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher topics completed'
-                  ' (topics for {} researchers extracted)'.format(len(researcher_topics)))
+            print('> Extraction of researcher topics completed (topics for {} researchers'
+                  ' extracted)'.format(len(researcher_topics)))
 
 
 ########################################################################################################################
@@ -1191,6 +1202,7 @@ class ExtractPastTopics:
 
 # main function
 def main():
+
     # extract areas
     ExtractAreas.run()
     # extract topics
