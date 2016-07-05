@@ -163,7 +163,7 @@ class CreateNetwork:
             # variable to hold output file
             output_file = open('../../data/networks/topics/nodes_gephi.tsv', 'w')
             # write headers to file
-            output_file.write('Id\tLabel\tNum\t\tVal\n')
+            output_file.write('Id\tLabel\tNum\tVal\n')
             # for topic name and id in topic ids
             for topic_name, topic_id in topic_ids.items():
                 # variables to hold number and value
