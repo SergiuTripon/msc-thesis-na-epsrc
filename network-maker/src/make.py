@@ -10,33 +10,23 @@ from collections import OrderedDict
 ########################################################################################################################
 
 
-# CreateNetwork class
-class CreateNetwork:
+# CreateAreaNetwork class
+class CreateAreaNetwork:
 
     @staticmethod
     # runs other functions
     def run():
 
-        # create area network in gephi format
-        CreateNetwork.create_area_network('gephi')
-        # create area network in graphistry format
-        CreateNetwork.create_area_network('graphistry')
-
-        # create topic network a
-        CreateNetwork.create_topic_network_a()
-        # create topic network b
-        CreateNetwork.create_topic_network_b()
-
-        # create researcher network a
-        CreateNetwork.create_researcher_network_a()
-        # create researcher network b
-        CreateNetwork.create_researcher_network_b()
+        # create network in gephi format
+        CreateAreaNetwork.create_network('gephi')
+        # create network in graphistry format
+        CreateAreaNetwork.create_network('graphistry')
 
     ####################################################################################################################
 
-    # creates area network
+    # creates network
     @staticmethod
-    def create_area_network(tool):
+    def create_network(tool):
 
         # if area nodes in gephi format or edges in graphistry format file does not exist
         if not (os.path.isfile('../../data/networks/areas/nodes_gephi.tsv') and
@@ -128,14 +118,30 @@ class CreateNetwork:
                 # print progress
                 print('> Creation of Area Network in Graphistry format completed')
 
+
+########################################################################################################################
+
+
+# CreateTopicNetwork class
+class CreateTopicNetwork:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # create network a
+        CreateTopicNetwork.create_network_a()
+        # create network b
+        CreateTopicNetwork.create_network_b()
+
     ####################################################################################################################
 
     @staticmethod
-    # creates topic network a
-    def create_topic_network_a():
+    # creates network a
+    def create_network_a():
 
         # if topic nodes in gephi format file does not exist
-        if not os.path.isfile('../../data/networks/topics/nodes_gephi.tsv'):
+        if not os.path.isfile('../../data/networks/topics/network-a/nodes_gephi.tsv'):
 
             # variable to hold input file
             input_file = open(r'../output/topics/info/grants/grant_topic_info.pkl', 'rb')
@@ -161,7 +167,7 @@ class CreateNetwork:
                 identifier += 1
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/nodes_gephi.tsv', 'w')
+            output_file = open('../../data/networks/topics/network-a/nodes_gephi.tsv', 'w')
             # write headers to file
             output_file.write('Id\tLabel\tNum\tVal\n')
             # for topic name and id in topic ids
@@ -172,7 +178,7 @@ class CreateNetwork:
                 output_file.write('{}\t{}\t{}\t{}\t\n'.format(topic_id, topic_name, number, value))
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/edges_gephi.tsv', 'w')
+            output_file = open('../../data/networks/topics/network-a/edges_gephi.tsv', 'w')
             # write headers to file
             output_file.write('Source\tTarget\tType\tWeight\tVal\n')
             # for topic link in topic links
@@ -195,22 +201,278 @@ class CreateNetwork:
     ####################################################################################################################
 
     @staticmethod
-    # creates topic network b
-    def create_topic_network_b():
+    # creates network b
+    def create_network_b():
+
+        # if topic nodes in gephi format file does not exist
+        if not os.path.isfile('../../data/networks/topics/network-b/nodes_gephi.tsv'):
+
+            # variable to hold input file
+            input_file = open(r'../output/topics/info/researchers/researcher_topic_info.pkl', 'rb')
+            # load data structure from file
+            topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold input file
+            input_file = open(r'../output/topics/links/researcher_topic_links.pkl', 'rb')
+            # load data structure from file
+            topic_links = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variables to hold topic ids and identifier set to 1
+            topic_ids, identifier = OrderedDict(), 1
+            # for topic name in topics
+            for topic_name in topics.keys():
+                # add identifier to topic ids
+                topic_ids[topic_name] = identifier
+                # increment identifier
+                identifier += 1
+
+            # variable to hold output file
+            output_file = open('../../data/networks/topics/network-b/nodes_gephi.tsv', 'w')
+            # write headers to file
+            output_file.write('Id\tLabel\tNum\n')
+            # for topic name and id in topic ids
+            for topic_name, topic_id in topic_ids.items():
+                # variables to hold number
+                number = topics.get(topic_name)
+                # write topic to file
+                output_file.write('{}\t{}\t{}\n'.format(topic_id, topic_name, number))
+
+            # variable to hold output file
+            output_file = open('../../data/networks/topics/network-b/edges_gephi.tsv', 'w')
+            # write headers to file
+            output_file.write('Source\tTarget\tType\tWeight\n')
+            # for topic link in topic links
+            for topic_link in topic_links:
+                # variable to hold source
+                source = topic_link[0]
+                # variable to hold source id
+                source_id = topic_ids.get(source)
+                # variable to hold target
+                target = topic_link[1]
+                # variable to hold target id
+                target_id = topic_ids.get(target)
+                # write topic link to file
+                output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(source_id, target_id, 'Undirected', topic_link[2]))
+
+            # print progress
+            print('> Creation of Topic Network B in Gephi format completed')
+
+
+########################################################################################################################
+
+
+# CreateResearcherNetwork class
+class CreateResearcherNetwork:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # create network a
+        CreateResearcherNetwork.create_network_a()
+        # create network b
+        CreateResearcherNetwork.create_network_b()
+
+    ####################################################################################################################
+
+    @staticmethod
+    # creates network a
+    def create_network_a():
         pass
 
     ####################################################################################################################
 
     @staticmethod
-    # creates researcher network a
-    def create_researcher_network_a():
+    # creates network b
+    def create_network_b():
+        pass
+
+
+########################################################################################################################
+
+
+# CreatePastTopicNetwork class
+class CreatePastTopicNetwork:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # create network a
+        CreatePastTopicNetwork.create_network_a('_1990_2000')
+        # create network a
+        CreatePastTopicNetwork.create_network_a('_2000_2010')
+
+        # create network b
+        CreatePastTopicNetwork.create_network_b('_1990_2000')
+        # create network b
+        CreatePastTopicNetwork.create_network_b('_2000_2010')
+
+    ####################################################################################################################
+
+    @staticmethod
+    # creates network a
+    def create_network_a(years):
+
+        # if topic nodes in gephi format file does not exist
+        if not os.path.isfile('../../data/networks/past-topics/network-a/nodes_gephi{}.tsv'.format(years)):
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/info/grants/grant_topic_info{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/links/grant_topic_links{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            topic_links = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variables to hold topic ids and identifier set to 1
+            topic_ids, identifier = OrderedDict(), 1
+            # for topic name in topics
+            for topic_name in topics.keys():
+                # add identifier to topic ids
+                topic_ids[topic_name] = identifier
+                # increment identifier
+                identifier += 1
+
+            # variable to hold output file
+            output_file = open('../../data/networks/past-topics/network-a/nodes_gephi{}.tsv'.format(years), 'w')
+            # write headers to file
+            output_file.write('Id\tLabel\tNum\tVal\n')
+            # for topic name and id in topic ids
+            for topic_name, topic_id in topic_ids.items():
+                # variables to hold number and value
+                number, value = topics.get(topic_name)[0], topics.get(topic_name)[1]
+                # write topic to file
+                output_file.write('{}\t{}\t{}\t{}\t\n'.format(topic_id, topic_name, number, value))
+
+            # variable to hold output file
+            output_file = open('../../data/networks/past-topics/network-a/edges_gephi{}.tsv'.format(years), 'w')
+            # write headers to file
+            output_file.write('Source\tTarget\tType\tWeight\tVal\n')
+            # for topic link in topic links
+            for topic_link in topic_links:
+                # variable to hold source
+                source = topic_link[0]
+                # variable to hold source id
+                source_id = topic_ids.get(source)
+                # variable to hold target
+                target = topic_link[1]
+                # variable to hold target id
+                target_id = topic_ids.get(target)
+                # write topic link to file
+                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(source_id, target_id, 'Undirected', topic_link[2],
+                                                                    topic_link[3]))
+
+            # print progress
+            print('> Creation of Past Topic Network A ({}) in Gephi format completed'
+                  .format(years[1:].replace('_', '-')))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # creates network b
+    def create_network_b(years):
+
+        # if topic nodes in gephi format file does not exist
+        if not os.path.isfile('../../data/networks/past-topics/network-b/nodes_gephi{}.tsv'.format(years)):
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/info/researchers/researcher_topic_info{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/links/researcher_topic_links{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            topic_links = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variables to hold topic ids and identifier set to 1
+            topic_ids, identifier = OrderedDict(), 1
+            # for topic name in topics
+            for topic_name in topics.keys():
+                # add identifier to topic ids
+                topic_ids[topic_name] = identifier
+                # increment identifier
+                identifier += 1
+
+            # variable to hold output file
+            output_file = open('../../data/networks/past-topics/network-b/nodes_gephi{}.tsv'.format(years), 'w')
+            # write headers to file
+            output_file.write('Id\tLabel\tNum\n')
+            # for topic name and id in topic ids
+            for topic_name, topic_id in topic_ids.items():
+                # variables to hold number
+                number = topics.get(topic_name)
+                # write topic to file
+                output_file.write('{}\t{}\t{}\n'.format(topic_id, topic_name, number))
+
+            # variable to hold output file
+            output_file = open('../../data/networks/past-topics/network-b/edges_gephi{}.tsv'.format(years), 'w')
+            # write headers to file
+            output_file.write('Source\tTarget\tType\tWeight\n')
+            # for topic link in topic links
+            for topic_link in topic_links:
+                # variable to hold source
+                source = topic_link[0]
+                # variable to hold source id
+                source_id = topic_ids.get(source)
+                # variable to hold target
+                target = topic_link[1]
+                # variable to hold target id
+                target_id = topic_ids.get(target)
+                # write topic link to file
+                output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(source_id, target_id, 'Undirected', topic_link[2]))
+
+            # print progress
+            print('> Creation of Past Topic Network B ({}) in Gephi format completed'
+                  .format(years[1:].replace('_', '-')))
+
+
+########################################################################################################################
+
+
+# CreatePastResearcherNetwork class
+class CreatePastResearcherNetwork:
+
+    @staticmethod
+    def run():
+
+        # create network a
+        CreatePastResearcherNetwork.create_network_a('')
+        # create network a
+        CreatePastResearcherNetwork.create_network_a('')
+
+        # create network b
+        CreatePastResearcherNetwork.create_network_b('')
+        # create network b
+        CreatePastResearcherNetwork.create_network_b('')
+
+    ####################################################################################################################
+
+    @staticmethod
+    # creates network a
+    def create_network_a(years):
         pass
 
     ####################################################################################################################
 
     @staticmethod
-    # creates researcher network b
-    def create_researcher_network_b():
+    # creates network b
+    def create_network_b(years):
         pass
 
 
@@ -220,8 +482,18 @@ class CreateNetwork:
 # main function
 def main():
 
-    # create network
-    CreateNetwork.run()
+    # create area network
+    CreateAreaNetwork.run()
+
+    # create topic network
+    CreateTopicNetwork.run()
+    # create researcher network
+    CreateResearcherNetwork.run()
+
+    # create past topic network
+    CreatePastTopicNetwork.run()
+    # create past researcher network
+    CreatePastResearcherNetwork.run()
 
 
 ########################################################################################################################

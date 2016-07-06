@@ -10,7 +10,7 @@ import os
 import locale
 from copy import deepcopy
 from pickle import dump, load
-from collections import OrderedDict as dict
+from collections import OrderedDict
 
 ########################################################################################################################
 
@@ -149,7 +149,7 @@ class LinkTopics:
             topics = sorted(set([sub_topic for grant_topic in grant_topics.values() for sub_topic in grant_topic[0]]))
 
             # variable to hold new topics
-            new_topics = dict()
+            new_topics = OrderedDict()
 
             # for topic in topics
             for topic in topics:
@@ -225,7 +225,7 @@ class LinkTopics:
                                  for sub_topic in researcher_topic]))
 
             # variable to hold new topics
-            new_topics = dict()
+            new_topics = OrderedDict()
 
             # for topic in topics
             for topic in topics:
@@ -497,7 +497,7 @@ class LinkPastTopics:
             topics = sorted(set([sub_topic for grant_topic in grant_topics.values() for sub_topic in grant_topic[0]]))
 
             # variable to hold new topics
-            new_topics = dict()
+            new_topics = OrderedDict()
 
             # for topic in topics
             for topic in topics:
@@ -573,7 +573,7 @@ class LinkPastTopics:
                                  for sub_topic in researcher_topic]))
 
             # variable to hold new topics
-            new_topics = dict()
+            new_topics = OrderedDict()
 
             # for topic in topics
             for topic in topics:
@@ -797,15 +797,45 @@ class LinkPastTopics:
 ########################################################################################################################
 
 
+# LinkResearchers class
+class LinkResearchers:
+
+    @staticmethod
+    # runs other functions
+    def run():
+        pass
+
+
+########################################################################################################################
+
+
+# LinkPastResearchers class
+class LinkPastResearchers:
+
+    @staticmethod
+    # runs other functions
+    def run():
+        pass
+
+
+########################################################################################################################
+
+
 # main function
 def main():
 
     # link areas
     LinkAreas.run()
+
     # link topics
     LinkTopics.run()
+    # link researchers
+    LinkResearchers.run()
+
     # link past topics
     LinkPastTopics.run()
+    # link past researchers
+    LinkPastResearchers.run()
 
 
 ########################################################################################################################
