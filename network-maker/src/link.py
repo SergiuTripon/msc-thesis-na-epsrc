@@ -105,6 +105,7 @@ class LinkAreas:
         # return area links list
         return area_links
 
+
 ########################################################################################################################
 
 
@@ -117,8 +118,13 @@ class LinkTopics:
 
         # extract grant topic information
         LinkTopics.extract_grant_topic_info()
-        # link topics
-        LinkTopics.link_topics()
+        # extract researcher topic information
+        LinkTopics.extract_researcher_topic_info()
+
+        # link grant topics
+        LinkTopics.link_grant_topics()
+        # link researcher topics
+        LinkTopics.link_researcher_topics()
 
     ####################################################################################################################
 
@@ -151,14 +157,12 @@ class LinkTopics:
                 number, value = 0, 0
                 # for grant topic in grant topics
                 for grant_topic in grant_topics.values():
-                    # for sub topic in grant topic
-                    for sub_topic in grant_topic[0]:
-                        # if topic is equal to sub topic
-                        if topic == sub_topic:
-                            # increment number
-                            number += 1
-                            # add value to value
-                            value += grant_topic[1]
+                    # if topic in grant topic
+                    if topic in grant_topic[0]:
+                        # increment number
+                        number += 1
+                        # add value to value
+                        value += grant_topic[1]
                 # add topic to new topics
                 new_topics[topic] = [number, value]
 
@@ -200,14 +204,85 @@ class LinkTopics:
     ####################################################################################################################
 
     @staticmethod
-    # links topics
-    def link_topics():
+    # extracts researcher topic information
+    def extract_researcher_topic_info():
 
-        # if area links file does not exist
-        if not os.path.isfile('../output/topics/links/topic_links.csv'):
+        # if researcher topic information file does not exist
+        if not os.path.isfile('../output/topics/info/researchers/researcher_topic_info.csv'):
 
             # print progress
-            print('> Extraction of topic links started')
+            print('> Extraction of researcher topic information started')
+
+            # variable to hold input file
+            input_file = open(r'../output/topics/info/researchers/researcher_topics.pkl', 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold topics
+            topics = sorted(set([sub_topic for researcher_topic in researcher_topics.values()
+                                 for sub_topic in researcher_topic]))
+
+            # variable to hold new topics
+            new_topics = dict()
+
+            # for topic in topics
+            for topic in topics:
+                # variables to hold number set to 0
+                number = 0
+                # for researcher topic in researcher topics
+                for researcher_topic in researcher_topics.values():
+                    # if topic in researcher topic
+                    if topic in researcher_topic:
+                        # increment number
+                        number += 1
+                # add new topic to new topics
+                new_topics[topic] = number
+
+            # variable to hold output file
+            output_file = open('../output/topics/info/researchers/researcher_topic_info.csv', mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for name and number in new topics
+            for name, number in new_topics.items():
+                # write name and number to file
+                output_file.write('"{}","{}"\n'.format(name, number))
+
+                # print progress
+                print('> Extraction of researcher topic information in progress (information for {} topic(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/topics/info/researchers/researcher_topic_info.pkl', 'wb')
+            # write data structure to file
+            dump(new_topics, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher topic information completed (information for {} topics'
+                  ' extracted)'.format(len(topics)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # links topics
+    def link_grant_topics():
+
+        # if grant topic links file does not exist
+        if not os.path.isfile('../output/topics/links/grant_topic_links.csv'):
+
+            # print progress
+            print('> Extraction of grant topic links started')
 
             # variable to hold input file
             input_file = open(r'../output/topics/info/grants/grant_topics.pkl', 'rb')
@@ -220,12 +295,12 @@ class LinkTopics:
             grant_topics = [grant_topic for grant_topic in grant_topics.values() if len(grant_topic[0]) > 1]
 
             # variable to hold topic links
-            topic_links = [['|'.join([source, target]), grant_topic[1]] for grant_topic in grant_topics for source in
+            topic_links = [[source, target, grant_topic[1]] for grant_topic in grant_topics for source in
                            grant_topic[0] for target in grant_topic[0] if source != target]
 
             # remove reversed topic links
-            [topic_links.remove([topic_link[0], topic_link[1]]) for topic_link in topic_links
-             if [topic_link[0], topic_link[1]] in topic_links]
+            [topic_links.remove([topic_link[1], topic_link[0], topic_link[2]]) for topic_link in topic_links
+             if [topic_link[1], topic_link[0], topic_link[2]] in topic_links]
 
             # sort topic links
             topic_links = sorted(topic_links)
@@ -235,26 +310,24 @@ class LinkTopics:
 
             # for topic link in topic links
             for topic_link in topic_links:
-                # variable to hold topics
-                topics = topic_link[0].split('|')
                 # variable to hold duplicate topic links
-                dupe_topic_links = [x for x in topic_links if x[0] == topic_link[0]]
+                dupe_topic_links = [x for x in topic_links if (x[0], x[1]) == (topic_link[0], topic_link[1])]
                 # variable to hold number and value
                 number, value = len(dupe_topic_links), 0
                 # for duplicate topic link in duplicate topic links
                 for dupe_topic_link in dupe_topic_links:
                     # add value to value
-                    value += dupe_topic_link[1]
-                    # remove topic link
+                    value += dupe_topic_link[2]
+                    # remove duplicate topic link
                     topic_links.remove(dupe_topic_link)
-                # add topic link to new topic links
-                new_topic_links += [[topics[0], topics[1], number, value]]
+                # add new topic link to new topic links
+                new_topic_links += [[topic_link[0], topic_link[1], number, value]]
 
             # set locale to Great Britain
             setlocale(LC_ALL, 'en_GB.utf8')
 
             # variable to hold output file
-            output_file = open('../output/topics/links/topic_links.csv', mode='w')
+            output_file = open('../output/topics/links/grant_topic_links.csv', mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -267,7 +340,8 @@ class LinkTopics:
                                                                                              grouping=True)))
 
                 # print progress
-                print('> Extraction of topic links in progress ({} topic link(s) extracted)'.format(extraction_count))
+                print('> Extraction of grant topic links in progress ({} grant topic link(s)'
+                      ' extracted)'.format(extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -276,14 +350,449 @@ class LinkTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/topics/links/topic_links.pkl', 'wb')
+            output_file = open(r'../output/topics/links/grant_topic_links.pkl', 'wb')
             # write data structure to file
             dump(new_topic_links, output_file)
             # close output file
             output_file.close()
 
             # print progress
-            print('> Extraction of topic links completed ({} topic links extracted)'.format(len(new_topic_links)))
+            print('> Extraction of grant topic links completed ({} grant topic links'
+                  ' extracted)'.format(len(new_topic_links)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # links researcher topics
+    def link_researcher_topics():
+
+        # if researcher topic links file does not exist
+        if not os.path.isfile('../output/topics/links/researcher_topic_links.csv'):
+
+            # print progress
+            print('> Extraction of researcher topic links started')
+
+            # variable to hold input file
+            input_file = open(r'../output/topics/info/researchers/researcher_topics.pkl', 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold researcher topics
+            researcher_topics = [researcher_topic for researcher_topic in researcher_topics.values()
+                                 if len(researcher_topic) > 1]
+
+            # variable to hold topic links
+            topic_links = [[source, target] for researcher_topic in researcher_topics for source in researcher_topic
+                           for target in researcher_topic if source != target]
+
+            # remove reversed topic links
+            [topic_links.remove([topic_link[1], topic_link[0]]) for topic_link in topic_links
+             if [topic_link[1], topic_link[0]] in topic_links]
+
+            # sort topic links
+            topic_links = sorted(topic_links)
+
+            # variable to hold new topic links
+            new_topic_links = []
+
+            # for topic link in topic links
+            for topic_link in topic_links:
+                # variable to hold duplicate topic links
+                dupe_topic_links = [x for x in topic_links if (x[0], x[1]) == (topic_link[0], topic_link[1])]
+                # variable to hold number
+                number = len(dupe_topic_links)
+                # for duplicate topic link in duplicate topic links
+                for dupe_topic_link in dupe_topic_links:
+                    # remove duplicate topic link
+                    topic_links.remove(dupe_topic_link)
+                # add new topic link to new topic links
+                new_topic_links += [[topic_link[0], topic_link[1], number]]
+
+            # variable to hold output file
+            output_file = open('../output/topics/links/researcher_topic_links.csv', mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for new topic link in new topic links
+            for new_topic_link in new_topic_links:
+                # write new topic link to file
+                output_file.write('"{}","{}","{}"\n'.format(new_topic_link[0], new_topic_link[1],
+                                                            new_topic_link[2]))
+
+                # print progress
+                print('> Extraction of researcher topic links in progress ({} researcher topic link(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/topics/links/researcher_topic_links.pkl', 'wb')
+            # write data structure to file
+            dump(new_topic_links, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher topic links completed ({} researcher topic links'
+                  ' extracted)'.format(len(new_topic_links)))
+
+
+########################################################################################################################
+
+
+# LinkPastTopics class
+class LinkPastTopics:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # extract grant topic information from 1990 to 2000
+        LinkPastTopics.extract_grant_topic_info('_1990_2000')
+        # extract grant topic information from 2000 to 2010
+        LinkPastTopics.extract_grant_topic_info('_2000_2010')
+
+        # extract researcher topic information from 1990 to 2000
+        LinkPastTopics.extract_researcher_topic_info('_1990_2000')
+        # extract researcher topic information from 2000 to 2010
+        LinkPastTopics.extract_researcher_topic_info('_2000_2010')
+
+        # link researcher topics from 1990 to 2000
+        LinkPastTopics.link_grant_topics('_1990_2000')
+        # link researcher topics from 2000 to 2010
+        LinkPastTopics.link_grant_topics('_2000_2010')
+
+        # link researcher topics from 1990 to 2000
+        LinkPastTopics.link_researcher_topics('_1990_2000')
+        # link researcher topics from 2000 to 2010
+        LinkPastTopics.link_researcher_topics('_2000_2010')
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts grant topic information from 1990/2000 to 2000/2010
+    def extract_grant_topic_info(years):
+
+        # if grant topic information file does not exist
+        if not os.path.isfile('../output/past-topics/info/grants/grant_topic_info{}.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of grant topic information started')
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/info/grants/grant_topics{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            grant_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold topics
+            topics = sorted(set([sub_topic for grant_topic in grant_topics.values() for sub_topic in grant_topic[0]]))
+
+            # variable to hold new topics
+            new_topics = dict()
+
+            # for topic in topics
+            for topic in topics:
+                # variables to hold number and value set to 0
+                number, value = 0, 0
+                # for grant topic in grant topics
+                for grant_topic in grant_topics.values():
+                    # if topic in grant topic
+                    if topic in grant_topic[0]:
+                        # increment number
+                        number += 1
+                        # add value to value
+                        value += grant_topic[1]
+                # add topic to new topics
+                new_topics[topic] = [number, value]
+
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
+            # variable to hold output file
+            output_file = open('../output/past-topics/info/grants/grant_topic_info{}.csv'.format(years), mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for name and attributes in new topics
+            for name, attr in new_topics.items():
+                # write name and attributes to file
+                output_file.write('"{}","{}","{}"\n'.format(name, attr[0], currency(attr[1], grouping=True)))
+
+                # print progress
+                print('> Extraction of grant topic information in progress (information for {} topic(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/past-topics/info/grants/grant_topic_info{}.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(new_topics, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of grant topic information completed (information for {} topics'
+                  ' extracted)'.format(len(topics)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts researcher topic information from 1990/2000 to 2000/2010
+    def extract_researcher_topic_info(years):
+
+        # if researcher topic information file does not exist
+        if not os.path.isfile('../output/past-topics/info/researchers/researcher_topic_info{}.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of researcher topic information started')
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/info/researchers/researcher_topics{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold topics
+            topics = sorted(set([sub_topic for researcher_topic in researcher_topics.values()
+                                 for sub_topic in researcher_topic]))
+
+            # variable to hold new topics
+            new_topics = dict()
+
+            # for topic in topics
+            for topic in topics:
+                # variables to hold number set to 0
+                number = 0
+                # for researcher topic in researcher topics
+                for researcher_topic in researcher_topics.values():
+                    # if topic in researcher topic
+                    if topic in researcher_topic:
+                        # increment number
+                        number += 1
+                # add new topic to new topics
+                new_topics[topic] = number
+
+            # variable to hold output file
+            output_file = open('../output/past-topics/info/researchers/researcher_topic_info{}.csv'.format(years),
+                               mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for name and number in new topics
+            for name, number in new_topics.items():
+                # write name and number to file
+                output_file.write('"{}","{}"\n'.format(name, number))
+
+                # print progress
+                print('> Extraction of researcher topic information in progress (information for {} topic(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/past-topics/info/researchers/researcher_topic_info{}.pkl'.format(years),
+                               'wb')
+            # write data structure to file
+            dump(new_topics, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher topic information completed (information for {} topics'
+                  ' extracted)'.format(len(topics)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # links grant topics from 1990/2000 to 2000/2010
+    def link_grant_topics(years):
+
+        # if grant topic links file does not exist
+        if not os.path.isfile('../output/past-topics/links/grant_topic_links{}.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of grant topic links started')
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/info/grants/grant_topics{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            grant_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold grant topics
+            grant_topics = [grant_topic for grant_topic in grant_topics.values() if len(grant_topic[0]) > 1]
+
+            # variable to hold topic links
+            topic_links = [[source, target, grant_topic[1]] for grant_topic in grant_topics for source in
+                           grant_topic[0] for target in grant_topic[0] if source != target]
+
+            # remove reversed topic links
+            [topic_links.remove([topic_link[1], topic_link[0], topic_link[2]]) for topic_link in topic_links
+             if [topic_link[1], topic_link[0], topic_link[2]] in topic_links]
+
+            # sort topic links
+            topic_links = sorted(topic_links)
+
+            # variable to hold new topic links
+            new_topic_links = []
+
+            # for topic link in topic links
+            for topic_link in topic_links:
+                # variable to hold duplicate topic links
+                dupe_topic_links = [x for x in topic_links if (x[0], x[1]) == (topic_link[0], topic_link[1])]
+                # variable to hold number and value
+                number, value = len(dupe_topic_links), 0
+                # for duplicate topic link in duplicate topic links
+                for dupe_topic_link in dupe_topic_links:
+                    # add value to value
+                    value += dupe_topic_link[2]
+                    # remove duplicate topic link
+                    topic_links.remove(dupe_topic_link)
+                # add new topic link to new topic links
+                new_topic_links += [[topic_link[0], topic_link[1], number, value]]
+
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
+            # variable to hold output file
+            output_file = open('../output/past-topics/links/grant_topic_links{}.csv'.format(years), mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for new topic link in new topic links
+            for new_topic_link in new_topic_links:
+                # write new topic link to file
+                output_file.write('"{}","{}","{}","{}"\n'.format(new_topic_link[0], new_topic_link[1],
+                                                                 new_topic_link[2], currency(new_topic_link[3],
+                                                                                             grouping=True)))
+
+                # print progress
+                print('> Extraction of grant topic links in progress ({} grant topic link(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/past-topics/links/grant_topic_links{}.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(new_topic_links, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of grant topic links completed ({} grant topic links'
+                  ' extracted)'.format(len(new_topic_links)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # links researcher topics from 1990/2000 to 2000/2010
+    def link_researcher_topics(years):
+
+        # if researcher topic links file does not exist
+        if not os.path.isfile('../output/past-topics/links/researcher_topic_links{}.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of researcher topic links started')
+
+            # variable to hold input file
+            input_file = open(r'../output/past-topics/info/researchers/researcher_topics{}.pkl'.format(years), 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold researcher topics
+            researcher_topics = [researcher_topic for researcher_topic in researcher_topics.values()
+                                 if len(researcher_topic) > 1]
+
+            # variable to hold topic links
+            topic_links = [[source, target] for researcher_topic in researcher_topics for source in researcher_topic
+                           for target in researcher_topic if source != target]
+
+            # remove reversed topic links
+            [topic_links.remove([topic_link[1], topic_link[0]]) for topic_link in topic_links
+             if [topic_link[1], topic_link[0]] in topic_links]
+
+            # sort topic links
+            topic_links = sorted(topic_links)
+
+            # variable to hold new topic links
+            new_topic_links = []
+
+            # for topic link in topic links
+            for topic_link in topic_links:
+                # variable to hold duplicate topic links
+                dupe_topic_links = [x for x in topic_links if (x[0], x[1]) == (topic_link[0], topic_link[1])]
+                # variable to hold number
+                number = len(dupe_topic_links)
+                # for duplicate topic link in duplicate topic links
+                for dupe_topic_link in dupe_topic_links:
+                    # remove duplicate topic link
+                    topic_links.remove(dupe_topic_link)
+                # add new topic link to new topic links
+                new_topic_links += [[topic_link[0], topic_link[1], number]]
+
+            # variable to hold output file
+            output_file = open('../output/past-topics/links/researcher_topic_links{}.csv'.format(years), mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for new topic link in new topic links
+            for new_topic_link in new_topic_links:
+                # write new topic link to file
+                output_file.write('"{}","{}","{}"\n'.format(new_topic_link[0], new_topic_link[1],
+                                                            new_topic_link[2]))
+
+                # print progress
+                print('> Extraction of researcher topic links in progress ({} researcher topic link(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/past-topics/links/researcher_topic_links{}.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(new_topic_links, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher topic links completed ({} researcher topic links'
+                  ' extracted)'.format(len(new_topic_links)))
+
 
 ########################################################################################################################
 
@@ -293,9 +802,10 @@ def main():
 
     # link areas
     LinkAreas.run()
-
     # link topics
     LinkTopics.run()
+    # link past topics
+    LinkPastTopics.run()
 
 
 ########################################################################################################################

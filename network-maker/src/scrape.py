@@ -620,8 +620,8 @@ class ExtractTopics:
             # close input file
             input_file.close()
 
-            # variable to hold detailed grants
-            grants_topics = OrderedDict()
+            # variable to hold grant topics
+            grant_topics = OrderedDict()
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -660,7 +660,7 @@ class ExtractTopics:
                 setlocale(LC_ALL, 'en_GB.utf8')
 
                 # add grant topics to grant topics
-                grants_topics[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = [clean_topics, atoi(values[0])]
+                grant_topics[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = [clean_topics, atoi(values[0])]
 
                 # print progress
                 print('> Extraction of grant topics in progress (topics for {} grant(s)'
@@ -673,7 +673,7 @@ class ExtractTopics:
             output_file = open('../output/topics/info/grants/grant_topics.csv', mode='w')
 
             # for reference and attributes in grant topics
-            for ref, attr in grants_topics.items():
+            for ref, attr in grant_topics.items():
                 # write reference and attributes to file
                 output_file.write('"{}","{}","{}"\n'.format(ref, attr[0], currency(attr[1], grouping=True)))
 
@@ -683,7 +683,7 @@ class ExtractTopics:
             # variable to hold output file
             output_file = open(r'../output/topics/info/grants/grant_topics.pkl', 'wb')
             # write data structure to file
-            dump(grants_topics, output_file)
+            dump(grant_topics, output_file)
             # close output file
             output_file.close()
 
@@ -811,7 +811,7 @@ class ExtractTopics:
                 # for topic in topics
                 for topic in topics:
                     # remove space
-                    topic = topic.strip()
+                    topic = topic.strip().lower()
                     # if topic is not empty and is not in clean topics
                     if topic and topic not in clean_topics:
                         # add topic to clean topics
@@ -882,7 +882,7 @@ class ExtractPastTopics:
     ####################################################################################################################
 
     @staticmethod
-    # extracts researcher urls
+    # extracts researcher urls from 1990/2000 to 2000/2010
     def extract_researcher_urls(years):
 
         # if researcher urls file does not exist
@@ -988,9 +988,13 @@ class ExtractPastTopics:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold value xpath
+                value_xpath = "//table[@id='tblFound']/tr[position()=10]/td[position()=6]/span/text()"
                 # variable to hold topics xpath
                 topics_xpath = "//table[@id='tblFound']/tr[position()=11]/td[position()=2]/table/tr/td/text()"
 
+                # variable to hold values
+                values = tree.xpath(value_xpath)
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
 
@@ -1000,14 +1004,17 @@ class ExtractPastTopics:
                 # for topic in topics
                 for topic in topics:
                     # remove spaces
-                    topic = topic.strip()
+                    topic = topic.strip().lower()
                     # if topic is not empty and is not in clean topics
                     if topic and topic not in clean_topics:
                         # add topic to clean topics
                         clean_topics += [topic]
 
+                # set locale to Great Britain
+                setlocale(LC_ALL, 'en_GB.utf8')
+
                 # add grant topics to grant topics
-                grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = clean_topics
+                grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [clean_topics, atoi(values[0])]
 
                 # print progress
                 print('> Extraction of grant topics in progress (topics for {} grant(s)'
@@ -1019,10 +1026,10 @@ class ExtractPastTopics:
             # variable to hold output file
             output_file = open('../output/past-topics/info/grants/grant_topics{}.csv'.format(years), mode='w')
 
-            # for reference and topics in grant topics
-            for ref, topics in grant_topics.items():
-                # write reference and topics to file
-                output_file.write('"{}","{}"\n'.format(ref, topics))
+            # for reference and attributes in grant topics
+            for ref, attr in grant_topics.items():
+                # write reference and attributes to file
+                output_file.write('"{}","{}","{}"\n'.format(ref, attr[0], currency(attr[1], grouping=True)))
 
             # close output file
             output_file.close()
@@ -1041,7 +1048,7 @@ class ExtractPastTopics:
     ####################################################################################################################
 
     @staticmethod
-    # extract grant researchers
+    # extract grant researchers from 1990/2000 to 2000/2010
     def extract_grant_researchers(years):
 
         # if grant researchers file does not exist
@@ -1158,7 +1165,7 @@ class ExtractPastTopics:
                 # for topic in topics
                 for topic in topics:
                     # remove spaces
-                    topic = topic.strip()
+                    topic = topic.strip().lower()
                     # if topic is not empty and is not in clean topics
                     if topic and topic not in clean_topics:
                         # add topic to clean topics

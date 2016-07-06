@@ -145,7 +145,7 @@ class CreateNetwork:
             input_file.close()
 
             # variable to hold input file
-            input_file = open(r'../output/topics/links/topic_links.pkl', 'rb')
+            input_file = open(r'../output/topics/links/grant_topic_links.pkl', 'rb')
             # load data structure from file
             topic_links = load(input_file)
             # close input file
