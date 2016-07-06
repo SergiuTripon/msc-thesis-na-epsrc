@@ -48,11 +48,6 @@ class LinkAreas:
                 # link areas and return the output in area links list
                 area_links += LinkAreas.compare_areas(area_name, grant_refs, grants)
 
-            # for area name and grant references in grants dictionary
-            for area_name, grant_refs in grants.items():
-                # link areas and return the output in area links list
-                area_links += LinkAreas.compare_areas(area_name, grant_refs, grants)
-
             # variable to hold output file
             output_file = open(r'../output/areas/links/area_links.pkl', 'wb')
             # write data structure to file
