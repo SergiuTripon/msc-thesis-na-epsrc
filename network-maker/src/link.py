@@ -484,7 +484,7 @@ class LinkPastTopics:
         if not os.path.isfile('../output/past-topics/info/grants/grant_topic_info{}.csv'.format(years)):
 
             # print progress
-            print('> Extraction of grant topic information started')
+            print('> Extraction of grant topic information ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
             input_file = open(r'../output/past-topics/info/grants/grant_topics{}.pkl'.format(years), 'rb')
@@ -529,8 +529,8 @@ class LinkPastTopics:
                 output_file.write('"{}","{}","{}"\n'.format(name, attr[0], currency(attr[1], grouping=True)))
 
                 # print progress
-                print('> Extraction of grant topic information in progress (information for {} topic(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant topic information ({}) in progress (information for {} topic(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -546,8 +546,8 @@ class LinkPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant topic information completed (information for {} topics'
-                  ' extracted)'.format(len(topics)))
+            print('> Extraction of grant topic information ({}) completed (information for {} topics'
+                  ' extracted)'.format(years[1:].replace('_', '-'), len(topics)))
 
     ####################################################################################################################
 
@@ -559,7 +559,7 @@ class LinkPastTopics:
         if not os.path.isfile('../output/past-topics/info/researchers/researcher_topic_info{}.csv'.format(years)):
 
             # print progress
-            print('> Extraction of researcher topic information started')
+            print('> Extraction of researcher topic information ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
             input_file = open(r'../output/past-topics/info/researchers/researcher_topics{}.pkl'.format(years), 'rb')
@@ -601,8 +601,8 @@ class LinkPastTopics:
                 output_file.write('"{}","{}"\n'.format(name, number))
 
                 # print progress
-                print('> Extraction of researcher topic information in progress (information for {} topic(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of researcher topic information ({}) in progress (information for {} topic(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -619,8 +619,8 @@ class LinkPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher topic information completed (information for {} topics'
-                  ' extracted)'.format(len(topics)))
+            print('> Extraction of researcher topic information ({}) completed (information for {} topics'
+                  ' extracted)'.format(years[1:].replace('_', '-'), len(topics)))
 
     ####################################################################################################################
 
@@ -632,7 +632,7 @@ class LinkPastTopics:
         if not os.path.isfile('../output/past-topics/links/grant_topic_links{}.csv'.format(years)):
 
             # print progress
-            print('> Extraction of grant topic links started')
+            print('> Extraction of grant topic links ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
             input_file = open(r'../output/past-topics/info/grants/grant_topics{}.pkl'.format(years), 'rb')
@@ -690,8 +690,8 @@ class LinkPastTopics:
                                                                                              grouping=True)))
 
                 # print progress
-                print('> Extraction of grant topic links in progress ({} grant topic link(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant topic links ({}) in progress ({} grant topic link(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -707,8 +707,8 @@ class LinkPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant topic links completed ({} grant topic links'
-                  ' extracted)'.format(len(new_topic_links)))
+            print('> Extraction of grant topic links ({}) completed ({} grant topic links'
+                  ' extracted)'.format(years[1:].replace('_', '-'), len(new_topic_links)))
 
     ####################################################################################################################
 
@@ -720,7 +720,7 @@ class LinkPastTopics:
         if not os.path.isfile('../output/past-topics/links/researcher_topic_links{}.csv'.format(years)):
 
             # print progress
-            print('> Extraction of researcher topic links started')
+            print('> Extraction of researcher topic links ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
             input_file = open(r'../output/past-topics/info/researchers/researcher_topics{}.pkl'.format(years), 'rb')
@@ -773,8 +773,8 @@ class LinkPastTopics:
                                                             new_topic_link[2]))
 
                 # print progress
-                print('> Extraction of researcher topic links in progress ({} researcher topic link(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of researcher topic links ({}) in progress ({} researcher topic link(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -790,8 +790,8 @@ class LinkPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher topic links completed ({} researcher topic links'
-                  ' extracted)'.format(len(new_topic_links)))
+            print('> Extraction of researcher topic links ({}) completed ({} researcher topic links'
+                  ' extracted)'.format(years[1:].replace('_', '-'), len(new_topic_links)))
 
 
 ########################################################################################################################

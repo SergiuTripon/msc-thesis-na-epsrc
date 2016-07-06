@@ -689,7 +689,7 @@ class ExtractTopics:
 
             # print progress
             print('> Extraction of grant topics completed (topics for {} grants'
-                  ' extracted)'.format(len(grants_topics)))
+                  ' extracted)'.format(len(grant_topics)))
 
     ####################################################################################################################
 
@@ -736,6 +736,9 @@ class ExtractTopics:
 
                 # variable to hold all urls
                 all_urls = main_urls + other_urls
+
+                # variable to hold all urls
+                all_urls = [url.strip('NGBOViewPerson.aspx?PersonId=') for url in all_urls]
 
                 # add grant researchers to grant researchers
                 grant_researchers[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = all_urls
@@ -889,7 +892,7 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/past-topics/urls/researchers/researchers{}.txt'.format(years)):
 
             # print progress
-            print('> Extraction of researcher urls started')
+            print('> Extraction of researcher urls ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold grant urls
             grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url in
@@ -922,8 +925,8 @@ class ExtractPastTopics:
                 urls += tree.xpath(other_url_xpath)
 
                 # print progress
-                print('> Extraction of researcher urls in progress (researcher urls for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of researcher urls ({}) in progress (researcher urls for {} grant(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -954,7 +957,8 @@ class ExtractPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher urls completed ({} researcher urls extracted)'.format(len(full_urls)))
+            print('> Extraction of researcher urls ({}) completed ({} researcher urls extracted)'
+                  .format(years[1:].replace('_', '-'), len(full_urls)))
 
     ####################################################################################################################
 
@@ -966,7 +970,7 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/past-topics/info/grants/grant_topics{}.csv'.format(years)):
 
             # print progress
-            print('> Extraction of grant topics started')
+            print('> Extraction of grant topics ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold grant urls
             grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url in
@@ -1017,8 +1021,8 @@ class ExtractPastTopics:
                 grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [clean_topics, atoi(values[0])]
 
                 # print progress
-                print('> Extraction of grant topics in progress (topics for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant topics ({}) in progress (topics for {} grant(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1042,8 +1046,8 @@ class ExtractPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant topics completed (topics for {} grants'
-                  ' extracted)'.format(len(grant_topics)))
+            print('> Extraction of grant topics ({}) completed (topics for {} grants'
+                  ' extracted)'.format(years[1:].replace('_', '-'), len(grant_topics)))
 
     ####################################################################################################################
 
@@ -1055,7 +1059,7 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/past-topics/info/grants/grant_researchers{}.csv'.format(years)):
 
             # print progress
-            print('> Extraction of grant researchers started')
+            print('> Extraction of grant researchers ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold grant urls
             grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url in
@@ -1090,12 +1094,15 @@ class ExtractPastTopics:
                 # variable to hold all urls
                 all_urls = main_urls + other_urls
 
+                # variable to hold all ids
+                all_ids = [identifier.strip('NGBOViewPerson.aspx?PersonId=') for identifier in all_urls]
+
                 # add grant researchers to grant researchers
-                grant_researchers[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = all_urls
+                grant_researchers[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = all_ids
 
                 # print progress
-                print('> Extraction of grant researchers in progress (researchers for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant researchers ({}) in progress (researchers for {} grant(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1119,8 +1126,8 @@ class ExtractPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant researchers completed (researchers for {} grants'
-                  ' extracted)'.format(len(grant_researchers)))
+            print('> Extraction of grant researchers ({}) completed (researchers for {} grants'
+                  ' extracted)'.format(years[1:].replace('_', '-'), len(grant_researchers)))
 
     ####################################################################################################################
 
@@ -1132,7 +1139,7 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/past-topics/info/researchers/researcher_topics{}.csv'.format(years)):
 
             # print progress
-            print('> Extraction of researcher topics started')
+            print('> Extraction of researcher topics ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold researcher urls
             researcher_urls = [researcher_url.strip('http://gow.epsrc.ac.uk/') for researcher_url in
@@ -1175,8 +1182,8 @@ class ExtractPastTopics:
                 researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = clean_topics
 
                 # print progress
-                print('> Extraction of researcher topics in progress (topics for {} researcher(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of researcher topics ({}) in progress (topics for {} researcher(s)'
+                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1200,8 +1207,8 @@ class ExtractPastTopics:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher topics completed (topics for {} researchers'
-                  ' extracted)'.format(len(researcher_topics)))
+            print('> Extraction of researcher topics ({}) completed (topics for {} researchers'
+                  ' extracted)'.format(years[1:].replace('_', '-'), len(researcher_topics)))
 
 
 ########################################################################################################################
