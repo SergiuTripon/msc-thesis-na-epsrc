@@ -31,10 +31,10 @@ class LinkAreas:
     def link_areas():
 
         # if area links file does not exist
-        if not os.path.isfile('../output/areas/links/area_links.csv'):
+        if not os.path.isfile('../output/areas/current/links/area_links.csv'):
 
             # variable to hold input file
-            input_file = open(r'../output/areas/info/grant_info.pkl', 'rb')
+            input_file = open(r'../output/areas/current/info/area_grants.pkl', 'rb')
             # load data structure from file
             grants = load(input_file)
             # close input file
@@ -49,7 +49,7 @@ class LinkAreas:
                 area_links += LinkAreas.compare_areas(area_name, grant_refs, grants)
 
             # variable to hold output file
-            output_file = open(r'../output/areas/links/area_links.pkl', 'wb')
+            output_file = open(r'../output/areas/current/links/area_links.pkl', 'wb')
             # write data structure to file
             dump(area_links, output_file)
             # close output file
@@ -72,7 +72,7 @@ class LinkAreas:
         del grants_copy[default_area_name]
 
         # variable to hold output file
-        output_file = open('../output/areas/links/area_links.csv', 'a')
+        output_file = open('../output/areas/current/links/area_links.csv', 'a')
 
         # variable to hold area links list
         area_links = []
@@ -133,13 +133,13 @@ class LinkTopics:
     def extract_grant_topic_info():
 
         # if grant topic information file does not exist
-        if not os.path.isfile('../output/topics/info/grants/grant_topic_info.csv'):
+        if not os.path.isfile('../output/topics/current/info/grant_topic_info.csv'):
 
             # print progress
             print('> Extraction of grant topic information started')
 
             # variable to hold input file
-            input_file = open(r'../output/topics/info/grants/grant_topics.pkl', 'rb')
+            input_file = open(r'../output/grants/current/info/grant_topics.pkl', 'rb')
             # load data structure from file
             grant_topics = load(input_file)
             # close input file
@@ -170,7 +170,7 @@ class LinkTopics:
             setlocale(LC_ALL, 'en_GB.utf8')
 
             # variable to hold output file
-            output_file = open('../output/topics/info/grants/grant_topic_info.csv', mode='w')
+            output_file = open('../output/topics/current/info/grant_topic_info.csv', mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -191,7 +191,7 @@ class LinkTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/topics/info/grants/grant_topic_info.pkl', 'wb')
+            output_file = open(r'../output/topics/current/info/grant_topic_info.pkl', 'wb')
             # write data structure to file
             dump(new_topics, output_file)
             # close output file
@@ -208,13 +208,13 @@ class LinkTopics:
     def extract_researcher_topic_info():
 
         # if researcher topic information file does not exist
-        if not os.path.isfile('../output/topics/info/researchers/researcher_topic_info.csv'):
+        if not os.path.isfile('../output/topics/current/info/researcher_topic_info.csv'):
 
             # print progress
             print('> Extraction of researcher topic information started')
 
             # variable to hold input file
-            input_file = open(r'../output/topics/info/researchers/researcher_topics.pkl', 'rb')
+            input_file = open(r'../output/researchers/current/info/researcher_topics.pkl', 'rb')
             # load data structure from file
             researcher_topics = load(input_file)
             # close input file
@@ -241,7 +241,7 @@ class LinkTopics:
                 new_topics[topic] = number
 
             # variable to hold output file
-            output_file = open('../output/topics/info/researchers/researcher_topic_info.csv', mode='w')
+            output_file = open('../output/topics/current/info/researcher_topic_info.csv', mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -262,7 +262,7 @@ class LinkTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/topics/info/researchers/researcher_topic_info.pkl', 'wb')
+            output_file = open(r'../output/topics/current/info/researcher_topic_info.pkl', 'wb')
             # write data structure to file
             dump(new_topics, output_file)
             # close output file
@@ -279,13 +279,13 @@ class LinkTopics:
     def link_grant_topics():
 
         # if grant topic links file does not exist
-        if not os.path.isfile('../output/topics/links/grant_topic_links.csv'):
+        if not os.path.isfile('../output/topics/current/links/grant_topic_links.csv'):
 
             # print progress
             print('> Extraction of grant topic links started')
 
             # variable to hold input file
-            input_file = open(r'../output/topics/info/grants/grant_topics.pkl', 'rb')
+            input_file = open(r'../output/grants/current/info/grant_topics.pkl', 'rb')
             # load data structure from file
             grant_topics = load(input_file)
             # close input file
@@ -327,7 +327,7 @@ class LinkTopics:
             setlocale(LC_ALL, 'en_GB.utf8')
 
             # variable to hold output file
-            output_file = open('../output/topics/links/grant_topic_links.csv', mode='w')
+            output_file = open('../output/topics/current/links/grant_topic_links.csv', mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -350,7 +350,7 @@ class LinkTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/topics/links/grant_topic_links.pkl', 'wb')
+            output_file = open(r'../output/topics/current/links/grant_topic_links.pkl', 'wb')
             # write data structure to file
             dump(new_topic_links, output_file)
             # close output file
@@ -367,13 +367,13 @@ class LinkTopics:
     def link_researcher_topics():
 
         # if researcher topic links file does not exist
-        if not os.path.isfile('../output/topics/links/researcher_topic_links.csv'):
+        if not os.path.isfile('../output/topics/current/links/researcher_topic_links.csv'):
 
             # print progress
             print('> Extraction of researcher topic links started')
 
             # variable to hold input file
-            input_file = open(r'../output/topics/info/researchers/researcher_topics.pkl', 'rb')
+            input_file = open(r'../output/researchers/current/info/researcher_topics.pkl', 'rb')
             # load data structure from file
             researcher_topics = load(input_file)
             # close input file
@@ -411,7 +411,7 @@ class LinkTopics:
                 new_topic_links += [[topic_link[0], topic_link[1], number]]
 
             # variable to hold output file
-            output_file = open('../output/topics/links/researcher_topic_links.csv', mode='w')
+            output_file = open('../output/topics/current/links/researcher_topic_links.csv', mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -433,7 +433,7 @@ class LinkTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/topics/links/researcher_topic_links.pkl', 'wb')
+            output_file = open(r'../output/topics/current/links/researcher_topic_links.pkl', 'wb')
             # write data structure to file
             dump(new_topic_links, output_file)
             # close output file
@@ -455,24 +455,24 @@ class LinkPastTopics:
     def run():
 
         # extract grant topic information from 1990 to 2000
-        LinkPastTopics.extract_grant_topic_info('_1990_2000')
+        LinkPastTopics.extract_grant_topic_info('1990-2000')
         # extract grant topic information from 2000 to 2010
-        LinkPastTopics.extract_grant_topic_info('_2000_2010')
+        LinkPastTopics.extract_grant_topic_info('2000-2010')
 
         # extract researcher topic information from 1990 to 2000
-        LinkPastTopics.extract_researcher_topic_info('_1990_2000')
+        LinkPastTopics.extract_researcher_topic_info('1990-2000')
         # extract researcher topic information from 2000 to 2010
-        LinkPastTopics.extract_researcher_topic_info('_2000_2010')
+        LinkPastTopics.extract_researcher_topic_info('2000-2010')
 
         # link researcher topics from 1990 to 2000
-        LinkPastTopics.link_grant_topics('_1990_2000')
+        LinkPastTopics.link_grant_topics('1990-2000')
         # link researcher topics from 2000 to 2010
-        LinkPastTopics.link_grant_topics('_2000_2010')
+        LinkPastTopics.link_grant_topics('2000-2010')
 
         # link researcher topics from 1990 to 2000
-        LinkPastTopics.link_researcher_topics('_1990_2000')
+        LinkPastTopics.link_researcher_topics('1990-2000')
         # link researcher topics from 2000 to 2010
-        LinkPastTopics.link_researcher_topics('_2000_2010')
+        LinkPastTopics.link_researcher_topics('2000-2010')
 
     ####################################################################################################################
 
@@ -481,13 +481,13 @@ class LinkPastTopics:
     def extract_grant_topic_info(years):
 
         # if grant topic information file does not exist
-        if not os.path.isfile('../output/past-topics/info/grants/grant_topic_info{}.csv'.format(years)):
+        if not os.path.isfile('../output/topics/past/{}/info/grant_topic_info.csv'.format(years)):
 
             # print progress
             print('> Extraction of grant topic information ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
-            input_file = open(r'../output/past-topics/info/grants/grant_topics{}.pkl'.format(years), 'rb')
+            input_file = open(r'../output/grants/past/{}/info/grant_topics.pkl'.format(years), 'rb')
             # load data structure from file
             grant_topics = load(input_file)
             # close input file
@@ -518,7 +518,7 @@ class LinkPastTopics:
             setlocale(LC_ALL, 'en_GB.utf8')
 
             # variable to hold output file
-            output_file = open('../output/past-topics/info/grants/grant_topic_info{}.csv'.format(years), mode='w')
+            output_file = open('../output/topics/past/{}/info/grant_topic_info.csv'.format(years), mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -539,7 +539,7 @@ class LinkPastTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/past-topics/info/grants/grant_topic_info{}.pkl'.format(years), 'wb')
+            output_file = open(r'../output/topics/past/{}/info/grant_topic_info.pkl'.format(years), 'wb')
             # write data structure to file
             dump(new_topics, output_file)
             # close output file
@@ -556,13 +556,13 @@ class LinkPastTopics:
     def extract_researcher_topic_info(years):
 
         # if researcher topic information file does not exist
-        if not os.path.isfile('../output/past-topics/info/researchers/researcher_topic_info{}.csv'.format(years)):
+        if not os.path.isfile('../output/topics/past/{}/info/researcher_topic_info.csv'.format(years)):
 
             # print progress
             print('> Extraction of researcher topic information ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
-            input_file = open(r'../output/past-topics/info/researchers/researcher_topics{}.pkl'.format(years), 'rb')
+            input_file = open(r'../output/researchers/past/{}/info/researcher_topics.pkl'.format(years), 'rb')
             # load data structure from file
             researcher_topics = load(input_file)
             # close input file
@@ -589,7 +589,7 @@ class LinkPastTopics:
                 new_topics[topic] = number
 
             # variable to hold output file
-            output_file = open('../output/past-topics/info/researchers/researcher_topic_info{}.csv'.format(years),
+            output_file = open('../output/topics/past/{}/info/researcher_topic_info.csv'.format(years),
                                mode='w')
 
             # variable to hold extraction count set to 1
@@ -611,7 +611,7 @@ class LinkPastTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/past-topics/info/researchers/researcher_topic_info{}.pkl'.format(years),
+            output_file = open(r'../output/topics/past/{}/info/researcher_topic_info.pkl'.format(years),
                                'wb')
             # write data structure to file
             dump(new_topics, output_file)
@@ -629,13 +629,13 @@ class LinkPastTopics:
     def link_grant_topics(years):
 
         # if grant topic links file does not exist
-        if not os.path.isfile('../output/past-topics/links/grant_topic_links{}.csv'.format(years)):
+        if not os.path.isfile('../output/topics/past/{}/links/grant_topic_links.csv'.format(years)):
 
             # print progress
             print('> Extraction of grant topic links ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
-            input_file = open(r'../output/past-topics/info/grants/grant_topics{}.pkl'.format(years), 'rb')
+            input_file = open(r'../output/grants/past/{}/info/grant_topics.pkl'.format(years), 'rb')
             # load data structure from file
             grant_topics = load(input_file)
             # close input file
@@ -677,7 +677,7 @@ class LinkPastTopics:
             setlocale(LC_ALL, 'en_GB.utf8')
 
             # variable to hold output file
-            output_file = open('../output/past-topics/links/grant_topic_links{}.csv'.format(years), mode='w')
+            output_file = open('../output/topics/past/{}/links/grant_topic_links.csv'.format(years), mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -700,7 +700,7 @@ class LinkPastTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/past-topics/links/grant_topic_links{}.pkl'.format(years), 'wb')
+            output_file = open(r'../output/topics/past/{}/links/grant_topic_links.pkl'.format(years), 'wb')
             # write data structure to file
             dump(new_topic_links, output_file)
             # close output file
@@ -717,13 +717,13 @@ class LinkPastTopics:
     def link_researcher_topics(years):
 
         # if researcher topic links file does not exist
-        if not os.path.isfile('../output/past-topics/links/researcher_topic_links{}.csv'.format(years)):
+        if not os.path.isfile('../output/topics/past/{}/links/researcher_topic_links.csv'.format(years)):
 
             # print progress
             print('> Extraction of researcher topic links ({}) started'.format(years[1:].replace('_', '-')))
 
             # variable to hold input file
-            input_file = open(r'../output/past-topics/info/researchers/researcher_topics{}.pkl'.format(years), 'rb')
+            input_file = open(r'../output/researchers/past/{}/info/researcher_topics.pkl'.format(years), 'rb')
             # load data structure from file
             researcher_topics = load(input_file)
             # close input file
@@ -761,7 +761,7 @@ class LinkPastTopics:
                 new_topic_links += [[topic_link[0], topic_link[1], number]]
 
             # variable to hold output file
-            output_file = open('../output/past-topics/links/researcher_topic_links{}.csv'.format(years), mode='w')
+            output_file = open('../output/topics/past/{}/links/researcher_topic_links.csv'.format(years), mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -783,7 +783,7 @@ class LinkPastTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/past-topics/links/researcher_topic_links{}.pkl'.format(years), 'wb')
+            output_file = open(r'../output/topics/past/{}/links/researcher_topic_links.pkl'.format(years), 'wb')
             # write data structure to file
             dump(new_topic_links, output_file)
             # close output file
@@ -829,11 +829,11 @@ def main():
 
     # link topics
     LinkTopics.run()
-    # link researchers
-    LinkResearchers.run()
-
     # link past topics
     LinkPastTopics.run()
+
+    # link researchers
+    LinkResearchers.run()
     # link past researchers
     LinkPastResearchers.run()
 
