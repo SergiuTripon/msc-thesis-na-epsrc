@@ -24,7 +24,7 @@ class ExtractAreas:
         # extract area information
         ExtractAreas.extract_area_info()
         # extract grant information
-        ExtractAreas.extract_grant_info()
+        ExtractAreas.extract_area_grants()
 
     ####################################################################################################################
 
@@ -104,7 +104,7 @@ class ExtractAreas:
 
     @staticmethod
     # extracts grant information
-    def extract_grant_info():
+    def extract_area_grants():
 
         # if grants file does not exist
         if not os.path.isfile('../output/areas/current/info/area_grants.csv'):
@@ -179,7 +179,7 @@ class ExtractAreas:
                 grants_num_total += len(grant_ref)
 
             # print progress
-            print('> Extraction of grants completed ({} grants extracted)'.format(grants_num_total))
+            print('> Extraction of area grants completed ({} area grants extracted)'.format(grants_num_total))
 
 
 ########################################################################################################################
@@ -660,7 +660,7 @@ class ExtractTopics:
                 setlocale(LC_ALL, 'en_GB.utf8')
 
                 # add grant topics to grant topics
-                grant_topics[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = [clean_topics, atoi(values[0])]
+                grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [clean_topics, atoi(values[0])]
 
                 # print progress
                 print('> Extraction of grant topics in progress (topics for {} grant(s)'
@@ -724,24 +724,47 @@ class ExtractTopics:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold main name xpath
+                main_name_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/text()"
                 # variable to hold main url xpath
                 main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
+                # variable to hold other name xpath
+                other_name_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/text()"
                 # variable to hold other url xpath
                 other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
 
+                # variable to hold main names
+                main_names = tree.xpath(main_name_xpath)
                 # variable to hold main urls
                 main_urls = tree.xpath(main_url_xpath)
+                # variable to hold other names
+                other_names = tree.xpath(other_name_xpath)
                 # variable to hold other urls
                 other_urls = tree.xpath(other_url_xpath)
 
+                # variable to hold all names
+                all_names = main_names + other_names
                 # variable to hold all urls
                 all_urls = main_urls + other_urls
 
-                # variable to hold all urls
-                all_urls = [url.strip('NGBOViewPerson.aspx?PersonId=') for url in all_urls]
+                # variable to hold all identifiers
+                all_ids = [identifier.replace('NGBOViewPerson.aspx?PersonId=', '') for identifier in all_urls]
+
+                # variable to hold unique identifiers
+                unique_ids = []
+
+                # for identifier in all
+                for identifier in all_ids:
+                    # if identifier is not in unique identifiers
+                    if identifier not in unique_ids:
+                        # add identifier to unique identifiers
+                        unique_ids += [identifier]
+
+                # variable to hold all names and identifiers
+                all_names_ids = [[name, identifier] for name, identifier in zip(all_names, all_ids)]
 
                 # add grant researchers to grant researchers
-                grant_researchers[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = all_urls
+                grant_researchers[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = all_names_ids
 
                 # print progress
                 print('> Extraction of grant researchers in progress (researchers for {} grant(s)'
@@ -785,7 +808,7 @@ class ExtractTopics:
             print('> Extraction of researcher topics started')
 
             # variable to hold researcher urls
-            researcher_urls = [researcher_url.strip('http://gow.epsrc.ac.uk/') for researcher_url in
+            researcher_urls = [researcher_url.replace('http://gow.epsrc.ac.uk/', '') for researcher_url in
                                open(r'../output/researchers/current/urls/researchers.txt', "r").read().splitlines()]
 
             # variable to hold researcher topics
@@ -802,11 +825,23 @@ class ExtractTopics:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold name xpath
+                name_xpath = "//div[@id='pnlFound']/table/tr[position()=1]/td[position()=2]/span/text()"
                 # variable to hold topics xpath
                 topics_xpath = "//span[starts-with(@id, 'dgResearchTopics_ctl')]/text()"
 
+                # variable to hold names
+                names = tree.xpath(name_xpath)
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
+
+                # variable to hold name set to empty
+                name = ''
+
+                # if names exist
+                if names:
+                    # set name to name
+                    name = names[0]
 
                 # variable to hold clean topics
                 clean_topics = []
@@ -820,8 +855,11 @@ class ExtractTopics:
                         # add topic to clean topics
                         clean_topics += [topic]
 
+                # variable to hold attributes
+                attr = [name, clean_topics]
+
                 # add researcher topics to researcher topics
-                researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = clean_topics
+                researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
 
                 # print progress
                 print('> Extraction of researcher topics in progress (topics for {} researcher(s)'
@@ -872,7 +910,7 @@ class ExtractPastTopics:
         # extract grant topics from 2000 to 2010
         ExtractPastTopics.extract_grant_topics('2000-2010')
 
-        # extract grant researchers from 2000 to 2010
+        # extract grant researchers from 1990 to 2010
         ExtractPastTopics.extract_grant_researchers('1990-2000')
         # extract grant researchers from 2000 to 2010
         ExtractPastTopics.extract_grant_researchers('2000-2010')
@@ -892,10 +930,10 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/researchers/past/{}/urls/researchers.txt'.format(years)):
 
             # print progress
-            print('> Extraction of researcher urls ({}) started'.format(years[1:].replace('_', '-')))
+            print('> Extraction of researcher urls ({}) started'.format(years))
 
             # variable to hold grant urls
-            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url in
+            grant_urls = [grant_url.replace('http://gow.epsrc.ac.uk/', '') for grant_url in
                           open(r'../output/grants/past/{}/urls/grants.txt'.format(years),
                                "r").read().splitlines()]
 
@@ -926,21 +964,24 @@ class ExtractPastTopics:
 
                 # print progress
                 print('> Extraction of researcher urls ({}) in progress (researcher urls for {} grant(s)'
-                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
+                      ' extracted)'.format(years, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
 
-            # variable to hold full urls
-            full_urls = []
-
             # variable to hold output file
             output_file = open('../output/researchers/past/{}/urls/researchers.txt'.format(years), mode='w')
 
+            # variable to hold full urls
+            full_urls = []
+
+            # variable to hold invalid identifier
+            invalid_id = 'NGBOViewPerson.aspx?PersonId=12183'
+
             # for url in urls
             for url in urls:
-                # if url is not in full urls
-                if url not in full_urls:
+                # if url is not in full urls and is not equal to invalid identifier
+                if url not in full_urls and url != invalid_id:
                     # add url to full urls
                     full_urls += [url]
                     # write url to file
@@ -958,7 +999,7 @@ class ExtractPastTopics:
 
             # print progress
             print('> Extraction of researcher urls ({}) completed ({} researcher urls extracted)'
-                  .format(years[1:].replace('_', '-'), len(full_urls)))
+                  .format(years, len(full_urls)))
 
     ####################################################################################################################
 
@@ -970,10 +1011,10 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/grants/past/{}/info/grant_topics.csv'.format(years)):
 
             # print progress
-            print('> Extraction of grant topics ({}) started'.format(years[1:].replace('_', '-')))
+            print('> Extraction of grant topics ({}) started'.format(years))
 
             # variable to hold grant urls
-            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url in
+            grant_urls = [grant_url.replace('http://gow.epsrc.ac.uk/', '') for grant_url in
                           open(r'../output/grants/past/{}/urls/grants.txt'.format(years),
                                "r").read().splitlines()]
 
@@ -1022,7 +1063,7 @@ class ExtractPastTopics:
 
                 # print progress
                 print('> Extraction of grant topics ({}) in progress (topics for {} grant(s)'
-                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
+                      ' extracted)'.format(years, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1047,7 +1088,7 @@ class ExtractPastTopics:
 
             # print progress
             print('> Extraction of grant topics ({}) completed (topics for {} grants'
-                  ' extracted)'.format(years[1:].replace('_', '-'), len(grant_topics)))
+                  ' extracted)'.format(years, len(grant_topics)))
 
     ####################################################################################################################
 
@@ -1059,10 +1100,10 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/grants/past/{}/info/grant_researchers.csv'.format(years)):
 
             # print progress
-            print('> Extraction of grant researchers ({}) started'.format(years[1:].replace('_', '-')))
+            print('> Extraction of grant researchers ({}) started'.format(years))
 
             # variable to hold grant urls
-            grant_urls = [grant_url.strip('http://gow.epsrc.ac.uk/') for grant_url in
+            grant_urls = [grant_url.replace('http://gow.epsrc.ac.uk/', '') for grant_url in
                           open(r'../output/grants/past/{}/urls/grants.txt'.format(years),
                                "r").read().splitlines()]
 
@@ -1081,28 +1122,54 @@ class ExtractPastTopics:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold main name xpath
+                main_name_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/text()"
                 # variable to hold main url xpath
                 main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
+                # variable to hold other name xpath
+                other_name_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/text()"
                 # variable to hold other url xpath
                 other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
 
+                # variable to hold main names
+                main_names = tree.xpath(main_name_xpath)
                 # variable to hold main urls
                 main_urls = tree.xpath(main_url_xpath)
+                # variable to hold other names
+                other_names = tree.xpath(other_name_xpath)
                 # variable to hold other urls
                 other_urls = tree.xpath(other_url_xpath)
 
+                # variable to hold all names
+                all_names = main_names + other_names
                 # variable to hold all urls
                 all_urls = main_urls + other_urls
 
-                # variable to hold all ids
-                all_ids = [identifier.strip('NGBOViewPerson.aspx?PersonId=') for identifier in all_urls]
+                # variable to hold all identifiers
+                all_ids = [identifier.replace('NGBOViewPerson.aspx?PersonId=', '') for identifier in all_urls]
+
+                # variable to hold unique identifiers
+                unique_ids = []
+
+                # variable to hold invalid identifier
+                invalid_id = '12183'
+
+                # for identifier in all
+                for identifier in all_ids:
+                    # if identifier is not in unique identifiers and is not equal to invalid identifier
+                    if identifier not in unique_ids and identifier != invalid_id:
+                        # add identifier to unique identifiers
+                        unique_ids += [identifier]
+
+                # variable to hold all names and identifiers
+                all_names_ids = [[name, identifier] for name, identifier in zip(all_names, unique_ids)]
 
                 # add grant researchers to grant researchers
-                grant_researchers[grant_url.strip('NGBOViewGrant.aspx?GrantRef=')] = all_ids
+                grant_researchers[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = all_names_ids
 
                 # print progress
                 print('> Extraction of grant researchers ({}) in progress (researchers for {} grant(s)'
-                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
+                      ' extracted)'.format(years, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1127,7 +1194,7 @@ class ExtractPastTopics:
 
             # print progress
             print('> Extraction of grant researchers ({}) completed (researchers for {} grants'
-                  ' extracted)'.format(years[1:].replace('_', '-'), len(grant_researchers)))
+                  ' extracted)'.format(years, len(grant_researchers)))
 
     ####################################################################################################################
 
@@ -1139,10 +1206,10 @@ class ExtractPastTopics:
         if not os.path.isfile('../output/researchers/past/{}/info/researcher_topics.csv'.format(years)):
 
             # print progress
-            print('> Extraction of researcher topics ({}) started'.format(years[1:].replace('_', '-')))
+            print('> Extraction of researcher topics ({}) started'.format(years))
 
             # variable to hold researcher urls
-            researcher_urls = [researcher_url.strip('http://gow.epsrc.ac.uk/') for researcher_url in
+            researcher_urls = [researcher_url.replace('http://gow.epsrc.ac.uk/', '') for researcher_url in
                                open(r'../output/researchers/past/{}/urls/researchers.txt'.format(years),
                                     "r").read().splitlines()]
 
@@ -1160,11 +1227,23 @@ class ExtractPastTopics:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold name xpath
+                name_xpath = "//div[@id='pnlFound']/table/tr[position()=1]/td[position()=2]/span/text()"
                 # variable to hold topics xpath
                 topics_xpath = "//span[starts-with(@id, 'dgResearchTopics_ctl')]/text()"
 
+                # variable to hold names
+                names = tree.xpath(name_xpath)
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
+
+                # variable to hold name set to empty
+                name = ''
+
+                # if names exist
+                if names:
+                    # set name to name
+                    name = names[0]
 
                 # variable to hold clean topics
                 clean_topics = []
@@ -1178,12 +1257,15 @@ class ExtractPastTopics:
                         # add topic to clean topics
                         clean_topics += [topic]
 
+                # variable to hold attributes
+                attr = [name, clean_topics]
+
                 # add researcher topics to researcher topics
-                researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = clean_topics
+                researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
 
                 # print progress
                 print('> Extraction of researcher topics ({}) in progress (topics for {} researcher(s)'
-                      ' extracted)'.format(years[1:].replace('_', '-'), extraction_count))
+                      ' extracted)'.format(years, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -1208,7 +1290,7 @@ class ExtractPastTopics:
 
             # print progress
             print('> Extraction of researcher topics ({}) completed (topics for {} researchers'
-                  ' extracted)'.format(years[1:].replace('_', '-'), len(researcher_topics)))
+                  ' extracted)'.format(years, len(researcher_topics)))
 
 
 ########################################################################################################################
