@@ -194,23 +194,8 @@ class ExtractTopics:
 
         # extract topic urls
         ExtractTopics.extract_topic_urls()
-        # extract grant urls
-        ExtractTopics.extract_grant_urls()
-        # extract researcher urls
-        ExtractTopics.extract_researcher_urls()
-
         # extract topic information
         ExtractTopics.extract_topic_info()
-        # extract grant information
-        ExtractTopics.extract_grant_info()
-
-        # extract grant topics
-        ExtractTopics.extract_grant_topics()
-        # extract grant researchers
-        ExtractTopics.extract_grant_researchers()
-
-        # extract researcher topics
-        ExtractTopics.extract_researcher_topics()
 
     ####################################################################################################################
 
@@ -274,161 +259,6 @@ class ExtractTopics:
 
             # print progress
             print('> Extraction of topic urls completed ({} topic urls extracted)'.format(len(full_urls)))
-
-    ####################################################################################################################
-
-    @staticmethod
-    # extracts grant urls
-    def extract_grant_urls():
-
-        # if grant urls file does not exist
-        if not os.path.isfile('../output/grants/current/urls/grants.txt'):
-
-            # print progress
-            print('> Extraction of grant urls started')
-
-            # variable to hold input file
-            input_file = open(r'../output/topics/current/urls/topics.pkl', 'rb')
-            # load data structure from file
-            topic_urls = load(input_file)
-            # close input file
-            input_file.close()
-
-            # variable to hold urls
-            urls = []
-
-            # variable to hold extraction count set to 1
-            extraction_count = 1
-
-            # for topic url in topic urls
-            for topic_url in topic_urls:
-
-                # variable to hold page
-                page = open(r'../output/topics/current/html/{}'.format(topic_url.replace('/', '%2F'))).read()
-                # variable to hold tree
-                tree = html.fromstring(page)
-
-                # variable to hold url xpath
-                url_xpath = "//table[@id='dgDetails']/tr[position()>1]/td[position()=1]/a/@href"
-
-                # add urls to urls
-                urls += tree.xpath(url_xpath)
-
-                # print progress
-                print('> Extraction of grant urls in progress (grant urls for {} topic(s)'
-                      ' extracted)'.format(extraction_count))
-
-                # increment extraction count
-                extraction_count += 1
-
-            # variable to hold full urls
-            full_urls = []
-
-            # variable to hold output file
-            output_file = open('../output/grants/current/urls/grants.txt', mode='w')
-
-            # for url in urls
-            for url in urls:
-                # if url is not in full urls
-                if url not in full_urls:
-                    # add url to full urls
-                    full_urls += [url]
-                    # write url to file
-                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
-
-            # close output file
-            output_file.close()
-
-            # variable to hold output file
-            output_file = open(r'../output/grants/current/urls/grants.pkl', 'wb')
-            # write data structure to file
-            dump(full_urls, output_file)
-            # close output file
-            output_file.close()
-
-            # print progress
-            print('> Extraction of grant urls completed ({} grant urls extracted)'.format(len(full_urls)))
-
-    ####################################################################################################################
-
-    @staticmethod
-    # extracts research urls
-    def extract_researcher_urls():
-
-        # if researcher urls file does not exist
-        if not os.path.isfile('../output/researchers/current/urls/researchers.txt'):
-
-            # print progress
-            print('> Extraction of researcher urls started')
-
-            # variable to hold input file
-            input_file = open(r'../output/grants/current/urls/grants.pkl', 'rb')
-            # load data structure from file
-            grant_urls = load(input_file)
-            # close input file
-            input_file.close()
-
-            # variable to hold urls
-            urls = []
-
-            # variable to hold extraction count set to 1
-            extraction_count = 1
-
-            # for grant url in grant urls
-            for grant_url in grant_urls:
-
-                # variable to hold page
-                page = open(r'../output/grants/current/html/{}'.format(grant_url.replace('/', '%2F')), "r").read()
-                # variable to hold tree
-                tree = html.fromstring(page)
-
-                # variable to hold main url xpath
-                main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
-                # variable to hold other url xpath
-                other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
-
-                # add main urls to urls
-                urls += tree.xpath(main_url_xpath)
-                # add other urls to urls
-                urls += tree.xpath(other_url_xpath)
-
-                # print progress
-                print('> Extraction of researcher urls in progress (researcher urls for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
-
-                # increment extraction count
-                extraction_count += 1
-
-            # variable to hold full urls
-            full_urls = []
-
-            # variable to hold output file
-            output_file = open('../output/researchers/current/urls/researchers.txt', mode='w')
-
-            # variable to hold invalid identifier
-            invalid_id = 'NGBOViewPerson.aspx?PersonId=0'
-
-            # for url in urls
-            for url in urls:
-                # if url is not in full urls and url is not equal to invalid identifier
-                if url not in full_urls and url != invalid_id:
-                    # add url to full urls
-                    full_urls += [url]
-                    # write url to file
-                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
-
-            # close output file
-            output_file.close()
-
-            # variable to hold output file
-            output_file = open(r'../output/researchers/current/urls/researchers.pkl', 'wb')
-            # write data structure to file
-            dump(full_urls, output_file)
-            # close output file
-            output_file.close()
-
-            # print progress
-            print('> Extraction of researcher urls completed ({} researcher urls extracted)'.format(len(full_urls)))
 
     ####################################################################################################################
 
@@ -505,6 +335,100 @@ class ExtractTopics:
             # print progress
             print('> Extraction of topic information completed (information for {} topics'
                   ' extracted)'.format(len(topics)))
+
+
+########################################################################################################################
+
+
+# ExtractGrants class
+class ExtractGrants:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # extract grant urls
+        ExtractGrants.extract_grant_urls()
+        # extract grant information
+        ExtractGrants.extract_grant_info()
+        # extract grant topics
+        ExtractGrants.extract_grant_topics()
+        # extract grant researchers
+        ExtractGrants.extract_grant_researchers()
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts grant urls
+    def extract_grant_urls():
+
+        # if grant urls file does not exist
+        if not os.path.isfile('../output/grants/current/urls/grants.txt'):
+
+            # print progress
+            print('> Extraction of grant urls started')
+
+            # variable to hold input file
+            input_file = open(r'../output/topics/current/urls/topics.pkl', 'rb')
+            # load data structure from file
+            topic_urls = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold urls
+            urls = []
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for topic url in topic urls
+            for topic_url in topic_urls:
+
+                # variable to hold page
+                page = open(r'../output/topics/current/html/{}'.format(topic_url.replace('/', '%2F'))).read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold url xpath
+                url_xpath = "//table[@id='dgDetails']/tr[position()>1]/td[position()=1]/a/@href"
+
+                # add urls to urls
+                urls += tree.xpath(url_xpath)
+
+                # print progress
+                print('> Extraction of grant urls in progress (grant urls for {} topic(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold full urls
+            full_urls = []
+
+            # variable to hold output file
+            output_file = open('../output/grants/current/urls/grants.txt', mode='w')
+
+            # for url in urls
+            for url in urls:
+                # if url is not in full urls
+                if url not in full_urls:
+                    # add url to full urls
+                    full_urls += [url]
+                    # write url to file
+                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/grants/current/urls/grants.pkl', 'wb')
+            # write data structure to file
+            dump(full_urls, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of grant urls completed ({} grant urls extracted)'.format(len(full_urls)))
 
     ####################################################################################################################
 
@@ -663,7 +587,8 @@ class ExtractTopics:
                 setlocale(LC_ALL, 'en_GB.utf8')
 
                 # add grant topics to grant topics
-                grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [clean_topics, atoi(values[0])]
+                grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [clean_topics,
+                                                                                       atoi(values[0])]
 
                 # print progress
                 print('> Extraction of grant topics in progress (topics for {} grant(s)'
@@ -750,6 +675,9 @@ class ExtractTopics:
                 # variable to hold all urls
                 all_urls = main_urls + other_urls
 
+                # variable to hold all names
+                all_names = [name.strip().lower() for name in all_names]
+
                 # variable to hold all identifiers
                 all_ids = [identifier.replace('NGBOViewPerson.aspx?PersonId=', '') for identifier in all_urls]
 
@@ -798,203 +726,26 @@ class ExtractTopics:
             print('> Extraction of grant researchers completed (researchers for {} grants'
                   ' extracted)'.format(len(grant_researchers)))
 
-    ####################################################################################################################
-
-    @staticmethod
-    # extracts researcher topics
-    def extract_researcher_topics():
-
-        # if researcher topics file does not exist
-        if not os.path.isfile('../output/researchers/current/info/researcher_topics.csv'):
-
-            # print progress
-            print('> Extraction of researcher topics started')
-
-            # variable to hold researcher urls
-            researcher_urls = [researcher_url.replace('http://gow.epsrc.ac.uk/', '') for researcher_url in
-                               open(r'../output/researchers/current/urls/researchers.txt', "r").read().splitlines()]
-
-            # variable to hold researcher topics
-            researcher_topics = OrderedDict()
-
-            # variable to hold extraction count set to 1
-            extraction_count = 1
-
-            # for researcher url in researcher urls
-            for researcher_url in researcher_urls:
-
-                # variable to hold page
-                page = open(r'../output/researchers/current/html/{}'.format(researcher_url), "r").read()
-                # variable to hold tree
-                tree = html.fromstring(page)
-
-                # variable to hold name xpath
-                name_xpath = "//div[@id='pnlFound']/table/tr[position()=1]/td[position()=2]/span/text()"
-                # variable to hold topics xpath
-                topics_xpath = "//span[starts-with(@id, 'dgResearchTopics_ctl')]/text()"
-
-                # variable to hold names
-                names = tree.xpath(name_xpath)
-                # variable to hold topics
-                topics = tree.xpath(topics_xpath)
-
-                # variable to hold clean topics
-                clean_topics = []
-
-                # for topic in topics
-                for topic in topics:
-                    # remove space
-                    topic = topic.strip().lower()
-                    # if topic is not empty and is not in clean topics
-                    if topic and topic not in clean_topics:
-                        # add topic to clean topics
-                        clean_topics += [topic]
-
-                # variable to hold attributes
-                attr = [names[0], clean_topics]
-
-                # add researcher topics to researcher topics
-                researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
-
-                # print progress
-                print('> Extraction of researcher topics in progress (topics for {} researcher(s)'
-                      ' extracted)'.format(extraction_count))
-
-                # increment extraction count
-                extraction_count += 1
-
-            # variable to hold output file
-            output_file = open('../output/researchers/current/info/researcher_topics.csv', mode='w')
-
-            # for identifier and topics in researcher topics
-            for identifier, topics in researcher_topics.items():
-                # write identifier and topics to file
-                output_file.write('"{}","{}"\n'.format(identifier, topics))
-
-            # close output file
-            output_file.close()
-
-            # variable to hold output file
-            output_file = open(r'../output/researchers/current/info/researcher_topics.pkl', 'wb')
-            # write data structure to file
-            dump(researcher_topics, output_file)
-            # close output file
-            output_file.close()
-
-            # print progress
-            print('> Extraction of researcher topics completed (topics for {} researchers'
-                  ' extracted)'.format(len(researcher_topics)))
 
 ########################################################################################################################
 
 
-# ExtractPastTopics class
-class ExtractPastTopics:
+# ExtractPastGrants class
+class ExtractPastGrants:
 
     @staticmethod
     # runs other functions
     def run():
 
-        # extract researcher urls from 1990 to 2000
-        ExtractPastTopics.extract_researcher_urls('1990-2000')
-        # extract researcher urls from 2000 to 2010
-        ExtractPastTopics.extract_researcher_urls('2000-2010')
-
         # extract grant topics from 1990 to 2000
-        ExtractPastTopics.extract_grant_topics('1990-2000')
+        ExtractPastGrants.extract_grant_topics('1990-2000')
         # extract grant topics from 2000 to 2010
-        ExtractPastTopics.extract_grant_topics('2000-2010')
+        ExtractPastGrants.extract_grant_topics('2000-2010')
 
         # extract grant researchers from 1990 to 2010
-        ExtractPastTopics.extract_grant_researchers('1990-2000')
+        ExtractPastGrants.extract_grant_researchers('1990-2000')
         # extract grant researchers from 2000 to 2010
-        ExtractPastTopics.extract_grant_researchers('2000-2010')
-
-        # extract researcher topics from 1990 to 2000
-        ExtractPastTopics.extract_researcher_topics('1990-2000')
-        # extract researcher topics from 2000 to 2010
-        ExtractPastTopics.extract_researcher_topics('2000-2010')
-
-    ####################################################################################################################
-
-    @staticmethod
-    # extracts researcher urls from 1990/2000 to 2000/2010
-    def extract_researcher_urls(years):
-
-        # if researcher urls file does not exist
-        if not os.path.isfile('../output/researchers/past/{}/urls/researchers.txt'.format(years)):
-
-            # print progress
-            print('> Extraction of researcher urls ({}) started'.format(years))
-
-            # variable to hold grant urls
-            grant_urls = [grant_url.replace('http://gow.epsrc.ac.uk/', '') for grant_url in
-                          open(r'../output/grants/past/{}/urls/grants.txt'.format(years),
-                               "r").read().splitlines()]
-
-            # variable to hold urls
-            urls = []
-
-            # variable to hold extraction count set to 1
-            extraction_count = 1
-
-            # for grant url in grant urls
-            for grant_url in grant_urls:
-
-                # variable to hold page
-                page = open(r'../output/grants/past/{}/html/{}'.format(years, grant_url.replace('/', '%2F')),
-                            "r").read()
-                # variable to hold tree
-                tree = html.fromstring(page)
-
-                # variable to hold main url xpath
-                main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
-                # variable to hold other url xpath
-                other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
-
-                # add main urls to urls
-                urls += tree.xpath(main_url_xpath)
-                # add other urls to urls
-                urls += tree.xpath(other_url_xpath)
-
-                # print progress
-                print('> Extraction of researcher urls ({}) in progress (researcher urls for {} grant(s)'
-                      ' extracted)'.format(years, extraction_count))
-
-                # increment extraction count
-                extraction_count += 1
-
-            # variable to hold output file
-            output_file = open('../output/researchers/past/{}/urls/researchers.txt'.format(years), mode='w')
-
-            # variable to hold full urls
-            full_urls = []
-
-            # variable to hold invalid identifier
-            invalid_id = 'NGBOViewPerson.aspx?PersonId=12183'
-
-            # for url in urls
-            for url in urls:
-                # if url is not in full urls and is not equal to invalid identifier
-                if url not in full_urls and url != invalid_id:
-                    # add url to full urls
-                    full_urls += [url]
-                    # write url to file
-                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
-
-            # close output file
-            output_file.close()
-
-            # variable to hold output file
-            output_file = open(r'../output/researchers/past/{}/urls/researchers.pkl'.format(years), 'wb')
-            # write data structure to file
-            dump(full_urls, output_file)
-            # close output file
-            output_file.close()
-
-            # print progress
-            print('> Extraction of researcher urls ({}) completed ({} researcher urls extracted)'
-                  .format(years, len(full_urls)))
+        ExtractPastGrants.extract_grant_researchers('2000-2010')
 
     ####################################################################################################################
 
@@ -1054,7 +805,8 @@ class ExtractPastTopics:
                 setlocale(LC_ALL, 'en_GB.utf8')
 
                 # add grant topics to grant topics
-                grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [clean_topics, atoi(values[0])]
+                grant_topics[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [clean_topics,
+                                                                                       atoi(values[0])]
 
                 # print progress
                 print('> Extraction of grant topics ({}) in progress (topics for {} grant(s)'
@@ -1140,6 +892,9 @@ class ExtractPastTopics:
                 # variable to hold all urls
                 all_urls = main_urls + other_urls
 
+                # variable to hold all names
+                all_names = [name.strip().lower() for name in all_names]
+
                 # variable to hold all identifiers
                 all_ids = [identifier.replace('NGBOViewPerson.aspx?PersonId=', '') for identifier in all_urls]
 
@@ -1190,6 +945,292 @@ class ExtractPastTopics:
             # print progress
             print('> Extraction of grant researchers ({}) completed (researchers for {} grants'
                   ' extracted)'.format(years, len(grant_researchers)))
+
+
+########################################################################################################################
+
+
+# ExtractResearchers class
+class ExtractResearchers:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # extract researcher urls
+        ExtractResearchers.extract_researcher_urls()
+        # extract researcher topics
+        ExtractResearchers.extract_researcher_topics()
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts research urls
+    def extract_researcher_urls():
+
+        # if researcher urls file does not exist
+        if not os.path.isfile('../output/researchers/current/urls/researchers.txt'):
+
+            # print progress
+            print('> Extraction of researcher urls started')
+
+            # variable to hold input file
+            input_file = open(r'../output/grants/current/urls/grants.pkl', 'rb')
+            # load data structure from file
+            grant_urls = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold urls
+            urls = []
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for grant url in grant urls
+            for grant_url in grant_urls:
+
+                # variable to hold page
+                page = open(r'../output/grants/current/html/{}'.format(grant_url.replace('/', '%2F')), "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold main url xpath
+                main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
+                # variable to hold other url xpath
+                other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
+
+                # add main urls to urls
+                urls += tree.xpath(main_url_xpath)
+                # add other urls to urls
+                urls += tree.xpath(other_url_xpath)
+
+                # print progress
+                print('> Extraction of researcher urls in progress (researcher urls for {} grant(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold full urls
+            full_urls = []
+
+            # variable to hold output file
+            output_file = open('../output/researchers/current/urls/researchers.txt', mode='w')
+
+            # variable to hold invalid identifier
+            invalid_id = 'NGBOViewPerson.aspx?PersonId=0'
+
+            # for url in urls
+            for url in urls:
+                # if url is not in full urls and url is not equal to invalid identifier
+                if url not in full_urls and url != invalid_id:
+                    # add url to full urls
+                    full_urls += [url]
+                    # write url to file
+                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/current/urls/researchers.pkl', 'wb')
+            # write data structure to file
+            dump(full_urls, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher urls completed ({} researcher urls extracted)'.format(len(full_urls)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts researcher topics
+    def extract_researcher_topics():
+
+        # if researcher topics file does not exist
+        if not os.path.isfile('../output/researchers/current/info/researcher_topics.csv'):
+
+            # print progress
+            print('> Extraction of researcher topics started')
+
+            # variable to hold researcher urls
+            researcher_urls = [researcher_url.replace('http://gow.epsrc.ac.uk/', '') for researcher_url in
+                               open(r'../output/researchers/current/urls/researchers.txt', "r").read().splitlines()]
+
+            # variable to hold researcher topics
+            researcher_topics = OrderedDict()
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher url in researcher urls
+            for researcher_url in researcher_urls:
+
+                # variable to hold page
+                page = open(r'../output/researchers/current/html/{}'.format(researcher_url), "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold name xpath
+                name_xpath = "//div[@id='pnlFound']/table/tr[position()=1]/td[position()=2]/span/text()"
+                # variable to hold topics xpath
+                topics_xpath = "//span[starts-with(@id, 'dgResearchTopics_ctl')]/text()"
+
+                # variable to hold names
+                names = tree.xpath(name_xpath)
+                # variable to hold topics
+                topics = tree.xpath(topics_xpath)
+
+                # variable to hold clean topics
+                clean_topics = []
+
+                # for topic in topics
+                for topic in topics:
+                    # remove space
+                    topic = topic.strip().lower()
+                    # if topic is not empty and is not in clean topics
+                    if topic and topic not in clean_topics:
+                        # add topic to clean topics
+                        clean_topics += [topic]
+
+                # variable to hold attributes
+                attr = [names[0].strip().lower(), clean_topics]
+
+                # add researcher topics to researcher topics
+                researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
+
+                # print progress
+                print('> Extraction of researcher topics in progress (topics for {} researcher(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold output file
+            output_file = open('../output/researchers/current/info/researcher_topics.csv', mode='w')
+
+            # for identifier and topics in researcher topics
+            for identifier, topics in researcher_topics.items():
+                # write identifier and topics to file
+                output_file.write('"{}","{}"\n'.format(identifier, topics))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/current/info/researcher_topics.pkl', 'wb')
+            # write data structure to file
+            dump(researcher_topics, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher topics completed (topics for {} researchers'
+                  ' extracted)'.format(len(researcher_topics)))
+
+
+########################################################################################################################
+
+
+# ExtractPastResearchers class
+class ExtractPastResearchers:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # extract researcher urls from 1990 to 2000
+        ExtractPastResearchers.extract_researcher_urls('1990-2000')
+        # extract researcher urls from 2000 to 2010
+        ExtractPastResearchers.extract_researcher_urls('2000-2010')
+
+        # extract researcher topics from 1990 to 2000
+        ExtractPastResearchers.extract_researcher_topics('1990-2000')
+        # extract researcher topics from 2000 to 2010
+        ExtractPastResearchers.extract_researcher_topics('2000-2010')
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts researcher urls from 1990/2000 to 2000/2010
+    def extract_researcher_urls(years):
+
+        # if researcher urls file does not exist
+        if not os.path.isfile('../output/researchers/past/{}/urls/researchers.txt'.format(years)):
+
+            # print progress
+            print('> Extraction of researcher urls ({}) started'.format(years))
+
+            # variable to hold grant urls
+            grant_urls = [grant_url.replace('http://gow.epsrc.ac.uk/', '') for grant_url in
+                          open(r'../output/grants/past/{}/urls/grants.txt'.format(years),
+                               "r").read().splitlines()]
+
+            # variable to hold urls
+            urls = []
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for grant url in grant urls
+            for grant_url in grant_urls:
+
+                # variable to hold page
+                page = open(r'../output/grants/past/{}/html/{}'.format(years, grant_url.replace('/', '%2F')),
+                            "r").read()
+                # variable to hold tree
+                tree = html.fromstring(page)
+
+                # variable to hold main url xpath
+                main_url_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/@href"
+                # variable to hold other url xpath
+                other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
+
+                # add main urls to urls
+                urls += tree.xpath(main_url_xpath)
+                # add other urls to urls
+                urls += tree.xpath(other_url_xpath)
+
+                # print progress
+                print('> Extraction of researcher urls ({}) in progress (researcher urls for {} grant(s)'
+                      ' extracted)'.format(years, extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold output file
+            output_file = open('../output/researchers/past/{}/urls/researchers.txt'.format(years), mode='w')
+
+            # variable to hold full urls
+            full_urls = []
+
+            # variable to hold invalid identifier
+            invalid_id = 'NGBOViewPerson.aspx?PersonId=12183'
+
+            # for url in urls
+            for url in urls:
+                # if url is not in full urls and is not equal to invalid identifier
+                if url not in full_urls and url != invalid_id:
+                    # add url to full urls
+                    full_urls += [url]
+                    # write url to file
+                    output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/past/{}/urls/researchers.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(full_urls, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher urls ({}) completed ({} researcher urls extracted)'
+                  .format(years, len(full_urls)))
 
     ####################################################################################################################
 
@@ -1245,7 +1286,7 @@ class ExtractPastTopics:
                         clean_topics += [topic]
 
                 # variable to hold attributes
-                attr = [names[0], clean_topics]
+                attr = [names[0].strip().lower(), clean_topics]
 
                 # add researcher topics to researcher topics
                 researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
@@ -1288,10 +1329,19 @@ def main():
 
     # extract areas
     ExtractAreas.run()
+
     # extract topics
     ExtractTopics.run()
-    # extract past topics
-    ExtractPastTopics.run()
+
+    # extract grants
+    ExtractGrants.run()
+    # extract past grants
+    ExtractPastGrants.run()
+
+    # extract researchers
+    ExtractResearchers.run()
+    # extract researchers
+    ExtractPastResearchers.run()
 
 
 ########################################################################################################################
