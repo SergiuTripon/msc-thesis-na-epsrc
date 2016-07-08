@@ -947,14 +947,175 @@ class LinkResearchers:
     @staticmethod
     # links researchers
     def link_researchers():
-        pass
+
+        # if grant researcher links file does not exist
+        if not os.path.isfile('../output/researchers/current/links/researcher_links.csv'):
+
+            # print progress
+            print('> Extraction of researcher links started')
+
+            # variable to hold input file
+            input_file = open(r'../output/researchers/current/info/researcher_topics.pkl', 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold researcher links
+            researcher_links = []
+
+            # variable to hold copy of researcher topics
+            researcher_topics_copy = deepcopy(researcher_topics)
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher topic in researcher topics
+            for researcher_topic in researcher_topics.items():
+                # add researcher link to researcher links
+                researcher_links += LinkResearchers.compare_researchers(researcher_topic, researcher_topics_copy)
+
+                # print progress
+                print('> Extraction of researcher links in progress (researcher links for {} researchers(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold output file
+            output_file = open('../output/researchers/current/links/researcher_links.csv', mode='w')
+
+            # for researcher link in researcher links
+            for researcher_link in researcher_links:
+                # write researcher link to file
+                output_file.write('"{}","{}","{}"\n'.format(researcher_link[0], researcher_link[1],
+                                                            researcher_link[2]))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/current/links/researcher_links.pkl', 'wb')
+            # write data structure to file
+            dump(researcher_links, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher links completed ({} researcher links'
+                  ' extracted)'.format(len(researcher_links)))
+
+    ####################################################################################################################
+
+    @staticmethod
+    # compares researchers
+    def compare_researchers(default_researcher_topic, researcher_topics_copy):
+
+        # delete key from researcher topics copy
+        del researcher_topics_copy[default_researcher_topic[0]]
+
+        # variable to hold researcher links
+        researcher_links = []
+
+        # for researcher topic copy in researcher topics copy
+        for researcher_topic_copy in researcher_topics_copy.items():
+            # variable to hold common topics
+            common_topics = [common_topic for common_topic in default_researcher_topic[1][1] if common_topic in
+                             researcher_topic_copy[1][1]]
+            # if common topics exist
+            if common_topics:
+                # add topic link to researcher links
+                researcher_links += [[default_researcher_topic[0], researcher_topic_copy[0], len(common_topics)]]
+
+        # return researcher links
+        return researcher_links
 
     ####################################################################################################################
 
     @staticmethod
     # links grant researchers
     def link_grant_researchers():
-        pass
+
+        # if grant researcher links file does not exist
+        if not os.path.isfile('../output/researchers/current/links/grant_researcher_links.csv'):
+
+            # print progress
+            print('> Extraction of grant researcher links started')
+
+            # variable to hold input file
+            input_file = open(r'../output/grants/current/info/grant_researchers.pkl', 'rb')
+            # load data structure from file
+            grant_researchers = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold grant researchers
+            grant_researchers = [[sub_researcher[1] for sub_researcher in grant_researcher]
+                                 for grant_researcher in grant_researchers.values() if len(grant_researcher) > 1]
+
+            # variable to hold researcher links
+            researcher_links = [[source, target] for grant_researcher in grant_researchers
+                                for source in grant_researcher for target in grant_researcher if source != target]
+
+            # remove reversed researcher links
+            [researcher_links.remove([researcher_link[1], researcher_link[0]]) for researcher_link in researcher_links
+             if [researcher_link[1], researcher_link[0]] in researcher_links]
+
+            # sort researcher links
+            researcher_links = sorted(researcher_links)
+
+            # variable to hold new researcher links
+            new_researcher_links = []
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher link in researcher links
+            for researcher_link in researcher_links:
+                # variable to hold duplicate researcher links
+                dupe_researcher_links = [x for x in researcher_links if (x[0], x[1]) == (researcher_link[0],
+                                                                                         researcher_link[1])]
+                # variable to hold number
+                number = len(dupe_researcher_links)
+                # for duplicate researcher link in duplicate researcher links
+                for dupe_researcher_link in dupe_researcher_links:
+                    # remove duplicate researcher link
+                    researcher_links.remove(dupe_researcher_link)
+                # add new researcher link to new researcher links
+                new_researcher_links += [[researcher_link[0], researcher_link[1], number]]
+
+                # print progress
+                print('> Extraction of grant researcher links in progress ({} grant researcher link(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
+            # variable to hold output file
+            output_file = open('../output/researchers/current/links/grant_researcher_links.csv', mode='w')
+
+            # for new researcher link in new researcher links
+            for new_researcher_link in new_researcher_links:
+                # write new researcher link to file
+                output_file.write('"{}","{}","{}"\n'.format(new_researcher_link[0], new_researcher_link[1],
+                                                            new_researcher_link[2]))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/current/links/grant_researcher_links.pkl', 'wb')
+            # write data structure to file
+            dump(new_researcher_links, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of grant researcher links completed ({} grant researcher links'
+                  ' extracted)'.format(len(new_researcher_links)))
 
 
 ########################################################################################################################
@@ -1120,14 +1281,150 @@ class LinkPastResearchers:
     @staticmethod
     # links researchers from 1990/2000 to 2000/2010
     def link_researchers(years):
-        pass
+
+        # if grant researcher links file does not exist
+        if not os.path.isfile('../output/researchers/past/{}/links/researcher_links.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of researcher links ({}) started'.format(years))
+
+            # variable to hold input file
+            input_file = open(r'../output/researchers/past/{}/info/researcher_topics.pkl'.format(years), 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold researcher links
+            researcher_links = []
+
+            # variable to hold copy of researcher topics
+            researcher_topics_copy = deepcopy(researcher_topics)
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher topic in researcher topics
+            for researcher_topic in researcher_topics.items():
+                # add researcher link to researcher links
+                researcher_links += LinkResearchers.compare_researchers(researcher_topic, researcher_topics_copy)
+
+                # print progress
+                print('> Extraction of researcher links ({}) in progress (researcher links for {} researchers(s)'
+                      ' extracted)'.format(years, extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # variable to hold output file
+            output_file = open('../output/researchers/past/{}/links/researcher_links.csv'.format(years), mode='w')
+
+            # for researcher link in researcher links
+            for researcher_link in researcher_links:
+                # write researcher link to file
+                output_file.write('"{}","{}","{}"\n'.format(researcher_link[0], researcher_link[1],
+                                                            researcher_link[2]))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/past/{}/links/researcher_links.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(researcher_links, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher links ({}) completed ({} researcher links'
+                  ' extracted)'.format(years, len(researcher_links)))
 
     ####################################################################################################################
 
     @staticmethod
     # links grant researchers from 1990/2000 to 2000/2010
     def link_grant_researchers(years):
-        pass
+
+        # if grant researcher links file does not exist
+        if not os.path.isfile('../output/researchers/past/{}/links/grant_researcher_links.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of grant researcher links ({}) started'.format(years))
+
+            # variable to hold input file
+            input_file = open(r'../output/grants/past/{}/info/grant_researchers.pkl'.format(years), 'rb')
+            # load data structure from file
+            grant_researchers = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold grant researchers
+            grant_researchers = [[sub_researcher[1] for sub_researcher in grant_researcher]
+                                 for grant_researcher in grant_researchers.values() if len(grant_researcher) > 1]
+
+            # variable to hold researcher links
+            researcher_links = [[source, target] for grant_researcher in grant_researchers
+                                for source in grant_researcher for target in grant_researcher if source != target]
+
+            # remove reversed researcher links
+            [researcher_links.remove([researcher_link[1], researcher_link[0]]) for researcher_link in researcher_links
+             if [researcher_link[1], researcher_link[0]] in researcher_links]
+
+            # sort researcher links
+            researcher_links = sorted(researcher_links)
+
+            # variable to hold new researcher links
+            new_researcher_links = []
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher link in researcher links
+            for researcher_link in researcher_links:
+                # variable to hold duplicate researcher links
+                dupe_researcher_links = [x for x in researcher_links if (x[0], x[1]) == (researcher_link[0],
+                                                                                         researcher_link[1])]
+                # variable to hold number
+                number = len(dupe_researcher_links)
+                # for duplicate researcher link in duplicate researcher links
+                for dupe_researcher_link in dupe_researcher_links:
+                    # remove duplicate researcher link
+                    researcher_links.remove(dupe_researcher_link)
+                # add new researcher link to new researcher links
+                new_researcher_links += [[researcher_link[0], researcher_link[1], number]]
+
+                # print progress
+                print('> Extraction of grant researcher links ({}) in progress ({} grant researcher link(s)'
+                      ' extracted)'.format(years, extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
+            # variable to hold output file
+            output_file = open('../output/researchers/past/{}/links/grant_researcher_links.csv'.format(years), mode='w')
+
+            # for new researcher link in new researcher links
+            for new_researcher_link in new_researcher_links:
+                # write new researcher link to file
+                output_file.write('"{}","{}","{}"\n'.format(new_researcher_link[0], new_researcher_link[1],
+                                                            new_researcher_link[2]))
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/past/{}/links/grant_researcher_links.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(new_researcher_links, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of grant researcher links ({}) completed ({} grant researcher links'
+                  ' extracted)'.format(years, len(new_researcher_links)))
 
 ########################################################################################################################
 
