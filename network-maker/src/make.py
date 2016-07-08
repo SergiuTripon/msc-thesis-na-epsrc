@@ -345,7 +345,7 @@ class CreatePastTopicNetwork:
 
             # print progress
             print('> Creation of Past Topic Network A ({}) in Gephi format completed'
-                  .format(years[1:].replace('_', '-')))
+                  .format(years))
 
     ####################################################################################################################
 
@@ -409,7 +409,7 @@ class CreatePastTopicNetwork:
 
             # print progress
             print('> Creation of Past Topic Network B ({}) in Gephi format completed'
-                  .format(years[1:].replace('_', '-')))
+                  .format(years))
 
 
 ########################################################################################################################

@@ -405,10 +405,13 @@ class ExtractTopics:
             # variable to hold output file
             output_file = open('../output/researchers/current/urls/researchers.txt', mode='w')
 
+            # variable to hold invalid identifier
+            invalid_id = 'NGBOViewPerson.aspx?PersonId=0'
+
             # for url in urls
             for url in urls:
-                # if url is not in full urls
-                if url not in full_urls:
+                # if url is not in full urls and url is not equal to invalid identifier
+                if url not in full_urls and url != invalid_id:
                     # add url to full urls
                     full_urls += [url]
                     # write url to file
@@ -761,7 +764,7 @@ class ExtractTopics:
                         unique_ids += [identifier]
 
                 # variable to hold all names and identifiers
-                all_names_ids = [[name, identifier] for name, identifier in zip(all_names, all_ids)]
+                all_names_ids = [[name, identifier] for name, identifier in zip(all_names, unique_ids)]
 
                 # add grant researchers to grant researchers
                 grant_researchers[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = all_names_ids
@@ -835,14 +838,6 @@ class ExtractTopics:
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
 
-                # variable to hold name set to empty
-                name = ''
-
-                # if names exist
-                if names:
-                    # set name to name
-                    name = names[0]
-
                 # variable to hold clean topics
                 clean_topics = []
 
@@ -856,7 +851,7 @@ class ExtractTopics:
                         clean_topics += [topic]
 
                 # variable to hold attributes
-                attr = [name, clean_topics]
+                attr = [names[0], clean_topics]
 
                 # add researcher topics to researcher topics
                 researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
@@ -1237,14 +1232,6 @@ class ExtractPastTopics:
                 # variable to hold topics
                 topics = tree.xpath(topics_xpath)
 
-                # variable to hold name set to empty
-                name = ''
-
-                # if names exist
-                if names:
-                    # set name to name
-                    name = names[0]
-
                 # variable to hold clean topics
                 clean_topics = []
 
@@ -1258,7 +1245,7 @@ class ExtractPastTopics:
                         clean_topics += [topic]
 
                 # variable to hold attributes
-                attr = [name, clean_topics]
+                attr = [names[0], clean_topics]
 
                 # add researcher topics to researcher topics
                 researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
