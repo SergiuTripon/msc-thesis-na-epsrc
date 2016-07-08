@@ -906,11 +906,11 @@ class LinkResearchers:
                 for grant_researcher in grant_researchers.values():
                     # for sub researcher in grant researcher
                     for sub_researcher in grant_researcher:
-                        # if researcher in grant researcher
+                        # if researcher in sub researcher
                         if researcher[1] in sub_researcher:
                             # increment number
                             number += 1
-                # add topic to new topics
+                # add researcher to new researchers
                 new_researchers[researcher[1]] = [researcher[0], number]
 
                 # print progress
@@ -948,7 +948,7 @@ class LinkResearchers:
     # links researchers
     def link_researchers():
 
-        # if grant researcher links file does not exist
+        # if researcher links file does not exist
         if not os.path.isfile('../output/researchers/current/links/researcher_links.csv'):
 
             # print progress
@@ -964,7 +964,7 @@ class LinkResearchers:
             # variable to hold researcher links
             researcher_links = []
 
-            # variable to hold copy of researcher topics
+            # variable to hold copy of researcher topics copy
             researcher_topics_copy = deepcopy(researcher_topics)
 
             # variable to hold extraction count set to 1
@@ -1024,7 +1024,7 @@ class LinkResearchers:
                              researcher_topic_copy[1][1]]
             # if common topics exist
             if common_topics:
-                # add topic link to researcher links
+                # add research link to researcher links
                 researcher_links += [[default_researcher_topic[0], researcher_topic_copy[0], len(common_topics)]]
 
         # return researcher links
@@ -1090,9 +1090,6 @@ class LinkResearchers:
 
                 # increment extraction count
                 extraction_count += 1
-
-            # set locale to Great Britain
-            setlocale(LC_ALL, 'en_GB.utf8')
 
             # variable to hold output file
             output_file = open('../output/researchers/current/links/grant_researcher_links.csv', mode='w')
@@ -1240,11 +1237,11 @@ class LinkPastResearchers:
                 for grant_researcher in grant_researchers.values():
                     # for sub researcher in grant researcher
                     for sub_researcher in grant_researcher:
-                        # if researcher in grant researcher
+                        # if researcher in sub researcher
                         if researcher[1] in sub_researcher:
                             # increment number
                             number += 1
-                # add topic to new topics
+                # add researcher to new researchers
                 new_researchers[researcher[1]] = [researcher[0], number]
 
                 # print progress
@@ -1257,7 +1254,7 @@ class LinkPastResearchers:
             # variable to hold output file
             output_file = open('../output/researchers/past/{}/info/grant_researcher_info.csv'.format(years), mode='w')
 
-            # for identifier and attributes in new topics
+            # for identifier and attributes in new researchers
             for identifier, attr in new_researchers.items():
                 # write identifier and attributes to file
                 output_file.write('"{}","{}","{}"\n'.format(identifier, attr[0], attr[1]))
@@ -1282,7 +1279,7 @@ class LinkPastResearchers:
     # links researchers from 1990/2000 to 2000/2010
     def link_researchers(years):
 
-        # if grant researcher links file does not exist
+        # if researcher links file does not exist
         if not os.path.isfile('../output/researchers/past/{}/links/researcher_links.csv'.format(years)):
 
             # print progress
@@ -1298,7 +1295,7 @@ class LinkPastResearchers:
             # variable to hold researcher links
             researcher_links = []
 
-            # variable to hold copy of researcher topics
+            # variable to hold copy of researcher topics copy
             researcher_topics_copy = deepcopy(researcher_topics)
 
             # variable to hold extraction count set to 1
@@ -1399,9 +1396,6 @@ class LinkPastResearchers:
 
                 # increment extraction count
                 extraction_count += 1
-
-            # set locale to Great Britain
-            setlocale(LC_ALL, 'en_GB.utf8')
 
             # variable to hold output file
             output_file = open('../output/researchers/past/{}/links/grant_researcher_links.csv'.format(years), mode='w')

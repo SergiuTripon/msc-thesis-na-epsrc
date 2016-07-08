@@ -508,7 +508,7 @@ class CreateResearcherNetwork:
             output_file.write('Source\tTarget\tType\tWeight\n')
             # for researcher link in researcher links
             for researcher_link in researcher_links:
-                # write topic link to file
+                # write researcher link link to file
                 output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(researcher_link[0], researcher_link[1],
                                                                 'Undirected', researcher_link[2]))
 
@@ -618,7 +618,7 @@ class CreatePastResearcherNetwork:
             output_file.write('Source\tTarget\tType\tWeight\n')
             # for researcher link in researcher links
             for researcher_link in researcher_links:
-                # write topic link to file
+                # write researcher link to file
                 output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(researcher_link[0], researcher_link[1],
                                                                 'Undirected', researcher_link[2]))
 
