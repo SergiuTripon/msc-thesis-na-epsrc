@@ -888,8 +888,8 @@ class LinkResearchers:
 
             # for researcher in researchers
             for researcher in researchers:
-                # variable to hold number set to 0
-                number = 0
+                # variables to hold number and value set to 0
+                number, value = 0, 0
                 # for grant researcher in grant researchers
                 for grant_researcher in grant_researchers.values():
                     # for sub researcher in grant researcher
@@ -898,8 +898,10 @@ class LinkResearchers:
                         if researcher[1] in sub_researcher:
                             # increment number
                             number += 1
+                            # add value to value
+                            value += grant_researcher[1]
                 # add researcher to new researchers
-                new_researchers[researcher[1]] = [researcher[0], number]
+                new_researchers[researcher[1]] = [researcher[0], number, value]
 
                 # print progress
                 print('> Extraction of grant researcher information in progress (information for {} researcher(s)'
@@ -911,10 +913,14 @@ class LinkResearchers:
             # variable to hold output file
             output_file = open('../output/researchers/current/info/grant_researcher_info.csv', mode='w')
 
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
             # for identifier and attributes in new topics
             for identifier, attr in new_researchers.items():
                 # write identifier and attributes to file
-                output_file.write('"{}","{}","{}"\n'.format(identifier, attr[0], attr[1]))
+                output_file.write('"{}","{}","{}","{}"\n'.format(identifier, attr[0], attr[1],
+                                                                 currency(attr[2], grouping=True)))
 
             # close output file
             output_file.close()
@@ -1222,8 +1228,8 @@ class LinkPastResearchers:
 
             # for researcher in researchers
             for researcher in researchers:
-                # variable to hold number set to 0
-                number = 0
+                # variables to hold number and value set to 0
+                number, value = 0, 0
                 # for grant researcher in grant researchers
                 for grant_researcher in grant_researchers.values():
                     # for sub researcher in grant researcher
@@ -1232,8 +1238,10 @@ class LinkPastResearchers:
                         if researcher[1] in sub_researcher:
                             # increment number
                             number += 1
+                            # add value to value
+                            value += grant_researcher[1]
                 # add researcher to new researchers
-                new_researchers[researcher[1]] = [researcher[0], number]
+                new_researchers[researcher[1]] = [researcher[0], number, value]
 
                 # print progress
                 print('> Extraction of grant researcher information ({}) in progress (information for {} researcher(s)'
@@ -1245,10 +1253,14 @@ class LinkPastResearchers:
             # variable to hold output file
             output_file = open('../output/researchers/past/{}/info/grant_researcher_info.csv'.format(years), mode='w')
 
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
             # for identifier and attributes in new researchers
             for identifier, attr in new_researchers.items():
                 # write identifier and attributes to file
-                output_file.write('"{}","{}","{}"\n'.format(identifier, attr[0], attr[1]))
+                output_file.write('"{}","{}","{}","{}"\n'.format(identifier, attr[0], attr[1],
+                                                                 currency(attr[2], grouping=True)))
 
             # close output file
             output_file.close()

@@ -496,21 +496,22 @@ class CreateResearcherNetwork:
             # variable to hold output file
             output_file = open('../../data/networks/researchers/current/network-b/nodes_gephi.tsv', 'w')
             # write headers to file
-            output_file.write('Id\tLabel\tNum\n')
+            output_file.write('Id\tLabel\tNum\tVal\n')
             # for researcher identifier and attributes in researchers
             for researcher_id, attr in researchers.items():
                 # write researcher to file
-                output_file.write('{}\t{}\t{}\t\n'.format(researcher_id, attr[0], attr[1]))
+                output_file.write('{}\t{}\t{}\t{}\n'.format(researcher_id, attr[0], attr[1], attr[2]))
 
             # variable to hold output file
             output_file = open('../../data/networks/researchers/current/network-b/edges_gephi.tsv', 'w')
             # write headers to file
-            output_file.write('Source\tTarget\tType\tWeight\n')
+            output_file.write('Source\tTarget\tType\tWeight\tVal\n')
             # for researcher link in researcher links
             for researcher_link in researcher_links:
                 # write researcher link link to file
-                output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(researcher_link[0], researcher_link[1],
-                                                                'Undirected', researcher_link[2]))
+                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(researcher_link[0], researcher_link[1],
+                                                                    'Undirected', researcher_link[2],
+                                                                    researcher_link[3]))
 
             # print progress
             print('> Creation of Researcher Network B in Gephi format completed')
@@ -606,21 +607,22 @@ class CreatePastResearcherNetwork:
             # variable to hold output file
             output_file = open('../../data/networks/researchers/past/{}/network-b/nodes_gephi.tsv'.format(years), 'w')
             # write headers to file
-            output_file.write('Id\tLabel\tNum\n')
+            output_file.write('Id\tLabel\tNum\tVal\n')
             # for researcher identifier and attributes in researchers
             for researcher_id, attr in researchers.items():
                 # write researcher to file
-                output_file.write('{}\t{}\t{}\t\n'.format(researcher_id, attr[0], attr[1]))
+                output_file.write('{}\t{}\t{}\t{}\n'.format(researcher_id, attr[0], attr[1], attr[2]))
 
             # variable to hold output file
             output_file = open('../../data/networks/researchers/past/{}/network-b/edges_gephi.tsv'.format(years), 'w')
             # write headers to file
-            output_file.write('Source\tTarget\tType\tWeight\n')
+            output_file.write('Source\tTarget\tType\tWeight\tVal\n')
             # for researcher link in researcher links
             for researcher_link in researcher_links:
                 # write researcher link to file
-                output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(researcher_link[0], researcher_link[1],
-                                                                'Undirected', researcher_link[2]))
+                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(researcher_link[0], researcher_link[1],
+                                                                    'Undirected', researcher_link[2],
+                                                                    researcher_link[3]))
 
             # print progress
             print('> Creation of Past Researcher Network B ({}) in Gephi format completed'.format(years))
