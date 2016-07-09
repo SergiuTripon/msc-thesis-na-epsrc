@@ -302,9 +302,6 @@ class LinkTopics:
             [topic_links.remove([topic_link[1], topic_link[0], topic_link[2]]) for topic_link in topic_links
              if [topic_link[1], topic_link[0], topic_link[2]] in topic_links]
 
-            # sort topic links
-            topic_links = sorted(topic_links)
-
             # variable to hold new topic links
             new_topic_links = []
 
@@ -390,9 +387,6 @@ class LinkTopics:
             # remove reversed topic links
             [topic_links.remove([topic_link[1], topic_link[0]]) for topic_link in topic_links
              if [topic_link[1], topic_link[0]] in topic_links]
-
-            # sort topic links
-            topic_links = sorted(topic_links)
 
             # variable to hold new topic links
             new_topic_links = []
@@ -652,9 +646,6 @@ class LinkPastTopics:
             [topic_links.remove([topic_link[1], topic_link[0], topic_link[2]]) for topic_link in topic_links
              if [topic_link[1], topic_link[0], topic_link[2]] in topic_links]
 
-            # sort topic links
-            topic_links = sorted(topic_links)
-
             # variable to hold new topic links
             new_topic_links = []
 
@@ -740,9 +731,6 @@ class LinkPastTopics:
             # remove reversed topic links
             [topic_links.remove([topic_link[1], topic_link[0]]) for topic_link in topic_links
              if [topic_link[1], topic_link[0]] in topic_links]
-
-            # sort topic links
-            topic_links = sorted(topic_links)
 
             # variable to hold new topic links
             new_topic_links = []
@@ -890,7 +878,7 @@ class LinkResearchers:
 
             # variable to hold researchers
             researchers = sorted(set([(sub_researcher[0], sub_researcher[1]) for grant_researcher
-                                      in grant_researchers.values() for sub_researcher in grant_researcher]))
+                                      in grant_researchers.values() for sub_researcher in grant_researcher[0]]))
 
             # variable to hold new researchers
             new_researchers = OrderedDict()
@@ -905,7 +893,7 @@ class LinkResearchers:
                 # for grant researcher in grant researchers
                 for grant_researcher in grant_researchers.values():
                     # for sub researcher in grant researcher
-                    for sub_researcher in grant_researcher:
+                    for sub_researcher in grant_researcher[0]:
                         # if researcher in sub researcher
                         if researcher[1] in sub_researcher:
                             # increment number
@@ -1050,19 +1038,16 @@ class LinkResearchers:
             input_file.close()
 
             # variable to hold grant researchers
-            grant_researchers = [[sub_researcher[1] for sub_researcher in grant_researcher]
+            grant_researchers = [[[sub_researcher[1] for sub_researcher in grant_researcher[0]], grant_researcher[1]]
                                  for grant_researcher in grant_researchers.values() if len(grant_researcher) > 1]
 
             # variable to hold researcher links
-            researcher_links = [[source, target] for grant_researcher in grant_researchers
-                                for source in grant_researcher for target in grant_researcher if source != target]
+            researcher_links = [[source, target, grant_researcher[1]] for grant_researcher in grant_researchers
+                                for source in grant_researcher[0] for target in grant_researcher[0] if source != target]
 
             # remove reversed researcher links
-            [researcher_links.remove([researcher_link[1], researcher_link[0]]) for researcher_link in researcher_links
-             if [researcher_link[1], researcher_link[0]] in researcher_links]
-
-            # sort researcher links
-            researcher_links = sorted(researcher_links)
+            [researcher_links.remove([researcher_link[1], researcher_link[0], researcher_link[2]]) for researcher_link
+             in researcher_links if [researcher_link[1], researcher_link[0], researcher_link[2]] in researcher_links]
 
             # variable to hold new researcher links
             new_researcher_links = []
@@ -1075,14 +1060,16 @@ class LinkResearchers:
                 # variable to hold duplicate researcher links
                 dupe_researcher_links = [x for x in researcher_links if (x[0], x[1]) == (researcher_link[0],
                                                                                          researcher_link[1])]
-                # variable to hold number
-                number = len(dupe_researcher_links)
+                # variable to hold number and value
+                number, value = len(dupe_researcher_links), 0
                 # for duplicate researcher link in duplicate researcher links
                 for dupe_researcher_link in dupe_researcher_links:
+                    # add value to value
+                    value += dupe_researcher_link[2]
                     # remove duplicate researcher link
                     researcher_links.remove(dupe_researcher_link)
                 # add new researcher link to new researcher links
-                new_researcher_links += [[researcher_link[0], researcher_link[1], number]]
+                new_researcher_links += [[researcher_link[0], researcher_link[1], number, value]]
 
                 # print progress
                 print('> Extraction of grant researcher links in progress ({} grant researcher link(s)'
@@ -1094,11 +1081,15 @@ class LinkResearchers:
             # variable to hold output file
             output_file = open('../output/researchers/current/links/grant_researcher_links.csv', mode='w')
 
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
             # for new researcher link in new researcher links
             for new_researcher_link in new_researcher_links:
                 # write new researcher link to file
-                output_file.write('"{}","{}","{}"\n'.format(new_researcher_link[0], new_researcher_link[1],
-                                                            new_researcher_link[2]))
+                output_file.write('"{}","{}","{}","{}"\n'.format(new_researcher_link[0], new_researcher_link[1],
+                                                                 new_researcher_link[2],
+                                                                 currency(new_researcher_link[3], grouping=True)))
 
             # close output file
             output_file.close()
@@ -1221,7 +1212,7 @@ class LinkPastResearchers:
 
             # variable to hold researchers
             researchers = sorted(set([(sub_researcher[0], sub_researcher[1]) for grant_researcher
-                                      in grant_researchers.values() for sub_researcher in grant_researcher]))
+                                      in grant_researchers.values() for sub_researcher in grant_researcher[0]]))
 
             # variable to hold new researchers
             new_researchers = OrderedDict()
@@ -1236,7 +1227,7 @@ class LinkPastResearchers:
                 # for grant researcher in grant researchers
                 for grant_researcher in grant_researchers.values():
                     # for sub researcher in grant researcher
-                    for sub_researcher in grant_researcher:
+                    for sub_researcher in grant_researcher[0]:
                         # if researcher in sub researcher
                         if researcher[1] in sub_researcher:
                             # increment number
@@ -1356,19 +1347,16 @@ class LinkPastResearchers:
             input_file.close()
 
             # variable to hold grant researchers
-            grant_researchers = [[sub_researcher[1] for sub_researcher in grant_researcher]
+            grant_researchers = [[[sub_researcher[1] for sub_researcher in grant_researcher[0]], grant_researcher[1]]
                                  for grant_researcher in grant_researchers.values() if len(grant_researcher) > 1]
 
             # variable to hold researcher links
-            researcher_links = [[source, target] for grant_researcher in grant_researchers
-                                for source in grant_researcher for target in grant_researcher if source != target]
+            researcher_links = [[source, target, grant_researcher[1]] for grant_researcher in grant_researchers
+                                for source in grant_researcher[0] for target in grant_researcher[0] if source != target]
 
             # remove reversed researcher links
-            [researcher_links.remove([researcher_link[1], researcher_link[0]]) for researcher_link in researcher_links
-             if [researcher_link[1], researcher_link[0]] in researcher_links]
-
-            # sort researcher links
-            researcher_links = sorted(researcher_links)
+            [researcher_links.remove([researcher_link[1], researcher_link[0], researcher_link[2]]) for researcher_link
+             in researcher_links if [researcher_link[1], researcher_link[0], researcher_link[2]] in researcher_links]
 
             # variable to hold new researcher links
             new_researcher_links = []
@@ -1381,14 +1369,16 @@ class LinkPastResearchers:
                 # variable to hold duplicate researcher links
                 dupe_researcher_links = [x for x in researcher_links if (x[0], x[1]) == (researcher_link[0],
                                                                                          researcher_link[1])]
-                # variable to hold number
-                number = len(dupe_researcher_links)
+                # variable to hold number and value
+                number, value = len(dupe_researcher_links), 0
                 # for duplicate researcher link in duplicate researcher links
                 for dupe_researcher_link in dupe_researcher_links:
+                    # add value to value
+                    value += dupe_researcher_link[2]
                     # remove duplicate researcher link
                     researcher_links.remove(dupe_researcher_link)
                 # add new researcher link to new researcher links
-                new_researcher_links += [[researcher_link[0], researcher_link[1], number]]
+                new_researcher_links += [[researcher_link[0], researcher_link[1], number, value]]
 
                 # print progress
                 print('> Extraction of grant researcher links ({}) in progress ({} grant researcher link(s)'
@@ -1400,11 +1390,15 @@ class LinkPastResearchers:
             # variable to hold output file
             output_file = open('../output/researchers/past/{}/links/grant_researcher_links.csv'.format(years), mode='w')
 
+            # set locale to Great Britain
+            setlocale(LC_ALL, 'en_GB.utf8')
+
             # for new researcher link in new researcher links
             for new_researcher_link in new_researcher_links:
                 # write new researcher link to file
-                output_file.write('"{}","{}","{}"\n'.format(new_researcher_link[0], new_researcher_link[1],
-                                                            new_researcher_link[2]))
+                output_file.write('"{}","{}","{}","{}"\n'.format(new_researcher_link[0], new_researcher_link[1],
+                                                                 new_researcher_link[2],
+                                                                 currency(new_researcher_link[3], grouping=True)))
 
             # close output file
             output_file.close()

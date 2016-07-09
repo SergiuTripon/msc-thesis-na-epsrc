@@ -652,6 +652,8 @@ class ExtractGrants:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold value xpath
+                value_xpath = "//table[@id='tblFound']/tr[position()=10]/td[position()=6]/span/text()"
                 # variable to hold main name xpath
                 main_name_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/text()"
                 # variable to hold main url xpath
@@ -661,6 +663,8 @@ class ExtractGrants:
                 # variable to hold other url xpath
                 other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
 
+                # variable to hold values
+                values = tree.xpath(value_xpath)
                 # variable to hold main names
                 main_names = tree.xpath(main_name_xpath)
                 # variable to hold main urls
@@ -694,8 +698,12 @@ class ExtractGrants:
                 # variable to hold all names and identifiers
                 all_names_ids = [[name, identifier] for name, identifier in zip(all_names, unique_ids)]
 
+                # set locale to Great Britain
+                setlocale(LC_ALL, 'en_GB.utf8')
+
                 # add grant researchers to grant researchers
-                grant_researchers[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = all_names_ids
+                grant_researchers[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [all_names_ids,
+                                                                                            atoi(values[0])]
 
                 # print progress
                 print('> Extraction of grant researchers in progress (researchers for {} grant(s)'
@@ -869,6 +877,8 @@ class ExtractPastGrants:
                 # variable to hold tree
                 tree = html.fromstring(page)
 
+                # variable to hold value xpath
+                value_xpath = "//table[@id='tblFound']/tr[position()=10]/td[position()=6]/span/text()"
                 # variable to hold main name xpath
                 main_name_xpath = "//table[@id='tblFound']/tr[position()=3]/td[position()=2]/a/text()"
                 # variable to hold main url xpath
@@ -878,6 +888,8 @@ class ExtractPastGrants:
                 # variable to hold other url xpath
                 other_url_xpath = "//table[@id='tblFound']/tr[position()=4]/td[position()=2]/table/tr/td/a/@href"
 
+                # variable to hold values
+                values = tree.xpath(value_xpath)
                 # variable to hold main names
                 main_names = tree.xpath(main_name_xpath)
                 # variable to hold main urls
@@ -914,8 +926,12 @@ class ExtractPastGrants:
                 # variable to hold all names and identifiers
                 all_names_ids = [[name, identifier] for name, identifier in zip(all_names, unique_ids)]
 
+                # set locale to Great Britain
+                setlocale(LC_ALL, 'en_GB.utf8')
+
                 # add grant researchers to grant researchers
-                grant_researchers[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = all_names_ids
+                grant_researchers[grant_url.replace('NGBOViewGrant.aspx?GrantRef=', '')] = [all_names_ids,
+                                                                                            atoi(values[0])]
 
                 # print progress
                 print('> Extraction of grant researchers ({}) in progress (researchers for {} grant(s)'
