@@ -10,6 +10,55 @@ from igraph import *
 ########################################################################################################################
 
 
+# GetStats class
+class GetStats:
+
+    @staticmethod
+    # gets network stats
+    def get_network_stats():
+
+        # variable to hold network
+        network = Graph.Read_GraphML('../../data/networks/topics/current/network-a/nodes_edges.graphml')
+
+        # get summary
+        # summary(network)
+
+        # print number of nodes
+        print('Number of nodes: {}'.format(network.vcount()))
+
+        # print number of edges
+        print('Number of edges: {}'.format(network.ecount()))
+
+        # print directed status
+        print('Type: {}'.format('Undirected' if network.is_directed() == 'True' else 'Undirected'))
+
+        # print weighted status
+        print('Weighted: {}'.format('Yes' if network.is_weighted() == 'True' else 'No'))
+
+        # print average node degree
+        print('Average Node Degree: {}'.format(mean(network.degree())))
+
+        # print diameter
+        print('Network Diameter: {}'.format(network.diameter()))
+
+        # print number of weakly connected components
+        print('Number of weakly connected components: {}'.format(len(network.components())))
+
+        # print node degrees
+        # print(network.degree())
+
+        # print degree distribution
+        # print(network.degree_distribution())
+
+        # set layout for network
+        # network_layout = network.layout("fr")
+
+        # plot network
+        # plot(network, layout=network_layout, bbox=(3000, 2000), margin=20, keep_aspect_ratio=True, edge_curved=True)
+
+
+########################################################################################################################
+
 # analyses network uses graphistry
 def graphistry_analysis():
 
@@ -29,30 +78,12 @@ def graphistry_analysis():
 
 ########################################################################################################################
 
-# analyses network using igraph
-def igraph_analysis():
-
-    # variable to hold epsrc network
-    epsrc = Graph.Read_GraphML('../../data/networks/areas/nodes_edges.graphml')
-    # get summary of epsrc network
-    summary(epsrc)
-    # set layout for plotting epsrc network
-    layout = epsrc.layout("circular")
-    # plot epsrc network
-    plot(epsrc, layout=layout, bbox=(3000, 2000), margin=20, keep_aspect_ratio=True, edge_curved=True)
-
-
-########################################################################################################################
-
 
 # main function
 def main():
 
-    # analyse network using graphistry
-    # graphistry_analysis()
-
-    # analyse network using igraph
-    igraph_analysis()
+    # get network stats
+    GetStats.get_network_stats()
 
 
 ########################################################################################################################

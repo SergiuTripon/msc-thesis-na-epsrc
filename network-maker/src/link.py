@@ -163,8 +163,10 @@ class LinkTopics:
                         number += 1
                         # add value to value
                         value += grant_topic[1]
-                # add topic to new topics
-                new_topics[topic] = [number, value]
+                # if number is greater than 1
+                if number > 1:
+                    # add topic to new topics
+                    new_topics[topic] = [number, value]
 
             # set locale to Great Britain
             setlocale(LC_ALL, 'en_GB.utf8')
@@ -199,7 +201,7 @@ class LinkTopics:
 
             # print progress
             print('> Extraction of grant topic information completed (information for {} topics'
-                  ' extracted)'.format(len(topics)))
+                  ' extracted)'.format(len(new_topics)))
 
     ####################################################################################################################
 
@@ -237,8 +239,10 @@ class LinkTopics:
                     if topic in researcher_topic[1]:
                         # increment number
                         number += 1
-                # add new topic to new topics
-                new_topics[topic] = number
+                # if number is greater than 1
+                if number > 1:
+                    # add new topic to new topics
+                    new_topics[topic] = number
 
             # variable to hold output file
             output_file = open('../output/topics/current/info/researcher_topic_info.csv', mode='w')
@@ -270,7 +274,7 @@ class LinkTopics:
 
             # print progress
             print('> Extraction of researcher topic information completed (information for {} topics'
-                  ' extracted)'.format(len(topics)))
+                  ' extracted)'.format(len(new_topics)))
 
     ####################################################################################################################
 
@@ -505,8 +509,10 @@ class LinkPastTopics:
                         number += 1
                         # add value to value
                         value += grant_topic[1]
-                # add topic to new topics
-                new_topics[topic] = [number, value]
+                # if number is greater than 1
+                if number > 1:
+                    # add topic to new topics
+                    new_topics[topic] = [number, value]
 
             # set locale to Great Britain
             setlocale(LC_ALL, 'en_GB.utf8')
@@ -541,7 +547,7 @@ class LinkPastTopics:
 
             # print progress
             print('> Extraction of grant topic information ({}) completed (information for {} topics'
-                  ' extracted)'.format(years, len(topics)))
+                  ' extracted)'.format(years, len(new_topics)))
 
     ####################################################################################################################
 
@@ -579,8 +585,10 @@ class LinkPastTopics:
                     if topic in researcher_topic[1]:
                         # increment number
                         number += 1
-                # add new topic to new topics
-                new_topics[topic] = number
+                # if number is greater than 1
+                if number > 1:
+                    # add new topic to new topics
+                    new_topics[topic] = number
 
             # variable to hold output file
             output_file = open('../output/topics/past/{}/info/researcher_topic_info.csv'.format(years),
@@ -614,7 +622,7 @@ class LinkPastTopics:
 
             # print progress
             print('> Extraction of researcher topic information ({}) completed (information for {} topics'
-                  ' extracted)'.format(years, len(topics)))
+                  ' extracted)'.format(years, len(new_topics)))
 
     ####################################################################################################################
 
