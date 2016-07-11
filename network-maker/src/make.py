@@ -141,7 +141,7 @@ class CreateTopicNetwork:
     def create_network_a():
 
         # if topic nodes in gephi format file does not exist
-        if not os.path.isfile('../../data/networks/topics/current/network-a/nodes.tsv'):
+        if not os.path.isfile('../../data/networks/topics/current/network-a/nodes.csv'):
 
             # variable to hold input file
             input_file = open(r'../output/topics/current/info/grant_topic_info.pkl', 'rb')
@@ -167,20 +167,20 @@ class CreateTopicNetwork:
                 identifier += 1
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/current/network-a/nodes.tsv', 'w')
+            output_file = open('../../data/networks/topics/current/network-a/nodes.csv', 'w')
             # write headers to file
-            output_file.write('Id\tLabel\tNum\tVal\n')
+            output_file.write('Id,Label,Num,Val\n')
             # for topic name and id in topic ids
             for topic_name, topic_id in topic_ids.items():
                 # variables to hold number and value
                 number, value = topics.get(topic_name)[0], topics.get(topic_name)[1]
                 # write topic to file
-                output_file.write('{}\t{}\t{}\t{}\t\n'.format(topic_id, topic_name, number, value))
+                output_file.write('{},{},{},{}\n'.format(topic_id, topic_name, number, value))
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/current/network-a/edges.tsv', 'w')
+            output_file = open('../../data/networks/topics/current/network-a/edges.csv', 'w')
             # write headers to file
-            output_file.write('Source\tTarget\tType\tWeight\tVal\n')
+            output_file.write('Source,Target,Type,Weight,Val\n')
             # for topic link in topic links
             for topic_link in topic_links:
                 # variable to hold source
@@ -192,11 +192,11 @@ class CreateTopicNetwork:
                 # variable to hold target id
                 target_id = topic_ids.get(target)
                 # write topic link to file
-                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(source_id, target_id, 'Undirected', topic_link[2],
-                                                                    topic_link[3]))
+                output_file.write('{},{},{},{:.1f},{}\n'.format(source_id, target_id, 'Undirected', topic_link[2],
+                                                                topic_link[3]))
 
             # print progress
-            print('> Creation of Topic Network A in Gephi format completed')
+            print('> Creation of Topic Network A completed')
 
     ####################################################################################################################
 
@@ -205,7 +205,7 @@ class CreateTopicNetwork:
     def create_network_b():
 
         # if topic nodes in gephi format file does not exist
-        if not os.path.isfile('../../data/networks/topics/current/network-b/nodes.tsv'):
+        if not os.path.isfile('../../data/networks/topics/current/network-b/nodes.csv'):
 
             # variable to hold input file
             input_file = open(r'../output/topics/current/info/researcher_topic_info.pkl', 'rb')
@@ -231,20 +231,20 @@ class CreateTopicNetwork:
                 identifier += 1
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/current/network-b/nodes.tsv', 'w')
+            output_file = open('../../data/networks/topics/current/network-b/nodes.csv', 'w')
             # write headers to file
-            output_file.write('Id\tLabel\tNum\n')
+            output_file.write('Id,Label,Num\n')
             # for topic name and id in topic ids
             for topic_name, topic_id in topic_ids.items():
                 # variables to hold number
                 number = topics.get(topic_name)
                 # write topic to file
-                output_file.write('{}\t{}\t{}\n'.format(topic_id, topic_name, number))
+                output_file.write('{},{},{}\n'.format(topic_id, topic_name, number))
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/current/network-b/edges.tsv', 'w')
+            output_file = open('../../data/networks/topics/current/network-b/edges.csv', 'w')
             # write headers to file
-            output_file.write('Source\tTarget\tType\tWeight\n')
+            output_file.write('Source,Target,Type,Weight\n')
             # for topic link in topic links
             for topic_link in topic_links:
                 # variable to hold source
@@ -256,10 +256,10 @@ class CreateTopicNetwork:
                 # variable to hold target id
                 target_id = topic_ids.get(target)
                 # write topic link to file
-                output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(source_id, target_id, 'Undirected', topic_link[2]))
+                output_file.write('{},{},{},{:.1f}\n'.format(source_id, target_id, 'Undirected', topic_link[2]))
 
             # print progress
-            print('> Creation of Topic Network B in Gephi format completed')
+            print('> Creation of Topic Network B completed')
 
 
 ########################################################################################################################
@@ -289,7 +289,7 @@ class CreatePastTopicNetwork:
     def create_network_a(years):
 
         # if topic nodes in gephi format file does not exist
-        if not os.path.isfile('../../data/networks/topics/past/{}/network-a/nodes.tsv'.format(years)):
+        if not os.path.isfile('../../data/networks/topics/past/{}/network-a/nodes.csv'.format(years)):
 
             # variable to hold input file
             input_file = open(r'../output/topics/past/{}/info/grant_topic_info.pkl'.format(years), 'rb')
@@ -315,20 +315,20 @@ class CreatePastTopicNetwork:
                 identifier += 1
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/past/{}/network-a/nodes.tsv'.format(years), 'w')
+            output_file = open('../../data/networks/topics/past/{}/network-a/nodes.csv'.format(years), 'w')
             # write headers to file
-            output_file.write('Id\tLabel\tNum\tVal\n')
+            output_file.write('Id,Label,Num,Val\n')
             # for topic name and id in topic ids
             for topic_name, topic_id in topic_ids.items():
                 # variables to hold number and value
                 number, value = topics.get(topic_name)[0], topics.get(topic_name)[1]
                 # write topic to file
-                output_file.write('{}\t{}\t{}\t{}\t\n'.format(topic_id, topic_name, number, value))
+                output_file.write('{},{},{},{}\n'.format(topic_id, topic_name, number, value))
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/past/{}/network-a/edges.tsv'.format(years), 'w')
+            output_file = open('../../data/networks/topics/past/{}/network-a/edges.csv'.format(years), 'w')
             # write headers to file
-            output_file.write('Source\tTarget\tType\tWeight\tVal\n')
+            output_file.write('Source,Target,Type,Weight,Val\n')
             # for topic link in topic links
             for topic_link in topic_links:
                 # variable to hold source
@@ -340,11 +340,11 @@ class CreatePastTopicNetwork:
                 # variable to hold target id
                 target_id = topic_ids.get(target)
                 # write topic link to file
-                output_file.write('{}\t{}\t{}\t{:.1f}\t{}\n'.format(source_id, target_id, 'Undirected', topic_link[2],
-                                                                    topic_link[3]))
+                output_file.write('{},{},{},{:.1f},{}\n'.format(source_id, target_id, 'Undirected', topic_link[2],
+                                                                topic_link[3]))
 
             # print progress
-            print('> Creation of Past Topic Network A ({}) in Gephi format completed'.format(years))
+            print('> Creation of Past Topic Network A ({}) completed'.format(years))
 
     ####################################################################################################################
 
@@ -353,7 +353,7 @@ class CreatePastTopicNetwork:
     def create_network_b(years):
 
         # if topic nodes in gephi format file does not exist
-        if not os.path.isfile('../../data/networks/topics/past/{}/network-b/nodes.tsv'.format(years)):
+        if not os.path.isfile('../../data/networks/topics/past/{}/network-b/nodes.csv'.format(years)):
 
             # variable to hold input file
             input_file = open(r'../output/topics/past/{}/info/researcher_topic_info.pkl'.format(years), 'rb')
@@ -379,20 +379,20 @@ class CreatePastTopicNetwork:
                 identifier += 1
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/past/{}/network-b/nodes.tsv'.format(years), 'w')
+            output_file = open('../../data/networks/topics/past/{}/network-b/nodes.csv'.format(years), 'w')
             # write headers to file
-            output_file.write('Id\tLabel\tNum\n')
+            output_file.write('Id,Label,Num\n')
             # for topic name and id in topic ids
             for topic_name, topic_id in topic_ids.items():
                 # variables to hold number
                 number = topics.get(topic_name)
                 # write topic to file
-                output_file.write('{}\t{}\t{}\n'.format(topic_id, topic_name, number))
+                output_file.write('{},{},{}\n'.format(topic_id, topic_name, number))
 
             # variable to hold output file
-            output_file = open('../../data/networks/topics/past/{}/network-b/edges.tsv'.format(years), 'w')
+            output_file = open('../../data/networks/topics/past/{}/network-b/edges.csv'.format(years), 'w')
             # write headers to file
-            output_file.write('Source\tTarget\tType\tWeight\n')
+            output_file.write('Source,Target,Type,Weight\n')
             # for topic link in topic links
             for topic_link in topic_links:
                 # variable to hold source
@@ -404,10 +404,10 @@ class CreatePastTopicNetwork:
                 # variable to hold target id
                 target_id = topic_ids.get(target)
                 # write topic link to file
-                output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(source_id, target_id, 'Undirected', topic_link[2]))
+                output_file.write('{},{},{},{:.1f}\n'.format(source_id, target_id, 'Undirected', topic_link[2]))
 
             # print progress
-            print('> Creation of Past Topic Network B ({}) in Gephi format completed'.format(years))
+            print('> Creation of Past Topic Network B ({}) completed'.format(years))
 
 
 ########################################################################################################################

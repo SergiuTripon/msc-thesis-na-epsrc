@@ -146,7 +146,8 @@ class LinkTopics:
             input_file.close()
 
             # variable to hold topics
-            topics = sorted(set([sub_topic for grant_topic in grant_topics.values() for sub_topic in grant_topic[0]]))
+            topics = sorted(set([sub_topic for grant_topic in grant_topics.values() for sub_topic in grant_topic[0]
+                                 if len(grant_topic[0]) > 1]))
 
             # variable to hold new topics
             new_topics = OrderedDict()
@@ -163,10 +164,8 @@ class LinkTopics:
                         number += 1
                         # add value to value
                         value += grant_topic[1]
-                # if number is greater than 1
-                if number > 1:
-                    # add topic to new topics
-                    new_topics[topic] = [number, value]
+                # add topic to new topics
+                new_topics[topic] = [number, value]
 
             # set locale to Great Britain
             setlocale(LC_ALL, 'en_GB.utf8')
@@ -223,8 +222,8 @@ class LinkTopics:
             input_file.close()
 
             # variable to hold topics
-            topics = sorted(set([sub_topic for researcher_topic in researcher_topics.values()
-                                 for sub_topic in researcher_topic[1]]))
+            topics = sorted(set([sub_topic for researcher_topic in researcher_topics.values() for sub_topic in
+                                 researcher_topic[1] if len(researcher_topic[1]) > 1]))
 
             # variable to hold new topics
             new_topics = OrderedDict()
@@ -239,10 +238,8 @@ class LinkTopics:
                     if topic in researcher_topic[1]:
                         # increment number
                         number += 1
-                # if number is greater than 1
-                if number > 1:
-                    # add new topic to new topics
-                    new_topics[topic] = number
+                # add new topic to new topics
+                new_topics[topic] = number
 
             # variable to hold output file
             output_file = open('../output/topics/current/info/researcher_topic_info.csv', mode='w')
@@ -322,17 +319,19 @@ class LinkTopics:
                 for dupe_topic_link in dupe_topic_links:
                     # add value to value
                     value += dupe_topic_link[2]
-                    # remove duplicate topic link
-                    topic_links.remove(dupe_topic_link)
-                # add new topic link to new topic links
-                new_topic_links += [[topic_link[0], topic_link[1], number, value]]
+                # variable to hold new topic link
+                new_topic_link = [topic_link[0], topic_link[1], number, value]
+                # if new topic link is not in new topic links
+                if new_topic_link not in new_topic_links:
+                    # add new topic link to new topic links
+                    new_topic_links += [new_topic_link]
 
-                # print progress
-                print('> Extraction of grant topic links in progress ({} grant topic link(s)'
-                      ' extracted)'.format(extraction_count))
+                    # print progress
+                    print('> Extraction of grant topic links in progress ({} grant topic link(s)'
+                          ' extracted)'.format(extraction_count))
 
-                # increment extraction count
-                extraction_count += 1
+                    # increment extraction count
+                    extraction_count += 1
 
             # set locale to Great Britain
             setlocale(LC_ALL, 'en_GB.utf8')
@@ -404,19 +403,19 @@ class LinkTopics:
                 dupe_topic_links = [x for x in topic_links if (x[0], x[1]) == (topic_link[0], topic_link[1])]
                 # variable to hold number
                 number = len(dupe_topic_links)
-                # for duplicate topic link in duplicate topic links
-                for dupe_topic_link in dupe_topic_links:
-                    # remove duplicate topic link
-                    topic_links.remove(dupe_topic_link)
-                # add new topic link to new topic links
-                new_topic_links += [[topic_link[0], topic_link[1], number]]
+                # variable to hold new topic link
+                new_topic_link = [topic_link[0], topic_link[1], number]
+                # if new topic link is not in new topic links
+                if new_topic_link not in new_topic_links:
+                    # add new topic link to new topic links
+                    new_topic_links += [new_topic_link]
 
-                # print progress
-                print('> Extraction of researcher topic links in progress ({} researcher topic link(s)'
-                      ' extracted)'.format(extraction_count))
+                    # print progress
+                    print('> Extraction of researcher topic links in progress ({} researcher topic link(s)'
+                          ' extracted)'.format(extraction_count))
 
-                # increment extraction count
-                extraction_count += 1
+                    # increment extraction count
+                    extraction_count += 1
 
             # variable to hold output file
             output_file = open('../output/topics/current/links/researcher_topic_links.csv', mode='w')
@@ -492,7 +491,8 @@ class LinkPastTopics:
             input_file.close()
 
             # variable to hold topics
-            topics = sorted(set([sub_topic for grant_topic in grant_topics.values() for sub_topic in grant_topic[0]]))
+            topics = sorted(set([sub_topic for grant_topic in grant_topics.values() for sub_topic in grant_topic[0]
+                                 if len(grant_topic[0]) > 1]))
 
             # variable to hold new topics
             new_topics = OrderedDict()
@@ -509,10 +509,8 @@ class LinkPastTopics:
                         number += 1
                         # add value to value
                         value += grant_topic[1]
-                # if number is greater than 1
-                if number > 1:
-                    # add topic to new topics
-                    new_topics[topic] = [number, value]
+                # add topic to new topics
+                new_topics[topic] = [number, value]
 
             # set locale to Great Britain
             setlocale(LC_ALL, 'en_GB.utf8')
@@ -569,8 +567,8 @@ class LinkPastTopics:
             input_file.close()
 
             # variable to hold topics
-            topics = sorted(set([sub_topic for researcher_topic in researcher_topics.values()
-                                 for sub_topic in researcher_topic[1]]))
+            topics = sorted(set([sub_topic for researcher_topic in researcher_topics.values() for sub_topic in
+                                 researcher_topic[1] if len(researcher_topic[1]) > 1]))
 
             # variable to hold new topics
             new_topics = OrderedDict()
@@ -585,10 +583,8 @@ class LinkPastTopics:
                     if topic in researcher_topic[1]:
                         # increment number
                         number += 1
-                # if number is greater than 1
-                if number > 1:
-                    # add new topic to new topics
-                    new_topics[topic] = number
+                # add new topic to new topics
+                new_topics[topic] = number
 
             # variable to hold output file
             output_file = open('../output/topics/past/{}/info/researcher_topic_info.csv'.format(years),
@@ -670,17 +666,19 @@ class LinkPastTopics:
                 for dupe_topic_link in dupe_topic_links:
                     # add value to value
                     value += dupe_topic_link[2]
-                    # remove duplicate topic link
-                    topic_links.remove(dupe_topic_link)
-                # add new topic link to new topic links
-                new_topic_links += [[topic_link[0], topic_link[1], number, value]]
+                # variable to hold new topic link
+                new_topic_link = [topic_link[0], topic_link[1], number, value]
+                # if new topic link is not in new topic links
+                if new_topic_link not in new_topic_links:
+                    # add new topic link to new topic links
+                    new_topic_links += [new_topic_link]
 
-                # print progress
-                print('> Extraction of grant topic links ({}) in progress ({} grant topic link(s)'
-                      ' extracted)'.format(years, extraction_count))
+                    # print progress
+                    print('> Extraction of grant topic links ({}) in progress ({} grant topic link(s)'
+                          ' extracted)'.format(years, extraction_count))
 
-                # increment extraction count
-                extraction_count += 1
+                    # increment extraction count
+                    extraction_count += 1
 
             # set locale to Great Britain
             setlocale(LC_ALL, 'en_GB.utf8')
@@ -752,19 +750,18 @@ class LinkPastTopics:
                 dupe_topic_links = [x for x in topic_links if (x[0], x[1]) == (topic_link[0], topic_link[1])]
                 # variable to hold number
                 number = len(dupe_topic_links)
-                # for duplicate topic link in duplicate topic links
-                for dupe_topic_link in dupe_topic_links:
-                    # remove duplicate topic link
-                    topic_links.remove(dupe_topic_link)
-                # add new topic link to new topic links
-                new_topic_links += [[topic_link[0], topic_link[1], number]]
+                new_topic_link = [topic_link[0], topic_link[1], number]
+                # if new topic link is not in new topic links
+                if new_topic_link not in new_topic_links:
+                    # add new topic link to new topic links
+                    new_topic_links += [new_topic_link]
 
-                # print progress
-                print('> Extraction of researcher topic links ({}) in progress ({} researcher topic link(s)'
-                      ' extracted)'.format(years, extraction_count))
+                    # print progress
+                    print('> Extraction of researcher topic links ({}) in progress ({} researcher topic link(s)'
+                          ' extracted)'.format(years, extraction_count))
 
-                # increment extraction count
-                extraction_count += 1
+                    # increment extraction count
+                    extraction_count += 1
 
             # variable to hold output file
             output_file = open('../output/topics/past/{}/links/researcher_topic_links.csv'.format(years), mode='w')
