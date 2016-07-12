@@ -3,7 +3,9 @@
 ########################################################################################################################
 
 # third-party library modules
-from igraph import *
+import os
+import igraph as ig
+import networkx as nx
 from collections import OrderedDict
 
 ########################################################################################################################
@@ -31,30 +33,40 @@ class CalcStats:
     def calc_basic_stats(path):
 
         # variable to hold network
-        network = Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
+        ig_network = ig.Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
 
-        node_weights = network.vs["Num"]
-        node_attr = network.vertex_attributes()
-        node_degrees = network.degree()
-        degree_dist = network.degree_distribution()
-        edge_weights = network.es["weight"]
-        edge_attr = network.edge_attributes()
+        # variable to hold network1
+        nx_network = nx.read_graphml('../../data/networks/{}/network.graphml'.format(path))
 
-        node_count = network.vcount()
-        edge_count = network.ecount()
-        directed_status = 'Directed' if network.is_directed() else 'Undirected'
-        weighted_status = 'Yes' if network.is_weighted() else 'No'
-        avg_degree = mean(network.degree())
-        diameter = network.diameter(directed=False)
-        radius = network.radius(mode='OUT')
-        density = network.density()
-        components = len(network.components())
-        closeness = mean(network.closeness())
-        node_betweenness = mean(network.betweenness(directed=False))
-        edge_betweenness = mean(network.edge_betweenness(directed=False))
-        avg_clustering_coeff = mean(network.transitivity_avglocal_undirected())
-        eigenvector_centrality = mean(network.eigenvector_centrality(directed=False))
-        avg_path_length = mean(network.average_path_length(directed=False))
+        # variables to hold selectables
+        network_summary = ig_network.summary()
+        node_weights = ig_network.vs["Num"]
+        node_attr = ig_network.vertex_attributes()
+        node_degrees = ig_network.degree()
+        degree_dist = ig_network.degree_distribution()
+        edge_weights = ig_network.es["weight"]
+        edge_attr = ig_network.edge_attributes()
+
+        # variables to hold stats
+        node_count = ig_network.vcount()
+        edge_count = ig_network.ecount()
+        directed_status = 'Directed' if ig_network.is_directed() else 'Undirected'
+        weighted_status = 'Yes' if ig_network.is_weighted() else 'No'
+        connected_status = 'Yes' if ig_network.is_connected() else 'No'
+        avg_degree = ig.mean(ig_network.degree(loops=False))
+        avg_weighted_degree = ig.mean(ig_network.strength(weights='weight'))
+        diameter = ig_network.diameter(directed=False, weights='weight')
+        radius = ig_network.radius(mode='ALL')
+        density = ig_network.density()
+        modularity = ig_network.modularity(ig_network.community_multilevel(weights='weight'))
+        communities = len(ig_network.community_multilevel(weights='weight'))
+        components = len(ig_network.components())
+        closeness = ig.mean(ig_network.closeness(weights='weight'))
+        node_betweenness = ig.mean(ig_network.betweenness(directed=False, weights='weight'))
+        edge_betweenness = ig.mean(ig_network.edge_betweenness(directed=False, weights='weight'))
+        avg_clustering_coeff = ig.mean(ig_network.transitivity_avglocal_undirected())
+        eigenvector_centrality = ig.mean(ig_network.eigenvector_centrality(directed=False, weights='weight'))
+        avg_path_length = ig.mean(ig_network.average_path_length(directed=False))
 
         # print stats to terminal
         print('> Network Overview\n')
@@ -62,10 +74,14 @@ class CalcStats:
         print('- Edges: {}'.format(edge_count))
         print('- Type: {}'.format(directed_status))
         print('- Weighted: {}'.format(weighted_status))
+        print('- Connected: {}'.format(connected_status))
         print('- Average Degree: {0:.3f}'.format(avg_degree))
+        print('- Average Weighted Degree: {0:.3f}'.format(avg_weighted_degree))
         print('- Diameter: {}'.format(diameter))
         print('- Radius: {}'.format(radius))
         print('- Density: {0:.3f}'.format(density))
+        print('- Modularity: {0:.3f}'.format(modularity))
+        print('- Communities: {}'.format(communities))
         print('- Weak Components: {}'.format(components))
         print('- Node Closeness: {0:.3f}'.format(closeness))
         print('- Node Betweenness: {0:.3f}'.format(node_betweenness))
@@ -77,21 +93,6 @@ class CalcStats:
 
         print('> Edge Overview\n')
         print('- Average Path Length: {0:.3f}'.format(avg_path_length))
-
-        # get summary
-        # summary(network)
-
-        # print node attributes
-        # print(node_attr)
-
-        # print edge attributes
-        # print(edge_attr)
-
-        # print node degrees
-        # print(node_degrees)
-
-        # print degree distribution
-        # print(degree_dist)
 
         # if stats file does not exist
         if not os.path.isfile('../../data/networks/{}/stats.txt'.format(path)):
@@ -106,9 +107,12 @@ class CalcStats:
             output_file.write('- Type: {}'.format(directed_status))
             output_file.write('- Weighted: {}'.format(weighted_status))
             output_file.write('- Average Degree: {0:.3f}'.format(avg_degree))
+            output_file.write('- Average Weighted Degree: {0:.3f}'.format(avg_weighted_degree))
             output_file.write('- Diameter: {}'.format(diameter))
             output_file.write('- Radius: {}'.format(radius))
             output_file.write('- Density: {0:.3f}'.format(density))
+            output_file.write('- Modularity: {0:.3f}'.format(modularity))
+            output_file.write('- Communities: {}'.format(communities))
             output_file.write('- Weak Components: {}'.format(components))
             output_file.write('- Node Closeness: {0:.3f}'.format(closeness))
             output_file.write('- Node Betweenness: {0:.3f}'.format(node_betweenness))
@@ -130,7 +134,7 @@ class CalcStats:
             # variable to hold output file
             output_file = open(r'../../data/networks/{}/network.pkl'.format(path), 'wb')
             # write network structure to file
-            network.write_pickle(output_file)
+            ig_network.write_pickle(output_file)
             # close output file
             output_file.close()
 
