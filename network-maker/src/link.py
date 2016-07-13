@@ -812,6 +812,61 @@ class LinkResearchers:
     ####################################################################################################################
 
     @staticmethod
+    # extracts researcher info
+    def extract_researcher_info():
+
+        # if researcher information file does not exist
+        if not os.path.isfile('../output/researchers/current/info/researcher_info.csv'):
+
+            # print progress
+            print('> Extraction of researcher information started')
+
+            # variable to hold input file
+            input_file = open(r'../output/researchers/current/info/researcher_topics.pkl', 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold researchers
+            researchers = OrderedDict((identifier, [attr[0], len(attr[1])]) for identifier, attr in
+                                      researcher_topics.items() if attr[0] and len(attr[1]) > 0)
+
+            # variable to hold output file
+            output_file = open('../output/researchers/current/info/researcher_info.csv', mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher in researchers
+            for identifier, attr in researchers.items():
+                # write identifier and attributes to file
+                output_file.write('"{}","{}","{}"\n'.format(identifier, attr[0], attr[1]))
+
+                # print progress
+                print('> Extraction of researcher information in progress (information for {} researcher(s)'
+                      ' extracted)'.format(extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/current/info/researcher_info.pkl', 'wb')
+            # write data structure to file
+            dump(researchers, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher information completed (information for {} researchers'
+                  ' extracted)'.format(len(researchers)))
+
+    ####################################################################################################################
+
+    @staticmethod
     # extracts grant researcher info
     def extract_grant_researcher_info():
 
@@ -979,77 +1034,6 @@ class LinkResearchers:
     ####################################################################################################################
 
     @staticmethod
-    # extracts researcher info
-    def extract_researcher_info():
-
-        # if researcher information file does not exist
-        if not os.path.isfile('../output/researchers/current/info/researcher_info.csv'):
-
-            # print progress
-            print('> Extraction of researcher information started')
-
-            # variable to hold input file
-            input_file = open(r'../output/researchers/current/info/researcher_topics.pkl', 'rb')
-            # load data structure from file
-            researcher_topics = load(input_file)
-            # close input file
-            input_file.close()
-
-            # variable to hold input file
-            input_file = open(r'../output/researchers/current/links/researcher_links.pkl', 'rb')
-            # load data structure from file
-            researcher_links = load(input_file)
-            # close input file
-            input_file.close()
-
-            # variable to hold researchers number
-            researchers_num = OrderedDict((identifier, [attr[0], len(attr[1])]) for identifier, attr in
-                                          researcher_topics.items() if attr[0] and len(attr[1]) > 0)
-
-            # variable to hold researchers
-            researchers = set([researcher_link[0] for researcher_link in researcher_links])
-            # update researchers
-            researchers.update([researcher_link[1] for researcher_link in researcher_links])
-
-            # variable to hold researchers
-            researchers = OrderedDict((identifier, [researchers_num.get(identifier)[0],
-                                       researchers_num.get(identifier)[1]]) for identifier in researchers)
-
-            # variable to hold output file
-            output_file = open('../output/researchers/current/info/researcher_info.csv', mode='w')
-
-            # variable to hold extraction count set to 1
-            extraction_count = 1
-
-            # for researcher in researchers
-            for identifier, attr in researchers.items():
-                # write identifier and attributes to file
-                output_file.write('"{}","{}","{}"\n'.format(identifier, attr[0], attr[1]))
-
-                # print progress
-                print('> Extraction of researcher information in progress (information for {} researcher(s)'
-                      ' extracted)'.format(extraction_count))
-
-                # increment extraction count
-                extraction_count += 1
-
-            # close output file
-            output_file.close()
-
-            # variable to hold output file
-            output_file = open(r'../output/researchers/current/info/researcher_info.pkl', 'wb')
-            # write data structure to file
-            dump(researchers, output_file)
-            # close output file
-            output_file.close()
-
-            # print progress
-            print('> Extraction of researcher information completed (information for {} researchers'
-                  ' extracted)'.format(len(researchers)))
-
-    ####################################################################################################################
-
-    @staticmethod
     # links grant researchers
     def link_grant_researchers():
 
@@ -1162,6 +1146,61 @@ class LinkPastResearchers:
         LinkPastResearchers.link_grant_researchers('1990-2000')
         # link grant researchers from 2000 to 2010
         LinkPastResearchers.link_grant_researchers('2000-2010')
+
+    ####################################################################################################################
+
+    @staticmethod
+    # extracts researcher information from 1990/2000 to 2000/2010
+    def extract_researcher_info(years):
+
+        # if researcher information file does not exist
+        if not os.path.isfile('../output/researchers/past/{}/info/researcher_info.csv'.format(years)):
+
+            # print progress
+            print('> Extraction of researcher information ({}) started'.format(years))
+
+            # variable to hold input file
+            input_file = open(r'../output/researchers/past/{}/info/researcher_topics.pkl'.format(years), 'rb')
+            # load data structure from file
+            researcher_topics = load(input_file)
+            # close input file
+            input_file.close()
+
+            # variable to hold researchers number
+            researchers = OrderedDict((identifier, [attr[0], len(attr[1])]) for identifier, attr in
+                                      researcher_topics.items() if attr[0] and len(attr[1]) > 0)
+
+            # variable to hold output file
+            output_file = open('../output/researchers/past/{}/info/researcher_info.csv'.format(years), mode='w')
+
+            # variable to hold extraction count set to 1
+            extraction_count = 1
+
+            # for researcher in researchers
+            for identifier, attr in researchers.items():
+                # write identifier and attributes to file
+                output_file.write('"{}","{}","{}"\n'.format(identifier, attr[0], attr[1]))
+
+                # print progress
+                print('> Extraction of researcher information ({}) in progress (information for {} researcher(s)'
+                      ' extracted)'.format(years, extraction_count))
+
+                # increment extraction count
+                extraction_count += 1
+
+            # close output file
+            output_file.close()
+
+            # variable to hold output file
+            output_file = open(r'../output/researchers/past/{}/info/researcher_info.pkl'.format(years), 'wb')
+            # write data structure to file
+            dump(researchers, output_file)
+            # close output file
+            output_file.close()
+
+            # print progress
+            print('> Extraction of researcher information ({}) completed (information for {} researchers'
+                  ' extracted)'.format(years, len(researchers)))
 
     ####################################################################################################################
 
@@ -1307,78 +1346,6 @@ class LinkPastResearchers:
             # print progress
             print('> Extraction of researcher links ({}) completed ({} researcher links'
                   ' extracted)'.format(years, len(researcher_links)))
-
-    ####################################################################################################################
-
-    @staticmethod
-    # extracts researcher information from 1990/2000 to 2000/2010
-    def extract_researcher_info(years):
-
-        # if researcher information file does not exist
-        if not os.path.isfile('../output/researchers/past/{}/info/researcher_info.csv'.format(years)):
-
-            # print progress
-            print('> Extraction of researcher information ({}) started'.format(years))
-
-            # variable to hold input file
-            input_file = open(r'../output/researchers/past/{}/info/researcher_topics.pkl'.format(years), 'rb')
-            # load data structure from file
-            researcher_topics = load(input_file)
-            # close input file
-            input_file.close()
-
-            # variable to hold input file
-            input_file = open(r'../output/researchers/past/{}/links/researcher_links.pkl'.format(years), 'rb')
-            # load data structure from file
-            researcher_links = load(input_file)
-            # close input file
-            input_file.close()
-
-            # variable to hold researchers number
-            researchers_num = OrderedDict((identifier, [attr[0], len(attr[1])]) for identifier, attr in
-                                          researcher_topics.items() if attr[0] and len(attr[1]) > 0)
-
-            # variable to hold researchers
-            researchers = set([researcher_link[0] for researcher_link in researcher_links])
-            # update researchers
-            researchers.update([researcher_link[1] for researcher_link in researcher_links])
-
-            # variable to hold researchers
-            researchers = OrderedDict((identifier, [researchers_num.get(identifier)[0],
-                                       researchers_num.get(identifier)[1]]) for identifier in researchers)
-
-            # variable to hold output file
-            output_file = open('../output/researchers/past/{}/info/researcher_info.csv'.format(years), mode='w')
-
-            # variable to hold extraction count set to 1
-            extraction_count = 1
-
-            # for researcher in researchers
-            for researcher in researchers:
-                # write identifier and attributes to file
-                output_file.write('"{}","{}","{}"\n'.format(researcher, researchers_num.get(researcher)[0],
-                                                            researchers_num.get(researcher)[1]))
-
-                # print progress
-                print('> Extraction of researcher information ({}) in progress (information for {} researcher(s)'
-                      ' extracted)'.format(years, extraction_count))
-
-                # increment extraction count
-                extraction_count += 1
-
-            # close output file
-            output_file.close()
-
-            # variable to hold output file
-            output_file = open(r'../output/researchers/past/{}/info/researcher_info.pkl'.format(years), 'wb')
-            # write data structure to file
-            dump(researchers, output_file)
-            # close output file
-            output_file.close()
-
-            # print progress
-            print('> Extraction of researcher information ({}) completed (information for {} researchers'
-                  ' extracted)'.format(years, len(researchers)))
 
     ####################################################################################################################
 
