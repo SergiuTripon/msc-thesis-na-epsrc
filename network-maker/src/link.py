@@ -884,9 +884,9 @@ class LinkResearchers:
             input_file.close()
 
             # variable to hold researchers
-            researchers = sorted(set([(sub_researcher[0], sub_researcher[1]) for grant_researcher in
-                                      grant_researchers.values() for sub_researcher in grant_researcher[0]
-                                      if len(grant_researcher[0]) > 1]))
+            researchers = set([(sub_researcher[0], sub_researcher[1]) for grant_researcher in
+                               grant_researchers.values() for sub_researcher in grant_researcher[0]
+                               if len(grant_researcher[0]) > 1])
 
             # variable to hold new researchers
             new_researchers = OrderedDict()
@@ -1222,9 +1222,9 @@ class LinkPastResearchers:
             input_file.close()
 
             # variable to hold researchers
-            researchers = sorted(set([(sub_researcher[0], sub_researcher[1]) for grant_researcher in
-                                      grant_researchers.values() for sub_researcher in grant_researcher[0]
-                                      if len(grant_researcher[0]) > 1]))
+            researchers = set([(sub_researcher[0], sub_researcher[1]) for grant_researcher in
+                               grant_researchers.values() for sub_researcher in grant_researcher[0]
+                               if len(grant_researcher[0]) > 1])
 
             # variable to hold new researchers
             new_researchers = OrderedDict()

@@ -46,9 +46,9 @@ function get_researchers_stats() {
 function get_topic_network_a_stats() {
     echo "Research Topic-based Network A ($1)"
     echo "Topics: " $(wc -l < ../output/topics/$2/info/grant_topic_info.csv)
-    echo "Nodes: " $(wc -l < ../../data/networks/topics/$2/network-a/nodes.csv)
+    echo "Nodes: " $(wc -l < ../../data/networks/topics/$2/network-a/nodes.tsv)
     echo "Links: " $(wc -l < ../output/topics/$2/links/grant_topic_links.csv)
-    echo "Edges: " $(wc -l < ../../data/networks/topics/$2/network-a/edges.csv)
+    echo "Edges: " $(wc -l < ../../data/networks/topics/$2/network-a/edges.tsv)
 
     echo ""
 }
@@ -59,9 +59,9 @@ function get_topic_network_a_stats() {
 function get_topic_network_b_stats() {
     echo "Research Topic-based Network B ($1)"
     echo "Topics: " $(wc -l < ../output/topics/$2/info/researcher_topic_info.csv)
-    echo "Nodes: " $(wc -l < ../../data/networks/topics/$2/network-b/nodes.csv)
+    echo "Nodes: " $(wc -l < ../../data/networks/topics/$2/network-b/nodes.tsv)
     echo "Links: " $(wc -l < ../output/topics/$2/links/researcher_topic_links.csv)
-    echo "Edges: " $(wc -l < ../../data/networks/topics/$2/network-b/edges.csv)
+    echo "Edges: " $(wc -l < ../../data/networks/topics/$2/network-b/edges.tsv)
 
     echo ""
 }
@@ -72,9 +72,9 @@ function get_topic_network_b_stats() {
 function get_researcher_network_a_stats() {
     echo "Researcher-based Network A ($1)"
     echo "Researchers: " $(wc -l < ../output/researchers/$2/info/researcher_info.csv)
-    echo "Nodes: " $(wc -l < ../../data/networks/researchers/$2/network-a/nodes.csv)
+    echo "Nodes: " $(wc -l < ../../data/networks/researchers/$2/network-a/nodes.tsv)
     echo "Links: " $(wc -l < ../output/researchers/$2/links/researcher_links.csv)
-    echo "Edges: " $(wc -l < ../../data/networks/researchers/$2/network-a/edges.csv)
+    echo "Edges: " $(wc -l < ../../data/networks/researchers/$2/network-a/edges.tsv)
 
     echo ""
 }
@@ -85,9 +85,9 @@ function get_researcher_network_a_stats() {
 function get_researcher_network_b_stats() {
     echo "Researcher-based Network B ($1)"
     echo "Researchers: " $(wc -l < ../output/researchers/$2/info/grant_researcher_info.csv)
-    echo "Nodes: " $(wc -l < ../../data/networks/researchers/$2/network-b/nodes.csv)
+    echo "Nodes: " $(wc -l < ../../data/networks/researchers/$2/network-b/nodes.tsv)
     echo "Links: " $(wc -l < ../output/researchers/$2/links/grant_researcher_links.csv)
-    echo "Edges: " $(wc -l < ../../data/networks/researchers/$2/network-b/edges.csv)
+    echo "Edges: " $(wc -l < ../../data/networks/researchers/$2/network-b/edges.tsv)
 
     echo ""
 }
