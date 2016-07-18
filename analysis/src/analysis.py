@@ -28,13 +28,13 @@ class AnalyseTopicNetwork:
     def run():
 
         # analyse network a
-        # AnalyseTopicNetwork.analyse_network_a('topics/current/network-a')
-        # AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
-        # AnalyseTopicNetwork.analyse_network_a('topics/past/1990-2000/network-a')
+        AnalyseTopicNetwork.analyse_network_a('topics/current/network-a')
+        AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
+        AnalyseTopicNetwork.analyse_network_a('topics/past/1990-2000/network-a')
 
         # analyse network b
-        # AnalyseTopicNetwork.analyse_network_b('topics/current/network-b')
-        # AnalyseTopicNetwork.analyse_network_b('topics/past/2000-2010/network-b')
+        AnalyseTopicNetwork.analyse_network_b('topics/current/network-b')
+        AnalyseTopicNetwork.analyse_network_b('topics/past/2000-2010/network-b')
         AnalyseTopicNetwork.analyse_network_b('topics/past/1990-2000/network-b')
 
     ####################################################################################################################
@@ -145,6 +145,9 @@ class AnalyseResearcherNetwork:
         # calculate network stats
         calc_stats(network, path)
 
+        # calculate modularity
+        calc_modularity(network, path)
+
     ####################################################################################################################
 
     @staticmethod
@@ -156,6 +159,9 @@ class AnalyseResearcherNetwork:
 
         # calculate network stats
         calc_stats(network, path)
+
+        # calculate modularity
+        calc_modularity(network, path)
 
 
 ########################################################################################################################
@@ -232,6 +238,7 @@ def calc_stats(network, path):
         output_file.write('- Edges: {}\n'.format(edge_count))
         output_file.write('- Type: {}\n'.format(directed_status))
         output_file.write('- Weighted: {}\n'.format(weighted_status))
+        output_file.write('- Connected: {}\n'.format(connected_status))
         output_file.write('- Average Degree: {0:.3f}\n'.format(avg_degree))
         output_file.write('- Average Weighted Degree: {0:.3f}\n'.format(avg_weighted_degree))
         output_file.write('- Diameter: {}\n'.format(diameter))
@@ -249,13 +256,14 @@ def calc_stats(network, path):
         output_file.write('- Eigenvector Centrality: {0:.3f}\n\n'.format(eigenvector_centrality))
 
         output_file.write('> Edge Overview\n\n')
-        output_file.write('- Average Path Length: {0:.3f}'.format(avg_path_length))
+        output_file.write('- Average Path Length: {0:.3f}\n'.format(avg_path_length))
 
         # close output file
         output_file.close()
 
 
 ########################################################################################################################
+
 
 # calculate modularity
 def calc_modularity(network, path):
@@ -303,11 +311,16 @@ def calc_modularity(network, path):
         # variable to hold fast greedy modularity
         fastgreedy_modularity = fastgreedy_communities.modularity
 
-        # variable to hold edge betweenness communities
-        edge_betweenness_communities = network.community_edge_betweenness(directed=False,
-                                                                          weights='weight').as_clustering()
-        # variable to hold edge betweenness modularity
-        edge_betweenness_modularity = edge_betweenness_communities.modularity
+        edge_betweenness_communities = ig.VertexClustering
+        edge_betweenness_modularity = float
+
+        # if network is connected and number of components is less than or equal to 2
+        if network.is_connected() or len(network.components()) <= 2:
+            # variable to hold edge betweenness communities
+            edge_betweenness_communities = network.community_edge_betweenness(directed=False,
+                                                                              weights='weight').as_clustering()
+            # variable to hold edge betweenness modularity
+            edge_betweenness_modularity = edge_betweenness_communities.modularity
 
         # print stats to terminal
         print('Infomap Communities:             {}'.format(len(infomap_communities)))
@@ -321,7 +334,10 @@ def calc_modularity(network, path):
         print('Leading Eigenvector Communities: {}'.format(len(leading_eigenvector_communities)))
         print('Walktrap Modularity:             {}'.format(len(walktrap_communities)))
         print('Fast Greedy Communities:         {}'.format(len(fastgreedy_communities)))
-        print('Edge Betweenness Communities:    {}\n'.format(len(edge_betweenness_communities)))
+
+        # if network is connected and number of components is less than or equal to 2
+        if network.is_connected() or len(network.components()) <= 2:
+            print('Edge Betweenness Communities:    {}\n'.format(len(edge_betweenness_communities)))
 
         print('Infomap Modularity:              {0:.3f}'.format(infomap_modularity))
 
@@ -334,7 +350,10 @@ def calc_modularity(network, path):
         print('Leading Eigenvector Modularity:  {0:.3f}'.format(leading_eigenvector_modularity))
         print('Walktrap Modularity:             {0:.3f}'.format(walktrap_modularity))
         print('Fast Greedy Modularity:          {0:.3f}'.format(fastgreedy_modularity))
-        print('Edge Betweenness Communities:    {0:.3f}'.format(edge_betweenness_modularity))
+
+        # if network is connected and number of components is less than or equal to 2
+        if network.is_connected() or len(network.components()) <= 2:
+            print('Edge Betweenness Communities:    {0:.3f}'.format(edge_betweenness_modularity))
 
         # variable to hold output file
         output_file = open('../../data/networks/{}/modularity.txt'.format(path), mode='w')
@@ -351,7 +370,10 @@ def calc_modularity(network, path):
         output_file.write('Leading Eigenvector Communities: {}\n'.format(len(leading_eigenvector_communities)))
         output_file.write('Walktrap Modularity:             {}\n'.format(len(walktrap_communities)))
         output_file.write('Fast Greedy Communities:         {}\n'.format(len(fastgreedy_communities)))
-        output_file.write('Edge Betweenness Communities:    {}\n\n'.format(len(edge_betweenness_communities)))
+
+        # if network is connected and number of components is less than or equal to 2
+        if network.is_connected() or len(network.components()) <= 2:
+            output_file.write('Edge Betweenness Communities:    {}\n\n'.format(len(edge_betweenness_communities)))
 
         output_file.write('Infomap Modularity:              {0:.3f}\n'.format(infomap_modularity))
 
@@ -364,7 +386,10 @@ def calc_modularity(network, path):
         output_file.write('Leading Eigenvector Modularity:  {0:.3f}\n'.format(leading_eigenvector_modularity))
         output_file.write('Walktrap Modularity:             {0:.3f}\n'.format(walktrap_modularity))
         output_file.write('Fast Greedy Modularity:          {0:.3f}\n'.format(fastgreedy_modularity))
-        output_file.write('Edge Betweenness Communities:    {0:.3f}'.format(edge_betweenness_modularity))
+
+        # if network is connected and number of components is less than or equal to 2
+        if network.is_connected() or len(network.components()) <= 2:
+            output_file.write('Edge Betweenness Communities:    {0:.3f}'.format(edge_betweenness_modularity))
 
 
 ########################################################################################################################
@@ -512,10 +537,10 @@ def plot_communities(network, communities, membership, path, edges):
 def main():
 
     # analyse topic network
-    AnalyseTopicNetwork.run()
+    # AnalyseTopicNetwork.run()
 
     # analyse researcher network
-    # AnalyseResearcherNetwork.run()
+    AnalyseResearcherNetwork.run()
 
 
 ########################################################################################################################
