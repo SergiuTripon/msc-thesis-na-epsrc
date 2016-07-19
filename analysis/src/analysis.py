@@ -125,13 +125,13 @@ class AnalyseResearcherNetwork:
 
         # analyse network a
         AnalyseResearcherNetwork.analyse_network_a('researchers/current/network-a')
-        # AnalyseResearcherNetwork.analyse_network_a('researchers/past/2000-2010/network-a')
-        # AnalyseResearcherNetwork.analyse_network_a('researchers/past/1990-2000/network-a')
+        AnalyseResearcherNetwork.analyse_network_a('researchers/past/2000-2010/network-a')
+        AnalyseResearcherNetwork.analyse_network_a('researchers/past/1990-2000/network-a')
 
         # analyse network b
-        # AnalyseResearcherNetwork.analyse_network_b('researchers/current/network-b')
-        # AnalyseResearcherNetwork.analyse_network_b('researchers/past/2000-2010/network-b')
-        # AnalyseResearcherNetwork.analyse_network_b('researchers/past/1990-2000/network-b')
+        AnalyseResearcherNetwork.analyse_network_b('researchers/current/network-b')
+        AnalyseResearcherNetwork.analyse_network_b('researchers/past/2000-2010/network-b')
+        AnalyseResearcherNetwork.analyse_network_b('researchers/past/1990-2000/network-b')
 
     ####################################################################################################################
 
@@ -163,12 +163,14 @@ class AnalyseResearcherNetwork:
         # calculate modularity
         calc_modularity(network, path)
 
-
 ########################################################################################################################
 
 
 # calculates stats
 def calc_stats(network, path):
+
+    print(network.vs.attributes())
+    print(network.es.attributes())
 
     # if stats file does not exist
     if not os.path.isfile('../../data/networks/{}/stats.txt'.format(path)):
@@ -537,7 +539,7 @@ def plot_communities(network, communities, membership, path, edges):
 def main():
 
     # analyse topic network
-    # AnalyseTopicNetwork.run()
+    AnalyseTopicNetwork.run()
 
     # analyse researcher network
     AnalyseResearcherNetwork.run()

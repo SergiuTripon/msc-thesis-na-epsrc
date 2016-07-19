@@ -115,16 +115,16 @@ get_topic_network_a_stats '1990-2000' 'past/1990-2000'
 get_topic_network_a_stats '2000-2010' 'past/2000-2010'
 
 # get topic network b stats
-# get_topic_network_b_stats 'Current' 'current'
-# get_topic_network_b_stats '1990-2000' 'past/1990-2000'
-# get_topic_network_b_stats '2000-2010' 'past/2000-2010'
+get_topic_network_b_stats 'Current' 'current'
+get_topic_network_b_stats '1990-2000' 'past/1990-2000'
+get_topic_network_b_stats '2000-2010' 'past/2000-2010'
 
 # get researcher network a stats
-# get_researcher_network_a_stats 'Current' 'current'
-# get_researcher_network_a_stats '1990-2000' 'past/1990-2000'
-# get_researcher_network_a_stats '2000-2010' 'past/2000-2010'
+get_researcher_network_a_stats 'Current' 'current'
+get_researcher_network_a_stats '1990-2000' 'past/1990-2000'
+get_researcher_network_a_stats '2000-2010' 'past/2000-2010'
 
 # get researcher network b stats
-# get_researcher_network_b_stats 'Current' 'current'
-# get_researcher_network_b_stats '1990-2000' 'past/1990-2000'
-# get_researcher_network_b_stats '2000-2010' 'past/2000-2010'
+get_researcher_network_b_stats 'Current' 'current'
+get_researcher_network_b_stats '1990-2000' 'past/1990-2000'
+get_researcher_network_b_stats '2000-2010' 'past/2000-2010'

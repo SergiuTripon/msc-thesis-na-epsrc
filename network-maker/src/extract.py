@@ -193,24 +193,24 @@ class ExtractTopics:
     def run():
 
         # extract topic urls
-        ExtractTopics.extract_topic_urls()
+        ExtractTopics.extract_topic_urls('current')
         # extract topic information
-        ExtractTopics.extract_topic_info()
+        ExtractTopics.extract_topic_info('current')
 
     ####################################################################################################################
 
     @staticmethod
     # extracts topic urls
-    def extract_topic_urls():
+    def extract_topic_urls(path):
 
         # if topic urls file does not exist
-        if not os.path.isfile('../output/topics/current/urls/topics.txt'):
+        if not os.path.isfile('../output/topics/{}/urls/topics.txt'.format(path)):
 
             # print progress
-            print('> Extraction of topic urls started')
+            print('> Extraction of topic urls ({}) started'.format(path))
 
             # variable to hold page
-            page = open(r'../output/topics/current/html/NGBOListTopics.aspx').read()
+            page = open(r'../output/topics/{}/html/NGBOListTopics.aspx'.format(path)).read()
             # variable to hold tree
             tree = html.fromstring(page)
 
@@ -221,7 +221,7 @@ class ExtractTopics:
             urls = tree.xpath(url_xpath)
 
             # variable to hold output file
-            output_file = open('../output/topics/current/urls/topics.txt', mode='w')
+            output_file = open('../output/topics/{}/urls/topics.txt'.format(path), mode='w')
 
             # write topics page url to file
             output_file.write('http://gow.epsrc.ac.uk/NGBOListTopics.aspx\n')
@@ -242,8 +242,8 @@ class ExtractTopics:
                     output_file.write('http://gow.epsrc.ac.uk/{}\n'.format(url))
 
                     # print progress
-                    print('> Extraction of topics urls in progress'
-                          ' ({} topic url(s) extracted)'.format(extraction_count))
+                    print('> Extraction of topics urls ({}) in progress'
+                          ' ({} topic url(s) extracted)'.format(path, extraction_count))
                     # increment extraction count
                     extraction_count += 1
 
@@ -251,29 +251,29 @@ class ExtractTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/topics/current/urls/topics.pkl', 'wb')
+            output_file = open(r'../output/topics/{}/urls/topics.pkl'.format(path), 'wb')
             # write data structure to file
             dump(full_urls, output_file)
             # close output file
             output_file.close()
 
             # print progress
-            print('> Extraction of topic urls completed ({} topic urls extracted)'.format(len(full_urls)))
+            print('> Extraction of topic urls ({}) completed ({} topic urls extracted)'.format(path, len(full_urls)))
 
     ####################################################################################################################
 
     @staticmethod
     # extracts topic information
-    def extract_topic_info():
+    def extract_topic_info(path):
 
         # if topic information file does not exist
-        if not os.path.isfile('../output/topics/current/info/topic_info.csv'):
+        if not os.path.isfile('../output/topics/{}/info/topic_info.csv'.format(path)):
 
             # print progress
-            print('> Extraction of topic information started')
+            print('> Extraction of topic information ({}) started'.format(path))
 
             # variable to hold page
-            page = open(r'../output/topics/current/html/NGBOListTopics.aspx', "r").read()
+            page = open(r'../output/topics/{}/html/NGBOListTopics.aspx'.format(path), "r").read()
             # variable to hold tree
             tree = html.fromstring(page)
 
@@ -305,7 +305,7 @@ class ExtractTopics:
             topics = OrderedDict((name, [url, int(grant_num), atoi(val)]) for name, url, grant_num, val in attr_zip)
 
             # variable to hold output file
-            output_file = open('../output/topics/current/info/topic_info.csv', mode='w')
+            output_file = open('../output/topics/{}/info/topic_info.csv'.format(path), mode='w')
 
             # variable to hold extraction count set to 1
             extraction_count = 1
@@ -316,8 +316,8 @@ class ExtractTopics:
                 output_file.write('"{}","{}","{}","{}"\n'.format(name, attr[0], attr[1],
                                                                  currency(attr[2], grouping=True)))
                 # print progress
-                print('> Extraction of topic information in progress (information for {} topic(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of topic information ({}) in progress (information for {} topic(s)'
+                      ' extracted)'.format(path, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -326,15 +326,15 @@ class ExtractTopics:
             output_file.close()
 
             # variable to hold output file
-            output_file = open(r'../output/topics/current/info/topic_info.pkl', 'wb')
+            output_file = open(r'../output/topics/{}/info/topic_info.pkl'.format(path), 'wb')
             # write data structure to file
             dump(topics, output_file)
             # close output file
             output_file.close()
 
             # print progress
-            print('> Extraction of topic information completed (information for {} topics'
-                  ' extracted)'.format(len(topics)))
+            print('> Extraction of topic information ({}) completed (information for {} topics'
+                  ' extracted)'.format(path, len(topics)))
 
 
 ########################################################################################################################
@@ -373,7 +373,7 @@ class ExtractGrants:
         if not os.path.isfile('../output/grants/{}/urls/grants.txt'.format(path)):
 
             # print progress
-            print('> Extraction of grant urls started')
+            print('> Extraction of grant urls ({}) started'.format(path))
 
             # variable to hold input file
             input_file = open(r'../output/topics/{}/urls/topics.pkl'.format(path), 'rb')
@@ -403,8 +403,8 @@ class ExtractGrants:
                 urls += tree.xpath(url_xpath)
 
                 # print progress
-                print('> Extraction of grant urls in progress (grant urls for {} topic(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant urls ({}) in progress (grant urls for {} topic(s)'
+                      ' extracted)'.format(path, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -435,7 +435,7 @@ class ExtractGrants:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant urls completed ({} grant urls extracted)'.format(len(full_urls)))
+            print('> Extraction of grant urls ({}) completed ({} grant urls extracted)'.format(path, len(full_urls)))
 
     ####################################################################################################################
 
@@ -447,7 +447,7 @@ class ExtractGrants:
         if not os.path.isfile('../output/grants/{}/info/grant_info.csv'.format(path)):
 
             # print progress
-            print('> Extraction of grant information started')
+            print('> Extraction of grant information ({}) started'.format(path))
 
             # variable to hold input file
             input_file = open(r'../output/topics/{}/urls/topics.pkl'.format(path), 'rb')
@@ -515,8 +515,8 @@ class ExtractGrants:
                 output_file.write('"{}","{}","{}"\n'.format(ref, attr[0], currency(attr[1], grouping=True)))
 
                 # print progress
-                print('> Extraction of grant information in progress (information for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant information ({}) in progress (information for {} grant(s)'
+                      ' extracted)'.format(path, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -532,8 +532,8 @@ class ExtractGrants:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant information completed (information for {} grants'
-                  ' extracted)'.format(len(grants)))
+            print('> Extraction of grant information ({}) completed (information for {} grants'
+                  ' extracted)'.format(path, len(grants)))
 
     ####################################################################################################################
 
@@ -545,7 +545,7 @@ class ExtractGrants:
         if not os.path.isfile('../output/grants/{}/info/grant_topics.csv'.format(path)):
 
             # print progress
-            print('> Extraction of grant topics started')
+            print('> Extraction of grant topics ({}) started'.format(path))
 
             # variable to hold input file
             input_file = open(r'../output/grants/{}/urls/grants.pkl'.format(path), 'rb')
@@ -598,8 +598,8 @@ class ExtractGrants:
                                                                                        atoi(values[0])]
 
                 # print progress
-                print('> Extraction of grant topics in progress (topics for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant topics ({}) in progress (topics for {} grant(s)'
+                      ' extracted)'.format(path, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -623,8 +623,8 @@ class ExtractGrants:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant topics completed (topics for {} grants'
-                  ' extracted)'.format(len(grant_topics)))
+            print('> Extraction of grant topics ({}) completed (topics for {} grants'
+                  ' extracted)'.format(path, len(grant_topics)))
 
     ####################################################################################################################
 
@@ -636,7 +636,7 @@ class ExtractGrants:
         if not os.path.isfile('../output/grants/{}/info/grant_researchers.csv'.format(path)):
 
             # print progress
-            print('> Extraction of grant researchers started')
+            print('> Extraction of grant researchers ({}) started'.format(path))
 
             # variable to hold input file
             input_file = open(r'../output/grants/{}/urls/grants.pkl'.format(path), 'rb')
@@ -713,8 +713,8 @@ class ExtractGrants:
                                                                                             atoi(values[0])]
 
                 # print progress
-                print('> Extraction of grant researchers in progress (researchers for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of grant researchers ({}) in progress (researchers for {} grant(s)'
+                      ' extracted)'.format(path, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -738,8 +738,8 @@ class ExtractGrants:
             output_file.close()
 
             # print progress
-            print('> Extraction of grant researchers completed (researchers for {} grants'
-                  ' extracted)'.format(len(grant_researchers)))
+            print('> Extraction of grant researchers ({}) completed (researchers for {} grants'
+                  ' extracted)'.format(path, len(grant_researchers)))
 
 
 ########################################################################################################################
@@ -772,7 +772,7 @@ class ExtractResearchers:
         if not os.path.isfile('../output/researchers/{}/urls/researchers.txt'.format(path)):
 
             # print progress
-            print('> Extraction of researcher urls started')
+            print('> Extraction of researcher urls ({}) started'.format(path))
 
             # variable to hold input file
             input_file = open(r'../output/grants/{}/urls/grants.pkl'.format(path), 'rb')
@@ -806,8 +806,8 @@ class ExtractResearchers:
                 urls += tree.xpath(other_url_xpath)
 
                 # print progress
-                print('> Extraction of researcher urls in progress (researcher urls for {} grant(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of researcher urls ({}) in progress (researcher urls for {} grant(s)'
+                      ' extracted)'.format(path, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -841,7 +841,8 @@ class ExtractResearchers:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher urls completed ({} researcher urls extracted)'.format(len(full_urls)))
+            print('> Extraction of researcher urls ({}) completed ({} researcher urls'
+                  ' extracted)'.format(path, len(full_urls)))
 
     ####################################################################################################################
 
@@ -853,7 +854,7 @@ class ExtractResearchers:
         if not os.path.isfile('../output/researchers/{}/info/researcher_topics.csv'.format(path)):
 
             # print progress
-            print('> Extraction of researcher topics started')
+            print('> Extraction of researcher topics ({}) started'.format(path))
 
             # variable to hold researcher urls
             researcher_urls = [researcher_url.replace('http://gow.epsrc.ac.uk/', '') for researcher_url in
@@ -903,8 +904,8 @@ class ExtractResearchers:
                 researcher_topics[researcher_url.replace('NGBOViewPerson.aspx?PersonId=', '')] = attr
 
                 # print progress
-                print('> Extraction of researcher topics in progress (topics for {} researcher(s)'
-                      ' extracted)'.format(extraction_count))
+                print('> Extraction of researcher topics ({}) in progress (topics for {} researcher(s)'
+                      ' extracted)'.format(path, extraction_count))
 
                 # increment extraction count
                 extraction_count += 1
@@ -928,8 +929,8 @@ class ExtractResearchers:
             output_file.close()
 
             # print progress
-            print('> Extraction of researcher topics completed (topics for {} researchers'
-                  ' extracted)'.format(len(researcher_topics)))
+            print('> Extraction of researcher topics ({}) completed (topics for {} researchers'
+                  ' extracted)'.format(path, len(researcher_topics)))
 
 
 ########################################################################################################################

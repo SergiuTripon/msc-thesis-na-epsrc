@@ -209,7 +209,7 @@ class CreateTopicNetwork:
                 index += 1
 
             # print progress
-            print('> Creation of Topic Network A completed')
+            print('> Creation of Topic Network A ({}) completed'.format(path))
 
     ####################################################################################################################
 
@@ -272,7 +272,7 @@ class CreateTopicNetwork:
                 output_file.write('{}\t{}\t{}\t{:.1f}\n'.format(source_id, target_id, 'Undirected', topic_link[2]))
 
             # print progress
-            print('> Creation of Topic Network B completed')
+            print('> Creation of Topic Network B ({}) completed'.format(path))
 
 
 ########################################################################################################################
@@ -338,7 +338,7 @@ class CreateResearcherNetwork:
                                                                 researcher_link[2]))
 
             # print progress
-            print('> Creation of Researcher Network A completed')
+            print('> Creation of Researcher Network A ({}) completed'.format(path))
 
     ####################################################################################################################
 
@@ -384,7 +384,7 @@ class CreateResearcherNetwork:
                                                                     researcher_link[3]))
 
             # print progress
-            print('> Creation of Researcher Network B completed')
+            print('> Creation of Researcher Network B ({}) completed'.format(path))
 
 
 ########################################################################################################################
