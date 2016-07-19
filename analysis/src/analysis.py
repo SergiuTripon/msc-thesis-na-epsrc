@@ -11,6 +11,9 @@ import graphistry as gp
 from copy import deepcopy
 from random import randint
 
+# increase arpack iterations
+ig.arpack_options.maxiter = 300000
+
 # variable to hold graphistry api key
 api_key = 'cd97e75121bb38884873b5e6dd0b51222d2986658c51371ab94ba7dd060d93f15684fb8dbf128cbb7a63349ca9d02558'
 
@@ -72,7 +75,7 @@ class AnalyseTopicNetwork:
         communities = louvain
 
         # save communities
-        save_communities(network, communities, path)
+        save_communities(network, communities, path, 0)
 
         # plot communities
         plot_communities(network, communities, communities.membership, path, True)
@@ -108,7 +111,7 @@ class AnalyseTopicNetwork:
         communities = louvain
 
         # save communities
-        save_communities(network, communities, path)
+        save_communities(network, communities, path, 0)
 
         # plot communities
         plot_communities(network, communities, communities.membership, path, True)
@@ -124,20 +127,20 @@ class AnalyseResearcherNetwork:
     def run():
 
         # analyse network a
-        AnalyseResearcherNetwork.analyse_network_a('researchers/current/network-a')
-        AnalyseResearcherNetwork.analyse_network_a('researchers/past/2000-2010/network-a')
-        AnalyseResearcherNetwork.analyse_network_a('researchers/past/1990-2000/network-a')
+        AnalyseResearcherNetwork.analyse_network_a('researchers/current/network-a', 20)
+        AnalyseResearcherNetwork.analyse_network_a('researchers/past/2000-2010/network-a', 20)
+        AnalyseResearcherNetwork.analyse_network_a('researchers/past/1990-2000/network-a', 20)
 
         # analyse network b
-        AnalyseResearcherNetwork.analyse_network_b('researchers/current/network-b')
-        AnalyseResearcherNetwork.analyse_network_b('researchers/past/2000-2010/network-b')
-        AnalyseResearcherNetwork.analyse_network_b('researchers/past/1990-2000/network-b')
+        # AnalyseResearcherNetwork.analyse_network_b('researchers/current/network-b', 9)
+        # AnalyseResearcherNetwork.analyse_network_b('researchers/past/2000-2010/network-b', 30)
+        AnalyseResearcherNetwork.analyse_network_b('researchers/past/1990-2000/network-b', 20)
 
     ####################################################################################################################
 
     @staticmethod
     # analyses network a
-    def analyse_network_a(path):
+    def analyse_network_a(path, threshold):
 
         # variable to hold network
         network = ig.Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
@@ -147,12 +150,33 @@ class AnalyseResearcherNetwork:
 
         # calculate modularity
         calc_modularity(network, path)
+
+        # add normalized node number column to network
+        network.vs['NormNum'] = norm_vals(network.vs['Num'], 20, 60)
+
+        # add normalized edge weight column to network
+        network.es['NormWeight'] = norm_vals(network.es['weight'], 1, 10)
+
+        # plot network
+        plot_network(network, path)
+
+        # variable to hold louvain
+        louvain = network.community_multilevel(weights='weight')
+
+        # variable to hold communities
+        communities = louvain
+
+        # save communities
+        save_communities(network, communities, path, threshold)
+
+        # plot communities
+        plot_communities(network, communities, communities.membership, path, True)
 
     ####################################################################################################################
 
     @staticmethod
     # analyses network b
-    def analyse_network_b(path):
+    def analyse_network_b(path, threshold):
 
         # variable to hold network
         network = ig.Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
@@ -162,15 +186,38 @@ class AnalyseResearcherNetwork:
 
         # calculate modularity
         calc_modularity(network, path)
+
+        # add normalized node number column to network
+        network.vs['NormNum'] = norm_vals(network.vs['Num'], 20, 60)
+        # add normalized node value column to network
+        network.vs['NormVal'] = norm_vals(network.vs['Val'], 20, 60)
+
+        # add normalized edge weight column to network
+        network.es['NormWeight'] = norm_vals(network.es['weight'], 1, 10)
+        # add normalized edge value column to network
+        network.es['NormVal'] = norm_vals(network.es['Val'], 1, 10)
+
+        # plot network
+        plot_network(network, path)
+
+        # variable to hold louvain
+        louvain = network.community_multilevel(weights='weight')
+
+        # variable to hold communities
+        communities = louvain
+
+        # save communities
+        save_communities(network, communities, path, threshold)
+
+        # plot communities
+        plot_communities(network, communities, communities.membership, path, True)
+
 
 ########################################################################################################################
 
 
 # calculates stats
 def calc_stats(network, path):
-
-    print(network.vs.attributes())
-    print(network.es.attributes())
 
     # if stats file does not exist
     if not os.path.isfile('../../data/networks/{}/stats.txt'.format(path)):
@@ -440,7 +487,7 @@ def plot_network(network, path):
 
 
 # saves communities
-def save_communities(network, communities, path):
+def save_communities(network, communities, path, threshold):
 
     # if community graph file does not exist
     if not os.path.isfile('../../data/networks/{}/communities/community1.graphml'.format(path)):
@@ -452,18 +499,21 @@ def save_communities(network, communities, path):
         number = 1
         # for community in communities
         for community in communities:
-            # variable to hold sub graph
-            sub_graph = network.subgraph(communities[number - 1], 'create_from_scratch')
-            # variable to hold output file
-            output_file = open('../../data/networks/{}/communities/community{}.graphml'.format(path, number), mode='w')
-            # write network structure to file
-            sub_graph.write_graphml(output_file)
-            # print stat to terminal
-            print('Community {}: {}'.format(number, len(community)))
-            # write stat to file
-            stats_file.write('Community {}: {}\n'.format(number, len(community)))
-            # increment number
-            number += 1
+            # if size of community is greater than threshold
+            if len(community) > threshold:
+                # variable to hold sub graph
+                sub_graph = network.subgraph(communities[number - 1], 'create_from_scratch')
+                # variable to hold output file
+                output_file = open('../../data/networks/{}/communities/community{}.graphml'.format(path, number),
+                                   mode='w')
+                # write network structure to file
+                sub_graph.write_graphml(output_file)
+                # print stat to terminal
+                print('Community {}: {}'.format(number, len(community)))
+                # write stat to file
+                stats_file.write('Community {}: {}\n'.format(number, len(community)))
+                # increment number
+                number += 1
 
 
 ########################################################################################################################
