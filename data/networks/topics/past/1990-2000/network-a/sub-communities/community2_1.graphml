@@ -4,58 +4,130 @@
          xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
          http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
 <!-- Created by igraph -->
+  <key id="v_NormNum" for="node" attr.name="NormNum" attr.type="double"/>
+  <key id="v_NormVal" for="node" attr.name="NormVal" attr.type="double"/>
+  <key id="v_Val" for="node" attr.name="Val" attr.type="double"/>
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
   <key id="v_label" for="node" attr.name="label" attr.type="string"/>
   <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
-  <key id="v_Val" for="node" attr.name="Val" attr.type="double"/>
-  <key id="v_NormNum" for="node" attr.name="NormNum" attr.type="double"/>
-  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
-  <key id="v_NormVal" for="node" attr.name="NormVal" attr.type="double"/>
-  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="boolean"/>
-  <key id="e_weight" for="edge" attr.name="weight" attr.type="boolean"/>
-  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="boolean"/>
-  <key id="e_Val" for="edge" attr.name="Val" attr.type="boolean"/>
-  <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="boolean"/>
-  <key id="e_NormVal" for="edge" attr.name="NormVal" attr.type="boolean"/>
+  <key id="e_NormVal" for="edge" attr.name="NormVal" attr.type="double"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <key id="e_Val" for="edge" attr.name="Val" attr.type="double"/>
+  <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="string"/>
+  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="double"/>
+  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="string"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
-      <data key="v_label">analytical science</data>
-      <data key="v_Num">135</data>
-      <data key="v_Val">2.29794e+07</data>
-      <data key="v_NormNum">24</data>
-      <data key="v_id">4</data>
-      <data key="v_NormVal">24</data>
+      <data key="v_NormNum">26</data>
+      <data key="v_NormVal">27</data>
+      <data key="v_Val">4.19456e+07</data>
+      <data key="v_id">36</data>
+      <data key="v_label">design &amp; testing technology</data>
+      <data key="v_Num">203</data>
     </node>
     <node id="n1">
-      <data key="v_label">artificial intelligence</data>
-      <data key="v_Num">133</data>
-      <data key="v_Val">1.68345e+07</data>
-      <data key="v_NormNum">24</data>
-      <data key="v_id">5</data>
-      <data key="v_NormVal">23</data>
+      <data key="v_NormNum">26</data>
+      <data key="v_NormVal">26</data>
+      <data key="v_Val">3.68149e+07</data>
+      <data key="v_id">37</data>
+      <data key="v_label">design engineering</data>
+      <data key="v_Num">201</data>
     </node>
     <node id="n2">
-      <data key="v_label">assess/remediate contamination</data>
-      <data key="v_Num">42</data>
-      <data key="v_Val">4.95372e+06</data>
-      <data key="v_NormNum">21</data>
-      <data key="v_id">6</data>
-      <data key="v_NormVal">21</data>
+      <data key="v_NormNum">23</data>
+      <data key="v_NormVal">24</data>
+      <data key="v_Val">2.34114e+07</data>
+      <data key="v_id">39</data>
+      <data key="v_label">design processes</data>
+      <data key="v_Num">102</data>
     </node>
     <node id="n3">
-      <data key="v_label">biomaterials</data>
-      <data key="v_Num">106</data>
-      <data key="v_Val">2.8737e+07</data>
       <data key="v_NormNum">23</data>
-      <data key="v_id">12</data>
       <data key="v_NormVal">25</data>
+      <data key="v_Val">3.14218e+07</data>
+      <data key="v_id">72</data>
+      <data key="v_label">manufacturing machine &amp; plant</data>
+      <data key="v_Num">125</data>
     </node>
     <node id="n4">
-      <data key="v_label">building ops &amp; management</data>
-      <data key="v_Num">190</data>
-      <data key="v_Val">1.77882e+07</data>
-      <data key="v_NormNum">25</data>
-      <data key="v_id">14</data>
-      <data key="v_NormVal">23</data>
+      <data key="v_NormNum">21</data>
+      <data key="v_NormVal">21</data>
+      <data key="v_Val">6.86099e+06</data>
+      <data key="v_id">80</data>
+      <data key="v_label">mech. &amp; fluid power transmiss.</data>
+      <data key="v_Num">32</data>
     </node>
+    <edge source="n0" target="n1">
+      <data key="e_NormVal">3</data>
+      <data key="e_weight">10</data>
+      <data key="e_Val">1.28764e+07</data>
+      <data key="e_Edge Id">202</data>
+      <data key="e_NormWeight">2</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n0" target="n2">
+      <data key="e_NormVal">2</data>
+      <data key="e_weight">12</data>
+      <data key="e_Val">1.14879e+07</data>
+      <data key="e_Edge Id">203</data>
+      <data key="e_NormWeight">2</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n0" target="n3">
+      <data key="e_NormVal">2</data>
+      <data key="e_weight">6</data>
+      <data key="e_Val">7.99649e+06</data>
+      <data key="e_Edge Id">333</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n0" target="n4">
+      <data key="e_NormVal">1</data>
+      <data key="e_weight">2</data>
+      <data key="e_Val">2.0587e+06</data>
+      <data key="e_Edge Id">336</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n1" target="n2">
+      <data key="e_NormVal">2</data>
+      <data key="e_weight">8</data>
+      <data key="e_Val">1.05081e+07</data>
+      <data key="e_Edge Id">204</data>
+      <data key="e_NormWeight">2</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n1" target="n3">
+      <data key="e_NormVal">2</data>
+      <data key="e_weight">5</data>
+      <data key="e_Val">5.18397e+06</data>
+      <data key="e_Edge Id">334</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n1" target="n4">
+      <data key="e_NormVal">1</data>
+      <data key="e_weight">2</data>
+      <data key="e_Val">2.0587e+06</data>
+      <data key="e_Edge Id">337</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n2" target="n3">
+      <data key="e_NormVal">1</data>
+      <data key="e_weight">2</data>
+      <data key="e_Val">3.5583e+06</data>
+      <data key="e_Edge Id">335</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+    </edge>
+    <edge source="n3" target="n4">
+      <data key="e_NormVal">1</data>
+      <data key="e_weight">1</data>
+      <data key="e_Val">1.09012e+06</data>
+      <data key="e_Edge Id">338</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+    </edge>
   </graph>
 </graphml>

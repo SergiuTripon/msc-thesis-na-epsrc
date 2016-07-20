@@ -5,49 +5,73 @@
          http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
 <!-- Created by igraph -->
   <key id="v_label" for="node" attr.name="label" attr.type="string"/>
-  <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
   <key id="v_id" for="node" attr.name="id" attr.type="string"/>
   <key id="v_NormNum" for="node" attr.name="NormNum" attr.type="double"/>
+  <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
   <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="string"/>
-  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="double"/>
-  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
   <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="double"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
-      <data key="v_label">acoustics</data>
-      <data key="v_Num">77</data>
-      <data key="v_id">2</data>
-      <data key="v_NormNum">25</data>
+      <data key="v_label">biomaterials</data>
+      <data key="v_id">21</data>
+      <data key="v_NormNum">34</data>
+      <data key="v_Num">211</data>
     </node>
     <node id="n1">
-      <data key="v_label">aerodynamics</data>
-      <data key="v_Num">168</data>
-      <data key="v_id">3</data>
-      <data key="v_NormNum">31</data>
+      <data key="v_label">biomechanics &amp; rehabilitation</data>
+      <data key="v_id">22</data>
+      <data key="v_NormNum">30</data>
+      <data key="v_Num">148</data>
     </node>
     <node id="n2">
-      <data key="v_label">animal behaviour</data>
-      <data key="v_Num">1</data>
-      <data key="v_id">7</data>
-      <data key="v_NormNum">20</data>
+      <data key="v_label">drug formulation &amp; delivery</data>
+      <data key="v_id">73</data>
+      <data key="v_NormNum">28</data>
+      <data key="v_Num">114</data>
     </node>
     <node id="n3">
-      <data key="v_label">bioinformatics</data>
-      <data key="v_Num">36</data>
-      <data key="v_id">18</data>
-      <data key="v_NormNum">22</data>
+      <data key="v_label">tissue engineering</data>
+      <data key="v_id">215</data>
+      <data key="v_NormNum">29</data>
+      <data key="v_Num">139</data>
     </node>
     <edge source="n0" target="n1">
-      <data key="e_Edge Id">73</data>
-      <data key="e_NormWeight">2</data>
-      <data key="e_weight">50</data>
+      <data key="e_Edge Id">1228</data>
       <data key="e_Edge Label"></data>
+      <data key="e_weight">56</data>
+      <data key="e_NormWeight">3</data>
+    </edge>
+    <edge source="n0" target="n2">
+      <data key="e_Edge Id">1231</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">30</data>
+      <data key="e_NormWeight">2</data>
+    </edge>
+    <edge source="n0" target="n3">
+      <data key="e_Edge Id">1142</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">87</data>
+      <data key="e_NormWeight">4</data>
+    </edge>
+    <edge source="n1" target="n2">
+      <data key="e_Edge Id">1238</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">15</data>
+      <data key="e_NormWeight">1</data>
     </edge>
     <edge source="n1" target="n3">
-      <data key="e_Edge Id">595</data>
-      <data key="e_NormWeight">1</data>
-      <data key="e_weight">1</data>
+      <data key="e_Edge Id">3685</data>
       <data key="e_Edge Label"></data>
+      <data key="e_weight">37</data>
+      <data key="e_NormWeight">2</data>
+    </edge>
+    <edge source="n2" target="n3">
+      <data key="e_Edge Id">1454</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">32</data>
+      <data key="e_NormWeight">2</data>
     </edge>
   </graph>
 </graphml>

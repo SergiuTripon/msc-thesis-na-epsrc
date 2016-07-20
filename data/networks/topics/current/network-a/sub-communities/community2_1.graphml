@@ -4,58 +4,106 @@
          xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
          http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
 <!-- Created by igraph -->
-  <key id="v_Val" for="node" attr.name="Val" attr.type="double"/>
-  <key id="v_NormVal" for="node" attr.name="NormVal" attr.type="double"/>
-  <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
-  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
   <key id="v_label" for="node" attr.name="label" attr.type="string"/>
   <key id="v_NormNum" for="node" attr.name="NormNum" attr.type="double"/>
-  <key id="e_Val" for="edge" attr.name="Val" attr.type="boolean"/>
-  <key id="e_NormVal" for="edge" attr.name="NormVal" attr.type="boolean"/>
-  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="boolean"/>
-  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="boolean"/>
-  <key id="e_weight" for="edge" attr.name="weight" attr.type="boolean"/>
-  <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="boolean"/>
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="v_Val" for="node" attr.name="Val" attr.type="double"/>
+  <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
+  <key id="v_NormVal" for="node" attr.name="NormVal" attr.type="double"/>
+  <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="string"/>
+  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="double"/>
+  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <key id="e_Val" for="edge" attr.name="Val" attr.type="double"/>
+  <key id="e_NormVal" for="edge" attr.name="NormVal" attr.type="double"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
-      <data key="v_Val">1.57665e+07</data>
-      <data key="v_NormVal">22</data>
-      <data key="v_Num">23</data>
-      <data key="v_id">1</data>
-      <data key="v_label">acoustics</data>
-      <data key="v_NormNum">23</data>
+      <data key="v_label">atoms &amp; ions</data>
+      <data key="v_NormNum">22</data>
+      <data key="v_id">12</data>
+      <data key="v_Val">6.21422e+06</data>
+      <data key="v_Num">13</data>
+      <data key="v_NormVal">21</data>
     </node>
     <node id="n1">
-      <data key="v_Val">6.946e+07</data>
-      <data key="v_NormVal">28</data>
-      <data key="v_Num">131</data>
-      <data key="v_id">4</data>
-      <data key="v_label">algebra &amp; geometry</data>
-      <data key="v_NormNum">39</data>
+      <data key="v_label">computational methods &amp; tools</data>
+      <data key="v_NormNum">20</data>
+      <data key="v_id">49</data>
+      <data key="v_Val">98603</data>
+      <data key="v_Num">1</data>
+      <data key="v_NormVal">20</data>
     </node>
     <node id="n2">
-      <data key="v_Val">506361</data>
-      <data key="v_NormVal">20</data>
-      <data key="v_Num">1</data>
-      <data key="v_id">6</data>
-      <data key="v_label">animal behaviour</data>
-      <data key="v_NormNum">20</data>
+      <data key="v_label">fusion</data>
+      <data key="v_NormNum">21</data>
+      <data key="v_id">95</data>
+      <data key="v_Val">1.90002e+08</data>
+      <data key="v_Num">9</data>
+      <data key="v_NormVal">42</data>
     </node>
     <node id="n3">
-      <data key="v_Val">4.53498e+06</data>
-      <data key="v_NormVal">21</data>
-      <data key="v_Num">3</data>
-      <data key="v_id">10</data>
-      <data key="v_label">assess/remediate contamination</data>
-      <data key="v_NormNum">20</data>
+      <data key="v_label">plasmas - laser &amp; fusion</data>
+      <data key="v_NormNum">25</data>
+      <data key="v_id">168</data>
+      <data key="v_Val">3.21602e+07</data>
+      <data key="v_Num">38</data>
+      <data key="v_NormVal">24</data>
     </node>
     <node id="n4">
-      <data key="v_Val">1.3641e+07</data>
-      <data key="v_NormVal">22</data>
-      <data key="v_Num">11</data>
-      <data key="v_id">11</data>
-      <data key="v_label">asymmetric chemistry</data>
+      <data key="v_label">plasmas - technological</data>
       <data key="v_NormNum">21</data>
+      <data key="v_id">169</data>
+      <data key="v_Val">1.01606e+07</data>
+      <data key="v_Num">8</data>
+      <data key="v_NormVal">21</data>
     </node>
+    <edge source="n0" target="n2">
+      <data key="e_Edge Id">647</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_Val">326261</data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n0" target="n3">
+      <data key="e_Edge Id">648</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">5</data>
+      <data key="e_Val">1.20288e+06</data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n1" target="n3">
+      <data key="e_Edge Id">1472</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_Val">98603</data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n2" target="n3">
+      <data key="e_Edge Id">74</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">6</data>
+      <data key="e_Val">2.39675e+06</data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n2" target="n4">
+      <data key="e_Edge Id">75</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">2</data>
+      <data key="e_Val">405235</data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n3" target="n4">
+      <data key="e_Edge Id">76</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">4</data>
+      <data key="e_Val">8.63192e+06</data>
+      <data key="e_NormVal">2</data>
+    </edge>
   </graph>
 </graphml>

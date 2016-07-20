@@ -4,34 +4,60 @@
          xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
          http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
 <!-- Created by igraph -->
-  <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
-  <key id="v_NormVal" for="node" attr.name="NormVal" attr.type="double"/>
   <key id="v_NormNum" for="node" attr.name="NormNum" attr.type="double"/>
-  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
   <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_b" for="node" attr.name="b" attr.type="double"/>
+  <key id="v_r" for="node" attr.name="r" attr.type="double"/>
   <key id="v_Val" for="node" attr.name="Val" attr.type="double"/>
-  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="boolean"/>
-  <key id="e_NormVal" for="edge" attr.name="NormVal" attr.type="boolean"/>
-  <key id="e_Val" for="edge" attr.name="Val" attr.type="boolean"/>
-  <key id="e_weight" for="edge" attr.name="weight" attr.type="boolean"/>
-  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="boolean"/>
-  <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="boolean"/>
+  <key id="v_g" for="node" attr.name="g" attr.type="double"/>
+  <key id="v_x" for="node" attr.name="x" attr.type="double"/>
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="v_y" for="node" attr.name="y" attr.type="double"/>
+  <key id="v_NormVal" for="node" attr.name="NormVal" attr.type="double"/>
+  <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
+  <key id="v_size" for="node" attr.name="size" attr.type="double"/>
+  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="double"/>
+  <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <key id="e_NormVal" for="edge" attr.name="NormVal" attr.type="double"/>
+  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="string"/>
+  <key id="e_Val" for="edge" attr.name="Val" attr.type="double"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
-      <data key="v_Num">1</data>
-      <data key="v_NormVal">20</data>
       <data key="v_NormNum">20</data>
-      <data key="v_id">9</data>
-      <data key="v_label">applied linguistics</data>
-      <data key="v_Val">62765</data>
+      <data key="v_label">cell cycle</data>
+      <data key="v_b">0</data>
+      <data key="v_r">0</data>
+      <data key="v_Val">118280</data>
+      <data key="v_g">0</data>
+      <data key="v_x">-142.126</data>
+      <data key="v_id">33</data>
+      <data key="v_y">-315.867</data>
+      <data key="v_NormVal">20</data>
+      <data key="v_Num">1</data>
+      <data key="v_size">10</data>
     </node>
     <node id="n1">
-      <data key="v_Num">50</data>
-      <data key="v_NormVal">22</data>
-      <data key="v_NormNum">21</data>
-      <data key="v_id">67</data>
-      <data key="v_label">displays</data>
-      <data key="v_Val">3.81437e+07</data>
+      <data key="v_NormNum">20</data>
+      <data key="v_label">tools for the biosciences</data>
+      <data key="v_b">0</data>
+      <data key="v_r">0</data>
+      <data key="v_Val">133480</data>
+      <data key="v_g">0</data>
+      <data key="v_x">283.013</data>
+      <data key="v_id">198</data>
+      <data key="v_y">231.286</data>
+      <data key="v_NormVal">20</data>
+      <data key="v_Num">2</data>
+      <data key="v_size">10</data>
     </node>
+    <edge source="n0" target="n1">
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Id">1501</data>
+      <data key="e_weight">1</data>
+      <data key="e_NormVal">1</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_Val">118280</data>
+    </edge>
   </graph>
 </graphml>

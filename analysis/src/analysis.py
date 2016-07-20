@@ -80,8 +80,8 @@ class AnalyseTopicNetwork:
         # plot communities
         plot_communities(network, communities, communities.membership, path, True)
 
-        # save sub-communities
-        save_sub_communities(network, len(communities) + 1, path)
+        # analyse sub-communities
+        analyse_sub_communities(path, len(communities) + 1)
 
     ####################################################################################################################
 
@@ -119,8 +119,8 @@ class AnalyseTopicNetwork:
         # plot communities
         plot_communities(network, communities, communities.membership, path, True)
 
-        # save sub-communities
-        save_sub_communities(network, len(communities) + 1, path)
+        # analyse sub-communities
+        analyse_sub_communities(path, len(communities) + 1)
 
 ########################################################################################################################
 
@@ -495,14 +495,12 @@ def plot_network(network, path):
 # saves communities
 def save_communities(network, communities, path, threshold):
 
-    # if community graph file does not exist
-    if not os.path.isfile('../../data/networks/{}/communities/community1.graphml'.format(path)):
-        # variable to hold stats file
-        stats_file = open('../../data/networks/{}/communities/stats.txt'.format(path), mode='a')
-        # variable to hold number set to 1
-        number = 1
-        # for community in communities
-        for community in communities:
+    # variable to hold number set to 1
+    number = 1
+    # for community in communities
+    for community in communities:
+        # if community graph file does not exist
+        if not os.path.isfile('../../data/networks/{}/communities/community{}.graphml'.format(path, number)):
             # if size of community is greater than threshold
             if len(community) > threshold:
                 # variable to hold sub-graph
@@ -514,8 +512,12 @@ def save_communities(network, communities, path, threshold):
                 sub_graph.write_graphml(output_file)
                 # print stat to terminal
                 print('Community {}: {}'.format(number, len(community)))
+
+                # variable to hold stats file
+                stats_file = open('../../data/networks/{}/communities/stats.txt'.format(path), mode='a')
                 # write stat to file
                 stats_file.write('Community {}: {}\n'.format(number, len(community)))
+
                 # increment number
                 number += 1
 
@@ -588,39 +590,125 @@ def plot_communities(network, communities, membership, path, edges):
 
 ########################################################################################################################
 
+# analyses sub-communities
+def analyse_sub_communities(path, length):
+
+    # for i in range between 0 and length of communities
+    for i in range(1, length):
+
+        # variable to hold community
+        community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/community{}.graphml'.format(path, i))
+
+        # variable to hold louvain
+        louvain = community.community_multilevel(weights='weight')
+
+        # variable to hold sub-communities
+        sub_communities = louvain
+
+        # save sub-communities
+        save_sub_communities(community, sub_communities, path, i)
+
+        # plot sub-communities
+        # plot_sub_communities(community, sub_communities, sub_communities.membership, path, i, True)
+
+########################################################################################################################
+
 
 # saves sub-communities
-def save_sub_communities(network, length, path):
+def save_sub_communities(network, sub_communities, path, i):
 
-    # if sub-community graph file does not exist
-    if not os.path.isfile('../../data/networks/{}/sub-communities/community1_1.graphml'.format(path)):
-        # for i in range between 0 and length of communities
-        for i in range(1, length):
+    # variable to hold number set to 1
+    number = 1
+    # for sub-community in sub-communities
+    for sub_community in sub_communities:
+        # if sub-community graph file does not exist
+        if not os.path.isfile('../../data/networks/{}/sub-communities/community{}_{}.graphml'.format(path, i, number)):
+            # variable to hold sub-graph
+            sub_graph = network.subgraph(sub_communities[number - 1], 'create_from_scratch')
+            # variable to hold output file
+            output_file = open('../../data/networks/{}/sub-communities/community{}_{}.graphml'.format(path, i, number),
+                               mode='w')
+            # write sub-graph structure to file
+            sub_graph.write_graphml(output_file)
+            # print stat to terminal
+            print('Community {}.{}: {}'.format(i, number, len(sub_community)))
+
             # variable to hold stats file
             stats_file = open('../../data/networks/{}/sub-communities/stats_{}.txt'.format(path, i), mode='a')
-            # variable to hold community
-            community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/community{}.graphml'.format(path, i))
-            # variable to hold louvain
-            louvain = community.community_multilevel(weights='weight')
-            # variable to hold sub-communities
-            sub_communities = louvain
-            # variable to hold number set to 1
-            number = 1
-            # for sub-community in sub-communities
-            for sub_community in sub_communities:
-                # variable to hold sub-graph
-                sub_graph = network.subgraph(sub_communities[number - 1], 'create_from_scratch')
-                # variable to hold output file
-                output_file = open('../../data/networks/{}/sub-communities/community{}_{}.graphml'.format(path, i, number),
-                                   mode='w')
-                # write sub-graph structure to file
-                sub_graph.write_graphml(output_file)
-                # print stat to terminal
-                print('Community {}.{}: {}'.format(i, number, len(sub_community)))
-                # write stat to file
-                stats_file.write('Community {}.{}: {}\n'.format(i, number, len(sub_community)))
-                # increment number
-                number += 1
+            # write stat to file
+            stats_file.write('Community {}.{}: {}\n'.format(i, number, len(sub_community)))
+
+            # increment number
+            number += 1
+
+
+########################################################################################################################
+
+
+# plots sub-communities
+def plot_sub_communities(network, sub_communities, membership, path, i, edges):
+
+    # if edges is True
+    if edges is True:
+
+        # if communities plot file does not exist
+        if not os.path.isfile('../../data/networks/{}/sub-communities/communities1_{}.png'.format(path, i)):
+
+            # variable to hold edges
+            for edge in network.es():
+                if membership[edge.tuple[0]] != membership[edge.tuple[1]]:
+                    print(edge)
+
+            # colour edges
+            [edge.update_attributes({'color': 'grey'}) if membership[edge.tuple[0]] != membership[edge.tuple[1]]
+             else edge.update_attributes({'color': 'black'}) for edge in network.es()]
+
+            # variable to hold network copy
+            network_copy = network.copy()
+
+            # delete edges
+            network_copy.delete_edges(edges)
+
+            # variable to hold visual style
+            visual_style = {'vertex_label': None,
+                            'vertex_size': network.vs['NormNum'],
+                            'edge_width': network.es['NormWeight'],
+                            'layout': network_copy.layout('kk'),
+                            'bbox': (1000, 1000),
+                            'margin': 40}
+
+            # variable to hold colours
+            colours = ['#%06X' % randint(0, 0xFFFFFF) for i in range(0, len(membership) + 1)]
+
+            # colour nodes
+            [vertex.update_attributes({'color': colours[membership[vertex.index]]}) for vertex in network.vs()]
+
+            # plot network
+            ig.plot(network, '../../data/networks/{}/sub-communities/communities1_{}.png'.format(path, i), **visual_style)
+
+    # if edges is False
+    elif edges is False:
+
+        # if communities plot file does not exist
+        if not os.path.isfile('../../data/networks/{}/sub-communities/communities2_{}.png'.format(path, i)):
+
+            # variable to hold edges
+            edges = [edge for edge in network.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
+
+            # delete edges
+            network.delete_edges(edges)
+
+            # variable to hold visual style
+            visual_style = {'vertex_label': None,
+                            'vertex_size': network.vs['NormNum'],
+                            'edge_width': network.es['NormWeight'],
+                            'layout': 'kk',
+                            'bbox': (1000, 1000),
+                            'margin': 40}
+
+            # plot network
+            ig.plot(sub_communities, '../../data/networks/{}/sub-communities/communities2_{}.png'.format(path, i),
+                    **visual_style)
 
 
 ########################################################################################################################
