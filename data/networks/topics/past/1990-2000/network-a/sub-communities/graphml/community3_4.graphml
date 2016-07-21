@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="v_Num" for="node" attr.name="Num" attr.type="double"/>
+  <key id="v_NormNum" for="node" attr.name="NormNum" attr.type="double"/>
+  <key id="v_Val" for="node" attr.name="Val" attr.type="double"/>
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_NormVal" for="node" attr.name="NormVal" attr.type="double"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <key id="e_Val" for="edge" attr.name="Val" attr.type="double"/>
+  <key id="e_NormWeight" for="edge" attr.name="NormWeight" attr.type="double"/>
+  <key id="e_Edge Id" for="edge" attr.name="Edge Id" attr.type="string"/>
+  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="string"/>
+  <key id="e_NormVal" for="edge" attr.name="NormVal" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_id">6</data>
+      <data key="v_Num">42</data>
+      <data key="v_NormNum">21</data>
+      <data key="v_Val">4.95372e+06</data>
+      <data key="v_label">assess/remediate contamination</data>
+      <data key="v_NormVal">21</data>
+    </node>
+    <node id="n1">
+      <data key="v_id">84</data>
+      <data key="v_Num">14</data>
+      <data key="v_NormNum">20</data>
+      <data key="v_Val">1.29203e+06</data>
+      <data key="v_label">mining &amp; minerals extraction</data>
+      <data key="v_NormVal">20</data>
+    </node>
+    <node id="n2">
+      <data key="v_id">117</data>
+      <data key="v_Num">150</data>
+      <data key="v_NormNum">24</data>
+      <data key="v_Val">1.53907e+07</data>
+      <data key="v_label">separation processes</data>
+      <data key="v_NormVal">22</data>
+    </node>
+    <node id="n3">
+      <data key="v_id">133</data>
+      <data key="v_Num">42</data>
+      <data key="v_NormNum">21</data>
+      <data key="v_Val">4.8253e+06</data>
+      <data key="v_label">waste management</data>
+      <data key="v_NormVal">21</data>
+    </node>
+    <node id="n4">
+      <data key="v_id">134</data>
+      <data key="v_Num">108</data>
+      <data key="v_NormNum">23</data>
+      <data key="v_Val">1.3961e+07</data>
+      <data key="v_label">waste minimisation</data>
+      <data key="v_NormVal">22</data>
+    </node>
+    <node id="n5">
+      <data key="v_id">135</data>
+      <data key="v_Num">125</data>
+      <data key="v_NormNum">23</data>
+      <data key="v_Val">1.29275e+07</data>
+      <data key="v_label">water engineering</data>
+      <data key="v_NormVal">22</data>
+    </node>
+    <edge source="n0" target="n3">
+      <data key="e_weight">1</data>
+      <data key="e_Val">43047</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Id">88</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n1" target="n2">
+      <data key="e_weight">2</data>
+      <data key="e_Val">222697</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Id">671</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n2" target="n4">
+      <data key="e_weight">4</data>
+      <data key="e_Val">570481</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Id">564</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n2" target="n5">
+      <data key="e_weight">7</data>
+      <data key="e_Val">1.04694e+06</data>
+      <data key="e_NormWeight">2</data>
+      <data key="e_Edge Id">104</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n3" target="n4">
+      <data key="e_weight">4</data>
+      <data key="e_Val">584936</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Id">351</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n3" target="n5">
+      <data key="e_weight">5</data>
+      <data key="e_Val">167112</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Id">305</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_NormVal">1</data>
+    </edge>
+    <edge source="n4" target="n5">
+      <data key="e_weight">1</data>
+      <data key="e_Val">3607</data>
+      <data key="e_NormWeight">1</data>
+      <data key="e_Edge Id">726</data>
+      <data key="e_Edge Label"></data>
+      <data key="e_NormVal">1</data>
+    </edge>
+  </graph>
+</graphml>

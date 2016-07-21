@@ -4,11 +4,9 @@
 
 # third-party library modules
 import os
-import pandas as pd
 import igraph as ig
 import networkx as nx
 import graphistry as gp
-from copy import deepcopy
 from random import randint
 
 # increase arpack iterations
@@ -32,13 +30,13 @@ class AnalyseTopicNetwork:
 
         # analyse network a
         AnalyseTopicNetwork.analyse_network_a('topics/current/network-a')
-        # AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
-        # AnalyseTopicNetwork.analyse_network_a('topics/past/1990-2000/network-a')
+        AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
+        AnalyseTopicNetwork.analyse_network_a('topics/past/1990-2000/network-a')
 
         # analyse network b
-        # AnalyseTopicNetwork.analyse_network_b('topics/current/network-b')
-        # AnalyseTopicNetwork.analyse_network_b('topics/past/2000-2010/network-b')
-        # AnalyseTopicNetwork.analyse_network_b('topics/past/1990-2000/network-b')
+        AnalyseTopicNetwork.analyse_network_b('topics/current/network-b')
+        AnalyseTopicNetwork.analyse_network_b('topics/past/2000-2010/network-b')
+        AnalyseTopicNetwork.analyse_network_b('topics/past/1990-2000/network-b')
 
     ####################################################################################################################
 
@@ -81,7 +79,7 @@ class AnalyseTopicNetwork:
         plot_community_overview(network, communities, communities.membership, path, True)
 
         # analyse sub-communities
-        analyse_sub_communities(path, len(communities) + 1)
+        analyse_sub_communities(path, len(os.listdir('../../data/networks/{}/communities/graphml/'.format(path))) + 1)
 
     ####################################################################################################################
 
@@ -120,7 +118,7 @@ class AnalyseTopicNetwork:
         plot_community_overview(network, communities, communities.membership, path, True)
 
         # analyse sub-communities
-        analyse_sub_communities(path, len(communities) + 1)
+        analyse_sub_communities(path, len(os.listdir('../../data/networks/{}/communities/graphml/'.format(path))) + 1)
 
 
 ########################################################################################################################
@@ -179,6 +177,9 @@ class AnalyseResearcherNetwork:
         # plot community overview
         plot_community_overview(network, communities, communities.membership, path, True)
 
+        # analyse sub-communities
+        analyse_sub_communities(path, len(os.listdir('../../data/networks/{}/communities/graphml/'.format(path))) + 1)
+
     ####################################################################################################################
 
     @staticmethod
@@ -218,6 +219,9 @@ class AnalyseResearcherNetwork:
 
         # plot community overview
         plot_community_overview(network, communities, communities.membership, path, True)
+
+        # analyse sub-communities
+        analyse_sub_communities(path, len(os.listdir('../../data/networks/{}/communities/graphml/'.format(path))) + 1)
 
 
 ########################################################################################################################
@@ -584,7 +588,7 @@ def plot_community_overview(network, communities, membership, path, edges):
                             'bbox': (1000, 1000),
                             'margin': 40}
 
-            # plot network
+            # plot communities
             ig.plot(communities, '../../data/networks/{}/communities/png/overview2.png'.format(path), **visual_style)
 
 
@@ -598,8 +602,8 @@ def analyse_sub_communities(path, length):
     for i in range(1, length):
 
         # variable to hold community
-        community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/graphml/community{}.graphml'.format(path,
-                                                                                                                  i))
+        community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/graphml/'
+                                          'community{}.graphml'.format(path, i))
 
         # variable to hold louvain
         louvain = community.community_multilevel(weights='weight')
@@ -611,7 +615,7 @@ def analyse_sub_communities(path, length):
         save_sub_communities(community, sub_communities, path, i)
 
         # plot sub-community overview
-        # plot_sub_community_overview(community, sub_communities, sub_communities.membership, path, i, True)
+        plot_sub_community_overview(community, sub_communities, sub_communities.membership, path, i, True)
 
 
 ########################################################################################################################
@@ -636,7 +640,6 @@ def save_sub_communities(community, sub_communities, path, i):
             sub_graph.write_graphml(output_file)
             # print stat to terminal
             print('Community {}: {}'.format(number, len(sub_community)))
-
             # variable to hold stats file
             stats_file = open('../../data/networks/{}/sub-communities/txt/stats{}.txt'.format(path, i), mode='a')
             # write stat to file
@@ -648,6 +651,73 @@ def save_sub_communities(community, sub_communities, path, i):
 ########################################################################################################################
 
 
+# plots sub-community overview
+def plot_sub_community_overview(community, sub_communities, membership, path, i, edges):
+
+    # if edges is True
+    if edges is True:
+
+        # if sub-communities plot file does not exist
+        if not os.path.isfile('../../data/networks/{}/sub-communities/png/overview1_{}.png'.format(path, i)):
+
+            # variable to hold edges
+            edges = [edge for edge in community.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
+
+            # colour edges
+            [edge.update_attributes({'color': 'grey'}) if membership[edge.tuple[0]] != membership[edge.tuple[1]]
+             else edge.update_attributes({'color': 'black'}) for edge in community.es()]
+
+            # variable to hold community copy
+            community_copy = community.copy()
+
+            # delete edges
+            community_copy.delete_edges(edges)
+
+            # variable to hold visual style
+            visual_style = {'vertex_size': community.vs['NormNum'],
+                            'edge_width': community.es['NormWeight'],
+                            'layout': community_copy.layout('kk'),
+                            'bbox': (1000, 1000),
+                            'margin': 40}
+
+            # variable to hold colours
+            colours = ['#%06X' % randint(0, 0xFFFFFF) for i in range(0, len(membership) + 1)]
+
+            # colour nodes
+            [vertex.update_attributes({'color': colours[membership[vertex.index]]}) for vertex in community.vs()]
+
+            # plot community
+            ig.plot(community, '../../data/networks/{}/sub-communities/png/overview1_{}.png'.format(path, i),
+                    **visual_style)
+
+    ####################################################################################################################
+
+    # if edges is False
+    elif edges is False:
+
+        # if sub-community plot file does not exist
+        if not os.path.isfile('../../data/networks/{}/sub-communities/png/overview2_{}.png'.format(path, i)):
+
+            # variable to hold edges
+            edges = [edge for edge in community.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
+
+            # delete edges
+            community.delete_edges(edges)
+
+            # variable to hold visual style
+            visual_style = {'vertex_size': community.vs['NormNum'],
+                            'edge_width': community.es['NormWeight'],
+                            'layout': 'kk',
+                            'bbox': (1000, 1000),
+                            'margin': 40}
+
+            # plot sub-communities
+            ig.plot(sub_communities, '../../data/networks/{}/sub-communities/png/overview2_{}.png'.format(path, i),
+                    **visual_style)
+
+
+########################################################################################################################
+
 # main function
 def main():
 
@@ -655,7 +725,7 @@ def main():
     AnalyseTopicNetwork.run()
 
     # analyse researcher network
-    # AnalyseResearcherNetwork.run()
+    AnalyseResearcherNetwork.run()
 
 
 ########################################################################################################################
