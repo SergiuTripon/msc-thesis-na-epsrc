@@ -31,8 +31,8 @@ class AnalyseTopicNetwork:
     def run():
 
         # analyse network a
-        # AnalyseTopicNetwork.analyse_network_a('topics/current/network-a')
-        AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
+        AnalyseTopicNetwork.analyse_network_a('topics/current/network-a')
+        # AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
         # AnalyseTopicNetwork.analyse_network_a('topics/past/1990-2000/network-a')
 
         # analyse network b
@@ -501,24 +501,23 @@ def save_communities(network, communities, path, threshold):
     # for community in communities
     for community in communities:
         # if community graph file does not exist
-        if not os.path.isfile('../../data/networks/{}/communities/graphml/community{}.graphml'.format(path, number)):
+        if not os.path.isfile('../../data/networks/{}/communities/graphml/'
+                              'community{}.graphml'.format(path, number)):
             # if size of community is greater than threshold
             if len(community) > threshold:
                 # variable to hold sub-graph
                 sub_graph = network.subgraph(communities[number - 1], 'create_from_scratch')
                 # variable to hold output file
-                output_file = open('../../data/networks/{}/communities/graphml/community{}.graphml'.format(path, number),
-                                   mode='w')
+                output_file = open('../../data/networks/{}/communities/graphml/'
+                                   'community{}.graphml'.format(path, number), mode='w')
                 # write sub-graph structure to file
                 sub_graph.write_graphml(output_file)
                 # print stat to terminal
                 print('Community {}: {}'.format(number, len(community)))
-
                 # variable to hold stats file
                 stats_file = open('../../data/networks/{}/communities/txt/stats.txt'.format(path), mode='a')
                 # write stat to file
                 stats_file.write('Community {}: {}\n'.format(number, len(community)))
-
                 # increment number
                 number += 1
 
@@ -609,10 +608,41 @@ def analyse_sub_communities(path, length):
         sub_communities = louvain
 
         # save sub-communities
-        # save_sub_communities(community, sub_communities, path, i)
+        save_sub_communities(community, sub_communities, path, i)
 
         # plot sub-community overview
         # plot_sub_community_overview(community, sub_communities, sub_communities.membership, path, i, True)
+
+
+########################################################################################################################
+
+
+# saves sub-communities
+def save_sub_communities(community, sub_communities, path, i):
+
+    # variable to hold number set to 1
+    number = 1
+    # for sub-community in sub-communities
+    for sub_community in sub_communities:
+        # if sub-community graph file does not exist
+        if not os.path.isfile('../../data/networks/{}/sub-communities/graphml/'
+                              'community{}_{}.graphml'.format(path, i, number)):
+            # variable to hold sub-graph
+            sub_graph = community.subgraph(sub_communities[number - 1], 'create_from_scratch')
+            # variable to hold output file
+            output_file = open('../../data/networks/{}/sub-communities/graphml/'
+                               'community{}_{}.graphml'.format(path, i, number), mode='w')
+            # write sub-graph structure to file
+            sub_graph.write_graphml(output_file)
+            # print stat to terminal
+            print('Community {}: {}'.format(number, len(sub_community)))
+
+            # variable to hold stats file
+            stats_file = open('../../data/networks/{}/sub-communities/txt/stats{}.txt'.format(path, i), mode='a')
+            # write stat to file
+            stats_file.write('Community {}: {}\n'.format(number, len(sub_community)))
+            # increment number
+            number += 1
 
 
 ########################################################################################################################
