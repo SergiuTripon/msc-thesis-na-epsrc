@@ -605,6 +605,9 @@ def analyse_sub_communities(path, length):
         community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/graphml/'
                                           'community{}.graphml'.format(path, i))
 
+        # plot communities
+        plot_communities(community, path, i)
+
         # variable to hold louvain
         louvain = community.community_multilevel(weights='weight')
 
@@ -620,6 +623,27 @@ def analyse_sub_communities(path, length):
 
 ########################################################################################################################
 
+
+# plots communities
+def plot_communities(community, path, i):
+
+    # if network plot file does not exist
+    if not os.path.isfile('../../data/networks/{}/communities/png/community{}.png'.format(path, i)):
+
+        # variable to hold visual style
+        visual_style = {'vertex_label': None,
+                        'vertex_color': 'blue',
+                        'vertex_size': community.vs['NormNum'],
+                        'edge_width': community.es['NormWeight'],
+                        'layout': 'kk',
+                        'bbox': (1000, 1000),
+                        'margin': 40}
+
+        # plot network
+        ig.plot(community, '../../data/networks/{}/communities/png/community{}.png'.format(path, i), **visual_style)
+
+
+########################################################################################################################
 
 # saves sub-communities
 def save_sub_communities(community, sub_communities, path, i):
