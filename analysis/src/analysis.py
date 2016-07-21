@@ -32,13 +32,13 @@ class AnalyseTopicNetwork:
 
         # analyse network a
         # AnalyseTopicNetwork.analyse_network_a('topics/current/network-a')
-        # AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
+        AnalyseTopicNetwork.analyse_network_a('topics/past/2000-2010/network-a')
         # AnalyseTopicNetwork.analyse_network_a('topics/past/1990-2000/network-a')
 
         # analyse network b
         # AnalyseTopicNetwork.analyse_network_b('topics/current/network-b')
         # AnalyseTopicNetwork.analyse_network_b('topics/past/2000-2010/network-b')
-        AnalyseTopicNetwork.analyse_network_b('topics/past/1990-2000/network-b')
+        # AnalyseTopicNetwork.analyse_network_b('topics/past/1990-2000/network-b')
 
     ####################################################################################################################
 
@@ -47,7 +47,7 @@ class AnalyseTopicNetwork:
     def analyse_network_a(path):
 
         # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
+        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
         # calculate network stats
         calc_stats(network, path)
@@ -77,8 +77,8 @@ class AnalyseTopicNetwork:
         # save communities
         save_communities(network, communities, path, 0)
 
-        # plot communities
-        plot_communities(network, communities, communities.membership, path, True)
+        # plot community overview
+        plot_community_overview(network, communities, communities.membership, path, True)
 
         # analyse sub-communities
         analyse_sub_communities(path, len(communities) + 1)
@@ -90,7 +90,7 @@ class AnalyseTopicNetwork:
     def analyse_network_b(path):
 
         # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
+        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
         # calculate network stats
         calc_stats(network, path)
@@ -116,11 +116,12 @@ class AnalyseTopicNetwork:
         # save communities
         save_communities(network, communities, path, 0)
 
-        # plot communities
-        plot_communities(network, communities, communities.membership, path, True)
+        # plot community overview
+        plot_community_overview(network, communities, communities.membership, path, True)
 
         # analyse sub-communities
         analyse_sub_communities(path, len(communities) + 1)
+
 
 ########################################################################################################################
 
@@ -138,8 +139,8 @@ class AnalyseResearcherNetwork:
         AnalyseResearcherNetwork.analyse_network_a('researchers/past/1990-2000/network-a', 20)
 
         # analyse network b
-        # AnalyseResearcherNetwork.analyse_network_b('researchers/current/network-b', 9)
-        # AnalyseResearcherNetwork.analyse_network_b('researchers/past/2000-2010/network-b', 30)
+        AnalyseResearcherNetwork.analyse_network_b('researchers/current/network-b', 9)
+        AnalyseResearcherNetwork.analyse_network_b('researchers/past/2000-2010/network-b', 30)
         AnalyseResearcherNetwork.analyse_network_b('researchers/past/1990-2000/network-b', 20)
 
     ####################################################################################################################
@@ -149,7 +150,7 @@ class AnalyseResearcherNetwork:
     def analyse_network_a(path, threshold):
 
         # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
+        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
         # calculate network stats
         calc_stats(network, path)
@@ -175,8 +176,8 @@ class AnalyseResearcherNetwork:
         # save communities
         save_communities(network, communities, path, threshold)
 
-        # plot communities
-        plot_communities(network, communities, communities.membership, path, True)
+        # plot community overview
+        plot_community_overview(network, communities, communities.membership, path, True)
 
     ####################################################################################################################
 
@@ -185,7 +186,7 @@ class AnalyseResearcherNetwork:
     def analyse_network_b(path, threshold):
 
         # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network.graphml'.format(path))
+        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
         # calculate network stats
         calc_stats(network, path)
@@ -215,8 +216,8 @@ class AnalyseResearcherNetwork:
         # save communities
         save_communities(network, communities, path, threshold)
 
-        # plot communities
-        plot_communities(network, communities, communities.membership, path, True)
+        # plot community overview
+        plot_community_overview(network, communities, communities.membership, path, True)
 
 
 ########################################################################################################################
@@ -226,7 +227,7 @@ class AnalyseResearcherNetwork:
 def calc_stats(network, path):
 
     # if stats file does not exist
-    if not os.path.isfile('../../data/networks/{}/stats.txt'.format(path)):
+    if not os.path.isfile('../../data/networks/{}/network/txt/stats.txt'.format(path)):
 
         # variables to hold selectables
         network_summary = network.summary()
@@ -285,7 +286,7 @@ def calc_stats(network, path):
         print('- Average Path Length: {0:.3f}'.format(avg_path_length))
 
         # variable to hold output file
-        output_file = open('../../data/networks/{}/stats.txt'.format(path), mode='w')
+        output_file = open('../../data/networks/{}/network/txt/stats.txt'.format(path), mode='w')
 
         # write stats to file
         output_file.write('> Network Overview\n\n')
@@ -324,7 +325,7 @@ def calc_stats(network, path):
 def calc_modularity(network, path):
 
     # if modularity file does not exist
-    if not os.path.isfile('../../data/networks/{}/modularity.txt'.format(path)):
+    if not os.path.isfile('../../data/networks/{}/network/txt/modularity.txt'.format(path)):
 
         # variable to hold infomap communities
         infomap_communities = network.community_infomap(edge_weights='weight')
@@ -411,7 +412,7 @@ def calc_modularity(network, path):
             print('Edge Betweenness Communities:    {0:.3f}'.format(edge_betweenness_modularity))
 
         # variable to hold output file
-        output_file = open('../../data/networks/{}/modularity.txt'.format(path), mode='w')
+        output_file = open('../../data/networks/{}/network/txt/modularity.txt'.format(path), mode='w')
 
         # write stats to file
         output_file.write('Infomap Communities:             {}\n'.format(len(infomap_communities)))
@@ -474,7 +475,7 @@ def norm_vals(vals, new_min, new_max):
 def plot_network(network, path):
 
     # if network plot file does not exist
-    if not os.path.isfile('../../data/networks/{}/network.png'.format(path)):
+    if not os.path.isfile('../../data/networks/{}/network/png/network.png'.format(path)):
 
         # variable to hold visual style
         visual_style = {'vertex_label': None,
@@ -486,7 +487,7 @@ def plot_network(network, path):
                         'margin': 40}
 
         # plot network
-        ig.plot(network, '../../data/networks/{}/network.png'.format(path), **visual_style)
+        ig.plot(network, '../../data/networks/{}/network/png/network.png'.format(path), **visual_style)
 
 
 ########################################################################################################################
@@ -500,13 +501,13 @@ def save_communities(network, communities, path, threshold):
     # for community in communities
     for community in communities:
         # if community graph file does not exist
-        if not os.path.isfile('../../data/networks/{}/communities/community{}.graphml'.format(path, number)):
+        if not os.path.isfile('../../data/networks/{}/communities/graphml/community{}.graphml'.format(path, number)):
             # if size of community is greater than threshold
             if len(community) > threshold:
                 # variable to hold sub-graph
                 sub_graph = network.subgraph(communities[number - 1], 'create_from_scratch')
                 # variable to hold output file
-                output_file = open('../../data/networks/{}/communities/community{}.graphml'.format(path, number),
+                output_file = open('../../data/networks/{}/communities/graphml/community{}.graphml'.format(path, number),
                                    mode='w')
                 # write sub-graph structure to file
                 sub_graph.write_graphml(output_file)
@@ -514,7 +515,7 @@ def save_communities(network, communities, path, threshold):
                 print('Community {}: {}'.format(number, len(community)))
 
                 # variable to hold stats file
-                stats_file = open('../../data/networks/{}/communities/stats.txt'.format(path), mode='a')
+                stats_file = open('../../data/networks/{}/communities/txt/stats.txt'.format(path), mode='a')
                 # write stat to file
                 stats_file.write('Community {}: {}\n'.format(number, len(community)))
 
@@ -525,14 +526,14 @@ def save_communities(network, communities, path, threshold):
 ########################################################################################################################
 
 
-# plots communities
-def plot_communities(network, communities, membership, path, edges):
+# plots community overview
+def plot_community_overview(network, communities, membership, path, edges):
 
     # if edges is True
     if edges is True:
 
         # if communities plot file does not exist
-        if not os.path.isfile('../../data/networks/{}/communities/communities1.png'.format(path)):
+        if not os.path.isfile('../../data/networks/{}/communities/png/overview1.png'.format(path)):
 
             # variable to hold edges
             edges = [edge for edge in network.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
@@ -562,13 +563,13 @@ def plot_communities(network, communities, membership, path, edges):
             [vertex.update_attributes({'color': colours[membership[vertex.index]]}) for vertex in network.vs()]
 
             # plot network
-            ig.plot(network, '../../data/networks/{}/communities/communities1.png'.format(path), **visual_style)
+            ig.plot(network, '../../data/networks/{}/communities/png/overview1.png'.format(path), **visual_style)
 
     # if edges is False
     elif edges is False:
 
         # if communities plot file does not exist
-        if not os.path.isfile('../../data/networks/{}/communities/communities2.png'.format(path)):
+        if not os.path.isfile('../../data/networks/{}/communities/png/overview2.png'.format(path)):
 
             # variable to hold edges
             edges = [edge for edge in network.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
@@ -585,10 +586,11 @@ def plot_communities(network, communities, membership, path, edges):
                             'margin': 40}
 
             # plot network
-            ig.plot(communities, '../../data/networks/{}/communities/communities2.png'.format(path), **visual_style)
+            ig.plot(communities, '../../data/networks/{}/communities/png/overview2.png'.format(path), **visual_style)
 
 
 ########################################################################################################################
+
 
 # analyses sub-communities
 def analyse_sub_communities(path, length):
@@ -597,7 +599,8 @@ def analyse_sub_communities(path, length):
     for i in range(1, length):
 
         # variable to hold community
-        community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/community{}.graphml'.format(path, i))
+        community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/graphml/community{}.graphml'.format(path,
+                                                                                                                  i))
 
         # variable to hold louvain
         louvain = community.community_multilevel(weights='weight')
@@ -606,109 +609,10 @@ def analyse_sub_communities(path, length):
         sub_communities = louvain
 
         # save sub-communities
-        save_sub_communities(community, sub_communities, path, i)
+        # save_sub_communities(community, sub_communities, path, i)
 
-        # plot sub-communities
-        # plot_sub_communities(community, sub_communities, sub_communities.membership, path, i, True)
-
-########################################################################################################################
-
-
-# saves sub-communities
-def save_sub_communities(network, sub_communities, path, i):
-
-    # variable to hold number set to 1
-    number = 1
-    # for sub-community in sub-communities
-    for sub_community in sub_communities:
-        # if sub-community graph file does not exist
-        if not os.path.isfile('../../data/networks/{}/sub-communities/community{}_{}.graphml'.format(path, i, number)):
-            # variable to hold sub-graph
-            sub_graph = network.subgraph(sub_communities[number - 1], 'create_from_scratch')
-            # variable to hold output file
-            output_file = open('../../data/networks/{}/sub-communities/community{}_{}.graphml'.format(path, i, number),
-                               mode='w')
-            # write sub-graph structure to file
-            sub_graph.write_graphml(output_file)
-            # print stat to terminal
-            print('Community {}.{}: {}'.format(i, number, len(sub_community)))
-
-            # variable to hold stats file
-            stats_file = open('../../data/networks/{}/sub-communities/stats_{}.txt'.format(path, i), mode='a')
-            # write stat to file
-            stats_file.write('Community {}.{}: {}\n'.format(i, number, len(sub_community)))
-
-            # increment number
-            number += 1
-
-
-########################################################################################################################
-
-
-# plots sub-communities
-def plot_sub_communities(network, sub_communities, membership, path, i, edges):
-
-    # if edges is True
-    if edges is True:
-
-        # if communities plot file does not exist
-        if not os.path.isfile('../../data/networks/{}/sub-communities/communities1_{}.png'.format(path, i)):
-
-            # variable to hold edges
-            for edge in network.es():
-                if membership[edge.tuple[0]] != membership[edge.tuple[1]]:
-                    print(edge)
-
-            # colour edges
-            [edge.update_attributes({'color': 'grey'}) if membership[edge.tuple[0]] != membership[edge.tuple[1]]
-             else edge.update_attributes({'color': 'black'}) for edge in network.es()]
-
-            # variable to hold network copy
-            network_copy = network.copy()
-
-            # delete edges
-            network_copy.delete_edges(edges)
-
-            # variable to hold visual style
-            visual_style = {'vertex_label': None,
-                            'vertex_size': network.vs['NormNum'],
-                            'edge_width': network.es['NormWeight'],
-                            'layout': network_copy.layout('kk'),
-                            'bbox': (1000, 1000),
-                            'margin': 40}
-
-            # variable to hold colours
-            colours = ['#%06X' % randint(0, 0xFFFFFF) for i in range(0, len(membership) + 1)]
-
-            # colour nodes
-            [vertex.update_attributes({'color': colours[membership[vertex.index]]}) for vertex in network.vs()]
-
-            # plot network
-            ig.plot(network, '../../data/networks/{}/sub-communities/communities1_{}.png'.format(path, i), **visual_style)
-
-    # if edges is False
-    elif edges is False:
-
-        # if communities plot file does not exist
-        if not os.path.isfile('../../data/networks/{}/sub-communities/communities2_{}.png'.format(path, i)):
-
-            # variable to hold edges
-            edges = [edge for edge in network.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
-
-            # delete edges
-            network.delete_edges(edges)
-
-            # variable to hold visual style
-            visual_style = {'vertex_label': None,
-                            'vertex_size': network.vs['NormNum'],
-                            'edge_width': network.es['NormWeight'],
-                            'layout': 'kk',
-                            'bbox': (1000, 1000),
-                            'margin': 40}
-
-            # plot network
-            ig.plot(sub_communities, '../../data/networks/{}/sub-communities/communities2_{}.png'.format(path, i),
-                    **visual_style)
+        # plot sub-community overview
+        # plot_sub_community_overview(community, sub_communities, sub_communities.membership, path, i, True)
 
 
 ########################################################################################################################
@@ -721,7 +625,7 @@ def main():
     AnalyseTopicNetwork.run()
 
     # analyse researcher network
-    AnalyseResearcherNetwork.run()
+    # AnalyseResearcherNetwork.run()
 
 
 ########################################################################################################################
