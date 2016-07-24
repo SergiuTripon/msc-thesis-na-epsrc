@@ -5,6 +5,7 @@
 # third-party library modules
 import os
 import igraph as ig
+import pandas as pd
 import networkx as nx
 import graphistry as gp
 from random import randint
@@ -47,6 +48,9 @@ class AnalyseTopicNetwork:
         # variable to hold network
         network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
+        # rename columns
+        network = rename_columns(network)
+
         # calculate network stats
         calc_stats(network, path)
 
@@ -54,14 +58,14 @@ class AnalyseTopicNetwork:
         calc_modularity(network, path)
 
         # add normalized node number column to network
-        network.vs['NormNum'] = norm_vals(network.vs['Num'], 20, 60)
+        network.vs['norm_num'] = norm_vals(network.vs['num'], 20, 60)
         # add normalized node value column to network
-        network.vs['NormVal'] = norm_vals(network.vs['Val'], 20, 60)
+        network.vs['norm_val'] = norm_vals(network.vs['val'], 20, 60)
 
         # add normalized edge weight column to network
-        network.es['NormWeight'] = norm_vals(network.es['weight'], 1, 10)
+        network.es['norm_weight'] = norm_vals(network.es['weight'], 1, 10)
         # add normalized edge value column to network
-        network.es['NormVal'] = norm_vals(network.es['Val'], 1, 10)
+        network.es['norm_val'] = norm_vals(network.es['val'], 1, 10)
 
         # plot network
         plot_network(network, path)
@@ -72,8 +76,17 @@ class AnalyseTopicNetwork:
         # variable to hold communities
         communities = louvain
 
+        # add normalized node membership column to network
+        network.vs['membership'] = norm_membership(communities.membership)
+
         # save communities
         save_communities(network, communities, path, 0)
+
+        # save community membership
+        save_community_membership(network, path)
+
+        # save community topics
+        save_community_topics(network, communities, path)
 
         # plot community overview
         plot_community_overview(network, communities, communities.membership, path, True)
@@ -111,8 +124,17 @@ class AnalyseTopicNetwork:
         # variable to hold communities
         communities = louvain
 
+        # add normalized node membership column to network
+        network.vs['membership'] = norm_membership(communities.membership)
+
         # save communities
         save_communities(network, communities, path, 0)
+
+        # save community membership
+        save_community_membership(network, path)
+
+        # save community topics
+        save_community_topics(network, communities, path)
 
         # plot community overview
         plot_community_overview(network, communities, communities.membership, path, True)
@@ -171,8 +193,17 @@ class AnalyseResearcherNetwork:
         # variable to hold communities
         communities = louvain
 
+        # add normalized node membership column to network
+        network.vs['membership'] = norm_membership(communities.membership)
+
         # save communities
         save_communities(network, communities, path, threshold)
+
+        # save community membership
+        save_community_membership(network, path)
+
+        # save community topics
+        save_community_topics(network, communities, path)
 
         # plot community overview
         plot_community_overview(network, communities, communities.membership, path, True)
@@ -214,8 +245,17 @@ class AnalyseResearcherNetwork:
         # variable to hold communities
         communities = louvain
 
+        # add normalized node membership column to network
+        network.vs['membership'] = norm_membership(communities.membership)
+
         # save communities
         save_communities(network, communities, path, threshold)
+
+        # save community membership
+        save_community_membership(network, path)
+
+        # save community topics
+        save_community_topics(network, communities, path)
 
         # plot community overview
         plot_community_overview(network, communities, communities.membership, path, True)
@@ -223,6 +263,71 @@ class AnalyseResearcherNetwork:
         # analyse sub-communities
         analyse_sub_communities(path, len(os.listdir('../../data/networks/{}/communities/graphml/'.format(path))) + 1)
 
+
+########################################################################################################################
+
+# renames columns
+def rename_columns(network):
+
+    # if number is in node attributes
+    if 'Num' in network.vs.attributes():
+        # add node number attribute
+        network.vs['num'] = network.vs['Num']
+        # delete node number attribute
+        del network.vs['Num']
+    # if value is in node attributes
+    if 'Val' in network.vs.attributes():
+        # add node value attribute
+        network.vs['val'] = network.vs['Val']
+        # delete node value attribute
+        del network.vs['Val']
+
+    # if number is in edge attributes
+    if 'Num' in network.es.attributes():
+        # add edge number attribute
+        network.es['num'] = network.es['Num']
+        # delete edge number attribute
+        del network.es['Num']
+    # if value is in edge attributes
+    if 'Val' in network.es.attributes():
+        # add edge value attribute
+        network.es['val'] = network.es['Val']
+        # delete edge value attribute
+        del network.es['Val']
+
+    # if normalized number is in node attributes
+    if 'NormNum' in network.vs.attributes():
+        # add node normalized number attribute
+        network.vs['norm_num'] = network.vs['NormNum']
+        # delete node normalized number attribute
+        del network.vs['NormNum']
+    # if normalized value is in node attributes
+    if 'NormVal' in network.vs.attributes():
+        # add node normalized value attribute
+        network.vs['norm_val'] = network.vs['NormVal']
+        # delete node normalized value attribute
+        del network.vs['NormVal']
+
+    # if normalized weight is in node attributes
+    if 'NormWeight' in network.es.attributes():
+        # add node normalized weight attribute
+        network.es['norm_weight'] = network.es['NormWeight']
+        # delete node normalized weight attribute
+        del network.es['NormWeight']
+    # if normalized value is in node attributes
+    if 'NormVal' in network.es.attributes():
+        # add node normalized value attribute
+        network.es['norm_val'] = network.es['NormVal']
+        # delete node normalized value attribute
+        del network.es['NormVal']
+
+    # delete edge id attribute
+    del network.es['Edge Id']
+    # delete edge label attribute
+    del network.es['Edge Label']
+
+    # return network
+    return network
 
 ########################################################################################################################
 
@@ -484,14 +589,27 @@ def plot_network(network, path):
         # variable to hold visual style
         visual_style = {'vertex_label': None,
                         'vertex_color': 'blue',
-                        'vertex_size': network.vs['NormNum'],
-                        'edge_width': network.es['NormWeight'],
+                        'vertex_size': network.vs['norm_num'],
+                        'edge_width': network.es['norm_weight'],
                         'layout': 'kk',
                         'bbox': (1000, 1000),
                         'margin': 40}
 
         # plot network
         ig.plot(network, '../../data/networks/{}/network/png/network.png'.format(path), **visual_style)
+
+
+########################################################################################################################
+
+
+# normalizes membership
+def norm_membership(membership):
+
+    # variable to hold new membership
+    new_membership = [community + 1 for community in membership]
+
+    # return new membership
+    return new_membership
 
 
 ########################################################################################################################
@@ -504,7 +622,7 @@ def save_communities(network, communities, path, threshold):
     number = 1
     # for community in communities
     for community in communities:
-        # if community graph file does not exist
+        # if community network file does not exist
         if not os.path.isfile('../../data/networks/{}/communities/graphml/'
                               'community{}.graphml'.format(path, number)):
             # if size of community is greater than threshold
@@ -529,6 +647,68 @@ def save_communities(network, communities, path, threshold):
 ########################################################################################################################
 
 
+# saves community membership
+def save_community_membership(network, path):
+
+    # if membership network file does not exist
+    if not os.path.isfile('../../data/networks/{}/network/graphml/membership.graphml'.format(path)):
+
+        # if val in edge attributes
+        if 'val' in network.es.attributes():
+            # delete edge value attribute
+            del network.es['val']
+            # add edge value attribute
+            network.es['val'] = network.es['norm_val']
+            # delete edge normalized value attribute
+            del network.es['norm_val']
+
+        # delete edge weight attribute
+        del network.es['weight']
+        # add edge weight attribute
+        network.es['weight'] = network.es['norm_weight']
+        # delete edge normalized weight attribute
+        del network.es['norm_weight']
+
+        # variable to hold output file
+        output_file = open('../../data/networks/{}/network/graphml/membership.graphml'.format(path), mode='w')
+        # write network structure to file
+        network.write_graphml(output_file)
+
+
+########################################################################################################################
+
+
+# saves community topics
+def save_community_topics(network, communities, path):
+
+    # if membership network file does not exist
+    if not os.path.isfile('../../data/networks/{}/communities/txt/community_topics.txt'.format(path)):
+
+        # variable to hold output file
+        output_file = open('../../data/networks/{}/communities/txt/community_topics.txt'.format(path), mode='a')
+
+        # for community in range between 1 and length of communities + 1
+        for community in range(1, len(communities) + 1):
+            # variable to hold community topics
+            community_topics = [label for label, membership in zip(network.vs['label'], network.vs['membership'])
+                                if membership == community]
+            # if community is equal to 1
+            if community == 1:
+                # write headers to file
+                output_file.write('> Community {} ({})\n\n'.format(community, len(community_topics)))
+            # if community is not equal to 0
+            else:
+                # write headers to file
+                output_file.write('\n> Community {} ({})\n\n'.format(community, len(community_topics)))
+            # for community topic in community topics
+            for community_topic in community_topics:
+                # write community topic to file
+                output_file.write('- {}\n'.format(community_topic))
+
+
+########################################################################################################################
+
+
 # plots community overview
 def plot_community_overview(network, communities, membership, path, edges):
 
@@ -542,8 +722,8 @@ def plot_community_overview(network, communities, membership, path, edges):
             edges = [edge for edge in network.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
 
             # colour edges
-            [edge.update_attributes({'color': 'grey'}) if membership[edge.tuple[0]] != membership[edge.tuple[1]]
-             else edge.update_attributes({'color': 'black'}) for edge in network.es()]
+            [edge.update_attributes({'colour': 'grey'}) if membership[edge.tuple[0]] != membership[edge.tuple[1]]
+             else edge.update_attributes({'colour': 'black'}) for edge in network.es()]
 
             # variable to hold network copy
             network_copy = network.copy()
@@ -553,8 +733,8 @@ def plot_community_overview(network, communities, membership, path, edges):
 
             # variable to hold visual style
             visual_style = {'vertex_label': None,
-                            'vertex_size': network.vs['NormNum'],
-                            'edge_width': network.es['NormWeight'],
+                            'vertex_size': network.vs['norm_num'],
+                            'edge_width': network.es['norm_weight'],
                             'layout': network_copy.layout('kk'),
                             'bbox': (1000, 1000),
                             'margin': 40}
@@ -563,7 +743,7 @@ def plot_community_overview(network, communities, membership, path, edges):
             colours = ['#%06X' % randint(0, 0xFFFFFF) for i in range(0, len(membership) + 1)]
 
             # colour nodes
-            [vertex.update_attributes({'color': colours[membership[vertex.index]]}) for vertex in network.vs()]
+            [vertex.update_attributes({'colour': colours[membership[vertex.index]]}) for vertex in network.vs()]
 
             # plot network
             ig.plot(network, '../../data/networks/{}/communities/png/overview1.png'.format(path), **visual_style)
@@ -582,8 +762,8 @@ def plot_community_overview(network, communities, membership, path, edges):
 
             # variable to hold visual style
             visual_style = {'vertex_label': None,
-                            'vertex_size': network.vs['NormNum'],
-                            'edge_width': network.es['NormWeight'],
+                            'vertex_size': network.vs['norm_num'],
+                            'edge_width': network.es['norm_weight'],
                             'layout': 'kk',
                             'bbox': (1000, 1000),
                             'margin': 40}
@@ -605,6 +785,9 @@ def analyse_sub_communities(path, length):
         community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/graphml/'
                                           'community{}.graphml'.format(path, i))
 
+        # rename columns
+        community = rename_columns(community)
+
         # plot communities
         plot_communities(community, path, i)
 
@@ -614,8 +797,14 @@ def analyse_sub_communities(path, length):
         # variable to hold sub-communities
         sub_communities = louvain
 
+        # normalize membership
+        community.vs['membership'] = norm_membership(sub_communities.membership)
+
         # save sub-communities
         save_sub_communities(community, sub_communities, path, i)
+
+        # save sub-community topics
+        save_sub_community_topics(community, sub_communities, path, i)
 
         # plot sub-community overview
         plot_sub_community_overview(community, sub_communities, sub_communities.membership, path, i, True)
@@ -633,8 +822,8 @@ def plot_communities(community, path, i):
         # variable to hold visual style
         visual_style = {'vertex_label': None,
                         'vertex_color': 'blue',
-                        'vertex_size': community.vs['NormNum'],
-                        'edge_width': community.es['NormWeight'],
+                        'vertex_size': community.vs['norm_num'],
+                        'edge_width': community.es['norm_weight'],
                         'layout': 'kk',
                         'bbox': (1000, 1000),
                         'margin': 40}
@@ -652,7 +841,7 @@ def save_sub_communities(community, sub_communities, path, i):
     number = 1
     # for sub-community in sub-communities
     for sub_community in sub_communities:
-        # if sub-community graph file does not exist
+        # if sub-community network file does not exist
         if not os.path.isfile('../../data/networks/{}/sub-communities/graphml/'
                               'community{}_{}.graphml'.format(path, i, number)):
             # variable to hold sub-graph
@@ -675,6 +864,70 @@ def save_sub_communities(community, sub_communities, path, i):
 ########################################################################################################################
 
 
+# saves sub-community membership
+def save_sub_community_membership(network, path):
+
+    # if membership network file does not exist
+    if not os.path.isfile('../../data/networks/{}/network/graphml/membership.graphml'.format(path)):
+
+        # if val is in edge attributes
+        if 'val' in network.es.attributes():
+            # delete edge value attribute
+            del network.es['val']
+            # add edge value attribute
+            network.es['val'] = network.es['norm_val']
+            # delete edge normalized value attribute
+            del network.es['norm_val']
+
+        # delete edge weight attribute
+        del network.es['weight']
+        # add edge weight attribute
+        network.es['weight'] = network.es['norm_weight']
+        # delete edge normalized weight attribute
+        del network.es['norm_weight']
+
+        # variable to hold output file
+        output_file = open('../../data/networks/{}/network/graphml/membership.graphml'.format(path), mode='w')
+        # write network structure to file
+        network.write_graphml(output_file)
+
+
+########################################################################################################################
+
+
+# saves sub-community topics
+def save_sub_community_topics(community, sub_communities, path, i):
+
+    # if sub-communities topics file does not exist
+    if not os.path.isfile('../../data/networks/{}/sub-communities/txt/sub_community_topics{}.txt'.format(path, i)):
+
+        # variable to hold output file
+        output_file = open('../../data/networks/{}/sub-communities/txt/sub_community_topics{}.txt'.format(path, i),
+                           mode='a')
+
+        # for sub-community in range between 1 and length of sub-communities + 1
+        for sub_community in range(1, len(sub_communities) + 1):
+            # variable to hold sub-community topics
+            sub_community_topics = [label for label, membership
+                                    in zip(community.vs['label'], community.vs['membership'])
+                                    if membership == sub_community]
+            # if community is equal to 1
+            if sub_community == 1:
+                # write headers to file
+                output_file.write('> Community {}.{} ({})\n\n'.format(i, sub_community, len(sub_community_topics)))
+            # if community is not equal to 0
+            else:
+                # write headers to file
+                output_file.write('\n> Community {}.{} ({})\n\n'.format(i, sub_community, len(sub_community_topics)))
+            # for sub-community topic in sub-community topics
+            for sub_community_topic in sub_community_topics:
+                # write sub-community topic to file
+                output_file.write('- {}\n'.format(sub_community_topic))
+
+
+########################################################################################################################
+
+
 # plots sub-community overview
 def plot_sub_community_overview(community, sub_communities, membership, path, i, edges):
 
@@ -688,8 +941,8 @@ def plot_sub_community_overview(community, sub_communities, membership, path, i,
             edges = [edge for edge in community.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
 
             # colour edges
-            [edge.update_attributes({'color': 'grey'}) if membership[edge.tuple[0]] != membership[edge.tuple[1]]
-             else edge.update_attributes({'color': 'black'}) for edge in community.es()]
+            [edge.update_attributes({'colour': 'grey'}) if membership[edge.tuple[0]] != membership[edge.tuple[1]]
+             else edge.update_attributes({'colour': 'black'}) for edge in community.es()]
 
             # variable to hold community copy
             community_copy = community.copy()
@@ -698,8 +951,8 @@ def plot_sub_community_overview(community, sub_communities, membership, path, i,
             community_copy.delete_edges(edges)
 
             # variable to hold visual style
-            visual_style = {'vertex_size': community.vs['NormNum'],
-                            'edge_width': community.es['NormWeight'],
+            visual_style = {'vertex_size': community.vs['norm_num'],
+                            'edge_width': community.es['norm_weight'],
                             'layout': community_copy.layout('kk'),
                             'bbox': (1000, 1000),
                             'margin': 40}
@@ -708,7 +961,7 @@ def plot_sub_community_overview(community, sub_communities, membership, path, i,
             colours = ['#%06X' % randint(0, 0xFFFFFF) for i in range(0, len(membership) + 1)]
 
             # colour nodes
-            [vertex.update_attributes({'color': colours[membership[vertex.index]]}) for vertex in community.vs()]
+            [vertex.update_attributes({'colour': colours[membership[vertex.index]]}) for vertex in community.vs()]
 
             # plot community
             ig.plot(community, '../../data/networks/{}/sub-communities/png/overview1_{}.png'.format(path, i),
@@ -729,8 +982,8 @@ def plot_sub_community_overview(community, sub_communities, membership, path, i,
             community.delete_edges(edges)
 
             # variable to hold visual style
-            visual_style = {'vertex_size': community.vs['NormNum'],
-                            'edge_width': community.es['NormWeight'],
+            visual_style = {'vertex_size': community.vs['norm_num'],
+                            'edge_width': community.es['norm_weight'],
                             'layout': 'kk',
                             'bbox': (1000, 1000),
                             'margin': 40}
@@ -741,6 +994,58 @@ def plot_sub_community_overview(community, sub_communities, membership, path, i,
 
 
 ########################################################################################################################
+
+
+# visualises networks in graphistry
+def visualise_in_graphistry(network):
+
+    # variable to hold nodes data frame
+    nodes_df = pd.DataFrame()
+
+    # add id to nodes data frame
+    nodes_df['id'] = [node.index for node in network.vs()]
+    # add label to nodes data frame
+    nodes_df['label'] = [node for node in network.vs['label']]
+    # add num to nodes data frame
+    nodes_df['num'] = [int(node_num) for node_num in network.vs['NormNum']]
+    # add val to nodes data frame
+    nodes_df['val'] = [int(node_val) for node_val in network.vs['NormVal']]
+    # add colour to nodes data frame
+    nodes_df['colour'] = 7
+
+    # print nodes data frame
+    # print(nodes_df)
+
+    # variable to hold edges data frame
+    edges_df = pd.DataFrame()
+
+    # add source to edges data frame
+    edges_df['source'] = [edge.source for edge in network.es()]
+    # add target to edges data frame
+    edges_df['target'] = [edge.target for edge in network.es()]
+    # add weight to edges data frame
+    edges_df['weight'] = [int(edge_weight) for edge_weight in network.es['NormWeight']]
+    # add val to edges data frame
+    edges_df['val'] = [int(edge_val) for edge_val in network.es['NormVal']]
+    # add colour to edges data frame
+    edges_df['colour'] = 3
+
+    # print edges data frame
+    # print(edges_df)
+
+    # variable to hold network
+    network = gp.bind(source='source', destination='target', edge_color='colour', edge_weight='weight')
+    # variable to hold network
+    network = network.graph(edges_df)
+    # variable to hold network nodes
+    network_nodes = network.bind(node='id', point_title='label', point_color='colour',
+                                 point_size='num').nodes(nodes_df)
+    # plot network nodes
+    network_nodes.plot()
+
+
+########################################################################################################################
+
 
 # main function
 def main():
@@ -754,8 +1059,10 @@ def main():
 
 ########################################################################################################################
 
+
 # runs main function
 if __name__ == '__main__':
     main()
+
 
 ########################################################################################################################
