@@ -55,27 +55,30 @@ def analyse_sub_communities(community, sub_communities, edge_type, method, count
 # checks sub-communities
 def check_sub_communities(sub_community, edge_type, method, count1, path):
 
-    # if edge count is greater than 0
-    if sub_community.ecount() < 1:
+    # if sub-community is an instance of graph
+    if isinstance(sub_community, ig.Graph):
 
-        # create placeholder files
-        open('../../data/networks/{}/sub-communities/graphml/'
-             '{}/{}/community{}_zero_edges.graphml'.format(path, edge_type, method, count1), mode='w')
-        open('../../data/networks/{}/sub-communities/txt/'
-             '{}/{}/numbers{}_zero_edges.txt'.format(path, edge_type, method, count1), mode='w')
-        open('../../data/networks/{}/sub-communities/txt/'
-             '{}/{}/grants{}_zero_edges.txt'.format(path, edge_type, method, count1), mode='w')
-        open('../../data/networks/{}/communities/graphml/'
-             '{}/{}/membership{}_zero_edges.graphml'.format(path, edge_type, method, count1), mode='w')
-        open('../../data/networks/{}/sub-communities/txt/'
-             '{}/{}/topics{}_zero_edges.txt'.format(path, edge_type, method, count1), mode='w')
-        open('../../data/networks/{}/sub-communities/png/'
-             '{}/{}/overview1_{}_zero_edges.png'.format(path, edge_type, method, count1), mode='w')
-        open('../../data/networks/{}/sub-communities/png/'
-             '{}/{}/overview2_{}_zero_edges.png'.format(path, edge_type, method, count1), mode='w')
+        # if edge count is greater than 0
+        if sub_community.ecount() < 1:
 
-        # return true
-        return True
+            # create placeholder files
+            open('../../data/networks/{}/sub-communities/graphml/'
+                 '{}/{}/community{}_zero_edges.graphml'.format(path, edge_type, method, count1), mode='w')
+            open('../../data/networks/{}/sub-communities/txt/'
+                 '{}/{}/numbers{}_zero_edges.txt'.format(path, edge_type, method, count1), mode='w')
+            open('../../data/networks/{}/sub-communities/txt/'
+                 '{}/{}/grants{}_zero_edges.txt'.format(path, edge_type, method, count1), mode='w')
+            open('../../data/networks/{}/communities/graphml/'
+                 '{}/{}/membership{}_zero_edges.graphml'.format(path, edge_type, method, count1), mode='w')
+            open('../../data/networks/{}/sub-communities/txt/'
+                 '{}/{}/topics{}_zero_edges.txt'.format(path, edge_type, method, count1), mode='w')
+            open('../../data/networks/{}/sub-communities/png/'
+                 '{}/{}/overview1_{}_zero_edges.png'.format(path, edge_type, method, count1), mode='w')
+            open('../../data/networks/{}/sub-communities/png/'
+                 '{}/{}/overview2_{}_zero_edges.png'.format(path, edge_type, method, count1), mode='w')
+
+            # return true
+            return True
 
     # if sub-community equals to vertex clustering
     elif sub_community == ig.VertexClustering:
