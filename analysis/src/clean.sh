@@ -463,13 +463,15 @@ function clean_folders() {
     rm -rf ../../data/networks/$1/network/txt/$2/$3/stats.txt
     # delete network modularity file
     rm -rf ../../data/networks/$1/network/txt/$2/$3/modularity.txt
+        # delete network robustness file
+    rm -rf ../../data/networks/$1/network/txt/$2/$3/robustness.txt
     # delete network plot file
     rm -rf ../../data/networks/$1/network/png/$2/$3/network.png
 
     ####################################################################################################################
 
     # delete community modularity file
-    rm -rf ../../data/networks/$1/communities/txt/$2/$3/modularity.txt
+    rm -rf ../../data/networks/$1/communities/txt/$2/$3/modularity*.txt
 
     # delete community network files
     rm -rf ../../data/networks/$1/communities/graphml/$2/$3/community*.graphml
@@ -477,11 +479,14 @@ function clean_folders() {
     # delete community numbers file
     rm -rf ../../data/networks/$1/communities/txt/$2/$3/numbers*.txt
 
+    # delete community grants file
+    rm -rf ../../data/networks/$1/communities/txt/$2/$3/grants*.txt
+
     # delete community membership network file
     rm -rf ../../data/networks/$1/network/graphml/$2/$3/membership*.graphml
 
     # delete community topics file file
-    rm -rf ../../data/networks/$1/communities/txt/$2/$3/community_topics*.txt
+    rm -rf ../../data/networks/$1/communities/txt/$2/$3/topics*.txt
 
     # delete community overview plot file
     rm -rf ../../data/networks/$1/communities/png/$2/$3/overview1*.png
@@ -500,11 +505,14 @@ function clean_folders() {
     # delete sub-community stats files
     rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/numbers*.txt
 
+    # delete sub-community grants files
+    rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/grants*.txt
+
     # delete sub-community membership network files
     rm -rf ../../data/networks/$1/communities/graphml/$2/$3/membership*.graphml
 
     # delete sub-community topics files
-    rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/sub_community_topics*.txt
+    rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/topics*.txt
 
     # delete sub-community overview plot file
     rm -rf ../../data/networks/$1/sub-communities/png/$2/$3/overview1*.png
@@ -512,24 +520,28 @@ function clean_folders() {
     # delete sub-community overview plot file
     rm -rf ../../data/networks/$1/sub-communities/png/$2/$3/overview2*.png
 
+    ####################################################################################################################
+
+    echo "> Folders cleaned ($1/$2/$3)."
+
 }
 
 ########################################################################################################################
 
 # clean topics
 clean_topics 'a' 'current'
-clean_topics 'a' 'past1'
-clean_topics 'a' 'past2'
+# clean_topics 'a' 'past1'
+# clean_topics 'a' 'past2'
 
-clean_topics 'b' 'current'
-clean_topics 'b' 'past1'
-clean_topics 'b' 'past2'
+# clean_topics 'b' 'current'
+# clean_topics 'b' 'past1'
+# clean_topics 'b' 'past2'
 
 # clean researchers
-clean_researchers 'a' 'current'
-clean_researchers 'a' 'past1'
-clean_researchers 'a' 'past2'
+# clean_researchers 'a' 'current'
+# clean_researchers 'a' 'past1'
+# clean_researchers 'a' 'past2'
 
-clean_researchers 'b' 'current'
-clean_researchers 'b' 'past1'
-clean_researchers 'b' 'past2'
+# clean_researchers 'b' 'current'
+# clean_researchers 'b' 'past1'
+# clean_researchers 'b' 'past2'

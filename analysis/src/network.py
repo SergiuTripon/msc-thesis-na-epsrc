@@ -1,6 +1,73 @@
 
+# local python files
+import communities as ca
+
 # third-party library modules
 import igraph as ig
+
+########################################################################################################################
+
+
+# analyses network
+def analyse_network(edge_type, method, attr, path):
+
+    # variable to hold network
+    network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
+
+    # rename columns
+    network = rename_columns(network)
+    # print progress
+    # print('> Network columns renamed ({}/{}/{}).'.format(path, edge_type, method))
+
+    # if attributes equals to all
+    if attr == 'all':
+        # add normalized node number column to network
+        network.vs['norm_num'] = norm_vals(network.vs['num'], 20, 60)
+        # add normalized node value column to network
+        network.vs['norm_val'] = norm_vals(network.vs['val'], 20, 60)
+        # add normalized edge weight column to network
+        network.es['norm_weight'] = norm_vals(network.es['weight'], 1, 10)
+        # add normalized edge value column to network
+        network.es['norm_val'] = norm_vals(network.es['val'], 1, 10)
+    # if attributes equals to half
+    elif attr == 'half':
+        # add normalized node number column to network
+        network.vs['norm_num'] = norm_vals(network.vs['num'], 20, 60)
+        # add normalized edge weight column to network
+        network.es['norm_weight'] = norm_vals(network.es['weight'], 1, 10)
+    # print progress
+    # print('> Network values normalized ({}/{}/{}).'.format(path, edge_type, method))
+
+    # get edge type and print progress
+    get_edge_type(network, edge_type)
+    # print progress
+    # print('> Edge type retrieved. ({}/{}/{})'.format(path, edge_type, method))
+
+    # calculate network stats
+    calc_stats(network, edge_type, method, path)
+    # print progress
+    # print('> Stats calculated ({}/{}/{}).'.format(path, edge_type, method))
+
+    # calculate modularity
+    communities = calc_modularity(network, edge_type, method, path)
+    # print progress
+    # print('> Network modularity calculated ({}/{}/{}).'.format(path, edge_type, method))
+
+    # if edge type equals to wn or wnn or wnv
+    if edge_type == 'wn' or edge_type == 'wnn' or edge_type == 'wnv':
+        # check robustness
+        check_robustness(network, edge_type, method, path)
+        # print progress
+        # print('> Network robustness checked ({}/{}/{}).'.format(path, edge_type, method))
+
+    # plot network
+    plot_network(network, edge_type, method, path)
+    # print progress
+    # print('> Network plotted ({}/{}/{}).'.format(path, edge_type, method))
+
+    # analyse communities
+    ca.analyse_communities(network, communities, edge_type, method, 0, path)
+
 
 ########################################################################################################################
 
@@ -210,7 +277,7 @@ def calc_stats(network, edge_type, method, path):
 
 
 # calculate modularity
-def calc_modularity(network, edge_type, method, path, i):
+def calc_modularity(network, edge_type, method, path):
 
     # variable to hold infomap communities
     infomap_c = network.community_infomap(edge_weights='norm_weight')
@@ -264,60 +331,28 @@ def calc_modularity(network, edge_type, method, path, i):
 
     ####################################################################################################################
 
-    # if i does not exist
-    if not i:
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/network/txt/'
+                       '{}/{}/modularity.txt'.format(path, edge_type, method), mode='w')
 
-        # variable to hold output file
-        output_file = open('../../data/networks/{}/network/txt/'
-                           '{}/{}/modularity.txt'.format(path, edge_type, method), mode='w')
+    # write modularity to file
+    output_file.write('> Modularity scores and community sizes\n\n')
+    output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
 
-        # write modularity to file
-        output_file.write('> Modularity scores and community sizes\n\n')
-        output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
+    # if network is connected
+    if network.is_connected():
+        output_file.write('- Spinglass:           {:3d} {:5.3f}\n'.format(len(spinglass_c), spinglass_m))
 
-        # if network is connected
-        if network.is_connected():
-            output_file.write('- Spinglass:           {:3d} {:5.3f}\n'.format(len(spinglass_c), spinglass_m))
+    output_file.write('- Louvain:             {:3d} {:5.3f}\n'.format(len(louvain_c), louvain_m))
+    output_file.write('- Label Propagation:   {:3d} {:5.3f}\n'.format(len(label_prop_c), label_prop_m))
+    output_file.write('- Leading Eigenvector: {:3d} {:5.3f}\n'.format(len(leading_eigen_c), leading_eigen_m))
+    output_file.write('- Walktrap:            {:3d} {:5.3f}\n'.format(len(walktrap_c), walktrap_m))
+    output_file.write('- Fast Greedy:         {:3d} {:5.3f}\n'.format(len(fastgreedy_c), fastgreedy_m))
 
-        output_file.write('- Louvain:             {:3d} {:5.3f}\n'.format(len(louvain_c), louvain_m))
-        output_file.write('- Label Propagation:   {:3d} {:5.3f}\n'.format(len(label_prop_c), label_prop_m))
-        output_file.write('- Leading Eigenvector: {:3d} {:5.3f}\n'.format(len(leading_eigen_c), leading_eigen_m))
-        output_file.write('- Walktrap:            {:3d} {:5.3f}\n'.format(len(walktrap_c), walktrap_m))
-        output_file.write('- Fast Greedy:         {:3d} {:5.3f}\n'.format(len(fastgreedy_c), fastgreedy_m))
-
-        # if network is connected and number of components is less than or equal to 2
-        if network.is_connected() or len(network.components()) <= 2:
-            output_file.write('- Edge Betweenness:    {:3d} {:5.3f}\n\n'.format(len(edge_betweenness_c),
-                                                                                edge_betweenness_m))
-
-    # if i exists
-    elif i:
-
-        # variable to hold output file
-        output_file = open('../../data/networks/{}/communities/txt/'
-                           '{}/{}/modularity.txt'.format(path, edge_type, method, i), mode='a')
-
-        # write modularity to file
-        # if i equals to 1
-        if i == 1:
-            output_file.write('> Modularity scores and community sizes\n\n')
-        output_file.write('> Community {}\n\n'.format(i))
-        output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
-
-        # if network is connected
-        if network.is_connected():
-            output_file.write('- Spinglass:           {:3d} {:5.3f}\n'.format(len(spinglass_c), spinglass_m))
-
-        output_file.write('- Louvain:             {:3d} {:5.3f}\n'.format(len(louvain_c), louvain_m))
-        output_file.write('- Label Propagation:   {:3d} {:5.3f}\n'.format(len(label_prop_c), label_prop_m))
-        output_file.write('- Leading Eigenvector: {:3d} {:5.3f}\n'.format(len(leading_eigen_c), leading_eigen_m))
-        output_file.write('- Walktrap:            {:3d} {:5.3f}\n'.format(len(walktrap_c), walktrap_m))
-        output_file.write('- Fast Greedy:         {:3d} {:5.3f}\n'.format(len(fastgreedy_c), fastgreedy_m))
-
-        # if network is connected and number of components is less than or equal to 2
-        if network.is_connected() or len(network.components()) <= 2:
-            output_file.write('- Edge Betweenness:    {:3d} {:5.3f}\n\n'.format(len(edge_betweenness_c),
-                                                                                edge_betweenness_m))
+    # if network is connected and number of components is less than or equal to 2
+    if network.is_connected() or len(network.components()) <= 2:
+        output_file.write('- Edge Betweenness:    {:3d} {:5.3f}\n\n'.format(len(edge_betweenness_c),
+                                                                            edge_betweenness_m))
 
     ####################################################################################################################
 
@@ -333,6 +368,119 @@ def calc_modularity(network, edge_type, method, path, i):
     elif method == 'fastgreedy':
         # return fastgreedy communities
         return fastgreedy_c
+
+
+########################################################################################################################
+
+
+# check robustness
+def check_robustness(network, edge_type, method, path):
+
+    # variable to hold threshold
+    threshold = 0
+    # if edge type equals to wn
+    if edge_type == 'wn':
+        threshold = 4
+    # if edge type equals to wnn or wnv
+    elif edge_type == 'wnn' or edge_type == 'wnv':
+        threshold = 2
+
+    # variable to hold network copy
+    network_copy = network.copy()
+
+    # variable to hold edges
+    edges = [edge for edge, edge_weight in zip(network_copy.es(), network_copy.es['norm_weight'])
+             if int(edge_weight) < threshold]
+
+    # delete edges
+    network_copy.delete_edges(edges)
+
+    # variable to hold nodes
+    nodes = [node for node, node_degree in zip(network_copy.vs(), network_copy.degree()) if int(node_degree) == 0]
+
+    # delete nodes
+    network_copy.delete_vertices(nodes)
+
+    ####################################################################################################################
+
+    # variable to hold infomap communities
+    infomap_c = network_copy.community_infomap(edge_weights='norm_weight')
+    # variable to hold infomap modularity
+    infomap_m = infomap_c.modularity
+
+    spinglass_c = ig.VertexClustering
+    spinglass_m = float
+
+    # if network is connected
+    if network_copy.is_connected():
+        # variable to hold spinglass communities
+        spinglass_c = network_copy.community_spinglass(weights='norm_weight')
+        # variable to hold spinglass modularity
+        spinglass_m = spinglass_c.modularity
+
+    # variable to hold louvain communities
+    louvain_c = network_copy.community_multilevel(weights='norm_weight')
+    # variable to hold louvain modularity
+    louvain_m = louvain_c.modularity
+
+    # variable to hold label propagation communities
+    label_prop_c = network_copy.community_label_propagation(weights='norm_weight')
+    # variable to hold label propagation modularity
+    label_prop_m = label_prop_c.modularity
+
+    # variable to hold leading eigenvector communities
+    leading_eigen_c = network_copy.community_leading_eigenvector(weights='norm_weight')
+    # variable to hold leading eigenvector modularity
+    leading_eigen_m = leading_eigen_c.modularity
+
+    # variable to hold walktrap communities
+    walktrap_c = network_copy.community_walktrap(weights='norm_weight', steps=4).as_clustering()
+    # variable to hold walktrap modularity
+    walktrap_m = walktrap_c.modularity
+
+    # variable to hold fast greedy communities
+    fastgreedy_c = network_copy.community_fastgreedy(weights='norm_weight').as_clustering()
+    # variable to hold fast greedy modularity
+    fastgreedy_m = fastgreedy_c.modularity
+
+    edge_betweenness_c = ig.VertexClustering
+    edge_betweenness_m = float
+
+    # if network is connected and number of components is less than or equal to 2
+    if network_copy.is_connected() or len(network_copy.components()) <= 2:
+        # variable to hold edge betweenness communities
+        edge_betweenness_c = network_copy.community_edge_betweenness(directed=False,
+                                                                     weights='norm_weight').as_clustering()
+        # variable to hold edge betweenness modularity
+        edge_betweenness_m = edge_betweenness_c.modularity
+
+    ####################################################################################################################
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/network/txt/'
+                       '{}/{}/robustness.txt'.format(path, edge_type, method), mode='w')
+
+    # write modularity to file
+    output_file.write('> Network robustness check\n\n')
+    output_file.write('> Nodes: {}\n'.format(network_copy.vcount()))
+    output_file.write('> Edges: {}\n\n'.format(network_copy.ecount()))
+    output_file.write('> Modularity scores and community sizes\n\n')
+    output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
+
+    # if network is connected
+    if network_copy.is_connected():
+        output_file.write('- Spinglass:           {:3d} {:5.3f}\n'.format(len(spinglass_c), spinglass_m))
+
+    output_file.write('- Louvain:             {:3d} {:5.3f}\n'.format(len(louvain_c), louvain_m))
+    output_file.write('- Label Propagation:   {:3d} {:5.3f}\n'.format(len(label_prop_c), label_prop_m))
+    output_file.write('- Leading Eigenvector: {:3d} {:5.3f}\n'.format(len(leading_eigen_c), leading_eigen_m))
+    output_file.write('- Walktrap:            {:3d} {:5.3f}\n'.format(len(walktrap_c), walktrap_m))
+    output_file.write('- Fast Greedy:         {:3d} {:5.3f}\n'.format(len(fastgreedy_c), fastgreedy_m))
+
+    # if network is connected and number of components is less than or equal to 2
+    if network_copy.is_connected() or len(network_copy.components()) <= 2:
+        output_file.write('- Edge Betweenness:    {:3d} {:5.3f}\n\n'.format(len(edge_betweenness_c),
+                                                                            edge_betweenness_m))
 
 
 ########################################################################################################################

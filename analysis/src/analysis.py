@@ -5,10 +5,8 @@
 # local python files
 import network as na
 import communities as ca
-import sub_communities as sca
 
 # third-party library modules
-import os
 import glob
 import igraph as ig
 import pandas as pd
@@ -32,40 +30,57 @@ class AnalyseTopicNetwork:
 
     @staticmethod
     # runs other functions
-    def run():
+    def run(network, time_period):
 
-        # variables to hold methods
-        method1, method2, method3 = 'louvain', 'spinglass', 'fastgreedy'
         # variables to hold time periods
         time_period1, time_period2, time_period3 = 'current', 'past1', 'past2'
+        # variables to hold methods
+        method1, method2, method3 = 'louvain', 'spinglass', 'fastgreedy'
 
-        # run network a
-        AnalyseTopicNetwork.run_network_a(time_period1, method1)
-        AnalyseTopicNetwork.run_network_a(time_period1, method2)
-        AnalyseTopicNetwork.run_network_a(time_period1, method3)
+        # if network equals to a and time period equals to time period 1
+        if network == 'a' and time_period == time_period1:
 
-        AnalyseTopicNetwork.run_network_a(time_period2, method1)
-        AnalyseTopicNetwork.run_network_a(time_period2, method2)
-        AnalyseTopicNetwork.run_network_a(time_period2, method3)
+            # run network a
+            AnalyseTopicNetwork.run_network_a(time_period1, method1)
+            AnalyseTopicNetwork.run_network_a(time_period1, method2)
+            AnalyseTopicNetwork.run_network_a(time_period1, method3)
 
-        AnalyseTopicNetwork.run_network_a(time_period3, method1)
-        AnalyseTopicNetwork.run_network_a(time_period3, method2)
-        AnalyseTopicNetwork.run_network_a(time_period3, method3)
+        # if network equals to a and time period equals to time period 2
+        if network == 'a' and time_period == time_period2:
+
+            AnalyseTopicNetwork.run_network_a(time_period2, method1)
+            AnalyseTopicNetwork.run_network_a(time_period2, method2)
+            AnalyseTopicNetwork.run_network_a(time_period2, method3)
+
+        # if network equals to a and time period equals to time period 3
+        if network == 'a' and time_period == time_period3:
+            AnalyseTopicNetwork.run_network_a(time_period3, method1)
+            AnalyseTopicNetwork.run_network_a(time_period3, method2)
+            AnalyseTopicNetwork.run_network_a(time_period3, method3)
 
         ################################################################################################################
 
-        # run network b
-        AnalyseTopicNetwork.run_network_b(time_period1, method1)
-        AnalyseTopicNetwork.run_network_b(time_period1, method2)
-        AnalyseTopicNetwork.run_network_b(time_period1, method3)
+        # if network equals to b and time period equals to time period 1
+        if network == 'b' and time_period == time_period1:
 
-        AnalyseTopicNetwork.run_network_b(time_period2, method1)
-        AnalyseTopicNetwork.run_network_b(time_period2, method2)
-        AnalyseTopicNetwork.run_network_b(time_period2, method3)
+            # run network b
+            AnalyseTopicNetwork.run_network_b(time_period1, method1)
+            AnalyseTopicNetwork.run_network_b(time_period1, method2)
+            AnalyseTopicNetwork.run_network_b(time_period1, method3)
 
-        AnalyseTopicNetwork.run_network_b(time_period3, method1)
-        AnalyseTopicNetwork.run_network_b(time_period3, method2)
-        AnalyseTopicNetwork.run_network_b(time_period3, method3)
+        # if network equals to b and time period equals to time period 2
+        if network == 'b' and time_period == time_period2:
+
+            AnalyseTopicNetwork.run_network_b(time_period2, method1)
+            AnalyseTopicNetwork.run_network_b(time_period2, method2)
+            AnalyseTopicNetwork.run_network_b(time_period2, method3)
+
+        # if network equals to b and time period equals to time period 3
+        if network == 'b' and time_period == time_period3:
+
+            AnalyseTopicNetwork.run_network_b(time_period3, method1)
+            AnalyseTopicNetwork.run_network_b(time_period3, method2)
+            AnalyseTopicNetwork.run_network_b(time_period3, method3)
 
     ####################################################################################################################
 
@@ -73,12 +88,12 @@ class AnalyseTopicNetwork:
     # runs network a
     def run_network_a(time_period, method):
 
+        # variables to hold edge types
+        edge_type1, edge_type2, edge_type3, edge_type4, edge_type5 = 'uw', 'wn', 'wv', 'wnn', 'wnv'
         # variables to hold paths
         path1 = 'topics/current/network-a'
         path2 = 'topics/past/2000-2010/network-a'
         path3 = 'topics/past/1990-2000/network-a'
-        # variables to hold edge types
-        edge_type1, edge_type2, edge_type3, edge_type4, edge_type5 = 'uw', 'wn', 'wv', 'wnn', 'wnv'
 
         # if time period equals to current and method equals to louvain
         if time_period == 'current' and method == 'louvain':
@@ -180,12 +195,12 @@ class AnalyseTopicNetwork:
     # runs network b
     def run_network_b(time_period, method):
 
+        # variables to hold edge types
+        edge_type1, edge_type2, edge_type3 = 'uw', 'wn', 'wnn'
         # variables to hold paths
         path1 = 'topics/current/network-b'
         path2 = 'topics/past/2000-2010/network-b'
         path3 = 'topics/past/1990-2000/network-b'
-        # variables to hold edge types
-        edge_type1, edge_type2, edge_type3 = 'uw', 'wn', 'wnn'
 
         # if time period equals to current and method equals to louvain
         if time_period == 'current' and method == 'louvain':
@@ -273,85 +288,13 @@ class AnalyseTopicNetwork:
         if check_folders(edge_type, method, path) is False:
             # return
             return
-        '''
-        # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
-        # rename columns
-        network = na.rename_columns(network)
-        # print progress
-        # print('> Network columns renamed ({}/{}/{}).'.format(path, edge_type, method))
-
-        # add normalized node number column to network
-        network.vs['norm_num'] = na.norm_vals(network.vs['num'], 20, 60)
-        # add normalized node value column to network
-        network.vs['norm_val'] = na.norm_vals(network.vs['val'], 20, 60)
-        # add normalized edge weight column to network
-        network.es['norm_weight'] = na.norm_vals(network.es['weight'], 1, 10)
-        # add normalized edge value column to network
-        network.es['norm_val'] = na.norm_vals(network.es['val'], 1, 10)
-        # print progress
-        # print('> Network values normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # get edge type and print progress
-        na.get_edge_type(network, edge_type)
-        # print progress
-        # print('> Edge type retrieved. ({}/{}/{})'.format(path, edge_type, method))
-
-        # calculate network stats
-        na.calc_stats(network, edge_type, method, path)
-        # print progress
-        # print('> Stats calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # calculate modularity
-        communities = na.calc_modularity(network, edge_type, method, path, False)
-        # print progress
-        # print('> Network modularity calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot network
-        na.plot_network(network, edge_type, method, path)
-        # print progress
-        # print('> Network plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # check communities
-        if ca.check_communities(communities, edge_type, method, path):
-            # return
-            return
-
-        # add normalized node membership column to network
-        network.vs['membership'] = ca.norm_membership(communities.membership)
-        # print progress
-        # print('> Network membership normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save communities
-        ca.save_communities(network, communities, edge_type, method, path, 0)
-        # print progress
-        # print('> Communities saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community membership
-        ca.save_community_membership(network, edge_type, method, path)
-        # print progress
-        # print('> Community membership saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community topics and print progress
-        ca.save_community_topics(network, edge_type, method, communities, path)
-        # print progress
-        # print('> Community topics saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot community overview
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, True)
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, False)
-        # print progress
-        # print('> Community overview plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # analyse sub-communities
-        analyse_sub_communities(edge_type, method, path, len(glob.glob('../../data/networks/{}/communities/graphml/'
-                                                                       '{}/{}/community*'.format(path, edge_type,
-                                                                                                 method))) + 1)
+        # analyse network
+        na.analyse_network(edge_type, method, 'all', path)
 
         # print progress
         print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
-        '''
+
     ####################################################################################################################
 
     @staticmethod
@@ -362,81 +305,16 @@ class AnalyseTopicNetwork:
         if check_folders(edge_type, method, path) is False:
             # return
             return
-        '''
-        # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
-        # rename columns
-        network = na.rename_columns(network)
-        # print progress
-        # print('> Network columns renamed ({}/{}/{}).'.format(path, edge_type, method))
+        # variable to hold network and communities
+        network, communities = na.analyse_network(edge_type, method, 'half', path)
 
-        # add normalized node number column to network
-        network.vs['norm_num'] = na.norm_vals(network.vs['num'], 20, 60)
-        # add normalized edge weight column to network
-        network.es['norm_weight'] = na.norm_vals(network.es['weight'], 1, 10)
-        # print progress
-        # print('> Network values normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # get edge type and print progress
-        na.get_edge_type(network, edge_type)
-        # print progress
-        # print('> Edge type retrieved. ({}/{}/{})'.format(path, edge_type, method))
-
-        # calculate network stats
-        na.calc_stats(network, edge_type, method, path)
-        # print progress
-        # print('> Stats calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # calculate modularity
-        communities = na.calc_modularity(network, edge_type, method, path, False)
-        # print progress
-        # print('> Network modularity calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot network
-        na.plot_network(network, edge_type, method, path)
-        # print progress
-        # print('> Network plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # check communities
-        if ca.check_communities(communities, edge_type, method, path):
-            # return
-            return
-
-        # add normalized node membership column to network
-        network.vs['membership'] = ca.norm_membership(communities.membership)
-        # print progress
-        # print('> Network membership normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save communities
-        ca.save_communities(network, communities, edge_type, method, path, 0)
-        # print progress
-        # print('> Communities saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community membership
-        ca.save_community_membership(network, edge_type, method, path)
-        # print progress
-        # print('> Community membership saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community topics and print progress
-        ca.save_community_topics(network, edge_type, method, communities, path)
-        # print progress
-        # print('> Community topics saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot community overview
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, True)
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, False)
-        # print progress
-        # print('> Community overview plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # analyse sub-communities
-        analyse_sub_communities(edge_type, method, path, len(glob.glob('../../data/networks/{}/communities/graphml/'
-                                                                       '{}/{}/community*'.format(path, edge_type,
-                                                                                                 method))) + 1)
+        # analyse communities
+        ca.analyse_communities(network, communities, edge_type, method, 0, path)
 
         # print progress
         print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
-        '''
+
 
 ########################################################################################################################
 
@@ -446,40 +324,58 @@ class AnalyseResearcherNetwork:
 
     @staticmethod
     # runs other functions
-    def run():
+    def run(network, time_period):
 
-        # variables to hold methods
-        method1, method2, method3 = 'louvain', 'spinglass', 'fastgreedy'
         # variables to hold time periods
         time_period1, time_period2, time_period3 = 'current', 'past1', 'past2'
+        # variables to hold methods
+        method1, method2, method3 = 'louvain', 'spinglass', 'fastgreedy'
 
-        # run network a
-        AnalyseResearcherNetwork.run_network_a(time_period1, method1)
-        AnalyseResearcherNetwork.run_network_a(time_period1, method2)
-        AnalyseResearcherNetwork.run_network_a(time_period1, method3)
+        # if network equals to a and time period equals to time period 1
+        if network == 'a' and time_period == time_period1:
 
-        AnalyseResearcherNetwork.run_network_a(time_period2, method1)
-        AnalyseResearcherNetwork.run_network_a(time_period2, method2)
-        AnalyseResearcherNetwork.run_network_a(time_period2, method3)
+            # run network a
+            AnalyseResearcherNetwork.run_network_a(time_period1, method1)
+            AnalyseResearcherNetwork.run_network_a(time_period1, method2)
+            AnalyseResearcherNetwork.run_network_a(time_period1, method3)
 
-        AnalyseResearcherNetwork.run_network_a(time_period3, method1)
-        AnalyseResearcherNetwork.run_network_a(time_period3, method2)
-        AnalyseResearcherNetwork.run_network_a(time_period3, method3)
+        # if network equals to a and time period equals to time period 2
+        if network == 'a' and time_period == time_period2:
+
+            AnalyseResearcherNetwork.run_network_a(time_period2, method1)
+            AnalyseResearcherNetwork.run_network_a(time_period2, method2)
+            AnalyseResearcherNetwork.run_network_a(time_period2, method3)
+
+        # if network equals to a and time period equals to time period 3
+        if network == 'a' and time_period == time_period3:
+
+            AnalyseResearcherNetwork.run_network_a(time_period3, method1)
+            AnalyseResearcherNetwork.run_network_a(time_period3, method2)
+            AnalyseResearcherNetwork.run_network_a(time_period3, method3)
 
         ################################################################################################################
 
-        # run network b
-        AnalyseResearcherNetwork.run_network_b(time_period1, method1)
-        AnalyseResearcherNetwork.run_network_b(time_period1, method2)
-        AnalyseResearcherNetwork.run_network_b(time_period1, method3)
+        # if network equals to b and time period equals to time period 1
+        if network == 'b' and time_period == time_period1:
 
-        AnalyseResearcherNetwork.run_network_b(time_period2, method1)
-        AnalyseResearcherNetwork.run_network_b(time_period2, method2)
-        AnalyseResearcherNetwork.run_network_b(time_period2, method3)
+            # run network b
+            AnalyseResearcherNetwork.run_network_b(time_period1, method1)
+            AnalyseResearcherNetwork.run_network_b(time_period1, method2)
+            AnalyseResearcherNetwork.run_network_b(time_period1, method3)
 
-        AnalyseResearcherNetwork.run_network_b(time_period3, method1)
-        AnalyseResearcherNetwork.run_network_b(time_period3, method2)
-        AnalyseResearcherNetwork.run_network_b(time_period3, method3)
+        # if network equals to b and time period equals to time period 2
+        if network == 'b' and time_period == time_period2:
+
+            AnalyseResearcherNetwork.run_network_b(time_period2, method1)
+            AnalyseResearcherNetwork.run_network_b(time_period2, method2)
+            AnalyseResearcherNetwork.run_network_b(time_period2, method3)
+
+        # if network equals to b and time period equals to time period 3
+        if network == 'b' and time_period == time_period3:
+
+            AnalyseResearcherNetwork.run_network_b(time_period3, method1)
+            AnalyseResearcherNetwork.run_network_b(time_period3, method2)
+            AnalyseResearcherNetwork.run_network_b(time_period3, method3)
 
     ####################################################################################################################
 
@@ -487,36 +383,38 @@ class AnalyseResearcherNetwork:
     # runs network a
     def run_network_a(time_period, method):
 
+        # variables to hold edge types
+        edge_type1, edge_type2, edge_type3 = 'uw', 'wn', 'wnn'
+        # variable to hold threshold
+        threshold1 = 20
         # variables to hold paths
         path1 = 'researchers/current/network-a'
         path2 = 'researchers/past/2000-2010/network-a'
         path3 = 'researchers/past/1990-2000/network-a'
-        # variables to hold edge types
-        edge_type1, edge_type2, edge_type3 = 'uw', 'wn', 'wnn'
 
         # if time period equals to current and method equals to louvain
         if time_period == 'current' and method == 'louvain':
 
             # analyse network a using louvain
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path1)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path1)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path1)
 
         # if time period equals to current and method equals to spinglass
         if time_period == 'current' and method == 'spinglass':
 
             # analyse network a using spinglass
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path1)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path1)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path1)
 
         # if time period equals to current and method equals to fastgreedy
         if time_period == 'current' and method == 'fastgreedy':
 
             # analyse network a using fastgreedy
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path1)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path1)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path1)
 
         ################################################################################################################
 
@@ -524,25 +422,25 @@ class AnalyseResearcherNetwork:
         if time_period == 'past1' and method == 'louvain':
 
             # analyse network a using louvain
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path2)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path2)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path2)
 
         # if time period equals to past1 and method equals to spinglass
         if time_period == 'past1' and method == 'spinglass':
 
             # analyse network a using spinglass
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path2)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path2)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path2)
 
         # if time period equals to past1 and method equals to fastgreedy
         if time_period == 'past1' and method == 'fastgreedy':
 
             # analyse network a using fastgreedy
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path2)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path2)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path2)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path2)
 
         ################################################################################################################
 
@@ -550,25 +448,25 @@ class AnalyseResearcherNetwork:
         if time_period == 'past2' and method == 'louvain':
 
             # analyse network a using louvain
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path3)
 
         # if time period equals to past2 and method equals to spinglass
         if time_period == 'past2' and method == 'spinglass':
 
             # analyse network a using spinglass
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path3)
 
         # if time period equals to past2 and method equals to fastgreedy
         if time_period == 'past2' and method == 'fastgreedy':
 
             # analyse network a using fastgreedy
-            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, 20, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type1, method, threshold1, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type2, method, threshold1, path3)
+            AnalyseResearcherNetwork.analyse_network_a(edge_type3, method, threshold1, path3)
 
     ####################################################################################################################
 
@@ -576,42 +474,44 @@ class AnalyseResearcherNetwork:
     # runs network b
     def run_network_b(time_period, method):
 
+        # variables to hold edge types
+        edge_type1, edge_type2, edge_type3, edge_type4, edge_type5 = 'uw', 'wn', 'wv', 'wnn', 'wnv'
+        # variables to hold thresholds
+        threshold1, threshold2, threshold3 = 9, 30, 20
         # variables to hold paths
         path1 = 'researchers/current/network-b'
         path2 = 'researchers/past/2000-2010/network-b'
         path3 = 'researchers/past/1990-2000/network-b'
-        # variables to hold edge types
-        edge_type1, edge_type2, edge_type3, edge_type4, edge_type5 = 'uw', 'wn', 'wv', 'wnn', 'wnv'
 
         # if time period equals to current and method equals to louvain
         if time_period == 'current' and method == 'louvain':
 
             # analyse network a using louvain
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 9, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold1, path1)
 
         # if time period equals to current and method equals to spinglass
         if time_period == 'current' and method == 'spinglass':
 
             # analyse network a using spinglass
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 9, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold1, path1)
 
         # if time period equals to current and method equals to fastgreedy
         if time_period == 'current' and method == 'fastgreedy':
 
             # analyse network a using fastgreedy
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 9, path1)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 9, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold1, path1)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold1, path1)
 
         ################################################################################################################
 
@@ -619,31 +519,31 @@ class AnalyseResearcherNetwork:
         if time_period == 'past1' and method == 'louvain':
 
             # analyse network a using louvain
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 30, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold2, path2)
 
         # if time period equals to past1 and method equals to spinglass
         if time_period == 'past1' and method == 'spinglass':
 
             # analyse network a using spinglass
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 30, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold2, path2)
 
         # if time period equals to past1 and method equals to fastgreedy
         if time_period == 'past1' and method == 'fastgreedy':
 
             # analyse network a using fastgreedy
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 30, path2)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 30, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold2, path2)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold2, path2)
 
         ################################################################################################################
 
@@ -651,31 +551,31 @@ class AnalyseResearcherNetwork:
         if time_period == 'past2' and method == 'louvain':
 
             # analyse network a using louvain
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 20, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold3, path3)
 
         # if time period equals to past2 and method equals to spinglass
         if time_period == 'past2' and method == 'spinglass':
 
             # analyse network a using spinglass
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 20, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold3, path3)
 
         # if time period equals to past2 and method equals to fastgreedy
         if time_period == 'past2' and method == 'fastgreedy':
 
             # analyse network a using fastgreedy
-            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, 20, path3)
-            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, 20, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type1, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type2, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type3, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type4, method, threshold3, path3)
+            AnalyseResearcherNetwork.analyse_network_b(edge_type5, method, threshold3, path3)
 
     ####################################################################################################################
 
@@ -687,81 +587,16 @@ class AnalyseResearcherNetwork:
         if check_folders(edge_type, method, path) is False:
             # return
             return
-        '''
-        # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
-        # rename columns
-        network = na.rename_columns(network)
-        # print progress
-        # print('> Network columns renamed ({}/{}/{}).'.format(path, edge_type, method))
+        # variable to hold network and communities
+        network, communities = na.analyse_network(edge_type, method, 'all', path)
 
-        # add normalized node number column to network
-        network.vs['norm_num'] = na.norm_vals(network.vs['num'], 20, 60)
-        # add normalized edge weight column to network
-        network.es['norm_weight'] = na.norm_vals(network.es['weight'], 1, 10)
-        # print progress
-        # print('> Network values normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # get edge type and print progress
-        na.get_edge_type(network, edge_type)
-        # print progress
-        # print('> Edge type retrieved. ({}/{}/{})'.format(path, edge_type, method))
-
-        # calculate network stats
-        na.calc_stats(network, edge_type, method, path)
-        # print progress
-        # print('> Stats calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # calculate modularity
-        communities = na.calc_modularity(network, edge_type, method, path, False)
-        # print progress
-        # print('> Network modularity calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot network
-        na.plot_network(network, edge_type, method, path)
-        # print progress
-        # print('> Network plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # check communities
-        if ca.check_communities(communities, edge_type, method, path):
-            # return
-            return
-
-        # add normalized node membership column to network
-        network.vs['membership'] = ca.norm_membership(communities.membership)
-        # print progress
-        # print('> Network membership normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save communities
-        ca.save_communities(network, communities, edge_type, method, path, threshold)
-        # print progress
-        # print('> Communities saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community membership
-        ca.save_community_membership(network, edge_type, method, path)
-        # print progress
-        # print('> Community membership saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community topics and print progress
-        ca.save_community_topics(network, edge_type, method, communities, path)
-        # print progress
-        # print('> Community topics saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot community overview
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, True)
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, False)
-        # print progress
-        # print('> Community overview plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # analyse sub-communities
-        analyse_sub_communities(edge_type, method, path, len(glob.glob('../../data/networks/{}/communities/graphml/'
-                                                                       '{}/{}/community*'.format(path, edge_type,
-                                                                                                 method))) + 1)
+        # analyse communities
+        ca.analyse_communities(network, communities, edge_type, method, threshold, path)
 
         # print progress
         print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
-        '''
+
     ####################################################################################################################
 
     @staticmethod
@@ -772,85 +607,15 @@ class AnalyseResearcherNetwork:
         if check_folders(edge_type, method, path) is False:
             # return
             return
-        '''
-        # variable to hold network
-        network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
-        # rename columns
-        network = na.rename_columns(network)
-        # print progress
-        # print('> Network columns renamed ({}/{}/{}).'.format(path, edge_type, method))
+        # variable to hold network and communities
+        network, communities = na.analyse_network(edge_type, method, 'all', path)
 
-        # add normalized node number column to network
-        network.vs['norm_num'] = na.norm_vals(network.vs['num'], 20, 60)
-        # add normalized node value column to network
-        network.vs['norm_val'] = na.norm_vals(network.vs['val'], 20, 60)
-        # add normalized edge weight column to network
-        network.es['norm_weight'] = na.norm_vals(network.es['weight'], 1, 10)
-        # add normalized edge value column to network
-        network.es['norm_val'] = na.norm_vals(network.es['val'], 1, 10)
-        # print progress
-        # print('> Network values normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # get edge type and print progress
-        na.get_edge_type(network, edge_type)
-        # print progress
-        # print('> Edge type retrieved. ({}/{}/{})'.format(path, edge_type, method))
-
-        # calculate network stats
-        na.calc_stats(network, edge_type, method, path)
-        # print progress
-        # print('> Stats calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # calculate modularity
-        communities = na.calc_modularity(network, edge_type, method, path, False)
-        # print progress
-        # print('> Network modularity calculated ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot network
-        na.plot_network(network, edge_type, method, path)
-        # print progress
-        # print('> Network plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # check communities
-        if ca.check_communities(communities, edge_type, method, path):
-            # return
-            return
-
-        # add normalized node membership column to network
-        network.vs['membership'] = ca.norm_membership(communities.membership)
-        # print progress
-        # print('> Network membership normalized ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save communities
-        ca.save_communities(network, communities, edge_type, method, path, threshold)
-        # print progress
-        # print('> Communities saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community membership
-        ca.save_community_membership(network, edge_type, method, path)
-        # print progress
-        # print('> Community membership saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # save community topics and print progress
-        ca.save_community_topics(network, edge_type, method, communities, path)
-        # print progress
-        # print('> Community topics saved ({}/{}/{}).'.format(path, edge_type, method))
-
-        # plot community overview
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, True)
-        ca.plot_community_overview(network, edge_type, method, communities, communities.membership, path, False)
-        # print progress
-        # print('> Community overview plotted ({}/{}/{}).'.format(path, edge_type, method))
-
-        # analyse sub-communities
-        analyse_sub_communities(edge_type, method, path, len(glob.glob('../../data/networks/{}/communities/graphml/'
-                                                                       '{}/{}/community*'.format(path, edge_type,
-                                                                                                 method))) + 1)
+        # analyse communities
+        ca.analyse_communities(network, communities, edge_type, method, path, threshold)
 
         # print progress
         print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
-        '''
 
 
 ########################################################################################################################
@@ -880,6 +645,15 @@ def check_folders(edge_type, method, path):
         # set clean flag to false
         clean_flag = False
 
+    # check network robustness file
+    if glob.glob('../../data/networks/{}/network/txt/'
+                 '{}/{}/robustness.txt'.format(path, edge_type, method)):
+        # print error
+        print('> File(s) at path: {}/network/txt/'
+              '{}/{}/robustness.txt, already exist(s).'.format(path, edge_type, method))
+        # set clean flag to false
+        clean_flag = False
+
     # check network plot file
     if glob.glob('../../data/networks/{}/network/png/'
                  '{}/{}/network.png'.format(path, edge_type, method)):
@@ -893,10 +667,10 @@ def check_folders(edge_type, method, path):
 
     # check community modularity file
     if glob.glob('../../data/networks/{}/communities/txt/'
-                 '{}/{}/modularity.txt'.format(path, edge_type, method)):
+                 '{}/{}/modularity*.txt'.format(path, edge_type, method)):
         # print error
         print('> File(s) at path: {}/communities/txt/'
-              '{}/{}/modularity.txt, already exist(s).'.format(path, edge_type, method))
+              '{}/{}/modularity*.txt, already exist(s).'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
@@ -918,6 +692,15 @@ def check_folders(edge_type, method, path):
         # set clean flag to false
         clean_flag = False
 
+    # check community grants file
+    if glob.glob('../../data/networks/{}/communities/txt/'
+                 '{}/{}/grants*.txt'.format(path, edge_type, method)):
+        # print error
+        print('> File(s) at path: {}/communities/txt/'
+              '{}/{}/grants*.txt, already exist(s).'.format(path, edge_type, method))
+        # set clean flag to false
+        clean_flag = False
+
     # check community membership network file
     if glob.glob('../../data/networks/{}/network/graphml/'
                  '{}/{}/membership*.graphml'.format(path, edge_type, method)):
@@ -929,10 +712,10 @@ def check_folders(edge_type, method, path):
 
     # check community topics file
     if glob.glob('../../data/networks/{}/communities/txt/'
-                 '{}/{}/community_topics*.txt'.format(path, edge_type, method)):
+                 '{}/{}/topics*.txt'.format(path, edge_type, method)):
         # print error
         print('> File(s) at path: {}/communities/txt/'
-              '{}/{}/community_topics*.txt, already exist(s).'.format(path, edge_type, method))
+              '{}/{}/topics*.txt, already exist(s).'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
@@ -983,6 +766,15 @@ def check_folders(edge_type, method, path):
         # set clean flag to false
         clean_flag = False
 
+    # check sub-community grants files
+    if glob.glob('../../data/networks/{}/sub-communities/txt/'
+                 '{}/{}/grants*.txt'.format(path, edge_type, method)):
+        # print error
+        print('> File(s) at path: {}/sub-communities/txt/'
+              '{}/{}/grants*.txt, already exist(s).'.format(path, edge_type, method))
+        # set clean flag to false
+        clean_flag = False
+
     # check sub-community membership network files
     if glob.glob('../../data/networks/{}/communities/graphml/'
                  '{}/{}/membership*.graphml'.format(path, edge_type, method)):
@@ -994,10 +786,10 @@ def check_folders(edge_type, method, path):
 
     # check sub-community topics files
     if glob.glob('../../data/networks/{}/sub-communities/txt/'
-                 '{}/{}/sub_community_topics*.txt'.format(path, edge_type, method)):
+                 '{}/{}/topics*.txt'.format(path, edge_type, method)):
         # print error
         print('> File(s) at path: {}/sub-communities/txt/'
-              '{}/{}/sub_community_topics*.txt, already exist(s).'.format(path, edge_type, method))
+              '{}/{}/topics*.txt, already exist(s).'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
@@ -1031,74 +823,6 @@ def check_folders(edge_type, method, path):
     elif clean_flag is True:
         # print progress
         print('\n> Folders checked and found clean ({}/{}/{}).'.format(path, edge_type, method))
-
-
-########################################################################################################################
-
-
-# analyses sub-communities
-def analyse_sub_communities(edge_type, method, path, length):
-
-    # for i in range between 0 and length of communities
-    for i in range(1, length):
-
-        # variable to hold community
-        community = ig.Graph.Read_GraphML('../../data/networks/{}/communities/graphml/{}/{}/'
-                                          'community{}.graphml'.format(path, edge_type, method, i))
-
-        # rename columns
-        community = na.rename_columns(community)
-        # print progress
-        # print('> Community columns renamed. ({} - {})'.format(edge_type, method))
-
-        # plot communities
-        ca.plot_communities(community, edge_type, method, path, i)
-        # print progress
-        # print('> Communities plotted ({} - {}).'.format(edge_type, method))
-
-        # check community
-        if sca.check_sub_communities(community, edge_type, method, path, i):
-            # skip iteration
-            continue
-
-        # variable to hold sub-communities
-        sub_communities = na.calc_modularity(community, edge_type, method, path, i)
-        # print progress
-        # print('> Community modularity calculated ({} - {}).'.format(edge_type, method))
-
-        # check sub-communities
-        if sca.check_sub_communities(sub_communities, edge_type, method, path, i):
-            # skip iteration
-            continue
-
-        # normalize membership
-        community.vs['membership'] = ca.norm_membership(sub_communities.membership)
-        # print progress
-        # print('> Community membership normalized.'.format(edge_type, method))
-
-        # save sub-communities
-        sca.save_sub_communities(community, sub_communities, edge_type, method, path, i)
-        # print progress
-        # print('> Sub-communities saved ({} - {}).'.format(edge_type, method))
-
-        # save sub-community membership
-        sca.save_sub_community_membership(community, edge_type, method, path, i)
-        # print progress
-        # print('> Sub-community membership saved ({} - {}).'.format(edge_type, method))
-
-        # save sub-community topics
-        sca.save_sub_community_topics(community, sub_communities, edge_type, method, path, i)
-        # print progress
-        # print('> Sub-community topics saved ({} - {}).'.format(edge_type, method))
-
-        # plot sub-community overview
-        sca.plot_sub_community_overview(community, sub_communities, sub_communities.membership, edge_type, method,
-                                        path, i, True)
-        sca.plot_sub_community_overview(community, sub_communities, sub_communities.membership, edge_type, method,
-                                        path, i, False)
-
-        # print progress
-        # print('> Sub-community overview plotted ({} - {}).'.format(edge_type, method))
 
 
 ########################################################################################################################
@@ -1158,11 +882,25 @@ def visualise_in_graphistry(network):
 # main function
 def main():
 
-    # analyse topic network
-    AnalyseTopicNetwork.run()
+    # analyse topic network a
+    AnalyseTopicNetwork.run('a', 'current')
+    # AnalyseTopicNetwork.run('a', 'past1')
+    # AnalyseTopicNetwork.run('a', 'past2')
 
-    # analyse researcher network
-    AnalyseResearcherNetwork.run()
+    # analyse topic network b
+    # AnalyseTopicNetwork.run('b', 'current')
+    # AnalyseTopicNetwork.run('b', 'past1')
+    # AnalyseTopicNetwork.run('b', 'past2')
+
+    # analyse researcher network a
+    # AnalyseResearcherNetwork.run('a', 'current')
+    # AnalyseResearcherNetwork.run('a', 'past1')
+    # AnalyseResearcherNetwork.run('a', 'past2')
+
+    # analyse researcher network b
+    # AnalyseResearcherNetwork.run('b', 'current')
+    # AnalyseResearcherNetwork.run('b', 'past1')
+    # AnalyseResearcherNetwork.run('b', 'past2')
 
 
 ########################################################################################################################
