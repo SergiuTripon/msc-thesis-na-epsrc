@@ -534,11 +534,11 @@ function clean_folders() {
 # clean_topics 'a' 'past2'
 
 # clean_topics 'b' 'current'
-clean_topics 'b' 'past1'
+# clean_topics 'b' 'past1'
 # clean_topics 'b' 'past2'
 
 # clean researchers
-# clean_researchers 'a' 'current'
+clean_researchers 'a' 'current'
 # clean_researchers 'a' 'past1'
 # clean_researchers 'a' 'past2'
 

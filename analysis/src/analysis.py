@@ -586,7 +586,7 @@ class AnalyseResearcherNetwork:
             return
 
         # variable to hold network and communities
-        na.analyse_network(edge_type, method, 'all', threshold, path)
+        na.analyse_network(edge_type, method, 'half', threshold, path)
 
         # print progress
         print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
@@ -881,7 +881,7 @@ def main():
     # analyse topic network b
     # AnalyseTopicNetwork.run('b', 'current')
     # AnalyseTopicNetwork.run('b', 'past1')
-    AnalyseTopicNetwork.run('b', 'past2')
+    # AnalyseTopicNetwork.run('b', 'past2')
 
     # analyse researcher network a
     # AnalyseResearcherNetwork.run('a', 'current')
@@ -891,7 +891,7 @@ def main():
     # analyse researcher network b
     # AnalyseResearcherNetwork.run('b', 'current')
     # AnalyseResearcherNetwork.run('b', 'past1')
-    # AnalyseResearcherNetwork.run('b', 'past2')
+    AnalyseResearcherNetwork.run('b', 'past2')
 
 
 ########################################################################################################################
