@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_membership" for="node" attr.name="membership" attr.type="double"/>
+  <key id="v_norm_num" for="node" attr.name="norm_num" attr.type="double"/>
+  <key id="v_num" for="node" attr.name="num" attr.type="double"/>
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_membership">1</data>
+      <data key="v_norm_num">20</data>
+      <data key="v_num">4</data>
+      <data key="v_label">accelerator r&amp;d</data>
+      <data key="v_id">1</data>
+    </node>
+    <node id="n1">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">25</data>
+      <data key="v_num">55</data>
+      <data key="v_label">acoustics</data>
+      <data key="v_id">2</data>
+    </node>
+    <node id="n2">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">30</data>
+      <data key="v_num">105</data>
+      <data key="v_label">aerodynamics</data>
+      <data key="v_id">3</data>
+    </node>
+    <node id="n3">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">29</data>
+      <data key="v_num">94</data>
+      <data key="v_label">combustion</data>
+      <data key="v_id">43</data>
+    </node>
+    <node id="n4">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">28</data>
+      <data key="v_num">84</data>
+      <data key="v_label">fluid dynamics</data>
+      <data key="v_id">88</data>
+    </node>
+    <node id="n5">
+      <data key="v_membership">1</data>
+      <data key="v_norm_num">22</data>
+      <data key="v_num">24</data>
+      <data key="v_label">fusion</data>
+      <data key="v_id">93</data>
+    </node>
+    <node id="n6">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">27</data>
+      <data key="v_num">67</data>
+      <data key="v_label">high performance computing</data>
+      <data key="v_id">100</data>
+    </node>
+    <node id="n7">
+      <data key="v_membership">1</data>
+      <data key="v_norm_num">25</data>
+      <data key="v_num">49</data>
+      <data key="v_label">plasmas - laser &amp; fusion</data>
+      <data key="v_id">165</data>
+    </node>
+    <node id="n8">
+      <data key="v_membership">1</data>
+      <data key="v_norm_num">22</data>
+      <data key="v_num">22</data>
+      <data key="v_label">plasmas - technological</data>
+      <data key="v_id">166</data>
+    </node>
+    <edge source="n0" target="n7">
+      <data key="e_weight">2</data>
+    </edge>
+    <edge source="n0" target="n8">
+      <data key="e_weight">1</data>
+    </edge>
+    <edge source="n1" target="n2">
+      <data key="e_weight">35</data>
+    </edge>
+    <edge source="n1" target="n3">
+      <data key="e_weight">28</data>
+    </edge>
+    <edge source="n1" target="n4">
+      <data key="e_weight">7</data>
+    </edge>
+    <edge source="n1" target="n6">
+      <data key="e_weight">26</data>
+    </edge>
+    <edge source="n2" target="n3">
+      <data key="e_weight">35</data>
+    </edge>
+    <edge source="n2" target="n4">
+      <data key="e_weight">16</data>
+    </edge>
+    <edge source="n2" target="n5">
+      <data key="e_weight">9</data>
+    </edge>
+    <edge source="n2" target="n6">
+      <data key="e_weight">32</data>
+    </edge>
+    <edge source="n2" target="n7">
+      <data key="e_weight">9</data>
+    </edge>
+    <edge source="n2" target="n8">
+      <data key="e_weight">9</data>
+    </edge>
+    <edge source="n3" target="n4">
+      <data key="e_weight">33</data>
+    </edge>
+    <edge source="n3" target="n6">
+      <data key="e_weight">32</data>
+    </edge>
+    <edge source="n4" target="n6">
+      <data key="e_weight">9</data>
+    </edge>
+    <edge source="n5" target="n7">
+      <data key="e_weight">19</data>
+    </edge>
+    <edge source="n5" target="n8">
+      <data key="e_weight">15</data>
+    </edge>
+    <edge source="n7" target="n8">
+      <data key="e_weight">21</data>
+    </edge>
+  </graph>
+</graphml>

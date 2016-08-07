@@ -9,7 +9,7 @@ import igraph as ig
 
 
 # analyses network
-def analyse_network(edge_type, method, attr, path):
+def analyse_network(edge_type, method, attr, threshold, path):
 
     # variable to hold network
     network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
@@ -66,7 +66,7 @@ def analyse_network(edge_type, method, attr, path):
     # print('> Network plotted ({}/{}/{}).'.format(path, edge_type, method))
 
     # analyse communities
-    ca.analyse_communities(network, communities, edge_type, method, 0, path)
+    ca.analyse_communities(network, communities, edge_type, method, threshold, path)
 
 
 ########################################################################################################################

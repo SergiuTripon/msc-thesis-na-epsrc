@@ -182,7 +182,24 @@ def save_sub_communities(community, sub_communities, edge_type, method, count1, 
 def turn_edges_into_grants(sub_community, edge_type, method, count1, count2, path):
 
     # variable to hold temporary path
-    path_temp = path.replace('topics/', '').replace('/network-a', '')
+    path_temp = ''
+
+    # if first and last letter of path equals to t and a
+    if path[0] == 't' and path[-1] == 'a':
+        # set temporary path
+        path_temp = path.replace('topics/', '').replace('/network-a', '')
+    # if first and last letter of path equals to t and b
+    if path[0] == 't' and path[-1] == 'b':
+        # set temporary path
+        path_temp = path.replace('topics/', '').replace('/network-b', '')
+    # if first and last letter of path equals to r and a
+    if path[0] == 'r' and path[-1] == 'a':
+        # set temporary path
+        path_temp = path.replace('researchers/', '').replace('/network-a', '')
+    # if first and last letter of path equals to r and b
+    if path[0] == 'r' and path[-1] == 'b':
+        # set temporary path
+        path_temp = path.replace('researchers/', '').replace('/network-b', '')
 
     # variable to hold input file
     input_file = open(r'../../network-maker/output/grants/{}/info/grant_topics.pkl'.format(path_temp), 'rb')

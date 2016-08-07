@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_membership" for="node" attr.name="membership" attr.type="double"/>
+  <key id="v_norm_num" for="node" attr.name="norm_num" attr.type="double"/>
+  <key id="v_num" for="node" attr.name="num" attr.type="double"/>
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <key id="e_norm_weight" for="edge" attr.name="norm_weight" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">21</data>
+      <data key="v_num">8</data>
+      <data key="v_label">climate &amp; climate change</data>
+      <data key="v_id">36</data>
+    </node>
+    <node id="n1">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">21</data>
+      <data key="v_num">8</data>
+      <data key="v_label">land - ocean interactions</data>
+      <data key="v_id">112</data>
+    </node>
+    <node id="n2">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">20</data>
+      <data key="v_num">6</data>
+      <data key="v_label">macro-molecular delivery</data>
+      <data key="v_id">116</data>
+    </node>
+    <node id="n3">
+      <data key="v_membership">2</data>
+      <data key="v_norm_num">35</data>
+      <data key="v_num">152</data>
+      <data key="v_label">sustainable energy networks</data>
+      <data key="v_id">202</data>
+    </node>
+    <edge source="n0" target="n1">
+      <data key="e_weight">1</data>
+      <data key="e_norm_weight">1</data>
+    </edge>
+    <edge source="n0" target="n3">
+      <data key="e_weight">1</data>
+      <data key="e_norm_weight">1</data>
+    </edge>
+    <edge source="n1" target="n3">
+      <data key="e_weight">1</data>
+      <data key="e_norm_weight">1</data>
+    </edge>
+    <edge source="n2" target="n3">
+      <data key="e_weight">1</data>
+      <data key="e_norm_weight">1</data>
+    </edge>
+  </graph>
+</graphml>
