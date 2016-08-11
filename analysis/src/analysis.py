@@ -290,10 +290,10 @@ class AnalyseTopicNetwork:
             return
 
         # analyse network
-        na.analyse_network(edge_type, method, 'all', 0, path)
+        # na.analyse_network(edge_type, method, 'all', 0, path)
 
         # print progress
-        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
     ####################################################################################################################
 
@@ -307,10 +307,10 @@ class AnalyseTopicNetwork:
             return
 
         # variable to hold network and communities
-        na.analyse_network(edge_type, method, 'half', 0, path)
+        # na.analyse_network(edge_type, method, 'half', 0, path)
 
         # print progress
-        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
 
 ########################################################################################################################
@@ -586,10 +586,10 @@ class AnalyseResearcherNetwork:
             return
 
         # variable to hold network and communities
-        na.analyse_network(edge_type, method, 'half', threshold, path)
+        # na.analyse_network(edge_type, method, 'half', threshold, path)
 
         # print progress
-        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
     ####################################################################################################################
 
@@ -603,10 +603,10 @@ class AnalyseResearcherNetwork:
             return
 
         # variable to hold network and communities
-        na.analyse_network(edge_type, method, 'all', threshold, path)
+        # na.analyse_network(edge_type, method, 'all', threshold, path)
 
         # print progress
-        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
 
 ########################################################################################################################
@@ -618,187 +618,88 @@ def check_folders(edge_type, method, path):
     # variable to hold clean flag
     clean_flag = True
 
-    # check network stats file
-    if glob.glob('../../data/networks/{}/network/txt/'
-                 '{}/{}/stats.txt'.format(path, edge_type, method)):
-        # print error
-        print('\n> File(s) at path: {}/network/txt/'
-              '{}/{}/stats.txt, exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check network modularity file
-    if glob.glob('../../data/networks/{}/network/txt/'
-                 '{}/{}/modularity.txt'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/network/txt/'
-              '{}/{}/modularity.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check network robustness file
-    if glob.glob('../../data/networks/{}/network/txt/'
-                 '{}/{}/robustness.txt'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/network/txt/'
-              '{}/{}/robustness.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check network plot file
-    if glob.glob('../../data/networks/{}/network/png/'
-                 '{}/{}/network.png'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/network/png/'
-              '{}/{}/network.png, already exist(s).\n'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    ####################################################################################################################
-
-    # check community modularity file
-    if glob.glob('../../data/networks/{}/communities/txt/'
-                 '{}/{}/modularity*.txt'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/communities/txt/'
-              '{}/{}/modularity*.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check community network files
-    if glob.glob('../../data/networks/{}/communities/graphml/'
-                 '{}/{}/community*.graphml'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/communities/graphml/'
-              '{}/{}/community*.graphml, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check community stats file
-    if glob.glob('../../data/networks/{}/communities/txt/'
-                 '{}/{}/numbers*.txt'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/communities/txt/'
-              '{}/{}/numbers*.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check community grants file
-    if glob.glob('../../data/networks/{}/communities/txt/'
-                 '{}/{}/grants*.txt'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/communities/txt/'
-              '{}/{}/grants*.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check community membership network file
+    # check network graphml folder
     if glob.glob('../../data/networks/{}/network/graphml/'
-                 '{}/{}/membership*.graphml'.format(path, edge_type, method)):
+                 '{}/{}/*'.format(path, edge_type, method)):
         # print error
-        print('> File(s) at path: {}/network/graphml/'
-              '{}/{}/membership*.graphml, already exist(s).'.format(path, edge_type, method))
+        print('\n> Folder at path: {}/network/graphml/'
+              '{}/{}/, is not empty.'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
-    # check community topics file
-    if glob.glob('../../data/networks/{}/communities/txt/'
-                 '{}/{}/topics*.txt'.format(path, edge_type, method)):
+    # check network png folder
+    if glob.glob('../../data/networks/{}/network/png/'
+                 '{}/{}/*'.format(path, edge_type, method)):
         # print error
-        print('> File(s) at path: {}/communities/txt/'
-              '{}/{}/topics*.txt, already exist(s).'.format(path, edge_type, method))
+        print('> Folder at path: {}/network/png/'
+              '{}/{}/, is not empty.'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
-    # check community overview plot file
-    if glob.glob('../../data/networks/{}/communities/png/'
-                 '{}/{}/overview1*.png'.format(path, edge_type, method)):
+    # check network txt folder
+    if glob.glob('../../data/networks/{}/network/txt/'
+                 '{}/{}/*'.format(path, edge_type, method)):
         # print error
-        print('> File(s) at path: {}/communities/png/'
-              '{}/{}/overview1.png, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check community overview plot file
-    if glob.glob('../../data/networks/{}/communities/png/'
-                 '{}/{}/overview2*.png'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/communities/png/'
-              '{}/{}/overview2.png, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check communities plot files
-    if glob.glob('../../data/networks/{}/communities/png/'
-                 '{}/{}/community*.png'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/communities/png/'
-              '{}/{}/community*.png, already exist(s).\n'.format(path, edge_type, method))
+        print('> Folder at path: {}/network/txt/'
+              '{}/{}/, is not empty.\n'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
     ####################################################################################################################
 
-    # check sub-community network files
-    if glob.glob('../../data/networks/{}/sub-communities/graphml/'
-                 '{}/{}/community*.graphml'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/sub-communities/graphml/'
-              '{}/{}/community*.graphml, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check sub-community stats files
-    if glob.glob('../../data/networks/{}/sub-communities/txt/'
-                 '{}/{}/numbers*.txt'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/sub-communities/txt/'
-              '{}/{}/numbers*.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check sub-community grants files
-    if glob.glob('../../data/networks/{}/sub-communities/txt/'
-                 '{}/{}/grants*.txt'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/sub-communities/txt/'
-              '{}/{}/grants*.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check sub-community membership network files
+    # check communities graphml folder
     if glob.glob('../../data/networks/{}/communities/graphml/'
-                 '{}/{}/membership*.graphml'.format(path, edge_type, method)):
+                 '{}/{}/*'.format(path, edge_type, method)):
         # print error
-        print('> File(s) at path: {}/communities/graphml/'
-              '{}/{}/membership*.graphml, already exist(s).'.format(path, edge_type, method))
+        print('> Folder at path: {}/communities/graphml/'
+              '{}/{}/, is not empty.'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
-    # check sub-community topics files
+    # check communities png folder
+    if glob.glob('../../data/networks/{}/communities/png/'
+                 '{}/{}/*'.format(path, edge_type, method)):
+        # print error
+        print('> Folder at path: {}/communities/png/'
+              '{}/{}/, is not empty.'.format(path, edge_type, method))
+        # set clean flag to false
+        clean_flag = False
+
+    # check communities txt folder
+    if glob.glob('../../data/networks/{}/communities/txt/'
+                 '{}/{}/*'.format(path, edge_type, method)):
+        # print error
+        print('> Folder at path: {}/communities/txt/'
+              '{}/{}/, is not empty.\n'.format(path, edge_type, method))
+        # set clean flag to false
+        clean_flag = False
+
+    ####################################################################################################################
+
+    # check sub-communities graphml folder
+    if glob.glob('../../data/networks/{}/sub-communities/graphml/'
+                 '{}/{}/*'.format(path, edge_type, method)):
+        # print error
+        print('> Folder at path: {}/sub-communities/graphml/'
+              '{}/{}/, is not empty.'.format(path, edge_type, method))
+        # set clean flag to false
+        clean_flag = False
+
+    # check sub-communities png folder
+    if glob.glob('../../data/networks/{}/sub-communities/png/'
+                 '{}/{}/*'.format(path, edge_type, method)):
+        # print error
+        print('> Folder at path: {}/sub-communities/png/'
+              '{}/{}/, is not empty.'.format(path, edge_type, method))
+        # set clean flag to false
+        clean_flag = False
+
+    # check sub-communities txt folder
     if glob.glob('../../data/networks/{}/sub-communities/txt/'
-                 '{}/{}/topics*.txt'.format(path, edge_type, method)):
+                 '{}/{}/*'.format(path, edge_type, method)):
         # print error
-        print('> File(s) at path: {}/sub-communities/txt/'
-              '{}/{}/topics*.txt, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check sub-community overview plot files
-    if glob.glob('../../data/networks/{}/sub-communities/png/'
-                 '{}/{}/overview1*.png'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/sub-communities/png/'
-              '{}/{}/overview1*.png, already exist(s).'.format(path, edge_type, method))
-        # set clean flag to false
-        clean_flag = False
-
-    # check sub-community overview plot files
-    if glob.glob('../../data/networks/{}/sub-communities/png/'
-                 '{}/{}/overview2*.png'.format(path, edge_type, method)):
-        # print error
-        print('> File(s) at path: {}/sub-communities/png/'
-              '{}/{}/overview2*.png, already exist(s).'.format(path, edge_type, method))
+        print('> Folder at path: {}/sub-communities/txt/'
+              '{}/{}/, is not empty.'.format(path, edge_type, method))
         # set clean flag to false
         clean_flag = False
 
@@ -874,23 +775,23 @@ def visualise_in_graphistry(network):
 def main():
 
     # analyse topic network a
-    # AnalyseTopicNetwork.run('a', 'current')
-    # AnalyseTopicNetwork.run('a', 'past1')
-    # AnalyseTopicNetwork.run('a', 'past2')
+    AnalyseTopicNetwork.run('a', 'current')
+    AnalyseTopicNetwork.run('a', 'past1')
+    AnalyseTopicNetwork.run('a', 'past2')
 
     # analyse topic network b
-    # AnalyseTopicNetwork.run('b', 'current')
-    # AnalyseTopicNetwork.run('b', 'past1')
-    # AnalyseTopicNetwork.run('b', 'past2')
+    AnalyseTopicNetwork.run('b', 'current')
+    AnalyseTopicNetwork.run('b', 'past1')
+    AnalyseTopicNetwork.run('b', 'past2')
 
     # analyse researcher network a
-    # AnalyseResearcherNetwork.run('a', 'current')
-    # AnalyseResearcherNetwork.run('a', 'past1')
-    # AnalyseResearcherNetwork.run('a', 'past2')
+    AnalyseResearcherNetwork.run('a', 'current')
+    AnalyseResearcherNetwork.run('a', 'past1')
+    AnalyseResearcherNetwork.run('a', 'past2')
 
     # analyse researcher network b
-    # AnalyseResearcherNetwork.run('b', 'current')
-    # AnalyseResearcherNetwork.run('b', 'past1')
+    AnalyseResearcherNetwork.run('b', 'current')
+    AnalyseResearcherNetwork.run('b', 'past1')
     AnalyseResearcherNetwork.run('b', 'past2')
 
 

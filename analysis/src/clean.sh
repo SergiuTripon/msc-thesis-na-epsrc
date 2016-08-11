@@ -459,66 +459,36 @@ function clean_researchers_b() {
 # cleans folders
 function clean_folders() {
 
-    # delete network stats file
-    rm -rf ../../data/networks/$1/network/txt/$2/$3/stats.txt
-    # delete network modularity file
-    rm -rf ../../data/networks/$1/network/txt/$2/$3/modularity.txt
-        # delete network robustness file
-    rm -rf ../../data/networks/$1/network/txt/$2/$3/robustness.txt
-    # delete network plot file
-    rm -rf ../../data/networks/$1/network/png/$2/$3/network.png
+    # clean network graphml folder
+    rm -rf ../../data/networks/$1/network/graphml/$2/$3/*
+
+    # clean network png folder
+    rm -rf ../../data/networks/$1/network/png/$2/$3/*
+
+    # clean network txt folder
+    rm -rf ../../data/networks/$1/network/txt/$2/$3/*
 
     ####################################################################################################################
 
-    # delete community modularity file
-    rm -rf ../../data/networks/$1/communities/txt/$2/$3/modularity*.txt
+    # clean communities graphml folder
+    rm -rf ../../data/networks/$1/communities/graphml/$2/$3/*
 
-    # delete community network files
-    rm -rf ../../data/networks/$1/communities/graphml/$2/$3/community*.graphml
+    # clean communities png folder
+    rm -rf ../../data/networks/$1/communities/png/$2/$3/*
 
-    # delete community numbers file
-    rm -rf ../../data/networks/$1/communities/txt/$2/$3/numbers*.txt
+    # clean communities txt folder
+    rm -rf ../../data/networks/$1/communities/txt/$2/$3/*
 
-    # delete community grants file
-    rm -rf ../../data/networks/$1/communities/txt/$2/$3/grants*.txt
+    ####################################################################################################################
 
-    # delete community membership network file
-    rm -rf ../../data/networks/$1/network/graphml/$2/$3/membership*.graphml
+    # clean sub-communities graphml folder
+    rm -rf ../../data/networks/$1/sub-communities/graphml/$2/$3/*
 
-    # delete community topics file file
-    rm -rf ../../data/networks/$1/communities/txt/$2/$3/topics*.txt
+    # clean sub-communities png folder
+    rm -rf ../../data/networks/$1/sub-communities/png/$2/$3/*
 
-    # delete community overview plot file
-    rm -rf ../../data/networks/$1/communities/png/$2/$3/overview1*.png
-
-    # delete community overview plot file
-    rm -rf ../../data/networks/$1/communities/png/$2/$3/overview2*.png
-
-    # delete communities plot files
-    rm -rf ../../data/networks/$1/communities/png/$2/$3/community*.png
-
-####################################################################################################################
-
-    # delete sub-community network files
-    rm -rf ../../data/networks/$1/sub-communities/graphml/$2/$3/community*.graphml
-
-    # delete sub-community stats files
-    rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/numbers*.txt
-
-    # delete sub-community grants files
-    rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/grants*.txt
-
-    # delete sub-community membership network files
-    rm -rf ../../data/networks/$1/communities/graphml/$2/$3/membership*.graphml
-
-    # delete sub-community topics files
-    rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/topics*.txt
-
-    # delete sub-community overview plot file
-    rm -rf ../../data/networks/$1/sub-communities/png/$2/$3/overview1*.png
-
-    # delete sub-community overview plot file
-    rm -rf ../../data/networks/$1/sub-communities/png/$2/$3/overview2*.png
+    # clean sub-communities txt folder
+    rm -rf ../../data/networks/$1/sub-communities/txt/$2/$3/*
 
     ####################################################################################################################
 
@@ -529,19 +499,19 @@ function clean_folders() {
 ########################################################################################################################
 
 # clean topics
-# clean_topics 'a' 'current'
-# clean_topics 'a' 'past1'
-# clean_topics 'a' 'past2'
+clean_topics 'a' 'current'
+clean_topics 'a' 'past1'
+clean_topics 'a' 'past2'
 
-# clean_topics 'b' 'current'
-# clean_topics 'b' 'past1'
-# clean_topics 'b' 'past2'
+clean_topics 'b' 'current'
+clean_topics 'b' 'past1'
+clean_topics 'b' 'past2'
 
 # clean researchers
 clean_researchers 'a' 'current'
-# clean_researchers 'a' 'past1'
-# clean_researchers 'a' 'past2'
+clean_researchers 'a' 'past1'
+clean_researchers 'a' 'past2'
 
-# clean_researchers 'b' 'current'
-# clean_researchers 'b' 'past1'
-# clean_researchers 'b' 'past2'
+clean_researchers 'b' 'current'
+clean_researchers 'b' 'past1'
+clean_researchers 'b' 'past2'
