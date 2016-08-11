@@ -290,10 +290,10 @@ class AnalyseTopicNetwork:
             return
 
         # analyse network
-        # na.analyse_network(edge_type, method, 'all', 0, path)
+        na.analyse_network(edge_type, method, 'all', 0, path)
 
         # print progress
-        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
     ####################################################################################################################
 
@@ -307,10 +307,10 @@ class AnalyseTopicNetwork:
             return
 
         # variable to hold network and communities
-        # na.analyse_network(edge_type, method, 'half', 0, path)
+        na.analyse_network(edge_type, method, 'half', 0, path)
 
         # print progress
-        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
 
 ########################################################################################################################
@@ -586,10 +586,10 @@ class AnalyseResearcherNetwork:
             return
 
         # variable to hold network and communities
-        # na.analyse_network(edge_type, method, 'half', threshold, path)
+        na.analyse_network(edge_type, method, 'half', threshold, path)
 
         # print progress
-        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
     ####################################################################################################################
 
@@ -603,10 +603,10 @@ class AnalyseResearcherNetwork:
             return
 
         # variable to hold network and communities
-        # na.analyse_network(edge_type, method, 'all', threshold, path)
+        na.analyse_network(edge_type, method, 'all', threshold, path)
 
         # print progress
-        # print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
+        print('> Network, communities and sub-communities analysed ({}/{}/{}).'.format(path, edge_type, method))
 
 
 ########################################################################################################################
@@ -776,23 +776,23 @@ def main():
 
     # analyse topic network a
     AnalyseTopicNetwork.run('a', 'current')
-    AnalyseTopicNetwork.run('a', 'past1')
-    AnalyseTopicNetwork.run('a', 'past2')
+    # AnalyseTopicNetwork.run('a', 'past1')
+    # AnalyseTopicNetwork.run('a', 'past2')
 
     # analyse topic network b
-    AnalyseTopicNetwork.run('b', 'current')
-    AnalyseTopicNetwork.run('b', 'past1')
-    AnalyseTopicNetwork.run('b', 'past2')
+    # AnalyseTopicNetwork.run('b', 'current')
+    # AnalyseTopicNetwork.run('b', 'past1')
+    # AnalyseTopicNetwork.run('b', 'past2')
 
     # analyse researcher network a
-    AnalyseResearcherNetwork.run('a', 'current')
-    AnalyseResearcherNetwork.run('a', 'past1')
-    AnalyseResearcherNetwork.run('a', 'past2')
+    # AnalyseResearcherNetwork.run('a', 'current')
+    # AnalyseResearcherNetwork.run('a', 'past1')
+    # AnalyseResearcherNetwork.run('a', 'past2')
 
     # analyse researcher network b
-    AnalyseResearcherNetwork.run('b', 'current')
-    AnalyseResearcherNetwork.run('b', 'past1')
-    AnalyseResearcherNetwork.run('b', 'past2')
+    # AnalyseResearcherNetwork.run('b', 'current')
+    # AnalyseResearcherNetwork.run('b', 'past1')
+    # AnalyseResearcherNetwork.run('b', 'past2')
 
 
 ########################################################################################################################

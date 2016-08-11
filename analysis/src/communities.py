@@ -79,6 +79,7 @@ def check_communities(communities, edge_type, method, path):
 
 ########################################################################################################################
 
+
 # normalizes membership
 def norm_membership(membership):
 
@@ -94,6 +95,18 @@ def norm_membership(membership):
 
 # saves communities
 def save_communities(network, communities, edge_type, method, threshold, path):
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/communities/txt/{}/{}/'
+                       'grants.txt'.format(path, edge_type, method), mode='a')
+    # write header to file
+    output_file.write('> Number and value of grants in the community\n\n')
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/communities/txt/'
+                       '{}/{}/numbers.txt'.format(path, edge_type, method), mode='a')
+    # write header to file
+    output_file.write('> Community size of each community\n\n')
 
     # variable to hold unique grants
     unique_grants = OrderedDict()
@@ -120,12 +133,12 @@ def save_communities(network, communities, edge_type, method, threshold, path):
             # write sub-graph structure to file
             sub_graph.write_graphml(output_file)
 
-            # variable to hold stats file
-            stats_file = open('../../data/networks/{}/communities/txt/'
-                              '{}/{}/numbers.txt'.format(path, edge_type, method), mode='a')
+            # variable to hold output file
+            output_file = open('../../data/networks/{}/communities/txt/'
+                               '{}/{}/numbers.txt'.format(path, edge_type, method), mode='a')
 
             # write stat to file
-            stats_file.write('Community {}: {}\n'.format(count1, len(community)))
+            output_file.write('- Community {}: {}\n'.format(count1, len(community)))
 
             ############################################################################################################
 
@@ -158,6 +171,8 @@ def save_communities(network, communities, edge_type, method, threshold, path):
 
             # check community
             if sca.check_sub_communities(sub_graph, edge_type, method, count1, path):
+                # increment count1
+                count1 += 1
                 # return
                 continue
 
@@ -185,7 +200,7 @@ def save_communities(network, communities, edge_type, method, threshold, path):
     output_file = open('../../data/networks/{}/communities/txt/{}/{}/'
                        'grants.txt'.format(path, edge_type, method), mode='a')
     # write grant number and value to file
-    output_file.write('\n> Total:          {:>4d} {}\n'.format(total_number, currency(total_value, grouping=True)))
+    output_file.write('\n- Total:          {:>4d} {}\n'.format(total_number, currency(total_value, grouping=True)))
 
     # variable to hold total number
     total_number = len(unique_grants)
@@ -196,7 +211,7 @@ def save_communities(network, communities, edge_type, method, threshold, path):
     output_file = open('../../data/networks/{}/communities/txt/{}/{}/'
                        'grants.txt'.format(path, edge_type, method), mode='a')
     # write grant number and value to file
-    output_file.write('> Total (unique): {:>4d} {}'.format(total_number, currency(total_value, grouping=True)))
+    output_file.write('- Total (unique): {:>4d} {}'.format(total_number, currency(total_value, grouping=True)))
 
 
 ########################################################################################################################
@@ -252,7 +267,7 @@ def turn_edges_into_grants(community, edge_type, method, count1, path):
     output_file = open('../../data/networks/{}/communities/txt/{}/{}/'
                        'grants.txt'.format(path, edge_type, method), mode='a')
     # write grant number and value to file
-    output_file.write('> Community {}:    {:>4d} {}\n'.format(count1, number, currency(value, grouping=True)))
+    output_file.write('- Community {}:    {:>4d} {}\n'.format(count1, number, currency(value, grouping=True)))
 
     # return number and value
     return grants, number, value
@@ -264,56 +279,112 @@ def turn_edges_into_grants(community, edge_type, method, count1, path):
 # calculate modularity
 def calc_modularity(community, edge_type, method, count1, path):
 
-    # variable to hold infomap communities
-    infomap_c = community.community_infomap(edge_weights='norm_weight')
-    # variable to hold infomap modularity
-    infomap_m = infomap_c.modularity
+    # if community is weighted
+    if community.is_weighted():
 
-    spinglass_c = ig.VertexClustering
-    spinglass_m = float
+        # variable to hold infomap communities
+        infomap_c = community.community_infomap(edge_weights='weight')
+        # variable to hold infomap modularity
+        infomap_m = infomap_c.modularity
 
-    # if network is connected
-    if community.is_connected():
-        # variable to hold spinglass communities
-        spinglass_c = community.community_spinglass(weights='norm_weight')
-        # variable to hold spinglass modularity
-        spinglass_m = spinglass_c.modularity
+        spinglass_c = ig.VertexClustering
+        spinglass_m = float
 
-    # variable to hold louvain communities
-    louvain_c = community.community_multilevel(weights='norm_weight')
-    # variable to hold louvain modularity
-    louvain_m = louvain_c.modularity
+        # if network is connected
+        if community.is_connected():
+            # variable to hold spinglass communities
+            spinglass_c = community.community_spinglass(weights='weight')
+            # variable to hold spinglass modularity
+            spinglass_m = spinglass_c.modularity
 
-    # variable to hold label propagation communities
-    label_prop_c = community.community_label_propagation(weights='norm_weight')
-    # variable to hold label propagation modularity
-    label_prop_m = label_prop_c.modularity
+        # variable to hold louvain communities
+        louvain_c = community.community_multilevel(weights='weight')
+        # variable to hold louvain modularity
+        louvain_m = louvain_c.modularity
 
-    # variable to hold leading eigenvector communities
-    leading_eigen_c = community.community_leading_eigenvector(weights='norm_weight')
-    # variable to hold leading eigenvector modularity
-    leading_eigen_m = leading_eigen_c.modularity
+        # variable to hold label propagation communities
+        label_prop_c = community.community_label_propagation(weights='weight')
+        # variable to hold label propagation modularity
+        label_prop_m = label_prop_c.modularity
 
-    # variable to hold walktrap communities
-    walktrap_c = community.community_walktrap(weights='norm_weight', steps=4).as_clustering()
-    # variable to hold walktrap modularity
-    walktrap_m = walktrap_c.modularity
+        # variable to hold leading eigenvector communities
+        leading_eigen_c = community.community_leading_eigenvector(weights='weight')
+        # variable to hold leading eigenvector modularity
+        leading_eigen_m = leading_eigen_c.modularity
 
-    # variable to hold fast greedy communities
-    fastgreedy_c = community.community_fastgreedy(weights='norm_weight').as_clustering()
-    # variable to hold fast greedy modularity
-    fastgreedy_m = fastgreedy_c.modularity
+        # variable to hold walktrap communities
+        walktrap_c = community.community_walktrap(weights='weight', steps=4).as_clustering()
+        # variable to hold walktrap modularity
+        walktrap_m = walktrap_c.modularity
 
-    edge_betweenness_c = ig.VertexClustering
-    edge_betweenness_m = float
+        # variable to hold fast greedy communities
+        fastgreedy_c = community.community_fastgreedy(weights='weight').as_clustering()
+        # variable to hold fast greedy modularity
+        fastgreedy_m = fastgreedy_c.modularity
 
-    # if network is connected and number of components is less than or equal to 2
-    if community.is_connected() or len(community.components()) <= 2:
-        # variable to hold edge betweenness communities
-        edge_betweenness_c = community.community_edge_betweenness(directed=False,
-                                                                  weights='norm_weight').as_clustering()
-        # variable to hold edge betweenness modularity
-        edge_betweenness_m = edge_betweenness_c.modularity
+        edge_betweenness_c = ig.VertexClustering
+        edge_betweenness_m = float
+
+        # if network is connected and number of components is less than or equal to 2
+        if community.is_connected() or len(community.components()) <= 2:
+            # variable to hold edge betweenness communities
+            edge_betweenness_c = community.community_edge_betweenness(directed=False,
+                                                                      weights='weight').as_clustering()
+            # variable to hold edge betweenness modularity
+            edge_betweenness_m = edge_betweenness_c.modularity
+
+    # if community is not weighted
+    else:
+
+        # variable to hold infomap communities
+        infomap_c = community.community_infomap()
+        # variable to hold infomap modularity
+        infomap_m = infomap_c.modularity
+
+        spinglass_c = ig.VertexClustering
+        spinglass_m = float
+
+        # if network is connected
+        if community.is_connected():
+            # variable to hold spinglass communities
+            spinglass_c = community.community_spinglass()
+            # variable to hold spinglass modularity
+            spinglass_m = spinglass_c.modularity
+
+        # variable to hold louvain communities
+        louvain_c = community.community_multilevel()
+        # variable to hold louvain modularity
+        louvain_m = louvain_c.modularity
+
+        # variable to hold label propagation communities
+        label_prop_c = community.community_label_propagation()
+        # variable to hold label propagation modularity
+        label_prop_m = label_prop_c.modularity
+
+        # variable to hold leading eigenvector communities
+        leading_eigen_c = community.community_leading_eigenvector()
+        # variable to hold leading eigenvector modularity
+        leading_eigen_m = leading_eigen_c.modularity
+
+        # variable to hold walktrap communities
+        walktrap_c = community.community_walktrap(steps=4).as_clustering()
+        # variable to hold walktrap modularity
+        walktrap_m = walktrap_c.modularity
+
+        # variable to hold fast greedy communities
+        fastgreedy_c = community.community_fastgreedy().as_clustering()
+        # variable to hold fast greedy modularity
+        fastgreedy_m = fastgreedy_c.modularity
+
+        edge_betweenness_c = ig.VertexClustering
+        edge_betweenness_m = float
+
+        # if network is connected and number of components is less than or equal to 2
+        if community.is_connected() or len(community.components()) <= 2:
+            # variable to hold edge betweenness communities
+            edge_betweenness_c = community.community_edge_betweenness(directed=False).as_clustering()
+            # variable to hold edge betweenness modularity
+            edge_betweenness_m = edge_betweenness_c.modularity
 
     ####################################################################################################################
 
@@ -324,7 +395,7 @@ def calc_modularity(community, edge_type, method, count1, path):
     # write modularity to file
     # if count1 equals to 1
     if count1 == 1:
-        output_file.write('> Modularity scores and community sizes\n\n')
+        output_file.write('> Community sizes and Modularity scores\n\n')
     output_file.write('> Community {}\n\n'.format(count1))
     output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
 
@@ -365,24 +436,6 @@ def calc_modularity(community, edge_type, method, count1, path):
 # saves community membership
 def save_community_membership(network, edge_type, method, path):
 
-    # if val in edge attributes
-    if 'val' in network.es.attributes():
-        # delete edge value attribute
-        del network.es['val']
-        # add edge value attribute
-        network.es['val'] = network.es['norm_val']
-        # delete edge normalized value attribute
-        del network.es['norm_val']
-
-    # if weight in edge attributes
-    if 'weight' in network.es.attributes():
-        # delete edge weight attribute
-        del network.es['weight']
-        # add edge weight attribute
-        network.es['weight'] = network.es['norm_weight']
-        # delete edge normalized weight attribute
-        del network.es['norm_weight']
-
     # variable to hold output file
     output_file = open('../../data/networks/{}/network/graphml/'
                        '{}/{}/membership.graphml'.format(path, edge_type, method), mode='w')
@@ -400,6 +453,8 @@ def save_community_topics(network, edge_type, method, communities, path):
     # variable to hold output file
     output_file = open('../../data/networks/{}/communities/txt/'
                        '{}/{}/topics.txt'.format(path, edge_type, method), mode='a')
+    # write header to file
+    output_file.write('> Topics of each sub-community\n\n')
 
     # for community in range between 1 and length of communities + 1
     for community in range(1, len(communities) + 1):
@@ -448,13 +503,10 @@ def plot_community_overview(network, edge_type, method, communities, membership,
         # delete edges
         network_copy.delete_edges(edges)
 
-        # add normalized edge weight column to network
-        network.es['norm_weight'] = network.es['weight']
-
         # variable to hold visual style
         visual_style = {'vertex_label': None,
-                        'vertex_size': network.vs['norm_num'],
-                        'edge_width': network.es['norm_weight'],
+                        'vertex_size': network.vs['plot_size'],
+                        'edge_width': network.es['plot_weight'],
                         'layout': network_copy.layout('kk'),
                         'bbox': (1000, 1000),
                         'margin': 40}
@@ -480,13 +532,10 @@ def plot_community_overview(network, edge_type, method, communities, membership,
         # delete edges
         network.delete_edges(edges)
 
-        # add normalized edge weight column to network
-        network.es['norm_weight'] = network.es['weight']
-
         # variable to hold visual style
         visual_style = {'vertex_label': None,
-                        'vertex_size': network.vs['norm_num'],
-                        'edge_width': network.es['norm_weight'],
+                        'vertex_size': network.vs['plot_size'],
+                        'edge_width': network.es['plot_weight'],
                         'layout': 'kk',
                         'bbox': (1000, 1000),
                         'margin': 40}
@@ -505,8 +554,8 @@ def plot_communities(community, edge_type, method, count1, path):
     # variable to hold visual style
     visual_style = {'vertex_label': None,
                     'vertex_color': 'blue',
-                    'vertex_size': community.vs['norm_num'],
-                    'edge_width': community.es['norm_weight'],
+                    'vertex_size': community.vs['plot_size'],
+                    'edge_width': community.es['plot_weight'],
                     'layout': 'kk',
                     'bbox': (1000, 1000),
                     'margin': 40}

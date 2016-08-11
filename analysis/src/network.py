@@ -4,6 +4,9 @@ import communities as ca
 
 # third-party library modules
 import igraph as ig
+from pickle import load
+from collections import OrderedDict
+from locale import setlocale, LC_ALL, currency
 
 ########################################################################################################################
 
@@ -43,6 +46,11 @@ def analyse_network(edge_type, method, attr, threshold, path):
     # print progress
     # print('> Edge type retrieved. ({}/{}/{})'.format(path, edge_type, method))
 
+    # turn edges into grants
+    turn_edges_into_grants(network, edge_type, method, path)
+    # print progress
+    # print('> Edges turned into grants ({}/{}/{}).'.format(path, edge_type, method))
+
     # calculate network stats
     calc_stats(network, edge_type, method, path)
     # print progress
@@ -53,8 +61,8 @@ def analyse_network(edge_type, method, attr, threshold, path):
     # print progress
     # print('> Network modularity calculated ({}/{}/{}).'.format(path, edge_type, method))
 
-    # if edge type equals to wn or wnn or wnv
-    if edge_type == 'wn' or edge_type == 'wnn' or edge_type == 'wnv':
+    # if edge type does not equal to uw
+    if edge_type != 'uw':
         # check robustness
         check_robustness(network, edge_type, method, path)
         # print progress
@@ -162,29 +170,54 @@ def norm_vals(vals, new_min, new_max):
 
 ########################################################################################################################
 
+
 # gets edge type
 def get_edge_type(network, edge_type):
 
     # if edge type equals to uw
     if edge_type == 'uw':
-        # add normalized edge weight attribute
-        network.es['norm_weight'] = 1.0
+        # delete edge weight attribute
+        del network.es['weight']
+        # add node plot size attribute
+        network.vs['plot_size'] = 30.0
+        # add edge plot weight attribute
+        network.es['plot_weight'] = 1.0
     # if edge type equals to wn
     elif edge_type == 'wn':
-        # add normalized edge weight attribute
-        network.es['norm_weight'] = network.es['weight']
+        # add node plot size attribute
+        network.vs['plot_size'] = network.vs['norm_num']
+        # add edge plot weight attribute
+        network.es['plot_weight'] = network.es['norm_weight']
     # if edge type equals to wv
     elif edge_type == 'wv':
-        # add normalized edge weight attribute
-        network.es['norm_weight'] = network.es['val']
+        # delete edge weight attribute
+        del network.es['weight']
+        # add edge weight attribute
+        network.es['weight'] = network.es['val']
+        # add node plot size attribute
+        network.vs['plot_size'] = network.vs['norm_val']
+        # add edge plot weight attribute
+        network.es['plot_weight'] = network.es['norm_val']
     # if edge type equals to wnn
     elif edge_type == 'wnn':
-        # add normalized edge weight attribute
-        network.es['norm_weight'] = network.es['norm_weight']
+        # delete edge weight attribute
+        del network.es['weight']
+        # add edge weight attribute
+        network.es['weight'] = network.es['norm_weight']
+        # add node plot size attribute
+        network.vs['plot_size'] = network.vs['norm_num']
+        # add edge plot weight attribute
+        network.es['plot_weight'] = network.es['norm_weight']
     # if edge type equals to wnv
     elif edge_type == 'wnv':
-        # add normalized edge weight attribute
-        network.es['norm_weight'] = network.es['norm_val']
+        # delete edge weight attribute
+        del network.es['weight']
+        # add edge weight attribute
+        network.es['weight'] = network.es['norm_val']
+        # add node plot size attribute
+        network.vs['plot_size'] = network.vs['norm_val']
+        # add edge plot weight attribute
+        network.es['plot_weight'] = network.es['norm_val']
 
     # return network
     return network
@@ -193,46 +226,114 @@ def get_edge_type(network, edge_type):
 ########################################################################################################################
 
 
+# turns edges into grants
+def turn_edges_into_grants(network, edge_type, method, path):
+
+    # variable to hold temporary path
+    path_temp = ''
+
+    # if first and last letter of path equals to t and a
+    if path[0] == 't' and path[-1] == 'a':
+        # set temporary path
+        path_temp = path.replace('topics/', '').replace('/network-a', '')
+    # if first and last letter of path equals to t and b
+    if path[0] == 't' and path[-1] == 'b':
+        # set temporary path
+        path_temp = path.replace('topics/', '').replace('/network-b', '')
+    # if first and last letter of path equals to r and a
+    if path[0] == 'r' and path[-1] == 'a':
+        # set temporary path
+        path_temp = path.replace('researchers/', '').replace('/network-a', '')
+    # if first and last letter of path equals to r and b
+    if path[0] == 'r' and path[-1] == 'b':
+        # set temporary path
+        path_temp = path.replace('researchers/', '').replace('/network-b', '')
+
+    # variable to hold input file
+    input_file = open(r'../../network-maker/output/grants/{}/info/grant_topics.pkl'.format(path_temp), 'rb')
+    # load data structure from file
+    grant_topics = load(input_file)
+    # close input file
+    input_file.close()
+
+    # variable to hold topic links
+    topic_links = [[network.vs['label'][edge.source], network.vs['label'][edge.target]] for edge in
+                   network.es()]
+
+    # variable to hold grants
+    grants = OrderedDict((ref, attr[1]) for topic_link in topic_links for ref, attr in grant_topics.items()
+                         if topic_link[0] in attr[0])
+
+    # variable to hold number
+    number = len([ref for ref in grants.keys()])
+
+    # set locale to Great Britain
+    setlocale(LC_ALL, 'en_GB.utf8')
+
+    # variable to hold value
+    value = sum([attr for attr in grants.values()])
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/network/txt/{}/{}/'
+                       'grants.txt'.format(path, edge_type, method), mode='w')
+    # write grant number and value to file
+    output_file.write('> Number and value of grants in the network\n\n')
+    output_file.write('- Total (unique): {:>4d} {}\n'.format(number, currency(value, grouping=True)))
+
+
+########################################################################################################################
+
+
 # calculates stats
 def calc_stats(network, edge_type, method, path):
 
-    # if edge type equals to unweighted
-    if edge_type == 'uw':
-        # delete edge type attribute
-        del network.es['weight']
-
-    # variables to hold selectables
-    network_summary = network.summary()
-    node_weights = network.vs["num"]
-    node_attr = network.vertex_attributes()
-    node_degrees = network.degree()
-    degree_dist = network.degree_distribution()
-    edge_weights = network.es["norm_weight"]
-    edge_attr = network.edge_attributes()
-
-    # variables to hold stats
-    node_count = network.vcount()
-    edge_count = network.ecount()
-    directed_status = 'Directed' if network.is_directed() else 'Undirected'
-    weighted_status = 'Yes' if network.is_weighted() else 'No'
-    connected_status = 'Yes' if network.is_connected() else 'No'
-    avg_degree = ig.mean(network.degree(loops=False))
-    avg_weighted_degree = float
     # if network is weighted
     if network.is_weighted():
-        avg_weighted_degree = ig.mean(network.strength(weights='norm_weight'))
-    diameter = network.diameter(directed=False, weights='norm_weight')
-    radius = network.radius(mode='ALL')
-    density = network.density()
-    modularity = network.community_multilevel(weights='norm_weight').modularity
-    communities = len(network.community_multilevel(weights='norm_weight'))
-    components = len(network.components())
-    closeness = ig.mean(network.closeness(weights='norm_weight'))
-    node_betweenness = ig.mean(network.betweenness(directed=False, weights='norm_weight'))
-    edge_betweenness = ig.mean(network.edge_betweenness(directed=False, weights='norm_weight'))
-    avg_clustering_coeff = ig.mean(network.transitivity_avglocal_undirected())
-    eigenvector_centrality = ig.mean(network.eigenvector_centrality(directed=False, weights='norm_weight'))
-    avg_path_length = ig.mean(network.average_path_length(directed=False))
+
+        # variables to hold stats
+        node_count = network.vcount()
+        edge_count = network.ecount()
+        directed_status = 'Directed' if network.is_directed() else 'Undirected'
+        weighted_status = 'Yes' if network.is_weighted() else 'No'
+        connected_status = 'Yes' if network.is_connected() else 'No'
+        avg_degree = ig.mean(network.degree(loops=False))
+        avg_weighted_degree = ig.mean(network.strength(weights='weight'))
+        diameter = network.diameter(directed=False, weights='weight')
+        radius = network.radius(mode='ALL')
+        density = network.density()
+        modularity = network.community_multilevel(weights='weight').modularity
+        communities = len(network.community_multilevel(weights='weight'))
+        components = len(network.components())
+        closeness = ig.mean(network.closeness(weights='weight'))
+        node_betweenness = ig.mean(network.betweenness(directed=False, weights='weight'))
+        edge_betweenness = ig.mean(network.edge_betweenness(directed=False, weights='weight'))
+        avg_clustering_coeff = ig.mean(network.transitivity_avglocal_undirected())
+        eigenvector_centrality = ig.mean(network.eigenvector_centrality(directed=False, weights='weight'))
+        avg_path_length = ig.mean(network.average_path_length(directed=False))
+
+    # if network is not weighted
+    else:
+
+        # variables to hold stats
+        node_count = network.vcount()
+        edge_count = network.ecount()
+        directed_status = 'Directed' if network.is_directed() else 'Undirected'
+        weighted_status = 'Yes' if network.is_weighted() else 'No'
+        connected_status = 'Yes' if network.is_connected() else 'No'
+        avg_degree = ig.mean(network.degree(loops=False))
+        avg_weighted_degree = ig.mean(network.strength())
+        diameter = network.diameter(directed=False)
+        radius = network.radius(mode='ALL')
+        density = network.density()
+        modularity = network.community_multilevel().modularity
+        communities = len(network.community_multilevel())
+        components = len(network.components())
+        closeness = ig.mean(network.closeness())
+        node_betweenness = ig.mean(network.betweenness(directed=False))
+        edge_betweenness = ig.mean(network.edge_betweenness(directed=False))
+        avg_clustering_coeff = ig.mean(network.transitivity_avglocal_undirected())
+        eigenvector_centrality = ig.mean(network.eigenvector_centrality(directed=False))
+        avg_path_length = ig.mean(network.average_path_length(directed=False))
 
     # variable to hold output file
     output_file = open('../../data/networks/{}/network/txt/'
@@ -269,9 +370,6 @@ def calc_stats(network, edge_type, method, path):
     # close output file
     output_file.close()
 
-    # add edge weight column to the network
-    network.es['weight'] = network.es['norm_weight']
-
 
 ########################################################################################################################
 
@@ -279,55 +377,111 @@ def calc_stats(network, edge_type, method, path):
 # calculate modularity
 def calc_modularity(network, edge_type, method, path):
 
-    # variable to hold infomap communities
-    infomap_c = network.community_infomap(edge_weights='norm_weight')
-    # variable to hold infomap modularity
-    infomap_m = infomap_c.modularity
+    # if network is weighted
+    if network.is_weighted():
 
-    spinglass_c = ig.VertexClustering
-    spinglass_m = float
+        # variable to hold infomap communities
+        infomap_c = network.community_infomap(edge_weights='weight')
+        # variable to hold infomap modularity
+        infomap_m = infomap_c.modularity
 
-    # if network is connected
-    if network.is_connected():
-        # variable to hold spinglass communities
-        spinglass_c = network.community_spinglass(weights='norm_weight')
-        # variable to hold spinglass modularity
-        spinglass_m = spinglass_c.modularity
+        spinglass_c = ig.VertexClustering
+        spinglass_m = float
 
-    # variable to hold louvain communities
-    louvain_c = network.community_multilevel(weights='norm_weight')
-    # variable to hold louvain modularity
-    louvain_m = louvain_c.modularity
+        # if network is connected
+        if network.is_connected():
+            # variable to hold spinglass communities
+            spinglass_c = network.community_spinglass(weights='weight')
+            # variable to hold spinglass modularity
+            spinglass_m = spinglass_c.modularity
 
-    # variable to hold label propagation communities
-    label_prop_c = network.community_label_propagation(weights='norm_weight')
-    # variable to hold label propagation modularity
-    label_prop_m = label_prop_c.modularity
+        # variable to hold louvain communities
+        louvain_c = network.community_multilevel(weights='weight')
+        # variable to hold louvain modularity
+        louvain_m = louvain_c.modularity
 
-    # variable to hold leading eigenvector communities
-    leading_eigen_c = network.community_leading_eigenvector(weights='norm_weight')
-    # variable to hold leading eigenvector modularity
-    leading_eigen_m = leading_eigen_c.modularity
+        # variable to hold label propagation communities
+        label_prop_c = network.community_label_propagation(weights='weight')
+        # variable to hold label propagation modularity
+        label_prop_m = label_prop_c.modularity
 
-    # variable to hold walktrap communities
-    walktrap_c = network.community_walktrap(weights='norm_weight', steps=4).as_clustering()
-    # variable to hold walktrap modularity
-    walktrap_m = walktrap_c.modularity
+        # variable to hold leading eigenvector communities
+        leading_eigen_c = network.community_leading_eigenvector(weights='weight')
+        # variable to hold leading eigenvector modularity
+        leading_eigen_m = leading_eigen_c.modularity
 
-    # variable to hold fast greedy communities
-    fastgreedy_c = network.community_fastgreedy(weights='norm_weight').as_clustering()
-    # variable to hold fast greedy modularity
-    fastgreedy_m = fastgreedy_c.modularity
+        # variable to hold walktrap communities
+        walktrap_c = network.community_walktrap(weights='weight', steps=4).as_clustering()
+        # variable to hold walktrap modularity
+        walktrap_m = walktrap_c.modularity
 
-    edge_betweenness_c = ig.VertexClustering
-    edge_betweenness_m = float
+        # variable to hold fast greedy communities
+        fastgreedy_c = network.community_fastgreedy(weights='weight').as_clustering()
+        # variable to hold fast greedy modularity
+        fastgreedy_m = fastgreedy_c.modularity
 
-    # if network is connected and number of components is less than or equal to 2
-    if network.is_connected() or len(network.components()) <= 2:
-        # variable to hold edge betweenness communities
-        edge_betweenness_c = network.community_edge_betweenness(directed=False, weights='norm_weight').as_clustering()
-        # variable to hold edge betweenness modularity
-        edge_betweenness_m = edge_betweenness_c.modularity
+        edge_betweenness_c = ig.VertexClustering
+        edge_betweenness_m = float
+
+        # if network is connected and number of components is less than or equal to 2
+        if network.is_connected() or len(network.components()) <= 2:
+            # variable to hold edge betweenness communities
+            edge_betweenness_c = network.community_edge_betweenness(directed=False, weights='weight').as_clustering()
+            # variable to hold edge betweenness modularity
+            edge_betweenness_m = edge_betweenness_c.modularity
+
+    # if network is not weighted
+    else:
+
+        # variable to hold infomap communities
+        infomap_c = network.community_infomap()
+        # variable to hold infomap modularity
+        infomap_m = infomap_c.modularity
+
+        spinglass_c = ig.VertexClustering
+        spinglass_m = float
+
+        # if network is connected
+        if network.is_connected():
+            # variable to hold spinglass communities
+            spinglass_c = network.community_spinglass()
+            # variable to hold spinglass modularity
+            spinglass_m = spinglass_c.modularity
+
+        # variable to hold louvain communities
+        louvain_c = network.community_multilevel()
+        # variable to hold louvain modularity
+        louvain_m = louvain_c.modularity
+
+        # variable to hold label propagation communities
+        label_prop_c = network.community_label_propagation()
+        # variable to hold label propagation modularity
+        label_prop_m = label_prop_c.modularity
+
+        # variable to hold leading eigenvector communities
+        leading_eigen_c = network.community_leading_eigenvector()
+        # variable to hold leading eigenvector modularity
+        leading_eigen_m = leading_eigen_c.modularity
+
+        # variable to hold walktrap communities
+        walktrap_c = network.community_walktrap(steps=4).as_clustering()
+        # variable to hold walktrap modularity
+        walktrap_m = walktrap_c.modularity
+
+        # variable to hold fast greedy communities
+        fastgreedy_c = network.community_fastgreedy().as_clustering()
+        # variable to hold fast greedy modularity
+        fastgreedy_m = fastgreedy_c.modularity
+
+        edge_betweenness_c = ig.VertexClustering
+        edge_betweenness_m = float
+
+        # if network is connected and number of components is less than or equal to 2
+        if network.is_connected() or len(network.components()) <= 2:
+            # variable to hold edge betweenness communities
+            edge_betweenness_c = network.community_edge_betweenness(directed=False).as_clustering()
+            # variable to hold edge betweenness modularity
+            edge_betweenness_m = edge_betweenness_c.modularity
 
     ####################################################################################################################
 
@@ -336,7 +490,7 @@ def calc_modularity(network, edge_type, method, path):
                        '{}/{}/modularity.txt'.format(path, edge_type, method), mode='w')
 
     # write modularity to file
-    output_file.write('> Modularity scores and community sizes\n\n')
+    output_file.write('> Community sizes and Modularity scores\n\n')
     output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
 
     # if network is connected
@@ -381,6 +535,9 @@ def check_robustness(network, edge_type, method, path):
     # if edge type equals to wn
     if edge_type == 'wn':
         threshold = 4
+    # if edge type equals to wv
+    if edge_type == 'wv':
+        threshold = 7099177.11
     # if edge type equals to wnn or wnv
     elif edge_type == 'wnn' or edge_type == 'wnv':
         threshold = 2
@@ -389,7 +546,7 @@ def check_robustness(network, edge_type, method, path):
     network_copy = network.copy()
 
     # variable to hold edges
-    edges = [edge for edge, edge_weight in zip(network_copy.es(), network_copy.es['norm_weight'])
+    edges = [edge for edge, edge_weight in zip(network_copy.es(), network_copy.es['weight'])
              if int(edge_weight) < threshold]
 
     # delete edges
@@ -404,7 +561,7 @@ def check_robustness(network, edge_type, method, path):
     ####################################################################################################################
 
     # variable to hold infomap communities
-    infomap_c = network_copy.community_infomap(edge_weights='norm_weight')
+    infomap_c = network_copy.community_infomap(edge_weights='weight')
     # variable to hold infomap modularity
     infomap_m = infomap_c.modularity
 
@@ -414,32 +571,32 @@ def check_robustness(network, edge_type, method, path):
     # if network is connected
     if network_copy.is_connected():
         # variable to hold spinglass communities
-        spinglass_c = network_copy.community_spinglass(weights='norm_weight')
+        spinglass_c = network_copy.community_spinglass(weights='weight')
         # variable to hold spinglass modularity
         spinglass_m = spinglass_c.modularity
 
     # variable to hold louvain communities
-    louvain_c = network_copy.community_multilevel(weights='norm_weight')
+    louvain_c = network_copy.community_multilevel(weights='weight')
     # variable to hold louvain modularity
     louvain_m = louvain_c.modularity
 
     # variable to hold label propagation communities
-    label_prop_c = network_copy.community_label_propagation(weights='norm_weight')
+    label_prop_c = network_copy.community_label_propagation(weights='weight')
     # variable to hold label propagation modularity
     label_prop_m = label_prop_c.modularity
 
     # variable to hold leading eigenvector communities
-    leading_eigen_c = network_copy.community_leading_eigenvector(weights='norm_weight')
+    leading_eigen_c = network_copy.community_leading_eigenvector(weights='weight')
     # variable to hold leading eigenvector modularity
     leading_eigen_m = leading_eigen_c.modularity
 
     # variable to hold walktrap communities
-    walktrap_c = network_copy.community_walktrap(weights='norm_weight', steps=4).as_clustering()
+    walktrap_c = network_copy.community_walktrap(weights='weight', steps=4).as_clustering()
     # variable to hold walktrap modularity
     walktrap_m = walktrap_c.modularity
 
     # variable to hold fast greedy communities
-    fastgreedy_c = network_copy.community_fastgreedy(weights='norm_weight').as_clustering()
+    fastgreedy_c = network_copy.community_fastgreedy(weights='weight').as_clustering()
     # variable to hold fast greedy modularity
     fastgreedy_m = fastgreedy_c.modularity
 
@@ -450,7 +607,7 @@ def check_robustness(network, edge_type, method, path):
     if network_copy.is_connected() or len(network_copy.components()) <= 2:
         # variable to hold edge betweenness communities
         edge_betweenness_c = network_copy.community_edge_betweenness(directed=False,
-                                                                     weights='norm_weight').as_clustering()
+                                                                     weights='weight').as_clustering()
         # variable to hold edge betweenness modularity
         edge_betweenness_m = edge_betweenness_c.modularity
 
@@ -464,7 +621,7 @@ def check_robustness(network, edge_type, method, path):
     output_file.write('> Network robustness check\n\n')
     output_file.write('> Nodes: {}\n'.format(network_copy.vcount()))
     output_file.write('> Edges: {}\n\n'.format(network_copy.ecount()))
-    output_file.write('> Modularity scores and community sizes\n\n')
+    output_file.write('> Community sizes and Modularity scores\n\n')
     output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
 
     # if network is connected
@@ -492,8 +649,8 @@ def plot_network(network, edge_type, method, path):
     # variable to hold visual style
     visual_style = {'vertex_label': None,
                     'vertex_color': 'blue',
-                    'vertex_size': network.vs['norm_num'],
-                    'edge_width': network.es['norm_weight'],
+                    'vertex_size': network.vs['plot_size'],
+                    'edge_width': network.es['plot_weight'],
                     'layout': 'kk',
                     'bbox': (1000, 1000),
                     'margin': 40}

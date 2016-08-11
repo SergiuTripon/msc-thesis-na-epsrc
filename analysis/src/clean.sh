@@ -69,84 +69,80 @@ function clean_topics_a() {
     edge_type4='wnn'
     edge_type5='wnv'
 
-    method1='louvain'
-    method2='spinglass'
-    method3='fastgreedy'
-
     if [ $1 = "current" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path1} ${edge_type1} ${method1}
-        clean_folders ${path1} ${edge_type2} ${method1}
-        clean_folders ${path1} ${edge_type3} ${method1}
-        clean_folders ${path1} ${edge_type4} ${method1}
-        clean_folders ${path1} ${edge_type5} ${method1}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
+        clean_folders ${path1} ${edge_type4} $2
+        clean_folders ${path1} ${edge_type5} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path1} ${edge_type1} ${method2}
-        clean_folders ${path1} ${edge_type2} ${method2}
-        clean_folders ${path1} ${edge_type3} ${method2}
-        clean_folders ${path1} ${edge_type4} ${method2}
-        clean_folders ${path1} ${edge_type5} ${method2}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
+        clean_folders ${path1} ${edge_type4} $2
+        clean_folders ${path1} ${edge_type5} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path1} ${edge_type1} ${method3}
-        clean_folders ${path1} ${edge_type2} ${method3}
-        clean_folders ${path1} ${edge_type3} ${method3}
-        clean_folders ${path1} ${edge_type4} ${method3}
-        clean_folders ${path1} ${edge_type5} ${method3}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
+        clean_folders ${path1} ${edge_type4} $2
+        clean_folders ${path1} ${edge_type5} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past1" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path2} ${edge_type1} ${method1}
-        clean_folders ${path2} ${edge_type2} ${method1}
-        clean_folders ${path2} ${edge_type3} ${method1}
-        clean_folders ${path2} ${edge_type4} ${method1}
-        clean_folders ${path2} ${edge_type5} ${method1}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
+        clean_folders ${path2} ${edge_type4} $2
+        clean_folders ${path2} ${edge_type5} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path2} ${edge_type1} ${method2}
-        clean_folders ${path2} ${edge_type2} ${method2}
-        clean_folders ${path2} ${edge_type3} ${method2}
-        clean_folders ${path2} ${edge_type4} ${method2}
-        clean_folders ${path2} ${edge_type5} ${method2}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
+        clean_folders ${path2} ${edge_type4} $2
+        clean_folders ${path2} ${edge_type5} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path2} ${edge_type1} ${method3}
-        clean_folders ${path2} ${edge_type2} ${method3}
-        clean_folders ${path2} ${edge_type3} ${method3}
-        clean_folders ${path2} ${edge_type4} ${method3}
-        clean_folders ${path2} ${edge_type5} ${method3}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
+        clean_folders ${path2} ${edge_type4} $2
+        clean_folders ${path2} ${edge_type5} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past2" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path3} ${edge_type1} ${method1}
-        clean_folders ${path3} ${edge_type2} ${method1}
-        clean_folders ${path3} ${edge_type3} ${method1}
-        clean_folders ${path3} ${edge_type4} ${method1}
-        clean_folders ${path3} ${edge_type5} ${method1}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
+        clean_folders ${path3} ${edge_type4} $2
+        clean_folders ${path3} ${edge_type5} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path3} ${edge_type1} ${method2}
-        clean_folders ${path3} ${edge_type2} ${method2}
-        clean_folders ${path3} ${edge_type3} ${method2}
-        clean_folders ${path3} ${edge_type4} ${method2}
-        clean_folders ${path3} ${edge_type5} ${method2}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
+        clean_folders ${path3} ${edge_type4} $2
+        clean_folders ${path3} ${edge_type5} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path3} ${edge_type1} ${method3}
-        clean_folders ${path3} ${edge_type2} ${method3}
-        clean_folders ${path3} ${edge_type3} ${method3}
-        clean_folders ${path3} ${edge_type4} ${method3}
-        clean_folders ${path3} ${edge_type5} ${method3}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
+        clean_folders ${path3} ${edge_type4} $2
+        clean_folders ${path3} ${edge_type5} $2
     fi
 }
 
@@ -163,66 +159,62 @@ function clean_topics_b() {
     edge_type2='wn'
     edge_type3='wnn'
 
-    method1='louvain'
-    method2='spinglass'
-    method3='fastgreedy'
-
     if [ $1 = "current" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path1} ${edge_type1} ${method1}
-        clean_folders ${path1} ${edge_type2} ${method1}
-        clean_folders ${path1} ${edge_type3} ${method1}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path1} ${edge_type1} ${method2}
-        clean_folders ${path1} ${edge_type2} ${method2}
-        clean_folders ${path1} ${edge_type3} ${method2}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path1} ${edge_type1} ${method3}
-        clean_folders ${path1} ${edge_type2} ${method3}
-        clean_folders ${path1} ${edge_type3} ${method3}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past1" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path2} ${edge_type1} ${method1}
-        clean_folders ${path2} ${edge_type2} ${method1}
-        clean_folders ${path2} ${edge_type3} ${method1}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path2} ${edge_type1} ${method2}
-        clean_folders ${path2} ${edge_type2} ${method2}
-        clean_folders ${path2} ${edge_type3} ${method2}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path2} ${edge_type1} ${method3}
-        clean_folders ${path2} ${edge_type2} ${method3}
-        clean_folders ${path2} ${edge_type3} ${method3}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past2" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path3} ${edge_type1} ${method1}
-        clean_folders ${path3} ${edge_type2} ${method1}
-        clean_folders ${path3} ${edge_type3} ${method1}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path3} ${edge_type1} ${method2}
-        clean_folders ${path3} ${edge_type2} ${method2}
-        clean_folders ${path3} ${edge_type3} ${method2}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path3} ${edge_type1} ${method3}
-        clean_folders ${path3} ${edge_type2} ${method3}
-        clean_folders ${path3} ${edge_type3} ${method3}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
     fi
 }
 
@@ -293,66 +285,62 @@ function clean_researchers_a() {
     edge_type2='wn'
     edge_type3='wnn'
 
-    method1='louvain'
-    method2='spinglass'
-    method3='fastgreedy'
-
     if [ $1 = "current" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path1} ${edge_type1} ${method1}
-        clean_folders ${path1} ${edge_type2} ${method1}
-        clean_folders ${path1} ${edge_type3} ${method1}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path1} ${edge_type1} ${method2}
-        clean_folders ${path1} ${edge_type2} ${method2}
-        clean_folders ${path1} ${edge_type3} ${method2}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path1} ${edge_type1} ${method3}
-        clean_folders ${path1} ${edge_type2} ${method3}
-        clean_folders ${path1} ${edge_type3} ${method3}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past1" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path2} ${edge_type1} ${method1}
-        clean_folders ${path2} ${edge_type2} ${method1}
-        clean_folders ${path2} ${edge_type3} ${method1}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path2} ${edge_type1} ${method2}
-        clean_folders ${path2} ${edge_type2} ${method2}
-        clean_folders ${path2} ${edge_type3} ${method2}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path2} ${edge_type1} ${method3}
-        clean_folders ${path2} ${edge_type2} ${method3}
-        clean_folders ${path2} ${edge_type3} ${method3}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past2" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path3} ${edge_type1} ${method1}
-        clean_folders ${path3} ${edge_type2} ${method1}
-        clean_folders ${path3} ${edge_type3} ${method1}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path3} ${edge_type1} ${method2}
-        clean_folders ${path3} ${edge_type2} ${method2}
-        clean_folders ${path3} ${edge_type3} ${method2}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path3} ${edge_type1} ${method3}
-        clean_folders ${path3} ${edge_type2} ${method3}
-        clean_folders ${path3} ${edge_type3} ${method3}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
     fi
 
 }
@@ -372,84 +360,80 @@ function clean_researchers_b() {
     edge_type4='wnn'
     edge_type5='wnv'
 
-    method1='louvain'
-    method2='spinglass'
-    method3='fastgreedy'
-
     if [ $1 = "current" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path1} ${edge_type1} ${method1}
-        clean_folders ${path1} ${edge_type2} ${method1}
-        clean_folders ${path1} ${edge_type3} ${method1}
-        clean_folders ${path1} ${edge_type4} ${method1}
-        clean_folders ${path1} ${edge_type5} ${method1}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
+        clean_folders ${path1} ${edge_type4} $2
+        clean_folders ${path1} ${edge_type5} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path1} ${edge_type1} ${method2}
-        clean_folders ${path1} ${edge_type2} ${method2}
-        clean_folders ${path1} ${edge_type3} ${method2}
-        clean_folders ${path1} ${edge_type4} ${method2}
-        clean_folders ${path1} ${edge_type5} ${method2}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
+        clean_folders ${path1} ${edge_type4} $2
+        clean_folders ${path1} ${edge_type5} $2
     fi
 
     if [ $1 = "current" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path1} ${edge_type1} ${method3}
-        clean_folders ${path1} ${edge_type2} ${method3}
-        clean_folders ${path1} ${edge_type3} ${method3}
-        clean_folders ${path1} ${edge_type4} ${method3}
-        clean_folders ${path1} ${edge_type5} ${method3}
+        clean_folders ${path1} ${edge_type1} $2
+        clean_folders ${path1} ${edge_type2} $2
+        clean_folders ${path1} ${edge_type3} $2
+        clean_folders ${path1} ${edge_type4} $2
+        clean_folders ${path1} ${edge_type5} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past1" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path2} ${edge_type1} ${method1}
-        clean_folders ${path2} ${edge_type2} ${method1}
-        clean_folders ${path2} ${edge_type3} ${method1}
-        clean_folders ${path2} ${edge_type4} ${method1}
-        clean_folders ${path2} ${edge_type5} ${method1}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
+        clean_folders ${path2} ${edge_type4} $2
+        clean_folders ${path2} ${edge_type5} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path2} ${edge_type1} ${method2}
-        clean_folders ${path2} ${edge_type2} ${method2}
-        clean_folders ${path2} ${edge_type3} ${method2}
-        clean_folders ${path2} ${edge_type4} ${method2}
-        clean_folders ${path2} ${edge_type5} ${method2}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
+        clean_folders ${path2} ${edge_type4} $2
+        clean_folders ${path2} ${edge_type5} $2
     fi
 
     if [ $1 = "past1" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path2} ${edge_type1} ${method3}
-        clean_folders ${path2} ${edge_type2} ${method3}
-        clean_folders ${path2} ${edge_type3} ${method3}
-        clean_folders ${path2} ${edge_type4} ${method3}
-        clean_folders ${path2} ${edge_type5} ${method3}
+        clean_folders ${path2} ${edge_type1} $2
+        clean_folders ${path2} ${edge_type2} $2
+        clean_folders ${path2} ${edge_type3} $2
+        clean_folders ${path2} ${edge_type4} $2
+        clean_folders ${path2} ${edge_type5} $2
     fi
 
     ####################################################################################################################
 
     if [ $1 = "past2" ] && [ $2 = "louvain" ]; then
-        clean_folders ${path3} ${edge_type1} ${method1}
-        clean_folders ${path3} ${edge_type2} ${method1}
-        clean_folders ${path3} ${edge_type3} ${method1}
-        clean_folders ${path3} ${edge_type4} ${method1}
-        clean_folders ${path3} ${edge_type5} ${method1}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
+        clean_folders ${path3} ${edge_type4} $2
+        clean_folders ${path3} ${edge_type5} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "spinglass" ]; then
-        clean_folders ${path3} ${edge_type1} ${method2}
-        clean_folders ${path3} ${edge_type2} ${method2}
-        clean_folders ${path3} ${edge_type3} ${method2}
-        clean_folders ${path3} ${edge_type4} ${method2}
-        clean_folders ${path3} ${edge_type5} ${method2}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
+        clean_folders ${path3} ${edge_type4} $2
+        clean_folders ${path3} ${edge_type5} $2
     fi
 
     if [ $1 = "past2" ] && [ $2 = "fastgreedy" ]; then
-        clean_folders ${path3} ${edge_type1} ${method3}
-        clean_folders ${path3} ${edge_type2} ${method3}
-        clean_folders ${path3} ${edge_type3} ${method3}
-        clean_folders ${path3} ${edge_type4} ${method3}
-        clean_folders ${path3} ${edge_type5} ${method3}
+        clean_folders ${path3} ${edge_type1} $2
+        clean_folders ${path3} ${edge_type2} $2
+        clean_folders ${path3} ${edge_type3} $2
+        clean_folders ${path3} ${edge_type4} $2
+        clean_folders ${path3} ${edge_type5} $2
     fi
 
 }

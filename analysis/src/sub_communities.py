@@ -111,6 +111,18 @@ def check_sub_communities(sub_community, edge_type, method, count1, path):
 # saves sub-communities
 def save_sub_communities(community, sub_communities, edge_type, method, count1, path):
 
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/sub-communities/txt/{}/{}/'
+                       'grants{}.txt'.format(path, edge_type, method, count1), mode='a')
+    # write header to file
+    output_file.write('> Number and value of grants in each sub-community\n\n')
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/sub-communities/txt/'
+                       '{}/{}/numbers{}.txt'.format(path, edge_type, method, count1), mode='a')
+    # write header to file
+    output_file.write('> Community size of each sub-community\n\n')
+
     # variable to hold unique grants
     unique_grants = OrderedDict()
 
@@ -133,12 +145,12 @@ def save_sub_communities(community, sub_communities, edge_type, method, count1, 
         # write sub-graph structure to file
         sub_graph.write_graphml(output_file)
 
-        # variable to hold stats file
-        stats_file = open('../../data/networks/{}/sub-communities/txt/'
-                          '{}/{}/numbers{}.txt'.format(path, edge_type, method, count1), mode='a')
+        # variable to hold output file
+        output_file = open('../../data/networks/{}/sub-communities/txt/'
+                           '{}/{}/numbers{}.txt'.format(path, edge_type, method, count1), mode='a')
 
         # write stat to file
-        stats_file.write('Community {}: {}\n'.format(count2, len(sub_community)))
+        output_file.write('- Community {}: {}\n'.format(count2, len(sub_community)))
 
         # turn edges into grants
         grants, number, value = turn_edges_into_grants(sub_graph, edge_type, method, count1, count2, path)
@@ -161,7 +173,7 @@ def save_sub_communities(community, sub_communities, edge_type, method, count1, 
     output_file = open('../../data/networks/{}/sub-communities/txt/{}/{}/'
                        'grants{}.txt'.format(path, edge_type, method, count1), mode='a')
     # write grant number and value to file
-    output_file.write('\n> Total:          {:>4d} {}\n'.format(total_number, currency(total_value, grouping=True)))
+    output_file.write('\n- Total:          {:>4d} {}\n'.format(total_number, currency(total_value, grouping=True)))
 
     # variable to hold total number
     total_number = len(unique_grants)
@@ -172,7 +184,7 @@ def save_sub_communities(community, sub_communities, edge_type, method, count1, 
     output_file = open('../../data/networks/{}/sub-communities/txt/{}/{}/'
                        'grants{}.txt'.format(path, edge_type, method, count1), mode='a')
     # write grant number and value to file
-    output_file.write('> Total (unique): {:>4d} {}'.format(total_number, currency(total_value, grouping=True)))
+    output_file.write('- Total (unique): {:>4d} {}'.format(total_number, currency(total_value, grouping=True)))
 
 
 ########################################################################################################################
@@ -229,7 +241,7 @@ def turn_edges_into_grants(sub_community, edge_type, method, count1, count2, pat
     output_file = open('../../data/networks/{}/sub-communities/txt/{}/{}/'
                        'grants{}.txt'.format(path, edge_type, method, count1), mode='a')
     # write grant number and value to file
-    output_file.write('> Community {}.{}:  {:>4d} {}\n'.format(count1, count2, number, currency(value, grouping=True)))
+    output_file.write('- Community {}.{}:  {:>4d} {}\n'.format(count1, count2, number, currency(value, grouping=True)))
 
     # return number and value
     return grants, number, value
@@ -240,24 +252,6 @@ def turn_edges_into_grants(sub_community, edge_type, method, count1, count2, pat
 
 # saves sub-community membership
 def save_sub_community_membership(community, edge_type, method, count1, path):
-
-    # if val in edge attributes
-    if 'val' in community.es.attributes():
-        # delete edge value attribute
-        del community.es['val']
-        # add edge value attribute
-        community.es['val'] = community.es['norm_val']
-        # delete edge normalized value attribute
-        del community.es['norm_val']
-
-    # if weight in edge attributes
-    if 'weight' in community.es.attributes():
-        # delete edge weight attribute
-        del community.es['weight']
-        # add edge weight attribute
-        community.es['weight'] = community.es['norm_weight']
-        # delete edge normalized weight attribute
-        del community.es['norm_weight']
 
     # variable to hold output file
     output_file = open('../../data/networks/{}/communities/graphml/'
@@ -276,6 +270,8 @@ def save_sub_community_topics(community, sub_communities, edge_type, method, cou
     # variable to hold output file
     output_file = open('../../data/networks/{}/sub-communities/txt/{}/{}/'
                        'topics{}.txt'.format(path, edge_type, method, count1), mode='a')
+    # write header to file
+    output_file.write('> Topics of each sub-community\n\n')
 
     # for sub-community in range between 1 and length of sub-communities + 1
     for sub_community in range(1, len(sub_communities) + 1):
@@ -326,12 +322,9 @@ def plot_sub_community_overview(community, sub_communities, membership, edge_typ
         # delete edges
         community_copy.delete_edges(edges)
 
-        # add normalized edge weight column to community
-        community.es['norm_weight'] = community.es['weight']
-
         # variable to hold visual style
-        visual_style = {'vertex_size': community.vs['norm_num'],
-                        'edge_width': community.es['norm_weight'],
+        visual_style = {'vertex_size': community.vs['plot_size'],
+                        'edge_width': community.es['plot_weight'],
                         'layout': community_copy.layout('kk'),
                         'bbox': (1000, 1000),
                         'margin': 40}
@@ -357,12 +350,9 @@ def plot_sub_community_overview(community, sub_communities, membership, edge_typ
         # delete edges
         community.delete_edges(edges)
 
-        # add normalized edge weight column to community
-        community.es['norm_weight'] = community.es['weight']
-
         # variable to hold visual style
-        visual_style = {'vertex_size': community.vs['norm_num'],
-                        'edge_width': community.es['norm_weight'],
+        visual_style = {'vertex_size': community.vs['plot_size'],
+                        'edge_width': community.es['plot_weight'],
                         'layout': 'kk',
                         'bbox': (1000, 1000),
                         'margin': 40}
