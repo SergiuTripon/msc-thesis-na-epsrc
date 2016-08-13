@@ -17,10 +17,12 @@ def analyse_network(edge_type, method, attr, threshold, path):
     # variable to hold network
     network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/network.graphml'.format(path))
 
+    ####################################################################################################################
+
     # rename columns
     network = rename_columns(network)
-    # print progress
-    # print('> Network columns renamed ({}/{}/{}).'.format(path, edge_type, method))
+
+    ####################################################################################################################
 
     # if attributes equals to all
     if attr == 'all':
@@ -38,43 +40,51 @@ def analyse_network(edge_type, method, attr, threshold, path):
         network.vs['norm_num'] = norm_vals(network.vs['num'], 20, 60)
         # add normalized edge weight column to network
         network.es['norm_weight'] = norm_vals(network.es['weight'], 1, 10)
-    # print progress
-    # print('> Network values normalized ({}/{}/{}).'.format(path, edge_type, method))
 
-    # get edge type and print progress
-    get_edge_type(network, edge_type)
-    # print progress
-    # print('> Edge type retrieved. ({}/{}/{})'.format(path, edge_type, method))
+    ####################################################################################################################
 
-    # turn edges into grants
-    turn_edges_into_grants(network, edge_type, method, path)
-    # print progress
-    # print('> Edges turned into grants ({}/{}/{}).'.format(path, edge_type, method))
+    # get network type and print progress
+    network_type = get_network_type(path)
+
+    ####################################################################################################################
+
+    # set edge type and print progress
+    set_edge_type(network, edge_type)
+
+    ####################################################################################################################
 
     # calculate network stats
     calc_stats(network, edge_type, method, path)
-    # print progress
-    # print('> Stats calculated ({}/{}/{}).'.format(path, edge_type, method))
 
-    # calculate modularity
-    communities = calc_modularity(network, edge_type, method, path)
-    # print progress
-    # print('> Network modularity calculated ({}/{}/{}).'.format(path, edge_type, method))
+    ####################################################################################################################
+
+    # plot network
+    plot_network(network, edge_type, method, path)
+
+    ####################################################################################################################
 
     # if edge type does not equal to uw
     if edge_type != 'uw':
         # check robustness
         check_robustness(network, edge_type, method, path)
-        # print progress
-        # print('> Network robustness checked ({}/{}/{}).'.format(path, edge_type, method))
 
-    # plot network
-    plot_network(network, edge_type, method, path)
-    # print progress
-    # print('> Network plotted ({}/{}/{}).'.format(path, edge_type, method))
+    ####################################################################################################################
+
+    # if network type equals to topic a or researcher b
+    if network_type == 'topic-a' or network_type == 'researcher-b':
+
+        # turn edges into grants
+        turn_edges_into_grants(network, edge_type, method, path)
+
+    ####################################################################################################################
+
+    # calculate modularity
+    communities = calc_modularity(network, edge_type, method, path)
+
+    ####################################################################################################################
 
     # analyse communities
-    ca.analyse_communities(network, communities, edge_type, method, threshold, path)
+    ca.analyse_communities(network, communities, network_type, edge_type, method, threshold, path)
 
 
 ########################################################################################################################
@@ -171,8 +181,34 @@ def norm_vals(vals, new_min, new_max):
 ########################################################################################################################
 
 
-# gets edge type
-def get_edge_type(network, edge_type):
+# gets network type
+def get_network_type(path):
+
+    # variable to hold split path
+    path_split = path.split('/', 1)
+
+    # variable to hold entity
+    entity = path_split[0][:-1]
+
+    # variable to hold plan
+    plan = path_split[1].replace('current/network-', '')
+    # set plan
+    plan = plan.replace('past/2000-2010/network-', '')
+    # set plan
+    plan = plan.replace('past/1990-2000/network-', '')
+
+    # variable to hold network type
+    network_type = '{}-{}'.format(entity, plan)
+
+    # return network type
+    return network_type
+
+
+########################################################################################################################
+
+
+# sets edge type
+def set_edge_type(network, edge_type):
 
     # if edge type equals to uw
     if edge_type == 'uw':
@@ -221,64 +257,6 @@ def get_edge_type(network, edge_type):
 
     # return network
     return network
-
-
-########################################################################################################################
-
-
-# turns edges into grants
-def turn_edges_into_grants(network, edge_type, method, path):
-
-    # variable to hold temporary path
-    path_temp = ''
-
-    # if first and last letter of path equals to t and a
-    if path[0] == 't' and path[-1] == 'a':
-        # set temporary path
-        path_temp = path.replace('topics/', '').replace('/network-a', '')
-    # if first and last letter of path equals to t and b
-    if path[0] == 't' and path[-1] == 'b':
-        # set temporary path
-        path_temp = path.replace('topics/', '').replace('/network-b', '')
-    # if first and last letter of path equals to r and a
-    if path[0] == 'r' and path[-1] == 'a':
-        # set temporary path
-        path_temp = path.replace('researchers/', '').replace('/network-a', '')
-    # if first and last letter of path equals to r and b
-    if path[0] == 'r' and path[-1] == 'b':
-        # set temporary path
-        path_temp = path.replace('researchers/', '').replace('/network-b', '')
-
-    # variable to hold input file
-    input_file = open(r'../../network-maker/output/grants/{}/info/grant_topics.pkl'.format(path_temp), 'rb')
-    # load data structure from file
-    grant_topics = load(input_file)
-    # close input file
-    input_file.close()
-
-    # variable to hold topic links
-    topic_links = [[network.vs['label'][edge.source], network.vs['label'][edge.target]] for edge in
-                   network.es()]
-
-    # variable to hold grants
-    grants = OrderedDict((ref, attr[1]) for topic_link in topic_links for ref, attr in grant_topics.items()
-                         if topic_link[0] in attr[0])
-
-    # variable to hold number
-    number = len([ref for ref in grants.keys()])
-
-    # set locale to Great Britain
-    setlocale(LC_ALL, 'en_GB.utf8')
-
-    # variable to hold value
-    value = sum([attr for attr in grants.values()])
-
-    # variable to hold output file
-    output_file = open('../../data/networks/{}/network/txt/{}/{}/'
-                       'grants.txt'.format(path, edge_type, method), mode='w')
-    # write grant number and value to file
-    output_file.write('> Number and value of grants in the network\n\n')
-    output_file.write('- Total (unique): {:>4d} {}\n'.format(number, currency(value, grouping=True)))
 
 
 ########################################################################################################################
@@ -369,6 +347,211 @@ def calc_stats(network, edge_type, method, path):
 
     # close output file
     output_file.close()
+
+
+########################################################################################################################
+
+
+# plots network
+def plot_network(network, edge_type, method, path):
+
+    # variable to hold visual style
+    visual_style = {'vertex_label': None,
+                    'vertex_color': 'blue',
+                    'vertex_size': network.vs['plot_size'],
+                    'edge_width': network.es['plot_weight'],
+                    'layout': 'kk',
+                    'bbox': (1000, 1000),
+                    'margin': 40}
+
+    # plot network
+    ig.plot(network, '../../data/networks/{}/network/png/'
+                     '{}/{}/network.png'.format(path, edge_type, method), **visual_style)
+
+
+########################################################################################################################
+
+
+# check robustness
+def check_robustness(network, edge_type, method, path):
+
+    # variable to hold threshold
+    threshold = 0
+    # if edge type equals to wn
+    if edge_type == 'wn':
+        threshold = 4
+    # if edge type equals to wv
+    if edge_type == 'wv':
+        threshold = 7099177.11
+    # if edge type equals to wnn or wnv
+    elif edge_type == 'wnn' or edge_type == 'wnv':
+        threshold = 2
+
+    # variable to hold network copy
+    network_copy = network.copy()
+
+    # variable to hold edges
+    edges = [edge for edge, edge_weight in zip(network_copy.es(), network_copy.es['weight'])
+             if int(edge_weight) < threshold]
+
+    # delete edges
+    network_copy.delete_edges(edges)
+
+    # variable to hold nodes
+    nodes = [node for node, node_degree in zip(network_copy.vs(), network_copy.degree()) if int(node_degree) == 0]
+
+    # delete nodes
+    network_copy.delete_vertices(nodes)
+
+    ####################################################################################################################
+
+    # variable to hold infomap communities
+    infomap_c = network_copy.community_infomap(edge_weights='weight')
+    # variable to hold infomap modularity
+    infomap_m = infomap_c.modularity
+
+    spinglass_c = ig.VertexClustering
+    spinglass_m = float
+
+    # if network is connected
+    if network_copy.is_connected():
+        # variable to hold spinglass communities
+        spinglass_c = network_copy.community_spinglass(weights='weight')
+        # variable to hold spinglass modularity
+        spinglass_m = spinglass_c.modularity
+
+    # variable to hold louvain communities
+    louvain_c = network_copy.community_multilevel(weights='weight')
+    # variable to hold louvain modularity
+    louvain_m = louvain_c.modularity
+
+    # variable to hold label propagation communities
+    label_prop_c = network_copy.community_label_propagation(weights='weight')
+    # variable to hold label propagation modularity
+    label_prop_m = label_prop_c.modularity
+
+    # variable to hold leading eigenvector communities
+    leading_eigen_c = network_copy.community_leading_eigenvector(weights='weight')
+    # variable to hold leading eigenvector modularity
+    leading_eigen_m = leading_eigen_c.modularity
+
+    # variable to hold walktrap communities
+    walktrap_c = network_copy.community_walktrap(weights='weight', steps=4).as_clustering()
+    # variable to hold walktrap modularity
+    walktrap_m = walktrap_c.modularity
+
+    # variable to hold fast greedy communities
+    fastgreedy_c = network_copy.community_fastgreedy(weights='weight').as_clustering()
+    # variable to hold fast greedy modularity
+    fastgreedy_m = fastgreedy_c.modularity
+
+    edge_betweenness_c = ig.VertexClustering
+    edge_betweenness_m = float
+
+    # if network is connected and number of components is less than or equal to 2
+    if network_copy.is_connected() or len(network_copy.components()) <= 2:
+        # variable to hold edge betweenness communities
+        edge_betweenness_c = network_copy.community_edge_betweenness(directed=False,
+                                                                     weights='weight').as_clustering()
+        # variable to hold edge betweenness modularity
+        edge_betweenness_m = edge_betweenness_c.modularity
+
+    ####################################################################################################################
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/network/txt/'
+                       '{}/{}/robustness.txt'.format(path, edge_type, method), mode='w')
+
+    # write modularity to file
+    output_file.write('> Network robustness check\n\n')
+    output_file.write('> Nodes: {}\n'.format(network_copy.vcount()))
+    output_file.write('> Edges: {}\n\n'.format(network_copy.ecount()))
+    output_file.write('> Community sizes and Modularity scores\n\n')
+    output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
+
+    # if network is connected
+    if network_copy.is_connected():
+        output_file.write('- Spinglass:           {:3d} {:5.3f}\n'.format(len(spinglass_c), spinglass_m))
+
+    output_file.write('- Louvain:             {:3d} {:5.3f}\n'.format(len(louvain_c), louvain_m))
+    output_file.write('- Label Propagation:   {:3d} {:5.3f}\n'.format(len(label_prop_c), label_prop_m))
+    output_file.write('- Leading Eigenvector: {:3d} {:5.3f}\n'.format(len(leading_eigen_c), leading_eigen_m))
+    output_file.write('- Walktrap:            {:3d} {:5.3f}\n'.format(len(walktrap_c), walktrap_m))
+    output_file.write('- Fast Greedy:         {:3d} {:5.3f}\n'.format(len(fastgreedy_c), fastgreedy_m))
+
+    # if network is connected and number of components is less than or equal to 2
+    if network_copy.is_connected() or len(network_copy.components()) <= 2:
+        output_file.write('- Edge Betweenness:    {:3d} {:5.3f}\n\n'.format(len(edge_betweenness_c),
+                                                                            edge_betweenness_m))
+
+
+########################################################################################################################
+
+
+# turns edges into grants
+def turn_edges_into_grants(network, edge_type, method, path):
+
+    # variable to split path
+    path_split = path.split('/', 3)
+
+    # variable to hold temporary path
+    path_temp = ''
+
+    # if split path equals to current
+    if path_split[1] == 'current':
+        # set temporary path
+        path_temp = '{}'.format(path_split[1])
+    # if split path equals to past
+    elif path_split[1] == 'past':
+        # set temporary path
+        path_temp = '{}/{}'.format(path_split[1], path_temp[2])
+
+    # variable to hold input file
+    input_file = open(r'../../network-maker/output/grants/{}/info/grant_{}.pkl'.format(path_temp, path_split[0]), 'rb')
+    # load data structure from file
+    grant_entities = load(input_file)
+    # close input file
+    input_file.close()
+
+    # variable to hold entity links
+    entity_links = [[network.vs['label'][edge.source], network.vs['label'][edge.target]] for edge in
+                    network.es()]
+
+    # variable to hold grants
+    grants = OrderedDict()
+
+    # if split path equals to topics
+    if path_split[0] == 'topics':
+
+        # set grants
+        grants = OrderedDict((ref, attr[1]) for entity_link in entity_links for ref, attr in grant_entities.items()
+                             if entity_link[0] and entity_link[1] in attr[0])
+
+    # if split path equals to researchers
+    elif path_split[0] == 'researchers':
+
+        # set grants
+        grants = OrderedDict((ref, attr[1]) for entity_link in entity_links for ref, attr in grant_entities.items()
+                             if entity_link[0] and entity_link[1] in [researcher[0] for researcher in attr[0]])
+
+    # variable to hold number
+    number = len([ref for ref in grants.keys()])
+
+    # set locale to Great Britain
+    setlocale(LC_ALL, 'en_GB.utf8')
+
+    # variable to hold value
+    value = sum([attr for attr in grants.values()])
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/network/txt/{}/{}/'
+                       'grants.txt'.format(path, edge_type, method), mode='w')
+
+    # write header to file
+    output_file.write('> Number and value of grants in the network\n\n')
+
+    # write grant number and value to file
+    output_file.write('- Total (unique): {:>4d} {}\n'.format(number, currency(value, grouping=True)))
 
 
 ########################################################################################################################
@@ -522,142 +705,6 @@ def calc_modularity(network, edge_type, method, path):
     elif method == 'fastgreedy':
         # return fastgreedy communities
         return fastgreedy_c
-
-
-########################################################################################################################
-
-
-# check robustness
-def check_robustness(network, edge_type, method, path):
-
-    # variable to hold threshold
-    threshold = 0
-    # if edge type equals to wn
-    if edge_type == 'wn':
-        threshold = 4
-    # if edge type equals to wv
-    if edge_type == 'wv':
-        threshold = 7099177.11
-    # if edge type equals to wnn or wnv
-    elif edge_type == 'wnn' or edge_type == 'wnv':
-        threshold = 2
-
-    # variable to hold network copy
-    network_copy = network.copy()
-
-    # variable to hold edges
-    edges = [edge for edge, edge_weight in zip(network_copy.es(), network_copy.es['weight'])
-             if int(edge_weight) < threshold]
-
-    # delete edges
-    network_copy.delete_edges(edges)
-
-    # variable to hold nodes
-    nodes = [node for node, node_degree in zip(network_copy.vs(), network_copy.degree()) if int(node_degree) == 0]
-
-    # delete nodes
-    network_copy.delete_vertices(nodes)
-
-    ####################################################################################################################
-
-    # variable to hold infomap communities
-    infomap_c = network_copy.community_infomap(edge_weights='weight')
-    # variable to hold infomap modularity
-    infomap_m = infomap_c.modularity
-
-    spinglass_c = ig.VertexClustering
-    spinglass_m = float
-
-    # if network is connected
-    if network_copy.is_connected():
-        # variable to hold spinglass communities
-        spinglass_c = network_copy.community_spinglass(weights='weight')
-        # variable to hold spinglass modularity
-        spinglass_m = spinglass_c.modularity
-
-    # variable to hold louvain communities
-    louvain_c = network_copy.community_multilevel(weights='weight')
-    # variable to hold louvain modularity
-    louvain_m = louvain_c.modularity
-
-    # variable to hold label propagation communities
-    label_prop_c = network_copy.community_label_propagation(weights='weight')
-    # variable to hold label propagation modularity
-    label_prop_m = label_prop_c.modularity
-
-    # variable to hold leading eigenvector communities
-    leading_eigen_c = network_copy.community_leading_eigenvector(weights='weight')
-    # variable to hold leading eigenvector modularity
-    leading_eigen_m = leading_eigen_c.modularity
-
-    # variable to hold walktrap communities
-    walktrap_c = network_copy.community_walktrap(weights='weight', steps=4).as_clustering()
-    # variable to hold walktrap modularity
-    walktrap_m = walktrap_c.modularity
-
-    # variable to hold fast greedy communities
-    fastgreedy_c = network_copy.community_fastgreedy(weights='weight').as_clustering()
-    # variable to hold fast greedy modularity
-    fastgreedy_m = fastgreedy_c.modularity
-
-    edge_betweenness_c = ig.VertexClustering
-    edge_betweenness_m = float
-
-    # if network is connected and number of components is less than or equal to 2
-    if network_copy.is_connected() or len(network_copy.components()) <= 2:
-        # variable to hold edge betweenness communities
-        edge_betweenness_c = network_copy.community_edge_betweenness(directed=False,
-                                                                     weights='weight').as_clustering()
-        # variable to hold edge betweenness modularity
-        edge_betweenness_m = edge_betweenness_c.modularity
-
-    ####################################################################################################################
-
-    # variable to hold output file
-    output_file = open('../../data/networks/{}/network/txt/'
-                       '{}/{}/robustness.txt'.format(path, edge_type, method), mode='w')
-
-    # write modularity to file
-    output_file.write('> Network robustness check\n\n')
-    output_file.write('> Nodes: {}\n'.format(network_copy.vcount()))
-    output_file.write('> Edges: {}\n\n'.format(network_copy.ecount()))
-    output_file.write('> Community sizes and Modularity scores\n\n')
-    output_file.write('- Infomap:             {:3d} {:5.3f}\n'.format(len(infomap_c), infomap_m))
-
-    # if network is connected
-    if network_copy.is_connected():
-        output_file.write('- Spinglass:           {:3d} {:5.3f}\n'.format(len(spinglass_c), spinglass_m))
-
-    output_file.write('- Louvain:             {:3d} {:5.3f}\n'.format(len(louvain_c), louvain_m))
-    output_file.write('- Label Propagation:   {:3d} {:5.3f}\n'.format(len(label_prop_c), label_prop_m))
-    output_file.write('- Leading Eigenvector: {:3d} {:5.3f}\n'.format(len(leading_eigen_c), leading_eigen_m))
-    output_file.write('- Walktrap:            {:3d} {:5.3f}\n'.format(len(walktrap_c), walktrap_m))
-    output_file.write('- Fast Greedy:         {:3d} {:5.3f}\n'.format(len(fastgreedy_c), fastgreedy_m))
-
-    # if network is connected and number of components is less than or equal to 2
-    if network_copy.is_connected() or len(network_copy.components()) <= 2:
-        output_file.write('- Edge Betweenness:    {:3d} {:5.3f}\n\n'.format(len(edge_betweenness_c),
-                                                                            edge_betweenness_m))
-
-
-########################################################################################################################
-
-
-# plots network
-def plot_network(network, edge_type, method, path):
-
-    # variable to hold visual style
-    visual_style = {'vertex_label': None,
-                    'vertex_color': 'blue',
-                    'vertex_size': network.vs['plot_size'],
-                    'edge_width': network.es['plot_weight'],
-                    'layout': 'kk',
-                    'bbox': (1000, 1000),
-                    'margin': 40}
-
-    # plot network
-    ig.plot(network, '../../data/networks/{}/network/png/'
-                     '{}/{}/network.png'.format(path, edge_type, method), **visual_style)
 
 
 ########################################################################################################################

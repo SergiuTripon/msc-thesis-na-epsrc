@@ -4,7 +4,6 @@
 
 # local python files
 import network as na
-import communities as ca
 
 # third-party library modules
 import glob
