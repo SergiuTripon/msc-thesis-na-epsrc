@@ -774,7 +774,7 @@ def visualise_in_graphistry(network):
 def main():
 
     # analyse topic network a
-    AnalyseTopicNetwork.run('a', 'current')
+    # AnalyseTopicNetwork.run('a', 'current')
     # AnalyseTopicNetwork.run('a', 'past1')
     # AnalyseTopicNetwork.run('a', 'past2')
 
@@ -784,7 +784,7 @@ def main():
     # AnalyseTopicNetwork.run('b', 'past2')
 
     # analyse researcher network a
-    # AnalyseResearcherNetwork.run('a', 'current')
+    AnalyseResearcherNetwork.run('a', 'current')
     # AnalyseResearcherNetwork.run('a', 'past1')
     # AnalyseResearcherNetwork.run('a', 'past2')
 

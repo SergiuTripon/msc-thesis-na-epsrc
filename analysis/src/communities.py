@@ -375,7 +375,7 @@ def turn_edges_into_grants(community, edge_type, method, count1, path):
     # if split path equals to past
     elif path_split[1] == 'past':
         # set temporary path
-        path_temp = '{}/{}'.format(path_split[1], path_temp[2])
+        path_temp = '{}/{}'.format(path_split[1], path_split[2])
 
     # variable to hold input file
     input_file = open(r'../../network-maker/output/grants/{}/info/grant_{}.pkl'.format(path_temp, path_split[0]), 'rb')

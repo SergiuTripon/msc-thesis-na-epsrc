@@ -355,7 +355,7 @@ def turn_edges_into_grants(sub_community, edge_type, method, count1, count2, pat
     # if split path equals to past
     elif path_split[1] == 'past':
         # set temporary path
-        path_temp = '{}/{}'.format(path_split[1], path_temp[2])
+        path_temp = '{}/{}'.format(path_split[1], path_split[2])
 
     # variable to hold input file
     input_file = open(r'../../network-maker/output/grants/{}/info/grant_{}.pkl'.format(path_temp, path_split[0]), 'rb')
@@ -376,7 +376,7 @@ def turn_edges_into_grants(sub_community, edge_type, method, count1, count2, pat
 
         # variable to hold grants
         grants = OrderedDict((ref, attr[1]) for entity_link in entity_links for ref, attr in grant_entities.items()
-                             if entity_link[0] and entity_link[0] in attr[0])
+                             if entity_link[0] and entity_link[1] in attr[0])
 
     # if split path equals to researchers
     elif path_split[0] == 'researchers':
