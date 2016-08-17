@@ -473,7 +473,7 @@ class AnalyseResearcherNetwork:
         # variables to hold edge types
         edge_type1, edge_type2, edge_type3, edge_type4, edge_type5 = 'uw', 'wn', 'wv', 'wnn', 'wnv'
         # variables to hold thresholds
-        threshold1, threshold2, threshold3 = 9, 30, 20
+        threshold1, threshold2, threshold3 = 9, 40, 20
         # variables to hold paths
         path1 = 'researchers/current/network-b'
         path2 = 'researchers/past/2000-2010/network-b'
@@ -784,14 +784,14 @@ def main():
     # AnalyseTopicNetwork.run('b', 'past2')
 
     # analyse researcher network a
-    AnalyseResearcherNetwork.run('a', 'current')
+    # AnalyseResearcherNetwork.run('a', 'current')
     # AnalyseResearcherNetwork.run('a', 'past1')
     # AnalyseResearcherNetwork.run('a', 'past2')
 
     # analyse researcher network b
     # AnalyseResearcherNetwork.run('b', 'current')
     # AnalyseResearcherNetwork.run('b', 'past1')
-    # AnalyseResearcherNetwork.run('b', 'past2')
+    AnalyseResearcherNetwork.run('b', 'past2')
 
 
 ########################################################################################################################
