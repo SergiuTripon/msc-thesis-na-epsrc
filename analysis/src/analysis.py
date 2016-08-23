@@ -4,13 +4,16 @@
 
 # local python files
 import network as na
+import algorithms.louvain as louvain
 
 # third-party library modules
 import glob
+import numpy as np
 import igraph as ig
 import pandas as pd
 import networkx as nx
 import graphistry as gp
+from matplotlib import pyplot, patches
 
 # increase arpack iterations
 ig.arpack_options.maxiter = 300000
@@ -770,6 +773,230 @@ def visualise_in_graphistry(network):
 ########################################################################################################################
 
 
+# PlotAdjacencyMatrix class
+class PlotAdjacencyMatrix:
+
+    @staticmethod
+    # runs other functions
+    def run():
+
+        # variable to hold path
+        path = '../../data/networks/topics/current/network-a'
+
+        # variable to hold network
+        network = nx.read_graphml('{}/network/graphml/wnn/louvain/membership.graphml'.format(path))
+
+        # plot adjacency matrix
+        PlotAdjacencyMatrix.plot_adjacency_matrix(network, path)
+
+        # plot adjacency matrix clustered by louvain method
+        PlotAdjacencyMatrix.plot_adjacency_matrix_c(network, path)
+
+        # plot adjacency matrix clustered by number of grants
+        PlotAdjacencyMatrix.plot_adjacency_matrix_n(network, path)
+
+        # plot adjacency matrix clustered by value of grants
+        PlotAdjacencyMatrix.plot_adjacency_matrix_v(network, path)
+
+    ####################################################################################################################
+
+    @staticmethod
+    # plots adjacency matrix
+    def plot_adjacency_matrix(network, path):
+
+        # variable to hold adjacency matrix
+        adjacency_matrix = nx.to_numpy_matrix(network, dtype=np.bool)
+
+        # variable to hold font
+        font = {'size': 8}
+        # set font
+        pyplot.rc('font', **font)
+
+        # variable to hold figure
+        figure = pyplot.figure(figsize=(4, 4))
+
+        # set figure title
+        figure.suptitle('Adjacency matrix', fontsize=11)
+
+        # display adjacency matrix on the axes
+        pyplot.imshow(adjacency_matrix, cmap='Blues', interpolation='none', vmin=0, vmax=1)
+
+        # save figure
+        figure.savefig('{}/network/png/wnn/louvain/adjacency_matrix.png'.format(path))
+
+    ####################################################################################################################
+
+    # plots clustered adjacency matrix
+    @staticmethod
+    def plot_adjacency_matrix_c(network, path):
+
+        # variable to hold louvain community structure
+        louvain_cs = louvain.best_partition(network)
+
+        # variable to hold louvain communities
+        louvain_c = []
+
+        # for i in range between 0 and communities length
+        for i in range(0, len(set(louvain_cs.values()))):
+            # add node to louvain communities
+            louvain_c += [[node for node, identifier in louvain_cs.items() if identifier == i]]
+
+        # variable to hold louvain communities nodes
+        louvain_c_nodes = [node for community in louvain_c for node in community]
+
+        # variable to hold adjacency matrix
+        adjacency_matrix = nx.to_numpy_matrix(network, dtype=np.bool, nodelist=louvain_c_nodes)
+
+        # variable to hold font
+        font = {'size': 8}
+        # set font
+        pyplot.rc('font', **font)
+
+        # variable to hold figure
+        figure = pyplot.figure(figsize=(4, 4))
+
+        # set figure title
+        figure.suptitle('Adjacency matrix clustered by Louvain method', fontsize=11)
+
+        # display adjacency matrix on the axes
+        pyplot.imshow(adjacency_matrix, cmap='Blues', interpolation='none', vmin=0, vmax=1)
+
+        # match axes with nodes
+        axes = pyplot.gca()
+
+        # variable to hold rectangle size
+        rectangle_size = 0
+        # for community in louvain communities
+        for community in louvain_c:
+            # add patch
+            axes.add_patch(patches.Rectangle((rectangle_size, rectangle_size), len(community), len(community),
+                                             fc='none', ec='red', lw='1'))
+            # increment rectangle size
+            rectangle_size += len(community)
+
+        # save figure
+        figure.savefig('{}/network/png/wnn/louvain/adjacency_matrix_c.png'.format(path))
+
+    ####################################################################################################################
+
+    # plots adjacency matrix clustered by number of grants
+    @staticmethod
+    def plot_adjacency_matrix_n(network, path):
+
+        # variable to hold attribute
+        attr = nx.get_node_attributes(network, 'norm_num')
+
+        # variable to hold attribute partitions
+        attr_partitions = []
+
+        # add nodes to attribute partitions
+        attr_partitions += [[node for node, val in attr.items() if 20.0 <= val <= 25.0]]
+        attr_partitions += [[node for node, val in attr.items() if 25.0 < val <= 30.0]]
+        attr_partitions += [[node for node, val in attr.items() if 30.0 < val <= 35.0]]
+        attr_partitions += [[node for node, val in attr.items() if 35.0 < val <= 40.0]]
+        attr_partitions += [[node for node, val in attr.items() if 40.0 < val <= 45.0]]
+        attr_partitions += [[node for node, val in attr.items() if 45.0 < val <= 50.0]]
+        attr_partitions += [[node for node, val in attr.items() if 50.0 < val <= 55.0]]
+        attr_partitions += [[node for node, val in attr.items() if 55.0 < val <= 60.0]]
+
+        # variable to hold attribute nodes
+        attr_nodes = [node for partition in attr_partitions for node in partition]
+
+        # variable to hold adjacency matrix
+        adjacency_matrix = nx.to_numpy_matrix(network, dtype=np.bool, nodelist=attr_nodes)
+
+        # variable to hold font
+        font = {'size': 8}
+        # set font
+        pyplot.rc('font', **font)
+
+        # variable to hold figure
+        figure = pyplot.figure(figsize=(4, 4))
+
+        # set figure title
+        figure.suptitle('Adjacency matrix clustered by number of grants', fontsize=11)
+
+        # display adjacency matrix on the axes
+        pyplot.imshow(adjacency_matrix, cmap='Blues', interpolation='none', vmin=0, vmax=1)
+
+        # match axes with nodes
+        axes = pyplot.gca()
+
+        # variable to hold rectangle size
+        rectangle_size = 0
+        # for partition in attribute partitions
+        for partition in attr_partitions:
+            # add patch
+            axes.add_patch(patches.Rectangle((rectangle_size, rectangle_size), len(partition), len(partition),
+                                             fc='none', ec='red', lw='1'))
+            # increment rectangle size
+            rectangle_size += len(partition)
+
+        # save figure
+        figure.savefig('{}/network/png/wnn/louvain/adjacency_matrix_n.png'.format(path))
+
+    ####################################################################################################################
+
+    # plots adjacency matrix clustered by value of grants
+    @staticmethod
+    def plot_adjacency_matrix_v(network, path):
+
+        # variable to hold attribute
+        attr = nx.get_node_attributes(network, 'norm_val')
+
+        # variable to hold attribute partitions
+        attr_partitions = []
+
+        # add nodes to attribute partitions
+        attr_partitions += [[node for node, val in attr.items() if 20.0 <= val <= 25.0]]
+        attr_partitions += [[node for node, val in attr.items() if 25.0 < val <= 30.0]]
+        attr_partitions += [[node for node, val in attr.items() if 30.0 < val <= 35.0]]
+        attr_partitions += [[node for node, val in attr.items() if 35.0 < val <= 40.0]]
+        attr_partitions += [[node for node, val in attr.items() if 40.0 < val <= 45.0]]
+        attr_partitions += [[node for node, val in attr.items() if 45.0 < val <= 50.0]]
+        attr_partitions += [[node for node, val in attr.items() if 50.0 < val <= 55.0]]
+        attr_partitions += [[node for node, val in attr.items() if 55.0 < val <= 60.0]]
+
+        # variable to hold attribute nodes
+        attr_nodes = [node for partition in attr_partitions for node in partition]
+
+        # variable to hold adjacency matrix
+        adjacency_matrix = nx.to_numpy_matrix(network, dtype=np.bool, nodelist=attr_nodes)
+
+        # variable to hold font
+        font = {'size': 8}
+        # set font
+        pyplot.rc('font', **font)
+
+        # variable to hold figure
+        figure = pyplot.figure(figsize=(4, 4))
+
+        # set figure title
+        figure.suptitle('Adjacency matrix clustered by value of grants', fontsize=11)
+
+        # display adjacency matrix on the axes
+        pyplot.imshow(adjacency_matrix, cmap='Blues', interpolation='none', vmin=0, vmax=1)
+
+        # match axes with nodes
+        axes = pyplot.gca()
+
+        # variable to hold rectangle size
+        rectangle_size = 0
+        # for partition in attribute partitions
+        for partition in attr_partitions:
+            # add patch
+            axes.add_patch(patches.Rectangle((rectangle_size, rectangle_size), len(partition), len(partition),
+                                             fc='none', ec='red', lw='1'))
+            # increment rectangle size
+            rectangle_size += len(partition)
+
+        # save figure
+        figure.savefig('{}/network/png/wnn/louvain/adjacency_matrix_v.png'.format(path))
+
+
+########################################################################################################################
+
+
 # main function
 def main():
 
@@ -792,6 +1019,9 @@ def main():
     # AnalyseResearcherNetwork.run('b', 'current')
     # AnalyseResearcherNetwork.run('b', 'past1')
     AnalyseResearcherNetwork.run('b', 'past2')
+
+    # plot adjacency matrix
+    # PlotAdjacencyMatrix.run()
 
 
 ########################################################################################################################
