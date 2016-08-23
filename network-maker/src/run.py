@@ -5,7 +5,7 @@
 # locally developed modules
 import make
 import link
-import scrape
+import extract
 
 ########################################################################################################################
 
@@ -14,7 +14,7 @@ import scrape
 def main():
 
     # run scrape
-    scrape.main()
+    extract.main()
 
     # run link
     link.main()
