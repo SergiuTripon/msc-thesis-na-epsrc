@@ -132,8 +132,20 @@ def compare_community_structures(network, path):
 # main function
 def main():
 
-    # variable to hold path
-    path = '../../data/networks/topics/current/network-a'
+    # variables to hold path
+    # path = '../../data/networks/topics/current/network-a'
+    # path = '../../data/networks/topics/past/2000-2010/network-a'
+    path = '../../data/networks/topics/past/1990-2000/network-a'
+    # path = '../../data/networks/topics/current/network-b'
+    # path = '../../data/networks/topics/past/2000-2010/network-b'
+    # path = '../../data/networks/topics/past/1990-2000/network-b'
+
+    # path = '../../data/networks/researchers/current/network-a'
+    # path = '../../data/networks/researchers/past/2000-2010/network-a'
+    # path = '../../data/networks/researchers/past/1990-2000/network-a'
+    # path = '../../data/networks/researchers/current/network-b'
+    # path = '../../data/networks/researchers/past/2000-2010/network-b'
+    # path = '../../data/networks/researchers/past/1990-2000/network-b'
 
     # variable to hold network
     network = ig.Graph.Read_GraphML('{}/network/graphml/wnn/louvain/membership.graphml'.format(path))
@@ -144,9 +156,9 @@ def main():
     print('> Similarity calculated.')
 
     # compare community structures
-    compare_community_structures(network, path)
+    # compare_community_structures(network, path)
     # print progress
-    print('> Community structures compared.')
+    # print('> Community structures compared.')
 
 
 ########################################################################################################################

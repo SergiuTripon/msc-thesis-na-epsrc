@@ -154,7 +154,6 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions
 \LoadClass{book}
-\RequirePackage{times}
 \RequirePackage{mathptmx}
 %    \end{macrocode}
 %
@@ -398,7 +397,7 @@
 \def\department#1{\gdef\@department{#1}}
 \def\@department{\@latex@warning@no@line{No \noexpand\department given}}
 \renewcommand \maketitle{%
-    \setcounter{page}{1}%
+    \setcounter{page}{1}
     \thispagestyle{empty}%
     \@maketitle%
     \setcounter{footnote}{0}%
@@ -418,7 +417,6 @@
 \newcommand \@maketitle{%
     \newpage%
     \null%
-    \vspace*{5em}%
 %%%
 %%%  Julia Schnabel wanted the following added.
 %%%
@@ -427,25 +425,42 @@
 %%%    \normalsize
 %%%
     \begin{center}%
-        {\huge \bfseries \@title}\\[5em]%
-        {\Large \itshape \@author}\\%
+        \linespread{1}%
+        {\huge \bfseries \@title\par}%
+        \vspace*{2em}%
+        {\Large by}\\[2em]%
+        {\Large \bfseries \@author}\\%
+        {\normalsize \itshape sergiu.tripon.15@ucl.ac.uk}\\%
     \end{center}%
-    \vfill%
+    \vspace*{0.5em}%
+    \begin{center}%
+        {\large \bfseries Supervisor:}\\%
+        {\normalsize Dr Shi Zhou, University College London}\\%
+        {\normalsize \itshape s.zhou@ucl.ac.uk}\\%
+    \end{center}%
+    \iffalse
     \begin{center}%
     A dissertation submitted in partial fulfillment \\
     of the requirements for the degree of \\
     \textbf{\@degree@string} \\
     of \\
-    \textbf{University College London}
+    \textbf{University College London}.
     \end{center}%
-    \vspace{2em}%
+    \fi
+    \vspace{1em}%
     \begin{center}%
+    MSc Web Science \& Big Data Analytics\\
     \@department \\
     University College London\\
     \end{center}%
-    \vspace{2em}%
+    \vspace{0.5em}%
     \begin{center}%
     \@date%
+    \end{center}%
+    \vspace{1.5em}%
+    \begin{center}%
+        {\normalsize This report is submitted as part requirement for the MSc in Web Science \& Big Data Analytics at University College London. It is substantially the result of my own work except where explicitly indicated in the text.}\\[0.5em]%
+        {\normalsize The report may be freely copied and distributed provided the source is explicitly acknowledged.}\\%
     \end{center}%
     \if@twoside %
       \newpage%
@@ -485,10 +500,11 @@
     \secdef \@chapter \@schapter%
 }
 \def \@makechapterhead#1{%
-    \vspace*{40\p@}%
+    %\vspace*{40\p@}%
     {\parindent \z@%
      \raggedright%
      \reset@font%
+     \iffalse%
      \ifnum \c@secnumdepth >\m@ne%
          \if@mainmatter%
              \Large \bfseries \@chapapp{} \thechapter%
@@ -496,21 +512,22 @@
              \vskip 20\p@%
          \fi%
      \fi%
-     \huge \bfseries #1%
+     \fi%
+     \huge \bfseries \thechapter \hspace{0.2em} #1%
      \par%
      \nobreak%
-     \vskip 40\p@%
+     \vskip 15\p@%
     }%
 }
 \def \@makeschapterhead#1{%
-    \vspace*{50\p@}%
+    %\vspace*{50\p@}%
     {\parindent \z@%
      \raggedright%
      \reset@font%
      \huge \bfseries #1%
      \par%
      \nobreak%
-     \vskip 40\p@%
+     \vskip 15\p@%
     }%
 }
 \renewcommand \section{\@startsection {section}{1}{\z@}%
@@ -541,7 +558,7 @@
 %  \begin{environment}{abstract}
 %  Need to have an abstract environment.
 %    \begin{macrocode}
-\newcommand \@abstract{Abstract}
+\newcommand \@abstract{\huge \centering \textsc{Abstract}}
 \newenvironment{abstract}{%
     \chapter*{\@abstract}%
     \@mkboth{\@abstract}{\@abstract}%
@@ -552,7 +569,7 @@
 %  \begin{environment}{acknowledgement}
 %  Also need an environment for doing the acknowlegements.
 %    \begin{macrocode}
-\newcommand \@acknowledgements{Acknowledgements}
+\newcommand \@acknowledgements{\huge \centering \textsc{Acknowledgements}}
 \newenvironment{acknowledgements}{%
     \chapter*{\@acknowledgements}%
     \@mkboth{\@acknowledgements}{\@acknowledgements}%

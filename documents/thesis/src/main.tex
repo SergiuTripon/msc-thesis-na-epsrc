@@ -68,12 +68,15 @@
 
 % And then some settings in separate files.
 \input{settings/float} % For things like figures and tables
+\graphicspath{{figures/}}
 \input{settings/bib}   % For bibliographies
 
 % Title Settings
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
-\title{Detecting community structure in EPSRC Research Grant-based Networks}
+%\setcounter{tocdepth}{5}
+%\setcounter{secnumdepth}{5}
+\title{Coherent clustering of topics and researchers in networks based on EPSRC data: \normalfont a novel approach to a real-world problem}
+%\title{Detecting community structure\\in EPSRC data-based networks: a novel approach to a real-world problem}
+%\title{Detecting community structure\\in EPSRC Research Grant-based Networks}
 \author{Sergiu Tripon}
 \department{Department of Computer Science}
 
@@ -95,24 +98,33 @@
 % At last, content! Remember filenames are case-sensitive and 
 %  *must not* include spaces.
 \include{chapters/0_preamble}
+\mainmatter
 \include{chapters/1_introduction}
 \include{chapters/2_background}
 \include{chapters/3_literature_survey}
 \include{chapters/4_methodology}
 \include{chapters/5_results}
-\include{chapters/6_discussion}
-\include{chapters/appendices}
-% You could separate these out into different files if you have
-%  particularly large appendices.
-
+%\include{chapters/6_discussion}
+\include{chapters/7_conclusion}
+\phantomsection
 % This line manually adds the Bibliography to the table of contents.
 % The fact that \include is the last thing before this ensures that it
 % is on a clear page, and adding it like this means that it doesn't
 % get a chapter or appendix number.
-\addcontentsline{toc}{chapter}{Bibliography}
+\addcontentsline{toc}{chapter}{\textsc{References}}
 
+\renewcommand{\bibname}{\textsc{References}}
 % Actually generates your bibliography.
-\bibliography{bibliography/bibliography}
+\bibliography{references/references.bib}
+
+\include{chapters/appendix_a}
+\include{chapters/appendix_b}
+\include{chapters/appendix_c}
+\include{chapters/appendix_d}
+% You could separate these out into different files if you have
+%  particularly large appendices.
+
+
 
 % All done. \o/
 \end{document}

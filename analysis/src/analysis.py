@@ -8,6 +8,7 @@ import algorithms.louvain as louvain
 
 # third-party library modules
 import glob
+import argparse
 import numpy as np
 import igraph as ig
 import pandas as pd
@@ -997,31 +998,154 @@ class PlotAdjacencyMatrix:
 ########################################################################################################################
 
 
+# plots network manually
+def plot_network_manually():
+
+    # variables to hold path
+    path = 'researchers/current/network-b'
+    edge_type = 'wnn'
+    method = 'louvain'
+
+    # variable to hold network
+    network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/'
+                                    '{}/{}/membership.graphml'.format(path, edge_type, method))
+
+    colours = ['red' if label == 'shah, professor n' else 'blue'
+               for idx, label in enumerate(network.vs['label'])]
+
+    network.vs['color'] = colours
+
+    # variable to hold visual style
+    visual_style = {'vertex_label': None,
+                    'vertex_color': network.vs['color'],
+                    'vertex_size': network.vs['plot_size'],
+                    'edge_width': network.es['plot_weight'],
+                    'layout': 'kk',
+                    'background': None,
+                    'bbox': (1000, 1000),
+                    'margin': 70}
+
+    # plot network
+    ig.plot(network, 'network_highest.png', **visual_style)
+
+
+########################################################################################################################
+
+
+# plots community overview manually
+def plot_community_overview_manually():
+
+    # variables to hold path
+    path = 'topics/current/network-a'
+    edge_type = 'wnn'
+    method = 'louvain'
+
+    # variable to hold network
+    network = ig.Graph.Read_GraphML('../../data/networks/{}/network/graphml/'
+                                    '{}/{}/membership.graphml'.format(path, edge_type, method))
+
+    # variable to hold membership
+    membership = network.vs['membership']
+
+    # variable to hold edges
+    edges = [edge for edge in network.es() if membership[edge.tuple[0]] != membership[edge.tuple[1]]]
+
+    # delete edges
+    network.delete_edges(edges)
+
+    # variable to hold visual style
+    visual_style = {'vertex_label': network.vs['label'],
+                    'vertex_size': network.vs['plot_size'],
+                    'edge_width': network.es['plot_weight'],
+                    'layout': 'kk',
+                    'background': None,
+                    'bbox': (1000, 1000),
+                    'margin': 200}
+
+    # variable to hold colours
+    colours = ['', '#E74C3C', '#9B59B6', '#2980B9', '#2ECC71', '#F1C40F', '#E67E22']
+
+    # colour nodes
+    [vertex.update_attributes({'color': colours[int(membership[vertex.index])]}) for vertex in network.vs()]
+
+    # plot communities
+    ig.plot(network, 'overview2_highest1.png'.format(path, edge_type, method), **visual_style)
+
+
+########################################################################################################################
+
+
 # main function
-def main():
+def main(network, interpretation, data_set):
 
-    # analyse topic network a
-    # AnalyseTopicNetwork.run('a', 'current')
-    # AnalyseTopicNetwork.run('a', 'past1')
-    # AnalyseTopicNetwork.run('a', 'past2')
+    # if network equals to topic and interpretations equals to grants and data set equals to 2010-2016
+    if network == 'topic' and interpretation == 'grants' and data_set == '2010-2016':
+        # analyse topic network a
+        AnalyseTopicNetwork.run('a', 'current')
+    # if network equals to topic and interpretations equals to grants and data set equals to 2000-2010
+    elif network == 'topic' and interpretation == 'grants' and data_set == '2000-2010':
+        # analyse topic network a
+        AnalyseTopicNetwork.run('a', 'past1')
+    # if network equals to topic and interpretations equals to grants and data set equals to 1990-2000
+    elif network == 'topic' and interpretation == 'grants' and data_set == '1990-2000':
+        # analyse topic network a
+        AnalyseTopicNetwork.run('a', 'past2')
 
-    # analyse topic network b
-    # AnalyseTopicNetwork.run('b', 'current')
-    # AnalyseTopicNetwork.run('b', 'past1')
-    # AnalyseTopicNetwork.run('b', 'past2')
+    ####################################################################################################################
 
-    # analyse researcher network a
-    # AnalyseResearcherNetwork.run('a', 'current')
-    # AnalyseResearcherNetwork.run('a', 'past1')
-    # AnalyseResearcherNetwork.run('a', 'past2')
+    # if network equals to topic and interpretations equals to researchers and data set equals to 2010-2016
+    if network == 'topic' and interpretation == 'researchers' and data_set == '2010-2016':
+        # analyse topic network b
+        AnalyseTopicNetwork.run('b', 'current')
+    # if network equals to topic and interpretations equals to researchers and data set equals to 2010-2016
+    if network == 'topic' and interpretation == 'researchers' and data_set == '2000-2010':
+        # analyse topic network b
+        AnalyseTopicNetwork.run('b', 'past1')
+    # if network equals to topic and interpretations equals to researchers and data set equals to 1990-2000
+    if network == 'topic' and interpretation == 'researchers' and data_set == '1990-2000':
+        # analyse topic network b
+        AnalyseTopicNetwork.run('b', 'past2')
 
-    # analyse researcher network b
-    # AnalyseResearcherNetwork.run('b', 'current')
-    # AnalyseResearcherNetwork.run('b', 'past1')
-    AnalyseResearcherNetwork.run('b', 'past2')
+    ####################################################################################################################
+
+    # if network equals to researcher and interpretations equals to topics and data set equals to 2010-2016
+    if network == 'researcher' and interpretation == 'topics' and data_set == '2010-2016':
+        # analyse researcher network a
+        AnalyseResearcherNetwork.run('a', 'current')
+    # if network equals to researcher and interpretations equals to topics and data set equals to 2000-2010
+    if network == 'researcher' and interpretation == 'topics' and data_set == '2000-2010':
+        # analyse researcher network a
+        AnalyseResearcherNetwork.run('a', 'past1')
+    # if network equals to researcher and interpretations equals to topics and data set equals to 1990-2010
+    if network == 'researcher' and interpretation == 'topics' and data_set == '1990-2010':
+        # analyse researcher network a
+        AnalyseResearcherNetwork.run('a', 'past2')
+
+    ####################################################################################################################
+
+    # if network equals to researcher and interpretations equals to grants and data set equals to 2010-2016
+    if network == 'researcher' and interpretation == 'grants' and data_set == '2010-2016':
+        # analyse researcher network b
+        AnalyseResearcherNetwork.run('b', 'current')
+    # if network equals to researcher and interpretations equals to grants and data set equals to 2000-2010
+    if network == 'researcher' and interpretation == 'grants' and data_set == '2000-2010':
+        # analyse researcher network b
+        AnalyseResearcherNetwork.run('b', 'past1')
+    # if network equals to researcher and interpretations equals to grants and data set equals to 1990-2000
+    if network == 'researcher' and interpretation == 'grants' and data_set == '1990-2000':
+        # analyse researcher network b
+        AnalyseResearcherNetwork.run('b', 'past2')
+
+    ####################################################################################################################
 
     # plot adjacency matrix
     # PlotAdjacencyMatrix.run()
+
+    # plot network manually
+    # plot_network_manually()
+
+    # plots community overview manually
+    # plot_community_overview_manually()
 
 
 ########################################################################################################################
@@ -1029,7 +1153,23 @@ def main():
 
 # runs main function
 if __name__ == '__main__':
-    main()
+
+    # parse script argument
+    parser = argparse.ArgumentParser()
+    # add argument
+    parser.add_argument('-n', '--network', type=str, dest='network_', metavar='network (topic or researcher)',
+                        help='network (topic or researcher)', required=True)
+    # add argument
+    parser.add_argument('-i', '--interpretation', type=str, dest='type_', metavar='network interpretation (a or b)',
+                        help='network interpretation (a or b)', required=True)
+    # add argument
+    parser.add_argument('-d', '--data_set', type=str, dest='data_set_',
+                        metavar='data set (1990-2000, 2000-2010 or 2010-2016)',
+                        help='period (1990-2000, 2000-2010 or 2010-2016)', required=True)
+    args = parser.parse_args()
+
+    # call main function with the script argument as parameter
+    main(args.network_, args.type_, args.data_set_)
 
 
 ########################################################################################################################

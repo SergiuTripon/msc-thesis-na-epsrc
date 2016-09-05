@@ -1,0 +1,210 @@
+\chapter{Source Code}
+\label{appendix:code}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstdefinestyle{Python}{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\lstdefinestyle{Bash}{frame=tb,
+  language=bash,
+  basicstyle=\small\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+
+During this project, source code was written in Python and Bash and stored within \textbf{12 files (6123 lines)}, as follows:
+
+\begin{enumerate}[itemsep=0cm, label*=\arabic*.]
+    \item \textbf{Data collection (2541 lines)}
+\begin{enumerate}[itemsep=0cm, label*=\arabic*.]
+    \item \textbf{download.sh (153 lines)}, written to download grant and research records from the \textit{EPSRC Grants on the Web (GoW) service}
+    \item \textbf{extract.py (964 lines)}, written to extract information from the downloaded data
+    \item \textbf{link.py (844 lines)}, written to establish the links between the topics and researchers
+    \item \textbf{make.py (414 lines)}, written to create the \textit{Topic} and \textit{Researcher networks}
+    \item \textbf{run.py (35 lines)}, written to run the \textit{extract.py}, \textit{link.py}, \textit{make.py} functions from one central file
+    \item \textbf{check.sh (131 lines)}, written to ensure correct file creation
+\end{enumerate}
+    \item \textbf{Network analysis (3582 lines)}
+\begin{enumerate}[itemsep=0cm, label*=\arabic*.]
+    \item \textbf{network.py (711 lines)}, written to analyse the network
+    \item \textbf{communities.py (598 lines)}, written to analyse the communities within the network
+    \item \textbf{sub\_communities.py (423 lines)}, written to analyse the sub-communities in each community within the network
+    \item \textbf{analysis.py (1176 lines)}, written to bind the \textit{network.py}, \textit{communities.py}, \textit{sub\_communities.py} functions together in one central file
+    \item \textbf{evaluation.py (173 lines)} written to evaluate the community structure identified
+    \item \textbf{clean.sh (501 lines)}, written to delete multiple files from specific folders
+\end{enumerate}
+\end{enumerate}
+
+\section{Source code location}
+
+The source code is stored in a GitHub repository located at the following web address:
+
+\url{https://github.com/SergiuTripon/msc-thesis-na-epsrc}
+
+\section{Running the source code}
+
+\textbf{Note: In order to run the source code, an virtual environment installation is required. The code is written in Python 3.5. The packages used in the project are listed in the \textit{requirements.txt} file and can be install using \textit{pip}}.
+
+\vspace{1em}
+
+\noindent Running the network analysis is achieved by running the \textit{analysis.py} file with the desired parameters (\textbf{-n} requires network (topic or researcher), \textbf{-i} requires interpretation (grants, researchers or topics), \textbf{-d} requires data set (1990-2000, 2000-2010, 2010-2016)), following the steps below:
+
+\begin{lstlisting}[style=Bash]
+# activate virtual environment
+$ source venv/bin/activate
+
+# navigate to analysis source folder
+$ cd msc-thesis-na-epsrc/analysis/src/
+
+# analyse topic (grants as edges, 2010-2016)
+$ python analysis.py -n topic -i grants -d 2010-2016
+# analyse topic (grants as edges, 2000-2010)
+$ python analysis.py -n topic -i grants -d 2000-2010
+# analyse topic (grants as edges, 1990-2000)
+$ python analysis.py -n topic -i grants -d 1990-2000
+
+# analyse topic (researchers as edges, 2010-2016)
+$ python analysis.py -n topic -i researchers -d 2010-2016
+# analyse topic (researchers as edges, 2000-2010)
+$ python analysis.py -n topic -i researchers -d 2000-2010
+# analyse topic (researchers as edges, 1990-2000)
+$ python analysis.py -n topic -i researchers -d 1990-2000
+
+# analyse researcher (grants as edges, 2010-2016)
+$ python analysis.py -n topic -i grants -d 2010-2016
+# analyse researcher (researchers as edges, 2000-2010)
+$ python analysis.py -n topic -i grants -d 2000-2010
+# analyse researcher (researchers as edges, 1990-2000)
+$ python analysis.py -n topic -i grants -d 1990-2000
+
+# analyse researcher (topics as edges, 2010-2016)
+$ python analysis.py -n topic -i topics -d 2010-2016
+# analyse researcher (topics as edges, 2000-2010)
+$ python analysis.py -n topic -i topics -d 2000-2010
+# analyse researcher (topics as edges, 1990-2000)
+$ python analysis.py -n topic -i topics -d 1990-2000
+\end{lstlisting}
+
+\section{Code snippets}
+
+\subsection{Turn edges into grants}
+
+\begin{lstlisting}[caption={Code snippet showing function written to turn edges into grants and calculate the number and value of grants within network and communities and between communities.}\label{listing:turn_edges_into_grants}, style=Python]
+# turns edges into grants
+def turn_edges_into_grants(community, edge_type, method, count1, path):
+
+    # variable to split path
+    path_split = path.split('/', 3)
+
+    # variable to hold temporary path
+    path_temp = ''
+
+    # if split path equals to current
+    if path_split[1] == 'current':
+        # set temporary path
+        path_temp = '{}'.format(path_split[1])
+    # if split path equals to past
+    elif path_split[1] == 'past':
+        # set temporary path
+        path_temp = '{}/{}'.format(path_split[1], path_split[2])
+
+    # variable to hold input file
+    input_file = open(r'../../network-maker/output/grants/'
+    '{}/info/grant_{}.pkl'.format(path_temp, path_split[0]), 'rb')
+    # load data structure from file
+    grant_entities = load(input_file)
+    # close input file
+    input_file.close()
+
+    # variable to hold entity links
+    entity_links = [[community.vs['label'][edge.source], community.vs['label'][edge.target]]
+                    for edge in community.es()]
+
+    # variable to hold grants
+    grants = OrderedDict()
+
+    # if split path equals to topics
+    if path_split[0] == 'topics':
+
+        # set grants
+        grants = OrderedDict((ref, attr[1]) for entity_link in entity_links for ref, attr in grant_entities.items()
+                             if entity_link[0] and entity_link[1] in attr[0])
+
+    # if split path equals to researchers
+    elif path_split[0] == 'researchers':
+
+        # set grants
+        grants = OrderedDict((ref, attr[1]) for entity_link in entity_links for ref, attr in grant_entities.items()
+                             if entity_link[0] and entity_link[1] in [researcher[0] for researcher in attr[0]])
+
+    # variable to hold number
+    number = len([ref for ref in grants.keys()])
+
+    # set locale to Great Britain
+    setlocale(LC_ALL, 'en_GB.utf8')
+
+    # variable to hold value
+    value = sum([attr for attr in grants.values()])
+
+    # variable to hold output file
+    output_file = open('../../data/networks/{}/communities/txt/{}/{}/'
+                       'grants.txt'.format(path, edge_type, method), mode='a')
+
+    # if count1 is equal to 1
+    if count1 == 1:
+
+        # write header to file
+        output_file.write('> Number and value of grants in each community\n\n')
+
+        # write grant number and value to file
+        output_file.write('- Community {}:    {:>4d} {}\n'.format(count1, number, currency(value, grouping=True)))
+
+    # if count1 is not equal to 1
+    else:
+
+        # write grant number and value to file
+        output_file.write('- Community {}:    {:>4d} {}\n'.format(count1, number, currency(value, grouping=True)))
+
+    # return number and value
+    return grants, number, value
+\end{lstlisting}
+
+\clearpage
+
+\subsection{Normalization of node and edge attribute values}
+
+\begin{lstlisting}[caption={Code snippet showing function written to normalize node and attribute values.}\label{listing:norm_vals}, style=Python]
+# normalizes values
+def norm_vals(vals, new_min, new_max):
+
+    # variable to hold old minimum and maximum
+    old_min, old_max = min(vals), max(vals)
+    # variable to hold old and new range
+    old_range, new_range = old_max - old_min, new_max - new_min
+
+    int_vals = [int(val) for val in vals]
+
+    # variable to hold new values
+    new_vals = [round((((val - old_min) * new_range / old_range) + new_min), 0) for val in int_vals]
+
+    # return new values
+    return new_vals
+\end{lstlisting}
