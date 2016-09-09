@@ -12,15 +12,15 @@ This is the thesis I completed as part of the COMPGW99 - MSc Thesis module (MSc 
 
 ### Repository contents
 
-* **algorithms/** - 
-* **analysis/** - 
+* **algorithms/** - [Louvain community detection algorithm](https://bitbucket.org/taynaud/python-louvain) for [NetworkX](https://networkx.github.io/)
+* **analysis/** - source code written for network analysis of the network, communities and sub-communities
 * **data/** - 
-* **documents/** - 
-* **experiment/s** -
-* **literature/** - 
-* **network-maker** - 
-* **wiki** - 
-* **requirements.txt** - 
+* **documents/** - main thesis report, supplementary material and research data management plan
+* **experiments/** - experiments carried out to try different network analysis packages
+* **literature/** - research papers in PDF format representing the state-of-the-art of different topics
+* **network-maker** - source code written to collect the data and convert it into networks, data in the form of html files downloaded from the EPSRC Grants on the Web (GoW) service
+* **wiki** - various .png, .psd, .pptx, .xlsx files mainly used to added different media to the main thesis report
+* **requirements.txt** - pip requirements file that specifies the project dependencies which can be install by running ```bash pip install -r requirements.txt``` in a terminal window
 
 ---
 
