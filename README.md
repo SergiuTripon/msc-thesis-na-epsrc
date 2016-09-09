@@ -1,6 +1,8 @@
 ## MSc Thesis - Network Analysis on EPSRC funding data
 
-This is the thesis I completed as part of the COMPGW99 - MSc Thesis module (MSc Web Science and Big Data Analytics) which I undertook at UCL.
+This is a thesis project completed as part of the COMPGW99 - MSc Thesis module (MSc Web Science and Big Data Analytics) at University College London.
+
+It proposes theh application of a novel approach in graph theory, to identify coherent clusters of topics and researchers within *Networks of Topics* and *Researchers* constructed using current (2010 to 2016) and historical (1990 to 2000, 2000 to 2010) data collected from [EPSRC](https://www.epsrc.ac.uk/). For more information, please refer to the [main thesis report](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/thesis/pdf/15110029_sergiu_tripon_epsrc_network_analysis.pdf).
 
 ####Author
 
