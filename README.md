@@ -5,7 +5,6 @@ This is the thesis I completed as part of the COMPGW99 - MSc Thesis module (MSc 
 * **[Main thesis report](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/thesis/pdf/15110029_sergiu_tripon_epsrc_network_analysis.pdf)**
 * **[Supplementary material](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/supplementary-material/15110029_sergiu_tripon_supplementary_material.pdf)**
 * **[Research Data Management Plan](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/research-data-management-plan/pdf/15110029_sergiu_tripon_research_data_management_plan.pdf)**
-
 * **[Repository contents](#user-content-repository-contents)**
 * **[Running the source code](#user-content-running-the-source-code)**
 
