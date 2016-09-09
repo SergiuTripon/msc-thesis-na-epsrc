@@ -23,6 +23,10 @@ This is the thesis I completed as part of the COMPGW99 - MSc Thesis module (MSc 
 
 ### Running the source code
 
+**Note: In order to run the source code, an virtual environment installation is required. The code is written in Python 3.5. The packages used in the project are listed in the _requirements.txt_ file and can be install using _pip_**.
+
+Running the network analysis is achieved by running the *analysis.py* file with the desired parameters **-n** requires network (topic or researcher), **-i** requires interpretation (grants, researchers or topics), **-d** requires data set (1990-2000, 2000-2010, 2010-2016)), following the steps below:
+
 ```bash
 # activate virtual environment
 $ source venv/bin/activate
