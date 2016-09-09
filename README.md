@@ -14,7 +14,7 @@ This is the thesis I completed as part of the COMPGW99 - MSc Thesis module (MSc 
 
 * **algorithms/** - [Louvain community detection algorithm](https://bitbucket.org/taynaud/python-louvain) for [NetworkX](https://networkx.github.io/)
 * **analysis/** - source code written for network analysis of the network, communities and sub-communities
-* **data/** - 
+* **data/** - various .gephi, .graphml, .png, .tsv, .txt files related to the networks and the visualisation of the networks
 * **documents/** - main thesis report, supplementary material and research data management plan
 * **experiments/** - experiments carried out to try different network analysis packages
 * **literature/** - research papers in PDF format representing the state-of-the-art of different topics
