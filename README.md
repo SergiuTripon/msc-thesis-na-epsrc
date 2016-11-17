@@ -2,7 +2,7 @@
 
 This is a thesis project completed as part of the COMPGW99 - MSc Thesis module (MSc Web Science and Big Data Analytics) at University College London.
 
-It proposes the application of a novel approach in graph theory, to identify coherent clusters of topics and researchers within *Networks of Topics* and *Researchers* constructed using current (2010 to 2016) and historical (1990 to 2000, 2000 to 2010) data collected from [EPSRC](https://www.epsrc.ac.uk/). For more information, please refer to the **[main thesis report](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/thesis/pdf/15110029_sergiu_tripon_epsrc_network_analysis.pdf)**.
+It proposes the application of a novel approach in graph theory, to identify coherent clusters of topics and researchers within *Networks of Topics* and *Researchers* constructed using current (2010 to 2016) and historical (1990 to 2000, 2000 to 2010) data collected from [EPSRC](https://www.epsrc.ac.uk/). For more information, please refer to the **[main thesis report](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/thesis/15110029_sergiu_tripon_epsrc_network_analysis.pdf)**.
 
 ####Author
 
@@ -14,9 +14,9 @@ Dr. Shi Zhou, Senior lecturer at University College London
 
 ---
 
-* **[Main thesis report](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/thesis/pdf/15110029_sergiu_tripon_epsrc_network_analysis.pdf)**
+* **[Main thesis report](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/thesis/15110029_sergiu_tripon_epsrc_network_analysis.pdf)**
 * **[Supplementary material](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/supplementary-material/15110029_sergiu_tripon_supplementary_material.pdf)**
-* **[Research Data Management Plan](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/research-data-management-plan/pdf/15110029_sergiu_tripon_research_data_management_plan.pdf)**
+* **[Research Data Management Plan](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/research-data-management-plan/15110029_sergiu_tripon_research_data_management_plan.pdf)**
 * **[Repository contents](#user-content-repository-contents)**
 * **[Running the source code](#user-content-running-the-source-code)**
 
