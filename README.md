@@ -4,11 +4,11 @@ This is a thesis project completed as part of the COMPGW99 - MSc Thesis module (
 
 It proposes the application of a novel approach in graph theory, to identify coherent clusters of topics and researchers within *Networks of Topics* and *Researchers* constructed using current (2010 to 2016) and historical (1990 to 2000, 2000 to 2010) data collected from [EPSRC](https://www.epsrc.ac.uk/). For more information, please refer to the **[main thesis report](https://github.com/SergiuTripon/msc-thesis-na-epsrc/blob/master/documents/thesis/15110029_sergiu_tripon_epsrc_network_analysis.pdf)**.
 
-####Author
+#### Author
 
 Sergiu Tripon, MSc Web Science and Big Data Analytics candidate
 
-####Supervisor
+#### Supervisor
 
 Dr. Shi Zhou, Senior lecturer at University College London
 
